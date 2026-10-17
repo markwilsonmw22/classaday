@@ -41,6 +41,7 @@ def course_cover(aura, bg, kcol, kicker, title, sub, figure):
 pages = {
     "dropshipping": course_cover("drop", "#fff1e6", "#e2702a", "30-day plan", "Dropshipping", "Zero to first sales,<br>one day at a time", "ds-unit"),
     "ai-mastery": course_cover("ai", "#e8eefe", "#3462e0", "21-day plan", "AI Mastery", "Claude, ChatGPT, AI video,<br>apps and MCP", "ai-prompt"),
+    "digital-marketing": course_cover("mkt", "#f0eafd", "#7646d6", "30-day plan", "Digital Marketing", "SEO, social, ads,<br>and your own agency", "dm-serp"),
 }
 
 # Templates: a fan of real template screenshots.

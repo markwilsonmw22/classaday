@@ -10,6 +10,7 @@ The website for **schoolaura.com**: self-paced courses with day-by-day plans and
 | Classroom | `/courses/` | All courses as cards with progress bars |
 | Dropshipping (COM 130) | `/courses/dropshipping/` | 30 daily lessons, ≈103 h, 9 diagrams |
 | AI Mastery (AI 210) | `/courses/ai-mastery/` | 21 daily lessons, ≈72 h, 7 diagrams |
+| Digital Marketing Agency (MKT 220) | `/courses/digital-marketing/` | 30 daily lessons, ≈108 h, 8 diagrams |
 | Website Builders (WEB 120) | `/courses/website-builders/` | 7-day guide to the template pack |
 | Template library | `/templates/` | 6 templates, live previews, single and bulk ZIP downloads |
 | Recipe Vault (FOD 110) | `/recipe-vault/` | 4 PDF books + a complete edition, pick and download |
@@ -22,7 +23,7 @@ A static site, no framework. Everything the browser loads is in `public/`, which
 
 ```
 content/            Course sources (Markdown with JSON front matter), page fragments, diagrams
-  dropshipping.md   One file per course: "# M1 | Module | summary", "## D1 | Title | hours | short title"
+  dropshipping.md   One file per course (also ai-mastery.md, digital-marketing.md, website-builders.md): "# M1 | Module | summary", "## D1 | Title | hours | short title"
   ai-mastery.md     Sections per day: @goal @lesson @demo @tasks @deliverable @tip
   website-builders.md
   pages/            Home, Recipe Vault, Templates and 404 page bodies

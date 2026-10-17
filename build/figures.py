@@ -320,6 +320,160 @@ b += arrow(500, 75, 578, 140); b += arrow(500, 215, 578, 172)
 b += text(385, 290, "Values come from your host's domain screen. Changes take minutes to 48 hours.", "t-md f-ink2", "middle")
 figs["web-dns"] = svg(770, 310, b, "How a custom domain points to your website host")
 
+
+# ---------------------------------------------------------------- DIGITAL MARKETING
+import math as _m
+
+# funnel
+b = ""
+stages = [("Awareness", "Reels, TikTok, ads, PR, creators", "reach, views"),
+          ("Interest", "Posts, blog, YouTube, Google search", "engagement, clicks"),
+          ("Consideration", "Reviews, case studies, retargeting", "saves, leads"),
+          ("Conversion", "Landing pages, Google Ads, offers", "conversion rate, CPA"),
+          ("Loyalty", "Email, SMS, reviews, referrals", "repeat rate, LTV")]
+for i, (st, ch, kpi) in enumerate(stages):
+    w = 400 - i * 60
+    x = 70 + (400 - w) / 2
+    y = 20 + i * 62
+    last = i == len(stages) - 1
+    b += f'<rect x="{x}" y="{y}" width="{w}" height="52" rx="8" class="{"f-aura" if last else ("f-aura-soft" if i == 3 else "f-panel2")}"/>'
+    b += f'<text x="270" y="{y + 32}" text-anchor="middle" class="t-md {"f-bg" if last else "f-ink"}" font-weight="700">{st}</text>'
+    b += f'<path d="M{x + w + 6} {y + 26} H500" class="s-line" stroke-width="1" stroke-dasharray="3 4"/>'
+    b += text(510, y + 22, ch, "t-md f-ink")
+    b += text(510, y + 42, kpi.upper(), "t-sm f-ink3")
+b += '<path d="M102 304 C 44 262, 44 70, 92 40" class="s-aura" stroke-width="1.6" stroke-dasharray="5 5" fill="none" marker-end="url(#aa)"/>'
+b += '<text x="34" y="172" transform="rotate(-90 34 172)" text-anchor="middle" class="t-sm f-aura">REFERRALS</text>'
+figs["dm-funnel"] = svg(840, 340, b, "Marketing funnel with channels and metrics for each stage")
+
+# how search works
+b = ""
+steps = [("Crawl", "Googlebot follows links", "Sitemap, internal|links, robots.txt"),
+         ("Index", "Reads and stores pages", "noindex tags, canonicals,|thin content"),
+         ("Rank", "Picks the best answers", "Relevance, quality,|links, speed"),
+         ("Results", "What searchers see", "Titles, snippets,|map pack, AI answers")]
+for i, (t1, t2, fix) in enumerate(steps):
+    x = 20 + i * 190
+    b += box(x, 30, 160, 80, t1, t2, fill="f-aura-soft" if i == 2 else "f-panel", stroke="s-aura" if i == 2 else "s-line")
+    if i < 3:
+        b += arrow(x + 160, 70, x + 188, 70, aura=True)
+    b += text(x + 80, 140, "IF IT BREAKS, CHECK", "t-sm f-ink3", "middle")
+    f1, f2 = fix.split("|")
+    b += text(x + 80, 162, f1, "t-sm f-ink2", "middle")
+    b += text(x + 80, 180, f2, "t-sm f-ink2", "middle")
+figs["dm-search"] = svg(780, 196, b, "How search engines crawl, index and rank pages")
+
+# SERP anatomy
+b = '<rect x="20" y="10" width="470" height="470" rx="12" class="f-bg"/><rect x="20" y="10" width="470" height="470" rx="12" class="s-ink" stroke-width="1.2"/>'
+b += '<rect x="40" y="28" width="430" height="34" rx="17" class="f-panel2"/>'
+b += text(58, 50, "emergency plumber london ontario", "t-md f-ink")
+rows = []
+y = 78
+b += f'<rect x="40" y="{y}" width="430" height="58" rx="8" class="f-panel"/><rect x="40" y="{y}" width="430" height="58" rx="8" class="s-line"/>'
+b += text(54, y + 20, "Sponsored", "t-sm f-ink3") + f'<rect x="54" y="{y + 30}" width="250" height="9" rx="3" class="f-ink2"/><rect x="54" y="{y + 44}" width="330" height="6" rx="3" class="f-ink3"/>'
+rows.append((y + 29, "1  Ads (Google Ads, Local Services Ads)"))
+y = 146
+b += f'<rect x="40" y="{y}" width="430" height="70" rx="8" class="f-aura-soft"/>'
+b += text(54, y + 20, "AI Overview", "t-sm f-aura") + f'<rect x="54" y="{y + 30}" width="380" height="6" rx="3" class="f-ink3"/><rect x="54" y="{y + 42}" width="340" height="6" rx="3" class="f-ink3"/><rect x="54" y="{y + 54}" width="200" height="6" rx="3" class="f-ink3"/>'
+rows.append((y + 35, "2  AI answer that cites sources"))
+y = 226
+b += f'<rect x="40" y="{y}" width="430" height="110" rx="8" class="f-panel"/><rect x="40" y="{y}" width="430" height="110" rx="8" class="s-line"/>'
+b += f'<rect x="330" y="{y + 10}" width="130" height="90" rx="6" class="f-panel2"/>'
+for k in range(3):
+    b += f'<circle cx="{360 + k * 30}" cy="{y + 40 + (k % 2) * 25}" r="6" class="f-aura"/>'
+    b += f'<rect x="54" y="{y + 14 + k * 32}" width="160" height="8" rx="3" class="f-ink2"/><text x="54" y="{y + 36 + k * 32}" class="t-sm f-warn">★★★★★</text>'
+rows.append((y + 55, "3  Map pack (Google Business Profile)"))
+y = 346
+b += f'<rect x="54" y="{y}" width="200" height="6" rx="3" class="f-ink3"/>'
+b += f'<text x="54" y="{y + 24}" class="t-md f-aura" font-weight="700">Emergency Plumber London ON · 24/7</text>'
+b += f'<rect x="54" y="{y + 34}" width="380" height="6" rx="3" class="f-ink3"/><rect x="54" y="{y + 46}" width="300" height="6" rx="3" class="f-ink3"/>'
+rows.append((y + 20, "4  Organic result: URL, title tag, description"))
+y = 412
+for k in range(2):
+    b += f'<rect x="40" y="{y + k * 26}" width="430" height="22" rx="5" class="f-panel2"/><rect x="52" y="{y + 8 + k * 26}" width="{220 - k * 40}" height="6" rx="3" class="f-ink3"/>'
+rows.append((y + 22, "5  People also ask (questions to answer)"))
+for yy, lab in rows:
+    b += f'<path d="M476 {yy} H512" class="s-aura" stroke-width="1" stroke-dasharray="2 3"/><circle cx="512" cy="{yy}" r="3" class="f-aura"/>'
+    b += text(522, yy + 5, lab, "t-md f-ink2")
+figs["dm-serp"] = svg(820, 490, b, "Anatomy of a Google search results page")
+
+# topic cluster
+b = ""
+lines = [((240, 53), (290, 160)), ((240, 163), (290, 172)), ((240, 273), (290, 184)), ((400, 66), (380, 140)), ((400, 270), (380, 204))]
+for (x1, y1), (x2, y2) in lines:
+    b += f'<path d="M{x1} {y1} L{x2} {y2}" class="s-ink" stroke-width="1.2"/>'
+b += box(290, 140, 180, 64, "Pillar page", "Water heaters in London", fill="f-aura-soft", stroke="s-aura")
+b += f'<rect x="560" y="140" width="170" height="64" rx="12" class="f-aura"/>'
+b += text(645, 168, "Money page", "t-md f-bg", "middle") + text(645, 188, "/water-heaters/", "t-sm f-bg", "middle")
+b += arrow(470, 172, 558, 172, aura=True)
+for name, x, y in [("Tankless vs tank", 40, 30), ("What size do I need?", 40, 140), ("Making noise? 6 causes", 40, 250), ("How long do they last?", 300, 20), ("Rent or buy in Ontario?", 300, 270)]:
+    b += box(x, y, 200, 46, name, "", fill="f-panel", tcls="t-sm f-ink2", r=8)
+b += text(380, 340, "Every cluster links to the pillar and the money page; the pillar links back.", "t-md f-ink2", "middle")
+figs["dm-cluster"] = svg(760, 355, b, "Topic cluster with a pillar page, cluster articles and a money page")
+
+# scraping pipeline
+b = ""
+steps = [("1 Request", "requests.get(url)"), ("2 HTML", "<p class=\"price\">"), ("3 Select", "soup.select(\".price\")"), ("4 Clean", "trim, fix, dedupe"), ("5 Save", "CSV / Google Sheets")]
+for i, (t1, t2) in enumerate(steps):
+    x = 16 + i * 152
+    b += box(x, 30, 132, 76, t1, "", fill="f-aura-soft" if i == 2 else "f-panel", stroke="s-aura" if i == 2 else "s-line", tcls="t-md f-ink")
+    b += f'<text x="{x + 66}" y="128" text-anchor="middle" class="t-sm f-ink3" font-family="ui-monospace, Menlo, monospace">{e(t2)}</text>'
+    if i < 4:
+        b += arrow(x + 132, 68, x + 150, 68, aura=True)
+b += text(16, 170, "Rules at every step: robots.txt, terms of service, slow requests, no personal data you don't need.", "t-md f-ink2")
+figs["dm-scrape"] = svg(780, 186, b, "The five steps of web scraping")
+
+# content pillars stacked bar (to scale: 6.2 px per percent)
+b = text(30, 30, "A TYPICAL MONTHLY MIX", "t-sm f-ink3")
+mix = [("Educate", 35, "f-aura", "Tips, how-tos, myths"), ("People", 25, "f-aura-soft", "Team, behind scenes"), ("Proof", 20, "f-panel2", "Reviews, results"), ("Promote", 20, "f-ink3", "Offers, launches")]
+x = 30
+for name, pct, cls, ex in mix:
+    w = pct * 6.2
+    b += f'<rect x="{x:.1f}" y="46" width="{w - 3:.1f}" height="56" rx="6" class="{cls}"/>'
+    b += f'<text x="{x + 12:.1f}" y="80" class="t-md {"f-bg" if cls in ("f-aura", "f-ink3") else "f-ink"}" font-weight="700">{pct}%</text>'
+    b += text(x + 2, 130, name.upper(), "t-sm f-ink")
+    b += text(x + 2, 150, ex, "t-sm f-ink3")
+    x += w
+b += f'<path d="M30 112 V118 M{30 + 620} 112 V118" class="s-line" stroke-width="1"/>'
+figs["dm-pillars"] = svg(680, 168, b, "Content pillar mix: educate 35 percent, people 25, proof 20, promote 20")
+
+# tracking flow
+b = ""
+b += box(20, 40, 170, 80, "UTM link", "?utm_source=instagram", fill="f-panel")
+b += box(230, 40, 150, 80, "Visit", "GA4 session + source", fill="f-panel")
+b += box(420, 40, 150, 80, "Key event", "lead · call · order", fill="f-aura-soft", stroke="s-aura")
+b += box(610, 40, 150, 80, "Dashboard", "Looker Studio", fill="f-aura", stroke="s-aura", tcls="t-md f-bg")
+b = b.replace('<text x="685.0" y="96.0" text-anchor="middle" class="t-sm f-ink3">', '<text x="685.0" y="96.0" text-anchor="middle" class="t-sm f-bg">')
+b += arrow(190, 80, 228, 80, aura=True) + arrow(380, 80, 418, 80, aura=True) + arrow(570, 80, 608, 80, aura=True)
+b += box(400, 170, 190, 64, "Tag Manager", "phone click, form submit", fill="f-panel2")
+b += arrow(495, 170, 495, 122)
+b += box(610, 170, 150, 64, "Also connect", "Search Console, Ads", fill="f-panel2")
+b += arrow(685, 170, 685, 122)
+figs["dm-tracking"] = svg(780, 250, b, "Tracking flow from UTM links to GA4 key events to a Looker Studio dashboard")
+
+# client lifecycle
+b = ""
+nodes = ["Prospect", "Mini audit", "Call + proposal", "Onboard", "Deliver", "Report", "Renew + upsell"]
+cx, cy, rx, ry = 380, 175, 280, 130
+pos = []
+for i, n in enumerate(nodes):
+    a = _m.pi + i * (2 * _m.pi / len(nodes))
+    pos.append((cx + rx * _m.cos(a), cy + ry * _m.sin(a)))
+for i in range(len(nodes)):
+    x1, y1 = pos[i]
+    x2, y2 = pos[(i + 1) % len(nodes)]
+    if i == len(nodes) - 1:
+        x2, y2 = pos[4]
+    dx, dy = x2 - x1, y2 - y1
+    d = (dx * dx + dy * dy) ** 0.5
+    sx, sy = x1 + dx / d * 70, y1 + dy / d * 30
+    ex, ey = x2 - dx / d * 72, y2 - dy / d * 32
+    b += arrow(round(sx), round(sy), round(ex), round(ey), aura=i >= 4, dash=i == len(nodes) - 1 and False)
+for i, (x, y) in enumerate(pos):
+    hot = i >= 4
+    b += box(round(x - 66), round(y - 24), 132, 48, nodes[i], "", fill="f-aura-soft" if hot else "f-panel", stroke="s-aura" if hot else "s-line", tcls="t-sm f-ink", r=10)
+b += text(cx, cy - 6, "Retention lives", "t-md f-ink2", "middle") + text(cx, cy + 16, "in the coloured loop", "t-md f-ink2", "middle")
+figs["dm-lifecycle"] = svg(760, 350, b, "Agency client lifecycle from prospect to renewal")
+
 for name, s in figs.items():
     (OUT / f"{name}.svg").write_text(s)
 print(f"wrote {len(figs)} figures")

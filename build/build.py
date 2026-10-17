@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 PUBLIC = ROOT / "public"
 SITE = "https://schoolaura.com"
-COURSE_FILES = ["dropshipping.md", "ai-mastery.md", "website-builders.md"]
+COURSE_FILES = ["dropshipping.md", "ai-mastery.md", "digital-marketing.md", "website-builders.md"]
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
 
@@ -148,6 +148,9 @@ PRODUCTS = [
     {"slug": "ai-mastery", "href": "/courses/ai-mastery/", "aura": "ai", "icon": "AI", "cat": "ai",
      "title": "AI Mastery",
      "desc": "Claude, ChatGPT, Higgsfield, ElevenLabs, AI video, full-stack apps and MCP, explained simply."},
+    {"slug": "digital-marketing", "href": "/courses/digital-marketing/", "aura": "mkt", "icon": "DM", "cat": "marketing business",
+     "title": "Digital Marketing Agency",
+     "desc": "SEO, web scraping, social media, ads, analytics and email, then start and run your own agency."},
     {"slug": "recipe-vault", "href": "/recipe-vault/", "aura": "vault", "icon": "RV", "cat": "food",
      "title": "The Recipe Vault",
      "desc": "Four printable books: Cake Studio, Keto Kitchen, Know Your Food and a 7-day food plan."},
@@ -155,7 +158,7 @@ PRODUCTS = [
      "title": "Website Templates",
      "desc": "Six ready-made websites to rebrand and publish, plus a 7-day guide to selling redesigns."},
 ]
-AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)"}
+AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)", "mkt": "var(--c-mkt)"}
 
 
 def product_card(p, meta, progress=None):
@@ -209,6 +212,7 @@ def head(title, desc, path, aura="drop"):
       <a href="/courses/"{cur('/courses/') if path == '/courses/' else ''}>Classroom</a>
       <a href="/courses/dropshipping/"{cur('/courses/dropshipping')}>Dropshipping</a>
       <a href="/courses/ai-mastery/"{cur('/courses/ai-mastery')}>AI Mastery</a>
+      <a href="/courses/digital-marketing/"{cur('/courses/digital-marketing')}>Marketing</a>
       <a href="/recipe-vault/"{cur('/recipe-vault')}>Recipe Vault</a>
       <a href="/templates/"{cur('/templates')}{cur('/courses/website-builders')}>Templates</a>
     </nav>
@@ -262,7 +266,7 @@ def course_page(c, cover_slug=None):
     data_js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     cover = cover_slug or c["slug"]
     extra_top = c.get("extraOverview", "")
-    icon = {"drop": "DS", "ai": "AI", "web": "WB"}.get(c["aura"], "SA")
+    icon = {"drop": "DS", "ai": "AI", "web": "WB", "mkt": "DM"}.get(c["aura"], "SA")
     body = f"""
 <div class="course-head">
   <div class="wrap">
@@ -418,13 +422,14 @@ def cards_html(courses, tpl_count, vault, with_progress=False):
 
 def home_page(courses, tpl_count, vault):
     by = {c["slug"]: c for c in courses}
-    drop, ai, web = by["dropshipping"], by["ai-mastery"], by["website-builders"]
+    drop, ai, web, mkt = by["dropshipping"], by["ai-mastery"], by["website-builders"], by["digital-marketing"]
     rows = []
-    for c, sw in ((drop, "var(--c-drop)"), (ai, "var(--c-ai)"), (web, "var(--c-web)")):
+    for c, sw in ((drop, "var(--c-drop)"), (ai, "var(--c-ai)"), (mkt, "var(--c-mkt)"), (web, "var(--c-web)")):
         H = c["totalHours"]
         rows.append(f'<tr><td><span class="swatch" style="background:{sw}"></span><a class="link" href="/courses/{c["slug"]}/">{html.escape(c["title"])}</a></td><td>{len(c["days"])}</td><td>{fmt_h(H)} h</td><td>{math.ceil(H/3)} days</td><td>{math.ceil(H/4)} days</td></tr>')
     faq_hours = (f"Dropshipping is {len(drop['days'])} lessons, about {fmt_h(drop['totalHours'])} hours: {math.ceil(drop['totalHours']/4)} days at 4 hours a day or {math.ceil(drop['totalHours']/3)} days at 3 hours a day. "
                  f"AI Mastery is {len(ai['days'])} lessons, about {fmt_h(ai['totalHours'])} hours ({math.ceil(ai['totalHours']/4)}–{math.ceil(ai['totalHours']/3)} days). "
+                 f"Digital Marketing Agency is {len(mkt['days'])} lessons, about {fmt_h(mkt['totalHours'])} hours ({math.ceil(mkt['totalHours']/4)}–{math.ceil(mkt['totalHours']/3)} days). "
                  f"The website guide is {len(web['days'])} lessons, about {fmt_h(web['totalHours'])} hours.")
     frag = (CONTENT / "pages" / "home.html").read_text()
     for k, v in {"CARDS": cards_html(courses, tpl_count, vault), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours}.items():
