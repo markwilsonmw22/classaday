@@ -1,24 +1,21 @@
-/* Recipe Vault: pick volumes and download them */
+/* Recipe Vault: pick books and download them */
 (function () {
   var base = "/downloads/recipe-vault/schoolaura-";
   var boxes = Array.prototype.slice.call(document.querySelectorAll(".pick input"));
   var label = document.getElementById("vault-count");
   var btn = document.getElementById("vault-dl");
   if (!btn) return;
-
   function chosen() { return boxes.filter(function (b) { return b.checked; }).map(function (b) { return b.value; }); }
   function update() {
     var n = chosen().length;
-    label.textContent = n === 4 ? "All 4 volumes selected" : n === 0 ? "Choose at least one volume" : n + (n === 1 ? " volume" : " volumes") + " selected";
+    label.textContent = n === 4 ? "All 4 books selected" : n === 0 ? "Choose at least one book" : n + (n === 1 ? " book" : " books") + " selected";
     btn.disabled = n === 0;
   }
   function fetchFile(slug) {
     var a = document.createElement("a");
     a.href = base + slug + ".pdf";
     a.download = "schoolaura-" + slug + ".pdf";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    document.body.appendChild(a); a.click(); a.remove();
   }
   boxes.forEach(function (b) { b.addEventListener("change", update); });
   btn.addEventListener("click", function () {

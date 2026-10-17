@@ -10,7 +10,7 @@ from pypdf import PdfReader, PdfWriter
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "vault-src"
 OUT = ROOT / "public" / "downloads" / "recipe-vault"
-FONTS = (ROOT / "public" / "assets" / "fonts").as_uri()
+FONTS = (ROOT / "vault-src" / "fonts").as_uri()
 sys.path.insert(0, str(SRC))
 import art  # noqa: E402
 

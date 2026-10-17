@@ -15,10 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 PUBLIC = ROOT / "public"
 SITE = "https://schoolaura.com"
-FONTS = ("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800"
-         "&family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..700&family=Martian+Mono:wght@300..600&display=swap")
 COURSE_FILES = ["dropshipping.md", "ai-mastery.md", "website-builders.md"]
-AURA_VAR = {"drop": "var(--a-drop)", "vault": "var(--a-vault)", "ai": "var(--a-ai)", "web": "var(--a-web)"}
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
 
@@ -140,10 +137,49 @@ def parse_course(path: Path):
     return meta
 
 
+
+
+# ---------------------------------------------------------------- products shown as cards
+
+PRODUCTS = [
+    {"slug": "dropshipping", "href": "/courses/dropshipping/", "aura": "drop", "icon": "DS", "cat": "business",
+     "title": "Dropshipping: Zero to First Sales",
+     "desc": "Pick a niche, prove a product, build a Shopify store and run your first ads, one day at a time."},
+    {"slug": "ai-mastery", "href": "/courses/ai-mastery/", "aura": "ai", "icon": "AI", "cat": "ai",
+     "title": "AI Mastery",
+     "desc": "Claude, ChatGPT, Higgsfield, ElevenLabs, AI video, full-stack apps and MCP, explained simply."},
+    {"slug": "recipe-vault", "href": "/recipe-vault/", "aura": "vault", "icon": "RV", "cat": "food",
+     "title": "The Recipe Vault",
+     "desc": "Four printable books: Cake Studio, Keto Kitchen, Know Your Food and a 7-day food plan."},
+    {"slug": "website-builders", "href": "/templates/", "aura": "web", "icon": "WB", "cat": "web business",
+     "title": "Website Templates",
+     "desc": "Six ready-made websites to rebrand and publish, plus a 7-day guide to selling redesigns."},
+]
+AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)"}
+
+
+def product_card(p, meta, progress=None):
+    prog = ""
+    if progress:
+        prog = f'<div class="progress" data-progress="{p["slug"]}" data-total="{progress}"><div class="track"><i></i></div><span>0%</span></div>'
+    meta_html = "".join(f'<span class="{"dot" if i else ""}">{m}</span>' for i, m in enumerate(meta))
+    find = html.escape((p["title"] + " " + p["desc"] + " " + p["cat"]).lower())
+    return f"""<a class="card" href="{p['href']}" data-find="{find}" data-cat="{p['cat']}">
+  <div class="cover"><img src="/assets/img/covers/{p['slug']}.webp" alt="" width="1280" height="720" loading="lazy"></div>
+  <div class="card-body">
+    <div class="card-title"><span class="icon-sq" style="background:{AURA[p['aura']]}">{p['icon']}</span>{html.escape(p['title'])}</div>
+    <p class="card-desc">{html.escape(p['desc'])}</p>
+    {prog if progress else f'<div class="card-meta">{meta_html}</div>'}
+  </div>
+</a>"""
+
+
 # ---------------------------------------------------------------- page shell
 
-def head(title, desc, path, aura="drop", extra=""):
+def head(title, desc, path, aura="drop"):
     url = SITE + path
+    def cur(prefix):
+        return ' aria-current="page"' if path.startswith(prefix) else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -159,30 +195,26 @@ def head(title, desc, path, aura="drop", extra=""):
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{SITE}/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0d0c0b">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="/assets/fonts/bodoni-moda.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/fonts.css">
 <link rel="stylesheet" href="/assets/css/site.css">
-<script>try{{var t=localStorage.getItem("sa.theme");if(t)document.documentElement.setAttribute("data-theme",t)}}catch(e){{}}</script>
-{extra}
 </head>
 <body data-aura="{aura}">
-<a href="#main" class="sr-skip" style="position:absolute;left:-9999px">Skip to content</a>
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="SchoolAura home">School<i>Aura</i><span class="dot"></span></a>
+    <a class="brand" href="/" aria-label="SchoolAura home"><span class="mark" aria-hidden="true"></span>schoolaura</a>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a href="/#catalogue">Catalogue</a>
-      <a href="/courses/dropshipping/"{' aria-current="page"' if path.startswith('/courses/dropshipping') else ''}>Dropshipping</a>
-      <a href="/courses/ai-mastery/"{' aria-current="page"' if path.startswith('/courses/ai-mastery') else ''}>AI Mastery</a>
-      <a href="/recipe-vault/"{' aria-current="page"' if path.startswith('/recipe-vault') else ''}>Recipe Vault</a>
-      <a href="/templates/"{' aria-current="page"' if path.startswith('/templates') or path.startswith('/courses/website') else ''}>Templates</a>
+      <a href="/courses/"{cur('/courses/') if path == '/courses/' else ''}>Classroom</a>
+      <a href="/courses/dropshipping/"{cur('/courses/dropshipping')}>Dropshipping</a>
+      <a href="/courses/ai-mastery/"{cur('/courses/ai-mastery')}>AI Mastery</a>
+      <a href="/recipe-vault/"{cur('/recipe-vault')}>Recipe Vault</a>
+      <a href="/templates/"{cur('/templates')}{cur('/courses/website-builders')}>Templates</a>
     </nav>
-    <div class="head-actions">
-      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to light mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
-      <button class="icon-btn menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="head-right">
+      <a class="btn sm" href="/courses/">Start learning</a>
+      <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
 </header>
@@ -194,17 +226,12 @@ def foot(extra_js=""):
     return f"""</main>
 <footer class="site-foot">
   <div class="wrap">
-    <div>
-      <p class="big">School<i style="color:var(--aura)">Aura</i></p>
-      <p style="margin-top:12px;max-width:34ch">A small school for useful skills. Self-paced, plain English, one day at a time.</p>
-    </div>
-    <div><h5>Programs</h5><ul><li><a href="/courses/dropshipping/">Dropshipping</a></li><li><a href="/courses/ai-mastery/">AI Mastery</a></li><li><a href="/recipe-vault/">Recipe Vault</a></li><li><a href="/templates/">Website templates</a></li></ul></div>
-    <div><h5>Learn</h5><ul><li><a href="/#how">How a day works</a></li><li><a href="/courses/website-builders/">Website builder guide</a></li><li><a href="/#faq">Questions</a></li></ul></div>
-    <div><h5>Membership</h5><ul><li><a href="/#membership">Opening soon</a></li></ul></div>
-    <div class="legal"><span>© <span data-year>2026</span> SchoolAura. All rights reserved.</span><span>London, Ontario, Canada</span></div>
+    <span>© <span data-year>2026</span> SchoolAura · London, Ontario</span>
+    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
   </div>
 </footer>
 <script src="/assets/js/site.js"></script>
+<script>document.querySelectorAll("[data-year]").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
 {extra_js}
 </body>
 </html>
@@ -217,7 +244,7 @@ def fmt_h(h):
 
 # ---------------------------------------------------------------- course page
 
-def course_page(c):
+def course_page(c, cover_slug=None):
     days_n = len(c["days"])
     H = c["totalHours"]
     at3, at4 = math.ceil(H / 3), math.ceil(H / 4)
@@ -225,175 +252,185 @@ def course_page(c):
     mods = []
     for m in c["modules"]:
         mh = sum(d["hours"] for d in c["days"] if d["n"] in m["days"])
-        items = "".join(
-            f'<li><a href="#day-{d["n"]}"><span class="dn">DAY {d["n"]:02d}</span><span>{html.escape(d["title"])}</span><span class="dh">{fmt_h(d["hours"])} H</span></a></li>'
-            for d in c["days"] if d["n"] in m["days"])
-        rng = f"Days {m['days'][0]}–{m['days'][-1]}" if len(m["days"]) > 1 else f"Day {m['days'][0]}"
-        mods.append(f'<details class="module"{" open" if m["n"] == 1 else ""}><summary><span class="mn">MODULE {m["n"]:02d}</span><span class="mt">{html.escape(m["title"])}</span><span class="mh">{rng} · {fmt_h(mh)} H</span></summary><p class="msum">{html.escape(m["summary"])}</p><ol>{items}</ol></details>')
+        items = "".join(f'<li><a href="#day-{d["n"]}"><span>Day {d["n"]}: {html.escape(d["title"])}</span><small>{fmt_h(d["hours"])} h</small></a></li>'
+                        for d in c["days"] if d["n"] in m["days"])
+        rng = f"{len(m['days'])} lessons" if len(m["days"]) > 1 else "1 lesson"
+        mods.append(f'<details class="mod"{" open" if m["n"] == 1 else ""}><summary><span>Module {m["n"]}: {html.escape(m["title"])}</span><small>{rng} · {fmt_h(mh)} h</small></summary><p class="msum">{html.escape(m["summary"])}</p><ol>{items}</ol></details>')
     who = "".join(f"<li>{md_inline(x)}</li>" for x in c["forWho"])
     need = "".join(f"<li>{md_inline(x)}</li>" for x in c["need"])
-
-    data = {k: c[k] for k in ("slug", "code", "title")}
-    data["days"] = c["days"]
-    data["modules"] = c["modules"]
+    data = {"slug": c["slug"], "code": c["code"], "title": c["title"], "days": c["days"], "modules": c["modules"]}
     data_js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-
+    cover = cover_slug or c["slug"]
     extra_top = c.get("extraOverview", "")
-
+    icon = {"drop": "DS", "ai": "AI", "web": "WB"}.get(c["aura"], "SA")
     body = f"""
-<section class="c-hero">
+<div class="course-head">
   <div class="wrap">
-    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">SchoolAura</a><span>/</span><a href="/#catalogue">Catalogue</a><span>/</span><span style="color:var(--aura)">{c['code']}</span></nav>
-    <h1 class="display reveal">{c['titleHtml']}</h1>
-    <p class="lede reveal d1">{c['lede']}</p>
-    <div class="stats reveal d2">
-      <div><b>{days_n}</b><span>daily lessons</span></div>
-      <div><b>≈{fmt_h(H)} h</b><span>guided work</span></div>
-      <div><b>{at3} days</b><span>at 3 hours a day</span></div>
-      <div><b>{at4} days</b><span>at 4 hours a day</span></div>
-    </div>
+    <span class="icon-sq">{icon}</span>
+    <div><h1>{html.escape(c['title'])}</h1><p class="sub">{c['code']} · {days_n} lessons · about {fmt_h(H)} hours</p></div>
+  </div>
+  <div class="wrap">
     <nav class="tabs" aria-label="Course sections">
-      <a href="#overview" data-view="overview" aria-current="true">Overview</a>
-      <a href="#plan" data-view="plan" aria-current="false">Plan &amp; calendar</a>
-      <a href="#day-1" data-view="day" aria-current="false">Lessons</a>
+      <a href="#day-1" data-view="day" aria-current="false">Classroom</a>
+      <a href="#plan" data-view="plan" aria-current="false">Calendar</a>
+      <a href="#about" data-view="about" aria-current="true">About</a>
     </nav>
   </div>
-</section>
+</div>
 
 <div class="wrap">
-  <section class="view" id="v-overview">
-    <div class="ov-grid">
-      <div>
+  <section class="view" id="v-about">
+    <div class="two-col">
+      <div class="panel panel-pad about">
         {extra_top}
-        <div class="ov-block">
-          <p class="eyebrow">What you'll be able to do</p>
-          <h2 style="margin-top:12px">{html.escape(c['outcome'])}</h2>
-          <ul class="learn-list">{learn}</ul>
+        <div class="block">
+          <h2>About this course</h2>
+          <p class="muted" style="font-size:1.05rem">{c['lede']}</p>
         </div>
-        <div class="ov-block">
-          <p class="eyebrow">Curriculum</p>
-          <h2 style="margin-top:12px">{len(c['modules'])} modules, {days_n} days</h2>
-          <div class="modules">{''.join(mods)}</div>
+        <div class="block">
+          <h2>What you'll be able to do</h2>
+          <ul class="learn">{learn}</ul>
         </div>
-        <div class="ov-block" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px">
-          <div><p class="eyebrow">Who it's for</p><div class="prose" style="margin-top:14px"><ul>{who}</ul></div></div>
-          <div><p class="eyebrow">What you'll need</p><div class="prose" style="margin-top:14px"><ul>{need}</ul></div></div>
+        <div class="block">
+          <h2>Curriculum</h2>
+          <p class="muted" style="margin-bottom:14px">{len(c['modules'])} modules · {days_n} lessons · about {fmt_h(H)} hours. Each lesson is one day of about {H / days_n:.1f} hours.</p>
+          <div class="mods">{''.join(mods)}</div>
+        </div>
+        <div class="block" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+          <div><h2>Who it's for</h2><ul class="bullets">{who}</ul></div>
+          <div><h2>What you'll need</h2><ul class="bullets">{need}</ul></div>
         </div>
       </div>
-      <aside>
-        <div class="side-card">
-          <p class="eyebrow">{c['code']}</p>
-          <h3 style="margin-top:8px">{html.escape(c['title'])}</h3>
-          <dl>
-            <div><dt>Daily lessons</dt><dd>{days_n}</dd></div>
-            <div><dt>Guided hours</dt><dd>≈ {fmt_h(H)} h</dd></div>
-            <div><dt>Average day</dt><dd>{H / days_n:.1f} h</dd></div>
-            <div><dt>At 3 h a day</dt><dd>{at3} days</dd></div>
-            <div><dt>At 4 h a day</dt><dd>{at4} days</dd></div>
+      <aside class="panel side-card sticky">
+        <div class="cover"><img src="/assets/img/covers/{cover}.webp" alt="" width="1280" height="720"></div>
+        <div class="body">
+          <h3>{html.escape(c['title'])}</h3>
+          <div class="stat-row"><div><b>{days_n}</b><span>lessons</span></div><div><b>{fmt_h(H)} h</b><span>total</span></div><div><b>{at4}–{at3}</b><span>days</span></div></div>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
+          <a class="btn block" id="continue" href="#day-1">Start course</a>
+          <a class="btn light block" href="#plan">Set your start date</a>
+          <dl class="kv">
+            <div><dt>At 3 hours a day</dt><dd>{at3} days</dd></div>
+            <div><dt>At 4 hours a day</dt><dd>{at4} days</dd></div>
             <div><dt>Level</dt><dd>{c['level']}</dd></div>
-            <div><dt>Your progress</dt><dd id="ov-progress">0 of {days_n} days</dd></div>
+            <div><dt>Completed</dt><dd id="done-count">0 of {days_n}</dd></div>
           </dl>
-          <a class="btn aura" id="ov-continue" href="#day-1">Start Day 1 <span class="arr">→</span></a>
-          <a class="btn ghost" href="#plan" style="margin-top:10px">Set your start date</a>
         </div>
       </aside>
     </div>
   </section>
 
-  <section class="view" id="v-plan" hidden>
-    <div class="plan-grid">
-      <form class="form-card" id="plan-form" onsubmit="return false">
-        <div><p class="eyebrow">Your schedule</p><h3 style="margin-top:8px">Plan it around your week</h3></div>
-        <div class="field"><label for="plan-start">Start date</label><input type="date" id="plan-start" name="start"></div>
-        <div class="field"><span class="lbl" id="study-lbl">Study days</span>
-          <div class="seg" role="radiogroup" aria-labelledby="study-lbl">
-            <input type="radio" name="study" id="sd-all" value="all"><label for="sd-all">Every day</label>
-            <input type="radio" name="study" id="sd-ms" value="mon-sat"><label for="sd-ms">Mon–Sat</label>
-            <input type="radio" name="study" id="sd-wd" value="weekdays"><label for="sd-wd">Mon–Fri</label>
-          </div>
+  <section class="view" id="v-day" hidden>
+    <div class="two-col left">
+      <aside class="panel lesson-nav sticky">
+        <div class="top">
+          <h3>{html.escape(c['title'])}</h3>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
         </div>
-        <div class="field"><span class="lbl" id="pace-lbl">Pace</span>
-          <div class="seg" role="radiogroup" aria-labelledby="pace-lbl">
-            <input type="radio" name="pace" id="pc-1" value="1"><label for="pc-1">1 lesson a day</label>
-            <input type="radio" name="pace" id="pc-2" value="2"><label for="pc-2">1 lesson / 2 days</label>
-          </div>
-        </div>
-        <div class="summary-box">
-          <div><span>Finish date</span><b id="sum-finish">—</b></div>
-          <div><span>Length</span><b id="sum-span">—</b></div>
-          <div><span>Daily load</span><b id="sum-daily">—</b></div>
-          <div class="progress-line" style="display:grid"><div style="display:flex;justify-content:space-between"><span>Progress</span><b id="sum-progress">—</b></div><div class="bar"><i id="sum-bar" style="width:0%"></i></div></div>
-        </div>
-        <p class="muted" style="font-size:.82rem">Progress is saved in this browser. <button type="button" class="textlink" data-reset style="background:none;border:0;padding:0;font:inherit;cursor:pointer">Reset progress</button></p>
-      </form>
-      <div>
-        <div class="callout-row" id="today-card" style="display:block"></div>
-        <div class="cal" style="margin-top:24px">
-          <div class="cal-head"><h3 id="cal-title">—</h3>
-            <div class="cal-nav"><button class="icon-btn" type="button" data-cal="prev" aria-label="Previous month">←</button><button class="btn ghost sm" type="button" data-cal="today">Today</button><button class="icon-btn" type="button" data-cal="next" aria-label="Next month">→</button></div>
-          </div>
-          <div class="cal-grid" id="cal-grid"></div>
-          <div class="cal-legend"><span><i style="background:color-mix(in srgb,var(--aura) 40%,transparent)"></i>Scheduled</span><span><i style="background:color-mix(in srgb,var(--ok) 50%,transparent)"></i>Done</span><span><i style="background:color-mix(in srgb,var(--late) 50%,transparent)"></i>Behind</span></div>
-        </div>
-        <div class="agenda"><h3>Coming up</h3><ol id="agenda-list"></ol></div>
-      </div>
+        <div class="jump"><label for="jump" class="muted" style="font-size:.85rem;font-weight:700">Jump to a lesson</label><select id="jump"></select></div>
+        <nav class="list" id="lesson-list" aria-label="Lessons"></nav>
+      </aside>
+      <article class="panel panel-pad" id="lesson"></article>
     </div>
   </section>
 
-  <section class="view" id="v-day" hidden>
-    <div class="reader">
-      <aside class="toc" id="toc" aria-label="All lessons"></aside>
-      <div style="min-width:0">
-        <div class="field toc-select" style="margin-bottom:28px"><label for="toc-jump">Jump to a day</label><select id="toc-jump"></select></div>
-        <article id="day-body"></article>
+  <section class="view" id="v-plan" hidden>
+    <div class="two-col">
+      <div style="display:grid;gap:20px;min-width:0">
+        <div class="panel panel-pad today-card" id="today-card"></div>
+        <div class="panel">
+          <div class="cal-head"><h3 id="cal-title">Calendar</h3>
+            <div class="cal-nav"><button class="icon-btn" type="button" data-cal="prev" aria-label="Previous month">‹</button><button class="btn light sm" type="button" data-cal="today">Today</button><button class="icon-btn" type="button" data-cal="next" aria-label="Next month">›</button></div>
+          </div>
+          <div class="cal-grid" id="cal-grid"></div>
+          <div class="cal-legend"><span><i style="background:var(--aura)"></i>Scheduled</span><span><i style="background:var(--ok)"></i>Done</span><span><i style="background:var(--late)"></i>Behind</span></div>
+        </div>
+        <div class="panel"><div class="cal-head"><h3>Coming up</h3></div><ol class="agenda" id="agenda"></ol></div>
       </div>
+      <aside class="panel panel-pad sticky">
+        <form class="form-grid" id="plan-form" onsubmit="return false">
+          <div><h3 style="font-size:1.1rem">Your schedule</h3><p class="muted" style="font-size:.9rem;margin-top:4px">Change anything and the calendar updates.</p></div>
+          <div class="field"><label for="plan-start">Start date</label><input type="date" id="plan-start" name="start"></div>
+          <div class="field"><span class="lbl" id="study-lbl">Study days</span>
+            <div class="seg" role="radiogroup" aria-labelledby="study-lbl">
+              <input type="radio" name="study" id="sd-all" value="all"><label for="sd-all">Every day</label>
+              <input type="radio" name="study" id="sd-ms" value="mon-sat"><label for="sd-ms">Mon–Sat</label>
+              <input type="radio" name="study" id="sd-wd" value="weekdays"><label for="sd-wd">Mon–Fri</label>
+            </div>
+          </div>
+          <div class="field"><span class="lbl" id="pace-lbl">Pace</span>
+            <div class="seg" role="radiogroup" aria-labelledby="pace-lbl">
+              <input type="radio" name="pace" id="pc-1" value="1"><label for="pc-1">1 lesson a day</label>
+              <input type="radio" name="pace" id="pc-2" value="2"><label for="pc-2">1 every 2 days</label>
+            </div>
+          </div>
+          <dl class="kv">
+            <div><dt>Finish date</dt><dd id="sum-finish">—</dd></div>
+            <div><dt>Length</dt><dd id="sum-span">—</dd></div>
+            <div><dt>Per study day</dt><dd id="sum-daily">—</dd></div>
+          </dl>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
+          <p class="muted" style="font-size:.85rem">Progress is saved on this device. <button type="button" class="link" data-reset style="background:none;border:0;padding:0;font:inherit;cursor:pointer">Reset progress</button></p>
+        </form>
+      </aside>
     </div>
   </section>
 </div>
 """
-    page = head(f"{c['title']} · {c['code']} · SchoolAura", c["metaDescription"], f"/courses/{c['slug']}/", c["aura"])
-    page += body
-    page += foot(f'<script>window.COURSE = {data_js};</script>\n<script src="/assets/js/course.js"></script>')
-    return page
+    page = head(f"{c['title']} · SchoolAura", c["metaDescription"], f"/courses/{c['slug']}/", c["aura"])
+    return page + body + foot(f'<script>window.COURSE = {data_js};</script>\n<script src="/assets/js/course.js"></script>')
 
 
-# ---------------------------------------------------------------- home + other pages
+# ---------------------------------------------------------------- pages
 
-def home_page(courses, tpl_count):
+def vault_numbers():
+    from pypdf import PdfReader
+    rep, total = {}, 0
+    vdir = PUBLIC / "downloads" / "recipe-vault"
+    for slug in ("cake-studio", "keto-kitchen", "know-your-food", "simple-quick", "recipe-vault-complete"):
+        f = vdir / f"schoolaura-{slug}.pdf"
+        n = len(PdfReader(f).pages) if f.exists() else 0
+        key = "complete" if slug == "recipe-vault-complete" else slug
+        rep[f"P_{key}"] = str(n)
+        rep[f"S_{key}"] = f"{max(1, round(f.stat().st_size / 1024))} KB" if f.exists() else ""
+        if key != "complete":
+            total += n
+    rep["TOTAL_PAGES"] = str(total)
+    rep["TOTAL_RECIPES"] = str(sum(len(re.findall(r"^::: recipe", (ROOT / "vault-src" / m).read_text(), re.M)) for m in ("cake-studio.md", "keto-kitchen.md", "simple-quick.md")))
+    return rep
+
+
+def cards_html(courses, tpl_count, vault, with_progress=False):
+    by = {c["slug"]: c for c in courses}
+    out = []
+    for p in PRODUCTS:
+        if p["slug"] in by:
+            c = by[p["slug"]]
+            meta = [f"{len(c['days'])} lessons", f"{fmt_h(c['totalHours'])} hours", "<b>Free in early access</b>"]
+            out.append(product_card(p, meta, len(c["days"]) if with_progress else None))
+        elif p["slug"] == "recipe-vault":
+            out.append(product_card(p, ["4 PDF books", f"{vault['TOTAL_PAGES']} pages", "<b>Instant download</b>"]))
+        else:
+            web = by.get("website-builders")
+            out.append(product_card(p, [f"{tpl_count} templates", f"{len(web['days'])}-lesson guide" if web else "guide", "<b>Bulk ZIP</b>"]))
+    return "\n".join(out)
+
+
+def home_page(courses, tpl_count, vault):
     by = {c["slug"]: c for c in courses}
     drop, ai, web = by["dropshipping"], by["ai-mastery"], by["website-builders"]
-    total_days = sum(len(c["days"]) for c in courses)
-    total_hours = sum(c["totalHours"] for c in courses)
-    hd = next(d for d in drop["days"] if d["n"] == 8)
-    tasks = []
-    for i, t in enumerate(hd["tasks"][:4]):
-        on = i < 2
-        text = re.sub(r"<[^>]+>", "", t["html"])
-        if len(text) > 62:
-            text = text[:60].rsplit(" ", 1)[0] + "…"
-        tasks.append(f'<li class="{"on" if on else ""}"><span class="box">{"✓" if on else ""}</span><span class="t">{html.escape(text)}</span><span class="m">{t["mins"]}m</span></li>')
     rows = []
-    for c, sw in ((drop, "var(--a-drop)"), (ai, "var(--a-ai)"), (web, "var(--a-web)")):
+    for c, sw in ((drop, "var(--c-drop)"), (ai, "var(--c-ai)"), (web, "var(--c-web)")):
         H = c["totalHours"]
-        rows.append(f'<tr><td><span class="sw" style="background:{sw}"></span><a href="/courses/{c["slug"]}/">{html.escape(c["title"])}</a></td><td class="big">{len(c["days"])}</td><td class="big">{fmt_h(H)} h</td><td>{math.ceil(H/3)} days</td><td>{math.ceil(H/4)} days</td></tr>')
-    rows.append('<tr><td><span class="sw" style="background:var(--a-vault)"></span><a href="/recipe-vault/">Recipe Vault</a></td><td class="big">4</td><td colspan="3" class="muted">Downloadable books. Read and cook at your own pace.</td></tr>')
-    faq_hours = (f"Dropshipping is {len(drop['days'])} daily lessons, about {fmt_h(drop['totalHours'])} hours in total: roughly {math.ceil(drop['totalHours']/4)} days at 4 hours a day or {math.ceil(drop['totalHours']/3)} days at 3 hours a day. "
+        rows.append(f'<tr><td><span class="swatch" style="background:{sw}"></span><a class="link" href="/courses/{c["slug"]}/">{html.escape(c["title"])}</a></td><td>{len(c["days"])}</td><td>{fmt_h(H)} h</td><td>{math.ceil(H/3)} days</td><td>{math.ceil(H/4)} days</td></tr>')
+    faq_hours = (f"Dropshipping is {len(drop['days'])} lessons, about {fmt_h(drop['totalHours'])} hours: {math.ceil(drop['totalHours']/4)} days at 4 hours a day or {math.ceil(drop['totalHours']/3)} days at 3 hours a day. "
                  f"AI Mastery is {len(ai['days'])} lessons, about {fmt_h(ai['totalHours'])} hours ({math.ceil(ai['totalHours']/4)}–{math.ceil(ai['totalHours']/3)} days). "
-                 f"The Website Builders guide is {len(web['days'])} lessons, about {fmt_h(web['totalHours'])} hours.")
+                 f"The website guide is {len(web['days'])} lessons, about {fmt_h(web['totalHours'])} hours.")
     frag = (CONTENT / "pages" / "home.html").read_text()
-    rep = {
-        "TOTAL_DAYS": str(total_days), "TOTAL_HOURS": fmt_h(total_hours),
-        "HERO_DAY_N": f"{hd['n']:02d}", "HERO_DAY_H": fmt_h(hd["hours"]), "HERO_DAY_TITLE": html.escape(hd["title"]),
-        "S1": "05", "S2": "06", "S3": "07", "S4": "08", "S5": "09", "S6": "10",
-        "HERO_TASKS": "\n".join(tasks), "HERO_PCT": str(round(7 / 30 * 100)),
-        "DROP_HOURS": fmt_h(drop["totalHours"]), "AI_HOURS": fmt_h(ai["totalHours"]),
-        "TPL_COUNT": str(tpl_count), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours,
-    }
-    for k, v in rep.items():
+    for k, v in {"CARDS": cards_html(courses, tpl_count, vault), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours}.items():
         frag = frag.replace("{{" + k + "}}", v)
-    page = head("SchoolAura · Learn one skill properly, one day at a time",
-                "Self-paced programs in dropshipping, AI and web design, plus the Recipe Vault. Day-by-day lessons, real tasks and a calendar that keeps you on track.",
-                "/", "drop")
+    page = head("SchoolAura · Learn a skill you can use, one day at a time",
+                "Step-by-step courses in dropshipping, AI and web design, plus the Recipe Vault. Daily lessons, real tasks and a calendar that keeps you on track.", "/", "drop")
     return page + frag + foot()
 
 
@@ -407,69 +444,45 @@ def simple_page(fragment_name, title, desc, path, aura, js="", replacements=None
 def main():
     courses = []
     for f in COURSE_FILES:
-        p = CONTENT / f
-        if not p.exists():
-            print(f"  skip {f} (not written yet)")
-            continue
-        c = parse_course(p)
+        c = parse_course(CONTENT / f)
         courses.append(c)
         out = PUBLIC / "courses" / c["slug"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(course_page(c))
         print(f"  {c['slug']}: {len(c['days'])} days, {c['totalHours']:g} h, {c['figures']} figures")
 
-    tpl_manifest = ROOT / "templates-src" / "manifest.json"
-    tpls = json.loads(tpl_manifest.read_text()) if tpl_manifest.exists() else []
+    tpls = json.loads((ROOT / "templates-src" / "manifest.json").read_text())
+    vault = vault_numbers()
 
-    if len(courses) == 3:
-        (PUBLIC / "index.html").write_text(home_page(courses, len(tpls)))
-        print("  home")
+    (PUBLIC / "index.html").write_text(home_page(courses, len(tpls), vault))
+    (PUBLIC / "courses" / "index.html").write_text(simple_page(
+        "classroom.html", "Classroom · SchoolAura", "All SchoolAura courses and your progress.", "/courses/", "drop",
+        replacements={"CARDS": cards_html(courses, len(tpls), vault, with_progress=True)}))
+    (PUBLIC / "recipe-vault").mkdir(exist_ok=True)
+    (PUBLIC / "recipe-vault" / "index.html").write_text(simple_page(
+        "vault.html", "The Recipe Vault · SchoolAura",
+        "Four downloadable recipe books: Cake Studio, Keto Kitchen, Know Your Food and the Simple & Quick Food Plan. Instant PDF.",
+        "/recipe-vault/", "vault", '<script src="/assets/js/vault.js"></script>', vault))
 
-    if (CONTENT / "pages" / "vault.html").exists():
-        out = PUBLIC / "recipe-vault" / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        from pypdf import PdfReader
-        rep = {}
-        vdir = PUBLIC / "downloads" / "recipe-vault"
-        total = 0
-        for slug in ("cake-studio", "keto-kitchen", "know-your-food", "simple-quick", "recipe-vault-complete"):
-            f = vdir / f"schoolaura-{slug}.pdf"
-            n = len(PdfReader(f).pages) if f.exists() else 0
-            key = "complete" if slug == "recipe-vault-complete" else slug
-            rep[f"P_{key}"] = str(n)
-            rep[f"S_{key}"] = f"{max(1, round(f.stat().st_size / 1024))} KB" if f.exists() else ""
-            if key != "complete":
-                total += n
-        rep["TOTAL_PAGES"] = str(total)
-        rep["TOTAL_RECIPES"] = str(sum(len(re.findall(r"^::: recipe", (ROOT / "vault-src" / m).read_text(), re.M)) for m in ("cake-studio.md", "keto-kitchen.md", "simple-quick.md")))
-        out.write_text(simple_page("vault.html", "The Recipe Vault · FOD 110 · SchoolAura",
-                                   "Four downloadable recipe books: Cake Studio, Keto Kitchen, Know Your Food and the Simple & Quick Food Plan. Instant PDF.",
-                                   "/recipe-vault/", "vault", '<script src="/assets/js/vault.js"></script>', rep))
-        print("  recipe vault")
-
-    if (CONTENT / "pages" / "templates.html").exists() and tpls:
-        cards = []
-        for t in tpls:
-            tags = "".join(f'<span class="chip">{html.escape(x)}</span>' for x in t["tags"])
-            cards.append(f"""<article class="tpl">
-  <a class="tpl-frame" href="/templates/{t['slug']}/" target="_blank" rel="noopener" aria-label="Open the {html.escape(t['name'])} live preview">
-    <div class="chrome"><i></i><i></i><i></i><span>{t['slug']}.html</span></div>
-    <div class="vp"><img src="/templates/previews/{t['slug']}.webp" alt="Screenshot of the {html.escape(t['name'])} template" loading="lazy" width="1440" height="900"></div>
-  </a>
-  <div class="tpl-info">
-    <div><h3>{html.escape(t['name'])}</h3><p>{html.escape(t['desc'])}</p><div class="tags">{tags}</div></div>
-    <div class="tpl-actions"><a class="btn ghost sm" href="/templates/{t['slug']}/" target="_blank" rel="noopener">Live preview</a><a class="btn sm" href="/downloads/templates/{t['slug']}.zip" download>Download</a></div>
+    cards = []
+    for t in tpls:
+        tags = "".join(f'<span class="tag">{html.escape(x)}</span>' for x in t["tags"])
+        cards.append(f"""<article class="card">
+  <a class="cover" href="/templates/{t['slug']}/" target="_blank" rel="noopener" aria-label="Open the {html.escape(t['name'])} live preview"><img src="/templates/previews/{t['slug']}.webp" alt="Screenshot of the {html.escape(t['name'])} template" loading="lazy" width="1200" height="750"></a>
+  <div class="card-body">
+    <div class="card-title">{html.escape(t['name'])}</div>
+    <p class="card-desc">{html.escape(t['desc'])}</p>
+    <div class="tags">{tags}</div>
+    <div class="btn-row"><a class="btn light sm" href="/templates/{t['slug']}/" target="_blank" rel="noopener">Live preview</a><a class="btn sm" href="/downloads/templates/{t['slug']}.zip" download>Download</a></div>
   </div>
 </article>""")
-        out = PUBLIC / "templates" / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(simple_page("templates.html", "Website Templates · WEB 120 · SchoolAura",
-                                   f"{len(tpls)} hand-built website templates in one bulk download, plus a 7-day guide to redesign, publish and sell websites.",
-                                   "/templates/", "web", replacements={"TPL_CARDS": "\n".join(cards), "TPL_COUNT": str(len(tpls))}))
-        print("  templates")
-
-    if (CONTENT / "pages" / "404.html").exists():
-        (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "ai"))
+    (PUBLIC / "templates").mkdir(exist_ok=True)
+    (PUBLIC / "templates" / "index.html").write_text(simple_page(
+        "templates.html", "Website Templates · SchoolAura",
+        f"{len(tpls)} ready-made website templates in one bulk download, plus a 7-day guide to redesign, publish and sell websites.",
+        "/templates/", "web", replacements={"TPL_CARDS": "\n".join(cards), "TPL_COUNT": str(len(tpls))}))
+    (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "drop"))
+    print("  home, classroom, recipe vault, templates, 404")
 
 
 if __name__ == "__main__":
