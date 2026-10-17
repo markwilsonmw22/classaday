@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haven Realty · Homes in London &amp; Middlesex</title>
+<meta name="description" content="Buy or sell your home with a local agent who answers the phone. Free home valuations.">
+<!-- Template: Haven · SchoolAura Website Builders pack. Edit the variables below to rebrand. -->
+<style>
+@font-face { font-family: "Cormorant"; src: url("fonts/cormorant.woff2") format("woff2"); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Cormorant"; src: url("fonts/cormorant-italic.woff2") format("woff2"); font-weight: 300 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("fonts/manrope.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+
+/* ===== EDIT ME: brand ===== */
+:root {
+  --bg: #f4f1ea;
+  --surface: #fbfaf6;
+  --ink: #1f2a22;
+  --muted: #66706a;
+  --line: #ddd8cb;
+  --accent: #4f6b55;
+  --accent-ink: #ffffff;
+  --warm: #b98b5a;
+  --font-display: "Cormorant", Georgia, serif;
+  --font-body: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --radius: 10px;
+  --max: 1240px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.65 var(--font-body); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; line-height: 1.02; }
+p { margin: 0; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.kicker { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; border-radius: var(--radius); background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 700; font-size: 15px; border: 0; cursor: pointer; font-family: inherit; }
+.btn.light { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+
+.top { background: var(--ink); color: #dfe5df; font-size: 13px; }
+.top .wrap { display: flex; justify-content: space-between; height: 38px; align-items: center; gap: 12px; }
+.nav .wrap { display: flex; align-items: center; gap: 32px; height: 80px; }
+.logo { font-family: var(--font-display); font-size: 30px; font-weight: 600; text-decoration: none; }
+.logo span { font-style: italic; color: var(--accent); }
+.links { display: flex; gap: 28px; margin-left: auto; align-items: center; font-weight: 600; font-size: 15px; }
+.links a { text-decoration: none; }
+.burger { display: none; margin-left: auto; background: none; border: 1px solid var(--line); border-radius: var(--radius); width: 44px; height: 44px; font-size: 20px; }
+
+.hero { position: relative; margin: 0 24px; border-radius: 22px; overflow: hidden; min-height: 600px; display: flex; align-items: flex-end; }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 28, 22, .05) 30%, rgba(20, 28, 22, .65)); }
+.hero .inner { position: relative; z-index: 1; padding: 56px; color: #fff; width: 100%; }
+.hero h1 { font-size: clamp(52px, 7.5vw, 112px); font-weight: 400; max-width: 11ch; }
+.hero h1 em { font-style: italic; }
+.search { margin-top: 32px; background: var(--surface); border-radius: 14px; padding: 8px; display: grid; grid-template-columns: 1.6fr 1fr 1fr auto; gap: 8px; max-width: 860px; }
+.search label { display: grid; padding: 8px 14px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-right: 1px solid var(--line); }
+.search label:nth-child(3) { border-right: 0; }
+.search input, .search select { border: 0; background: transparent; font: 600 16px var(--font-body); color: var(--ink); padding: 4px 0 0; outline: none; text-transform: none; letter-spacing: 0; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; padding: 56px 0; border-bottom: 1px solid var(--line); }
+.stats b { font-family: var(--font-display); font-size: 48px; font-weight: 500; display: block; line-height: 1; }
+.stats span { color: var(--muted); font-size: 14px; }
+
+section.block { padding: 96px 0; }
+.head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 44px; }
+.head h2 { font-size: clamp(40px, 5vw, 64px); margin-top: 10px; }
+.listings { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.listing { background: var(--surface); border-radius: 16px; overflow: hidden; border: 1px solid var(--line); text-decoration: none; display: block; transition: transform .25s, box-shadow .25s; }
+.listing:hover { transform: translateY(-4px); box-shadow: 0 24px 40px -24px rgba(31, 42, 34, .35); }
+.listing .ph { position: relative; aspect-ratio: 4 / 3; }
+.listing .ph img { width: 100%; height: 100%; object-fit: cover; }
+.listing .st { position: absolute; top: 14px; left: 14px; background: var(--surface); padding: 5px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.listing .st.new { background: var(--warm); color: #fff; }
+.listing .body { padding: 22px; }
+.listing .price { font-family: var(--font-display); font-size: 34px; font-weight: 600; line-height: 1; }
+.listing .addr { margin-top: 8px; color: var(--muted); font-size: 15px; }
+.listing .spec { display: flex; gap: 18px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; font-weight: 600; }
+
+.agent { background: var(--ink); color: #eef1ec; border-radius: 22px; margin: 0 24px; }
+.agent .wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; padding: 72px 24px; }
+.agent img { border-radius: 16px; aspect-ratio: 4 / 5; object-fit: cover; }
+.agent h2 { font-size: clamp(40px, 5vw, 64px); margin: 12px 0 22px; }
+.agent p { color: #c5ccc6; }
+.agent p + p { margin-top: 14px; }
+.agent .kicker { color: #b9cdb8; }
+.creds { display: flex; gap: 32px; margin: 32px 0; flex-wrap: wrap; }
+.creds b { display: block; font-family: var(--font-display); font-size: 36px; font-weight: 500; color: #fff; }
+.creds span { font-size: 13px; color: #a8b1aa; }
+
+.areas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.area { border-top: 2px solid var(--ink); padding-top: 18px; }
+.area h3 { font-size: 30px; }
+.area p { color: var(--muted); font-size: 15px; margin-top: 6px; }
+.area small { display: block; margin-top: 12px; font-weight: 700; color: var(--accent); }
+
+.val { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.val h2 { font-size: clamp(38px, 4.6vw, 58px); }
+.val p { color: var(--muted); margin-top: 16px; }
+.val form { display: grid; gap: 12px; }
+.val input { font: inherit; padding: 15px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+
+footer { padding: 64px 0 40px; font-size: 14px; color: var(--muted); }
+footer .wrap { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
+footer h4 { color: var(--ink); margin: 0 0 10px; }
+footer .legal { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 20px; margin-top: 20px; font-size: 12px; }
+
+@media (max-width: 900px) {
+  .links { display: none; position: absolute; top: 118px; left: 0; right: 0; background: var(--bg); flex-direction: column; align-items: flex-start; padding: 16px 24px 24px; z-index: 5; border-bottom: 1px solid var(--line); }
+  .links.open { display: flex; }
+  .burger { display: block; }
+  .top .wrap span:last-child { display: none; }
+  .hero { margin: 0 12px; min-height: 520px; }
+  .hero .inner { padding: 28px 20px; }
+  .search { grid-template-columns: 1fr; }
+  .search label { border-right: 0; border-bottom: 1px solid var(--line); }
+  .stats, .areas { grid-template-columns: 1fr 1fr; }
+  .listings, .agent .wrap, .val { grid-template-columns: 1fr; }
+  .agent { margin: 0 12px; }
+  .val { padding: 32px 22px; }
+  footer .wrap { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap"><span>Call or text (519) 555-0148 · Mon–Sat 8am–8pm</span><span>Sales Representative · Haven Realty Brokerage</span></div></div>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#">Haven <span>Realty</span></a>
+    <nav class="links" id="links"><a href="#homes">Homes for sale</a><a href="#about">About</a><a href="#areas">Neighbourhoods</a><a href="#value" class="btn">Free home valuation</a></nav>
+    <button class="burger" aria-label="Open menu" onclick="document.getElementById('links').classList.toggle('open')">≡</button>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="images/hero.jpg" alt="A family home at dusk">
+  <div class="inner">
+    <p class="kicker" style="color:#e9efe7">London &amp; Middlesex County</p>
+    <h1>Find the home that <em>feels</em> like yours.</h1>
+    <form class="search" onsubmit="event.preventDefault()">
+      <label>Location<input placeholder="Neighbourhood or postal code" aria-label="Location"></label>
+      <label>Type<select aria-label="Property type"><option>Any</option><option>Detached</option><option>Semi</option><option>Townhouse</option><option>Condo</option></select></label>
+      <label>Max price<select aria-label="Maximum price"><option>No max</option><option>$500,000</option><option>$750,000</option><option>$1,000,000</option></select></label>
+      <button class="btn" type="submit">Search homes</button>
+    </form>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stats">
+    <div><b>14 yrs</b><span>selling in London</span></div>
+    <div><b>320+</b><span>families moved</span></div>
+    <div><b>99%</b><span>of list price, on average</span></div>
+    <div><b>&lt; 1 hr</b><span>to call you back</span></div>
+  </div>
+</div>
+
+<section class="block" id="homes">
+  <div class="wrap">
+    <div class="head"><div><p class="kicker">Featured listings</p><h2>Homes for sale now</h2></div><a class="btn light" href="#">View all listings →</a></div>
+    <div class="listings">
+      <a class="listing" href="#"><div class="ph"><img src="images/home-1.jpg" alt="Front of 41 Elmwood Avenue"><span class="st new">New</span></div><div class="body"><div class="price">$649,900</div><p class="addr">41 Elmwood Ave · Old South</p><div class="spec"><span>3 bed</span><span>2 bath</span><span>1,540 sq ft</span></div></div></a>
+      <a class="listing" href="#"><div class="ph"><img src="images/home-2.jpg" alt="Front of 1208 Riverbend Road"><span class="st">Open Sat 2–4</span></div><div class="body"><div class="price">$899,000</div><p class="addr">1208 Riverbend Rd · Byron</p><div class="spec"><span>4 bed</span><span>3 bath</span><span>2,310 sq ft</span></div></div></a>
+      <a class="listing" href="#"><div class="ph"><img src="images/home-3.jpg" alt="Condo at 75 Ridout Street"></div><div class="body"><div class="price">$429,500</div><p class="addr">75 Ridout St #904 · Downtown</p><div class="spec"><span>2 bed</span><span>2 bath</span><span>980 sq ft</span></div></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="agent" id="about">
+  <div class="wrap">
+    <img src="images/agent.jpg" alt="Portrait of your agent">
+    <div>
+      <p class="kicker">Your agent</p>
+      <h2>Clare Holloway</h2>
+      <p>I grew up in Old South and have helped more than 300 families buy and sell across London. I'll tell you honestly what your home is worth, what to fix, and what to leave alone.</p>
+      <p>You'll deal with me from the first viewing to the day you get your keys.</p>
+      <div class="creds"><div><b>Top 5%</b><span>of local agents by sales</span></div><div><b>4.9 / 5</b><span>from client reviews</span></div></div>
+      <a class="btn" href="tel:+15195550148">Book a call</a>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="areas">
+  <div class="wrap">
+    <div class="head"><div><p class="kicker">Neighbourhood guides</p><h2>Know where you're moving</h2></div></div>
+    <div class="areas">
+      <div class="area"><h3>Old South</h3><p>Tree-lined streets, century homes and Wortley Village's shops and cafés.</p><small>Read the guide →</small></div>
+      <div class="area"><h3>Byron</h3><p>Family friendly, near Springbank Park and great schools.</p><small>Read the guide →</small></div>
+      <div class="area"><h3>Downtown</h3><p>Condos close to the market, restaurants and the river trail.</p><small>Read the guide →</small></div>
+      <div class="area"><h3>Masonville</h3><p>Newer homes, close to the university and shopping.</p><small>Read the guide →</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="value" style="padding-top:0">
+  <div class="wrap">
+    <div class="val">
+      <div><p class="kicker">Thinking of selling?</p><h2>What's your home worth today?</h2><p>Get a free, no-pressure valuation based on recent sales on your street. I'll send it within 24 hours.</p></div>
+      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thanks, I\'ll be in touch ✓'">
+        <input required placeholder="Your name" aria-label="Your name">
+        <input required type="email" placeholder="Email" aria-label="Email">
+        <input required placeholder="Property address" aria-label="Property address">
+        <button class="btn" type="submit">Get my free valuation</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a class="logo" href="#">Haven <span>Realty</span></a><p style="margin-top:10px">Helping London families move with less stress since 2012.</p></div>
+    <div><h4>Contact</h4><p>(519) 555-0148<br>clare@havenrealty.ca<br>100 Dundas St, London ON</p></div>
+    <div><h4>Explore</h4><p><a href="#homes">Homes for sale</a><br><a href="#value">Home valuation</a><br><a href="#areas">Neighbourhoods</a></p></div>
+    <p class="legal">© <span id="y">2026</span> Haven Realty Brokerage. Not intended to solicit buyers or sellers currently under contract. Listing details are examples.</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

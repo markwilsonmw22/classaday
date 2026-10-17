@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Marrow · Identity, packaging and web for considered brands</title>
+<meta name="description" content="Studio Marrow is a small design studio making identities, packaging and websites for independent brands.">
+<!-- Template: Atelier · SchoolAura Website Builders pack. Edit the variables below to rebrand. -->
+<style>
+@font-face { font-family: "Instrument Serif"; src: url("fonts/instrument-serif.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Serif"; src: url("fonts/instrument-serif-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans.woff2") format("woff2"); font-weight: 400 700; font-display: swap; }
+
+/* ===== EDIT ME: brand ===== */
+:root {
+  --bg: #efede6;
+  --ink: #141413;
+  --muted: #6d6a62;
+  --line: #cfcbbf;
+  --accent: #b8441e;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --max: 1320px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--font-body); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; margin: 0; line-height: .95; letter-spacing: -.02em; }
+p { margin: 0; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+.label { font-size: 12px; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); }
+
+.nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 84px; border-bottom: 1px solid var(--line); }
+.logo { font-family: var(--font-display); font-size: 30px; text-decoration: none; }
+.logo em { color: var(--accent); }
+.links { display: flex; gap: 28px; font-size: 15px; }
+.links a { text-decoration: none; }
+.links a:hover { color: var(--accent); }
+.avail { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+.avail i { width: 8px; height: 8px; border-radius: 50%; background: #3fa45b; box-shadow: 0 0 0 4px rgba(63, 164, 91, .18); }
+
+.hero { padding: 80px 0 64px; }
+.hero h1 { font-size: clamp(64px, 12.5vw, 196px); }
+.hero h1 em { color: var(--accent); }
+.hero-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--ink); }
+.hero-row p { max-width: 28em; }
+.hero-row a { font-family: var(--font-display); font-size: 28px; text-decoration: none; border-bottom: 1px solid var(--ink); align-self: start; justify-self: end; }
+
+.work { padding: 32px 0 96px; }
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+.card { text-decoration: none; display: block; }
+.card .img { overflow: hidden; background: #ddd8cc; }
+.card img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+.card:hover img { transform: scale(1.04); }
+.card .meta { display: flex; justify-content: space-between; margin-top: 14px; gap: 12px; }
+.card h3 { font-size: 30px; }
+.c1 { grid-column: span 7; } .c1 .img { aspect-ratio: 4 / 3; }
+.c2 { grid-column: span 5; margin-top: 120px; } .c2 .img { aspect-ratio: 4 / 5; }
+.c3 { grid-column: span 5; } .c3 .img { aspect-ratio: 1; }
+.c4 { grid-column: span 7; margin-top: 80px; } .c4 .img { aspect-ratio: 16 / 10; }
+
+.index { padding: 40px 0 112px; }
+.index h2 { font-size: clamp(48px, 6vw, 88px); margin-bottom: 36px; }
+.row { display: grid; grid-template-columns: 80px 1.4fr 1fr 1fr 80px; gap: 16px; padding: 22px 0; border-top: 1px solid var(--line); align-items: baseline; text-decoration: none; transition: padding .3s, color .3s; }
+.row:last-child { border-bottom: 1px solid var(--line); }
+.row b { font-family: var(--font-display); font-size: 32px; font-weight: 400; }
+.row span { color: var(--muted); }
+.row:hover { padding-left: 12px; }
+.row:hover b { color: var(--accent); }
+
+.services { background: var(--ink); color: var(--bg); padding: 112px 0; }
+.services .wrap { display: grid; grid-template-columns: 1fr 1.4fr; gap: 72px; }
+.services h2 { font-size: clamp(48px, 6vw, 88px); }
+.services h2 em { color: var(--accent); }
+.svc { border-top: 1px solid #3b3a36; padding: 26px 0; display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px; }
+.svc h3 { font-size: 34px; }
+.svc p { color: #b6b2a8; }
+
+.about { padding: 112px 0; }
+.about .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.about img { aspect-ratio: 4 / 5; object-fit: cover; }
+.about blockquote { margin: 0; font-family: var(--font-display); font-size: clamp(30px, 3.4vw, 46px); line-height: 1.1; }
+.about p { color: var(--muted); margin-top: 28px; max-width: 34em; }
+.clients { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+.clients span { border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14px; }
+
+.contact { padding: 96px 0 40px; border-top: 1px solid var(--ink); }
+.contact .big { font-family: var(--font-display); font-size: clamp(44px, 9vw, 148px); text-decoration: none; display: inline-block; line-height: 1; border-bottom: 2px solid var(--ink); }
+.contact .big:hover { color: var(--accent); border-color: var(--accent); }
+.foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 80px; color: var(--muted); font-size: 14px; }
+.foot a { margin-left: 20px; }
+
+@media (max-width: 900px) {
+  .links, .avail { display: none; }
+  .hero-row, .services .wrap, .about .wrap, .svc { grid-template-columns: 1fr; }
+  .hero-row a { justify-self: start; }
+  .c1, .c2, .c3, .c4 { grid-column: 1 / -1; margin-top: 0; }
+  .row { grid-template-columns: 50px 1fr; }
+  .row span:nth-of-type(n+2) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#" class="logo">Studio <em>Marrow</em></a>
+    <nav class="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">Studio</a><a href="#contact">Contact</a></nav>
+    <span class="avail"><i></i>Booking projects for spring</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Brands with a <em>point of view.</em></h1>
+    <div class="hero-row">
+      <p class="label">Identity · Packaging · Web</p>
+      <p>We're a three-person studio in Toronto. We help independent food, drink and lifestyle brands look as good as the things they make.</p>
+      <a href="#contact">Start a project →</a>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap grid">
+    <a class="card c1" href="#"><div class="img"><img src="images/work-1.jpg" alt="Halden Coffee packaging"></div><div class="meta"><h3>Halden Coffee</h3><span class="label">Packaging · 2026</span></div></a>
+    <a class="card c2" href="#"><div class="img"><img src="images/work-2.jpg" alt="Nº 9 Apothecary identity"></div><div class="meta"><h3>Nº 9 Apothecary</h3><span class="label">Identity · 2025</span></div></a>
+    <a class="card c3" href="#"><div class="img"><img src="images/work-3.jpg" alt="Saltbox Bakery website"></div><div class="meta"><h3>Saltbox Bakery</h3><span class="label">Web · 2025</span></div></a>
+    <a class="card c4" href="#"><div class="img"><img src="images/work-4.jpg" alt="Field &amp; Fold campaign"></div><div class="meta"><h3>Field &amp; Fold</h3><span class="label">Campaign · 2024</span></div></a>
+  </div>
+</section>
+
+<section class="index">
+  <div class="wrap">
+    <h2>Selected projects</h2>
+    <a class="row" href="#"><span>01</span><b>Halden Coffee</b><span>Packaging system</span><span>Toronto</span><span>2026</span></a>
+    <a class="row" href="#"><span>02</span><b>Nº 9 Apothecary</b><span>Identity, signage</span><span>Montréal</span><span>2025</span></a>
+    <a class="row" href="#"><span>03</span><b>Saltbox Bakery</b><span>Website, photography</span><span>Halifax</span><span>2025</span></a>
+    <a class="row" href="#"><span>04</span><b>Field &amp; Fold</b><span>Campaign</span><span>Vancouver</span><span>2024</span></a>
+    <a class="row" href="#"><span>05</span><b>Low Tide Wines</b><span>Labels, identity</span><span>Niagara</span><span>2024</span></a>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <h2>What we <em>do</em></h2>
+    <div>
+      <div class="svc"><h3>Identity</h3><p>Names, logos, type, colour and the rules that hold them together. Delivered as a brand book your team will actually use.</p></div>
+      <div class="svc"><h3>Packaging</h3><p>Structure, labels and print production, from first sketch to the press check.</p></div>
+      <div class="svc"><h3>Websites</h3><p>Fast, editable sites on the platform that suits you, designed around how your customers shop.</p></div>
+      <div class="svc"><h3>Art direction</h3><p>Photography and campaign direction so everything you publish feels like you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <img src="images/studio.jpg" alt="Inside the studio">
+    <div>
+      <p class="label" style="margin-bottom:22px">The studio</p>
+      <blockquote>“We'd rather do eight projects a year properly than thirty in a hurry.”</blockquote>
+      <p>Marrow was started by two designers who wanted to work directly with founders. Every project is led by a partner, from the first call to the final file.</p>
+      <div class="clients"><span>Food &amp; drink</span><span>Beauty</span><span>Hospitality</span><span>Retail</span><span>Small batch</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="label" style="margin-bottom:18px">New projects</p>
+    <a class="big" href="mailto:hello@studiomarrow.com">hello@studiomarrow.com</a>
+    <div class="foot"><span>© <span id="y">2026</span> Studio Marrow · Toronto, Canada</span><span><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></span></div>
+  </div>
+</section>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

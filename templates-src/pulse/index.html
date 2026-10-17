@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse Athletic · Strength &amp; conditioning studio</title>
+<meta name="description" content="Small-group strength and conditioning classes. Your first class is free.">
+<!-- Template: Pulse · SchoolAura Website Builders pack. Edit the variables below to rebrand. -->
+<style>
+@font-face { font-family: "Anton"; src: url("fonts/anton.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/barlow-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/barlow-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+/* ===== EDIT ME: brand ===== */
+:root {
+  --bg: #0e0e10;
+  --bg-2: #17171a;
+  --ink: #f2f0ec;
+  --muted: #9c9a96;
+  --line: #2b2b30;
+  --accent: #ff4d2e;
+  --accent-ink: #0e0e10;
+  --font-display: "Anton", Impact, "Arial Narrow", sans-serif;
+  --font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --max: 1260px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 18px/1.55 var(--font-body); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; margin: 0; line-height: .92; letter-spacing: .005em; }
+p { margin: 0; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: 15px; border: 2px solid var(--accent); }
+.btn.out { background: transparent; color: var(--ink); border-color: var(--ink); }
+.tag { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .16em; font-size: 13px; }
+
+.nav { position: sticky; top: 0; z-index: 10; background: rgba(14, 14, 16, .9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+.logo { font-family: var(--font-display); font-size: 30px; text-decoration: none; text-transform: uppercase; }
+.logo span { color: var(--accent); }
+.links { display: flex; gap: 30px; align-items: center; text-transform: uppercase; font-weight: 600; font-size: 14px; letter-spacing: .08em; }
+.links a { text-decoration: none; }
+.links .btn { padding: 11px 18px; font-size: 13px; }
+.burger { display: none; background: none; border: 1px solid var(--line); color: var(--ink); width: 44px; height: 44px; font-size: 20px; }
+
+.hero { position: relative; overflow: hidden; }
+.hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; padding-top: 64px; padding-bottom: 72px; }
+.hero h1 { font-size: clamp(72px, 13vw, 190px); }
+.hero h1 span { color: var(--accent); display: block; }
+.hero .side p { color: var(--muted); font-size: 20px; }
+.hero .side .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.hero-img { height: 520px; position: relative; }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(.2) contrast(1.05); }
+.hero-img .chip { position: absolute; right: 24px; bottom: 24px; background: var(--accent); color: var(--accent-ink); padding: 14px 18px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: 14px; }
+.ticker { background: var(--accent); color: var(--accent-ink); overflow: hidden; white-space: nowrap; font-family: var(--font-display); font-size: 34px; text-transform: uppercase; padding: 12px 0; }
+.ticker span { display: inline-block; padding-right: 48px; animation: slide 28s linear infinite; }
+@keyframes slide { to { transform: translateX(-100%); } }
+
+section.block { padding: 104px 0; }
+.head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 48px; }
+.head h2 { font-size: clamp(52px, 7vw, 104px); margin-top: 12px; }
+
+.classes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--line); border: 2px solid var(--line); }
+.cls { background: var(--bg); }
+.cls img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; filter: grayscale(.3); transition: filter .3s; }
+.cls:hover img { filter: none; }
+.cls .b { padding: 26px; }
+.cls h3 { font-size: 40px; }
+.cls p { color: var(--muted); margin-top: 10px; }
+.cls .meta { display: flex; gap: 16px; margin-top: 18px; font-size: 14px; text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+.cls .meta span:first-child { color: var(--accent); }
+
+.sched { background: var(--bg-2); }
+.days { display: flex; gap: 6px; margin-bottom: 18px; flex-wrap: wrap; }
+.days button { background: transparent; color: var(--muted); border: 1px solid var(--line); padding: 10px 16px; font: 600 14px var(--font-body); text-transform: uppercase; letter-spacing: .08em; cursor: pointer; }
+.days button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.table { border-top: 2px solid var(--ink); }
+.slot { display: grid; grid-template-columns: 140px 1fr 1fr 140px; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); align-items: center; }
+.slot b { font-family: var(--font-display); font-size: 30px; font-weight: 400; }
+.slot .n { font-weight: 600; font-size: 20px; text-transform: uppercase; }
+.slot span { color: var(--muted); }
+.slot a { justify-self: end; font-size: 14px; text-transform: uppercase; font-weight: 600; letter-spacing: .08em; color: var(--accent); text-decoration: none; }
+
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.plan { border: 2px solid var(--line); padding: 32px; }
+.plan.best { border-color: var(--accent); position: relative; }
+.plan.best::before { content: "Most popular"; position: absolute; top: -14px; left: 24px; background: var(--accent); color: var(--accent-ink); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; padding: 4px 10px; }
+.plan h3 { font-size: 36px; }
+.plan .price { font-family: var(--font-display); font-size: 72px; margin: 18px 0 4px; line-height: 1; }
+.plan .price small { font-family: var(--font-body); font-size: 18px; color: var(--muted); }
+.plan ul { list-style: none; padding: 0; margin: 22px 0 30px; display: grid; gap: 10px; color: var(--muted); }
+.plan li::before { content: "— "; color: var(--accent); }
+
+.coaches { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
+.coaches img { aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(.4); }
+.coaches h2 { font-size: clamp(52px, 6vw, 92px); }
+.coaches p { color: var(--muted); margin-top: 22px; font-size: 20px; }
+.coaches ul { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 0; }
+.coaches li { display: flex; justify-content: space-between; padding: 14px 0; border-top: 1px solid var(--line); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; font-size: 15px; }
+.coaches li span { color: var(--muted); font-weight: 400; text-transform: none; letter-spacing: 0; }
+
+.final { text-align: center; padding: 120px 0; border-top: 1px solid var(--line); }
+.final h2 { font-size: clamp(64px, 11vw, 168px); }
+.final h2 span { color: var(--accent); }
+.final p { color: var(--muted); margin: 18px auto 34px; max-width: 30em; }
+footer { border-top: 1px solid var(--line); padding: 32px 0; font-size: 14px; color: var(--muted); }
+footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+
+@media (max-width: 900px) {
+  .links { display: none; position: absolute; top: 74px; left: 0; right: 0; background: var(--bg); flex-direction: column; align-items: flex-start; padding: 18px 24px 26px; border-bottom: 1px solid var(--line); }
+  .links.open { display: flex; }
+  .burger { display: block; }
+  .hero .wrap, .coaches { grid-template-columns: 1fr; }
+  .hero-img { height: 360px; }
+  .classes, .plans { grid-template-columns: 1fr; }
+  .slot { grid-template-columns: 90px 1fr; }
+  .slot span:nth-of-type(2), .slot a { grid-column: 2; justify-self: start; }
+}
+@media (prefers-reduced-motion: reduce) { .ticker span { animation: none; } }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#">Pulse<span>.</span></a>
+    <nav class="links" id="links"><a href="#classes">Classes</a><a href="#schedule">Schedule</a><a href="#pricing">Pricing</a><a href="#coaches">Coaches</a><a href="#start" class="btn">Free class</a></nav>
+    <button class="burger" aria-label="Open menu" onclick="document.getElementById('links').classList.toggle('open')">≡</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Get strong.<span>Stay strong.</span></h1>
+    <div class="side">
+      <p>Small-group strength and conditioning, coached properly. Twelve people per class, maximum. Every level welcome.</p>
+      <div class="cta"><a class="btn" href="#start">Book a free class →</a><a class="btn out" href="#schedule">See schedule</a></div>
+    </div>
+  </div>
+  <div class="wrap"><div class="hero-img"><img src="images/hero.jpg" alt="Members training in the studio"><div class="chip">First class free</div></div></div>
+</section>
+
+<div class="ticker" aria-hidden="true"><span>Strength · Conditioning · Mobility · Open gym · Strength · Conditioning · Mobility · Open gym ·</span><span>Strength · Conditioning · Mobility · Open gym · Strength · Conditioning · Mobility · Open gym ·</span></div>
+
+<section class="block" id="classes">
+  <div class="wrap">
+    <div class="head"><div><p class="tag">What we do</p><h2>Classes</h2></div></div>
+    <div class="classes">
+      <div class="cls"><img src="images/class-1.jpg" alt="Strength class"><div class="b"><h3>Strength</h3><p>Squat, press, deadlift and pull, taught step by step with programmed progress.</p><div class="meta"><span>60 min</span><span>All levels</span></div></div></div>
+      <div class="cls"><img src="images/class-2.jpg" alt="Conditioning class"><div class="b"><h3>Engine</h3><p>Intervals on rowers, bikes and sleds. Hard, short and finished in 45 minutes.</p><div class="meta"><span>45 min</span><span>Intermediate</span></div></div></div>
+      <div class="cls"><img src="images/class-3.jpg" alt="Mobility class"><div class="b"><h3>Mobility</h3><p>Slow, deliberate work for hips, shoulders and back. Your body will thank you.</p><div class="meta"><span>45 min</span><span>All levels</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block sched" id="schedule">
+  <div class="wrap">
+    <div class="head"><div><p class="tag">This week</p><h2>Schedule</h2></div></div>
+    <div class="days" id="days"><button class="on" data-d="mon">Mon</button><button data-d="tue">Tue</button><button data-d="wed">Wed</button><button data-d="thu">Thu</button><button data-d="fri">Fri</button><button data-d="sat">Sat</button></div>
+    <div class="table" id="slots"></div>
+  </div>
+</section>
+
+<section class="block" id="pricing">
+  <div class="wrap">
+    <div class="head"><div><p class="tag">Membership</p><h2>Pricing</h2></div><p style="color:var(--muted);max-width:28em">No joining fee. No contracts. Pause your membership any time.</p></div>
+    <div class="plans">
+      <div class="plan"><h3>Drop in</h3><div class="price">$25<small> / class</small></div><ul><li>Any class</li><li>Book up to 3 days ahead</li></ul><a class="btn out" href="#start">Book a class</a></div>
+      <div class="plan best"><h3>Unlimited</h3><div class="price">$189<small> / month</small></div><ul><li>Unlimited classes</li><li>Open gym access</li><li>Quarterly progress check-in</li></ul><a class="btn" href="#start">Start free</a></div>
+      <div class="plan"><h3>2 × week</h3><div class="price">$139<small> / month</small></div><ul><li>8 classes a month</li><li>Open gym on weekends</li></ul><a class="btn out" href="#start">Start free</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="coaches" style="padding-top:0">
+  <div class="wrap coaches">
+    <img src="images/coach.jpg" alt="Head coach">
+    <div>
+      <p class="tag">Coached properly</p>
+      <h2>Real coaches, real progress</h2>
+      <p>Every coach is certified and trained in our method. They know your name, your numbers and what you're working on.</p>
+      <ul><li>Jordan Reyes <span>Head coach · Strength</span></li><li>Ama Boateng <span>Conditioning</span></li><li>Sam Lindqvist <span>Mobility &amp; rehab</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="start">
+  <div class="wrap">
+    <h2>Your first class<br><span>is on us.</span></h2>
+    <p>Come in, meet a coach, and try a class. No pressure, no sales pitch.</p>
+    <a class="btn" href="tel:+15195550199">Call (519) 555-0199 to book</a>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© <span id="y">2026</span> Pulse Athletic · 88 Wharncliffe Rd, London ON</span><span>Mon–Fri 6am–9pm · Sat 8am–2pm</span></div></footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+// ===== EDIT ME: weekly schedule =====
+var SCHEDULE = {
+  mon: [["6:00", "Strength", "Jordan", "All levels"], ["12:00", "Engine", "Ama", "Intermediate"], ["18:00", "Strength", "Jordan", "All levels"], ["19:15", "Mobility", "Sam", "All levels"]],
+  tue: [["6:00", "Engine", "Ama", "Intermediate"], ["17:30", "Strength", "Jordan", "All levels"], ["18:45", "Engine", "Ama", "Intermediate"]],
+  wed: [["6:00", "Strength", "Jordan", "All levels"], ["12:00", "Mobility", "Sam", "All levels"], ["18:00", "Strength", "Jordan", "All levels"]],
+  thu: [["6:00", "Engine", "Ama", "Intermediate"], ["17:30", "Strength", "Jordan", "All levels"], ["18:45", "Mobility", "Sam", "All levels"]],
+  fri: [["6:00", "Strength", "Jordan", "All levels"], ["12:00", "Engine", "Ama", "Intermediate"], ["17:30", "Open gym", "Staff", "Members"]],
+  sat: [["8:00", "Strength", "Jordan", "All levels"], ["9:15", "Engine", "Ama", "Intermediate"], ["10:30", "Mobility", "Sam", "All levels"]]
+};
+function show(d) {
+  document.getElementById('slots').innerHTML = SCHEDULE[d].map(function (s) {
+    return '<div class="slot"><b>' + s[0] + '</b><div class="n">' + s[1] + '</div><span>with ' + s[2] + ' · ' + s[3] + '</span><a href="#start">Book →</a></div>';
+  }).join('');
+  document.querySelectorAll('#days button').forEach(function (b) { b.classList.toggle('on', b.dataset.d === d); });
+}
+document.getElementById('days').addEventListener('click', function (e) { if (e.target.dataset.d) show(e.target.dataset.d); });
+show('mon');
+</script>
+</body>
+</html>

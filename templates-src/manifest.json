@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "ember",
+    "name": "Ember",
+    "desc": "A warm, dark site for restaurants, caf\u00e9s and bars. Menu with prices, story, gallery, hours and booking.",
+    "tags": [
+      "Restaurant",
+      "Caf\u00e9",
+      "Dark"
+    ]
+  },
+  {
+    "slug": "northline",
+    "name": "Northline",
+    "desc": "A clean product site for software and online services. Email signup, product screen, features, pricing and FAQ.",
+    "tags": [
+      "SaaS",
+      "Startup",
+      "Light"
+    ]
+  },
+  {
+    "slug": "atelier",
+    "name": "Atelier",
+    "desc": "An editorial portfolio for designers, photographers and studios. Big type, project grid and index, services.",
+    "tags": [
+      "Portfolio",
+      "Studio",
+      "Editorial"
+    ]
+  },
+  {
+    "slug": "haven",
+    "name": "Haven",
+    "desc": "A calm site for real estate agents. Home search, listing cards, agent profile, neighbourhoods and valuation form.",
+    "tags": [
+      "Real estate",
+      "Agent",
+      "Light"
+    ]
+  },
+  {
+    "slug": "pulse",
+    "name": "Pulse",
+    "desc": "A bold site for gyms and fitness studios. Classes, a weekly schedule you can edit, memberships and coaches.",
+    "tags": [
+      "Fitness",
+      "Gym",
+      "Dark"
+    ]
+  },
+  {
+    "slug": "keystone",
+    "name": "Keystone",
+    "desc": "A trustworthy site for contractors and trades. Quote form, services, before and after, process and service areas.",
+    "tags": [
+      "Trades",
+      "Contractor",
+      "Lead gen"
+    ]
+  }
+]

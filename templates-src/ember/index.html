@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember &amp; Rye · Wood-fired kitchen</title>
+<meta name="description" content="Wood-fired plates, natural wine and long tables. Open Wednesday to Sunday.">
+<!-- Template: Ember · SchoolAura Website Builders pack. Edit the variables below to rebrand. -->
+<style>
+@font-face { font-family: "Gloock"; src: url("fonts/gloock.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Figtree"; src: url("fonts/figtree.woff2") format("woff2"); font-weight: 300 900; font-display: swap; }
+
+/* ===== EDIT ME: brand ===== */
+:root {
+  --bg: #17110d;          /* page background */
+  --bg-2: #211812;        /* alternate section */
+  --ink: #f3e7d6;         /* main text */
+  --muted: #bda78f;       /* secondary text */
+  --line: rgba(243, 231, 214, .14);
+  --accent: #e2643a;      /* buttons, highlights */
+  --accent-ink: #1b0f09;  /* text on accent */
+  --font-display: "Gloock", Georgia, serif;
+  --font-body: "Figtree", "Helvetica Neue", Arial, sans-serif;
+  --radius: 4px;
+  --max: 1200px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.65 var(--font-body); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.05; margin: 0; letter-spacing: -.01em; }
+p { margin: 0; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+.eyebrow { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 26px; background: var(--accent); color: var(--accent-ink); text-decoration: none; font-weight: 700; border-radius: var(--radius); border: 1px solid var(--accent); transition: transform .2s; }
+.btn:hover { transform: translateY(-2px); }
+.btn.line { background: transparent; color: var(--ink); border-color: var(--line); }
+
+/* Nav */
+.nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.logo { font-family: var(--font-display); font-size: 26px; text-decoration: none; }
+.logo span { color: var(--accent); }
+.links { display: flex; gap: 32px; align-items: center; }
+.links a { text-decoration: none; color: var(--muted); font-size: 15px; }
+.links a:hover { color: var(--ink); }
+.links .btn { color: var(--accent-ink); padding: 11px 18px; font-size: 14px; }
+.burger { display: none; background: none; border: 1px solid var(--line); color: var(--ink); width: 44px; height: 44px; border-radius: var(--radius); font-size: 20px; }
+
+/* Hero */
+.hero { padding: 72px 0 96px; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(52px, 7.4vw, 104px); margin-top: 20px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p.lead { font-size: 20px; color: var(--muted); margin-top: 26px; max-width: 30em; }
+.hero .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
+.hero .facts { display: flex; gap: 36px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); flex-wrap: wrap; }
+.hero .facts b { display: block; color: var(--ink); font-family: var(--font-display); font-size: 22px; font-weight: 400; }
+.hero-img { position: relative; aspect-ratio: 4 / 5; border-radius: 200px 200px var(--radius) var(--radius); overflow: hidden; }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; }
+.hero-img .badge { position: absolute; left: 20px; bottom: 20px; background: var(--ink); color: var(--bg); padding: 14px 18px; border-radius: var(--radius); font-size: 14px; }
+.hero-img .badge b { display: block; font-family: var(--font-display); font-size: 20px; font-weight: 400; }
+
+/* Menu */
+.menu { background: var(--bg-2); padding: 104px 0; border-block: 1px solid var(--line); }
+.sec-title { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 56px; }
+.sec-title h2 { font-size: clamp(40px, 5vw, 68px); margin-top: 14px; }
+.sec-title p { color: var(--muted); max-width: 30em; }
+.menu-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 80px; }
+.menu h3 { font-size: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.dish { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 16px 0; border-bottom: 1px dashed var(--line); }
+.dish b { font-weight: 600; font-size: 18px; }
+.dish span.p { font-family: var(--font-display); font-size: 20px; color: var(--accent); }
+.dish small { grid-column: 1 / -1; color: var(--muted); font-size: 15px; }
+.tag { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 6px; border-radius: 3px; margin-left: 8px; color: var(--muted); vertical-align: middle; }
+
+/* Story */
+.story { padding: 112px 0; }
+.story .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.story .imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.story .imgs img { aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius); }
+.story .imgs img:last-child { margin-top: 64px; }
+.story h2 { font-size: clamp(38px, 4.4vw, 60px); margin: 14px 0 24px; }
+.story p + p { margin-top: 16px; }
+.story p { color: var(--muted); }
+.sig { margin-top: 28px; font-family: var(--font-display); font-size: 24px; color: var(--ink); }
+
+/* Gallery */
+.strip { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; padding: 0 12px; }
+.strip img { width: 100%; height: 380px; object-fit: cover; border-radius: var(--radius); }
+
+/* Reviews */
+.reviews { padding: 112px 0; }
+.quotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.quote { border-top: 1px solid var(--line); padding-top: 28px; }
+.quote p { font-family: var(--font-display); font-size: 24px; line-height: 1.3; }
+.quote span { display: block; margin-top: 18px; color: var(--muted); font-size: 14px; }
+.stars { color: var(--accent); letter-spacing: 3px; margin-bottom: 14px; }
+
+/* Visit */
+.visit { background: var(--accent); color: var(--accent-ink); padding: 104px 0; }
+.visit .wrap { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 56px; }
+.visit h2 { font-size: clamp(44px, 5.5vw, 80px); }
+.visit h4 { margin: 0 0 14px; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; }
+.visit table { border-collapse: collapse; width: 100%; font-size: 16px; }
+.visit td { padding: 8px 0; border-bottom: 1px solid rgba(27, 15, 9, .2); }
+.visit td:last-child { text-align: right; }
+.visit .btn { background: var(--accent-ink); color: var(--ink); border-color: var(--accent-ink); margin-top: 28px; }
+.visit address { font-style: normal; font-size: 18px; line-height: 1.6; }
+
+footer { padding: 40px 0; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { text-decoration: none; margin-left: 20px; }
+
+@media (max-width: 900px) {
+  .links { display: none; position: absolute; top: 72px; left: 0; right: 0; background: var(--bg); flex-direction: column; align-items: flex-start; padding: 16px 24px 28px; gap: 18px; border-bottom: 1px solid var(--line); }
+  .links.open { display: flex; }
+  .burger { display: block; }
+  .hero .wrap, .story .wrap, .visit .wrap, .menu-cols { grid-template-columns: 1fr; }
+  .quotes { grid-template-columns: 1fr; }
+  .strip { grid-template-columns: 1fr 1fr; }
+  .strip img:first-child { grid-column: 1 / -1; }
+  .strip img { height: 240px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#" class="logo">Ember <span>&amp;</span> Rye</a>
+    <nav class="links" id="links">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#visit">Visit</a>
+      <a href="#visit" class="btn">Book a table</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" onclick="document.getElementById('links').classList.toggle('open')">≡</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Wood-fired kitchen · Est. 2019</p>
+      <h1>Cooked over fire. <em>Shared</em> at long tables.</h1>
+      <p class="lead">Seasonal plates from Ontario farms, a bread oven that never cools down, and a short list of natural wines. Come hungry, bring friends.</p>
+      <div class="cta"><a class="btn" href="#visit">Book a table →</a><a class="btn line" href="#menu">See the menu</a></div>
+      <div class="facts">
+        <div><b>Wed – Sun</b>5pm until late</div>
+        <div><b>Walk-ins</b>always welcome at the bar</div>
+        <div><b>Groups</b>up to 24 guests</div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/hero.jpg" alt="The dining room in the evening">
+      <div class="badge"><b>Sunday roast</b>From 1pm, every week</div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="sec-title">
+      <div><p class="eyebrow">This season</p><h2>The menu</h2></div>
+      <p>Everything changes with the farms. Ask your server what came in this morning.</p>
+    </div>
+    <div class="menu-cols">
+      <div>
+        <h3>To start</h3>
+        <div class="dish"><b>Rye sourdough, cultured butter</b><span class="p">8</span><small>Baked in the wood oven every afternoon</small></div>
+        <div class="dish"><b>Charred leeks <span class="tag">V</span></b><span class="p">14</span><small>Romesco, toasted hazelnuts, lemon</small></div>
+        <div class="dish"><b>Beef tartare</b><span class="p">19</span><small>Smoked egg yolk, pickled shallot, rye crisps</small></div>
+        <div class="dish"><b>Ember-roasted squash <span class="tag">V</span></b><span class="p">16</span><small>Brown butter, sage, aged cheddar</small></div>
+      </div>
+      <div>
+        <h3>From the fire</h3>
+        <div class="dish"><b>Half chicken</b><span class="p">32</span><small>Garlic, thyme, charred onions, pan juices</small></div>
+        <div class="dish"><b>Lake trout</b><span class="p">34</span><small>Fennel, blood orange, dill butter</small></div>
+        <div class="dish"><b>Dry-aged striploin, 12oz</b><span class="p">58</span><small>Bone marrow, horseradish, watercress</small></div>
+        <div class="dish"><b>Mushroom &amp; barley <span class="tag">VG</span></b><span class="p">26</span><small>Wild mushrooms, miso, crispy kale</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div class="imgs">
+      <img src="images/dish-1.jpg" alt="A plate from the kitchen">
+      <img src="images/dish-2.jpg" alt="The wood-fired oven">
+    </div>
+    <div>
+      <p class="eyebrow">Our story</p>
+      <h2>A kitchen built around one fire</h2>
+      <p>We started with a single wood oven and a promise to cook only what the farms around us were growing. Seven years later, the oven is still lit every day.</p>
+      <p>Our cooks work with whole animals, heritage grains and vegetables picked that week. Nothing fancy, just good ingredients and patience.</p>
+      <p class="sig">— Mara &amp; Theo, owners</p>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <img src="images/room.jpg" alt="Long tables in the dining room">
+  <img src="images/dish-3.jpg" alt="Dessert">
+  <img src="images/dish-1.jpg" alt="Seasonal plate">
+</div>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-title"><div><p class="eyebrow">Kind words</p><h2>What guests say</h2></div></div>
+    <!-- Replace with real reviews from your customers. -->
+    <div class="quotes">
+      <div class="quote"><div class="stars">★★★★★</div><p>“The bread alone is worth the trip. The chicken was the best I've had all year.”</p><span>Sample review · Google</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>“Warm, loud in the best way, and the staff remembered us from last time.”</p><span>Sample review · OpenTable</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>“We booked the long table for a birthday. Every plate was a hit.”</p><span>Sample review · Google</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div><h2>Come and eat with us</h2><a class="btn" href="tel:+15195550123">Call to book · (519) 555-0123</a></div>
+    <div><h4>Find us</h4><address>210 King Street<br>London, ON N6A 1C9<br><a href="https://maps.google.com" target="_blank" rel="noopener">Open in Maps →</a></address></div>
+    <div><h4>Hours</h4>
+      <table>
+        <tr><td>Mon – Tue</td><td>Closed</td></tr>
+        <tr><td>Wed – Thu</td><td>5pm – 10pm</td></tr>
+        <tr><td>Fri – Sat</td><td>5pm – 11pm</td></tr>
+        <tr><td>Sunday</td><td>1pm – 9pm</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> Ember &amp; Rye</span>
+    <span><a href="#">Instagram</a><a href="#">Gift cards</a><a href="#">Private dining</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
