@@ -1,0 +1,43 @@
+{
+ "slug": "maple-taffy-asmr",
+ "title": "Maple taffy on snow ASMR",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "video",
+ "tools": [
+  "Veo",
+  "Sora",
+  "Kling"
+ ],
+ "summary": "A satisfying close-up of hot maple syrup setting into taffy on fresh snow, with crunchy, sticky sound.",
+ "why": "Satisfying close-up ASMR clips (pouring, slicing, crunching) are still among the most watched AI videos. This one has a Canadian twist that stands out from the usual glass-fruit cutting.",
+ "steps": [
+  "Use a video model that can make sound, or add sound effects afterwards.",
+  "Paste the main prompt.",
+  "Keep the clip short and loop it."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Extreme close-up, macro lens: hot amber maple syrup pours in a slow, glossy ribbon onto a tray of fresh white snow, steaming slightly. It sets into a soft golden strip of taffy, and a wooden stick presses in and rolls it up slowly. Crisp daylight, shallow depth of field, crunchy snow and sticky pulling sounds, no music. 8 seconds."
+  },
+  {
+   "label": "Variation: wax seal",
+   "text": "Macro close-up: a stick of deep red sealing wax melts and drips onto cream paper, then a brass stamp presses in and lifts away, leaving a crisp maple-leaf seal. Soft warm light, satisfying press and peel sound, no music. 6 seconds."
+  },
+  {
+   "label": "Variation: for a café",
+   "text": "Macro close-up of a barista pouring steamed milk into an espresso, forming a slow, perfect leaf pattern, then a spoon taps the cup. Morning window light, gentle pouring and clink sounds, no music. 7 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Write \"no music\". Clean sound is the point of ASMR.",
+  "Macro clips hide small AI mistakes, so they're a good first video project.",
+  "Loop the best 3 seconds for Reels and Shorts."
+ ],
+ "tags": [
+  "asmr",
+  "video",
+  "canada",
+  "satisfying"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "slug": "1980s-picture-day",
+ "title": "1980s school picture day",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "Your selfie as a 1980s school photo: mottled blue backdrop, soft light and a slightly awkward smile.",
+ "why": "1980s-style portraits have been one of the biggest AI photo trends since September, and the school-photo version gets a lot of shares because everyone remembers picture day.",
+ "steps": [
+  "Use a selfie where you're looking straight at the camera.",
+  "Paste the main prompt.",
+  "Try the laser backdrop version for a glamour look."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my attached photo and keep my face recognisable. Turn it into a 1980s school picture day photo: a mottled blue-grey studio backdrop, soft flat flash, a slightly awkward closed-mouth smile, head tilted a little to one side. I'm wearing a chunky knit sweater over a collared shirt, with a slightly too-neat 1980s hairstyle. Faded colour film, soft focus, a thin white border like a printed wallet photo. Vertical 4:5."
+  },
+  {
+   "label": "Variation: laser backdrop",
+   "text": "Same photo, but as a 1980s glamour studio portrait: a dark backdrop with blue and purple laser beams, big voluminous hair, a shiny satin jacket, soft-focus glow, a dreamy hazy look. Keep my face recognisable. 4:5."
+  },
+  {
+   "label": "Variation: team photo",
+   "text": "Use the attached photo of our team (everyone has agreed). Keep every face recognisable. Make it a 1980s company photo: everyone in matching polo shirts with the company name stitched on, standing in two rows in front of the shop, faded film colours, soft flash, a printed white border. 4:5."
+  }
+ ],
+ "tips": [
+  "Say \"keep my face recognisable\". Era edits often change faces more than other styles.",
+  "Post your real photo and the 1980s one side by side.",
+  "The team version is a fun \"throwback Thursday\" post for small businesses."
+ ],
+ "tags": [
+  "retro",
+  "1980s",
+  "selfie",
+  "business"
+ ]
+}

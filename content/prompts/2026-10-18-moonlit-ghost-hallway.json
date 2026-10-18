@@ -1,0 +1,43 @@
+{
+ "slug": "moonlit-ghost-hallway",
+ "title": "Moonlit ghost in an old hallway",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Midjourney"
+ ],
+ "summary": "You as an elegant, slightly see-through ghost in a moonlit 1800s hallway. Spooky, not gory.",
+ "why": "Elegant ghost portraits in old houses are one of this season's popular Halloween looks, a calmer alternative to horror edits.",
+ "steps": [
+  "Attach a clear photo of yourself (shoulders up is fine).",
+  "Paste the main prompt.",
+  "Animate the best result with the video prompt."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my attached photo for the face and keep it recognisable. Create a moonlit hallway in an old 1800s house: tall windows, faded floral wallpaper, a dusty runner rug and a candle on a side table. I'm standing halfway down the hall in a high-collared white period outfit, slightly see-through, with a soft glow around my edges as if I'm fading. Cool blue moonlight through the windows, dust floating in the light beams, long-exposure feel, eerie but elegant. Vertical 4:5."
+  },
+  {
+   "label": "Make it move (video)",
+   "text": "Use the image as the first frame. The ghostly figure slowly turns toward the camera and fades away, the candle flame flickers, dust drifts through the moonlight, very slow push in, 6 seconds, 9:16."
+  },
+  {
+   "label": "Variation: for a business",
+   "text": "Same moonlit 1800s hallway, no person. A single glowing pumpkin latte sits on the side table with steam curling up, as if a ghost just left it there. Cool moonlight, warm glow from the cup, 4:5. Leave empty space at the top for text."
+  }
+ ],
+ "tips": [
+  "\"Slightly see-through\" works better than \"transparent\", which can erase the person.",
+  "Keep it spooky, not gory, if you're posting from a business account.",
+  "The business version makes a good Halloween story for a café or bakery."
+ ],
+ "tags": [
+  "halloween",
+  "portrait",
+  "ghost",
+  "business"
+ ]
+}

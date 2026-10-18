@@ -1,0 +1,41 @@
+{
+ "slug": "half-skull-face-paint",
+ "title": "Half skull face paint portrait",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "A clean editorial portrait with half your face painted as a skeleton and the other half natural.",
+ "why": "Half-face skeleton looks are a classic Halloween make-up idea, and AI versions are popular this month because you get the look without an hour in front of a mirror.",
+ "steps": [
+  "Use a straight-on selfie with your hair away from your face.",
+  "Paste the main prompt with the photo attached.",
+  "Try the glow version for a darker, party feel."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my attached photo and keep my face identical. Paint the left half of my face as a detailed skeleton: white base, black eye socket, black nose cavity, and teeth drawn over the lips and cheek. Leave the right half natural with light everyday make-up. A clean split exactly down the middle of the face. Dark charcoal backdrop, one soft light from the right, sharp focus on the eyes, editorial portrait photography. Vertical 4:5."
+  },
+  {
+   "label": "Variation: glow in the dark",
+   "text": "Same portrait, but under blacklight: the skeleton paint glows bright white and pale blue, the room is almost dark, faint purple light on the natural side of my face. Keep my face identical. 4:5."
+  },
+  {
+   "label": "Make it move (video)",
+   "text": "Use the finished portrait as the first frame. The person slowly turns their head toward the camera and blinks once, the light flickers slightly, slow push in, 5 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Say which side to paint. If you don't, the AI may paint both.",
+  "Ask for \"face paint\", not a mask, so it follows the shape of your face.",
+  "For the video version, use Runway, Kling or Higgsfield image-to-video and describe only the motion."
+ ],
+ "tags": [
+  "halloween",
+  "portrait",
+  "makeup"
+ ]
+}

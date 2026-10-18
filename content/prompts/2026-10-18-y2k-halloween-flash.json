@@ -1,0 +1,42 @@
+{
+ "slug": "y2k-halloween-flash",
+ "title": "Y2K Halloween flash photo",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "Turn a selfie into a candid early-2000s Halloween snapshot: harsh flash, film grain and a date stamp.",
+ "why": "Throwback Halloween photos that look like they were found in a drawer are one of this October's most shared AI looks. The harsh on-camera flash is what sells it.",
+ "steps": [
+  "Pick a clear, front-facing selfie in even light.",
+  "Attach it to ChatGPT or Gemini and paste the main prompt.",
+  "Ask for two or three versions and keep the one where your face looks most like you."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my attached photo. Keep my face, hair and features exactly as they are. Recreate it as a candid photo from around 2003: a teenager's bedroom at night, a small boxy TV glowing in the background, orange string lights, posters slightly out of focus. I'm wearing a plain black top, holding plastic vampire fangs and half-laughing. Harsh direct on-camera flash like a cheap disposable camera, deep shadows behind me, slight red-eye, visible film grain, warm faded colours, and a small orange date stamp in the bottom-right corner that reads 10 31 03. Vertical 4:5."
+  },
+  {
+   "label": "Variation: cat ears",
+   "text": "Same photo and same 2003 flash look, but I'm wearing black cat ears and have whiskers drawn on in eyeliner, sitting on the edge of a bed with a bowl of candy. Keep my face exactly the same. Film grain, harsh flash, 4:5."
+  },
+  {
+   "label": "Variation: friends",
+   "text": "Use the attached photo of my friends (everyone in it has agreed). Keep every face exactly the same. Make it a 2003 house-party Halloween snapshot: homemade costumes, a kitchen with fridge magnets, red plastic cups, harsh disposable-camera flash, motion blur on one person laughing, film grain, date stamp 10 31 03. 4:5."
+  }
+ ],
+ "tips": [
+  "If your face changes, add: \"Do not change my face shape, eyes, nose or skin tone.\"",
+  "Keep the date stamp short. Long text often comes out garbled.",
+  "Post it as a carousel with your real photo second. People love the before and after."
+ ],
+ "tags": [
+  "halloween",
+  "selfie",
+  "retro",
+  "y2k"
+ ]
+}

@@ -241,16 +241,7 @@
     });
   }
 
-  document.addEventListener("click", function (e) {
-    var b = e.target.closest("[data-copy]");
-    if (!b) return;
-    var pre = document.getElementById(b.getAttribute("data-copy"));
-    var text = pre ? pre.textContent : "";
-    var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500); };
-    var fallback = function () { var r = document.createRange(); r.selectNodeContents(pre); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected: press Ctrl+C"; };
-    try { navigator.clipboard.writeText(text).then(done, fallback); } catch (err) { fallback(); }
-  });
-
+  /* Copy buttons are handled site-wide in site.js. */
   window.SATools = { mount: mount };
   mount(document);
 })();

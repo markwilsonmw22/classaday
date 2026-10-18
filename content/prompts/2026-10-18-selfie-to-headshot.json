@@ -1,0 +1,42 @@
+{
+ "slug": "selfie-to-headshot",
+ "title": "Selfie to professional headshot",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "A clean, natural-looking LinkedIn headshot from a phone selfie, without the plastic AI skin.",
+ "why": "AI headshots for LinkedIn and résumés are one of the most searched AI photo uses all year, and newer image models keep faces more accurate than before.",
+ "steps": [
+  "Take a selfie by a window, at eye level, with a plain wall behind you.",
+  "Paste the main prompt.",
+  "Compare it with your real face before you use it anywhere official."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my attached photo. Keep my face, skin tone, hairline and features exactly the same; don't make me look younger or thinner. Turn it into a professional headshot: a light grey studio backdrop, soft front light from slightly above, a dark blazer over a plain top, relaxed natural smile, sharp eyes, natural skin texture with no heavy smoothing. Head and shoulders, square 1:1."
+  },
+  {
+   "label": "Variation: on location",
+   "text": "Same rules for my face. Make it an outdoor headshot on a city street in soft overcast light, buildings blurred behind me, a smart-casual jacket, friendly natural smile. Square 1:1."
+  },
+  {
+   "label": "Variation: team set",
+   "text": "I'll attach one photo per team member, all taken with permission. For each one, keep the face exactly the same and use the same light grey backdrop, the same soft light and the same head-and-shoulders crop, so the set matches on our website. Square 1:1."
+  }
+ ],
+ "tips": [
+  "Ask for \"natural skin texture\" to avoid the plastic look.",
+  "Don't use a headshot that no longer looks like you. People notice when they meet you.",
+  "For a team page, get everyone's OK before you edit their photo."
+ ],
+ "tags": [
+  "headshot",
+  "linkedin",
+  "business",
+  "portrait"
+ ]
+}

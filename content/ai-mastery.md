@@ -6,8 +6,8 @@
   "titleHtml": "AI Mastery, <em>from first prompt to your own apps</em>",
   "aura": "ai",
   "level": "Beginner to intermediate",
-  "lede": "Twenty-three days with Claude, ChatGPT, Runway, HeyGen, ElevenLabs and the rest of the toolkit. You'll learn to prompt well, make AI images, voice and video, build and deploy a full-stack app, and connect tools with MCP.",
-  "metaDescription": "A 23-day AI course in plain English: prompting, Claude, ChatGPT, AI images, ElevenLabs voice, AI video with Runway and Higgsfield, HeyGen avatars and translation, full-stack apps with AI, MCP and automation.",
+  "lede": "Twenty-four days with Claude, ChatGPT, Cursor, Runway, HeyGen, ElevenLabs and the rest of the toolkit. You'll learn to prompt well, make AI images, voice and video, build and deploy a full-stack app, and connect tools with MCP.",
+  "metaDescription": "A 24-day AI course in plain English: prompting, Claude, ChatGPT, AI images, ElevenLabs voice, AI video with Runway and Higgsfield, HeyGen avatars and translation, full-stack apps with Claude Code and Cursor, MCP and automation.",
   "outcome": "Use AI like a skilled professional: for writing, research, media and building real software.",
   "learn": [
     "Explain how AI models work, and where they go wrong, in plain words",
@@ -19,6 +19,7 @@
     "Generate, edit and act out AI video in Runway",
     "Make presenter videos and translations in HeyGen, with proper consent",
     "Understand how web apps work: frontend, backend, database and hosting",
+    "Find your way around everything in Cursor, the AI code editor",
     "Build and deploy a full-stack app with Claude Code, Supabase and Vercel",
     "Build your own MCP server and connect it to Claude",
     "Automate repetitive work and turn AI skills into paid services"
@@ -139,11 +140,11 @@ There are thousands of AI tools, but they fall into a few categories. Once you k
 
 ### Building software
 
-**Claude Code** and **Cursor** for coding with AI in real projects; **Lovable**, **Bolt**, **v0** and **Replit** for building apps from a description in the browser. Days 17–21.
+**Claude Code** and **Cursor** for coding with AI in real projects; **Lovable**, **Bolt**, **v0** and **Replit** for building apps from a description in the browser. Days 17–22.
 
 ### Automation
 
-**Zapier**, **Make** and **n8n** connect apps and add AI steps. **MCP** connects AI assistants directly to your tools. Days 21–22.
+**Zapier**, **Make** and **n8n** connect apps and add AI steps. **MCP** connects AI assistants directly to your tools. Days 22–23.
 
 ### How to choose
 
@@ -536,7 +537,7 @@ Claude comes in a family of models. Larger ones (like **Opus**) are the most cap
 
 **Styles.** Choose or create a writing style (for example, concise or formal), or teach Claude your style from samples.
 
-**Connectors.** Connect apps like Google Drive, Gmail, calendars, GitHub and many others so Claude can read and act in them. Connectors are built on **MCP**, which you'll learn properly on Day 21.
+**Connectors.** Connect apps like Google Drive, Gmail, calendars, GitHub and many others so Claude can read and act in them. Connectors are built on **MCP**, which you'll learn properly on Day 22.
 
 **Claude Code.** Anthropic's coding agent for building software, which you'll use on Day 19.
 
@@ -1226,14 +1227,14 @@ Two finished HeyGen videos (one from a script, one from Video Agent) and one tra
 @tip
 Translate your best-performing video first. If it already works in English, it's worth the proofreading time in a second language.
 
-# M5 | Build software with AI | Learn how apps work, build one with AI builders and Claude Code, deploy it, and connect tools with MCP.
+# M5 | Build software with AI | Learn how apps work, build one with AI builders, Claude Code and Cursor, deploy it, and connect tools with MCP.
 
 ## D17 | How web apps work (no code yet) | 3 | How apps work
 @goal Understand the parts of a modern web app well enough to direct AI tools to build one, and to fix things when they break.
 @lesson
 You don't need to become a programmer to build software with AI. You do need to understand **the parts of an app** and how they talk to each other. That knowledge is the difference between "the AI built something weird" and "I told the AI exactly what to build".
 
-{{fig:ai-stack|The parts of a typical modern web app. You'll build exactly this stack in Days 19–20.}}
+{{fig:ai-stack|The parts of a typical modern web app. You'll build exactly this stack in Days 19–21.}}
 
 ### The frontend
 
@@ -1372,7 +1373,7 @@ Save your spec in a file. Every time the app drifts from what you wanted, paste 
 @lesson
 **Claude Code** is Anthropic's AI coding agent. Instead of only suggesting code in a chat, it works inside a real project: it reads your files, makes changes across many files, runs commands and tests, and explains what it did. It runs in your terminal, in code editors like VS Code, in a desktop app and on the web.
 
-**Cursor** is a popular alternative: a code editor with AI built in. The ideas below work in both.
+**Cursor** is a popular alternative: a code editor with AI built in. The ideas below work in both, and Day 20 gives you a full tour of Cursor.
 
 ### Installing Claude Code
 
@@ -1444,7 +1445,95 @@ Claude Code installed, a project on GitHub with a CLAUDE.md, and your first AI-b
 @tip
 Ask for a plan first on anything bigger than a small fix. Reading a five-line plan takes one minute and saves an hour of undoing changes you didn't want.
 
-## D20 | Project: build and deploy a full-stack app | 4.5 | Full-stack project
+## D20 | Cursor: a full tour of the AI code editor | 3.5 | Cursor
+@goal Find your way around everything in Cursor (Tab, inline edits, Agent with Ask and Plan modes, checkpoints, rules, MCP, Design Mode, cloud agents and code review) and use it on your Day 19 project.
+@lesson
+Yesterday you used Claude Code, an agent that works from your terminal. **Cursor** takes a different approach: it's a full **code editor** with AI built into every part of it. It's built on VS Code, so if you've used VS Code it will feel familiar, and it can import your extensions, settings and shortcuts the first time you open it.
+
+Many developers use both: Cursor when they want to work inside the code, Claude Code for long tasks in the terminal. You can even pick Claude models inside Cursor.
+
+### The tour: what's in Cursor
+
+| Feature | What it does | When to use it |
+|---|---|---|
+| **Tab** | Predicts your next edit as you type; press Tab to accept | All the time when you edit by hand |
+| **Inline edit** (Ctrl+K, or Cmd+K on Mac) | Select some code, describe a change, get the edit right there | Small, local changes |
+| **Agent** (the chat panel) | Reads and edits many files, runs commands, searches the web and fixes its own errors | Features, bugs and clean-ups |
+| **Ask mode** | Answers questions about your code without changing anything | Understanding a project |
+| **Plan mode** | Asks clarifying questions, then writes a plan you can edit before any code changes | Anything bigger than a small fix |
+| **Checkpoints** | Automatic restore points before the agent's changes | Undoing a change you don't like |
+| **Agents Window** | Runs several agents side by side, each in its own copy of the project | Trying two approaches at once |
+| **Design Mode** | Click parts of your running app in the built-in browser and describe the change | Visual tweaks |
+| **Rules** | Instructions the agent always follows | Your stack, your style, your "never do this" list |
+| **MCP and plugins** | Connect services like GitHub, Supabase or Figma | Letting the agent use your tools |
+| **Cloud agents** | Agents that run on Cursor's servers and open a pull request when they finish | Work that carries on while you're away |
+| **Bugbot** and **/review** | AI code review on pull requests, or before you push | Catching bugs early |
+| **CLI** | The same agent in your terminal | Scripts, servers and automation |
+
+Cursor ships updates almost every week, so buttons move. If you can't find something, search Cursor's docs or ask the agent: *"Where do I find Design Mode in this version?"*
+
+### Choosing a mode
+
+Switch modes from the dropdown in the chat panel (the keyboard shortcut is shown there too):
+
+- **Ask** first, when a project is new to you: *"Explain how login works in this app."*
+- **Plan** for anything with several steps. Read the plan, edit it, then let it build.
+- **Agent** to make the changes. Watch the diffs and **accept or reject** each file.
+
+### Giving it the right context
+
+Type **@** in the chat to point the agent at exactly what matters:
+
+- **@ a file or folder:** the code you mean
+- **@docs:** a library's documentation (you can add your own docs sites)
+- **@web:** a web search for something current
+- Paste an error message or a screenshot
+
+Specific beats long. *"@Header.tsx the menu doesn't close on mobile after I tap a link"* works far better than *"fix the menu"*.
+
+### Rules: Cursor's version of CLAUDE.md
+
+Put project instructions in **`.cursor/rules/`** as small files, for example one for your tech stack and one for your design rules. A rule can always apply, or only apply to matching files (like every `.tsx` file). Cursor also reads an **`AGENTS.md`** file in the project root, so one instructions file can serve several AI tools.
+
+### Models
+
+You choose the AI model in the chat panel. Cursor has its own fast coding model (**Composer**), an automatic option that picks a model for you, and models from Anthropic, OpenAI, Google and others. Start with the automatic option, and switch to a stronger model for hard problems.
+
+### Safety and privacy
+
+- **Read terminal commands** before you approve them. Only let the agent run commands without asking in a project that's committed to Git, so you can always go back.
+- Use **checkpoints** to undo the agent, and **Git commits** to save working versions.
+- Turn on **Privacy Mode** for client work, and list secrets and private folders in **`.cursorignore`** so Cursor doesn't read or index them.
+
+### Plans
+
+The free Hobby plan is enough to try everything in this lesson. Paid plans add much more agent use. Cloud agents and code review can be billed on top, so check the pricing page before you turn them on for a team.
+@demo
+**Day 19's restaurant website, opened in Cursor.**
+
+1. **Ask:** *"Give me a tour of this project: the main folders, how pages are made and where the booking form sends its emails."*
+2. **Rules:** she adds `.cursor/rules/stack.mdc`: *"Next.js App Router, Tailwind, TypeScript. Mobile first. Never put API keys in code."*
+3. **Plan:** *"Add a Menu page that reads dishes and prices from menu.json, grouped by section, with a Vegetarian filter."* Cursor asks whether prices include tax and whether the filter should remember the visitor's choice. She answers, deletes one step she doesn't need, and lets it build.
+4. **Review:** she reads the diffs, rejects a change to the footer she didn't ask for, and accepts the rest.
+5. **Design Mode:** with the site running, she clicks the menu headings and says *"make these smaller and add more space above each section"*.
+6. **Tab:** while changing a price by hand, Tab suggests updating the matching "from $14" line on the home page. One keypress.
+7. **Review and commit:** she runs `/review`, fixes the one issue it finds (an image with no alt text), then commits and pushes.
+
+About 50 minutes for a feature she couldn't have built by hand a month ago.
+@tasks
+- Install Cursor, import your VS Code settings if you have them, and open your Day 19 project (20 min)
+- Use Ask mode to get a tour of the project and save the answer in your notes (15 min)
+- Add two rules in .cursor/rules: one for your tech stack, one for your style (20 min)
+- Plan one small feature in Plan mode, edit the plan, then build it with Agent (45 min)
+- Review every diff, reject at least one change, and restore a checkpoint once to see how it works (15 min)
+- Make two visual tweaks with Design Mode or inline edit (20 min)
+- Commit and push, then write down when you'd use Cursor and when you'd use Claude Code (15 min)
+@deliverable
+Your project open in Cursor with project rules, one new feature built through Ask, Plan and Agent, and a note on when you'll use Cursor versus Claude Code.
+@tip
+Use the smallest tool that fits: Tab for a word, inline edit for a few lines, Agent for a feature. Big tools on small jobs waste time and credits.
+
+## D21 | Project: build and deploy a full-stack app | 4.5 | Full-stack project
 @goal Build a real habit-tracker app with login and a database using Next.js and Supabase, and deploy it live on Vercel.
 @lesson
 Today you build a complete app: users sign up, add habits, tick them off each day, and only ever see their own data. It's small, but it uses every part of a real product.
@@ -1531,7 +1620,7 @@ A live full-stack habit tracker with sign-up, a private database and automatic d
 @tip
 When deployment fails, open the build logs in Vercel and paste the first red error into Claude Code. Nine times out of ten it's a missing environment variable.
 
-## D21 | MCP: connect AI to your tools, and build your own server | 4 | MCP
+## D22 | MCP: connect AI to your tools, and build your own server | 4 | MCP
 @goal Understand the Model Context Protocol, connect existing MCP servers to Claude, and build and connect a small MCP server of your own.
 @lesson
 **MCP (Model Context Protocol)** is an open standard, introduced by Anthropic in 2024, for connecting AI applications to tools and data. Think of it like **USB-C for AI**: one standard plug that lets any compatible AI app use any compatible tool.
@@ -1656,7 +1745,7 @@ Start every custom server read-only. Add tools that change data only after you'r
 
 # M6 | Automation & earning | Automate repetitive work and turn your new skills into income.
 
-## D22 | Automations and AI agents | 3.5 | Automations
+## D23 | Automations and AI agents | 3.5 | Automations
 @goal Build automations that connect your apps and use AI steps, and understand what AI agents are and how to use them safely.
 @lesson
 Automation tools connect apps so that when something happens in one, something happens in another, without you lifting a finger. Add an AI step in the middle, and the automation can read, write and decide.
@@ -1720,7 +1809,7 @@ One working automation with an AI step and a human approval point, plus a list o
 @tip
 Automate tasks you've already done by hand at least ten times. You'll know the edge cases, and you'll write a much better prompt.
 
-## D23 | Turn AI skills into income | 3 | AI skills into income
+## D24 | Turn AI skills into income | 3 | AI skills into income
 @goal Choose an AI-powered service you can sell, price it, build a small portfolio and write your 30-day plan.
 @lesson
 Most businesses know they should use AI but don't have the time to learn it. You now do. That gap is an opportunity.
@@ -1732,7 +1821,7 @@ Most businesses know they should use AI but don't have the time to learn it. You
 | AI content packages | Monthly social posts, images, short videos | Cafés, salons, trades, shops |
 | AI video ads | 3–5 short ads per month | E-commerce brands, local businesses |
 | Voiceover and dubbing | Narration, translated versions | Course creators, YouTubers, trainers |
-| Automation setup | 3–5 automations like Day 22 | Small offices, agencies, clinics |
+| Automation setup | 3–5 automations like Day 23 | Small offices, agencies, clinics |
 | AI setup and training | Projects, prompt libraries, team training | Small teams |
 | Simple web apps and tools | Booking tools, internal dashboards | Local businesses |
 | MCP and AI integrations | Connecting AI to their data | Tech-forward businesses |

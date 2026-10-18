@@ -1,0 +1,44 @@
+{
+ "slug": "pet-news-anchor",
+ "title": "Your pet as a TV news anchor",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "video",
+ "tools": [
+  "Kling",
+  "Veo",
+  "Runway",
+  "Higgsfield"
+ ],
+ "summary": "Your dog or cat reads the evening news in a tiny blazer. Works best from a clear photo of your pet.",
+ "why": "Pets acting out human jobs (news anchors, baristas, chefs) are one of the most shared AI video formats right now.",
+ "steps": [
+  "Take a clear, well-lit photo of your pet facing the camera.",
+  "Make the news desk scene as an image first, with your pet as the reference.",
+  "Animate it with the video prompt."
+ ],
+ "prompts": [
+  {
+   "label": "Step 1: the image",
+   "text": "Use my attached photo of my dog as the reference and keep the dog exactly the same: breed, colouring and markings. The dog sits behind a TV news desk wearing a tiny navy blazer and tie, looking straight into the camera. Bright studio lights, blue news-set background with city lights, a blank lower-third banner. Vertical 9:16."
+  },
+  {
+   "label": "Step 2: the video",
+   "text": "Use the image as the first frame. The dog looks into the camera, tilts its head, then nods seriously as if reading the news, ears twitching. Slow push in, studio lighting, 6 seconds."
+  },
+  {
+   "label": "Variation: cat barista",
+   "text": "Use my attached photo of my cat and keep the cat exactly the same. The cat stands behind a café counter in a little apron, carefully pouring latte art into a cup with its paws, steam rising, cosy morning light. Then animate: the cat finishes the pour and looks proudly at the camera. 9:16."
+  }
+ ],
+ "tips": [
+  "Add the headline text in your editor, not in the prompt. AI video text is often garbled.",
+  "One action per clip. Make several clips and cut them together.",
+  "Pet videos are great engagement posts for vets, groomers and pet shops."
+ ],
+ "tags": [
+  "pets",
+  "video",
+  "funny",
+  "business"
+ ]
+}

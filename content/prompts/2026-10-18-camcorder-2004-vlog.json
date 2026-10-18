@@ -1,0 +1,44 @@
+{
+ "slug": "camcorder-2004-vlog",
+ "title": "Early-2000s camcorder clip",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "video",
+ "tools": [
+  "Veo",
+  "Kling",
+  "Sora",
+  "Runway"
+ ],
+ "summary": "A short clip that looks like it was filmed on a family camcorder around 2004, timestamp and all.",
+ "why": "Retro camcorder clips are one of the AI video formats people are sharing most this autumn. The home-video look makes AI video feel warm and real instead of glossy.",
+ "steps": [
+  "Start from your own photo for the first frame, or use text to video.",
+  "Paste the main prompt and generate 2–3 versions.",
+  "Add the date overlay in your editor if the AI's text comes out messy."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Handheld home video from a consumer camcorder around 2004. A family kitchen on a Saturday morning: someone flips pancakes, a kid reaches for the syrup, everyone laughs. Square 4:3 frame, slightly washed-out colours, soft focus that hunts for a moment, a little shake, a small white timestamp in the corner, natural room sound and laughter. 8 seconds."
+  },
+  {
+   "label": "Variation: business behind the scenes",
+   "text": "Handheld 2004 camcorder footage of a small bakery before opening: trays of cinnamon rolls come out of the oven, flour in the air, a baker waves at the camera. 4:3 frame, washed-out colours, slight shake, auto-focus hunting, timestamp in the corner, warm natural sound. 8 seconds."
+  },
+  {
+   "label": "Variation: from your photo",
+   "text": "Use the image as the first frame. Make it look like 2004 camcorder footage: the people in it start moving naturally and laughing, the camera shakes a little, colours wash out slightly, a timestamp appears in the corner. Describe nothing else. 6 seconds."
+  }
+ ],
+ "tips": [
+  "Ask for \"4:3\". The square frame is half the retro effect.",
+  "Keep the action simple: one thing happening in one room.",
+  "Label it as AI-made where the platform asks, especially if it shows people."
+ ],
+ "tags": [
+  "retro",
+  "video",
+  "y2k",
+  "business"
+ ]
+}

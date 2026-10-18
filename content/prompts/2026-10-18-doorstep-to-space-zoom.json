@@ -1,0 +1,38 @@
+{
+ "slug": "doorstep-to-space-zoom",
+ "title": "From your door to outer space",
+ "published": "2026-10-18T07:30:00Z",
+ "kind": "video",
+ "tools": [
+  "Runway",
+  "Kling",
+  "Veo"
+ ],
+ "summary": "One continuous camera move from your storefront or street up through the clouds to the night side of Earth.",
+ "why": "Impossible camera moves, like a single zoom from street level to space, are a popular cinematic AI video effect this season.",
+ "steps": [
+  "Take a straight-on photo of your storefront, house or street.",
+  "Use it as the first frame and paste the prompt.",
+  "Reverse the clip in your editor for a space-to-your-door version."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use the image as the first frame. One continuous camera move with no cuts: the camera rises smoothly from street level, up past the rooftops, high above the city, through a layer of clouds, until the curve of the Earth is visible at night with city lights glowing below. Smooth, steady and fast toward the end. 10 seconds, 9:16."
+  },
+  {
+   "label": "Variation: reveal the business",
+   "text": "Start in space looking down at the night side of the Earth. One continuous dive with no cuts: through the clouds, down over a snowy Canadian city, along a main street, and stopping in front of a small café with warm light in the windows. 10 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Using your own photo as the first frame keeps the starting point real.",
+  "Ask for \"one continuous move, no cuts\", or the model may jump between shots.",
+  "End the reversed version on your logo or opening hours."
+ ],
+ "tags": [
+  "video",
+  "cinematic",
+  "business"
+ ]
+}

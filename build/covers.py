@@ -40,7 +40,7 @@ def course_cover(aura, bg, kcol, kicker, title, sub, figure):
 
 pages = {
     "dropshipping": course_cover("drop", "#fff1e6", "#e2702a", "30-day plan", "Dropshipping", "Zero to first sales,<br>one day at a time", "ds-unit"),
-    "ai-mastery": course_cover("ai", "#e8eefe", "#3462e0", "23-day plan", "AI Mastery", "Claude, ChatGPT, AI video,<br>apps and MCP", "ai-prompt"),
+    "ai-mastery": course_cover("ai", "#e8eefe", "#3462e0", "24-day plan", "AI Mastery", "Claude, ChatGPT, AI video,<br>apps and MCP", "ai-prompt"),
     "digital-marketing": course_cover("mkt", "#f0eafd", "#7646d6", "30-day plan", "Digital Marketing", "SEO, social, ads,<br>and your own agency", "dm-serp"),
 }
 
@@ -62,6 +62,23 @@ pages["recipe-vault"] = BASE.replace("AURA", "vault").replace("BODY",
 for slug, col in BOOKS:
     pages[f"book-{slug}"] = BASE.replace("AURA", "vault").replace("BODY",
         f'<div class="cv" style="background:{col}22;display:grid;grid-template-columns:1fr;place-items:center;padding:0"><img src="/_covers/book-{slug}.png" style="height:600px;border-radius:6px;box-shadow:0 30px 60px rgba(20,20,18,.28);transform:rotate(-3deg)"></div>')
+
+# Viral Prompts: a stack of real-looking prompt cards.
+def vp_card(kind, title, text, left, top, rot):
+    return (f'<div class="pcard" style="position:absolute;width:560px;left:{left}px;top:{top}px;transform:rotate({rot}deg);box-shadow:0 26px 50px rgba(20,20,18,.16)">'
+            f'<div class="pc-top"><span class="pill kind kind-{kind.lower()}">{kind}</span><span>New today</span></div>'
+            f'<div class="pc-title" style="font-size:1.35rem">{title}</div>'
+            f'<div class="pblock"><div class="pb-top"><b>Main prompt</b><span class="btn light sm">Copy</span></div><pre style="font-size:1rem;max-height:none">{text}</pre></div></div>')
+cards = (vp_card("Video", "Your pet as a TV news anchor", "The dog looks into the camera, tilts its head, then nods seriously as if reading the news. Slow push in, 6 seconds.", 690, 40, 5)
+         + vp_card("Video", "Maple taffy on snow ASMR", "Extreme close-up: hot amber maple syrup pours in a slow, glossy ribbon onto fresh snow…", 610, 300, -4)
+         + vp_card("Image", "Y2K Halloween flash photo", "Use my attached photo. Keep my face exactly as it is. Recreate it as a candid photo from around 2003…", 560, 150, -1))
+pages["viral-prompts"] = BASE.replace("AURA", "vp").replace("BODY",
+    f'<div class="cv" style="background:#fdf2dc;display:block"><div class="tx" style="position:absolute;left:76px;top:190px;width:470px;z-index:2"><span class="k" style="background:#d4870a">New as trends appear</span><h2>Viral Prompts</h2><p>Trending AI photo and<br>video prompts to copy</p></div>{cards}</div>')
+
+# Render only the covers named on the command line, if any (e.g. python3 build/covers.py viral-prompts).
+import sys
+if sys.argv[1:]:
+    pages = {k: v for k, v in pages.items() if k in sys.argv[1:]}
 
 for name, h in pages.items():
     (TMP / f"{name}.html").write_text(h)

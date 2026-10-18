@@ -17,7 +17,8 @@
     { id: "explorer", icon: "🧭", name: "Explorer", how: "Complete lessons in 3 different courses", test: function (s) { return s.coursesStarted >= 3; } },
     { id: "kitchen-pro", icon: "🍰", name: "Kitchen pro", how: "Pass the Recipe Vault kitchen quiz", test: function (s) { return s.kitchen; } },
     { id: "final-pass", icon: "🎓", name: "Exam ready", how: "Pass a final exam", test: function (s) { return s.finals >= 1; } },
-    { id: "graduate", icon: "🏆", name: "Graduate", how: "Finish a whole course and its final exam", test: function (s) { return s.coursesDone >= 1; } }
+    { id: "graduate", icon: "🏆", name: "Graduate", how: "Finish a whole course and its final exam", test: function (s) { return s.coursesDone >= 1; } },
+    { id: "trend-spotter", icon: "📈", name: "Trend spotter", how: "Copy 5 Viral Prompts", test: function (s) { return s.copies >= 5; } }
   ];
 
   function read(k, fallback) { try { var v = JSON.parse(localStorage.getItem(k) || "null"); return v == null ? fallback : v; } catch (e) { return fallback; } }
@@ -69,6 +70,8 @@
         if (done.length >= m.days && q.final && q.final.passed) s.coursesDone++;
       }
     });
+    var vp = read("sa.prompts", {}) || {};
+    s.copies = vp.copies || 0;
     var st = streaks(e.activity);
     s.streak = st.current; s.bestStreak = st.best; s.activeToday = st.activeToday;
     s.xp = s.lessons * 20 + s.tasks * 2 + s.quizPass * 50 + s.perfect * 25 + s.finals * 150 + s.notes * 5 + s.daily * 10 + s.modulesDone * 30;

@@ -7,7 +7,7 @@ finished static site into public/.
 
 Run:  python3 build/build.py
 """
-import json, re, math, html, sys
+import json, re, math, html, sys, hashlib, subprocess, datetime
 from pathlib import Path
 import markdown
 
@@ -155,7 +155,10 @@ PRODUCTS = [
      "desc": "Pick a niche, prove a product, build a Shopify store and run your first ads, one day at a time."},
     {"slug": "ai-mastery", "href": "/courses/ai-mastery/", "aura": "ai", "icon": "AI", "cat": "ai",
      "title": "AI Mastery",
-     "desc": "Claude, ChatGPT, Runway, HeyGen, ElevenLabs, AI video, full-stack apps and MCP, explained simply."},
+     "desc": "Claude, ChatGPT, Cursor, Runway, HeyGen, ElevenLabs, AI video, full-stack apps and MCP, explained simply."},
+    {"slug": "viral-prompts", "href": "/prompts/", "aura": "vp", "icon": "VP", "cat": "ai marketing",
+     "title": "Viral Prompts",
+     "desc": "Copy-ready prompts for the AI photo and video trends people are sharing right now. New packs as trends appear."},
     {"slug": "digital-marketing", "href": "/courses/digital-marketing/", "aura": "mkt", "icon": "DM", "cat": "marketing business",
      "title": "Digital Marketing Agency",
      "desc": "SEO, web scraping, social media, ads, analytics and email, then start and run your own agency."},
@@ -166,19 +169,58 @@ PRODUCTS = [
      "title": "Website Templates",
      "desc": "Six ready-made websites to rebrand and publish, plus a 7-day guide to selling redesigns."},
 ]
-AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)", "mkt": "var(--c-mkt)"}
+AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)", "mkt": "var(--c-mkt)", "vp": "var(--c-vp)"}
+ICON = {"drop": "DS", "ai": "AI", "web": "WB", "mkt": "DM", "vp": "VP"}
+
+# Search-friendly page titles for the course pages (the visible course name stays the same).
+SEO_TITLES = {
+    "dropshipping": "Dropshipping Course: Shopify Store to First Sales in 30 Days",
+    "ai-mastery": "AI Course: Claude, ChatGPT, Cursor, Runway and HeyGen in 24 Days",
+    "digital-marketing": "Digital Marketing Course: SEO, Social Media, Ads and Your Own Agency",
+    "website-builders": "Website Templates Guide: Rebrand, Publish and Sell Websites in 7 Days",
+}
+ORG = {"@type": "Organization", "name": "SchoolAura", "url": SITE + "/"}
+KIND_LABEL = {"image": "Image", "video": "Video", "text": "Text", "voice": "Voice"}
 
 
-def product_card(p, meta, progress=None):
+def strip_tags(s):
+    return html.unescape(re.sub(r"<[^>]+>", " ", s or "")).replace("\xa0", " ")
+
+
+def squash(s):
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def iso_dur(hours):
+    h = int(hours); m = int(round((hours - h) * 60))
+    return f"PT{h}H" + (f"{m}M" if m else "")
+
+
+def git_date(*paths):
+    """Last commit date (YYYY-MM-DD) of the given source files, for sitemap lastmod."""
+    try:
+        out = subprocess.run(["git", "-C", str(ROOT), "log", "-1", "--format=%cs", "--", *[str(p) for p in paths]],
+                             capture_output=True, text=True, timeout=10).stdout.strip()
+        return out or datetime.date.today().isoformat()
+    except Exception:
+        return datetime.date.today().isoformat()
+
+
+def short_hash(text):
+    return hashlib.md5(text.encode()).hexdigest()[:8]
+
+
+def product_card(p, meta, progress=None, badge=False):
     prog = ""
     if progress:
         prog = f'<div class="progress" data-progress="{p["slug"]}" data-total="{progress}"><div class="track"><i></i></div><span>0%</span></div>'
     meta_html = "".join(f'<span class="{"dot" if i else ""}">{m}</span>' for i, m in enumerate(meta))
     find = html.escape((p["title"] + " " + p["desc"] + " " + p["cat"]).lower())
+    badge_html = '<span class="vp-badge" data-prompts-badge hidden></span>' if badge else ""
     return f"""<a class="card" href="{p['href']}" data-find="{find}" data-cat="{p['cat']}">
   <div class="cover"><img src="/assets/img/covers/{p['slug']}.webp" alt="" width="1280" height="720" loading="lazy"></div>
   <div class="card-body">
-    <div class="card-title"><span class="icon-sq" style="background:{AURA[p['aura']]}">{p['icon']}</span>{html.escape(p['title'])}</div>
+    <div class="card-title"><span class="icon-sq" style="background:{AURA[p['aura']]}">{p['icon']}</span>{html.escape(p['title'])}{badge_html}</div>
     <p class="card-desc">{html.escape(p['desc'])}</p>
     {prog if progress else f'<div class="card-meta">{meta_html}</div>'}
   </div>
@@ -187,10 +229,19 @@ def product_card(p, meta, progress=None):
 
 # ---------------------------------------------------------------- page shell
 
-def head(title, desc, path, aura="drop"):
+SEARCH_ICON = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
+
+
+def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonld=None, noindex=False):
     url = SITE + path
+    img = SITE + (og_image or "/assets/img/og.jpg")
     def cur(prefix):
         return ' aria-current="page"' if path.startswith(prefix) else ""
+    ld = ""
+    if jsonld:
+        for block in jsonld:
+            block = dict({"@context": "https://schema.org"}, **block)
+            ld += '<script type="application/ld+json">' + json.dumps(block, ensure_ascii=False).replace("</", "<\\/") + "</script>\n"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -198,20 +249,21 @@ def head(title, desc, path, aura="drop"):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{url}">
-<meta property="og:type" content="website">
+{'<meta name="robots" content="noindex">' if noindex else f'<link rel="canonical" href="{url}">'}
+<meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="SchoolAura">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/assets/img/og.jpg">
+<meta property="og:image" content="{img}">
+<meta property="og:locale" content="en_CA">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/fonts.css">
 <link rel="stylesheet" href="/assets/css/site.css">
-</head>
+{ld}</head>
 <body data-aura="{aura}">
 <header class="site-head">
   <div class="wrap">
@@ -220,12 +272,14 @@ def head(title, desc, path, aura="drop"):
       <a href="/courses/"{cur('/courses/') if path == '/courses/' else ''}>Classroom</a>
       <a href="/courses/dropshipping/"{cur('/courses/dropshipping')}>Dropshipping</a>
       <a href="/courses/ai-mastery/"{cur('/courses/ai-mastery')}>AI Mastery</a>
+      <a href="/prompts/" data-nav-prompts{cur('/prompts')}>Prompts</a>
       <a href="/courses/digital-marketing/"{cur('/courses/digital-marketing')}>Marketing</a>
       <a href="/recipe-vault/"{cur('/recipe-vault')}>Recipe Vault</a>
       <a href="/templates/"{cur('/templates')}{cur('/courses/website-builders')}>Templates</a>
     </nav>
     <div class="head-right">
-      <a class="btn sm" href="/courses/">Start learning</a>
+      <button class="search-btn" type="button" data-search-open aria-label="Search SchoolAura">{SEARCH_ICON}<span>Search</span><kbd>/</kbd></button>
+      <a class="btn sm start-btn" href="/courses/">Start learning</a>
       <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -234,7 +288,8 @@ def head(title, desc, path, aura="drop"):
 """
 
 
-SA_META_JS = ""
+SA_META_JS = "{}"
+SA_PROMPTS_JS = "{}"
 
 
 def foot(extra_js="", pre_js=""):
@@ -242,12 +297,12 @@ def foot(extra_js="", pre_js=""):
 <footer class="site-foot">
   <div class="wrap">
     <span>© <span data-year>2026</span> SchoolAura</span>
-    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
+    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
   </div>
 </footer>
+<script>window.SA_META = {SA_META_JS}; window.SA_PROMPTS = {SA_PROMPTS_JS};</script>
 <script src="/assets/js/site.js"></script>
 <script>document.querySelectorAll("[data-year]").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
-<script>window.SA_META = {SA_META_JS};</script>
 {pre_js}
 <script src="/assets/js/engage.js"></script>
 {extra_js}
@@ -260,9 +315,42 @@ def fmt_h(h):
     return f"{h:g}"
 
 
-# ---------------------------------------------------------------- course page
+def crumbs_ld(items):
+    return {"@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "name": name, "item": SITE + url} for i, (name, url) in enumerate(items)]}
 
-def course_page(c, cover_slug=None):
+
+# ---------------------------------------------------------------- course pages
+
+def course_head(c, title_tag, tabs_current, base_href):
+    days_n, H = len(c["days"]), c["totalHours"]
+    nq = len(c["quiz"]["modules"]) if c.get("quiz") else 0
+    def tab(view, href, label):
+        return f'<a href="{href}" data-view="{view}" aria-current="{"true" if view == tabs_current else "false"}">{label}</a>'
+    title = f'<{title_tag} class="ch-title">{html.escape(c["title"])}</{title_tag}>'
+    if title_tag == "p":
+        title = f'<p class="ch-title"><a href="{base_href}">{html.escape(c["title"])}</a></p>'
+    return f"""
+<div class="course-head">
+  <div class="wrap">
+    <span class="icon-sq">{ICON.get(c['aura'], 'SA')}</span>
+    <div class="ch-text">{title}<p class="sub">{c['code']} · {days_n} lessons · about {fmt_h(H)} hours</p></div>
+    <div id="me-chip" class="ch-chip"></div>
+  </div>
+  <div class="wrap">
+    <nav class="tabs" aria-label="Course sections">
+      {tab("day", base_href + "day-1/", "Classroom")}
+      {tab("plan", base_href + "#plan", "Calendar")}
+      {tab("quizzes", base_href + "#quizzes", "Quizzes") if nq else ""}
+      {tab("about", base_href + "#about", "About")}
+    </nav>
+  </div>
+</div>
+"""
+
+
+def course_page(c, data_src):
+    slug, base = c["slug"], f"/courses/{c['slug']}/"
     days_n = len(c["days"])
     H = c["totalHours"]
     at3, at4 = math.ceil(H / 3), math.ceil(H / 4)
@@ -270,36 +358,15 @@ def course_page(c, cover_slug=None):
     mods = []
     for m in c["modules"]:
         mh = sum(d["hours"] for d in c["days"] if d["n"] in m["days"])
-        items = "".join(f'<li><a href="#day-{d["n"]}"><span>Day {d["n"]}: {html.escape(d["title"])}</span><small>{fmt_h(d["hours"])} h</small></a></li>'
+        items = "".join(f'<li><a href="{base}day-{d["n"]}/"><span>Day {d["n"]}: {html.escape(d["title"])}</span><small>{fmt_h(d["hours"])} h</small></a></li>'
                         for d in c["days"] if d["n"] in m["days"])
         rng = f"{len(m['days'])} lessons" if len(m["days"]) > 1 else "1 lesson"
         mods.append(f'<details class="mod"{" open" if m["n"] == 1 else ""}><summary><span>Module {m["n"]}: {html.escape(m["title"])}</span><small>{rng} · {fmt_h(mh)} h</small></summary><p class="msum">{html.escape(m["summary"])}</p><ol>{items}</ol></details>')
     who = "".join(f"<li>{md_inline(x)}</li>" for x in c["forWho"])
     need = "".join(f"<li>{md_inline(x)}</li>" for x in c["need"])
-    data = {"slug": c["slug"], "code": c["code"], "title": c["title"], "days": c["days"], "modules": c["modules"], "quiz": c.get("quiz"),
-            "hours": c["totalHours"]}
     nq = len(c["quiz"]["modules"]) if c.get("quiz") else 0
-    data_js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    cover = cover_slug or c["slug"]
     extra_top = c.get("extraOverview", "")
-    icon = {"drop": "DS", "ai": "AI", "web": "WB", "mkt": "DM"}.get(c["aura"], "SA")
-    body = f"""
-<div class="course-head">
-  <div class="wrap">
-    <span class="icon-sq">{icon}</span>
-    <div class="ch-text"><h1>{html.escape(c['title'])}</h1><p class="sub">{c['code']} · {days_n} lessons · about {fmt_h(H)} hours</p></div>
-    <div id="me-chip" class="ch-chip"></div>
-  </div>
-  <div class="wrap">
-    <nav class="tabs" aria-label="Course sections">
-      <a href="#day-1" data-view="day" aria-current="false">Classroom</a>
-      <a href="#plan" data-view="plan" aria-current="false">Calendar</a>
-      {'<a href="#quizzes" data-view="quizzes" aria-current="false">Quizzes</a>' if nq else ''}
-      <a href="#about" data-view="about" aria-current="true">About</a>
-    </nav>
-  </div>
-</div>
-
+    body = course_head(c, "h1", "about", base) + f"""
 <div class="wrap">
   <section class="view" id="v-about">
     <div class="two-col">
@@ -324,12 +391,12 @@ def course_page(c, cover_slug=None):
         </div>
       </div>
       <aside class="panel side-card sticky">
-        <div class="cover"><img src="/assets/img/covers/{cover}.webp" alt="" width="1280" height="720"></div>
+        <div class="cover"><img src="/assets/img/covers/{slug}.webp" alt="" width="1280" height="720"></div>
         <div class="body">
           <h3>{html.escape(c['title'])}</h3>
           <div class="stat-row"><div><b>{days_n}</b><span>lessons</span></div><div><b>{fmt_h(H)} h</b><span>total</span></div><div><b>{at4}–{at3}</b><span>days</span></div></div>
           <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
-          <a class="btn block" id="continue" href="#day-1">Start course</a>
+          <a class="btn block" id="continue" href="{base}day-1/">Start course</a>
           <a class="btn light block" href="#plan">Set your start date</a>
           <dl class="kv">
             <div><dt>At 3 hours a day</dt><dd>{at3} days</dd></div>
@@ -340,20 +407,6 @@ def course_page(c, cover_slug=None):
           </dl>
         </div>
       </aside>
-    </div>
-  </section>
-
-  <section class="view" id="v-day" hidden>
-    <div class="two-col left">
-      <aside class="panel lesson-nav sticky">
-        <div class="top">
-          <h3>{html.escape(c['title'])}</h3>
-          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
-        </div>
-        <div class="jump"><label for="jump" class="muted" style="font-size:.85rem;font-weight:700">Jump to a lesson</label><select id="jump"></select></div>
-        <nav class="list" id="lesson-list" aria-label="Lessons"></nav>
-      </aside>
-      <article class="panel panel-pad" id="lesson"></article>
     </div>
   </section>
 
@@ -422,8 +475,273 @@ def course_page(c, cover_slug=None):
   </section>
 </div>
 """
-    page = head(f"{c['title']} · SchoolAura", c["metaDescription"], f"/courses/{c['slug']}/", c["aura"])
-    return page + body + foot(f'<script>window.COURSE = {data_js};</script>\n<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/course.js"></script>')
+    ld = [{"@type": "Course", "name": c["title"], "description": squash(strip_tags(c["lede"])), "url": SITE + base,
+           "provider": ORG, "inLanguage": "en", "educationalLevel": c["level"], "timeRequired": iso_dur(H),
+           "isAccessibleForFree": True,
+           "teaches": [squash(strip_tags(md_inline(x))) for x in c["learn"]],
+           "syllabusSections": [{"@type": "Syllabus", "name": m["title"], "description": m["summary"]} for m in c["modules"]],
+           "hasCourseInstance": [{"@type": "CourseInstance", "courseMode": "Online",
+                                  "courseWorkload": iso_dur(H / days_n)}],
+           "offers": [{"@type": "Offer", "category": "Free", "price": 0, "priceCurrency": "CAD"}]},
+          crumbs_ld([("Home", "/"), ("Classroom", "/courses/"), (c["title"], base)])]
+    page = head(f"{SEO_TITLES.get(slug, c['title'])} · SchoolAura", c["metaDescription"], base, c["aura"],
+                og_image=f"/assets/img/og/{slug}.jpg", jsonld=ld)
+    return page + body + foot(f'<script src="{data_src}"></script>\n<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/course.js"></script>')
+
+
+def lesson_page(c, d, data_src):
+    slug, n, base = c["slug"], d["n"], f"/courses/{c['slug']}/"
+    m = next(m for m in c["modules"] if n in m["days"])
+    days = c["days"]
+    i = days.index(d)
+    prev, nxt = (days[i - 1] if i else None), (days[i + 1] if i + 1 < len(days) else None)
+    side = ""
+    for mod in c["modules"]:
+        side += f'<p class="mtitle">{html.escape(mod["title"])}</p>'
+        for k in mod["days"]:
+            dk = next(x for x in days if x["n"] == k)
+            side += f'<a href="{base}day-{k}/" aria-current="{"true" if k == n else "false"}"><span class="ck"></span><span>Day {k}: {html.escape(dk["title"])}</span></a>'
+    sp = d["split"]
+    tot = sp["read"] + sp["demo"] + sp["tasks"]
+    tasks = "".join(f'<li><label for="t-{n}-{j}"><input type="checkbox" id="t-{n}-{j}" data-k="{n}-{j}"><span class="tx">{t["html"]}</span>'
+                    + (f'<span class="mins">{t["mins"]} min</span>' if t["mins"] else "<span></span>") + "</label></li>" for j, t in enumerate(d["tasks"]))
+    pi = 0
+    def part(icon, title, inner):
+        return f'<section class="part"><h2 class="part-h"><span class="pi">{icon}</span>{title}</h2>{inner}</section>'
+    parts = part(1, "Lesson", f'<div class="prose">{d["lesson"]}</div>')
+    pi = 1
+    if d["demo"]:
+        pi += 1; parts += part(pi, "Worked example", f'<div class="demo-box"><div class="prose">{d["demo"]}</div></div>')
+    pi += 1; parts += part(pi, "Today's tasks", f'<ul class="tasks">{tasks}</ul>')
+    if d["deliverable"]:
+        parts += part("✓", "By tonight you'll have", f'<div class="deliver"><div class="prose">{d["deliverable"]}</div></div>')
+    if d["tip"]:
+        parts += part("★", "Tip", f'<div class="prose">{d["tip"]}</div>')
+    foot_nav = (f'<a class="btn light" href="{base}day-{prev["n"]}/">← Previous</a>' if prev else "<span></span>") + \
+               (f'<a class="btn" href="{base}day-{nxt["n"]}/">Next lesson →</a>' if nxt else f'<a class="btn" href="{base}#quizzes">Final exam →</a>')
+    lesson = f"""<div class="lesson-top"><div><p class="crumb">{html.escape(m['title'])} · Day {n} of {len(days)}</p><h1>{html.escape(d['title'])}</h1></div></div>
+<div class="meta-chips"><span class="mchip">{fmt_h(d['hours'])} hours</span></div>
+<p class="goal">{html.escape(d['goal'])}</p>
+<div class="time-key"><span>Lesson {sp['read']} min</span><span>Example {sp['demo']} min</span><span>Tasks {sp['tasks']} min</span><span>≈ {tot / 60:.1f} h total</span></div>
+{parts}
+<div class="lesson-foot">{foot_nav}</div>"""
+    body = course_head(c, "p", "day", base) + f"""
+<div class="wrap">
+  <section class="view" id="v-day">
+    <div class="two-col left">
+      <aside class="panel lesson-nav sticky">
+        <div class="top">
+          <p class="ln-title"><a href="{base}">{html.escape(c['title'])}</a></p>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
+        </div>
+        <div class="jump"><label for="jump" class="muted" style="font-size:.85rem;font-weight:700">Jump to a lesson</label><select id="jump"></select></div>
+        <nav class="list" id="lesson-list" aria-label="Lessons">{side}</nav>
+      </aside>
+      <article class="panel panel-pad" id="lesson">{lesson}</article>
+    </div>
+  </section>
+</div>
+"""
+    url = f"{base}day-{n}/"
+    title = f"{d['title']} · {c['title']} Day {n} · SchoolAura"
+    ld = [{"@type": "LearningResource", "name": d["title"], "description": d["goal"], "url": SITE + url,
+           "learningResourceType": "Lesson", "educationalLevel": c["level"], "timeRequired": iso_dur(d["hours"]),
+           "inLanguage": "en", "isAccessibleForFree": True, "publisher": ORG,
+           "isPartOf": {"@type": "Course", "name": c["title"], "url": SITE + base, "provider": ORG}},
+          crumbs_ld([("Home", "/"), ("Classroom", "/courses/"), (c["title"], base), (f"Day {n}", url)])]
+    page = head(title, d["goal"], url, c["aura"], og_image=f"/assets/img/og/{slug}.jpg", og_type="article", jsonld=ld)
+    return page + body + foot(f'<script>window.SA_DAY = {n};</script>\n<script src="{data_src}"></script>\n'
+                              '<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/course.js"></script>')
+
+
+# ---------------------------------------------------------------- viral prompts
+
+PACK_KEYS = ["slug", "title", "published", "kind", "tools", "summary", "why", "steps", "prompts", "tips", "tags"]
+
+
+def load_prompts():
+    packs, seen = [], set()
+    for f in sorted((CONTENT / "prompts").glob("*.json")):
+        p = json.loads(f.read_text())
+        missing = [k for k in PACK_KEYS if k not in p]
+        assert not missing, (f.name, missing)
+        assert re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", p["slug"]), (f.name, p["slug"])
+        assert p["slug"] not in seen, ("duplicate slug", p["slug"])
+        assert p["kind"] in KIND_LABEL, (f.name, p["kind"])
+        assert p["prompts"] and all(x.get("label") and x.get("text") for x in p["prompts"]), f.name
+        datetime.datetime.fromisoformat(p["published"].replace("Z", "+00:00"))
+        seen.add(p["slug"])
+        p["_file"] = f
+        packs.append(p)
+    packs.sort(key=lambda p: p["published"], reverse=True)
+    return packs
+
+
+def pack_date(p, fmt="%b %-d, %Y"):
+    return datetime.datetime.fromisoformat(p["published"].replace("Z", "+00:00")).strftime(fmt)
+
+
+def prompt_block(pr, uid):
+    return (f'<div class="pblock"><div class="pb-top"><b>{html.escape(pr["label"])}</b>'
+            f'<button type="button" class="btn light sm" data-copy="{uid}">Copy</button></div>'
+            f'<pre id="{uid}">{html.escape(pr["text"])}</pre></div>')
+
+
+def pack_meta(p):
+    return (f'<div class="pc-top"><span class="pill kind kind-{p["kind"]}">{KIND_LABEL[p["kind"]]}</span>'
+            f'<time datetime="{p["published"]}">{pack_date(p)}</time><span class="new-badge" hidden>New</span></div>')
+
+
+def prompts_hub(packs):
+    cards = []
+    for p in packs:
+        find = html.escape(" ".join([p["title"], p["summary"], " ".join(p["tags"]), " ".join(p["tools"]), p["kind"]]).lower())
+        more = len(p["prompts"]) - 1
+        cards.append(f"""<article class="pcard" data-kind="{p['kind']}" data-published="{p['published']}" data-find="{find}">
+  {pack_meta(p)}
+  <h2 class="pc-title"><a href="/prompts/{p['slug']}/">{html.escape(p['title'])}</a></h2>
+  <p class="pc-sum">{html.escape(p['summary'])}</p>
+  <div class="tags">{''.join(f'<span class="tag">{html.escape(t)}</span>' for t in p['tools'])}</div>
+  {prompt_block(p['prompts'][0], 'p-' + p['slug'] + '-0')}
+  <a class="link" href="/prompts/{p['slug']}/">{f"{more} more prompt{'s' if more != 1 else ''}, steps and tips" if more else "Steps and tips"} →</a>
+</article>""")
+    kinds = [k for k in KIND_LABEL if any(p["kind"] == k for p in packs)]
+    chips = '<button class="chip-btn" type="button" data-vp-kind="all" aria-pressed="true">All</button>' + "".join(
+        f'<button class="chip-btn" type="button" data-vp-kind="{k}" aria-pressed="false">{KIND_LABEL[k]}</button>' for k in kinds)
+    latest = pack_date(packs[0]) if packs else "—"
+    body = f"""
+<section class="wrap page-head vp-head">
+  <h1>Viral Prompts</h1>
+  <p>Copy-ready prompts for the AI photo and video trends people are sharing right now. New packs land here as trends appear, with steps, variations and tips for each one.</p>
+  <div class="actions"><button class="btn" type="button" data-sub>Subscribe</button><span class="vp-meta">{len(packs)} prompt packs · updated {latest}</span></div>
+</section>
+<div class="wrap"><p class="vp-note" data-sub-note></p></div>
+<section class="wrap" style="margin-top:16px" aria-label="Prompt packs">
+  <div class="vp-tools">
+    <div class="chips" role="group" aria-label="Filter by type">{chips}</div>
+    <div class="search vp-search">{SEARCH_ICON}<input type="search" id="vp-find" placeholder="Search prompts, e.g. halloween, pets, headshot" aria-label="Search prompts" autocomplete="off"></div>
+  </div>
+  <div class="pfeed" id="pfeed">
+{chr(10).join(cards)}
+  </div>
+  <p class="empty-note" id="vp-empty" hidden>No prompts match that search yet.</p>
+  <div class="note-card" style="margin-top:28px"><b>How it works:</b> we check for new AI trends several times a day and post a pack when one is worth trying. Results vary between tools and runs, so make a few versions and keep the best. Only use photos of yourself, or of people who have agreed. Want to get better at the tools? <a class="link" href="/courses/ai-mastery/">AI Mastery</a> teaches prompting, images and video step by step.</div>
+</section>
+"""
+    ld = [{"@type": "CollectionPage", "name": "Viral Prompts", "url": SITE + "/prompts/", "publisher": ORG,
+           "description": "Copy-ready prompts for trending AI photo and video ideas, updated as trends appear.",
+           "mainEntity": {"@type": "ItemList", "itemListElement": [
+               {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/prompts/{p['slug']}/", "name": p["title"]} for i, p in enumerate(packs)]}},
+          crumbs_ld([("Home", "/"), ("Viral Prompts", "/prompts/")])]
+    page = head("Viral AI Prompts: Trending Photo and Video Prompts to Copy · SchoolAura",
+                "Copy-ready prompts for the AI photo and video trends people are sharing right now, for ChatGPT, Gemini, Runway, Kling, Veo and more. New packs as trends appear.",
+                "/prompts/", "vp", og_image="/assets/img/og/viral-prompts.jpg", jsonld=ld)
+    return page + body + foot('<script src="/assets/js/prompts.js"></script>')
+
+
+def prompt_page(p, packs):
+    steps = "".join(f"<li>{html.escape(s)}</li>" for s in p["steps"])
+    tips = "".join(f"<li>{html.escape(s)}</li>" for s in p["tips"])
+    blocks = "".join(prompt_block(pr, f"p-{p['slug']}-{i}") for i, pr in enumerate(p["prompts"]))
+    others = [x for x in packs if x["slug"] != p["slug"]][:5]
+    latest = "".join(f'<li><a href="/prompts/{x["slug"]}/"><span>{html.escape(x["title"])}</span><small>{KIND_LABEL[x["kind"]]} · {pack_date(x, "%b %-d")}</small></a></li>' for x in others)
+    tools = ", ".join(p["tools"][:3])
+    body = f"""
+<nav class="wrap crumbs" aria-label="Breadcrumb"><a href="/prompts/">Viral Prompts</a><span aria-hidden="true">›</span><span>{html.escape(p['title'])}</span></nav>
+<section class="wrap pack" data-published="{p['published']}">
+  <div class="two-col">
+    <article class="panel panel-pad pack-main">
+      {pack_meta(p)}
+      <h1>{html.escape(p['title'])}</h1>
+      <p class="lead">{html.escape(p['summary'])}</p>
+      <div class="tags">{''.join(f'<span class="tag">{html.escape(t)}</span>' for t in p['tools'])}</div>
+      <h2>Why it's trending</h2>
+      <p>{html.escape(p['why'])}</p>
+      <h2>How to use it</h2>
+      <ol class="steps-list">{steps}</ol>
+      <h2>Prompts</h2>
+      <div class="pblocks">{blocks}</div>
+      <h2>Tips</h2>
+      <ul class="bullets">{tips}</ul>
+      <p class="muted small-note">Results vary between tools and runs. Make a few versions and keep the best. Only use photos of yourself, or of people who have agreed, and label AI content where the platform asks.</p>
+    </article>
+    <aside class="panel panel-pad sticky pack-side">
+      <h3>Get new drops</h3>
+      <p class="muted">Subscribe and you'll see a <b>New</b> badge and a dot in the menu whenever fresh prompts land.</p>
+      <button class="btn block" type="button" data-sub>Subscribe</button>
+      <h3 style="margin-top:22px">Latest prompts</h3>
+      <ul class="latest">{latest}</ul>
+      <a class="btn light block" href="/prompts/">All prompts</a>
+    </aside>
+  </div>
+</section>
+"""
+    url = f"/prompts/{p['slug']}/"
+    ld = [{"@type": "Article", "headline": p["title"], "description": p["summary"], "url": SITE + url,
+           "datePublished": p["published"], "dateModified": p["published"], "author": ORG, "publisher": ORG,
+           "image": SITE + "/assets/img/og/viral-prompts.jpg", "keywords": ", ".join(p["tags"] + p["tools"]),
+           "isPartOf": {"@type": "CollectionPage", "name": "Viral Prompts", "url": SITE + "/prompts/"}},
+          crumbs_ld([("Home", "/"), ("Viral Prompts", "/prompts/"), (p["title"], url)])]
+    page = head(f"{p['title']} prompt ({tools}) · Viral Prompts · SchoolAura", p["summary"], url, "vp",
+                og_image="/assets/img/og/viral-prompts.jpg", og_type="article", jsonld=ld)
+    return page + body + foot('<script src="/assets/js/prompts.js"></script>')
+
+
+# ---------------------------------------------------------------- search index, sitemap, social images
+
+def heads_and_terms(html_text):
+    hs = re.findall(r"<h[34][^>]*>(.*?)</h[34]>", html_text, re.S)
+    st = re.findall(r"<strong>(.*?)</strong>", html_text, re.S)
+    words = [squash(strip_tags(x)) for x in hs + st]
+    out, seen = [], set()
+    for w in words:
+        k = w.lower()
+        if w and k not in seen and len(w) < 80:
+            seen.add(k); out.append(w)
+    return " · ".join(out)
+
+
+def search_index(courses, packs, tpls):
+    idx = []
+    for c in courses:
+        idx.append({"k": "Course", "t": c["title"], "s": f"{len(c['days'])} lessons · about {fmt_h(c['totalHours'])} hours",
+                    "u": f"courses/{c['slug']}/", "x": squash(strip_tags(c["lede"]) + " " + " ".join(m["title"] for m in c["modules"]))})
+        for d in c["days"]:
+            idx.append({"k": "Lesson", "t": f"Day {d['n']}: {d['title']}", "s": c["title"], "u": f"courses/{c['slug']}/day-{d['n']}/",
+                        "x": squash(d["goal"] + " " + heads_and_terms(d["lesson"] + d["demo"]))})
+    idx.append({"k": "Page", "t": "Viral Prompts", "s": f"{len(packs)} prompt packs", "u": "prompts/",
+                "x": "trending ai prompts viral photo video chatgpt gemini runway kling veo"})
+    for p in packs:
+        idx.append({"k": "Prompt", "t": p["title"], "s": f"{KIND_LABEL[p['kind']]} · {', '.join(p['tools'][:3])}", "u": f"prompts/{p['slug']}/",
+                    "x": squash(" ".join([p["summary"], " ".join(p["tags"]), " ".join(p["tools"])]))})
+    vault_frag = (CONTENT / "pages" / "vault.html").read_text()
+    for title, desc, items in re.findall(r'<div class="card-title">(.*?)</div>\s*<p class="card-desc">(.*?)</p>\s*<ul class="inside">(.*?)</ul>', vault_frag, re.S):
+        idx.append({"k": "Book", "t": squash(strip_tags(title)), "s": "Recipe Vault PDF", "u": "recipe-vault/",
+                    "x": squash(strip_tags(desc + " " + items))})
+    idx.append({"k": "Page", "t": "The Recipe Vault", "s": "4 PDF books", "u": "recipe-vault/", "x": "recipes cake keto nutrition food plan kitchen quiz pan converter"})
+    for t in tpls:
+        idx.append({"k": "Template", "t": t["name"], "s": ", ".join(t["tags"]), "u": "templates/", "x": t["desc"]})
+    idx.append({"k": "Page", "t": "Classroom", "s": "Your courses and progress", "u": "courses/", "x": "progress streak badges level question of the day"})
+    return idx
+
+
+def write_og_images():
+    from PIL import Image
+    out = PUBLIC / "assets" / "img" / "og"
+    out.mkdir(parents=True, exist_ok=True)
+    for src in (PUBLIC / "assets" / "img" / "covers").glob("*.webp"):
+        if src.stem.startswith("book-"):
+            continue
+        dst = out / f"{src.stem}.jpg"
+        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
+            continue
+        im = Image.open(src).convert("RGB").resize((1200, 675), Image.LANCZOS)
+        im.crop((0, 22, 1200, 652)).save(dst, "JPEG", quality=86, optimize=True, progressive=True)
+
+
+def write_sitemap(entries):
+    rows = "\n".join(f"  <url><loc>{SITE}{u}</loc><lastmod>{d}</lastmod></url>" for u, d in entries)
+    (PUBLIC / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{rows}\n</urlset>\n')
 
 
 # ---------------------------------------------------------------- pages
@@ -445,7 +763,7 @@ def vault_numbers():
     return rep
 
 
-def cards_html(courses, tpl_count, vault, with_progress=False):
+def cards_html(courses, tpl_count, vault, packs, with_progress=False):
     by = {c["slug"]: c for c in courses}
     out = []
     for p in PRODUCTS:
@@ -453,6 +771,8 @@ def cards_html(courses, tpl_count, vault, with_progress=False):
             c = by[p["slug"]]
             meta = [f"{len(c['days'])} lessons", f"{fmt_h(c['totalHours'])} hours", "<b>Free in early access</b>"]
             out.append(product_card(p, meta, len(c["days"]) if with_progress else None))
+        elif p["slug"] == "viral-prompts":
+            out.append(product_card(p, [f"{len(packs)} prompt packs", "New as trends appear", "<b>Free in early access</b>"], badge=True))
         elif p["slug"] == "recipe-vault":
             out.append(product_card(p, ["4 PDF books", f"{vault['TOTAL_PAGES']} pages", "<b>Instant download</b>"]))
         else:
@@ -461,7 +781,7 @@ def cards_html(courses, tpl_count, vault, with_progress=False):
     return "\n".join(out)
 
 
-def home_page(courses, tpl_count, vault):
+def home_page(courses, tpl_count, vault, packs):
     by = {c["slug"]: c for c in courses}
     drop, ai, web, mkt = by["dropshipping"], by["ai-mastery"], by["website-builders"], by["digital-marketing"]
     rows = []
@@ -473,10 +793,14 @@ def home_page(courses, tpl_count, vault):
                  f"Digital Marketing Agency is {len(mkt['days'])} lessons, about {fmt_h(mkt['totalHours'])} hours ({math.ceil(mkt['totalHours']/4)}–{math.ceil(mkt['totalHours']/3)} days). "
                  f"The website guide is {len(web['days'])} lessons, about {fmt_h(web['totalHours'])} hours.")
     frag = (CONTENT / "pages" / "home.html").read_text()
-    for k, v in {"CARDS": cards_html(courses, tpl_count, vault), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours}.items():
+    for k, v in {"CARDS": cards_html(courses, tpl_count, vault, packs), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours}.items():
         frag = frag.replace("{{" + k + "}}", v)
-    page = head("SchoolAura · Learn a skill you can use, one day at a time",
-                "Step-by-step courses in dropshipping, AI and web design, plus the Recipe Vault. Daily lessons, real tasks and a calendar that keeps you on track.", "/", "drop")
+    ld = [dict(ORG, description="Step-by-step online courses in AI, digital marketing and dropshipping, plus trending AI prompts and recipe books."),
+          {"@type": "WebSite", "name": "SchoolAura", "url": SITE + "/",
+           "potentialAction": {"@type": "SearchAction", "target": SITE + "/?q={search_term_string}", "query-input": "required name=search_term_string"}}]
+    page = head("SchoolAura · Online courses in AI, digital marketing and dropshipping",
+                "Step-by-step online courses in AI (Claude, ChatGPT, Cursor, Runway), digital marketing and dropshipping, plus trending AI prompts, recipe books and website templates. Daily lessons, real tasks and a calendar.",
+                "/", "drop", jsonld=ld)
     return page + frag + foot()
 
 
@@ -488,7 +812,7 @@ def daily_pool(courses):
         for qs in c["quiz"]["modules"].values():
             for q in qs:
                 pool.append({"q": q["q"], "o": q["o"], "a": q["a"], "why": q["why"], "course": c["title"],
-                             "href": f"/courses/{c['slug']}/#day-{q['day']}"})
+                             "href": f"/courses/{c['slug']}/day-{q['day']}/"})
     vq = json.loads((CONTENT / "quizzes" / "recipe-vault.json").read_text())
     for q in vq["questions"]:
         pool.append({"q": q["q"], "o": q["o"], "a": q["a"], "why": q["why"], "course": "Recipe Vault", "href": "/recipe-vault/#kitchen-quiz"})
@@ -499,40 +823,84 @@ def js_json(v):
     return json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
 
 
-def simple_page(fragment_name, title, desc, path, aura, js="", replacements=None, pre_js=""):
+def simple_page(fragment_name, title, desc, path, aura, js="", replacements=None, pre_js="", **head_kw):
     frag = (CONTENT / "pages" / fragment_name).read_text()
     for k, v in (replacements or {}).items():
         frag = frag.replace("{{" + k + "}}", v)
-    return head(title, desc, path, aura) + frag + foot(js, pre_js)
+    return head(title, desc, path, aura, **head_kw) + frag + foot(js, pre_js)
 
 
 def main():
-    global SA_META_JS
+    global SA_META_JS, SA_PROMPTS_JS
     courses = [parse_course(CONTENT / f) for f in COURSE_FILES]
+    packs = load_prompts()
     SA_META_JS = js_json({c["slug"]: {"title": c["title"], "href": f"/courses/{c['slug']}/", "days": len(c["days"]),
                                       "modules": [m["days"] for m in c["modules"]]} for c in courses})
+    SA_PROMPTS_JS = js_json({"count": len(packs), "dates": [p["published"] for p in packs]})
+    sitemap = [("/", git_date(CONTENT / "pages" / "home.html")), ("/courses/", git_date(CONTENT / "pages" / "classroom.html"))]
+
     for c in courses:
-        out = PUBLIC / "courses" / c["slug"] / "index.html"
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(course_page(c))
+        slug = c["slug"]
+        cdir = PUBLIC / "courses" / slug
+        cdir.mkdir(parents=True, exist_ok=True)
+        data = {"slug": slug, "code": c["code"], "title": c["title"], "days": c["days"], "modules": c["modules"],
+                "quiz": c.get("quiz"), "hours": c["totalHours"]}
+        data_js = "window.COURSE = " + js_json(data) + ";\n"
+        (cdir / "course-data.js").write_text(data_js)
+        data_src = f"/courses/{slug}/course-data.js?v={short_hash(data_js)}"
+        (cdir / "index.html").write_text(course_page(c, data_src))
+        src_date = git_date(CONTENT / f"{slug}.md", CONTENT / "quizzes" / f"{slug}.json")
+        sitemap.append((f"/courses/{slug}/", src_date))
+        keep = set()
+        for d in c["days"]:
+            ddir = cdir / f"day-{d['n']}"
+            ddir.mkdir(exist_ok=True)
+            (ddir / "index.html").write_text(lesson_page(c, d, data_src))
+            keep.add(ddir.name)
+            sitemap.append((f"/courses/{slug}/day-{d['n']}/", src_date))
+        for old in cdir.glob("day-*"):
+            if old.is_dir() and old.name not in keep:
+                for f in old.iterdir():
+                    f.unlink()
+                old.rmdir()
         nq = sum(len(v) for v in c["quiz"]["modules"].values()) if c.get("quiz") else 0
-        print(f"  {c['slug']}: {len(c['days'])} days, {c['totalHours']:g} h, {c['figures']} figures, {nq} quiz questions")
+        print(f"  {slug}: {len(c['days'])} days, {c['totalHours']:g} h, {c['figures']} figures, {nq} quiz questions")
 
     tpls = json.loads((ROOT / "templates-src" / "manifest.json").read_text())
     vault = vault_numbers()
 
-    (PUBLIC / "index.html").write_text(home_page(courses, len(tpls), vault))
+    (PUBLIC / "index.html").write_text(home_page(courses, len(tpls), vault, packs))
     (PUBLIC / "courses" / "index.html").write_text(simple_page(
-        "classroom.html", "Classroom · SchoolAura", "All SchoolAura courses and your progress.", "/courses/", "drop",
-        replacements={"CARDS": cards_html(courses, len(tpls), vault, with_progress=True)},
+        "classroom.html", "Classroom: All Courses and Your Progress · SchoolAura", "All SchoolAura courses, your progress, streaks and badges, and a question of the day.", "/courses/", "drop",
+        replacements={"CARDS": cards_html(courses, len(tpls), vault, packs, with_progress=True)},
         pre_js=f"<script>window.SA_DAILY = {js_json(daily_pool(courses))};</script>"))
     (PUBLIC / "recipe-vault").mkdir(exist_ok=True)
     (PUBLIC / "recipe-vault" / "index.html").write_text(simple_page(
-        "vault.html", "The Recipe Vault · SchoolAura",
-        "Four downloadable recipe books: Cake Studio, Keto Kitchen, Know Your Food and the Simple & Quick Food Plan. Instant PDF.",
+        "vault.html", "The Recipe Vault: Cake, Keto and Meal Plan PDF Recipe Books · SchoolAura",
+        "Four downloadable recipe books: Cake Studio, Keto Kitchen, Know Your Food and the Simple & Quick Food Plan. Instant PDF, grams and cups, °C and °F.",
         "/recipe-vault/", "vault",
         f'<script>window.VAULT_QUIZ = {js_json(json.loads((CONTENT / "quizzes" / "recipe-vault.json").read_text()))};</script>\n'
-        '<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/vault.js"></script>', vault))
+        '<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/vault.js"></script>', vault,
+        og_image="/assets/img/og/recipe-vault.jpg"))
+    sitemap.append(("/recipe-vault/", git_date(CONTENT / "pages" / "vault.html", ROOT / "vault-src")))
+
+    # Viral Prompts
+    pdir = PUBLIC / "prompts"
+    pdir.mkdir(exist_ok=True)
+    (pdir / "index.html").write_text(prompts_hub(packs))
+    sitemap.append(("/prompts/", packs[0]["published"][:10] if packs else git_date(CONTENT / "prompts")))
+    keep = set()
+    for p in packs:
+        d = pdir / p["slug"]
+        d.mkdir(exist_ok=True)
+        (d / "index.html").write_text(prompt_page(p, packs))
+        keep.add(p["slug"])
+        sitemap.append((f"/prompts/{p['slug']}/", p["published"][:10]))
+    for old in pdir.iterdir():
+        if old.is_dir() and old.name not in keep:
+            for f in old.iterdir():
+                f.unlink()
+            old.rmdir()
 
     cards = []
     for t in tpls:
@@ -548,11 +916,18 @@ def main():
 </article>""")
     (PUBLIC / "templates").mkdir(exist_ok=True)
     (PUBLIC / "templates" / "index.html").write_text(simple_page(
-        "templates.html", "Website Templates · SchoolAura",
+        "templates.html", "Website Templates: 6 Free HTML Templates to Rebrand and Sell · SchoolAura",
         f"{len(tpls)} ready-made website templates in one bulk download, plus a 7-day guide to redesign, publish and sell websites.",
-        "/templates/", "web", replacements={"TPL_CARDS": "\n".join(cards), "TPL_COUNT": str(len(tpls))}))
-    (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "drop"))
-    print("  home, classroom, recipe vault, templates, 404")
+        "/templates/", "web", replacements={"TPL_CARDS": "\n".join(cards), "TPL_COUNT": str(len(tpls))},
+        og_image="/assets/img/og/website-builders.jpg"))
+    sitemap.append(("/templates/", git_date(CONTENT / "pages" / "templates.html", ROOT / "templates-src")))
+    (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "drop", noindex=True))
+
+    idx = search_index(courses, packs, tpls)
+    (PUBLIC / "assets" / "js" / "search-index.js").write_text("window.SA_SEARCH = " + js_json(idx) + ";\n")
+    write_sitemap(sitemap)
+    write_og_images()
+    print(f"  home, classroom, recipe vault, templates, 404, {len(packs)} prompt packs, {len(idx)} search entries, {len(sitemap)} sitemap URLs")
 
 
 if __name__ == "__main__":

@@ -371,7 +371,7 @@
     ],
     "a": 0,
     "why": "RLS protects data even if the frontend has a bug.",
-    "day": 20
+    "day": 21
    },
    {
     "q": "Which key must never appear in frontend code?",
@@ -383,7 +383,7 @@
     ],
     "a": 2,
     "why": "The secret key bypasses security rules. The publishable key is designed for the browser because RLS protects the data.",
-    "day": 20
+    "day": 21
    },
    {
     "q": "What is CLAUDE.md?",
@@ -407,7 +407,43 @@
     ],
     "a": 3,
     "why": "Think USB-C for AI: one standard plug between AI apps and the tools they use.",
-    "day": 21
+    "day": 22
+   },
+   {
+    "q": "In Cursor, which mode answers questions about your code without changing any files?",
+    "o": [
+     "Agent",
+     "Ask",
+     "Plan",
+     "Design Mode"
+    ],
+    "a": 1,
+    "why": "Ask mode is read-only. Use it first to understand a project, then Plan and Agent to change it.",
+    "day": 20
+   },
+   {
+    "q": "Where do you put instructions Cursor's agent should always follow for a project?",
+    "o": [
+     "In .cursor/rules (or an AGENTS.md file)",
+     "In package.json",
+     "In .env.local",
+     "In the browser's settings"
+    ],
+    "a": 0,
+    "why": "Rules are Cursor's version of CLAUDE.md. They can always apply or only apply to matching files.",
+    "day": 20
+   },
+   {
+    "q": "You want to change three lines you've selected. Which Cursor tool fits best?",
+    "o": [
+     "A cloud agent",
+     "Inline edit (Ctrl/Cmd+K)",
+     "Bugbot",
+     "The Agents Window"
+    ],
+    "a": 1,
+    "why": "Use the smallest tool that fits: Tab for a word, inline edit for a few lines, Agent for a feature.",
+    "day": 20
    }
   ],
   "6": [
@@ -421,7 +457,7 @@
     ],
     "a": 2,
     "why": "It runs unattended, so be precise: exact labels, examples and an 'if unsure' rule.",
-    "day": 22
+    "day": 23
    },
    {
     "q": "What should come before an AI agent sends, pays for, deletes or publishes anything?",
@@ -433,7 +469,7 @@
     ],
     "a": 0,
     "why": "Start agents read-only or draft-only, and keep a person in the loop for anything that can't be undone.",
-    "day": 22
+    "day": 23
    },
    {
     "q": "How should you price AI-powered services?",
@@ -445,7 +481,7 @@
     ],
     "a": 1,
     "why": "If you save a business 10 hours a month, your fee should reflect that value.",
-    "day": 23
+    "day": 24
    },
    {
     "q": "What's the strongest first pitch to a potential client?",
@@ -457,7 +493,7 @@
     ],
     "a": 2,
     "why": "A sample made for them beats any description of what you could do.",
-    "day": 23
+    "day": 24
    }
   ]
  }

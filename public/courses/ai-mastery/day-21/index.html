@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project: build and deploy a full-stack app · AI Mastery Day 21 · SchoolAura</title>
+<meta name="description" content="Build a real habit-tracker app with login and a database using Next.js and Supabase, and deploy it live on Vercel.">
+<link rel="canonical" href="https://schoolaura.com/courses/ai-mastery/day-21/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="SchoolAura">
+<meta property="og:title" content="Project: build and deploy a full-stack app · AI Mastery Day 21 · SchoolAura">
+<meta property="og:description" content="Build a real habit-tracker app with login and a database using Next.js and Supabase, and deploy it live on Vercel.">
+<meta property="og:url" content="https://schoolaura.com/courses/ai-mastery/day-21/">
+<meta property="og:image" content="https://schoolaura.com/assets/img/og/ai-mastery.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Project: build and deploy a full-stack app", "description": "Build a real habit-tracker app with login and a database using Next.js and Supabase, and deploy it live on Vercel.", "url": "https://schoolaura.com/courses/ai-mastery/day-21/", "learningResourceType": "Lesson", "educationalLevel": "Beginner to intermediate", "timeRequired": "PT4H30M", "inLanguage": "en", "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "SchoolAura", "url": "https://schoolaura.com/"}, "isPartOf": {"@type": "Course", "name": "AI Mastery", "url": "https://schoolaura.com/courses/ai-mastery/", "provider": {"@type": "Organization", "name": "SchoolAura", "url": "https://schoolaura.com/"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://schoolaura.com/"}, {"@type": "ListItem", "position": 2, "name": "Classroom", "item": "https://schoolaura.com/courses/"}, {"@type": "ListItem", "position": 3, "name": "AI Mastery", "item": "https://schoolaura.com/courses/ai-mastery/"}, {"@type": "ListItem", "position": 4, "name": "Day 21", "item": "https://schoolaura.com/courses/ai-mastery/day-21/"}]}</script>
+</head>
+<body data-aura="ai">
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="SchoolAura home"><span class="mark" aria-hidden="true"></span>schoolaura</a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/courses/">Classroom</a>
+      <a href="/courses/dropshipping/">Dropshipping</a>
+      <a href="/courses/ai-mastery/" aria-current="page">AI Mastery</a>
+      <a href="/prompts/" data-nav-prompts>Prompts</a>
+      <a href="/courses/digital-marketing/">Marketing</a>
+      <a href="/recipe-vault/">Recipe Vault</a>
+      <a href="/templates/">Templates</a>
+    </nav>
+    <div class="head-right">
+      <button class="search-btn" type="button" data-search-open aria-label="Search SchoolAura"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span><kbd>/</kbd></button>
+      <a class="btn sm start-btn" href="/courses/">Start learning</a>
+      <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<div class="course-head">
+  <div class="wrap">
+    <span class="icon-sq">AI</span>
+    <div class="ch-text"><p class="ch-title"><a href="/courses/ai-mastery/">AI Mastery</a></p><p class="sub">AI 210 · 24 lessons · about 82.5 hours</p></div>
+    <div id="me-chip" class="ch-chip"></div>
+  </div>
+  <div class="wrap">
+    <nav class="tabs" aria-label="Course sections">
+      <a href="/courses/ai-mastery/day-1/" data-view="day" aria-current="true">Classroom</a>
+      <a href="/courses/ai-mastery/#plan" data-view="plan" aria-current="false">Calendar</a>
+      <a href="/courses/ai-mastery/#quizzes" data-view="quizzes" aria-current="false">Quizzes</a>
+      <a href="/courses/ai-mastery/#about" data-view="about" aria-current="false">About</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="view" id="v-day">
+    <div class="two-col left">
+      <aside class="panel lesson-nav sticky">
+        <div class="top">
+          <p class="ln-title"><a href="/courses/ai-mastery/">AI Mastery</a></p>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
+        </div>
+        <div class="jump"><label for="jump" class="muted" style="font-size:.85rem;font-weight:700">Jump to a lesson</label><select id="jump"></select></div>
+        <nav class="list" id="lesson-list" aria-label="Lessons"><p class="mtitle">Foundations</p><a href="/courses/ai-mastery/day-1/" aria-current="false"><span class="ck"></span><span>Day 1: What AI actually is, in plain English</span></a><a href="/courses/ai-mastery/day-2/" aria-current="false"><span class="ck"></span><span>Day 2: The AI tool landscape, and how to choose</span></a><a href="/courses/ai-mastery/day-3/" aria-current="false"><span class="ck"></span><span>Day 3: Using AI safely, privately and honestly</span></a><p class="mtitle">Prompting</p><a href="/courses/ai-mastery/day-4/" aria-current="false"><span class="ck"></span><span>Day 4: The anatomy of a great prompt</span></a><a href="/courses/ai-mastery/day-5/" aria-current="false"><span class="ck"></span><span>Day 5: Advanced prompting: examples, reasoning and iteration</span></a><a href="/courses/ai-mastery/day-6/" aria-current="false"><span class="ck"></span><span>Day 6: Build your personal prompt library</span></a><p class="mtitle">AI assistants in depth</p><a href="/courses/ai-mastery/day-7/" aria-current="false"><span class="ck"></span><span>Day 7: Claude in depth</span></a><a href="/courses/ai-mastery/day-8/" aria-current="false"><span class="ck"></span><span>Day 8: ChatGPT in depth, plus Gemini and Perplexity</span></a><a href="/courses/ai-mastery/day-9/" aria-current="false"><span class="ck"></span><span>Day 9: Research, writing and data workflows</span></a><p class="mtitle">Images, voice &amp; video</p><a href="/courses/ai-mastery/day-10/" aria-current="false"><span class="ck"></span><span>Day 10: AI images that look intentional</span></a><a href="/courses/ai-mastery/day-11/" aria-current="false"><span class="ck"></span><span>Day 11: Voice with ElevenLabs</span></a><a href="/courses/ai-mastery/day-12/" aria-current="false"><span class="ck"></span><span>Day 12: AI video: the landscape and image-to-video</span></a><a href="/courses/ai-mastery/day-13/" aria-current="false"><span class="ck"></span><span>Day 13: Make a complete 30-second AI video</span></a><a href="/courses/ai-mastery/day-14/" aria-current="false"><span class="ck"></span><span>Day 14: Avatars, AI UGC and the rules</span></a><a href="/courses/ai-mastery/day-15/" aria-current="false"><span class="ck"></span><span>Day 15: Runway: generate, edit and perform AI video</span></a><a href="/courses/ai-mastery/day-16/" aria-current="false"><span class="ck"></span><span>Day 16: HeyGen: presenter videos, translation and your digital twin</span></a><p class="mtitle">Build software with AI</p><a href="/courses/ai-mastery/day-17/" aria-current="false"><span class="ck"></span><span>Day 17: How web apps work (no code yet)</span></a><a href="/courses/ai-mastery/day-18/" aria-current="false"><span class="ck"></span><span>Day 18: Building apps with AI app builders</span></a><a href="/courses/ai-mastery/day-19/" aria-current="false"><span class="ck"></span><span>Day 19: Claude Code and AI coding agents</span></a><a href="/courses/ai-mastery/day-20/" aria-current="false"><span class="ck"></span><span>Day 20: Cursor: a full tour of the AI code editor</span></a><a href="/courses/ai-mastery/day-21/" aria-current="true"><span class="ck"></span><span>Day 21: Project: build and deploy a full-stack app</span></a><a href="/courses/ai-mastery/day-22/" aria-current="false"><span class="ck"></span><span>Day 22: MCP: connect AI to your tools, and build your own server</span></a><p class="mtitle">Automation &amp; earning</p><a href="/courses/ai-mastery/day-23/" aria-current="false"><span class="ck"></span><span>Day 23: Automations and AI agents</span></a><a href="/courses/ai-mastery/day-24/" aria-current="false"><span class="ck"></span><span>Day 24: Turn AI skills into income</span></a></nav>
+      </aside>
+      <article class="panel panel-pad" id="lesson"><div class="lesson-top"><div><p class="crumb">Build software with AI · Day 21 of 24</p><h1>Project: build and deploy a full-stack app</h1></div></div>
+<div class="meta-chips"><span class="mchip">4.5 hours</span></div>
+<p class="goal">Build a real habit-tracker app with login and a database using Next.js and Supabase, and deploy it live on Vercel.</p>
+<div class="time-key"><span>Lesson 25 min</span><span>Example 15 min</span><span>Tasks 230 min</span><span>≈ 4.5 h total</span></div>
+<section class="part"><h2 class="part-h"><span class="pi">1</span>Lesson</h2><div class="prose"><p>Today you build a complete app: users sign up, add habits, tick them off each day, and only ever see their own data. It's small, but it uses every part of a real product.</p>
+<h3>1. Create the Next.js project</h3>
+<p>In Claude Code (or your terminal), ask:</p>
+<blockquote>
+<p>Create a new Next.js app with TypeScript, Tailwind and the App Router called habit-tracker. Add @supabase/supabase-js and @supabase/ssr. Create a CLAUDE.md describing the stack.</p>
+</blockquote>
+<h3>2. Create the database in Supabase</h3>
+<p>In your Supabase project's SQL editor, run:</p>
+<pre><code class="language-sql">create table habits (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  name text not null,
+  created_at timestamptz not null default now()
+);
+
+create table checkins (
+  id uuid primary key default gen_random_uuid(),
+  habit_id uuid not null references habits(id) on delete cascade,
+  user_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
+  day date not null default current_date,
+  unique (habit_id, day)
+);
+
+alter table habits enable row level security;
+alter table checkins enable row level security;
+
+create policy &quot;Users manage their own habits&quot; on habits
+  for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+create policy &quot;Users manage their own checkins&quot; on checkins
+  for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
+</code></pre>
+<p><strong>Row level security</strong> is the most important part: it makes the database itself refuse to show one user's rows to another, even if the frontend has a bug.</p>
+<h3>3. Connect the app</h3>
+<p>Copy your Supabase <strong>project URL</strong> and <strong>publishable (anon) key</strong> from the project's API settings into <code>.env.local</code>. The publishable key is designed to be used in the browser because RLS protects the data. <strong>Never put the service role (secret) key in frontend code.</strong></p>
+<h3>4. Build the features with Claude Code</h3>
+<p>Prompt one at a time:</p>
+<ol>
+<li><em>"Add email sign-up and login with Supabase Auth using the SSR helpers. Protect the dashboard route."</em></li>
+<li><em>"On the dashboard, list the user's habits with a form to add a new one."</em></li>
+<li><em>"Show the last 7 days as columns. Clicking a day toggles a checkin row."</em></li>
+<li><em>"Show a streak count for each habit."</em></li>
+<li><em>"Add empty states, loading states and error messages. Make it look good on mobile."</em></li>
+</ol>
+<p>Test after each step. Create two test accounts to confirm users can't see each other's habits.</p>
+<h3>5. Deploy on Vercel</h3>
+<ol>
+<li>Push the project to GitHub.</li>
+<li>In Vercel, <strong>Add New Project</strong> → import the repository.</li>
+<li>Add the same environment variables in Vercel's project settings.</li>
+<li>Deploy. In about a minute you get a live URL.</li>
+<li>In Supabase <strong>Authentication → URL configuration</strong>, add your Vercel URL as the site URL so login emails link correctly.</li>
+</ol>
+<p>Every push to GitHub now redeploys automatically.</p></div></section><section class="part"><h2 class="part-h"><span class="pi">2</span>Worked example</h2><div class="demo-box"><div class="prose"><p><strong>What the finished app looks like:</strong></p>
+<ul>
+<li><code>/login</code>: email and password form, link to sign up.</li>
+<li><code>/dashboard</code>: "Your habits", an input to add one ("Read 20 pages"), and a grid: each habit is a row, the last 7 days are columns, ticked days fill with colour, and a streak badge shows "🔥 5".</li>
+<li>Signed in as a second test user, the dashboard is empty: RLS working.</li>
+</ul>
+<p>Total: about 4 hours, including two errors Claude Code fixed when she pasted the messages back (a missing environment variable on Vercel, and a redirect URL not added in Supabase).</p></div></div></section><section class="part"><h2 class="part-h"><span class="pi">3</span>Today's tasks</h2><ul class="tasks"><li><label for="t-21-0"><input type="checkbox" id="t-21-0" data-k="21-0"><span class="tx">Create the Next.js project with Claude Code and push it to GitHub</span><span class="mins">30 min</span></label></li><li><label for="t-21-1"><input type="checkbox" id="t-21-1" data-k="21-1"><span class="tx">Create the Supabase project, run the SQL and add environment variables</span><span class="mins">35 min</span></label></li><li><label for="t-21-2"><input type="checkbox" id="t-21-2" data-k="21-2"><span class="tx">Build auth, habits, daily checkins and streaks one step at a time, testing each</span><span class="mins">110 min</span></label></li><li><label for="t-21-3"><input type="checkbox" id="t-21-3" data-k="21-3"><span class="tx">Test with two accounts to confirm data is private</span><span class="mins">15 min</span></label></li><li><label for="t-21-4"><input type="checkbox" id="t-21-4" data-k="21-4"><span class="tx">Deploy to Vercel, add environment variables and the Supabase redirect URL</span><span class="mins">40 min</span></label></li></ul></section><section class="part"><h2 class="part-h"><span class="pi">✓</span>By tonight you'll have</h2><div class="deliver"><div class="prose"><p>A live full-stack habit tracker with sign-up, a private database and automatic deployments.</p></div></div></section><section class="part"><h2 class="part-h"><span class="pi">★</span>Tip</h2><div class="prose"><p>When deployment fails, open the build logs in Vercel and paste the first red error into Claude Code. Nine times out of ten it's a missing environment variable.</p></div></section>
+<div class="lesson-foot"><a class="btn light" href="/courses/ai-mastery/day-20/">← Previous</a><a class="btn" href="/courses/ai-mastery/day-22/">Next lesson →</a></div></article>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> SchoolAura</span>
+    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
+  </div>
+</footer>
+<script>window.SA_META = {"dropshipping": {"title": "Dropshipping", "href": "/courses/dropshipping/", "days": 30, "modules": [[1, 2, 3, 4], [5, 6, 7, 8, 9], [10, 11, 12], [13, 14, 15, 16, 17, 18], [19, 20, 21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]}, "ai-mastery": {"title": "AI Mastery", "href": "/courses/ai-mastery/", "days": 24, "modules": [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12, 13, 14, 15, 16], [17, 18, 19, 20, 21, 22], [23, 24]]}, "digital-marketing": {"title": "Digital Marketing Agency", "href": "/courses/digital-marketing/", "days": 30, "modules": [[1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11], [12, 13, 14], [15, 16, 17, 18, 19, 20, 21], [22, 23, 24, 25, 26], [27, 28, 29, 30]]}, "website-builders": {"title": "Website Builders", "href": "/courses/website-builders/", "days": 7, "modules": [[1, 2, 3, 4], [5, 6, 7]]}}; window.SA_PROMPTS = {"count": 9, "dates": ["2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z"]};</script>
+<script src="/assets/js/site.js"></script>
+<script>document.querySelectorAll("[data-year]").forEach(function (e) { e.textContent = new Date().getFullYear(); });</script>
+
+<script src="/assets/js/engage.js"></script>
+<script>window.SA_DAY = 21;</script>
+<script src="/courses/ai-mastery/course-data.js?v=391528ad"></script>
+<script src="/assets/js/quiz.js"></script>
+<script src="/assets/js/tools.js"></script>
+<script src="/assets/js/course.js"></script>
+</body>
+</html>

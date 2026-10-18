@@ -10,6 +10,13 @@
   var QZ = C.quiz || null;
   var MODQ = QZ ? QZ.modules : {};
   var FINAL = QZ && QZ.final ? QZ.final : { count: 15, pass: 80 };
+  /* Each lesson has its own page (/courses/<slug>/day-N/); calendar, quizzes and about live on the course page. */
+  var PAGE_DAY = window.SA_DAY || null;
+  var IDX = /\/index\.html$/.test(location.pathname) ? "index.html" : "";
+  var BASE = location.pathname.replace(/day-\d+\/(index\.html)?$/, "").replace(/index\.html$/, "");
+  function dayHref(n) { return BASE + "day-" + n + "/" + IDX; }
+  function homeHref(h) { return BASE + IDX + (h ? "#" + h : ""); }
+  var CUR_DAY = null;
   function $(s) { return document.querySelector(s); }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function engage(fn) { if (window.SAEngage) SAEngage[fn].apply(null, Array.prototype.slice.call(arguments, 1)); }
@@ -79,32 +86,40 @@
     });
     var n = nextUp();
     var tab = document.querySelector('.tabs a[data-view="day"]');
-    if (tab) tab.href = "#day-" + (n ? n.n : 1);
+    if (tab) tab.href = dayHref(n ? n.n : 1);
     var cont = $("#continue");
     if (cont) {
-      if (!S.done.length) { cont.textContent = "Start course"; cont.href = "#day-1"; }
-      else if (n) { cont.textContent = "Continue · Day " + n.n; cont.href = "#day-" + n.n; }
-      else { cont.textContent = "Review the course"; cont.href = "#day-1"; }
+      if (!S.done.length) { cont.textContent = "Start course"; cont.href = dayHref(1); }
+      else if (n) { cont.textContent = "Continue · Day " + n.n; cont.href = dayHref(n.n); }
+      else { cont.textContent = "Review the course"; cont.href = dayHref(1); }
     }
     var dc = $("#done-count"); if (dc) dc.textContent = S.done.length + " of " + C.days.length;
     var qc = $("#quiz-count"); if (qc) qc.textContent = passedCount() + " of " + quizModules().length;
   }
 
   /* ---------- routing ---------- */
-  var views = { about: $("#v-about"), plan: $("#v-plan"), day: $("#v-day"), quizzes: $("#v-quizzes"), quiz: $("#v-quiz") };
+  var views = { about: $("#v-about"), plan: $("#v-plan"), quizzes: $("#v-quizzes"), quiz: $("#v-quiz") };
   var calMonth = null;
+  var BASE_TITLE = document.title;
   function route() {
     var h = (location.hash || "").replace("#", "");
-    var m = /^day-(\d+)$/.exec(h), q = /^quiz-(m\d+|final)$/.exec(h);
-    var which = m ? "day" : h === "plan" ? "plan" : (h === "quizzes" || h === "certificate") && QZ ? "quizzes" : q && QZ ? "quiz" : "about";
+    var md = /^day-(\d+)$/.exec(h);
+    if (md) { location.replace(dayHref(+md[1])); return; }          // old #day-N links
+    if (PAGE_DAY) {
+      if (/^(plan|quizzes|certificate|about|quiz-(m\d+|final))$/.test(h)) { location.replace(homeHref(h)); return; }
+      renderDay(PAGE_DAY);
+      syncProgress();
+      return;
+    }
+    var q = /^quiz-(m\d+|final)$/.exec(h);
+    var which = h === "plan" ? "plan" : (h === "quizzes" || h === "certificate") && QZ ? "quizzes" : q && QZ ? "quiz" : "about";
     Object.keys(views).forEach(function (k) { if (views[k]) views[k].hidden = k !== which; });
     var tabView = which === "quiz" ? "quizzes" : which;
     document.querySelectorAll(".tabs a").forEach(function (a) { a.setAttribute("aria-current", a.getAttribute("data-view") === tabView ? "true" : "false"); });
     if (which === "plan") renderPlan();
-    if (which === "day") renderDay(+m[1]);
     if (which === "quizzes") renderQuizzes();
     if (which === "quiz") renderQuiz(q[1]);
-    if (which !== "day") document.title = C.title + " · SchoolAura";
+    if (which === "about") document.title = BASE_TITLE;
     syncProgress();
     if (h === "certificate") { var cc = $("#cert-card"); if (cc) setTimeout(function () { cc.scrollIntoView({ block: "start" }); }, 0); }
     else if (which !== "about" || h) window.scrollTo(0, 0);
@@ -117,18 +132,18 @@
       html += '<p class="mtitle">' + esc(m.title) + "</p>";
       m.days.forEach(function (n) {
         var d = dayByN(n);
-        html += '<a href="#day-' + n + '" class="' + (isDone(n) ? "done" : "") + '" aria-current="' + (n === current ? "true" : "false") + '"><span class="ck">' + (isDone(n) ? "✓" : "") + "</span><span>Day " + n + ": " + esc(d.title) + "</span></a>";
-        opts += '<option value="day-' + n + '"' + (n === current ? " selected" : "") + ">" + (isDone(n) ? "✓ " : "") + "Day " + n + ": " + esc(d.title) + "</option>";
+        html += '<a href="' + dayHref(n) + '" class="' + (isDone(n) ? "done" : "") + '" aria-current="' + (n === current ? "true" : "false") + '"><span class="ck">' + (isDone(n) ? "✓" : "") + "</span><span>Day " + n + ": " + esc(d.title) + "</span></a>";
+        opts += '<option value="' + dayHref(n) + '"' + (n === current ? " selected" : "") + ">" + (isDone(n) ? "✓ " : "") + "Day " + n + ": " + esc(d.title) + "</option>";
       });
       if (hasQuiz(m.n)) {
         var r = qRes("m" + m.n);
-        html += '<a href="#quiz-m' + m.n + '" class="qlink' + (r && r.passed ? " done" : "") + '"><span class="ck">' + (r && r.passed ? "✓" : "?") + "</span><span>Module " + m.n + " quiz" + (r ? ' <small>' + (r.passed ? "passed" : "best " + r.best + "%") + "</small>" : "") + "</span></a>";
-        opts += '<option value="quiz-m' + m.n + '">' + (r && r.passed ? "✓ " : "") + "Module " + m.n + " quiz</option>";
+        html += '<a href="' + homeHref("quiz-m" + m.n) + '" class="qlink' + (r && r.passed ? " done" : "") + '"><span class="ck">' + (r && r.passed ? "✓" : "?") + "</span><span>Module " + m.n + " quiz" + (r ? ' <small>' + (r.passed ? "passed" : "best " + r.best + "%") + "</small>" : "") + "</span></a>";
+        opts += '<option value="' + homeHref("quiz-m" + m.n) + '">' + (r && r.passed ? "✓ " : "") + "Module " + m.n + " quiz</option>";
       }
     });
     if (QZ) {
-      html += '<p class="mtitle">Finish</p><a href="#quizzes" class="qlink' + (certReady() ? " done" : "") + '"><span class="ck">' + (certReady() ? "✓" : "★") + "</span><span>Final exam and certificate</span></a>";
-      opts += '<option value="quizzes">Final exam and certificate</option>';
+      html += '<p class="mtitle">Finish</p><a href="' + homeHref("quizzes") + '" class="qlink' + (certReady() ? " done" : "") + '"><span class="ck">' + (certReady() ? "✓" : "★") + "</span><span>Final exam and certificate</span></a>";
+      opts += '<option value="' + homeHref("quizzes") + '">Final exam and certificate</option>';
     }
     $("#lesson-list").innerHTML = html;
     var cur = $('#lesson-list a[aria-current="true"]');
@@ -157,12 +172,13 @@
   function feelMsg(k, m, lastOfMod) {
     if (k === "lost") return "That's normal with a new topic. Re-read the worked example, then try the first task again. Your notes below are a good place to write down what's unclear.";
     if (k === "ok") return "Good. Do the tasks before you move on: that's where it sticks.";
-    return "Brilliant. Mark the lesson as done to keep your streak going." + (lastOfMod && hasQuiz(m.n) ? ' <a class="link" href="#quiz-m' + m.n + '">Ready for the Module ' + m.n + " quiz? →</a>" : "");
+    return "Brilliant. Mark the lesson as done to keep your streak going." + (lastOfMod && hasQuiz(m.n) ? ' <a class="link" href="' + homeHref("quiz-m" + m.n) + '">Ready for the Module ' + m.n + " quiz? →</a>" : "");
   }
 
   function renderDay(n) {
     var d = dayByN(n);
-    if (!d) { location.hash = "#about"; return; }
+    if (!d) { location.replace(homeHref("about")); return; }
+    CUR_DAY = n;
     var sc = schedule(), m = modOf(n), st = status(n, sc);
     var stTxt = { done: "Completed", now: "Today", late: "Behind schedule", upcoming: "Scheduled" }[st];
     var sp = d.split, tot = sp.read + sp.demo + sp.tasks;
@@ -172,13 +188,13 @@
       return '<li><label for="' + id + '"><input type="checkbox" id="' + id + '" data-k="' + k + '"' + (S.tasks[k] ? " checked" : "") + '><span class="tx">' + t.html + "</span>" + (t.mins ? '<span class="mins">' + t.mins + " min</span>" : "<span></span>") + "</label></li>";
     }).join("");
     var prev = dayByN(n - 1), next = dayByN(n + 1), pi = 0;
-    function part(icon, title, inner, cls) { return '<section class="part' + (cls ? " " + cls : "") + '"><h3 class="part-h"><span class="pi">' + icon + "</span>" + title + "</h3>" + inner + "</section>"; }
+    function part(icon, title, inner, cls) { return '<section class="part' + (cls ? " " + cls : "") + '"><h2 class="part-h"><span class="pi">' + icon + "</span>" + title + "</h2>" + inner + "</section>"; }
     var qc = QZ && window.SAQuiz ? quickCheck(n, m) : "";
     var mq = "";
     if (lastOfMod && hasQuiz(m.n)) {
       var r = qRes("m" + m.n);
       mq = '<div class="mq-cta"><span class="mq-ic" aria-hidden="true">🧠</span><div><p class="k">End of Module ' + m.n + "</p><h4>" + esc(m.title) + " quiz</h4><p class=\"muted\">" + modQs(m.n).length + " questions · pass mark 80% · about " + Math.max(3, Math.ceil(modQs(m.n).length / 2)) + " minutes</p></div>" +
-        '<div class="mq-r">' + quizPill("m" + m.n) + '<a class="btn color" href="#quiz-m' + m.n + '">' + (r ? (r.passed ? "Retake quiz" : "Try again") : "Take the quiz") + "</a></div></div>";
+        '<div class="mq-r">' + quizPill("m" + m.n) + '<a class="btn color" href="' + homeHref("quiz-m" + m.n) + '">' + (r ? (r.passed ? "Retake quiz" : "Try again") : "Take the quiz") + "</a></div></div>";
     }
     var feel = S.feel[n];
     var checkin = '<div class="checkin"><p class="ci-q">How did today go?</p><div class="feel" role="group" aria-label="How did today go?">' +
@@ -188,7 +204,7 @@
       '<textarea id="lesson-notes" data-n="' + n + '" rows="4" placeholder="Key ideas, numbers to remember, questions to look into…">' + esc(S.notes[n] || "") + "</textarea></div>";
 
     $("#lesson").innerHTML =
-      '<div class="lesson-top"><div><p class="crumb">' + esc(m.title) + " · Day " + n + " of " + C.days.length + "</p><h2>" + esc(d.title) + "</h2></div>" + doneToggle(n) + "</div>" +
+      '<div class="lesson-top"><div><p class="crumb">' + esc(m.title) + " · Day " + n + " of " + C.days.length + "</p><h1>" + esc(d.title) + "</h1></div>" + doneToggle(n) + "</div>" +
       '<div class="meta-chips"><span class="mchip">' + d.hours + ' hours</span><span class="mchip st-' + st + '">' + stTxt + " · " + esc(sc[n].map(function (x) { return fmt(x); }).join(" + ")) + "</span></div>" +
       '<p class="goal">' + esc(d.goal) + "</p>" +
       '<div class="time-bar" aria-hidden="true"><i style="flex:' + sp.read + ';background:#c9c7c1"></i><i style="flex:' + sp.demo + ';background:#e3e1db"></i><i style="flex:' + sp.tasks + ';background:var(--aura)"></i></div>' +
@@ -201,12 +217,13 @@
       (d.tip ? part("★", "Tip", '<div class="prose">' + d.tip + "</div>") : "") +
       (mq ? '<section class="part">' + mq + "</section>" : "") +
       part("✎", "Check in", checkin) +
-      '<div class="lesson-foot">' + (prev ? '<a class="btn light" href="#day-' + prev.n + '">← Previous</a>' : "<span></span>") +
-      '<div style="display:flex;gap:8px;flex-wrap:wrap">' + doneToggle(n) + (next ? '<a class="btn" href="#day-' + next.n + '">Next lesson →</a>' : QZ ? '<a class="btn" href="#quizzes">Final exam →</a>' : '<a class="btn" href="#plan">Back to calendar</a>') + "</div></div>";
+      '<div class="lesson-foot">' + (prev ? '<a class="btn light" href="' + dayHref(prev.n) + '">← Previous</a>' : "<span></span>") +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap">' + doneToggle(n) + (next ? '<a class="btn" href="' + dayHref(next.n) + '">Next lesson →</a>' : QZ ? '<a class="btn" href="' + homeHref("quizzes") + '">Final exam →</a>' : '<a class="btn" href="' + homeHref("plan") + '">Back to calendar</a>') + "</div></div>";
     renderNav(n);
     if (window.SATools) SATools.mount($("#lesson"));
-    document.title = "Day " + n + ": " + d.title + " · " + C.title + " · SchoolAura";
-    engage("setLast", { slug: C.slug, title: C.title, day: n, dayTitle: d.title, href: location.href.split("#")[0] + "#day-" + n });
+    document.title = d.title + " · " + C.title + " Day " + n + " · SchoolAura";
+    var abs = dayHref(n); try { abs = new URL(abs, location.href).href; } catch (e) {}
+    engage("setLast", { slug: C.slug, title: C.title, day: n, dayTitle: d.title, href: abs });
   }
 
   /* ---------- quizzes ---------- */
@@ -249,7 +266,7 @@
     SAQuiz.run(root, {
       title: isFinal ? C.title + " final exam" : "Module " + mn + ": " + m.title,
       questions: qs, pass: isFinal ? FINAL.pass : 80, shuffleQuestions: !isFinal,
-      review: function (q) { var d = dayByN(q.day); return d ? { href: "#day-" + d.n, label: "Review Day " + d.n + ": " + d.title } : null; },
+      review: function (q) { var d = dayByN(q.day); return d ? { href: dayHref(d.n), label: "Review Day " + d.n + ": " + d.title } : null; },
       onFinish: function (res) {
         var prev = S.quiz[id] || { best: 0, attempts: 0, passed: false };
         S.quiz[id] = { best: Math.max(prev.best, res.pct), last: res.pct, attempts: prev.attempts + 1, passed: prev.passed || res.passed };
@@ -261,7 +278,7 @@
       extraActions: function (res) {
         if (!res.passed) return "";
         if (isFinal) return certReady() ? '<a class="btn color" href="#certificate">Get your certificate</a>' : "";
-        return nextMod ? '<a class="btn color" href="#day-' + nextMod.days[0] + '">Start Module ' + nextMod.n + " →</a>" : '<a class="btn color" href="#quiz-final">Take the final exam →</a>';
+        return nextMod ? '<a class="btn color" href="' + dayHref(nextMod.days[0]) + '">Start Module ' + nextMod.n + " →</a>" : '<a class="btn color" href="#quiz-final">Take the final exam →</a>';
       }
     });
   }
@@ -361,13 +378,13 @@
     var td = null; C.days.forEach(function (d) { if (sc[d.n].some(function (x) { return same(x, t); })) td = d; });
     var nx = nextUp(), tc = $("#today-card");
     if (td) {
-      tc.innerHTML = '<p class="k">Today · ' + esc(fmt(t, { weekday: "long", month: "long", day: "numeric" })) + '</p><h3>Day ' + td.n + ": " + esc(td.title) + '</h3><p class="muted">' + esc(td.goal) + '</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px"><a class="btn color" href="#day-' + td.n + '">' + (isDone(td.n) ? "Review lesson" : "Open today's lesson") + "</a>" + (nx && nx.n < td.n ? '<a class="btn light" href="#day-' + nx.n + '">Catch up: Day ' + nx.n + "</a>" : "") + "</div>";
+      tc.innerHTML = '<p class="k">Today · ' + esc(fmt(t, { weekday: "long", month: "long", day: "numeric" })) + '</p><h3>Day ' + td.n + ": " + esc(td.title) + '</h3><p class="muted">' + esc(td.goal) + '</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:6px"><a class="btn color" href="' + dayHref(td.n) + '">' + (isDone(td.n) ? "Review lesson" : "Open today's lesson") + "</a>" + (nx && nx.n < td.n ? '<a class="btn light" href="' + dayHref(nx.n) + '">Catch up: Day ' + nx.n + "</a>" : "") + "</div>";
     } else if (start > t) {
-      tc.innerHTML = '<p class="k">Starts ' + esc(fmt(start, { weekday: "long", month: "long", day: "numeric" })) + '</p><h3>Your first lesson is ready when you are.</h3><div><a class="btn light" href="#day-1">Preview Day 1</a></div>';
+      tc.innerHTML = '<p class="k">Starts ' + esc(fmt(start, { weekday: "long", month: "long", day: "numeric" })) + '</p><h3>Your first lesson is ready when you are.</h3><div><a class="btn light" href="' + dayHref(1) + '">Preview Day 1</a></div>';
     } else if (!nx) {
       tc.innerHTML = '<p class="k">Finished</p><h3>You completed every lesson in this course.</h3>' + (QZ ? '<div><a class="btn color" href="#quizzes">' + (certReady() ? "View your certificate" : "Take the final exam") + "</a></div>" : "");
     } else {
-      tc.innerHTML = '<p class="k">Rest day</p><h3>Nothing scheduled today.</h3><p class="muted">Next up: Day ' + nx.n + ": " + esc(nx.title) + '</p><div><a class="btn light" href="#day-' + nx.n + '">Get ahead</a></div>';
+      tc.innerHTML = '<p class="k">Rest day</p><h3>Nothing scheduled today.</h3><p class="muted">Next up: Day ' + nx.n + ": " + esc(nx.title) + '</p><div><a class="btn light" href="' + dayHref(nx.n) + '">Get ahead</a></div>';
     }
     if (!calMonth) { var a = t < start ? start : t > finish ? finish : t; calMonth = new Date(a.getFullYear(), a.getMonth(), 1); }
     renderCalendar(sc);
@@ -385,7 +402,7 @@
       if (i >= 35 && d.getMonth() !== calMonth.getMonth()) break;
       var items = (by[iso(d)] || []).map(function (it) {
         var st = status(it.d.n, sc), c = st === "done" ? " done" : st === "late" ? " late" : "";
-        return '<a class="cal-task' + c + '" href="#day-' + it.d.n + '" title="Day ' + it.d.n + ": " + esc(it.d.title) + '"><b><span class="dw">Day </span>' + it.d.n + (it.part ? " · " + it.part + "/2" : "") + '</b><span class="tt">' + esc(it.d.short || it.d.title) + "</span></a>";
+        return '<a class="cal-task' + c + '" href="' + dayHref(it.d.n) + '" title="Day ' + it.d.n + ": " + esc(it.d.title) + '"><b><span class="dw">Day </span>' + it.d.n + (it.part ? " · " + it.part + "/2" : "") + '</b><span class="tt">' + esc(it.d.short || it.d.title) + "</span></a>";
       }).join("");
       html += '<div class="cal-cell' + (d.getMonth() !== calMonth.getMonth() ? " out" : "") + (same(d, t) ? " is-today" : "") + '"><span class="num">' + d.getDate() + "</span>" + items + "</div>";
     }
@@ -400,7 +417,7 @@
     var lbl = { done: "Done", now: "Today", late: "Behind", upcoming: "Upcoming" }, cls = { done: "ok", now: "now", late: "late", upcoming: "" };
     $("#agenda").innerHTML = items.map(function (d) {
       var st = status(d.n, sc);
-      return '<li><a href="#day-' + d.n + '"><span class="ad">' + esc(fmt(sc[d.n][0])) + '</span><span class="at">Day ' + d.n + ": " + esc(d.title) + "<small>" + d.hours + " h · " + esc(modOf(d.n).title) + '</small></span><span class="pill ' + cls[st] + '">' + lbl[st] + "</span></a></li>";
+      return '<li><a href="' + dayHref(d.n) + '"><span class="ad">' + esc(fmt(sc[d.n][0])) + '</span><span class="at">Day ' + d.n + ": " + esc(d.title) + "<small>" + d.hours + " h · " + esc(modOf(d.n).title) + '</small></span><span class="pill ' + cls[st] + '">' + lbl[st] + "</span></a></li>";
     }).join("") || '<li style="padding:14px 16px;color:var(--muted)">Nothing scheduled in the next few days.</li>';
   }
 
@@ -424,7 +441,7 @@
       save(); calMonth = null; renderPlan();
       SA.toast("Calendar updated.");
     }
-    if (e.target.id === "jump") location.hash = "#" + e.target.value;
+    if (e.target.id === "jump") location.href = e.target.value;
   });
 
   var noteTimer = null;
@@ -465,7 +482,7 @@
     }
     var fb = e.target.closest("[data-feel]");
     if (fb) {
-      var dn = +(location.hash.match(/day-(\d+)/) || [0, 0])[1], k = fb.getAttribute("data-feel"), md = modOf(dn);
+      var dn = CUR_DAY, k = fb.getAttribute("data-feel"), md = modOf(dn);
       if (!dn || !md) return;
       S.feel[dn] = k; save();
       document.querySelectorAll("[data-feel]").forEach(function (x) { x.setAttribute("aria-pressed", x === fb ? "true" : "false"); });
