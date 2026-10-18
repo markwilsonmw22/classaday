@@ -1,0 +1,39 @@
+{
+ "slug": "pumpkin-head-illusion",
+ "title": "Pumpkin head illusion photo",
+ "published": "2026-10-18T18:37:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "A forced-perspective trick photo: a pumpkin held up close lines up perfectly so it looks like your friend's head.",
+ "why": "A TikTok trend roundup updated on October 14, 2026 lists a pumpkin head illusion: one friend holds a pumpkin close to the camera so it sits where the other friend's head should be. People shoot it in person; this pack makes an AI version from a photo of you and a friend.",
+ "steps": [
+  "Take a photo of two people outside, one standing close to the camera and one a few steps back. Both people should agree to the edit.",
+  "Upload it and use the main prompt. Say clearly who holds the pumpkin and whose head it replaces.",
+  "Check the edges. If the pumpkin floats or the neck looks odd, ask for a fix in a follow-up message."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my attached photo of two friends and keep both faces, bodies and clothes the same. Turn it into a forced-perspective trick photo. The person in front stretches one arm toward the camera and holds a carved jack-o'-lantern between their fingertips. The pumpkin lines up exactly where the person in the back should have a head, so it looks like they have a pumpkin head. Hide the back person's real head behind the pumpkin. Autumn backyard at golden hour, fallen leaves, natural phone-camera look. Vertical 4:5."
+  },
+  {
+   "label": "Variation: glowing at night",
+   "text": "Same trick photo, but at night on a front porch. The jack-o'-lantern glows from a candle inside and lights up the hand holding it. The person in the back stands under a warm porch light with a few string lights behind them. Keep both people's clothes the same as my photo. Slight grain, like a phone night shot. Vertical 4:5."
+  },
+  {
+   "label": "Variation: just you",
+   "text": "Use my attached selfie as the person in the back and keep my body and clothes the same. Add a hand coming in from the bottom corner of the frame, close to the camera, holding a small pumpkin with a silly carved face. Line it up so the pumpkin sits exactly where my head would be, like a forced-perspective trick. Pumpkin patch background, overcast daylight. Vertical 4:5."
+  },
+  {
+   "label": "Variation: shop or farm stand",
+   "text": "Use my attached photo of our team member in front of our shop (they agreed). Make a forced-perspective trick photo: a hand close to the camera holds one of our pumpkins or seasonal products so it lines up where their head would be. Keep the shop front and sign area exactly as in my photo. Bright fall daylight, cheerful and playful. Vertical 4:5."
+  }
+ ],
+ "tips": [
+  "The trick works best when the back person stands still and faces the camera, so pick a photo like that.",
+  "Ask for the pumpkin to be a little bigger than the head it covers. It hides the edges better.",
+  "Turn it into a short reveal: post the trick photo, then a real photo of both of you laughing.",
+  "Pumpkin farms, garden centres and bakeries can use their own pumpkins or pies as the prop."
+ ],
+ "tags": ["halloween", "illusion", "friends", "business"]
+}
