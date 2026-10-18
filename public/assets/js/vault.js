@@ -27,3 +27,34 @@
   });
   update();
 })();
+
+/* Recipe Vault: kitchen quiz (results saved with the rest of your progress) */
+(function () {
+  var Q = window.VAULT_QUIZ, root = document.getElementById("vault-quiz");
+  if (!Q || !root || !window.SAQuiz) return;
+  var KEY = "sa.course.recipe-vault";
+  function load() { try { return JSON.parse(localStorage.getItem(KEY) || "null") || {}; } catch (e) { return {}; } }
+  function intro() {
+    var r = (load().quiz || {}).vault;
+    root.innerHTML = '<div class="quiz-intro"><span class="qi-ic" aria-hidden="true">🍰</span><div><p class="k">' + Q.questions.length + " questions · pass mark " + Q.pass + "%</p>" +
+      "<h3>" + Q.title + "</h3><p class=\"muted\">Baking, keto, nutrition labels and food safety. Pass to earn the Kitchen pro badge.</p>" +
+      (r ? '<p class="qi-best">' + (r.passed ? '<span class="pill ok">Passed</span> ' : "") + "Best score " + r.best + "% · " + r.attempts + (r.attempts === 1 ? " attempt" : " attempts") + "</p>" : "") +
+      '<button type="button" class="btn" data-start-quiz>' + (r ? "Take it again" : "Start the quiz") + "</button></div></div>";
+  }
+  root.addEventListener("click", function (e) {
+    if (!e.target.closest("[data-start-quiz]")) return;
+    SAQuiz.run(root, {
+      title: Q.title, questions: Q.questions, pass: Q.pass, shuffleQuestions: true,
+      review: function (q) { return q.book ? { label: "Covered in " + q.book } : null; },
+      onFinish: function (res) {
+        var s = load(); s.quiz = s.quiz || {};
+        var prev = s.quiz.vault || { best: 0, attempts: 0, passed: false };
+        s.quiz.vault = { best: Math.max(prev.best, res.pct), last: res.pct, attempts: prev.attempts + 1, passed: prev.passed || res.passed };
+        try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (err) {}
+        if (window.SAEngage) SAEngage.touch();
+      }
+    });
+    root.scrollIntoView({ block: "start", behavior: "smooth" });
+  });
+  intro();
+})();

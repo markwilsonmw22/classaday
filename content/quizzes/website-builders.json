@@ -1,0 +1,45 @@
+{
+  "final": {"count": 10, "pass": 80},
+  "modules": {
+    "1": [
+      {"q": "Where do you change a template's colours and fonts for the whole site?",
+       "o": ["In every section's HTML", "In the EDIT ME block of CSS variables at the top of the styles", "In the images folder", "In the README"], "a": 1,
+       "why": "Change a variable once and every button, heading and background that uses it updates.", "day": 3},
+      {"q": "What's the easiest way to swap a photo without editing any code?",
+       "o": ["Give your photo the same file name as the placeholder and replace the file", "Paste the photo into the HTML", "Email it to the host", "Rename the folder"], "a": 0,
+       "why": "The page already points to that file name, so the new photo appears straight away.", "day": 2},
+      {"q": "Roughly how big should a full-width hero photo be on disk?",
+       "o": ["Under about 300 KB", "About 5 MB", "As large as possible for quality", "Under 5 KB"], "a": 0,
+       "why": "Big images are the number one reason small sites are slow. Resize and compress with a tool like Squoosh.", "day": 2},
+      {"q": "What's the minimum contrast ratio for normal body text (WCAG AA)?",
+       "o": ["1.5:1", "3:1", "4.5:1", "21:1"], "a": 2,
+       "why": "4.5:1 keeps text readable for most people, including on phones in sunlight.", "day": 3},
+      {"q": "What does grid-template-columns: repeat(3, 1fr) do?",
+       "o": ["Makes three rows", "Makes three equal columns", "Repeats the section three times", "Sets three fonts"], "a": 1,
+       "why": "Change 3 to 2 or 4 to change the layout, and stack to one column on phones in a media query.", "day": 4},
+      {"q": "Which phone link format is correct?",
+       "o": ["tel:(519) 555-0123", "phone:5195550123", "tel:+15195550123", "call://519-555-0123"], "a": 2,
+       "why": "Use tel: with the international format and no spaces.", "day": 2}
+    ],
+    "2": [
+      {"q": "How do you make a template's contact form send you emails?",
+       "o": ["It already does", "Connect it to a form service such as Formspree or Netlify Forms", "Add more fields", "Use a bigger button"], "a": 1,
+       "why": "Templates include demo forms. A form service receives submissions and emails them to you.", "day": 5},
+      {"q": "What Lighthouse score should you aim for on Performance and Accessibility?",
+       "o": ["50+", "70+", "90+", "100 only"], "a": 2,
+       "why": "Compressing images, lazy-loading and removing unused code usually gets you there.", "day": 5},
+      {"q": "To connect a custom domain to Vercel or Netlify, which records do you usually add?",
+       "o": ["An A record for @ and a CNAME for www, with the values your host shows", "An MX record only", "A TXT record with your password", "Nothing; it's automatic"], "a": 0,
+       "why": "Your host shows the exact values. HTTPS is issued automatically once the domain points to it.", "day": 6},
+      {"q": "Before changing DNS for an existing business, what should you do?",
+       "o": ["Delete all old records", "Screenshot every current record, especially the MX records for email", "Turn off the website", "Change the nameservers twice"], "a": 1,
+       "why": "Email often lives in the same DNS. Breaking it is the fastest way to lose a client's trust.", "day": 6},
+      {"q": "What's the strongest pitch for a website redesign?",
+       "o": ["A price list", "A free homepage mock-up made for that business", "A long email about your skills", "A discount code"], "a": 1,
+       "why": "Show, don't tell. A mock-up built with their real menu or services makes the value obvious.", "day": 7},
+      {"q": "What does the template licence allow?",
+       "o": ["Reselling the templates as your own pack", "Your own sites and unlimited client projects, but not reselling the templates", "Personal use only", "One website per template"], "a": 1,
+       "why": "Build client sites freely; just don't sell or share the templates themselves as templates.", "day": 7}
+    ]
+  }
+}

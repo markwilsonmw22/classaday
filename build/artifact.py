@@ -27,6 +27,7 @@ for f in OUT.rglob("*.html"):
     s = f.read_text()
     s = re.sub(r'(href|src)="(/[^"]*)"', lambda m: f'{m.group(1)}="{rel(f, m.group(2))}"', s)
     s = re.sub(r'(href|src)="(#[^"]*)"', lambda m: m.group(0), s)
+    s = re.sub(r'"href": "(/[^"]*)"', lambda m: f'"href": "{rel(f, m.group(1))}"', s)  # SA_DAILY / SA_META links
     s = s.replace(' download>', ' target="_blank" rel="noopener">')
     f.write_text(s)
 

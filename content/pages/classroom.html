@@ -1,9 +1,18 @@
 <section class="wrap page-head">
   <h1>Classroom</h1>
-  <p>All your courses in one place. Progress is saved on this device.</p>
+  <p>All your courses in one place. Progress, streaks and badges are saved on this device.</p>
 </section>
-<section class="wrap" style="margin-top:20px">
+<div class="wrap" id="continue-banner" hidden></div>
+<section class="wrap" style="margin-top:20px" aria-label="Your courses">
   <div class="grid">
 {{CARDS}}
+  </div>
+</section>
+<section class="wrap" style="margin-top:40px" aria-labelledby="me-title">
+  <h2 class="sec-title" id="me-title">Your progress</h2>
+  <p class="sec-sub">Earn XP for lessons, tasks, notes and quizzes. Learn a little every day to build a streak.</p>
+  <div class="two-col" style="margin-top:20px">
+    <div class="panel panel-pad" id="engage-panel"></div>
+    <aside class="panel panel-pad" id="daily-q"></aside>
   </div>
 </section>

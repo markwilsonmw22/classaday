@@ -244,6 +244,13 @@ Replace the text logo with an image if the business has one:
 ```
 
 Use SVG or a PNG with a transparent background.
+
+### Try it yourself
+
+The template's default colours are filled in. Paste your client's brand colours to check them.
+
+{{tool:contrast}}
+
 @demo
 **Rebranding Ember for Saffron Room in 15 minutes:**
 

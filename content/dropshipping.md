@@ -167,6 +167,13 @@ If some customers buy two, your average order goes up while ad cost per order st
 ### Fixed costs
 
 Apps, your Shopify plan and your domain are fixed monthly costs. Add them up and divide by expected monthly orders to see what each order must also cover. Early on, keep fixed costs under $100 a month.
+
+### Try it yourself
+
+Put your own product's numbers in. The calculator uses the same formulas as above.
+
+{{tool:profit}}
+
 @demo
 **Priya runs the numbers on a self-cleaning slicker brush.**
 
@@ -1523,6 +1530,13 @@ Ad platforms and Shopify won't agree exactly. Use Shopify as your source for **r
 ### When a product fails
 
 If every ad set for a product fails after a full test, the product or angle doesn't work right now. That's a **successful test**: you learned something for a few hundred dollars. Move to product two.
+
+### Try it yourself
+
+Enter one ad set's numbers and the rules above make the call for you.
+
+{{tool:adtest}}
+
 @demo
 **Priya's day 5 test log (brush):**
 

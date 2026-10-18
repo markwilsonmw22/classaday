@@ -50,6 +50,7 @@ class FigureBank:
 
 def post(html_text: str, figs: FigureBank) -> str:
     html_text = figs.sub(html_text)
+    html_text = re.sub(r"<p>\{\{tool:([\w-]+)\}\}</p>", r'<div class="tool" data-tool="\1"></div>', html_text)
     html_text = html_text.replace("<table>", '<div class="tbl"><table>').replace("</table>", "</table></div>")
     return html_text
 
@@ -134,6 +135,13 @@ def parse_course(path: Path):
     meta["modules"] = modules
     meta["totalHours"] = sum(d["hours"] for d in out_days)
     meta["figures"] = figs.count
+    qf = CONTENT / "quizzes" / f"{meta['slug']}.json"
+    meta["quiz"] = json.loads(qf.read_text()) if qf.exists() else None
+    if meta["quiz"]:
+        for k, qs in meta["quiz"]["modules"].items():
+            for q in qs:
+                assert 0 <= q["a"] < len(q["o"]), (meta["slug"], q["q"])
+                assert q.get("day") in next(m["days"] for m in modules if str(m["n"]) == k), (meta["slug"], q["q"])
     return meta
 
 
@@ -226,7 +234,10 @@ def head(title, desc, path, aura="drop"):
 """
 
 
-def foot(extra_js=""):
+SA_META_JS = ""
+
+
+def foot(extra_js="", pre_js=""):
     return f"""</main>
 <footer class="site-foot">
   <div class="wrap">
@@ -236,6 +247,9 @@ def foot(extra_js=""):
 </footer>
 <script src="/assets/js/site.js"></script>
 <script>document.querySelectorAll("[data-year]").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
+<script>window.SA_META = {SA_META_JS};</script>
+{pre_js}
+<script src="/assets/js/engage.js"></script>
 {extra_js}
 </body>
 </html>
@@ -262,7 +276,9 @@ def course_page(c, cover_slug=None):
         mods.append(f'<details class="mod"{" open" if m["n"] == 1 else ""}><summary><span>Module {m["n"]}: {html.escape(m["title"])}</span><small>{rng} · {fmt_h(mh)} h</small></summary><p class="msum">{html.escape(m["summary"])}</p><ol>{items}</ol></details>')
     who = "".join(f"<li>{md_inline(x)}</li>" for x in c["forWho"])
     need = "".join(f"<li>{md_inline(x)}</li>" for x in c["need"])
-    data = {"slug": c["slug"], "code": c["code"], "title": c["title"], "days": c["days"], "modules": c["modules"]}
+    data = {"slug": c["slug"], "code": c["code"], "title": c["title"], "days": c["days"], "modules": c["modules"], "quiz": c.get("quiz"),
+            "hours": c["totalHours"]}
+    nq = len(c["quiz"]["modules"]) if c.get("quiz") else 0
     data_js = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     cover = cover_slug or c["slug"]
     extra_top = c.get("extraOverview", "")
@@ -271,12 +287,14 @@ def course_page(c, cover_slug=None):
 <div class="course-head">
   <div class="wrap">
     <span class="icon-sq">{icon}</span>
-    <div><h1>{html.escape(c['title'])}</h1><p class="sub">{c['code']} · {days_n} lessons · about {fmt_h(H)} hours</p></div>
+    <div class="ch-text"><h1>{html.escape(c['title'])}</h1><p class="sub">{c['code']} · {days_n} lessons · about {fmt_h(H)} hours</p></div>
+    <div id="me-chip" class="ch-chip"></div>
   </div>
   <div class="wrap">
     <nav class="tabs" aria-label="Course sections">
       <a href="#day-1" data-view="day" aria-current="false">Classroom</a>
       <a href="#plan" data-view="plan" aria-current="false">Calendar</a>
+      {'<a href="#quizzes" data-view="quizzes" aria-current="false">Quizzes</a>' if nq else ''}
       <a href="#about" data-view="about" aria-current="true">About</a>
     </nav>
   </div>
@@ -318,6 +336,7 @@ def course_page(c, cover_slug=None):
             <div><dt>At 4 hours a day</dt><dd>{at4} days</dd></div>
             <div><dt>Level</dt><dd>{c['level']}</dd></div>
             <div><dt>Completed</dt><dd id="done-count">0 of {days_n}</dd></div>
+            {f'<div><dt>Quizzes passed</dt><dd id="quiz-count">0 of {nq}</dd></div>' if nq else ''}
           </dl>
         </div>
       </aside>
@@ -335,6 +354,28 @@ def course_page(c, cover_slug=None):
         <nav class="list" id="lesson-list" aria-label="Lessons"></nav>
       </aside>
       <article class="panel panel-pad" id="lesson"></article>
+    </div>
+  </section>
+
+  <section class="view" id="v-quizzes" hidden>
+    <div class="two-col">
+      <div style="display:grid;gap:20px;min-width:0">
+        <div class="panel panel-pad">
+          <h2 class="vh">Module quizzes</h2>
+          <p class="muted" style="margin-top:4px">One short quiz after each module. Pass with 80% or more. Retake as often as you like; questions and answers reshuffle every time.</p>
+          <div class="quiz-cards" id="quiz-cards"></div>
+        </div>
+        <div class="panel panel-pad" id="final-card"></div>
+        <div class="panel panel-pad" id="cert-card"></div>
+      </div>
+      <aside class="panel panel-pad sticky" id="quiz-side"></aside>
+    </div>
+  </section>
+
+  <section class="view" id="v-quiz" hidden>
+    <div class="quiz-wrap">
+      <p class="crumb"><a class="link" href="#quizzes">← All quizzes</a></p>
+      <div class="panel panel-pad" id="quiz-root"></div>
     </div>
   </section>
 
@@ -382,7 +423,7 @@ def course_page(c, cover_slug=None):
 </div>
 """
     page = head(f"{c['title']} · SchoolAura", c["metaDescription"], f"/courses/{c['slug']}/", c["aura"])
-    return page + body + foot(f'<script>window.COURSE = {data_js};</script>\n<script src="/assets/js/course.js"></script>')
+    return page + body + foot(f'<script>window.COURSE = {data_js};</script>\n<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/course.js"></script>')
 
 
 # ---------------------------------------------------------------- pages
@@ -439,22 +480,43 @@ def home_page(courses, tpl_count, vault):
     return page + frag + foot()
 
 
-def simple_page(fragment_name, title, desc, path, aura, js="", replacements=None):
+def daily_pool(courses):
+    pool = []
+    for c in courses:
+        if not c.get("quiz"):
+            continue
+        for qs in c["quiz"]["modules"].values():
+            for q in qs:
+                pool.append({"q": q["q"], "o": q["o"], "a": q["a"], "why": q["why"], "course": c["title"],
+                             "href": f"/courses/{c['slug']}/#day-{q['day']}"})
+    vq = json.loads((CONTENT / "quizzes" / "recipe-vault.json").read_text())
+    for q in vq["questions"]:
+        pool.append({"q": q["q"], "o": q["o"], "a": q["a"], "why": q["why"], "course": "Recipe Vault", "href": "/recipe-vault/#kitchen-quiz"})
+    return pool
+
+
+def js_json(v):
+    return json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
+
+
+def simple_page(fragment_name, title, desc, path, aura, js="", replacements=None, pre_js=""):
     frag = (CONTENT / "pages" / fragment_name).read_text()
     for k, v in (replacements or {}).items():
         frag = frag.replace("{{" + k + "}}", v)
-    return head(title, desc, path, aura) + frag + foot(js)
+    return head(title, desc, path, aura) + frag + foot(js, pre_js)
 
 
 def main():
-    courses = []
-    for f in COURSE_FILES:
-        c = parse_course(CONTENT / f)
-        courses.append(c)
+    global SA_META_JS
+    courses = [parse_course(CONTENT / f) for f in COURSE_FILES]
+    SA_META_JS = js_json({c["slug"]: {"title": c["title"], "href": f"/courses/{c['slug']}/", "days": len(c["days"]),
+                                      "modules": [m["days"] for m in c["modules"]]} for c in courses})
+    for c in courses:
         out = PUBLIC / "courses" / c["slug"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(course_page(c))
-        print(f"  {c['slug']}: {len(c['days'])} days, {c['totalHours']:g} h, {c['figures']} figures")
+        nq = sum(len(v) for v in c["quiz"]["modules"].values()) if c.get("quiz") else 0
+        print(f"  {c['slug']}: {len(c['days'])} days, {c['totalHours']:g} h, {c['figures']} figures, {nq} quiz questions")
 
     tpls = json.loads((ROOT / "templates-src" / "manifest.json").read_text())
     vault = vault_numbers()
@@ -462,12 +524,15 @@ def main():
     (PUBLIC / "index.html").write_text(home_page(courses, len(tpls), vault))
     (PUBLIC / "courses" / "index.html").write_text(simple_page(
         "classroom.html", "Classroom · SchoolAura", "All SchoolAura courses and your progress.", "/courses/", "drop",
-        replacements={"CARDS": cards_html(courses, len(tpls), vault, with_progress=True)}))
+        replacements={"CARDS": cards_html(courses, len(tpls), vault, with_progress=True)},
+        pre_js=f"<script>window.SA_DAILY = {js_json(daily_pool(courses))};</script>"))
     (PUBLIC / "recipe-vault").mkdir(exist_ok=True)
     (PUBLIC / "recipe-vault" / "index.html").write_text(simple_page(
         "vault.html", "The Recipe Vault · SchoolAura",
         "Four downloadable recipe books: Cake Studio, Keto Kitchen, Know Your Food and the Simple & Quick Food Plan. Instant PDF.",
-        "/recipe-vault/", "vault", '<script src="/assets/js/vault.js"></script>', vault))
+        "/recipe-vault/", "vault",
+        f'<script>window.VAULT_QUIZ = {js_json(json.loads((CONTENT / "quizzes" / "recipe-vault.json").read_text()))};</script>\n'
+        '<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/vault.js"></script>', vault))
 
     cards = []
     for t in tpls:

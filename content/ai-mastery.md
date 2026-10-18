@@ -296,6 +296,13 @@ The second prompt takes one minute longer to write and saves ten minutes of edit
 ### Talk naturally
 
 You don't need special syntax or magic words. Write the way you'd brief a smart colleague. Clear and specific beats clever.
+
+### Try it yourself
+
+Build a prompt from the six parts, then paste it into Claude or ChatGPT and compare it with a one-line request.
+
+{{tool:prompt}}
+
 @demo
 **Upgrading a work prompt, live.**
 
@@ -735,6 +742,13 @@ Great for backgrounds, concepts, mood boards, illustrations, social graphics and
 ### Rules
 
 No real people without consent, no trademarked characters or logos, and no images designed to mislead.
+
+### Try it yourself
+
+Change one part at a time and run each version, so you can see what that part does.
+
+{{tool:imgprompt}}
+
 @demo
 **A consistent set for a candle shop's autumn campaign.**
 

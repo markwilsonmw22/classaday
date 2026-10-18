@@ -90,6 +90,13 @@ The golden rule of marketing maths: **a business can afford to grow when LTV is 
 ### What an agency actually sells
 
 Clients don't buy "posts" or "SEO". They buy outcomes: more calls, more bookings, more sales, less stress. Your job is to pick the right channels, do the work well and **prove the result with numbers**. That last part is what keeps clients paying you for years.
+
+### Try it yourself
+
+The Corner Grind numbers are filled in. Change them to see how each metric moves.
+
+{{tool:metrics}}
+
 @demo
 **Meet Maple & Pixel, the (fictional) agency we'll follow all month.**
 
@@ -252,6 +259,13 @@ Work backwards from what you need:
 `Clients × hours per client per month = hours needed`
 
 If the hours don't fit in your week, either raise prices, narrow the scope, or plan to hire. A healthy small agency aims for a **gross margin of 50% or more** after paying any freelancers.
+
+### Try it yourself
+
+Riya's plan is filled in. Swap in your own goal and prices.
+
+{{tool:pricing}}
+
 @demo
 **Riya's agency plan.**
 
@@ -481,6 +495,13 @@ Google's quality guidelines talk about **Experience, Expertise, Authoritativenes
 ### Keyword stuffing is dead
 
 Repeating a keyword 30 times doesn't help and reads badly. Use the main keyword in the title, H1, URL and naturally in the first paragraph. Then write naturally, using related words and answering related questions.
+
+### Try it yourself
+
+Write a title and description for a real page, and watch the character counts.
+
+{{tool:serp}}
+
 @demo
 **Riya rewrites Northfield's drain-cleaning page.**
 
@@ -1884,6 +1905,13 @@ Write each test down: hypothesis, what you'll change, how long, and the result. 
 - **Respond with video:** answer popular comments with short videos.
 - **Pin the best three posts** to the top of the profile.
 - **Stories with polls and questions** to boost interaction with followers.
+
+### Try it yourself
+
+Pull the numbers for one of your posts from Instagram or TikTok insights.
+
+{{tool:engagement}}
+
 @demo
 **Corner Grind, month two report (headline section).**
 
@@ -2071,6 +2099,13 @@ Estimate before you launch, and tell the client honestly:
 `Monthly budget ÷ average CPC = clicks`
 `Clicks × conversion rate = leads`
 `Leads × close rate × average job value = revenue`
+
+### Try it yourself
+
+Riya's Northfield Plumbing forecast is filled in. Try a client's numbers.
+
+{{tool:adsbudget}}
+
 @demo
 **Northfield's emergency campaign (example numbers).**
 
@@ -2167,6 +2202,13 @@ For Meta and TikTok data, either export to Google Sheets monthly or use a paid c
 ### Privacy and consent
 
 Tracking must respect privacy law. In Canada, PIPEDA requires meaningful consent and transparency, and **Quebec's Law 25** requires consent for tracking technologies that identify, locate or profile people (with cookie banners commonly used). The EU's GDPR is stricter still. In practice: a clear **privacy policy**, a **cookie consent banner** where required (Google's **Consent Mode** adjusts tags based on choices), and no personal data sent to analytics. This is general information; clients should get legal advice for their situation.
+
+### Try it yourself
+
+Build the tagged links for this week's posts and save them in the client's UTM sheet.
+
+{{tool:utm}}
+
 @demo
 **Corner Grind's tracking setup (2 hours).**
 
