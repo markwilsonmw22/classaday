@@ -1,0 +1,39 @@
+{
+ "slug": "answer-in-one-word",
+ "title": "Ask AI to answer in one word",
+ "published": "2026-10-18T12:37:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Tell the AI it can only reply in one word, then ask it fun questions about you. Screen-record the answers for a quick video.",
+ "why": "A TikTok trend roundup updated on October 14, 2026 lists \"Answer in One Word\": people ask ChatGPT questions it must answer in a single word, then share the replies. The same roundup suggests brands ask AI to sum up their business in one word.",
+ "steps": [
+  "Open a chat and paste the main prompt to set the one-word rule.",
+  "Ask your questions one at a time so each answer lands on its own.",
+  "Screen-record the chat, or put each answer on screen as text over a clip of your reaction."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Let's play a game. I'll ask you questions and you must answer with exactly one word. No punctuation, no explanations, no follow-up. If you're not sure, pick the word that fits best anyway. Based on everything I've told you in our chats, ready? First question: what one word describes my sense of humour?"
+  },
+  {
+   "label": "Question list",
+   "text": "Answer each in exactly one word, one per line, numbered: 1. My best quality. 2. My worst habit. 3. The season that matches my personality. 4. The animal I'd be. 5. What I should do more of. 6. What I should stop overthinking. 7. My ideal weekend. 8. The word my friends would use for me."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Here's a short description of my business: [paste two or three sentences about what you sell, who you serve and where]. Answer each question in exactly one word: 1. How would a first-time customer feel walking in? 2. What's our biggest strength? 3. What should we post more about? 4. What word should be on our sign? 5. What do our customers really pay for?"
+  },
+  {
+   "label": "Variation: friends and family",
+   "text": "Answer in exactly one word each. Here are three quick facts about my friend (who agreed to be in this video): [fact 1], [fact 2], [fact 3]. 1. Their Halloween costume this year. 2. Their go-to snack. 3. Their road-trip role. 4. Their secret talent."
+  }
+ ],
+ "tips": [
+  "The answers are only as good as what the AI knows. With a new account, give it a few facts about yourself first.",
+  "Keep it light. Skip questions about health, money or other people's private lives.",
+  "If it breaks the rule and writes a sentence, reply \"One word only\" and ask again.",
+  "Businesses: the answers make good on-screen hooks, like \"We asked AI to describe our café in one word.\""
+ ],
+ "tags": ["chatgpt", "text", "funny", "business"]
+}

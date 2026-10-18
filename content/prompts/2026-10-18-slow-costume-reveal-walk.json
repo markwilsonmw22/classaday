@@ -1,0 +1,39 @@
+{
+ "slug": "slow-costume-reveal-walk",
+ "title": "Slow costume reveal walk",
+ "published": "2026-10-18T12:37:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+ "summary": "A low-angle shot starts on your feet, then you walk slowly toward the camera until the full Halloween costume is revealed.",
+ "why": "Two Halloween trend roundups updated on October 14, 2026 list a costume walk: a low shot of the feet, a slow walk toward the camera, and the full costume revealed as the music builds. People film it in person; this pack makes an AI version from a photo of you in costume.",
+ "steps": [
+  "Take a clear, full-body photo of yourself in costume, standing in good light.",
+  "Make the starting frame with the image prompt, keeping your face and costume the same.",
+  "Animate it with the video prompt, then add your own music and time the reveal to the build."
+ ],
+ "prompts": [
+  {
+   "label": "Step 1: the image",
+   "text": "Use my attached photo as the reference and keep my face, body and costume exactly the same. Place me at the far end of a long, empty concrete hallway at night. Flickering overhead lights, light haze on the floor, cool blue shadows. Camera very low to the ground, near floor level, looking down the hallway toward me. Vertical 9:16."
+  },
+  {
+   "label": "Step 2: the video",
+   "text": "Use the image as the first frame. The camera stays low near the floor. It opens framed on my feet and the bottom of my costume as I take slow, steady steps toward the camera. The camera tilts up gradually as I get closer, revealing the full costume and finally my face, which stops close to the lens and stares straight in. Slow, dramatic pace, lights flickering. 8 seconds, no text."
+  },
+  {
+   "label": "Variation: stairwell or garage",
+   "text": "Same as before, but I walk down an empty stairwell or through a dim garage, dragging a costume prop behind me that scrapes along the floor. Low camera, slow reveal from feet to face, a single bare bulb swinging overhead. 8 seconds, 9:16."
+  },
+  {
+   "label": "Variation: shop window reveal",
+   "text": "Use my attached photo of our store team member in costume (they agreed). Low camera on the shop floor at closing time, lights dimmed. They walk slowly from the back of the store toward the camera past shelves of our products, revealing the costume from the shoes up. Warm spooky lighting, 8 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Shoes and the bottom of the costume show first, so make sure they're clear in your photo.",
+  "AI video can change your face when it gets close. Try a few times and keep the best take.",
+  "Add music in your editor. A slow build that hits right when your face appears works best.",
+  "Great for costume shops, salons and makeup artists showing off a finished look."
+ ],
+ "tags": ["halloween", "video", "costume", "business"]
+}

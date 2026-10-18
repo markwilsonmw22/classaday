@@ -1,0 +1,38 @@
+{
+ "slug": "sheet-ghost-photoshoot",
+ "title": "Sheet ghost photoshoot",
+ "published": "2026-10-18T12:37:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini", "Midjourney"],
+ "summary": "Classic bedsheet ghosts with sunglasses, posed like a fashion shoot. Cute, funny and easy to make with friends or on your own.",
+ "why": "A Halloween TikTok and Reels trend roundup updated on October 14, 2026 lists the ghost photoshoot: people in white sheets and sunglasses posing outdoors or in groups. AI lets you make the shoot without the sheets, or try poses you can't do in real life. It's a fun, cartoonish take, different from our moonlit ghost portrait pack.",
+ "steps": [
+  "Pick a setting: a fall park, a pumpkin patch, a city street or your own living room.",
+  "Paste the main prompt and choose how many ghosts you want.",
+  "Make a few versions, then post them as a carousel or cut them together to a beat."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "A playful fashion-style photoshoot of three classic bedsheet ghosts: plain white sheets with two round eye holes, each wearing dark sunglasses over the sheet. They pose confidently in a park full of orange and red fall leaves, one leaning on a tree, one mid-step, one holding a small pumpkin. Golden late-afternoon sun, soft lens flare, shallow depth of field, shot on a 50mm lens. Looks like a real photo, cheerful not scary. Vertical 4:5."
+  },
+  {
+   "label": "Variation: you as the ghost",
+   "text": "Use my attached photo for the setting and my pose only. Replace me with a classic bedsheet ghost: a white sheet with two eye holes, wearing dark sunglasses, in the exact same pose and spot. Keep the background, lighting and camera angle the same. Natural and photo-real."
+  },
+  {
+   "label": "Variation: 1970s album-cover style",
+   "text": "Four bedsheet ghosts in sunglasses lined up against a warm orange backdrop, posed like a 1970s band photo: one sitting on a stool, others standing with arms crossed. Soft film grain, warm faded colours, studio lighting. Square 1:1, no text."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Two bedsheet ghosts in sunglasses working behind the counter of a cosy local [café / bakery / bookshop]: one handing a customer a paper bag, one arranging the display. Warm indoor light, real-photo look, friendly and funny. Leave clear space at the top for our own text. Vertical 4:5."
+  }
+ ],
+ "tips": [
+  "Say \"cheerful not scary\" or the AI may make the ghosts creepy.",
+  "Ask for the same sheets and sunglasses in every image so a carousel looks like one shoot.",
+  "Add your shop name and hours in your editor rather than in the prompt."
+ ],
+ "tags": ["halloween", "ghost", "photoshoot", "business"]
+}
