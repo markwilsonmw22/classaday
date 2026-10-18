@@ -9,7 +9,7 @@ The website for **schoolaura.com**: self-paced courses with day-by-day plans and
 | Home | `/` | Discovery page: search, category chips, course cards, how it works, FAQ |
 | Classroom | `/courses/` | All courses with progress bars, continue banner, streak, level, badges and a question of the day |
 | Dropshipping (COM 130) | `/courses/dropshipping/` | 30 daily lessons, ≈103 h, 9 diagrams |
-| AI Mastery (AI 210) | `/courses/ai-mastery/` | 21 daily lessons, ≈72 h, 7 diagrams |
+| AI Mastery (AI 210) | `/courses/ai-mastery/` | 23 daily lessons, ≈79 h, 7 diagrams (includes Runway and HeyGen) |
 | Digital Marketing Agency (MKT 220) | `/courses/digital-marketing/` | 30 daily lessons, ≈108 h, 8 diagrams |
 | Website Builders (WEB 120) | `/courses/website-builders/` | 7-day guide to the template pack |
 | Template library | `/templates/` | 6 templates, live previews, single and bulk ZIP downloads |

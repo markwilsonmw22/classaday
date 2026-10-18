@@ -155,7 +155,7 @@ PRODUCTS = [
      "desc": "Pick a niche, prove a product, build a Shopify store and run your first ads, one day at a time."},
     {"slug": "ai-mastery", "href": "/courses/ai-mastery/", "aura": "ai", "icon": "AI", "cat": "ai",
      "title": "AI Mastery",
-     "desc": "Claude, ChatGPT, Higgsfield, ElevenLabs, AI video, full-stack apps and MCP, explained simply."},
+     "desc": "Claude, ChatGPT, Runway, HeyGen, ElevenLabs, AI video, full-stack apps and MCP, explained simply."},
     {"slug": "digital-marketing", "href": "/courses/digital-marketing/", "aura": "mkt", "icon": "DM", "cat": "marketing business",
      "title": "Digital Marketing Agency",
      "desc": "SEO, web scraping, social media, ads, analytics and email, then start and run your own agency."},
@@ -241,7 +241,7 @@ def foot(extra_js="", pre_js=""):
     return f"""</main>
 <footer class="site-foot">
   <div class="wrap">
-    <span>© <span data-year>2026</span> SchoolAura · London, Ontario</span>
+    <span>© <span data-year>2026</span> SchoolAura</span>
     <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
   </div>
 </footer>

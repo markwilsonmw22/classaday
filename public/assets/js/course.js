@@ -177,7 +177,7 @@
     var mq = "";
     if (lastOfMod && hasQuiz(m.n)) {
       var r = qRes("m" + m.n);
-      mq = '<div class="mq-cta"><span class="mq-ic" aria-hidden="true">🧠</span><div><p class="k">End of Module ' + m.n + "</p><h4>" + esc(m.title) + " quiz</h4><p class=\"muted\">" + modQs(m.n).length + " questions · pass mark 80% · about 5 minutes</p></div>" +
+      mq = '<div class="mq-cta"><span class="mq-ic" aria-hidden="true">🧠</span><div><p class="k">End of Module ' + m.n + "</p><h4>" + esc(m.title) + " quiz</h4><p class=\"muted\">" + modQs(m.n).length + " questions · pass mark 80% · about " + Math.max(3, Math.ceil(modQs(m.n).length / 2)) + " minutes</p></div>" +
         '<div class="mq-r">' + quizPill("m" + m.n) + '<a class="btn color" href="#quiz-m' + m.n + '">' + (r ? (r.passed ? "Retake quiz" : "Try again") : "Take the quiz") + "</a></div></div>";
     }
     var feel = S.feel[n];

@@ -6,8 +6,8 @@
   "titleHtml": "AI Mastery, <em>from first prompt to your own apps</em>",
   "aura": "ai",
   "level": "Beginner to intermediate",
-  "lede": "Twenty-one days with Claude, ChatGPT, Higgsfield, ElevenLabs and the rest of the toolkit. You'll learn to prompt well, make AI images, voice and video, build and deploy a full-stack app, and connect tools with MCP.",
-  "metaDescription": "A 21-day AI course in plain English: prompting, Claude, ChatGPT, AI images, ElevenLabs voice, Higgsfield and AI video, full-stack apps with AI, MCP and automation.",
+  "lede": "Twenty-three days with Claude, ChatGPT, Runway, HeyGen, ElevenLabs and the rest of the toolkit. You'll learn to prompt well, make AI images, voice and video, build and deploy a full-stack app, and connect tools with MCP.",
+  "metaDescription": "A 23-day AI course in plain English: prompting, Claude, ChatGPT, AI images, ElevenLabs voice, AI video with Runway and Higgsfield, HeyGen avatars and translation, full-stack apps with AI, MCP and automation.",
   "outcome": "Use AI like a skilled professional: for writing, research, media and building real software.",
   "learn": [
     "Explain how AI models work, and where they go wrong, in plain words",
@@ -16,6 +16,8 @@
     "Create on-brand images with a repeatable prompt formula",
     "Produce natural voiceovers with ElevenLabs, with the right permissions",
     "Make a 30-second AI video from script to final edit",
+    "Generate, edit and act out AI video in Runway",
+    "Make presenter videos and translations in HeyGen, with proper consent",
     "Understand how web apps work: frontend, backend, database and hosting",
     "Build and deploy a full-stack app with Claude Code, Supabase and Vercel",
     "Build your own MCP server and connect it to Claude",
@@ -125,7 +127,7 @@ There are thousands of AI tools, but they fall into a few categories. Once you k
 
 ### Video generation
 
-**Higgsfield** (a studio that brings together many video models with camera controls and presets), **Runway**, **Kling**, **Google Veo**, **OpenAI's Sora** and others. Days 12–14.
+**Higgsfield** (a studio that brings together many video models with camera controls and presets), **Runway** (generation plus editing and performance tools), **Kling**, **Google Veo**, **OpenAI's Sora** and others. Days 12–15.
 
 ### Voice and audio
 
@@ -133,15 +135,15 @@ There are thousands of AI tools, but they fall into a few categories. Once you k
 
 ### Avatars
 
-**HeyGen** and **Synthesia** create presenter videos from a script, using stock or custom avatars. Day 14.
+**HeyGen** and **Synthesia** create presenter videos from a script, using stock or custom avatars, and translate videos into other languages. Days 14 and 16.
 
 ### Building software
 
-**Claude Code** and **Cursor** for coding with AI in real projects; **Lovable**, **Bolt**, **v0** and **Replit** for building apps from a description in the browser. Days 15–19.
+**Claude Code** and **Cursor** for coding with AI in real projects; **Lovable**, **Bolt**, **v0** and **Replit** for building apps from a description in the browser. Days 17–21.
 
 ### Automation
 
-**Zapier**, **Make** and **n8n** connect apps and add AI steps. **MCP** connects AI assistants directly to your tools. Days 19–20.
+**Zapier**, **Make** and **n8n** connect apps and add AI steps. **MCP** connects AI assistants directly to your tools. Days 21–22.
 
 ### How to choose
 
@@ -534,9 +536,9 @@ Claude comes in a family of models. Larger ones (like **Opus**) are the most cap
 
 **Styles.** Choose or create a writing style (for example, concise or formal), or teach Claude your style from samples.
 
-**Connectors.** Connect apps like Google Drive, Gmail, calendars, GitHub and many others so Claude can read and act in them. Connectors are built on **MCP**, which you'll learn properly on Day 19.
+**Connectors.** Connect apps like Google Drive, Gmail, calendars, GitHub and many others so Claude can read and act in them. Connectors are built on **MCP**, which you'll learn properly on Day 21.
 
-**Claude Code.** Anthropic's coding agent for building software, which you'll use on Day 17.
+**Claude Code.** Anthropic's coding agent for building software, which you'll use on Day 19.
 
 ### Plans
 
@@ -689,7 +691,7 @@ A researched answer with checked sources, your personal style guide and one piec
 @tip
 Ask the model to quote the exact sentence from a source for important claims. If it can't find the quote, the claim may not be in the source.
 
-# M4 | Images, voice & video | Create AI images, natural voiceovers and short videos, from first prompt to finished edit.
+# M4 | Images, voice & video | Create AI images, natural voiceovers and short videos, then go deep on Runway and HeyGen.
 
 ## D10 | AI images that look intentional | 3.5 | AI images
 @goal Learn a repeatable image prompt formula and produce a consistent set of images for a real project.
@@ -806,7 +808,7 @@ Text that reads well doesn't always sound good. For voice:
 - **Adjust settings:** lower stability gives more expressive, varied delivery; higher stability is more consistent. Similarity controls how close output stays to the original voice.
 - **Use the expressive model's emotional cues** where available, or describe the delivery in the script direction.
 - **Generate several takes** of important lines and pick the best.
-- **Fix pronunciation** of names and brands with spelling tricks ("Malabari" → "Mala-baa-ree") or pronunciation tools.
+- **Fix pronunciation** of names and brands with spelling tricks ("Saoirse" → "Seer-sha") or pronunciation tools.
 
 ### Cloning your own voice
 
@@ -850,7 +852,8 @@ AI video has moved quickly from glitchy experiments to clips good enough for ads
 ### The main tools
 
 - **Higgsfield:** a creative studio that brings together many leading video and image models in one place, with cinematic camera controls, shot planning, presets and visual effects, character consistency features (Soul ID) and apps for lipsync, product placement and more. Useful because you can try several models from one account.
-- **Kling, Google Veo, OpenAI Sora, Runway, Seedance, Hailuo, Luma:** individual video models and apps. Each has strengths in realism, motion, physics, sound or style. Several can be accessed inside aggregators like Higgsfield.
+- **Runway:** a professional studio with its own models (Gen-4.5), plus tools to edit real footage (Aleph) and transfer your acting onto a character (Act-Two). You'll go deep on it on Day 15.
+- **Kling, Google Veo, OpenAI Sora, Seedance, Hailuo, Luma:** individual video models and apps. Each has strengths in realism, motion, physics, sound or style. Several can be accessed inside studios like Higgsfield and Runway.
 - Some newer models generate **sound and dialogue** along with video.
 
 Model rankings change monthly. Learn the method, then test the newest models on your own shots.
@@ -986,7 +989,7 @@ AI avatars let you produce presenter-style videos from a script: training videos
 
 ### Avatar tools
 
-- **HeyGen** and **Synthesia:** choose a stock avatar or create one of **yourself** from a recording, type a script, pick a language, and get a talking-presenter video.
+- **HeyGen** and **Synthesia:** choose a stock avatar or create one of **yourself** from a recording, type a script, pick a language, and get a talking-presenter video. You'll use HeyGen hands-on on Day 16.
 - **Lipsync tools** (including apps inside Higgsfield): make a character or video match a new audio track.
 - **Translation and dubbing:** turn one video into many languages, keeping your voice style.
 
@@ -1021,7 +1024,7 @@ AI avatars let you produce presenter-style videos from a script: training videos
 @demo
 **A tutoring business uses its founder's avatar.**
 
-The founder records a 2-minute training video of herself for HeyGen with consent forms complete (it's her own face and voice). She then:
+The founder records a short training video of herself for HeyGen, including the on-camera consent statement (it's her own face and voice). She then:
 
 - Turns her written FAQ into twelve 60-second explainer videos in one afternoon
 - Dubs the three most popular into French and Hindi for families in her area
@@ -1038,14 +1041,199 @@ A short avatar video and a clear, written set of rules for how you'll use avatar
 @tip
 Use AI avatars to scale content you'd happily say on camera yourself. If you wouldn't stand behind it as a real video, don't make it as an AI one.
 
+## D15 | Runway: generate, edit and perform AI video | 3.5 | Runway
+@goal Find your way around Runway, generate consistent shots with Gen-4.5 and references, edit real footage with Aleph, and turn your own acting into a character's performance with Act-Two.
+@lesson
+Day 12 gave you the method. Today you go deep on one professional tool. **Runway** is a New York company that has built AI video models since the early days of the field, and it's popular with filmmakers, editors and ad agencies. The reason: Runway doesn't only *generate* clips. It also *edits* footage you already have, and *transfers* a performance onto a character.
+
+### Runway's three jobs
+
+| Job | Tool | Use it for |
+|---|---|---|
+| Generate | Gen-4.5, plus models from other companies such as Kling and Seedance | New shots from text or an image |
+| Edit | Aleph, in Edit Studio | Changing footage you already have |
+| Perform | Act-Two | Making a character talk and move like you |
+
+### Finding your way around
+
+Runway's app has a few ways in. The names may change as the product evolves, but the ideas stay the same.
+
+- **Agent:** chat with Runway. Describe the video you want; it plans shots, generates them and lays them on a timeline you can adjust. Good for fast first drafts.
+- **Tool Mode:** pick one model and control every setting yourself. Best when you know exactly what you want.
+- **Workflows:** connect steps like boxes on a board (for example: image, then video, then upscale) and save the chain to reuse. Handy for repeat jobs like a weekly product clip.
+- **Edit Studio:** where you change existing footage with Aleph.
+- **Plugins:** Runway also works inside Premiere Pro, After Effects and DaVinci Resolve, so editors can use it without leaving their timeline.
+
+### Generating with Gen-4.5
+
+Gen-4.5 is Runway's own text-to-video and image-to-video model. Clips are short (up to about 10 seconds), so you build longer videos from several shots, exactly like Day 13.
+
+Runway-specific prompting tips:
+
+- **Image to video: describe only the motion.** The image already shows the scene. Describing it again tends to *reduce* movement. Write *"steam curls up, slow push in"*, not *"a latte on a wooden counter with steam…"*.
+- **Give camera moves a speed:** *"slow dolly in"*, *"fast whip pan"*. Without one, the model guesses.
+- **One camera move per clip**, the same rule as Day 12.
+- **Describe reveals:** *"camera pulls back to reveal the whole café"* gives the move a purpose.
+
+### Keeping characters and products consistent
+
+Runway's **References** let you upload images of a character, product or place and tag them in your prompt with an @ name, such as *"@Bean waves from the café counter"*. Make your keyframes this way, then animate them. The same mascot, face or bottle appears in every shot.
+
+Use clean, well-lit reference images on a plain background, and keep one reference per character.
+
+### Editing footage with Aleph
+
+Aleph is Runway's video editing model. Give it a clip (your own footage or an AI one) and tell it what to change. It keeps everything else the same.
+
+| Edit | Example prompt |
+|---|---|
+| Background or location | *"change background to a snowy main street"* |
+| Weather, season or time of day | *"heavy snowfall at dusk"* |
+| Lighting | *"soft, warm window light"* |
+| Swap a product or colour | *"change the cup sleeves to deep red"* |
+| Remove something | *"remove the white van"* |
+| Restyle | *"hand-drawn animation style"* |
+
+Start prompts with an action word (*add, remove, change, replace, relight, restyle*) and keep them short. You can also edit a single frame first, or give a reference image, and Aleph carries that look through the whole clip. Aleph 2.0 works on clips of up to 30 seconds.
+
+This is a big deal for small businesses: **one shoot can become a summer, autumn and holiday version of the same ad.**
+
+### Performing with Act-Two
+
+Act-Two copies a **performance** from a video of you onto a character. Record yourself on your phone saying the lines with the expressions you want. Act-Two moves the character's face and head to match, and with a character image it can carry your hand and upper-body gestures too.
+
+For a good driving video:
+
+- Face the camera, in soft, even light, with a plain background
+- Keep your whole head in frame and stay in shot
+- Act a little bigger than normal; small expressions can get lost
+- Keep it under 30 seconds, Act-Two's limit
+
+### Credits and plans
+
+Runway charges **credits per second** of video. Editing with Aleph costs more per second than generating, and top models cost more than fast ones. The free plan gives a small one-time batch of credits; tools like Aleph and Act-Two need a paid plan. **Check the credit cost shown before you click Generate**, and test ideas at short lengths first.
+
+### The rules still apply
+
+- Only use faces and voices you have permission to use. Runway asks for consent before you create a custom voice.
+- Don't edit footage of real people to show things that didn't happen.
+- Label AI-generated or AI-edited content where the platform asks (Day 13).
+@demo
+**The café's winter campaign, without a reshoot.**
+
+The café owner from Day 13 wants a December version of her "Rainy Saturday" ad. Besides her AI shots, she has a 10-second phone video of the café's front, filmed on a rainy autumn afternoon.
+
+1. **Aleph:** she uploads the phone video and prompts *"change to heavy snowfall at dusk, warm light in the windows"*. The second attempt looks natural. She removes a parked delivery van with *"remove the white van"*, then changes the cup sleeves in the counter shot to the café's holiday red.
+2. **References:** she uploads her cartoon mascot, a coffee bean called Bean, and makes three keyframes of *"@Bean in a red scarf"* at the counter, at the window and waving goodbye. All three are clearly the same character.
+3. **Act-Two:** she records herself on her phone saying *"New winter menu, starting Monday. Come in from the cold!"* with a big smile, and applies the performance to Bean.
+4. **Agent:** she asks Agent to put the shots in order as a 15-second 9:16 cut with her music bed from Day 11, then fine-tunes the timing herself.
+
+She tests every prompt at short lengths before making the final versions. The whole campaign takes one afternoon instead of a reshoot.
+@tasks
+- Create a Runway account and find Agent, Tool Mode, Workflows and Edit Studio (15 min)
+- Animate two of your Day 10 images with Gen-4.5, describing only the motion (30 min)
+- Make one character or product consistent across three shots with a reference image (30 min)
+- Edit a real 5–10 second phone clip with Aleph: change the season, the lighting or one object (35 min)
+- Record a 10–15 second performance and apply it to a character with Act-Two, or plan it shot by shot if you're on the free plan (25 min)
+- Add your best Runway results and what each one cost in credits to your Video log (15 min)
+@deliverable
+A set of Runway clips: two animated shots, one character that stays consistent across three shots, one edited real clip, and (on a paid plan) one Act-Two performance, with notes on what each cost.
+@tip
+Reach for Aleph when a real shot is *almost* right. Changing the weather or removing one object from real footage usually looks more natural than generating the whole scene from scratch.
+
+## D16 | HeyGen: presenter videos, translation and your digital twin | 3.5 | HeyGen
+@goal Make presenter videos in HeyGen from a script or an idea, set up a digital twin the right way, and translate a video into another language in your own voice.
+@lesson
+On Day 14 you learned when avatars are a good idea. Today you use **HeyGen**, one of the most popular avatar video tools, from first script to a translated video.
+
+### What HeyGen does
+
+| Feature | What it does | Good for |
+|---|---|---|
+| Stock avatars | Ready-made presenters | Trying HeyGen, internal videos |
+| Photo avatar | Makes a single photo talk | Quick explainers from a headshot |
+| Digital twin | An avatar of you, made from a short webcam recording | Regular content in your own face and voice |
+| Video Agent | Turns an idea into a planned, finished video | Fast first drafts |
+| AI Studio | The editor: scenes, script, voice and graphics | Polishing every video |
+| Video Translate | Re-voices a video in another language, with lip sync | Reaching new language audiences |
+| LiveAvatar | Real-time avatars that talk with people | Tutoring, support and demos (advanced) |
+
+### Two ways to start
+
+1. **From a script, in AI Studio:** paste your script, pick an avatar and a voice, and HeyGen can split a long script into scenes for you. You control every line.
+2. **From an idea, with Video Agent:** describe the video, for example *"A 60-second explainer on how our free math assessment works, friendly, for parents."* Video Agent writes a plan (script, scenes and visuals) that you **review and approve before it renders**. Afterwards everything stays editable in AI Studio.
+
+Use Video Agent for speed, then edit. Never publish a first draft without checking every fact and number in it.
+
+### Writing scripts that sound human
+
+- **About 150 words is one minute** of speech. Keep most videos to 30–90 seconds.
+- Short sentences, one idea each.
+- Write numbers the way you'd say them: "twenty-five dollars", not "$25.00".
+- Add pauses between ideas with the pause controls.
+- Fix names and brand words with the **pronunciation** settings in the script panel, and test every unusual word.
+- Change the delivery (calmer, more energetic) with the voice controls instead of rewriting.
+
+### Your digital twin, done properly
+
+HeyGen's newest avatar models can make a twin of you from a short webcam recording (about 15 seconds), then show you in different outfits, settings and camera angles.
+
+1. Record in soft, even light, facing the camera, in a quiet room.
+2. Speak naturally and move a little, as you would on a video call.
+3. **Record the consent statement.** HeyGen asks the person in the video to read a consent statement on camera before their digital twin can be used. It has to be the same person as in the recording.
+4. Make a short test video and check the lip sync, voice and look before you use it in public.
+
+**Photo avatars are different.** HeyGen doesn't run a consent check for them, which makes it *your* responsibility. Only animate photos of yourself, or of people who have agreed in writing, and keep that record.
+
+### Translating a video
+
+Video Translate turns one video into other languages, using a clone of the original speaker's voice and adjusting the lips to match. It covers more than 175 languages and dialects.
+
+1. Upload a video file (or paste a YouTube or Google Drive link) and choose the target language.
+2. Before it processes, open **Advanced** and add a **glossary**: brand names and terms that must stay the same or be translated a certain way.
+3. Choose **Review and Edit** so you can proofread before the final version.
+4. Read the translated script, fix the wording and pronunciation, and preview it.
+5. **Have a native speaker check it.** You can invite proofreaders from HeyGen. Machine translation still gets tone, slang and local terms wrong.
+6. Generate the final video, with captions if you want them.
+
+**In Canada, French matters.** For Quebec audiences, pick a Canadian French option if one is offered and ask a Quebec francophone to proofread. Many Canadian families also speak Punjabi, Mandarin, Cantonese, Arabic, Tagalog or another language at home, so a translated video can reach people that English-only content misses.
+
+### Plans and credits
+
+HeyGen has a free plan for trying it out, with a small number of short videos, and paid plans that add longer videos, higher resolution and more credits. The newest avatar models use more credits per minute than older ones. Check the current plans before you start a big project.
+
+### The rules
+
+HeyGen's content rules ban avatars of real people without their explicit consent, impersonating public figures, political campaigning and scams. The person in an avatar can ask for their likeness to be removed at any time, and you have to respect that. Keep your Day 14 rules too: no fake testimonials, and label AI video where platforms ask.
+@demo
+**The tutoring founder from Day 14 makes a welcome video in three languages.**
+
+1. **Video Agent:** she types *"A 60-second video for parents explaining how our free Grade 9 math assessment works: book online, a 30-minute session, and a written plan within two days. Warm and clear."* She reviews the plan, changes one scene to show her booking page, and approves it.
+2. **AI Studio:** she swaps in her digital twin (she recorded the consent statement when she made it), sets "EQAO" to be said letter by letter, and adds a short pause before the call to action.
+3. **Video Translate:** she translates the finished video into French and Punjabi, with a glossary so "EQAO" and her business name stay unchanged. She invites a French teacher she works with and a Punjabi-speaking parent to proofread. They fix two phrases that sounded too formal.
+4. **Publish:** all three versions go on her website and YouTube, labelled as made with an AI avatar.
+
+Total time: about three hours, including proofreading. Filming and dubbing three versions by hand would have taken days.
+@tasks
+- Create a HeyGen account and make a 30-second video in AI Studio with a stock avatar and your own script (30 min)
+- Turn one idea into a 45–60 second draft with Video Agent, fixing the plan before it renders (35 min)
+- Set the pronunciation of at least two names or brand words and add pauses (15 min)
+- Optional: create your own digital twin, including the on-camera consent statement (25 min)
+- Translate one short video into another language with Review and Edit and a glossary (30 min)
+- Ask a native speaker to check the translation and note what they changed (15 min)
+@deliverable
+Two finished HeyGen videos (one from a script, one from Video Agent) and one translated version checked by a native speaker.
+@tip
+Translate your best-performing video first. If it already works in English, it's worth the proofreading time in a second language.
+
 # M5 | Build software with AI | Learn how apps work, build one with AI builders and Claude Code, deploy it, and connect tools with MCP.
 
-## D15 | How web apps work (no code yet) | 3 | How apps work
+## D17 | How web apps work (no code yet) | 3 | How apps work
 @goal Understand the parts of a modern web app well enough to direct AI tools to build one, and to fix things when they break.
 @lesson
 You don't need to become a programmer to build software with AI. You do need to understand **the parts of an app** and how they talk to each other. That knowledge is the difference between "the AI built something weird" and "I told the AI exactly what to build".
 
-{{fig:ai-stack|The parts of a typical modern web app. You'll build exactly this stack in Days 17–18.}}
+{{fig:ai-stack|The parts of a typical modern web app. You'll build exactly this stack in Days 19–20.}}
 
 ### The frontend
 
@@ -1114,7 +1302,7 @@ A labelled app diagram, three accounts ready and a one-page app idea.
 @tip
 When an AI coding tool shows you an error, paste the whole error message back and say which step you were doing. Errors are clues, not failures.
 
-## D16 | Building apps with AI app builders | 4 | AI app builders
+## D18 | Building apps with AI app builders | 4 | AI app builders
 @goal Build a working app prototype in the browser with an AI app builder, and learn to prompt for software using a short product spec.
 @lesson
 **AI app builders** like **Lovable**, **Bolt**, **v0** and **Replit** let you describe an app and get a working version in the browser, often with a database and hosting included. They're perfect for prototypes, internal tools and simple products.
@@ -1170,7 +1358,7 @@ Builders can produce code that looks fine but has security gaps. Before real use
 
 Step 1 prompt: *"Using this spec, build only the login and the Open shifts list with sample data."* Five prompts later, the core flow works.
 @tasks
-- Write a mini spec for your Day 15 app idea with all seven parts, using an assistant to sharpen it (45 min)
+- Write a mini spec for your Day 17 app idea with all seven parts, using an assistant to sharpen it (45 min)
 - Build the first screen and data structure in an AI app builder (45 min)
 - Add your core features one prompt at a time, testing after each (80 min)
 - Test the app as a new user would, list five problems and fix at least three (40 min)
@@ -1179,7 +1367,7 @@ A written mini spec and a working prototype of your app in an AI builder.
 @tip
 Save your spec in a file. Every time the app drifts from what you wanted, paste the relevant part of the spec back in. It keeps the AI on track.
 
-## D17 | Claude Code and AI coding agents | 4 | Claude Code
+## D19 | Claude Code and AI coding agents | 4 | Claude Code
 @goal Install Claude Code, learn the core workflow, and make your first real changes to a project with version control on GitHub.
 @lesson
 **Claude Code** is Anthropic's AI coding agent. Instead of only suggesting code in a chat, it works inside a real project: it reads your files, makes changes across many files, runs commands and tests, and explains what it did. It runs in your terminal, in code editors like VS Code, in a desktop app and on the web.
@@ -1246,7 +1434,7 @@ Create a file called `CLAUDE.md` in the project root. Claude Code reads it at th
 She also asks: *"Create a CLAUDE.md describing this project, the stack and the commands."* Every later session starts already knowing the project.
 @tasks
 - Install Claude Code (or set up Claude Code on the web with GitHub) and sign in (30 min)
-- Create a new GitHub repository and connect it (or import your Day 16 prototype's code) (30 min)
+- Create a new GitHub repository and connect it (or import your Day 18 prototype's code) (30 min)
 - Ask Claude Code for an overview, then plan and build one small feature (60 min)
 - Create a CLAUDE.md for the project (20 min)
 - Commit and push your changes, then view them on GitHub (20 min)
@@ -1256,7 +1444,7 @@ Claude Code installed, a project on GitHub with a CLAUDE.md, and your first AI-b
 @tip
 Ask for a plan first on anything bigger than a small fix. Reading a five-line plan takes one minute and saves an hour of undoing changes you didn't want.
 
-## D18 | Project: build and deploy a full-stack app | 4.5 | Full-stack project
+## D20 | Project: build and deploy a full-stack app | 4.5 | Full-stack project
 @goal Build a real habit-tracker app with login and a database using Next.js and Supabase, and deploy it live on Vercel.
 @lesson
 Today you build a complete app: users sign up, add habits, tick them off each day, and only ever see their own data. It's small, but it uses every part of a real product.
@@ -1343,7 +1531,7 @@ A live full-stack habit tracker with sign-up, a private database and automatic d
 @tip
 When deployment fails, open the build logs in Vercel and paste the first red error into Claude Code. Nine times out of ten it's a missing environment variable.
 
-## D19 | MCP: connect AI to your tools, and build your own server | 4 | MCP
+## D21 | MCP: connect AI to your tools, and build your own server | 4 | MCP
 @goal Understand the Model Context Protocol, connect existing MCP servers to Claude, and build and connect a small MCP server of your own.
 @lesson
 **MCP (Model Context Protocol)** is an open standard, introduced by Anthropic in 2024, for connecting AI applications to tools and data. Think of it like **USB-C for AI**: one standard plug that lets any compatible AI app use any compatible tool.
@@ -1468,7 +1656,7 @@ Start every custom server read-only. Add tools that change data only after you'r
 
 # M6 | Automation & earning | Automate repetitive work and turn your new skills into income.
 
-## D20 | Automations and AI agents | 3.5 | Automations
+## D22 | Automations and AI agents | 3.5 | Automations
 @goal Build automations that connect your apps and use AI steps, and understand what AI agents are and how to use them safely.
 @lesson
 Automation tools connect apps so that when something happens in one, something happens in another, without you lifting a finger. Add an AI step in the middle, and the automation can read, write and decide.
@@ -1532,7 +1720,7 @@ One working automation with an AI step and a human approval point, plus a list o
 @tip
 Automate tasks you've already done by hand at least ten times. You'll know the edge cases, and you'll write a much better prompt.
 
-## D21 | Turn AI skills into income | 3 | AI skills into income
+## D23 | Turn AI skills into income | 3 | AI skills into income
 @goal Choose an AI-powered service you can sell, price it, build a small portfolio and write your 30-day plan.
 @lesson
 Most businesses know they should use AI but don't have the time to learn it. You now do. That gap is an opportunity.
@@ -1544,7 +1732,7 @@ Most businesses know they should use AI but don't have the time to learn it. You
 | AI content packages | Monthly social posts, images, short videos | Cafés, salons, trades, shops |
 | AI video ads | 3–5 short ads per month | E-commerce brands, local businesses |
 | Voiceover and dubbing | Narration, translated versions | Course creators, YouTubers, trainers |
-| Automation setup | 3–5 automations like Day 20 | Small offices, agencies, clinics |
+| Automation setup | 3–5 automations like Day 22 | Small offices, agencies, clinics |
 | AI setup and training | Projects, prompt libraries, team training | Small teams |
 | Simple web apps and tools | Booking tools, internal dashboards | Local businesses |
 | MCP and AI integrations | Connecting AI to their data | Tech-forward businesses |
