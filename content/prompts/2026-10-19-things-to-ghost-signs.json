@@ -1,0 +1,45 @@
+{
+ "slug": "things-to-ghost-signs",
+ "title": "Things you should ghost: sign ideas",
+ "published": "2026-10-19T18:39:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "Dress as a ghost and hold up short signs of habits you're ghosting this year. Let AI write the sign lines, then film it in one take.",
+ "why": "A Halloween trend roundup updated on October 14, 2026 lists \"Things You Should Definitely Ghost\": someone in a ghost costume holds up signs naming habits or pet peeves to drop. It's a new twist on the sheet ghost photoshoot, and the hard part is writing lines that are short and funny.",
+ "steps": [
+  "Pick a theme: your own habits, your job, your hobby or your small business.",
+  "Paste the main prompt, fill in the theme, and ask for more lines until you have 5–7 you like.",
+  "Write each line in thick marker on paper or card. Big letters, one line per sign.",
+  "Put on a bedsheet ghost costume and film yourself flipping through the signs to a Halloween sound, about one second per sign."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a Halloween video where I'm dressed as a ghost and hold up signs called \"Things you should definitely ghost.\" My theme is: [your theme, for example 'everyday habits' or 'being a parent']. Write 12 sign lines. Each one must be 6 words or fewer, easy to read in one second, and gently funny. Poke fun at habits and situations, never at a person or group. No swearing. End with one hopeful line for the last sign."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example 'bakery' or 'hair salon'] and want to make a fun Halloween video. I'll dress as a ghost and hold up signs called \"Things we're ghosting.\" Write 10 short sign lines (6 words or fewer) about small annoyances in my line of work that customers will relate to, plus one last sign that invites people to visit or book. Keep it friendly. Don't mention competitors or make fun of customers."
+  },
+  {
+   "label": "Variation: tighten my list",
+   "text": "Here are my sign ideas for a \"Things you should definitely ghost\" Halloween video: [paste your ideas]. Make each one shorter and punchier, 6 words or fewer. Keep my meaning. Put them in an order that builds to the funniest one last."
+  }
+ ],
+ "tips": [
+  "Fewer words read better on video. If a sign takes two seconds to read, cut it.",
+  "Black marker on white or orange card is easiest to read on a phone screen.",
+  "Keep jokes about habits, not people. Never name an ex, a coworker or a real business.",
+  "Cut eye holes and wear the sunglasses over the sheet so you can see the signs."
+ ],
+ "tags": [
+  "halloween",
+  "ghost",
+  "text",
+  "business"
+ ]
+}

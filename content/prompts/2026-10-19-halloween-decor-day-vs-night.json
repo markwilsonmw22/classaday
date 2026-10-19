@@ -1,0 +1,44 @@
+{
+ "slug": "halloween-decor-day-vs-night",
+ "title": "Halloween decor: day vs night",
+ "published": "2026-10-19T18:39:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "Take one daytime photo of your porch, room or shop window, then let AI make the spooky night-time version from the exact same spot.",
+ "why": "A Halloween trend roundup updated on October 14, 2026 lists \"Halloween Decor: Day vs. Night\": the same decorated space filmed from the same spot in daylight and after dark, switched on the beat. AI can make the night shot for you if you missed it or your lights are not up yet.",
+ "steps": [
+  "Stand where you want the shot and take a sharp daytime photo of your decorated porch, room or storefront. Hold the phone level.",
+  "Upload the photo and paste the main prompt. Ask for the same framing so the two pictures line up.",
+  "Put the day photo first and the night photo second in a carousel, or cut between them on the beat in your video editor.",
+  "Add the text \"Day vs. Night\" and a Halloween sound before you post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my photo as the base. Keep the exact same camera angle, framing, house, porch and decorations. Change only the time and the lighting. Make it about 9 p.m. on Halloween night: deep blue sky, a thin moon, warm orange glow from the carved pumpkins, small string lights switched on, a soft purple light on the front door and a little low fog across the ground. Windows glow warm yellow. Keep it cosy and spooky, not scary or gory. Realistic photo, phone camera look, no people."
+  },
+  {
+   "label": "Variation: small business window",
+   "text": "Use my photo of my shop front as the base. Keep the same angle, sign shape, window display and street exactly as they are, and do not change any words on the sign. Turn it into Halloween night: dark blue sky, the window display lit from inside with warm orange light, small pumpkin lanterns by the door, string lights along the window frame and a light mist on the sidewalk. Wet pavement reflects the glow. Inviting and fun, like a shop you would want to walk into. Realistic photo, no people."
+  },
+  {
+   "label": "Variation: indoor room",
+   "text": "Use my photo of this room as the base. Keep the furniture, walls, decorations and camera angle the same. Turn off the daylight and make it night: candles and pumpkin lanterns give a warm, flickering glow, a few small orange fairy lights are on, the window shows a dark night sky with a full moon, and long soft shadows fall across the floor. Cosy and moody, not frightening. Realistic photo, no people."
+  }
+ ],
+ "tips": [
+  "Shoot the day photo on a bright but cloudy day. Soft light gives the AI cleaner edges to work with.",
+  "If the AI moves or adds decorations, say \"do not add or remove any objects\" and try again.",
+  "Check signs, house numbers and licence plates. Blur anything that shows where you live before you post.",
+  "If you also film the real night shot, compare both and use whichever looks better."
+ ],
+ "tags": [
+  "halloween",
+  "decor",
+  "transition",
+  "business"
+ ]
+}
