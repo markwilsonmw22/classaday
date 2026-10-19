@@ -1,0 +1,45 @@
+{
+ "slug": "thirty-second-three-shot-story",
+ "title": "30-second three-shot mini story",
+ "published": "2026-10-19T00:38:00Z",
+ "kind": "video",
+ "tools": [
+  "Kling",
+  "Veo",
+  "Runway"
+ ],
+ "summary": "Write one 30-second clip in three shots: a wide opening, a close-up, then a payoff. The same character stays the same in every shot.",
+ "why": "Kling 4.0 launched worldwide on October 16, 2026. Its announcement says it can make 30-second clips in one go, direct several shots in a row, and keep a character consistent using up to 15 reference images, videos or audio clips. That makes short three-shot stories possible without stitching clips together.",
+ "steps": [
+  "Pick one character: yourself (from your own photo), your pet, or an object like a coffee cup. Upload 2–4 clear photos as references.",
+  "Paste the main prompt and change the details in each shot to fit your story.",
+  "Generate 2 versions and keep the one where the character looks the same in all three shots.",
+  "Add your own caption or music in your editor before you post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "A 30-second vertical video in three shots, using the person in the reference photos as the main character. Keep their face, hair and clothes the same in every shot. Shot 1 (0–10 s): wide shot of a quiet street at dawn in late autumn. They step out of a front door with a travel mug and pull their scarf tighter. Slow push-in. Shot 2 (10–20 s): close-up of their hands as they find a small paper note tucked under the mug lid. Soft morning light, shallow focus. Shot 3 (20–30 s): medium shot as they read it, laugh, and look back at the house. The camera slowly orbits around them. Smooth cuts between shots, natural colours, gentle street sound."
+  },
+  {
+   "label": "Variation: small business product story",
+   "text": "A 30-second vertical video in three shots for a small candle shop. Use the candle in the reference photos and keep its jar, label colour and size the same in every shot. Shot 1 (0–10 s): wide shot of a cosy shop on a rainy evening, warm light in the window. Slow pull-out from the window to the street. Shot 2 (10–20 s): close-up of a hand lighting the candle, the flame catching, a thin curl of smoke. Shot 3 (20–30 s): medium shot of the candle on a kitchen table at home, a blanket and a mug beside it, rain on the window behind. Smooth cuts, warm amber tones, soft rain sound."
+  },
+  {
+   "label": "Variation: pet adventure",
+   "text": "A 30-second vertical video in three shots starring the dog in the reference photos. Keep its fur colour, markings and collar the same in every shot. Shot 1 (0–10 s): wide shot of a backyard covered in fallen maple leaves. The dog spots something and freezes. Shot 2 (10–20 s): low tracking shot as the dog runs through the leaves, which fly up around it. Shot 3 (20–30 s): close-up as the dog proudly drops a tennis ball at the camera and tilts its head. Bright autumn colours, playful energy, smooth cuts."
+  }
+ ],
+ "tips": [
+  "Give every shot a time range and one simple action. Crowded shots are where the character starts to drift.",
+  "Repeat the details you want kept (\"same jacket\", \"same collar\") in each shot, not just once at the top.",
+  "Use photos of yourself, your pet or your own products only. Never use photos of other people without their OK.",
+  "Label it as AI-made where the platform asks, especially if it shows a person."
+ ],
+ "tags": [
+  "video",
+  "storytelling",
+  "kling",
+  "business"
+ ]
+}
