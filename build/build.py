@@ -172,6 +172,17 @@ PRODUCTS = [
 AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)", "mkt": "var(--c-mkt)", "vp": "var(--c-vp)"}
 ICON = {"drop": "DS", "ai": "AI", "web": "WB", "mkt": "DM", "vp": "VP"}
 
+# Membership pricing (shown on /join/ and the home page). Prices are in CAD.
+# While both checkout links are empty the site is in early access: everything is free and the
+# buttons say "Start free now". Paste Stripe Payment Links (or any checkout URL) here to start selling.
+PRICING = {"currency": "CAD", "monthly": 9, "lifetime": 19, "guarantee_days": 30,
+           "checkout_monthly": "", "checkout_lifetime": ""}
+
+
+def money(n):
+    return f"${n:g}"
+
+
 # Search-friendly page titles for the course pages (the visible course name stays the same).
 SEO_TITLES = {
     "dropshipping": "Dropshipping Course: Shopify Store to First Sales in 30 Days",
@@ -279,7 +290,7 @@ def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonl
     </nav>
     <div class="head-right">
       <button class="search-btn" type="button" data-search-open aria-label="Search SchoolAura">{SEARCH_ICON}<span>Search</span><kbd>/</kbd></button>
-      <a class="btn sm start-btn" href="/courses/">Start learning</a>
+      <a class="btn sm start-btn" href="/join/">Join</a>
       <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -297,7 +308,7 @@ def foot(extra_js="", pre_js=""):
 <footer class="site-foot">
   <div class="wrap">
     <span>© <span data-year>2026</span> SchoolAura</span>
-    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
+    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/join/">Pricing</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
   </div>
 </footer>
 <script>window.SA_META = {SA_META_JS}; window.SA_PROMPTS = {SA_PROMPTS_JS};</script>
@@ -722,6 +733,8 @@ def search_index(courses, packs, tpls):
     for t in tpls:
         idx.append({"k": "Template", "t": t["name"], "s": ", ".join(t["tags"]), "u": "templates/", "x": t["desc"]})
     idx.append({"k": "Page", "t": "Classroom", "s": "Your courses and progress", "u": "courses/", "x": "progress streak badges level question of the day"})
+    idx.append({"k": "Page", "t": "Pricing and membership", "s": f"{money(PRICING['monthly'])} a month or {money(PRICING['lifetime'])} for life", "u": "join/",
+                "x": "price pricing cost membership subscribe subscription lifetime monthly refund guarantee join buy"})
     return idx
 
 
@@ -793,7 +806,11 @@ def home_page(courses, tpl_count, vault, packs):
                  f"Digital Marketing Agency is {len(mkt['days'])} lessons, about {fmt_h(mkt['totalHours'])} hours ({math.ceil(mkt['totalHours']/4)}–{math.ceil(mkt['totalHours']/3)} days). "
                  f"The website guide is {len(web['days'])} lessons, about {fmt_h(web['totalHours'])} hours.")
     frag = (CONTENT / "pages" / "home.html").read_text()
-    for k, v in {"CARDS": cards_html(courses, tpl_count, vault, packs), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours}.items():
+    early = not (PRICING["checkout_monthly"] or PRICING["checkout_lifetime"])
+    price_line = (f"{money(PRICING['monthly'])} a month or {money(PRICING['lifetime'])} once for life, with a {PRICING['guarantee_days']}-day money-back guarantee."
+                  + (" Free during early access." if early else ""))
+    for k, v in {"CARDS": cards_html(courses, tpl_count, vault, packs), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours,
+                 "PRICE_LINE": price_line, "PRICE_MONTHLY": money(PRICING["monthly"]), "PRICE_LIFETIME": money(PRICING["lifetime"])}.items():
         frag = frag.replace("{{" + k + "}}", v)
     ld = [dict(ORG, description="Step-by-step online courses in AI, digital marketing and dropshipping, plus trending AI prompts and recipe books."),
           {"@type": "WebSite", "name": "SchoolAura", "url": SITE + "/",
@@ -802,6 +819,64 @@ def home_page(courses, tpl_count, vault, packs):
                 "Step-by-step online courses in AI (Claude, ChatGPT, Cursor, Runway), digital marketing and dropshipping, plus trending AI prompts, recipe books and website templates. Daily lessons, real tasks and a calendar.",
                 "/", "drop", jsonld=ld)
     return page + frag + foot()
+
+
+def join_page(courses, packs, tpls, vault):
+    P = PRICING
+    early = not (P["checkout_monthly"] or P["checkout_lifetime"])
+    mo, life, days = money(P["monthly"]), money(P["lifetime"]), P["guarantee_days"]
+    lessons = sum(len(c["days"]) for c in courses)
+    hours = int(sum(c["totalHours"] for c in courses))
+    quiz_q = sum(sum(len(v) for v in c["quiz"]["modules"].values()) for c in courses if c.get("quiz")) + \
+        len(json.loads((CONTENT / "quizzes" / "recipe-vault.json").read_text())["questions"])
+    by = {c["slug"]: c for c in courses}
+    picks = [("ai-mastery", 15), ("dropshipping", 2), ("digital-marketing", 6), ("website-builders", 3)]
+    samples = []
+    for slug, n in picks:
+        c = by.get(slug)
+        d = next((x for x in c["days"] if x["n"] == n), None) if c else None
+        if not d:
+            continue
+        goal = d["goal"] if len(d["goal"]) < 150 else d["goal"][:147].rsplit(" ", 1)[0] + "…"
+        samples.append(f'<a class="sample" href="/courses/{slug}/day-{n}/"><span class="sm-k">{html.escape(c["title"])} · Day {n}</span>'
+                       f'<b>{html.escape(d["title"])}</b><span class="sm-g">{html.escape(goal)}</span><span class="link">Open the lesson →</span></a>')
+    if packs:
+        p = packs[0]
+        samples.append(f'<a class="sample" href="/prompts/{p["slug"]}/"><span class="sm-k">Viral Prompts · {pack_date(p, "%b %-d")}</span>'
+                       f'<b>{html.escape(p["title"])}</b><span class="sm-g">{html.escape(p["summary"])}</span><span class="link">See the prompts →</span></a>')
+    rep_map = {
+        "MONTHLY": mo, "LIFETIME": life, "DAYS": str(days), "LESSONS": str(lessons), "HOURS": str(hours),
+        "QUIZ_Q": str(quiz_q), "PACKS": str(len(packs)), "BOOK_PAGES": vault["TOTAL_PAGES"], "TEMPLATES": str(len(tpls)),
+        "COURSES": str(len(courses)),
+        "CARDS": cards_html(courses, len(tpls), vault, packs), "SAMPLES": "\n".join(samples),
+        "CTA_MAIN_HREF": "/courses/" if early else (P["checkout_lifetime"] or P["checkout_monthly"]),
+        "CTA_MAIN_LABEL": "Start free now" if early else (f"Get lifetime access · {life}" if P["checkout_lifetime"] else f"Join for {mo} a month"),
+        "CTA_MAIN_SHORT": "Start free" if early else ("Get lifetime access" if P["checkout_lifetime"] else "Join now"),
+        "CTA_MONTHLY_HREF": "/courses/" if early else (P["checkout_monthly"] or "#pricing"),
+        "CTA_MONTHLY_LABEL": "Start free now" if early else f"Start monthly · {mo}",
+        "CTA_LIFETIME_HREF": "/courses/" if early else (P["checkout_lifetime"] or "#pricing"),
+        "CTA_LIFETIME_LABEL": "Start free now" if early else f"Get lifetime access · {life}",
+        "FINE_PRINT": (f"Free during early access. No card needed. Membership opens soon at {mo} a month or {life} for life." if early
+                       else f"Prices in CAD plus applicable tax. {days}-day money-back guarantee."),
+        "EARLY_KICKER": '<p class="jh-kicker">Early access: everything is free right now</p>' if early else "",
+        "EARLY_NOTE": (f'<p class="early-note"><b>Early access:</b> every course, download and prompt pack is free while we finish building accounts. '
+                       f'These are the prices when membership opens. No card needed today.</p>') if early else "",
+        "EARLY_FAQ": (f'<details open><summary>Is everything really free right now?</summary><p>Yes. While we\'re in early access every course, download and prompt pack is open, with no card needed. '
+                      f'When membership opens, it will be {mo} a month or {life} once for life.</p></details>') if early else "",
+    }
+    frag = (CONTENT / "pages" / "join.html").read_text()
+    for k, v in rep_map.items():
+        frag = frag.replace("{{" + k + "}}", v)
+    assert "{{" not in frag, re.findall(r"\{\{\w+\}\}", frag)
+    faq = re.findall(r"<details[^>]*><summary>(.*?)</summary><p>(.*?)</p></details>", frag, re.S)
+    ld = [{"@type": "WebPage", "name": "SchoolAura membership and pricing", "url": SITE + "/join/", "publisher": ORG},
+          {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": squash(strip_tags(q)),
+                                               "acceptedAnswer": {"@type": "Answer", "text": squash(strip_tags(a))}} for q, a in faq]},
+          crumbs_ld([("Home", "/"), ("Pricing", "/join/")])]
+    title = f"SchoolAura Membership: Every Course for {mo} a Month or {life} for Life"
+    desc = (f"One membership for every SchoolAura course ({lessons} daily lessons in AI, digital marketing and dropshipping), the Recipe Vault, "
+            f"{len(tpls)} website templates and Viral Prompts. {mo} a month or {life} once, with a {days}-day money-back guarantee.")
+    return head(title, desc, "/join/", "drop", jsonld=ld) + frag + foot()
 
 
 def daily_pool(courses):
@@ -921,6 +996,9 @@ def main():
         "/templates/", "web", replacements={"TPL_CARDS": "\n".join(cards), "TPL_COUNT": str(len(tpls))},
         og_image="/assets/img/og/website-builders.jpg"))
     sitemap.append(("/templates/", git_date(CONTENT / "pages" / "templates.html", ROOT / "templates-src")))
+    (PUBLIC / "join").mkdir(exist_ok=True)
+    (PUBLIC / "join" / "index.html").write_text(join_page(courses, packs, tpls, vault))
+    sitemap.append(("/join/", git_date(CONTENT / "pages" / "join.html", ROOT / "build" / "build.py")))
     (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "drop", noindex=True))
 
     idx = search_index(courses, packs, tpls)

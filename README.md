@@ -13,10 +13,15 @@ The website for **schoolaura.com**: self-paced courses with day-by-day plans and
 | Digital Marketing Agency (MKT 220) | `/courses/digital-marketing/` | 30 daily lessons, ≈108 h, 8 diagrams |
 | Website Builders (WEB 120) | `/courses/website-builders/` | 7-day guide to the template pack |
 | Template library | `/templates/` | 6 templates, live previews, single and bulk ZIP downloads |
+| Membership | `/join/` | Sales page: $9 a month or $19 once for life (CAD), 30-day money-back guarantee, FAQ, sticky button |
 | Viral Prompts | `/prompts/` | Trending AI photo and video prompt packs, one page per pack, subscribe for New badges |
 | Recipe Vault (FOD 110) | `/recipe-vault/` | 4 PDF books + a complete edition, pick and download, kitchen quiz, cake pan converter |
 
 Every lesson has its own page at `/courses/<slug>/day-N/` (so Google can index it), and every course page has four tabs: **Classroom** (lesson list with progress on the left, lesson on the right: lesson, worked example, quick check, timed task checklist, check-in and notes, mark as done), **Calendar** (start date, study days, pace, month calendar, what's coming up), **Quizzes** (a quiz per module, a final exam and a certificate) and **About** (outcomes, curriculum, who it's for). Progress is saved in the visitor's browser (`localStorage`) until accounts arrive with the subscription.
+
+### Pricing and checkout
+
+Prices live in `PRICING` at the top of `build/build.py` and feed the `/join/` page, the home page teaser and the FAQ. While `checkout_monthly` and `checkout_lifetime` are empty the site is in early access: the buttons say "Start free now". Paste a checkout link (for example a Stripe Payment Link) into each, rebuild, and the buttons become "Start monthly · $9" and "Get lifetime access · $19". Before taking payments, add a support email, terms and a refund policy page, and lock paid content behind accounts.
 
 ### Viral Prompts
 

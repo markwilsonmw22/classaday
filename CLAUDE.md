@@ -14,4 +14,4 @@ Static site for schoolaura.com. No local dev environment: changes are made by Cl
 - Lessons are static pages at `/courses/<slug>/day-N/`; course data is in `courses/<slug>/course-data.js`. Never link lessons with `#day-N` (old links redirect). Calendar, quizzes and about stay on the course page as `#plan`, `#quizzes`, `#about`.
 - Viral Prompts packs are JSON files in `content/prompts/` and must follow `content/prompts/README.md` (original wording, no real people except the user's own photo, no named artists, studios, brands or characters). A scheduled task adds packs; check `git log content/prompts` before editing them.
 - Keep SEO intact: every new page gets a unique title, description, canonical and (where it fits) JSON-LD through `head()` in `build/build.py`, and appears in the sitemap and search index.
-
+- Pricing is set in `PRICING` in `build/build.py` ($9/month or $19 lifetime, CAD, 30-day guarantee). Empty checkout links = early access (everything free). Never add fake reviews, customer counts or crossed-out "was" prices to the sales page; only use numbers the build can count.
