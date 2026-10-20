@@ -1,0 +1,39 @@
+{
+ "slug": "yes-but-split-screen",
+ "title": "Yes… but split-screen",
+ "published": "2026-10-20T18:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A split-screen post: \"yes\" on top shows the dream, \"but\" below shows the catch. Let AI write the pairs, then shoot or make the two halves.",
+ "why": "An Instagram trend report updated October 14, 2026 lists \"Yes… but\" in its October 7 roundup: a split-screen with the appealing side on top and the catch underneath. This pack uses AI to come up with funny, honest pairs so you only have to film or make the two halves.",
+ "steps": [
+  "Pick a topic: a hobby, your city, a season, your pet or your job.",
+  "Paste the main prompt into the AI. It gives you several yes/but pairs and a shot idea for each half.",
+  "Film or make the two shots, stack them top and bottom in your editor, and add \"Yes\" and \"But\" as on-screen text."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a split-screen Reel for the \"Yes… but\" trend. The top half shows something appealing and the bottom half shows the honest catch. My topic is: [for example: living in a Canadian city in winter]. Give me 6 pairs. For each pair write: the \"Yes\" caption (under 8 words), the \"But\" caption (under 8 words), and a one-line idea for what to film in each half. Keep it relatable and kind, never mean about any person or group."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: candle shop] and want to post a \"Yes… but\" split-screen. Top half: what customers see. Bottom half: the funny behind-the-scenes truth. Give me 5 pairs with a short \"Yes\" caption, a short \"But\" caption and a shot idea for each half. Keep it warm and light. Don't make claims about prices, results or other businesses."
+  },
+  {
+   "label": "Variation: pet edition",
+   "text": "Write 5 \"Yes… but\" pairs about life with my [dog / cat], who is [describe their personality in a few words]. Top caption shows the cute side, bottom caption shows the chaos. Under 8 words each, plus a quick idea for what to film in each half."
+  },
+  {
+   "label": "Variation: make the two halves as images",
+   "text": "Make a vertical 9:16 image split into two equal halves with a thin white line between them. Top half: [the appealing scene, for example: a cozy cabin with snow falling softly outside the window, warm lamp light]. Bottom half: the same place showing the catch [for example: someone shovelling a huge snowbank at dawn, breath visible in the cold]. Natural photo look, soft colours, no text."
+  }
+ ],
+ "tips": [
+  "Keep the same framing in both halves so the contrast reads at a glance.",
+  "The catch should be gentle and honest. Laughing at yourself works better than laughing at others.",
+  "Add \"Yes\" and \"But\" in big text yourself. AI images often misspell words.",
+  "For businesses, this is an easy way to show the real work behind a nice product."
+ ],
+ "tags": ["text", "split-screen", "funny", "business"]
+}

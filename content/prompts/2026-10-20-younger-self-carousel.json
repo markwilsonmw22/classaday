@@ -1,0 +1,39 @@
+{
+ "slug": "younger-self-carousel",
+ "title": "Things I'd tell my younger self carousel",
+ "published": "2026-10-20T18:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A calm carousel post with one piece of advice to your younger self on each slide. AI helps you find the words and design simple slide backgrounds.",
+ "why": "An Instagram trend report updated October 14, 2026 lists \"Things I'd tell my younger self\" as a new format that week: a reflective carousel with one realization per slide. This pack uses AI to turn your own notes into short, clear slides.",
+ "steps": [
+  "Jot down a few real lessons you've learned, in your own rough words.",
+  "Paste the main prompt with your notes. The AI tightens them into one short line per slide.",
+  "Use the background prompt to make a matching slide image, add your lines as text in any design app, and post as a carousel."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making an Instagram carousel called \"Things I'd tell my younger self\". Here are my rough notes on lessons I've learned: [paste your notes]. Turn them into 7 slides. Slide 1 is a short title. Slides 2 to 7 each have one piece of advice in 12 words or less, written in my voice, warm and honest. Don't add lessons I didn't give you. Then suggest a one-line caption for the post."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business] and started it in [year]. Here are my rough notes on what I wish I had known on day one: [paste notes]. Turn them into a 7-slide carousel called \"Things I'd tell myself on day one\". One short lesson per slide, 12 words or less, friendly and practical. Only use lessons from my notes. End with a caption that invites other owners to share theirs."
+  },
+  {
+   "label": "Variation: help me find the lessons",
+   "text": "Ask me 6 short questions, one at a time, to help me remember what I've learned in the last [5 / 10] years about [work, friendship, daily habits, moving to a new city]. After I answer, turn my answers into 6 short carousel lines starting with \"Dear younger me\". Keep my words as much as you can."
+  },
+  {
+   "label": "Variation: slide background image",
+   "text": "Make a simple square background for a text carousel slide: soft paper texture in warm cream, a faint hand-drawn doodle of a small plant in one corner, lots of empty space in the middle for text. Calm, cozy and minimal. No words or letters."
+  }
+ ],
+ "tips": [
+  "Real lessons from your own life land better than general quotes, so start from your notes.",
+  "Keep one idea per slide and the same font on every slide.",
+  "Make one background and reuse it so the carousel looks like a set.",
+  "Leave personal details out: no full names, addresses or private stories about other people."
+ ],
+ "tags": ["text", "carousel", "advice", "business"]
+}
