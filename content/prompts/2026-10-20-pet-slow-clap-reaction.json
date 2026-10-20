@@ -1,0 +1,50 @@
+{
+ "slug": "pet-slow-clap-reaction",
+ "title": "Your pet's slow-clap reaction clip",
+ "published": "2026-10-20T12:39:00Z",
+ "kind": "video",
+ "tools": [
+  "Kling",
+  "Veo",
+  "Runway",
+  "Higgsfield"
+ ],
+ "summary": "Turn a photo of your own cat or dog into a smug slow-clap reaction clip, then caption it with the moment it's 'applauding'.",
+ "why": "Know Your Meme added an entry on October 5, 2026 (updated October 13) for an AI-generated black cat that smiles and slowly claps. It started on Instagram in late September and spread on TikTok, where people use it as a green-screen reaction to applaud bad behaviour. This pack makes your own version with your pet instead of reusing someone else's clip.",
+ "steps": [
+  "Take a clear, front-facing photo of your pet sitting up, in good light.",
+  "Make a still image of your pet in the clap pose, using the photo as the reference.",
+  "Animate it with the video prompt, then add your caption in your editor."
+ ],
+ "prompts": [
+  {
+   "label": "Step 1: the image",
+   "text": "Use my attached photo of my cat as the reference and keep the cat exactly the same: colouring, markings, eye colour and fur length. The cat sits upright on a kitchen counter facing the camera, front paws raised together at chest height as if about to clap. A small, smug, knowing smile. Soft indoor light, slightly blurry home background. Phone-camera look, vertical 9:16."
+  },
+  {
+   "label": "Step 2: the video",
+   "text": "Use the image as the first frame. The cat slowly claps its front paws together four times, keeping eye contact with the camera, with a slow smug smile and a slow blink at the end. The body stays still, only the paws and face move. Fixed camera, natural home lighting, 5 seconds."
+  },
+  {
+   "label": "Variation: green-screen reaction",
+   "text": "Keep my pet exactly the same as in the attached photo. Place the pet, sitting upright and facing the camera, in front of a flat, evenly lit bright green background with no shadows. The pet slowly claps its front paws together and gives a pleased little smile. Fixed camera, 5 seconds, vertical 9:16."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Keep my shop dog exactly the same as in the attached photo. The dog sits behind the shop counter beside the till, facing the camera, and slowly claps its front paws together with a proud, happy expression. Warm shop lighting, shelves softly blurred behind. Fixed camera, 5 seconds, vertical 9:16."
+  }
+ ],
+ "tips": [
+  "Write the caption yourself in your editor, for example 'Me when someone finally refills the coffee'. AI video text often comes out garbled.",
+  "Use the green-screen version as a reaction you can drop over your own clips.",
+  "Only use your own pet, and keep captions playful, not mean about real people.",
+  "Shops can caption it with a small win, like 'When you remember it's a long weekend'."
+ ],
+ "tags": [
+  "pets",
+  "video",
+  "meme",
+  "reaction",
+  "business"
+ ]
+}
