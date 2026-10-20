@@ -1,0 +1,39 @@
+{
+ "slug": "fan-blade-outfit-transition",
+ "title": "Fan blade outfit transition",
+ "published": "2026-10-20T06:38:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+ "summary": "Shot from above, ceiling fan blades sweep past the lens and every pass reveals you in a new outfit.",
+ "why": "A TikTok trend roundup updated on October 14, 2026 lists a fan transition: the camera looks down past a ceiling fan, and the spinning blades hide each outfit change. People usually film it in person; this pack makes an AI version from photos of your own outfits.",
+ "steps": [
+  "Take two or three clear, full-body photos of yourself in different outfits, in the same room and the same light.",
+  "Make one top-down starting frame with the image prompt for each outfit.",
+  "Use the video prompt with the first frame as the start and the next frame as the end, then join the clips in your editor."
+ ],
+ "prompts": [
+  {
+   "label": "Step 1: the image",
+   "text": "Use my attached photo as the reference and keep my face, body and outfit exactly the same. Show me from directly above, as if the camera is on the ceiling looking straight down. I'm standing in the middle of a bright bedroom with a light wood floor, looking up at the camera. In the top of the frame, the soft-focus edge of a white ceiling fan blade. Natural daylight, vertical 9:16."
+  },
+  {
+   "label": "Step 2: the video",
+   "text": "Top-down camera looking straight down from the ceiling. The blades of a ceiling fan spin slowly between the camera and me. Each time a blurry blade sweeps across the whole frame, I appear in the next outfit, standing in the same spot and looking up. Use the first image as the start and the second image as the end. Smooth, even rhythm, no cuts, no text. 6 seconds."
+  },
+  {
+   "label": "Variation: fall layers",
+   "text": "Same top-down fan shot. With each blade pass my outfit adds a layer for colder weather: T-shirt, then a flannel shirt, then a puffy jacket, then a toque and scarf. Cozy room with a knit blanket on the floor, warm afternoon light. 8 seconds, 9:16."
+  },
+  {
+   "label": "Variation: shop new arrivals",
+   "text": "Use my attached photos of our team member (they agreed) wearing three outfits from our new collection. Top-down camera from the ceiling of our shop, a fan spinning slowly in front of the lens. Each blade pass reveals the next outfit while they stand on the same spot and smile up. Clean, bright retail lighting, 8 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Stand in the same spot and the same pose in every photo. The swap looks cleaner when only the clothes change.",
+  "AI video can blur or change your face. Try a few takes and keep the one that looks most like you.",
+  "Add a song with a strong beat in your editor and line each blade pass up with a beat.",
+  "Great for clothing shops, thrift stores and stylists showing several looks in one short clip."
+ ],
+ "tags": ["video", "fashion", "transition", "business"]
+}

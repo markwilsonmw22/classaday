@@ -1,0 +1,39 @@
+{
+ "slug": "loading-bar-routine",
+ "title": "Loading bar routine video",
+ "published": "2026-10-20T06:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Film your routine as a loading bar from 0% to 100%. Let AI write the stages and the on-screen captions for you.",
+ "why": "An Instagram trend report dated October 19, 2026 lists a format where a daily routine is shown as a loading bar that climbs from 0% to 100%. This pack uses AI to plan the stages and write short captions, so you only have to film the clips.",
+ "steps": [
+  "Pick your routine: a morning, a workout, a cleaning session or a workday at your shop.",
+  "Paste the main prompt into the AI and fill in your routine. It gives you the stages, the percentages and a caption for each.",
+  "Film one short clip per stage, add a loading bar or the percentage as on-screen text, and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short vertical video where my routine is shown as a loading bar going from 0% to 100%. My routine is: [describe it, for example: wake up, coffee, stretch, shower, get dressed, head out]. Split it into 6 to 8 stages. For each stage give me: the percentage, a caption of 6 words or less to put on screen, and a one-line idea for what to film (2 to 3 seconds each). Make the captions light and a little funny. End at 100% with a short, upbeat line."
+  },
+  {
+   "label": "Variation: honest version",
+   "text": "Same idea, but make it the honest version of my routine. The bar gets stuck, jumps backward or sits at 99% for too long. My routine is: [describe it]. Give me 6 to 8 stages with the percentage, a short on-screen caption and what to film. Keep it kind and relatable, not mean."
+  },
+  {
+   "label": "Variation: small business opening",
+   "text": "I run a [type of business, for example: bakery] and want a loading bar video of us getting ready to open. Our opening routine is: [describe it]. Split it into 6 to 8 stages from 0% to 100%. For each, give the percentage, a caption of 6 words or less and a 2 to 3 second shot idea. The last stage should be the doors opening, with a friendly line inviting people to come in."
+  },
+  {
+   "label": "Variation: a loading bar image",
+   "text": "Make a clean, simple graphic of a rounded progress bar at [42]% with a soft glow, on a plain off-white background, with the word \"loading\" in a friendly rounded font above it. Lots of empty space. Vertical 9:16, no other text."
+  }
+ ],
+ "tips": [
+  "Keep each clip to 2 or 3 seconds. The whole video should land under 30 seconds.",
+  "Put the percentage in the same spot on every clip so it's easy to follow.",
+  "Use the image prompt to make a few bar graphics at different percentages if your editor has no progress bar.",
+  "For businesses, this is an easy behind-the-scenes post that shows the work before customers arrive."
+ ],
+ "tags": ["text", "routine", "video", "business"]
+}
