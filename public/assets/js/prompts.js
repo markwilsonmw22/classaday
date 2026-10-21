@@ -18,7 +18,7 @@
     var note = document.querySelector("[data-sub-note]");
     if (note) {
       var fresh = st.sub ? document.querySelectorAll(".pcard.is-new").length : 0;
-      note.innerHTML = !st.sub ? "<b>Subscribe</b> to get a <b>New</b> badge here and a dot in the menu whenever fresh prompts drop. Free while we're in early access." :
+      note.innerHTML = !st.sub ? "<b>Subscribe</b> to get a <b>New</b> badge here and a dot in the menu whenever fresh prompts drop." + (window.SA_CONFIG && SA_CONFIG.live ? "" : " Free while we're in early access.") :
         fresh ? "<b>" + fresh + " new</b> since your last visit. They're marked below." : "You're subscribed. New packs will be marked here and with a dot in the menu.";
       note.classList.toggle("on", !!st.sub);
     }

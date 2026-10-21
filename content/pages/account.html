@@ -1,0 +1,30 @@
+<section class="wrap page-head">
+  <h1>Your account</h1>
+  <p>Your membership, billing and saved progress.</p>
+</section>
+<div class="wrap"><div class="join-banner" id="acct-banner" role="status" hidden></div></div>
+<section class="wrap acct" id="acct-root">
+  <div class="panel panel-pad" id="acct-loading"><p class="muted">Loading your account…</p></div>
+
+  <div class="panel panel-pad acct-out" id="acct-out" hidden>
+    <h2>You're not logged in</h2>
+    <p class="muted">Log in to see your membership and keep your progress in step across your devices.</p>
+    <div class="acct-actions"><a class="btn lg" href="/login/?next=/account/">Log in</a><a class="btn light lg" href="/join/">See plans</a></div>
+  </div>
+
+  <div class="acct-grid" id="acct-in" hidden>
+    <div class="panel panel-pad acct-card acct-wide" id="acct-member"></div>
+    <div class="panel panel-pad acct-card">
+      <h2>Your progress</h2>
+      <p class="muted" id="sync-status">Your progress will be saved to your account.</p>
+      <p class="muted small">Finished lessons, ticked tasks, quiz scores, notes, streaks and badges sync automatically when you're logged in.</p>
+      <div class="acct-actions"><button class="btn light" type="button" data-sync-now>Sync now</button></div>
+    </div>
+    <div class="panel panel-pad acct-card">
+      <h2>Login</h2>
+      <dl class="kv"><div><dt>Email</dt><dd id="acct-email">—</dd></div></dl>
+      <div class="acct-actions"><button class="btn light" type="button" data-logout>Log out</button></div>
+      <p class="muted small">Logging out takes your progress off this device; it stays safe in your account. To delete your account, email <a class="link" href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</p>
+    </div>
+  </div>
+</section>

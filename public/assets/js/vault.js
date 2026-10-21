@@ -11,16 +11,19 @@
     label.textContent = n === 4 ? "All 4 books selected" : n === 0 ? "Choose at least one book" : n + (n === 1 ? " book" : " books") + " selected";
     btn.disabled = n === 0;
   }
+  /* The server sends PDFs as attachments, so a plain link click downloads them. When membership is live,
+     non-members are sent to the join page instead (the server would redirect them there anyway). */
   function fetchFile(slug) {
     var a = document.createElement("a");
     a.href = base + slug + ".pdf";
-    a.download = "schoolaura-" + slug + ".pdf";
     document.body.appendChild(a); a.click(); a.remove();
   }
+  function locked() { return !!(window.SA_CONFIG && SA_CONFIG.live) && !(window.SAAuth && SAAuth.isMember()); }
   boxes.forEach(function (b) { b.addEventListener("change", update); });
   btn.addEventListener("click", function () {
     var list = chosen();
     if (!list.length) return;
+    if (locked()) { location.href = "/join/?locked=download"; return; }
     if (list.length === 4) { fetchFile("recipe-vault-complete"); SA.toast("Downloading the Complete Edition."); return; }
     list.forEach(function (slug, i) { setTimeout(function () { fetchFile(slug); }, i * 700); });
     SA.toast(list.length === 1 ? "Your download has started." : "Downloading " + list.length + " PDFs. Allow multiple downloads if your browser asks.");

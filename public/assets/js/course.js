@@ -12,6 +12,22 @@
   var FINAL = QZ && QZ.final ? QZ.final : { count: 15, pass: 80 };
   /* Each lesson has its own page (/courses/<slug>/day-N/); calendar, quizzes and about live on the course page. */
   var PAGE_DAY = window.SA_DAY || null;
+  /* Lesson text is not in course-data.js: each lesson page brings its own (SA_DAY_DATA). Locked previews
+     (SA_LOCKED) have none, so only the lesson list and progress are drawn there. */
+  var LOCKED = !!window.SA_LOCKED;
+  if (PAGE_DAY && window.SA_DAY_DATA) {
+    C.days.forEach(function (d) { if (d.n === PAGE_DAY) Object.keys(window.SA_DAY_DATA).forEach(function (k) { d[k] = window.SA_DAY_DATA[k]; }); });
+  }
+  var CFG = window.SA_CONFIG || {};
+  function member() { return !CFG.live || !!(window.SAAuth && SAAuth.isMember()); }
+  function lockedDay(n) { return !member() && (CFG.freeDays || [1]).indexOf(n) === -1; }
+  var LOCK_SVG = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+  function quizLock() {
+    var next = encodeURIComponent(location.pathname + location.hash);
+    return '<div class="lock-card"><span class="lock-ic" aria-hidden="true">' + LOCK_SVG.replace(/width="10" height="10"/, 'width="22" height="22"') + "</span>" +
+      "<h2>Quizzes are for members</h2><p>Module quizzes, the final exam and your certificate come with a membership, along with every lesson in every course.</p>" +
+      '<div class="lock-actions"><a class="btn color lg" href="/join/">See plans</a><a class="btn light lg" href="/login/?next=' + next + '">Log in</a></div></div>';
+  }
   var IDX = /\/index\.html$/.test(location.pathname) ? "index.html" : "";
   var BASE = location.pathname.replace(/day-\d+\/(index\.html)?$/, "").replace(/index\.html$/, "");
   function dayHref(n) { return BASE + "day-" + n + "/" + IDX; }
@@ -107,6 +123,7 @@
     if (md) { location.replace(dayHref(+md[1])); return; }          // old #day-N links
     if (PAGE_DAY) {
       if (/^(plan|quizzes|certificate|about|quiz-(m\d+|final))$/.test(h)) { location.replace(homeHref(h)); return; }
+      if (LOCKED) { renderNav(PAGE_DAY); syncProgress(); return; }
       renderDay(PAGE_DAY);
       syncProgress();
       return;
@@ -131,9 +148,9 @@
     C.modules.forEach(function (m) {
       html += '<p class="mtitle">' + esc(m.title) + "</p>";
       m.days.forEach(function (n) {
-        var d = dayByN(n);
-        html += '<a href="' + dayHref(n) + '" class="' + (isDone(n) ? "done" : "") + '" aria-current="' + (n === current ? "true" : "false") + '"><span class="ck">' + (isDone(n) ? "✓" : "") + "</span><span>Day " + n + ": " + esc(d.title) + "</span></a>";
-        opts += '<option value="' + dayHref(n) + '"' + (n === current ? " selected" : "") + ">" + (isDone(n) ? "✓ " : "") + "Day " + n + ": " + esc(d.title) + "</option>";
+        var d = dayByN(n), lk = lockedDay(n) && !isDone(n);
+        html += '<a href="' + dayHref(n) + '" class="' + (isDone(n) ? "done" : lk ? "locked" : "") + '" aria-current="' + (n === current ? "true" : "false") + '"><span class="ck">' + (isDone(n) ? "✓" : lk ? LOCK_SVG : "") + "</span><span>Day " + n + ": " + esc(d.title) + (lk ? '<span class="sr-only"> (members)</span>' : "") + "</span></a>";
+        opts += '<option value="' + dayHref(n) + '"' + (n === current ? " selected" : "") + ">" + (isDone(n) ? "✓ " : lk ? "🔒 " : "") + "Day " + n + ": " + esc(d.title) + "</option>";
       });
       if (hasQuiz(m.n)) {
         var r = qRes("m" + m.n);
@@ -229,7 +246,7 @@
   /* ---------- quizzes ---------- */
   function renderQuizzes() {
     var mods = quizModules();
-    $("#quiz-cards").innerHTML = mods.map(function (m) {
+    $("#quiz-cards").innerHTML = (member() ? "" : '<p class="quiz-lock-note">' + LOCK_SVG + ' Quizzes, the final exam and certificates are for members. <a class="link" href="/join/">See plans</a></p>') + mods.map(function (m) {
       var r = qRes("m" + m.n), done = m.days.filter(isDone).length;
       return '<div class="qcard' + (r && r.passed ? " passed" : "") + '"><div class="qcard-n">' + (r && r.passed ? "✓" : m.n) + "</div>" +
         '<div class="qcard-b"><p class="k">Module ' + m.n + " · " + modQs(m.n).length + " questions</p><h3>" + esc(m.title) + "</h3>" +
@@ -259,6 +276,7 @@
     var isFinal = id === "final", mn = isFinal ? null : +id.slice(1);
     var root = $("#quiz-root");
     if (!isFinal && !hasQuiz(mn)) { location.hash = "#quizzes"; return; }
+    if (!member()) { root.innerHTML = quizLock(); return; }
     var m = isFinal ? null : C.modules.filter(function (x) { return x.n === mn; })[0];
     var qs = isFinal ? SAQuiz.shuffle(allQuestions()).slice(0, Math.min(FINAL.count, allQuestions().length)) : modQs(mn);
     var nextMod = isFinal ? null : C.modules.filter(function (x) { return x.n === mn + 1; })[0];

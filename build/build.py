@@ -7,7 +7,7 @@ finished static site into public/.
 
 Run:  python3 build/build.py
 """
-import json, re, math, html, sys, hashlib, subprocess, datetime
+import json, re, math, html, os, sys, hashlib, subprocess, datetime, urllib.parse, shutil
 from pathlib import Path
 import markdown
 
@@ -172,11 +172,39 @@ PRODUCTS = [
 AURA = {"drop": "var(--c-drop)", "ai": "var(--c-ai)", "vault": "var(--c-vault)", "web": "var(--c-web)", "mkt": "var(--c-mkt)", "vp": "var(--c-vp)"}
 ICON = {"drop": "DS", "ai": "AI", "web": "WB", "mkt": "DM", "vp": "VP"}
 
-# Membership pricing (shown on /join/ and the home page). Prices are in CAD.
-# While both checkout links are empty the site is in early access: everything is free and the
-# buttons say "Start free now". Paste Stripe Payment Links (or any checkout URL) here to start selling.
+# Membership pricing (shown on /join/ and the home page). Prices are in CAD and exclude sales tax.
+# "half" is what visitors from lower-income countries pay (the country list is in lib/pricing.js).
+# Stripe prices are created automatically from these numbers on the first checkout.
 PRICING = {"currency": "CAD", "monthly": 9, "lifetime": 19, "guarantee_days": 30,
-           "checkout_monthly": "", "checkout_lifetime": ""}
+           "half": {"monthly": 5, "lifetime": 10}}
+
+# Membership switches.
+#   accounts: show "Log in" / "Account" and save progress to the member's account (needs Supabase email set up).
+#   live:     lock members-only content and sell memberships through Stripe (needs accounts and the Stripe keys).
+# While live is False the site is in early access: everything is free and the buttons say "Start free now".
+# Free for everyone when live: these lesson days of every course, and the newest N Viral Prompts packs.
+MEMBERSHIP = {"accounts": False, "live": False, "free_days": [1], "free_prompts": 3}
+# For test builds only: SA_ACCOUNTS=1 / SA_LIVE=1 python3 build/build.py (live also switches accounts on).
+if os.environ.get("SA_ACCOUNTS") in ("0", "1"):
+    MEMBERSHIP["accounts"] = os.environ["SA_ACCOUNTS"] == "1"
+if os.environ.get("SA_LIVE") in ("0", "1"):
+    MEMBERSHIP["live"] = os.environ["SA_LIVE"] == "1"
+    MEMBERSHIP["accounts"] = MEMBERSHIP["accounts"] or MEMBERSHIP["live"]
+SUPABASE = {"url": "https://mxezkygvkvekhirheblb.supabase.co", "key": "sb_publishable_yGeteIMzk6eXJCcrcEYRXw_JuRRBXyq"}
+SUPPORT_EMAIL = "support@schoolaura.com"
+assert MEMBERSHIP["accounts"] or not MEMBERSHIP["live"], "live membership needs accounts"
+
+
+def live():
+    return MEMBERSHIP["live"]
+
+
+def accounts():
+    return MEMBERSHIP["accounts"]
+
+
+def free_day(n):
+    return not live() or n in MEMBERSHIP["free_days"]
 
 
 def money(n):
@@ -287,10 +315,13 @@ def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonl
       <a href="/courses/digital-marketing/"{cur('/courses/digital-marketing')}>Marketing</a>
       <a href="/recipe-vault/"{cur('/recipe-vault')}>Recipe Vault</a>
       <a href="/templates/"{cur('/templates')}{cur('/courses/website-builders')}>Templates</a>
+      {'<a class="nav-acct" href="/login/" data-auth-link>Log in</a>' if accounts() else ''}
+      {'<a class="nav-acct" href="/join/" data-join-link>Join</a>' if live() else ''}
     </nav>
     <div class="head-right">
       <button class="search-btn" type="button" data-search-open aria-label="Search SchoolAura">{SEARCH_ICON}<span>Search</span><kbd>/</kbd></button>
-      <a class="btn sm start-btn" href="/join/">Join</a>
+      {'<a class="head-link" href="/login/" data-auth-link>Log in</a>' if accounts() else ''}
+      <a class="btn sm start-btn" href="/join/" data-join-link>Join</a>
       <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
@@ -301,19 +332,36 @@ def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonl
 
 SA_META_JS = "{}"
 SA_PROMPTS_JS = "{}"
+ASSET_V = {}
+
+
+def asset(path):
+    """URL for a file in public/ with a content hash, so browsers pick up new versions straight away."""
+    if path not in ASSET_V:
+        f = PUBLIC / path.lstrip("/")
+        ASSET_V[path] = short_hash(f.read_text()) if f.exists() else "0"
+    return f"{path}?v={ASSET_V[path]}"
+
+
+def client_config():
+    """window.SA_CONFIG: public settings the browser scripts need (no secrets)."""
+    return {"supabaseUrl": SUPABASE["url"], "supabaseKey": SUPABASE["key"], "accounts": accounts(), "live": live(),
+            "freeDays": MEMBERSHIP["free_days"], "currency": PRICING["currency"], "supportEmail": SUPPORT_EMAIL,
+            "supabaseJs": asset("/assets/js/vendor/supabase.js")}
 
 
 def foot(extra_js="", pre_js=""):
+    auth_js = f'<script src="{asset("/assets/js/auth.js")}"></script>\n' if accounts() else ""
     return f"""</main>
 <footer class="site-foot">
   <div class="wrap">
     <span>© <span data-year>2026</span> SchoolAura</span>
-    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/join/">Pricing</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a></nav>
+    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/join/">Pricing</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="/refunds/">Refunds</a></nav>
   </div>
 </footer>
-<script>window.SA_META = {SA_META_JS}; window.SA_PROMPTS = {SA_PROMPTS_JS};</script>
+<script>window.SA_META = {SA_META_JS}; window.SA_PROMPTS = {SA_PROMPTS_JS}; window.SA_CONFIG = {js_json(client_config())};</script>
 <script src="/assets/js/site.js"></script>
-<script>document.querySelectorAll("[data-year]").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
+{auth_js}<script>document.querySelectorAll("[data-year]").forEach(function (e) {{ e.textContent = new Date().getFullYear(); }});</script>
 {pre_js}
 <script src="/assets/js/engage.js"></script>
 {extra_js}
@@ -479,7 +527,7 @@ def course_page(c, data_src):
             <div><dt>Per study day</dt><dd id="sum-daily">—</dd></div>
           </dl>
           <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
-          <p class="muted" style="font-size:.85rem">Progress is saved on this device. <button type="button" class="link" data-reset style="background:none;border:0;padding:0;font:inherit;cursor:pointer">Reset progress</button></p>
+          <p class="muted" style="font-size:.85rem">{"Progress is saved on this device and to your account when you're logged in." if accounts() else "Progress is saved on this device."} <button type="button" class="link" data-reset style="background:none;border:0;padding:0;font:inherit;cursor:pointer">Reset progress</button></p>
         </form>
       </aside>
     </div>
@@ -488,12 +536,14 @@ def course_page(c, data_src):
 """
     ld = [{"@type": "Course", "name": c["title"], "description": squash(strip_tags(c["lede"])), "url": SITE + base,
            "provider": ORG, "inLanguage": "en", "educationalLevel": c["level"], "timeRequired": iso_dur(H),
-           "isAccessibleForFree": True,
+           "isAccessibleForFree": not live(),
            "teaches": [squash(strip_tags(md_inline(x))) for x in c["learn"]],
            "syllabusSections": [{"@type": "Syllabus", "name": m["title"], "description": m["summary"]} for m in c["modules"]],
            "hasCourseInstance": [{"@type": "CourseInstance", "courseMode": "Online",
                                   "courseWorkload": iso_dur(H / days_n)}],
-           "offers": [{"@type": "Offer", "category": "Free", "price": 0, "priceCurrency": "CAD"}]},
+           "offers": [{"@type": "Offer", "category": "Subscription", "price": PRICING["monthly"], "priceCurrency": PRICING["currency"],
+                       "url": SITE + "/join/"}] if live() else
+                     [{"@type": "Offer", "category": "Free", "price": 0, "priceCurrency": PRICING["currency"]}]},
           crumbs_ld([("Home", "/"), ("Classroom", "/courses/"), (c["title"], base)])]
     page = head(f"{SEO_TITLES.get(slug, c['title'])} · SchoolAura", c["metaDescription"], base, c["aura"],
                 og_image=f"/assets/img/og/{slug}.jpg", jsonld=ld)
@@ -553,16 +603,101 @@ def lesson_page(c, d, data_src):
   </section>
 </div>
 """
+    day_data = {k: d[k] for k in DAY_CONTENT_KEYS}
+    return lesson_shell(c, d, body, data_src, f"window.SA_DAY = {n}; window.SA_DAY_DATA = {js_json(day_data)};")
+
+
+# Lesson fields that only members get. They live in each lesson page (which the middleware locks),
+# not in the public course-data.js.
+DAY_CONTENT_KEYS = ["lesson", "demo", "tasks", "deliverable", "tip"]
+
+
+def lesson_shell(c, d, body, data_src, inline_js):
+    slug, n, base = c["slug"], d["n"], f"/courses/{c['slug']}/"
     url = f"{base}day-{n}/"
     title = f"{d['title']} · {c['title']} Day {n} · SchoolAura"
     ld = [{"@type": "LearningResource", "name": d["title"], "description": d["goal"], "url": SITE + url,
            "learningResourceType": "Lesson", "educationalLevel": c["level"], "timeRequired": iso_dur(d["hours"]),
-           "inLanguage": "en", "isAccessibleForFree": True, "publisher": ORG,
+           "inLanguage": "en", "isAccessibleForFree": free_day(n), "publisher": ORG,
            "isPartOf": {"@type": "Course", "name": c["title"], "url": SITE + base, "provider": ORG}},
           crumbs_ld([("Home", "/"), ("Classroom", "/courses/"), (c["title"], base), (f"Day {n}", url)])]
     page = head(title, d["goal"], url, c["aura"], og_image=f"/assets/img/og/{slug}.jpg", og_type="article", jsonld=ld)
-    return page + body + foot(f'<script>window.SA_DAY = {n};</script>\n<script src="{data_src}"></script>\n'
-                              '<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/tools.js"></script>\n<script src="/assets/js/course.js"></script>')
+    return page + body + foot(f'<script>{inline_js}</script>\n<script src="{data_src}"></script>\n'
+                              f'<script src="{asset("/assets/js/quiz.js")}"></script>\n<script src="{asset("/assets/js/tools.js")}"></script>\n'
+                              f'<script src="{asset("/assets/js/course.js")}"></script>')
+
+
+def first_paragraphs(html_text, words=90):
+    """The opening paragraphs of a lesson, about `words` long, for the preview."""
+    out, count = [], 0
+    for m in re.finditer(r"<p>(.*?)</p>", html_text, re.S):
+        out.append(m.group(0))
+        count += len(strip_tags(m.group(1)).split())
+        if count >= words or len(out) >= 4:
+            break
+    return "".join(out)
+
+
+def lock_card(title, text, login_next, extra=""):
+    nxt = urllib.parse.quote(login_next, safe="/")
+    return f"""<div class="lock-card">
+  <span class="lock-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+  <h2>{title}</h2>
+  <p>{text}</p>
+  <div class="lock-actions"><a class="btn color lg" href="/join/"><span>Join from <span data-price="monthly">{money(PRICING['monthly'])}</span>/month</span></a><a class="btn light lg" href="/login/?next={nxt}">Log in</a></div>
+  {extra}
+</div>"""
+
+
+def lesson_preview_page(c, d, data_src):
+    """What visitors without a membership see at a locked lesson's URL (served by middleware.js)."""
+    slug, n, base = c["slug"], d["n"], f"/courses/{c['slug']}/"
+    m = next(m for m in c["modules"] if n in m["days"])
+    days = c["days"]
+    side = ""
+    for mod in c["modules"]:
+        side += f'<p class="mtitle">{html.escape(mod["title"])}</p>'
+        for k in mod["days"]:
+            dk = next(x for x in days if x["n"] == k)
+            side += f'<a href="{base}day-{k}/" aria-current="{"true" if k == n else "false"}"><span class="ck"></span><span>Day {k}: {html.escape(dk["title"])}</span></a>'
+    sp = d["split"]
+    tot = sp["read"] + sp["demo"] + sp["tasks"]
+    heads = [squash(strip_tags(h)) for h in re.findall(r"<h3[^>]*>(.*?)</h3>", d["lesson"], re.S)][:6]
+    inside = [f"<li><b>Lesson</b> · {sp['read']} min" + (f": {html.escape(', '.join(heads))}" if heads else "") + "</li>"]
+    if d["demo"]:
+        inside.append(f"<li><b>Worked example</b> · {sp['demo']} min</li>")
+    inside.append(f"<li><b>{len(d['tasks'])} timed tasks</b> · {sp['tasks']} min, with a checklist that saves your progress</li>")
+    if d["deliverable"]:
+        inside.append("<li><b>By tonight you'll have</b> · a finished result to show for the day</li>")
+    free_n = MEMBERSHIP["free_days"][0]
+    text = (f"Day {n} of {html.escape(c['title'])} is for members. Join to read the full lesson and do the tasks, "
+            "with every other course, the Recipe Vault, website templates and Viral Prompts included.")
+    extra = f'<p class="lock-free">Day {free_n} of every course is free. <a class="link" href="{base}day-{free_n}/">Start Day {free_n} →</a></p>'
+    lesson = f"""<div class="lesson-top"><div><p class="crumb">{html.escape(m['title'])} · Day {n} of {len(days)}</p><h1>{html.escape(d['title'])}</h1></div><span class="pill lock-pill">Members</span></div>
+<div class="meta-chips"><span class="mchip">{fmt_h(d['hours'])} hours</span></div>
+<p class="goal">{html.escape(d['goal'])}</p>
+<div class="time-key"><span>Lesson {sp['read']} min</span><span>Example {sp['demo']} min</span><span>Tasks {sp['tasks']} min</span><span>≈ {tot / 60:.1f} h total</span></div>
+<section class="part"><h2 class="part-h"><span class="pi">1</span>Lesson</h2><div class="prose teaser">{first_paragraphs(d['lesson'])}</div></section>
+{lock_card("Keep going with a membership", text, f"{base}day-{n}/", extra)}
+<section class="part"><h2 class="part-h"><span class="pi">✓</span>What's in this lesson</h2><ul class="inside-list">{''.join(inside)}</ul></section>"""
+    body = course_head(c, "p", "day", base) + f"""
+<div class="wrap">
+  <section class="view" id="v-day">
+    <div class="two-col left">
+      <aside class="panel lesson-nav sticky">
+        <div class="top">
+          <p class="ln-title"><a href="{base}">{html.escape(c['title'])}</a></p>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
+        </div>
+        <div class="jump"><label for="jump" class="muted" style="font-size:.85rem;font-weight:700">Jump to a lesson</label><select id="jump"></select></div>
+        <nav class="list" id="lesson-list" aria-label="Lessons">{side}</nav>
+      </aside>
+      <article class="panel panel-pad" id="lesson-locked">{lesson}</article>
+    </div>
+  </section>
+</div>
+"""
+    return lesson_shell(c, d, body, data_src, f"window.SA_DAY = {n}; window.SA_LOCKED = true;")
 
 
 # ---------------------------------------------------------------- viral prompts
@@ -603,27 +738,47 @@ def pack_meta(p):
             f'<time datetime="{p["published"]}">{pack_date(p)}</time><span class="new-badge" hidden>New</span></div>')
 
 
-def prompts_hub(packs):
+def free_packs(packs):
+    """Slugs of the packs everyone can read when membership is live (the newest few)."""
+    return [p["slug"] for p in packs[:MEMBERSHIP["free_prompts"]]]
+
+
+def locked_prompt_block(pr):
+    words = pr["text"].split()
+    tease = " ".join(words[:9]) + ("…" if len(words) > 9 else "")
+    return (f'<div class="pblock locked"><div class="pb-top"><b>{html.escape(pr["label"])}</b>'
+            f'<span class="pill lock-pill">Members</span></div>'
+            f'<pre aria-hidden="true">{html.escape(tease)}</pre></div>')
+
+
+def prompts_hub(packs, locked=False):
+    """The Viral Prompts feed. locked=True is the version for visitors without a membership:
+    every pack is listed, but only the newest few show their prompt text."""
     cards = []
+    free = set(free_packs(packs)) if locked else None
     for p in packs:
         find = html.escape(" ".join([p["title"], p["summary"], " ".join(p["tags"]), " ".join(p["tools"]), p["kind"]]).lower())
         more = len(p["prompts"]) - 1
+        is_locked = locked and p["slug"] not in free
+        block = locked_prompt_block(p["prompts"][0]) if is_locked else prompt_block(p["prompts"][0], 'p-' + p['slug'] + '-0')
+        free_tag = '<span class="pill ok free-pill">Free</span>' if locked and not is_locked else ""
         cards.append(f"""<article class="pcard" data-kind="{p['kind']}" data-published="{p['published']}" data-find="{find}">
-  {pack_meta(p)}
+  {pack_meta(p).replace('</div>', free_tag + '</div>', 1) if free_tag else pack_meta(p)}
   <h2 class="pc-title"><a href="/prompts/{p['slug']}/">{html.escape(p['title'])}</a></h2>
   <p class="pc-sum">{html.escape(p['summary'])}</p>
   <div class="tags">{''.join(f'<span class="tag">{html.escape(t)}</span>' for t in p['tools'])}</div>
-  {prompt_block(p['prompts'][0], 'p-' + p['slug'] + '-0')}
-  <a class="link" href="/prompts/{p['slug']}/">{f"{more} more prompt{'s' if more != 1 else ''}, steps and tips" if more else "Steps and tips"} →</a>
+  {block}
+  <a class="link" href="/prompts/{p['slug']}/">{("See the pack" if is_locked else (f"{more} more prompt{'s' if more != 1 else ''}, steps and tips" if more else "Steps and tips"))} →</a>
 </article>""")
     kinds = [k for k in KIND_LABEL if any(p["kind"] == k for p in packs)]
     chips = '<button class="chip-btn" type="button" data-vp-kind="all" aria-pressed="true">All</button>' + "".join(
         f'<button class="chip-btn" type="button" data-vp-kind="{k}" aria-pressed="false">{KIND_LABEL[k]}</button>' for k in kinds)
     latest = pack_date(packs[0]) if packs else "—"
+    free_line = (f' The {MEMBERSHIP["free_prompts"]} newest packs are free for everyone; members get every pack.' if live() else "")
     body = f"""
 <section class="wrap page-head vp-head">
   <h1>Viral Prompts</h1>
-  <p>Copy-ready prompts for the AI photo and video trends people are sharing right now. New packs land here as trends appear, with steps, variations and tips for each one.</p>
+  <p>Copy-ready prompts for the AI photo and video trends people are sharing right now. New packs land here as trends appear, with steps, variations and tips for each one.{free_line}</p>
   <div class="actions"><button class="btn" type="button" data-sub>Subscribe</button><span class="vp-meta">{len(packs)} prompt packs · updated {latest}</span></div>
 </section>
 <div class="wrap"><p class="vp-note" data-sub-note></p></div>
@@ -636,6 +791,7 @@ def prompts_hub(packs):
 {chr(10).join(cards)}
   </div>
   <p class="empty-note" id="vp-empty" hidden>No prompts match that search yet.</p>
+  {lock_card("Every pack, as soon as it drops", "Members can copy every prompt in every pack, old and new, plus all the courses, the Recipe Vault and website templates.", "/prompts/") if locked else ""}
   <div class="note-card" style="margin-top:28px"><b>How it works:</b> we check for new AI trends several times a day and post a pack when one is worth trying. Results vary between tools and runs, so make a few versions and keep the best. Only use photos of yourself, or of people who have agreed. Want to get better at the tools? <a class="link" href="/courses/ai-mastery/">AI Mastery</a> teaches prompting, images and video step by step.</div>
 </section>
 """
@@ -647,13 +803,22 @@ def prompts_hub(packs):
     page = head("Viral AI Prompts: Trending Photo and Video Prompts to Copy · SchoolAura",
                 "Copy-ready prompts for the AI photo and video trends people are sharing right now, for ChatGPT, Gemini, Runway, Kling, Veo and more. New packs as trends appear.",
                 "/prompts/", "vp", og_image="/assets/img/og/viral-prompts.jpg", jsonld=ld)
-    return page + body + foot('<script src="/assets/js/prompts.js"></script>')
+    return page + body + foot(f'<script src="{asset("/assets/js/prompts.js")}"></script>')
 
 
-def prompt_page(p, packs):
+def prompt_page(p, packs, locked=False):
+    """One pack. locked=True is the preview for visitors without a membership (prompt text hidden)."""
     steps = "".join(f"<li>{html.escape(s)}</li>" for s in p["steps"])
     tips = "".join(f"<li>{html.escape(s)}</li>" for s in p["tips"])
-    blocks = "".join(prompt_block(pr, f"p-{p['slug']}-{i}") for i, pr in enumerate(p["prompts"]))
+    if locked:
+        blocks = "".join(locked_prompt_block(pr) for pr in p["prompts"]) + lock_card(
+            "Copy these prompts with a membership",
+            f"This pack has {len(p['prompts'])} prompt{'s' if len(p['prompts']) != 1 else ''}. Members can copy every prompt in every pack, "
+            "plus all the courses, the Recipe Vault and website templates.",
+            f"/prompts/{p['slug']}/",
+            f'<p class="lock-free">The {MEMBERSHIP["free_prompts"]} newest packs are free. <a class="link" href="/prompts/">See them →</a></p>')
+    else:
+        blocks = "".join(prompt_block(pr, f"p-{p['slug']}-{i}") for i, pr in enumerate(p["prompts"]))
     others = [x for x in packs if x["slug"] != p["slug"]][:5]
     latest = "".join(f'<li><a href="/prompts/{x["slug"]}/"><span>{html.escape(x["title"])}</span><small>{KIND_LABEL[x["kind"]]} · {pack_date(x, "%b %-d")}</small></a></li>' for x in others)
     tools = ", ".join(p["tools"][:3])
@@ -693,9 +858,11 @@ def prompt_page(p, packs):
            "image": SITE + "/assets/img/og/viral-prompts.jpg", "keywords": ", ".join(p["tags"] + p["tools"]),
            "isPartOf": {"@type": "CollectionPage", "name": "Viral Prompts", "url": SITE + "/prompts/"}},
           crumbs_ld([("Home", "/"), ("Viral Prompts", "/prompts/"), (p["title"], url)])]
+    if live():
+        ld[0]["isAccessibleForFree"] = p["slug"] in free_packs(packs)
     page = head(f"{p['title']} prompt ({tools}) · Viral Prompts · SchoolAura", p["summary"], url, "vp",
                 og_image="/assets/img/og/viral-prompts.jpg", og_type="article", jsonld=ld)
-    return page + body + foot('<script src="/assets/js/prompts.js"></script>')
+    return page + body + foot(f'<script src="{asset("/assets/js/prompts.js")}"></script>')
 
 
 # ---------------------------------------------------------------- search index, sitemap, social images
@@ -735,6 +902,15 @@ def search_index(courses, packs, tpls):
     idx.append({"k": "Page", "t": "Classroom", "s": "Your courses and progress", "u": "courses/", "x": "progress streak badges level question of the day"})
     idx.append({"k": "Page", "t": "Pricing and membership", "s": f"{money(PRICING['monthly'])} a month or {money(PRICING['lifetime'])} for life", "u": "join/",
                 "x": "price pricing cost membership subscribe subscription lifetime monthly refund guarantee join buy"})
+    idx.append({"k": "Page", "t": "Refund Policy", "s": f"{PRICING['guarantee_days']}-day money-back guarantee", "u": "refunds/",
+                "x": "refund money back guarantee cancel cancellation chargeback"})
+    idx.append({"k": "Page", "t": "Terms of Service", "s": "Membership, payment and content rules", "u": "terms/",
+                "x": "terms conditions rules license licence templates lifetime cancel"})
+    idx.append({"k": "Page", "t": "Privacy Policy", "s": "What we collect and your choices", "u": "privacy/",
+                "x": "privacy data cookies delete account personal information"})
+    if accounts():
+        idx.append({"k": "Page", "t": "Log in", "s": "Your account, membership and saved progress", "u": "login/",
+                    "x": "login log in sign in account member membership billing progress sync"})
     return idx
 
 
@@ -782,10 +958,12 @@ def cards_html(courses, tpl_count, vault, packs, with_progress=False):
     for p in PRODUCTS:
         if p["slug"] in by:
             c = by[p["slug"]]
-            meta = [f"{len(c['days'])} lessons", f"{fmt_h(c['totalHours'])} hours", "<b>Free in early access</b>"]
+            meta = [f"{len(c['days'])} lessons", f"{fmt_h(c['totalHours'])} hours",
+                    f"<b>Day {MEMBERSHIP['free_days'][0]} free</b>" if live() else "<b>Free in early access</b>"]
             out.append(product_card(p, meta, len(c["days"]) if with_progress else None))
         elif p["slug"] == "viral-prompts":
-            out.append(product_card(p, [f"{len(packs)} prompt packs", "New as trends appear", "<b>Free in early access</b>"], badge=True))
+            out.append(product_card(p, [f"{len(packs)} prompt packs", "New as trends appear",
+                                        f"<b>{MEMBERSHIP['free_prompts']} newest free</b>" if live() else "<b>Free in early access</b>"], badge=True))
         elif p["slug"] == "recipe-vault":
             out.append(product_card(p, ["4 PDF books", f"{vault['TOTAL_PAGES']} pages", "<b>Instant download</b>"]))
         else:
@@ -806,12 +984,16 @@ def home_page(courses, tpl_count, vault, packs):
                  f"Digital Marketing Agency is {len(mkt['days'])} lessons, about {fmt_h(mkt['totalHours'])} hours ({math.ceil(mkt['totalHours']/4)}–{math.ceil(mkt['totalHours']/3)} days). "
                  f"The website guide is {len(web['days'])} lessons, about {fmt_h(web['totalHours'])} hours.")
     frag = (CONTENT / "pages" / "home.html").read_text()
-    early = not (PRICING["checkout_monthly"] or PRICING["checkout_lifetime"])
-    price_line = (f"{money(PRICING['monthly'])} a month or {money(PRICING['lifetime'])} once for life, with a {PRICING['guarantee_days']}-day money-back guarantee."
-                  + (" Free during early access." if early else ""))
+    early = not live()
+    pm, pl = price_spans()
+    price_line = (f"{pm} a month or {pl} once for life, with a {PRICING['guarantee_days']}-day money-back guarantee."
+                  + (" Free during early access." if early else f" Day {MEMBERSHIP['free_days'][0]} of every course is free."))
+    hero_note = "Free while we're in early access." if early else f"Day {MEMBERSHIP['free_days'][0]} of every course is free."
     for k, v in {"CARDS": cards_html(courses, tpl_count, vault, packs), "HOURS_ROWS": "".join(rows), "FAQ_HOURS": faq_hours,
-                 "PRICE_LINE": price_line, "PRICE_MONTHLY": money(PRICING["monthly"]), "PRICE_LIFETIME": money(PRICING["lifetime"])}.items():
+                 "PRICE_LINE": price_line, "HERO_NOTE": hero_note,
+                 "PRICE_MONTHLY": pm, "PRICE_LIFETIME": pl}.items():
         frag = frag.replace("{{" + k + "}}", v)
+    assert "{{" not in frag, re.findall(r"\{\{\w+\}\}", frag)
     ld = [dict(ORG, description="Step-by-step online courses in AI, digital marketing and dropshipping, plus trending AI prompts and recipe books."),
           {"@type": "WebSite", "name": "SchoolAura", "url": SITE + "/",
            "potentialAction": {"@type": "SearchAction", "target": SITE + "/?q={search_term_string}", "query-input": "required name=search_term_string"}}]
@@ -821,10 +1003,21 @@ def home_page(courses, tpl_count, vault, packs):
     return page + frag + foot()
 
 
+def price_spans():
+    """Monthly and lifetime prices for page copy. When membership is live they are wrapped so the browser
+    can show the visitor's regional price (see auth.js); the plain number stays for search engines."""
+    mo, life = money(PRICING["monthly"]), money(PRICING["lifetime"])
+    if not live():
+        return mo, life
+    return f'<span data-price="monthly">{mo}</span>', f'<span data-price="lifetime">{life}</span>'
+
+
 def join_page(courses, packs, tpls, vault):
     P = PRICING
-    early = not (P["checkout_monthly"] or P["checkout_lifetime"])
-    mo, life, days = money(P["monthly"]), money(P["lifetime"]), P["guarantee_days"]
+    early = not live()
+    days = P["guarantee_days"]
+    mo, life = price_spans()
+    free_n = MEMBERSHIP["free_days"][0]
     lessons = sum(len(c["days"]) for c in courses)
     hours = int(sum(c["totalHours"] for c in courses))
     quiz_q = sum(sum(len(v) for v in c["quiz"]["modules"].values()) for c in courses if c.get("quiz")) + \
@@ -849,20 +1042,26 @@ def join_page(courses, packs, tpls, vault):
         "QUIZ_Q": str(quiz_q), "PACKS": str(len(packs)), "BOOK_PAGES": vault["TOTAL_PAGES"], "TEMPLATES": str(len(tpls)),
         "COURSES": str(len(courses)),
         "CARDS": cards_html(courses, len(tpls), vault, packs), "SAMPLES": "\n".join(samples),
-        "CTA_MAIN_HREF": "/courses/" if early else (P["checkout_lifetime"] or P["checkout_monthly"]),
-        "CTA_MAIN_LABEL": "Start free now" if early else (f"Get lifetime access · {life}" if P["checkout_lifetime"] else f"Join for {mo} a month"),
-        "CTA_MAIN_SHORT": "Start free" if early else ("Get lifetime access" if P["checkout_lifetime"] else "Join now"),
-        "CTA_MONTHLY_HREF": "/courses/" if early else (P["checkout_monthly"] or "#pricing"),
-        "CTA_MONTHLY_LABEL": "Start free now" if early else f"Start monthly · {mo}",
-        "CTA_LIFETIME_HREF": "/courses/" if early else (P["checkout_lifetime"] or "#pricing"),
-        "CTA_LIFETIME_LABEL": "Start free now" if early else f"Get lifetime access · {life}",
+        "CTA_MAIN_HREF": "/courses/" if early else "/join/?plan=lifetime",
+        "CTA_MAIN_LABEL": "Start free now" if early else f"<span>Get lifetime access · {life}</span>",
+        "CTA_MAIN_SHORT": "Start free" if early else "Get lifetime access",
+        "CTA_MONTHLY_HREF": "/courses/" if early else "/join/?plan=monthly",
+        "CTA_MONTHLY_LABEL": "Start free now" if early else f"<span>Start monthly · {mo}</span>",
+        "CTA_LIFETIME_HREF": "/courses/" if early else "/join/?plan=lifetime",
+        "CTA_LIFETIME_LABEL": "Start free now" if early else f"<span>Get lifetime access · {life}</span>",
         "FINE_PRINT": (f"Free during early access. No card needed. Membership opens soon at {mo} a month or {life} for life." if early
-                       else f"Prices in CAD plus applicable tax. {days}-day money-back guarantee."),
+                       else f"Prices in CAD plus applicable tax. {days}-day money-back guarantee. Day {free_n} of every course is free."),
         "EARLY_KICKER": '<p class="jh-kicker">Early access: everything is free right now</p>' if early else "",
         "EARLY_NOTE": (f'<p class="early-note"><b>Early access:</b> every course, download and prompt pack is free while we finish building accounts. '
                        f'These are the prices when membership opens. No card needed today.</p>') if early else "",
         "EARLY_FAQ": (f'<details open><summary>Is everything really free right now?</summary><p>Yes. While we\'re in early access every course, download and prompt pack is open, with no card needed. '
-                      f'When membership opens, it will be {mo} a month or {life} once for life.</p></details>') if early else "",
+                      f'When membership opens, it will be {mo} a month or {life} once for life.</p></details>') if early else
+                     (f'<details><summary>Can I try it before I pay?</summary><p>Yes. Day {free_n} of every course and the {MEMBERSHIP["free_prompts"]} newest Viral Prompts packs are free, '
+                      f'with no card needed. Open any other lesson to see what it covers before you join.</p></details>'
+                      f'<details><summary>How do I log in?</summary><p>With your email: we send you a sign-in link, so there\'s no password to remember. '
+                      f'Your membership and progress follow you to any device.</p></details>'
+                      f'<details><summary>Why is the price different for me?</summary><p>Prices are set by region, so people in countries where incomes are lower pay less. '
+                      f'You\'ll see the price for your region on this page and at checkout.</p></details>'),
     }
     frag = (CONTENT / "pages" / "join.html").read_text()
     for k, v in rep_map.items():
@@ -873,10 +1072,11 @@ def join_page(courses, packs, tpls, vault):
           {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": squash(strip_tags(q)),
                                                "acceptedAnswer": {"@type": "Answer", "text": squash(strip_tags(a))}} for q, a in faq]},
           crumbs_ld([("Home", "/"), ("Pricing", "/join/")])]
-    title = f"SchoolAura Membership: Every Course for {mo} a Month or {life} for Life"
+    pmo, plife = money(P["monthly"]), money(P["lifetime"])
+    title = f"SchoolAura Membership: Every Course for {pmo} a Month or {plife} for Life"
     desc = (f"One membership for every SchoolAura course ({lessons} daily lessons in AI, digital marketing and dropshipping), the Recipe Vault, "
-            f"{len(tpls)} website templates and Viral Prompts. {mo} a month or {life} once, with a {days}-day money-back guarantee.")
-    return head(title, desc, "/join/", "drop", jsonld=ld) + frag + foot()
+            f"{len(tpls)} website templates and Viral Prompts. {pmo} a month or {plife} once, with a {days}-day money-back guarantee.")
+    return head(title, desc, "/join/", "drop", jsonld=ld) + frag + foot(f'<script src="{asset("/assets/js/join.js")}"></script>' if live() else "")
 
 
 def daily_pool(courses):
@@ -896,6 +1096,53 @@ def daily_pool(courses):
 
 def js_json(v):
     return json.dumps(v, ensure_ascii=False).replace("</", "<\\/")
+
+
+LEGAL_PAGES = [
+    ("terms", "Terms of Service · SchoolAura", "The rules for using SchoolAura and the SchoolAura membership: accounts, payment, cancelling, refunds and content use."),
+    ("privacy", "Privacy Policy · SchoolAura", "What SchoolAura collects, why, who helps run the service, and your choices. No advertising cookies, no selling your data."),
+    ("refunds", "Refund Policy: 30-Day Money-Back Guarantee · SchoolAura", "How the SchoolAura 30-day money-back guarantee works for monthly and lifetime memberships, and how to ask for a refund."),
+]
+
+
+def write_account_pages():
+    """Legal pages (always), and the login and account pages (when accounts are on). Returns sitemap rows."""
+    rep = {"SUPPORT_EMAIL": SUPPORT_EMAIL, "DAYS": str(PRICING["guarantee_days"]), "MONTHLY": money(PRICING["monthly"]),
+           "LIFETIME": money(PRICING["lifetime"]), "CURRENCY": PRICING["currency"]}
+    rows = []
+    for slug, title, desc in LEGAL_PAGES:
+        src = CONTENT / "pages" / f"{slug}.html"
+        updated = git_date(src)
+        page = simple_page(f"{slug}.html", title, desc, f"/{slug}/", "drop",
+                           replacements=dict(rep, UPDATED=datetime.date.fromisoformat(updated).strftime("%B %-d, %Y")))
+        assert "{{" not in page, (slug, re.findall(r"\{\{\w+\}\}", page))
+        (PUBLIC / slug).mkdir(exist_ok=True)
+        (PUBLIC / slug / "index.html").write_text(page)
+        rows.append((f"/{slug}/", updated))
+    pages = {"login": ("Log in · SchoolAura", "Log in to SchoolAura with your email. No password needed."),
+             "account": ("Your account · SchoolAura", "Your SchoolAura membership, billing and saved progress.")}
+    for slug, (title, desc) in pages.items():
+        d = PUBLIC / slug
+        if not accounts():
+            if d.exists():
+                shutil.rmtree(d)
+            continue
+        d.mkdir(exist_ok=True)
+        (d / "index.html").write_text(simple_page(f"{slug}.html", title, desc, f"/{slug}/", "drop",
+                                                  js=f'<script src="{asset("/assets/js/account.js")}"></script>',
+                                                  replacements=rep, noindex=True))
+    return rows
+
+
+def write_site_config(packs):
+    """lib/site-config.js: the settings the server code and middleware need (no secrets)."""
+    cfg = {"supabaseUrl": SUPABASE["url"], "supabaseKey": SUPABASE["key"], "currency": PRICING["currency"].lower(),
+           "prices": {"full": {"monthly": PRICING["monthly"], "lifetime": PRICING["lifetime"]}, "half": PRICING["half"]},
+           "accounts": accounts(), "live": live(),
+           "gate": {"freeDays": MEMBERSHIP["free_days"], "freePrompts": free_packs(packs)}}
+    (ROOT / "lib" / "site-config.js").write_text(
+        "/* Written by build/build.py from PRICING and MEMBERSHIP. Don't edit by hand; run the build. */\n"
+        "export default " + json.dumps(cfg, indent=2) + ";\n")
 
 
 def simple_page(fragment_name, title, desc, path, aura, js="", replacements=None, pre_js="", **head_kw):
@@ -918,7 +1165,10 @@ def main():
         slug = c["slug"]
         cdir = PUBLIC / "courses" / slug
         cdir.mkdir(parents=True, exist_ok=True)
-        data = {"slug": slug, "code": c["code"], "title": c["title"], "days": c["days"], "modules": c["modules"],
+        # Public course data: titles, goals and timings for the calendar and lesson list. Lesson text is not
+        # in here; each lesson page carries its own (see DAY_CONTENT_KEYS).
+        pub_days = [{k: v for k, v in d.items() if k not in DAY_CONTENT_KEYS} for d in c["days"]]
+        data = {"slug": slug, "code": c["code"], "title": c["title"], "days": pub_days, "modules": c["modules"],
                 "quiz": c.get("quiz"), "hours": c["totalHours"]}
         data_js = "window.COURSE = " + js_json(data) + ";\n"
         (cdir / "course-data.js").write_text(data_js)
@@ -931,13 +1181,16 @@ def main():
             ddir = cdir / f"day-{d['n']}"
             ddir.mkdir(exist_ok=True)
             (ddir / "index.html").write_text(lesson_page(c, d, data_src))
+            if not free_day(d["n"]):
+                (ddir / "preview").mkdir(exist_ok=True)
+                (ddir / "preview" / "index.html").write_text(lesson_preview_page(c, d, data_src))
+            elif (ddir / "preview").exists():
+                shutil.rmtree(ddir / "preview")
             keep.add(ddir.name)
             sitemap.append((f"/courses/{slug}/day-{d['n']}/", src_date))
         for old in cdir.glob("day-*"):
             if old.is_dir() and old.name not in keep:
-                for f in old.iterdir():
-                    f.unlink()
-                old.rmdir()
+                shutil.rmtree(old)
         nq = sum(len(v) for v in c["quiz"]["modules"].values()) if c.get("quiz") else 0
         print(f"  {slug}: {len(c['days'])} days, {c['totalHours']:g} h, {c['figures']} figures, {nq} quiz questions")
 
@@ -947,7 +1200,9 @@ def main():
     (PUBLIC / "index.html").write_text(home_page(courses, len(tpls), vault, packs))
     (PUBLIC / "courses" / "index.html").write_text(simple_page(
         "classroom.html", "Classroom: All Courses and Your Progress · SchoolAura", "All SchoolAura courses, your progress, streaks and badges, and a question of the day.", "/courses/", "drop",
-        replacements={"CARDS": cards_html(courses, len(tpls), vault, packs, with_progress=True)},
+        replacements={"CARDS": cards_html(courses, len(tpls), vault, packs, with_progress=True),
+                      "SAVED_NOTE": "Progress, streaks and badges are saved on this device, and to your account when you log in." if accounts()
+                      else "Progress, streaks and badges are saved on this device."},
         pre_js=f"<script>window.SA_DAILY = {js_json(daily_pool(courses))};</script>"))
     (PUBLIC / "recipe-vault").mkdir(exist_ok=True)
     (PUBLIC / "recipe-vault" / "index.html").write_text(simple_page(
@@ -963,19 +1218,27 @@ def main():
     pdir = PUBLIC / "prompts"
     pdir.mkdir(exist_ok=True)
     (pdir / "index.html").write_text(prompts_hub(packs))
+    assert all(p["slug"] != "preview" for p in packs), "a pack slug cannot be 'preview'"
+    if live():
+        (pdir / "preview").mkdir(exist_ok=True)
+        (pdir / "preview" / "index.html").write_text(prompts_hub(packs, locked=True))
     sitemap.append(("/prompts/", packs[0]["published"][:10] if packs else git_date(CONTENT / "prompts")))
-    keep = set()
+    keep = {"preview"} if live() else set()
+    free = set(free_packs(packs))
     for p in packs:
         d = pdir / p["slug"]
         d.mkdir(exist_ok=True)
         (d / "index.html").write_text(prompt_page(p, packs))
+        if live() and p["slug"] not in free:
+            (d / "preview").mkdir(exist_ok=True)
+            (d / "preview" / "index.html").write_text(prompt_page(p, packs, locked=True))
+        elif (d / "preview").exists():
+            shutil.rmtree(d / "preview")
         keep.add(p["slug"])
         sitemap.append((f"/prompts/{p['slug']}/", p["published"][:10]))
     for old in pdir.iterdir():
         if old.is_dir() and old.name not in keep:
-            for f in old.iterdir():
-                f.unlink()
-            old.rmdir()
+            shutil.rmtree(old)
 
     cards = []
     for t in tpls:
@@ -986,7 +1249,7 @@ def main():
     <div class="card-title">{html.escape(t['name'])}</div>
     <p class="card-desc">{html.escape(t['desc'])}</p>
     <div class="tags">{tags}</div>
-    <div class="btn-row"><a class="btn light sm" href="/templates/{t['slug']}/" target="_blank" rel="noopener">Live preview</a><a class="btn sm" href="/downloads/templates/{t['slug']}.zip" download>Download</a></div>
+    <div class="btn-row"><a class="btn light sm" href="/templates/{t['slug']}/" target="_blank" rel="noopener">Live preview</a><a class="btn sm" href="/downloads/templates/{t['slug']}.zip">Download</a></div>
   </div>
 </article>""")
     (PUBLIC / "templates").mkdir(exist_ok=True)
@@ -1000,6 +1263,8 @@ def main():
     (PUBLIC / "join" / "index.html").write_text(join_page(courses, packs, tpls, vault))
     sitemap.append(("/join/", git_date(CONTENT / "pages" / "join.html", ROOT / "build" / "build.py")))
     (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "drop", noindex=True))
+    sitemap += write_account_pages()
+    write_site_config(packs)
 
     idx = search_index(courses, packs, tpls)
     (PUBLIC / "assets" / "js" / "search-index.js").write_text("window.SA_SEARCH = " + js_json(idx) + ";\n")

@@ -17,11 +17,48 @@ The website for **schoolaura.com**: self-paced courses with day-by-day plans and
 | Viral Prompts | `/prompts/` | Trending AI photo and video prompt packs, one page per pack, subscribe for New badges |
 | Recipe Vault (FOD 110) | `/recipe-vault/` | 4 PDF books + a complete edition, pick and download, kitchen quiz, cake pan converter |
 
-Every lesson has its own page at `/courses/<slug>/day-N/` (so Google can index it), and every course page has four tabs: **Classroom** (lesson list with progress on the left, lesson on the right: lesson, worked example, quick check, timed task checklist, check-in and notes, mark as done), **Calendar** (start date, study days, pace, month calendar, what's coming up), **Quizzes** (a quiz per module, a final exam and a certificate) and **About** (outcomes, curriculum, who it's for). Progress is saved in the visitor's browser (`localStorage`) until accounts arrive with the subscription.
+Every lesson has its own page at `/courses/<slug>/day-N/` (so Google can index it), and every course page has four tabs: **Classroom** (lesson list with progress on the left, lesson on the right: lesson, worked example, quick check, timed task checklist, check-in and notes, mark as done), **Calendar** (start date, study days, pace, month calendar, what's coming up), **Quizzes** (a quiz per module, a final exam and a certificate) and **About** (outcomes, curriculum, who it's for). Progress is saved in the visitor's browser (`localStorage`) and, for logged-in members, synced to their account.
 
-### Pricing and checkout
+### Membership: accounts, payments and locked content
 
-Prices live in `PRICING` at the top of `build/build.py` and feed the `/join/` page, the home page teaser and the FAQ. While `checkout_monthly` and `checkout_lifetime` are empty the site is in early access: the buttons say "Start free now". Paste a checkout link (for example a Stripe Payment Link) into each, rebuild, and the buttons become "Start monthly · $9" and "Get lifetime access · $19". Before taking payments, add a support email, terms and a refund policy page, and lock paid content behind accounts.
+Two switches in `MEMBERSHIP` at the top of `build/build.py` control it. Both are off until the outside services are set up (see "Before switching on" below).
+
+- **`accounts`**: shows "Log in" / "Account" in the header and builds `/login/` and `/account/`. Login is by email link or 6-digit code (Supabase Auth), plus Google if it's enabled in Supabase. Logged-in visitors' progress (`sa.course.*`, `sa.engage`, `sa.prompts`, `sa.name`) syncs to the `progress` table with a three-way merge, so two devices combine instead of overwriting.
+- **`live`**: locks members-only content and sells the membership through Stripe Checkout. Free for everyone: Day 1 of every course (`free_days`) and the 3 newest Viral Prompts packs (`free_prompts`). Everything else, plus quizzes and the downloads, needs a membership. While `live` is off the site is in early access: everything is free and the buttons say "Start free now".
+
+Prices are in `PRICING` (CAD, before tax): full price $9/month or $19 once; visitors from the countries listed in `lib/pricing.js` see and pay `half` ($5 / $10). The Stripe product and prices are created automatically on the first checkout (lookup keys like `schoolaura_monthly_full_cad_900`), so changing a price here makes a new Stripe price; existing subscribers stay on theirs.
+
+How it fits together:
+
+```
+middleware.js           Runs before pages on Vercel. No valid member cookie -> locked lessons and prompt packs are
+                        answered with their preview page (same URL), downloads redirect to /join/?locked=download.
+lib/gate.js             Which paths are members-only. lib/site-config.js is written by the build (free lists, prices).
+lib/token.js            The signed member cookie (sa_m, HMAC, 24 hours, HttpOnly).
+api/session.js          POST with the Supabase access token: checks the login, reads the members row, sets/clears sa_m.
+api/checkout.js         Starts Stripe Checkout (monthly = subscription, lifetime = one payment) at the visitor's regional price.
+api/portal.js           Opens the Stripe customer portal (card, invoices, cancel).
+api/geo.js              The visitor's country and prices, for the join page.
+api/stripe-webhook.js   Stripe -> members table: checkout completed, subscription changes, full refunds.
+public/assets/js/auth.js     Header login state, member cookie refresh, regional prices, progress sync (all pages).
+public/assets/js/account.js  /login/ and /account/.   public/assets/js/join.js  Checkout buttons on /join/.
+```
+
+Supabase tables (project `mxezkygvkvekhirheblb`, Canada): `members` (one row per paying user, written only by the webhook with the secret key), `progress` (one JSON blob per user, each user can read and write only their own) and `stripe_events` (so each webhook is handled once). Row-level security is on for all three.
+
+Lesson text is never in the public `course-data.js`: each lesson page carries its own (`window.SA_DAY_DATA`), and the middleware decides who gets that page. Locked lessons have a preview at `/courses/<slug>/day-N/preview/` and locked packs at `/prompts/<slug>/preview/`; these are only built when `live` is on.
+
+Environment variables (Vercel → Project → Settings → Environment Variables):
+
+| Name | What it is |
+| --- | --- |
+| `STRIPE_SECRET_KEY` | Stripe secret key (`sk_live_...`, or `sk_test_...` on Preview) |
+| `STRIPE_WEBHOOK_SECRET` | Signing secret of the webhook endpoint `https://schoolaura.com/api/stripe-webhook/` (keep the trailing slash) |
+| `SUPABASE_SECRET_KEY` | Supabase secret key (`sb_secret_...`), used only by the webhook. The member cookie is signed with a key derived from it unless `MEMBER_COOKIE_SECRET` is set |
+| `STRIPE_AUTOMATIC_TAX` | `true` once Stripe Tax is set up (origin address and registrations), so tax is added at checkout |
+| optional | `MEMBER_COOKIE_SECRET` (32+ characters), `SITE_URL`, `PRICE_CURRENCY`, `STRIPE_TAX_CODE` (default `txcd_20060358`, online courses with written material), `STRIPE_PRICE_<MONTHLY/LIFETIME>_<FULL/HALF>` to use your own price IDs |
+
+Testing: `npm test` runs the server, middleware and merge tests. `SA_LIVE=1 python3 build/build.py` builds a copy with everything switched on, and `FAKE_BACKEND=1 node tests/e2e/server.mjs 8790` serves it locally the way Vercel does (middleware, functions, clean URLs) with an in-memory Supabase and Stripe. Rebuild without `SA_LIVE` before committing, and restart the server after each build.
 
 ### Viral Prompts
 
@@ -38,26 +75,28 @@ Each pack is one JSON file in `content/prompts/` (format and rules in `content/p
 ### Quizzes, tools and engagement
 
 - **Quizzes:** questions live in `content/quizzes/<slug>.json` (`modules` → list of `{q, o, a, why, day}`, plus `final: {count, pass}`). `a` is the index of the right option; `day` must be a lesson in that module (the build checks both). Options are shuffled every attempt. Module quizzes and the final pass at 80%. The final draws `count` random questions from all modules. The questions tagged with a lesson's `day` also appear in that lesson as a "Quick check". The Recipe Vault has its own kitchen quiz in `content/quizzes/recipe-vault.json`.
-- **Certificate:** unlocks when every lesson is marked done and the final is passed. It's drawn in the browser (PNG download, LinkedIn "add to profile" and X share links). Until accounts exist it's an honour-system certificate.
+- **Certificate:** unlocks when every lesson is marked done and the final is passed. It's drawn in the browser (PNG download, LinkedIn "add to profile" and X share links). It's an honour-system certificate: progress is checked in the browser, not on the server.
 - **Interactive tools:** write `{{tool:name}}` on its own line in a lesson. Tools are in `public/assets/js/tools.js`: `profit`, `adtest`, `prompt`, `imgprompt`, `metrics`, `pricing`, `serp`, `engagement`, `adsbudget`, `utm`, `contrast`, `pan` (Recipe Vault).
 - **Engagement** (`public/assets/js/engage.js`): daily streak, XP and 8 levels, 12 badges, "continue where you left off" (home and classroom), and a question of the day on the classroom page. It's all worked out from saved progress plus `sa.engage` in `localStorage`.
 
 ## How it's built
 
-A static site, no framework. Everything the browser loads is in `public/`, which Vercel serves as-is (`vercel.json` sets `outputDirectory: public`).
+A static site, no framework. Everything the browser loads is in `public/`, which Vercel serves as-is (`vercel.json` sets `outputDirectory: public`). The membership adds `middleware.js`, a few functions in `api/` and shared code in `lib/` (see above); they need no build step, just `npm install` for `@vercel/functions`, which Vercel does automatically.
 
 ```
 content/            Course sources (Markdown with JSON front matter), page fragments, diagrams
   dropshipping.md   One file per course (also ai-mastery.md, digital-marketing.md, website-builders.md): "# M1 | Module | summary", "## D1 | Title | hours | short title"
   ai-mastery.md     Sections per day: @goal @lesson @demo @tasks @deliverable @tip
   website-builders.md
-  pages/            Home, Recipe Vault, Templates and 404 page bodies
+  pages/            Home, join, login, account, legal, Recipe Vault, Templates and 404 page bodies
   quizzes/          Quiz questions per course (JSON)
   figures/          Generated SVG diagrams (from build/figures.py)
 vault-src/          Recipe Vault book sources (Markdown + recipe blocks) and print illustrations
 templates-src/      The six website templates (each a folder with index.html, fonts, images)
 build/              Build scripts
 public/             The generated website (commit it; Vercel deploys this folder)
+api/ lib/ middleware.js   Membership server code (see "Membership" above)
+tests/              npm test, plus tests/e2e/server.mjs for running the site locally
 ```
 
 ### Rebuilding after an edit
@@ -75,8 +114,8 @@ python3 build/build.py          # all HTML pages: run after any content change
 
 Task times in lessons are written as `(45 min)` at the end of each task line. The build splits each day's hours into lesson, worked example and task time, and warns if the tasks leave less than 25 minutes for the lesson.
 
-## Next steps
+## Before switching on
 
-- **Subscription:** add Supabase Auth + Stripe, move progress from `localStorage` to a `progress` table, and gate lessons and downloads.
-- **Domain:** add `schoolaura.com` in Vercel → Project → Domains and set the DNS records Vercel shows.
-- **Contact and legal:** add a contact email, privacy policy and terms before taking payments.
+1. **Domain:** add `schoolaura.com` in Vercel → Project → Domains and set the DNS records Vercel shows. Set up the `support@schoolaura.com` mailbox (or forwarding) used on the legal pages.
+2. **Supabase:** Auth → URL Configuration: Site URL `https://schoolaura.com`, redirect URLs `https://schoolaura.com/**` and `https://*-markwilsonmw22s-projects.vercel.app/**`. Auth → SMTP: connect an email sender (the built-in one only sends to your own team). Auth → Email Templates → Magic Link: include both `{{ .ConfirmationURL }}` and `{{ .Token }}` so people can click or type the code. Optional: Auth → Providers → Google. Then set `accounts` to True and rebuild.
+3. **Stripe:** add the environment variables above, create the webhook endpoint for `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `customer.subscription.created/updated/deleted/paused/resumed` and `charge.refunded`, turn on the customer portal, and set up Stripe Tax. Then set `live` to True and rebuild.
