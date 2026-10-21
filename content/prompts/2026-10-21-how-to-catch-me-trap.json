@@ -1,0 +1,40 @@
+{
+ "slug": "how-to-catch-me-trap",
+ "title": "How to catch me: the box trap",
+ "published": "2026-10-21T18:39:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "An old-school box trap propped up on a stick, baited with the things you can't resist. AI builds the scene from your list.",
+ "why": "SocialBee's weekly Instagram trends roundup for October 21, 2026 lists \"How to catch me\": a box trap with your favourite things underneath as bait, with \"how to catch me:\" written above it.",
+ "steps": [
+  "Write down three to five things you can't say no to: a drink, a snack, a hobby, a cozy item.",
+  "Paste the main prompt into ChatGPT or Gemini and swap in your list.",
+  "Check that every item looks right and the words at the top are spelled correctly. Ask for a fix if not.",
+  "Post it as a single image with the caption \"how to catch me:\" or ask your followers to share their own bait."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Make a square photo of a simple trap set up on a clean, light wooden floor. A plain brown cardboard box is tipped up on one side and held open by a small wooden stick. A piece of string is tied to the stick and runs off the edge of the frame. Under the box, neatly arranged as bait: [item 1], [item 2], [item 3]. Soft daylight from a window, gentle shadows, shot at eye level like a phone photo. At the top, in clean lowercase handwriting-style text, write: \"how to catch me:\". No logos or brand names on anything."
+  },
+  {
+   "label": "Variation: cozy fall bait",
+   "text": "Make a square photo of a cardboard box trap propped up on a stick on a knitted blanket. Under the box: a steaming mug of hot apple cider, a paperback book with a plain cover, a pair of thick wool socks and a small bowl of maple cookies. Warm lamp light, a few orange leaves scattered around, cozy autumn mood. At the top, in simple lowercase text, write: \"how to catch me:\". No logos or brand names."
+  },
+  {
+   "label": "Variation: your pet",
+   "text": "Use my photo of my pet. Make a funny square photo of a cardboard box trap propped up on a stick on my living room floor. Under the box, as bait: [pet's favourite toy], [favourite treat] and [favourite spot, like a sunny cushion]. Put my pet just outside the box, peeking in with great interest. Keep my pet's face, size and markings exactly as in the photo. At the top, in lowercase text, write: \"how to catch [pet's name]:\"."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use my product photos. Make a square image of a plain cardboard box trap propped up on a wooden stick with string, on a clean surface that matches my shop's colours: [colours]. Under the box, neatly arranged as bait: [best-selling product], [second product] and a small card that reads \"[your real offer]\". Bright, even light and a crisp phone-photo look. Keep the products exactly as they look in my photos. At the top, in lowercase text, write: \"how to catch our customers:\"."
+  }
+ ],
+ "tips": [
+  "Three to five items is the sweet spot. More than that and the bait gets messy.",
+  "Be specific: \"iced oat latte\" works better than \"coffee\".",
+  "AI can hide or blur things under the box. Ask it to \"keep every item fully visible\" if that happens.",
+  "Only show offers you are really running. If you add a discount card, make sure the code works."
+ ],
+ "tags": ["meme", "instagram", "pets", "business"]
+}

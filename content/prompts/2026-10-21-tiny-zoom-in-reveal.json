@@ -1,0 +1,36 @@
+{
+ "slug": "tiny-zoom-in-reveal",
+ "title": "Zoom in: the tiny hidden message",
+ "published": "2026-10-21T18:39:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "A hand pinches something tiny on a clean white background, with \"zoom in\" in big letters. Viewers zoom to find your hidden message.",
+ "why": "SocialBee's weekly Instagram trends roundup for October 21, 2026 lists \"Zoom in\": a photo of a hand holding something tiny between two fingers, inviting people to zoom in to find a hidden message, image or announcement.",
+ "steps": [
+  "Decide on your hidden message. Keep it short: five words or fewer reads best when tiny.",
+  "Use the main prompt to make the image. Ask for at least 2048 pixels wide so the tiny text stays sharp when people zoom.",
+  "Zoom in on your phone yourself. If the tiny words are blurry or misspelled, ask the AI to fix only that part.",
+  "Post it as a single image in full quality, and don't give away the message in the caption."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Make a clean, high-resolution square photo. A relaxed hand comes in from the bottom right and pinches a very small paper note between thumb and pointer finger. The note is about the size of a fingernail. On the note, in tiny but perfectly sharp printed letters, it says: \"[your short message]\". Plain bright white background, soft even studio light, a gentle shadow under the hand. Across the upper part of the image, in large, elegant black cursive, write: \"zoom in\". Keep the tiny text crisp and readable when zoomed."
+  },
+  {
+   "label": "Variation: tiny picture",
+   "text": "Make a high-resolution square photo on a plain white background. A hand pinches a tiny printed photo, no bigger than a fingernail, between two fingers. The tiny photo shows [what you want to reveal, like my dog wearing a pumpkin costume]. Soft studio light and a small shadow. Large black cursive text across the top reads: \"zoom in\". The tiny photo must stay sharp and clear when zoomed in."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use my product photo. Make a high-resolution square image on a clean white background. A hand pinches a tiny version of my product, about the size of a fingernail, between thumb and pointer finger. Hanging from it is a miniature tag that says \"[your real announcement or code]\" in tiny, sharp letters. Keep the product's shape and colours exactly as in my photo. Soft, even studio light. Large black cursive text across the top reads: \"zoom in\"."
+  }
+ ],
+ "tips": [
+  "AI can garble tiny text. Check it at full zoom before you post, every time.",
+  "Upload in the highest quality your app allows. Compression can blur the hidden part.",
+  "Good hidden messages: a launch date, a thank-you, a pet's name, a fun fact or a real discount code.",
+  "Add \"zoom in to see\" in your caption so people know there's something to find."
+ ],
+ "tags": ["instagram", "reveal", "announcement", "business"]
+}
