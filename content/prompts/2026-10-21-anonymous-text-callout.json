@@ -1,0 +1,35 @@
+{
+ "slug": "anonymous-text-callout",
+ "title": "Anonymous text callout",
+ "published": "2026-10-21T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A mystery text calls out one of your own funny habits, signed with a single letter. AI writes the texts and a simple phone screen image.",
+ "why": "A TikTok trend report updated October 19, 2026 lists the \"-A texted me\" format in its October 5 roundup: an anonymous text calls out a habit and is signed with one letter. This pack helps you write playful callouts about yourself.",
+ "steps": [
+  "Pick a habit of your own that people will recognize, like snoozing five alarms or buying plants you forget to water.",
+  "Paste the main prompt into the AI and pick the callout that makes you laugh.",
+  "Film yourself doing the habit, then show the text on screen with a short pause before the sign-off letter appears."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short video where a mysterious anonymous text calls out one of my own habits. The text is signed with just a single letter, like \"- A\". My habit is: [for example: saying 'one more episode' at 1 a.m.]. Write 8 options for the text. Each one is under 25 words, playful and a little dramatic, as if a secret watcher knows everything. Make the joke about me only. No threats, nothing mean, and no real names."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bakery in a small Ontario town]. Write 6 anonymous texts, signed \"- A\", that playfully call out a habit my regular customers will recognize, like eyeing the same pastry for three days before buying it. Under 25 words each, warm and teasing, never rude. End one of them with a gentle nudge to visit this week. No prices, discounts or claims about results."
+  },
+  {
+   "label": "Variation: phone screen image",
+   "text": "Make a clean, simple image of a phone lock screen at night showing one incoming text from an unknown number. The message reads: \"[paste your chosen text here]\". Plain dark background, soft glow from the screen, no app logos, no brand names and no real phone number. The text must be easy to read on a small screen."
+  }
+ ],
+ "tips": [
+  "Only call out yourself, or a friend who has said yes. The joke should never feel like real pressure on someone.",
+  "Check the AI image spells every word right before you post. Fix small errors in your editor.",
+  "Hold the text on screen for at least three seconds so people can read it.",
+  "Keep the sign-off as a single letter. That small detail is what makes the format click."
+ ],
+ "tags": ["text", "funny", "mystery", "business"]
+}
