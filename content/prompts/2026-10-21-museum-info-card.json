@@ -1,0 +1,36 @@
+{
+ "slug": "museum-info-card",
+ "title": "Museum-style info card of anything",
+ "published": "2026-10-21T06:38:00Z",
+ "kind": "image",
+ "tools": ["Gemini", "ChatGPT"],
+ "summary": "Turn a photo of your lunch, pet or favourite mug into a museum specimen card with labels, an index number and neat fine lines.",
+ "why": "Google released Nano Banana 2.1 in the Gemini app on October 6, 2026, with better text and infographics, as reported by The Decoder. An October 20 prompt guide lists the museum-style info card among this month's photo formats, so this pack puts the sharper text to work.",
+ "steps": [
+  "Take a clear photo of one thing on a plain surface: a dish, a plant, your pet or an object you love.",
+  "Upload it to Gemini or ChatGPT and paste the main prompt. Fill in the brackets with real facts.",
+  "Check every word on the card. Fix any spelling with a short follow-up like \"change the label 'Orign' to 'Origin'\".",
+  "Post it on its own, or as a carousel with the original photo first."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my photo as the subject. Make a vertical museum specimen card in the style of an old natural history plate. Cut the subject out cleanly and place it in the centre on warm off-white paper with a faint texture. Add thin hairline borders and small field labels around it: Common name: [name]. Origin: [where it's from]. Found in: [where it lives]. Notable feature: [one fun fact]. Put a small index number in the top corner, like No. 047. Use a clean serif font for the title and small capitals for the labels. Soft, even light. No logos and no extra text."
+  },
+  {
+   "label": "Variation: your pet",
+   "text": "Use my photo of my pet. Make a museum specimen card that treats my pet as a rare species. Title it with my pet's name in a classic serif font, then a made-up Latin-style name under it in italics. Add four labelled lines in small capitals: Habitat: [favourite spot at home]. Diet: [favourite snack]. Behaviour: [a funny habit]. Status: very well loved. Thin hairline rules, off-white paper, a small index number in the corner. Keep my pet's face and markings exactly as in the photo."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use my product photo. Make a clean museum-style info card for it on soft off-white paper. Place the product in the centre with a gentle shadow. Add thin hairline borders and labelled fields in small capitals: Name: [product name]. Made in: [city, province]. Made from: [main materials or ingredients]. Best for: [who it's for]. Add a small index number like Item No. 012 in the top corner. Simple serif title, lots of white space. No prices, no claims, no logos other than what is already on my product."
+  }
+ ],
+ "tips": [
+  "Only use facts you know are true. The card looks official, so keep the details honest.",
+  "One subject per card works best. Busy photos give messy cut-outs.",
+  "Ask for a 4:5 ratio for Instagram feed posts, or 9:16 for Stories.",
+  "Make a set of three with the same index style to build a little collection on your grid."
+ ],
+ "tags": ["infographic", "gemini", "pets", "business"]
+}
