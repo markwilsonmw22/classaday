@@ -1,0 +1,35 @@
+{
+ "slug": "gold-star-behaviour",
+ "title": "Gold star behaviour list",
+ "published": "2026-10-21T00:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "List the small habits you think deserve a gold star, and add a star on screen for each one. AI helps you write the list and make the star graphic.",
+ "why": "An Instagram trend report updated October 14, 2026 lists \"Gold star behaviour\" in its October 7 roundup: people list habits they think deserve a gold star and add one on screen for each. This pack helps you write a list that feels true to you.",
+ "steps": [
+  "Pick a theme: home life, work, school, fitness, your pet or your shop.",
+  "Paste the main prompt into the AI and pick your favourite 5 or 6 lines.",
+  "Film a simple shot of yourself, add each line as on-screen text, and drop a gold star sticker next to it as it appears."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a \"Gold star behaviour\" Reel: a list of small, real habits that deserve a gold star. My theme is: [for example: surviving a Canadian winter]. Give me 10 options, each under 10 words, written in first person, warm and a little funny. Mix tiny wins (like warming up the car for someone else) with honest ones. Keep it kind, never mean about any person or group."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: dog grooming salon]. Write 8 \"gold star behaviour\" lines about customers or my team, under 10 words each, warm and playful. For example: booking ahead, saying thank you, bringing back the treat jar. Make it feel like a friendly thank-you, not a list of rules. No claims about prices, results or other businesses."
+  },
+  {
+   "label": "Variation: gold star sticker image",
+   "text": "Make a single shiny gold five-point star sticker, like the ones teachers put on school work. Slightly raised foil look with soft highlights and a thin white sticker border. Centred on a plain, flat bright green background so I can remove it in my editor. No text."
+  }
+ ],
+ "tips": [
+  "Keep each line short so it fits on screen and can be read in two seconds.",
+  "Add one star per line, timed to the beat, so the stars pile up by the end.",
+  "Pick the lines that are true for you. Real details get more shares than generic ones.",
+  "Shops can end with \"Gold star for you if you read this far\" as a friendly sign-off."
+ ],
+ "tags": ["text", "list", "funny", "business"]
+}

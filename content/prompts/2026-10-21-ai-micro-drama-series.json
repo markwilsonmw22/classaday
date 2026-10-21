@@ -1,0 +1,40 @@
+{
+ "slug": "ai-micro-drama-series",
+ "title": "Your own AI micro-drama series",
+ "published": "2026-10-21T00:38:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway", "Higgsfield", "ChatGPT"],
+ "summary": "Plan a short drama in numbered episodes with the same characters, a quick recap and a cliffhanger, then make each episode with AI video.",
+ "why": "An Instagram trend report covering October 10–17, 2026 lists serialized AI micro-dramas: numbered episodes with recaps, recurring characters and cliffhangers. A TechNode article from October 20, 2026 also reports fast growth in AI-generated short drama series. This pack builds on our 30-second three-shot story pack by turning one clip into a series.",
+ "steps": [
+  "Use the series prompt to plan your characters, the setting and five short episodes.",
+  "Make one reference image for each character and reuse it in every episode so they stay the same.",
+  "Make each episode with the shot prompt: a two-second recap, the new scene, then the cliffhanger.",
+  "Add \"Episode 1\", \"Episode 2\" and so on as on-screen text in your editor, and post them in order."
+ ],
+ "prompts": [
+  {
+   "label": "Step 1: plan the series",
+   "text": "Help me plan a short vertical drama series for Reels and TikTok. Genre: [for example: cozy mystery in a small Canadian town]. Give me: 2 or 3 original characters, each with a name, age range, look, outfit and one personality trait; one main setting; and 5 episodes of about 30 seconds each. For each episode write a one-line recap of the last episode, three shots (wide, close-up, payoff) and a cliffhanger line that makes people want the next one. Keep it family-friendly. No real people, brands or existing characters."
+  },
+  {
+   "label": "Step 2: character reference image",
+   "text": "Make a full-body character reference image of [paste one character's description from your plan]. Plain light-grey background, soft even light, standing front-on, neutral expression. Natural, realistic film look. Vertical 9:16. No text."
+  },
+  {
+   "label": "Step 3: one episode shot",
+   "text": "Use the attached character image as the reference and keep the face, hair and outfit exactly the same. Scene: [paste one shot from your plan, for example: she opens a frosty mailbox at dusk and finds an old brass key with a paper tag]. Slow push-in, warm porch light against blue evening snow, natural movement. End on her surprised face looking just past the camera. Cinematic, vertical 9:16, 5 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bakery]. Plan a light, funny 4-episode micro-drama set in my shop, starring two original characters: a staff member and a regular customer. Each episode is about 30 seconds, has a one-line recap, three shots and a playful cliffhanger. Show the shop and products naturally, without prices, claims or sales pitches. No real people or other businesses."
+  }
+ ],
+ "tips": [
+  "Keep each episode short and end on a question. People follow a series for the cliffhanger.",
+  "Reuse the same character images and the same setting words in every prompt. That keeps the look steady.",
+  "Add episode numbers and recap text in your editor, not in the AI prompt. AI video text often comes out garbled.",
+  "Label it as AI-made in your caption or with the platform's AI label."
+ ],
+ "tags": ["video", "storytelling", "series", "business"]
+}
