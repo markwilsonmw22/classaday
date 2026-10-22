@@ -1,0 +1,45 @@
+{
+ "slug": "vintage-witchcore-portrait",
+ "title": "1960s witchcore portrait",
+ "published": "2026-10-22T18:40:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "Turn your selfie into a 1960s-style witch portrait: a cosy parlour, a bubbling cauldron, a rotary phone and a black cat, shot like an old colour film still.",
+ "why": "An AI trend list for TikTok updated October 17, 2026 names \"Witchcore\": one photo turned into a 1960s witch scene with a rotary phone, cauldron and black cat. A fashion report from October 12, 2026 also calls witchcore a fall 2026 runway trend.",
+ "steps": [
+  "Pick a clear, front-facing selfie with soft light and your face fully visible.",
+  "Upload it to an AI image tool and paste the main prompt. Ask for a vertical 4:5 image.",
+  "If your face changes, say \"keep my face exactly the same as the photo\" and try again.",
+  "Post it as a single image, or make three versions and share them as a carousel."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my photo and keep my face, skin tone and features exactly the same. Show me as a stylish 1960s witch in a cosy, cluttered parlour. I wear a fitted black dress with a lace collar and a small pointed hat, with neat, glossy period hair. I sit in a velvet armchair holding a cream rotary phone to my ear, with a knowing smile. A small black cat sits on the arm of the chair. Behind me, a copper cauldron bubbles with soft green steam on a stone hearth, next to shelves of glass jars, dried herbs and candles. Warm lamp light, rich jewel colours, soft film grain and gentle colour fading, like a still from an old 1960s colour TV show. Vertical 4:5."
+  },
+  {
+   "label": "Variation: friends or couple",
+   "text": "Use the two people in my photo and keep both faces exactly the same. Show them as a pair of 1960s witches in a tidy suburban kitchen with pastel cupboards. One stirs a small cauldron on the stove with a wooden spoon. The other reads from a thick old spell book with a cup of tea. A black cat watches from the counter. Bright, even studio lighting, saturated colours and light film grain, like an old colour sitcom still. Playful and charming, not scary. Vertical 4:5."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use my photo and keep my face exactly the same. Show me as a friendly 1960s witch behind the counter of a small shop that looks like mine: a [type of shop, for example: bakery]. Glass jars, a brass bell on the counter and a small cauldron with soft purple steam beside the till. A black cat naps on a stack of paper bags. Warm, rich colours and soft film grain, like an old colour film still. Leave the area above my head plain so I can add my shop name as a caption. Vertical 4:5."
+  }
+ ],
+ "tips": [
+  "Ask for \"film grain\" and \"faded colour\" to get the old-TV look. Without them it can look too glossy.",
+  "Only use your own photo, or a photo of friends who have said yes.",
+  "Keep it charming: the 1960s look works best playful, not scary.",
+  "Add your shop name as a caption in your editor. AI text inside the picture often comes out wrong."
+ ],
+ "tags": [
+  "halloween",
+  "witch",
+  "retro",
+  "portrait",
+  "business"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "slug": "lets-ignored-invites",
+ "title": "\"Let's...\" ignored invites",
+ "published": "2026-10-22T18:40:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "A friend asks \"Let's...\" again and again and you don't budge, until one invite names the thing you love and you burst into action. AI writes the invites.",
+ "why": "An Instagram trend report updated October 21, 2026 lists \"Let's...\" in its October 14 roundup: a run of invitations the creator ignores, until one names something they love and the edit turns energetic. This pack helps you write the lines.",
+ "steps": [
+  "Pick the one thing that always gets you off the couch: a snack, a place, a hobby or your pet.",
+  "Paste the main prompt into the AI and choose 4 or 5 dull invites plus the winning one.",
+  "Film yourself still and bored for each dull invite, with the line as on-screen text.",
+  "For the last line, cut to a fast, upbeat shot of you jumping up, grabbing your coat or running to the door."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a \"Let's...\" Reel. A friend keeps inviting me to things and I ignore them, until the last invite names the thing I love. The thing I love is: [for example: a hot chocolate and a box of doughnut holes]. Write 8 dull or mildly annoying invites, each starting with \"Let's\" and under 8 words, like \"Let's clean out the garage\". Then write 3 options for the final invite that names my favourite thing in a fun way. Keep it light and friendly. Don't name any real brands or people."
+  },
+  {
+   "label": "Variation: pet version",
+   "text": "Write a \"Let's...\" Reel script from my dog's point of view. I invite my dog to 6 things it ignores, each starting with \"Let's\" and under 8 words, like \"Let's get your nails trimmed\". The final invite is the thing my dog loves most: [for example: a walk to the park with the big puddle]. Give me 3 funny final lines to choose from, plus a short caption for the post."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bike repair shop]. Write a \"Let's...\" Reel script where a customer ignores 6 boring invites, each starting with \"Let's\" and under 8 words, like \"Let's sort the recycling\". The final invite is about my shop, for example a fun reason to visit this week. Keep it playful and honest. No made-up discounts, prices or claims. Add a short caption and a gentle call to visit."
+  }
+ ],
+ "tips": [
+  "The joke works when the dull shots are very still and the final shot is fast and loud.",
+  "Use the same spot and outfit for every dull shot so the change at the end pops.",
+  "Pick something you truly love. Real excitement reads better than acting.",
+  "Keep each line on screen for about two seconds so people can read it."
+ ],
+ "tags": [
+  "text",
+  "funny",
+  "reels",
+  "business"
+ ]
+}

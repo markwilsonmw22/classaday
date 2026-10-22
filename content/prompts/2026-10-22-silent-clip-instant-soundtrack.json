@@ -1,0 +1,46 @@
+{
+ "slug": "silent-clip-instant-soundtrack",
+ "title": "Silent clip, instant soundtrack",
+ "published": "2026-10-22T18:40:00Z",
+ "kind": "video",
+ "tools": [
+  "ElevenLabs",
+  "Kling",
+  "Veo",
+  "Runway"
+ ],
+ "summary": "Make a short silent clip with clear moments for sound, then let an AI soundtrack tool add matching music and timed sound effects in one pass.",
+ "why": "On October 15, 2026, ElevenLabs launched Instant Soundtracks. You upload a video and it writes original music and places sound effects on the timeline to match what happens on screen, with the effects on separate layers you can adjust.",
+ "steps": [
+  "Make a 5 to 10 second clip with one of the prompts below, or use your own phone footage. Plan clear moments for sound: a door, a pour, a whoosh.",
+  "Upload the clip to the soundtrack tool in the ElevenLabs studio and let it score the video.",
+  "Check each sound effect layer. Move, swap or delete any that land in the wrong spot, without redoing the music.",
+  "Export and post. Mention in your caption that the music and sound were made with AI."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt (cosy fall scene)",
+   "text": "A cosy kitchen on a rainy fall evening. Close-up of a kettle starting to steam, then a hand pours hot water into a mug. A spoon clinks twice against the side. The camera slowly pulls back to show rain on the window and a candle flickering on the table. A cat jumps up onto the windowsill at the end. Warm, soft light. No people's faces. Smooth, slow camera. Vertical 9:16, 8 seconds."
+  },
+  {
+   "label": "Variation: spooky Halloween door",
+   "text": "A dark front porch at night lit by one carved pumpkin. The camera moves slowly toward an old wooden door. The door creaks open a little on its own. Dry leaves blow across the step in a sudden gust. Inside, a single candle goes out. Cinematic, moody blue and orange light, light fog. Spooky, not gory. Vertical 9:16, 8 seconds."
+  },
+  {
+   "label": "Variation: small business product",
+   "text": "A clean, bright table top. My product, [describe it, for example: a jar of homemade maple butter], slides into frame from the left and stops in the centre. The lid twists off and lands with a small bounce. A knife scoops some out and spreads it on warm toast. The camera finishes on the product, with empty space at the top for my shop name. Soft daylight, simple background. Vertical 9:16, 8 seconds."
+  }
+ ],
+ "tips": [
+  "Clips with clear actions (a pour, a door, a drop) give the tool obvious places to add sound effects.",
+  "Ask your video tool for no sound, or mute the clip, unless you want the soundtrack to match its original mood.",
+  "For a product clip, use your own product photo or footage so it shows what you really sell.",
+  "Check the tool's plan and usage terms before you use the soundtrack in an ad."
+ ],
+ "tags": [
+  "video",
+  "sound",
+  "elevenlabs",
+  "business"
+ ]
+}
