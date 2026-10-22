@@ -183,7 +183,7 @@ PRICING = {"currency": "CAD", "monthly": 9, "lifetime": 19, "guarantee_days": 30
 #   live:     lock members-only content and sell memberships through Stripe (needs accounts and the Stripe keys).
 # While live is False the site is in early access: everything is free and the buttons say "Start free now".
 # Free for everyone when live: these lesson days of every course, and the newest N Viral Prompts packs.
-MEMBERSHIP = {"accounts": False, "live": False, "free_days": [1], "free_prompts": 3}
+MEMBERSHIP = {"accounts": True, "live": True, "free_days": [1], "free_prompts": 3}
 # For test builds only: SA_ACCOUNTS=1 / SA_LIVE=1 python3 build/build.py (live also switches accounts on).
 if os.environ.get("SA_ACCOUNTS") in ("0", "1"):
     MEMBERSHIP["accounts"] = os.environ["SA_ACCOUNTS"] == "1"

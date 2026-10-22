@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChatGPT in depth, plus Gemini and Perplexity · AI Mastery Day 8 · Class a Day</title>
+<meta name="description" content="Use ChatGPT&#x27;s main features and know when Gemini or Perplexity is the better tool.">
+<link rel="canonical" href="https://classaday.com/courses/ai-mastery/day-8/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Class a Day">
+<meta property="og:title" content="ChatGPT in depth, plus Gemini and Perplexity · AI Mastery Day 8 · Class a Day">
+<meta property="og:description" content="Use ChatGPT&#x27;s main features and know when Gemini or Perplexity is the better tool.">
+<meta property="og:url" content="https://classaday.com/courses/ai-mastery/day-8/">
+<meta property="og:image" content="https://classaday.com/assets/img/og/ai-mastery.jpg">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "ChatGPT in depth, plus Gemini and Perplexity", "description": "Use ChatGPT's main features and know when Gemini or Perplexity is the better tool.", "url": "https://classaday.com/courses/ai-mastery/day-8/", "learningResourceType": "Lesson", "educationalLevel": "Beginner to intermediate", "timeRequired": "PT3H30M", "inLanguage": "en", "isAccessibleForFree": false, "publisher": {"@type": "Organization", "name": "Class a Day", "url": "https://classaday.com/"}, "isPartOf": {"@type": "Course", "name": "AI Mastery", "url": "https://classaday.com/courses/ai-mastery/", "provider": {"@type": "Organization", "name": "Class a Day", "url": "https://classaday.com/"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://classaday.com/"}, {"@type": "ListItem", "position": 2, "name": "Classroom", "item": "https://classaday.com/courses/"}, {"@type": "ListItem", "position": 3, "name": "AI Mastery", "item": "https://classaday.com/courses/ai-mastery/"}, {"@type": "ListItem", "position": 4, "name": "Day 8", "item": "https://classaday.com/courses/ai-mastery/day-8/"}]}</script>
+</head>
+<body data-aura="ai">
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Class a Day home"><span class="mark" aria-hidden="true"></span><span class="wm">class<span>a</span>day</span></a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/courses/">Classroom</a>
+      <a href="/courses/dropshipping/">Dropshipping</a>
+      <a href="/courses/ai-mastery/" aria-current="page">AI Mastery</a>
+      <a href="/prompts/" data-nav-prompts>Prompts</a>
+      <a href="/courses/digital-marketing/">Marketing</a>
+      <a href="/recipe-vault/">Recipe Vault</a>
+      <a href="/templates/">Templates</a>
+      <a class="nav-acct" href="/login/" data-auth-link>Log in</a>
+      <a class="nav-acct" href="/join/" data-join-link>Join</a>
+    </nav>
+    <div class="head-right">
+      <button class="search-btn" type="button" data-search-open aria-label="Search Class a Day"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span><kbd>/</kbd></button>
+      <a class="head-link" href="/login/" data-auth-link>Log in</a>
+      <a class="btn sm start-btn" href="/join/" data-join-link>Join</a>
+      <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<div class="course-head">
+  <div class="wrap">
+    <span class="icon-sq">AI</span>
+    <div class="ch-text"><p class="ch-title"><a href="/courses/ai-mastery/">AI Mastery</a></p><p class="sub">AI 210 · 24 lessons · about 82.5 hours</p></div>
+    <div id="me-chip" class="ch-chip"></div>
+  </div>
+  <div class="wrap">
+    <nav class="tabs" aria-label="Course sections">
+      <a href="/courses/ai-mastery/day-1/" data-view="day" aria-current="true">Classroom</a>
+      <a href="/courses/ai-mastery/#plan" data-view="plan" aria-current="false">Calendar</a>
+      <a href="/courses/ai-mastery/#quizzes" data-view="quizzes" aria-current="false">Quizzes</a>
+      <a href="/courses/ai-mastery/#about" data-view="about" aria-current="false">About</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="view" id="v-day">
+    <div class="two-col left">
+      <aside class="panel lesson-nav sticky">
+        <div class="top">
+          <p class="ln-title"><a href="/courses/ai-mastery/">AI Mastery</a></p>
+          <div class="progress" data-course-progress><div class="track"><i></i></div><span>0%</span></div>
+        </div>
+        <div class="jump"><label for="jump" class="muted" style="font-size:.85rem;font-weight:700">Jump to a lesson</label><select id="jump"></select></div>
+        <nav class="list" id="lesson-list" aria-label="Lessons"><p class="mtitle">Foundations</p><a href="/courses/ai-mastery/day-1/" aria-current="false"><span class="ck"></span><span>Day 1: What AI actually is, in plain English</span></a><a href="/courses/ai-mastery/day-2/" aria-current="false"><span class="ck"></span><span>Day 2: The AI tool landscape, and how to choose</span></a><a href="/courses/ai-mastery/day-3/" aria-current="false"><span class="ck"></span><span>Day 3: Using AI safely, privately and honestly</span></a><p class="mtitle">Prompting</p><a href="/courses/ai-mastery/day-4/" aria-current="false"><span class="ck"></span><span>Day 4: The anatomy of a great prompt</span></a><a href="/courses/ai-mastery/day-5/" aria-current="false"><span class="ck"></span><span>Day 5: Advanced prompting: examples, reasoning and iteration</span></a><a href="/courses/ai-mastery/day-6/" aria-current="false"><span class="ck"></span><span>Day 6: Build your personal prompt library</span></a><p class="mtitle">AI assistants in depth</p><a href="/courses/ai-mastery/day-7/" aria-current="false"><span class="ck"></span><span>Day 7: Claude in depth</span></a><a href="/courses/ai-mastery/day-8/" aria-current="true"><span class="ck"></span><span>Day 8: ChatGPT in depth, plus Gemini and Perplexity</span></a><a href="/courses/ai-mastery/day-9/" aria-current="false"><span class="ck"></span><span>Day 9: Research, writing and data workflows</span></a><p class="mtitle">Images, voice &amp; video</p><a href="/courses/ai-mastery/day-10/" aria-current="false"><span class="ck"></span><span>Day 10: AI images that look intentional</span></a><a href="/courses/ai-mastery/day-11/" aria-current="false"><span class="ck"></span><span>Day 11: Voice with ElevenLabs</span></a><a href="/courses/ai-mastery/day-12/" aria-current="false"><span class="ck"></span><span>Day 12: AI video: the landscape and image-to-video</span></a><a href="/courses/ai-mastery/day-13/" aria-current="false"><span class="ck"></span><span>Day 13: Make a complete 30-second AI video</span></a><a href="/courses/ai-mastery/day-14/" aria-current="false"><span class="ck"></span><span>Day 14: Avatars, AI UGC and the rules</span></a><a href="/courses/ai-mastery/day-15/" aria-current="false"><span class="ck"></span><span>Day 15: Runway: generate, edit and perform AI video</span></a><a href="/courses/ai-mastery/day-16/" aria-current="false"><span class="ck"></span><span>Day 16: HeyGen: presenter videos, translation and your digital twin</span></a><p class="mtitle">Build software with AI</p><a href="/courses/ai-mastery/day-17/" aria-current="false"><span class="ck"></span><span>Day 17: How web apps work (no code yet)</span></a><a href="/courses/ai-mastery/day-18/" aria-current="false"><span class="ck"></span><span>Day 18: Building apps with AI app builders</span></a><a href="/courses/ai-mastery/day-19/" aria-current="false"><span class="ck"></span><span>Day 19: Claude Code and AI coding agents</span></a><a href="/courses/ai-mastery/day-20/" aria-current="false"><span class="ck"></span><span>Day 20: Cursor: a full tour of the AI code editor</span></a><a href="/courses/ai-mastery/day-21/" aria-current="false"><span class="ck"></span><span>Day 21: Project: build and deploy a full-stack app</span></a><a href="/courses/ai-mastery/day-22/" aria-current="false"><span class="ck"></span><span>Day 22: MCP: connect AI to your tools, and build your own server</span></a><p class="mtitle">Automation &amp; earning</p><a href="/courses/ai-mastery/day-23/" aria-current="false"><span class="ck"></span><span>Day 23: Automations and AI agents</span></a><a href="/courses/ai-mastery/day-24/" aria-current="false"><span class="ck"></span><span>Day 24: Turn AI skills into income</span></a></nav>
+      </aside>
+      <article class="panel panel-pad" id="lesson-locked"><div class="lesson-top"><div><p class="crumb">AI assistants in depth · Day 8 of 24</p><h1>ChatGPT in depth, plus Gemini and Perplexity</h1></div><span class="pill lock-pill">Members</span></div>
+<div class="meta-chips"><span class="mchip">3.5 hours</span></div>
+<p class="goal">Use ChatGPT&#x27;s main features and know when Gemini or Perplexity is the better tool.</p>
+<div class="time-key"><span>Lesson 20 min</span><span>Example 15 min</span><span>Tasks 175 min</span><span>≈ 3.5 h total</span></div>
+<section class="part"><h2 class="part-h"><span class="pi">1</span>Lesson</h2><div class="prose teaser"><p><strong>ChatGPT</strong> from OpenAI is the most widely used AI assistant. Its strengths include a broad set of built-in tools: image generation, voice conversation, data analysis and custom assistants.</p><p><strong>Models and reasoning.</strong> ChatGPT offers fast models for everyday questions and reasoning models for harder problems. The model picker and automatic routing change often, so check what's current. Use the reasoning options for maths, planning and complex analysis.</p><p><strong>Projects.</strong> Like Claude's projects: folders with instructions and files shared across chats.</p><p><strong>Custom GPTs.</strong> Build a mini-assistant with fixed instructions, knowledge files and optional tools, then reuse it or share it. Good for repeated jobs like "Product Description Writer" or "Recipe Converter".</p></div></section>
+<div class="lock-card">
+  <span class="lock-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+  <h2>Keep going with a membership</h2>
+  <p>Day 8 of AI Mastery is for members. Join to read the full lesson and do the tasks, with every other course, the Recipe Vault, website templates and Viral Prompts included.</p>
+  <div class="lock-actions"><a class="btn color lg" href="/join/"><span>Join from <span data-price="monthly">$9</span>/month</span></a><a class="btn light lg" href="/login/?next=/courses/ai-mastery/day-8/">Log in</a></div>
+  <p class="lock-free">Day 1 of every course is free. <a class="link" href="/courses/ai-mastery/day-1/">Start Day 1 →</a></p>
+</div>
+<section class="part"><h2 class="part-h"><span class="pi">✓</span>What's in this lesson</h2><ul class="inside-list"><li><b>Lesson</b> · 20 min: Key features, Gemini, Perplexity, Using two assistants together</li><li><b>Worked example</b> · 15 min</li><li><b>5 timed tasks</b> · 175 min, with a checklist that saves your progress</li><li><b>By tonight you'll have</b> · a finished result to show for the day</li></ul></section></article>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Class a Day</span>
+    <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/join/">Pricing</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="/refunds/">Refunds</a></nav>
+  </div>
+</footer>
+<script>window.SA_META = {"dropshipping": {"title": "Dropshipping", "href": "/courses/dropshipping/", "days": 30, "modules": [[1, 2, 3, 4], [5, 6, 7, 8, 9], [10, 11, 12], [13, 14, 15, 16, 17, 18], [19, 20, 21, 22, 23, 24, 25], [26, 27, 28, 29, 30]]}, "ai-mastery": {"title": "AI Mastery", "href": "/courses/ai-mastery/", "days": 24, "modules": [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12, 13, 14, 15, 16], [17, 18, 19, 20, 21, 22], [23, 24]]}, "digital-marketing": {"title": "Digital Marketing Agency", "href": "/courses/digital-marketing/", "days": 30, "modules": [[1, 2, 3, 4], [5, 6, 7, 8, 9, 10, 11], [12, 13, 14], [15, 16, 17, 18, 19, 20, 21], [22, 23, 24, 25, 26], [27, 28, 29, 30]]}, "website-builders": {"title": "Website Builders", "href": "/courses/website-builders/", "days": 7, "modules": [[1, 2, 3, 4], [5, 6, 7]]}}; window.SA_PROMPTS = {"count": 29, "dates": ["2026-10-22T00:40:00Z", "2026-10-22T00:40:00Z", "2026-10-21T18:39:00Z", "2026-10-21T18:39:00Z", "2026-10-21T12:40:00Z", "2026-10-21T06:38:00Z", "2026-10-21T00:38:00Z", "2026-10-21T00:38:00Z", "2026-10-20T18:40:00Z", "2026-10-20T18:40:00Z", "2026-10-20T12:39:00Z", "2026-10-20T06:38:00Z", "2026-10-20T06:38:00Z", "2026-10-19T18:39:00Z", "2026-10-19T18:39:00Z", "2026-10-19T00:38:00Z", "2026-10-18T18:37:00Z", "2026-10-18T12:37:00Z", "2026-10-18T12:37:00Z", "2026-10-18T12:37:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z", "2026-10-18T07:30:00Z"]}; window.SA_CONFIG = {"supabaseUrl": "https://mxezkygvkvekhirheblb.supabase.co", "supabaseKey": "sb_publishable_yGeteIMzk6eXJCcrcEYRXw_JuRRBXyq", "accounts": true, "live": true, "freeDays": [1], "currency": "CAD", "supportEmail": "support@classaday.com", "supabaseJs": "/assets/js/vendor/supabase.js?v=d09cb3fa"};</script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/auth.js?v=ef57dcbf"></script>
+<script>document.querySelectorAll("[data-year]").forEach(function (e) { e.textContent = new Date().getFullYear(); });</script>
+
+<script src="/assets/js/engage.js"></script>
+<script>window.SA_DAY = 8; window.SA_LOCKED = true;</script>
+<script src="/courses/ai-mastery/course-data.js?v=15ef2767"></script>
+<script src="/assets/js/quiz.js?v=85fef7ae"></script>
+<script src="/assets/js/tools.js?v=c32cfccb"></script>
+<script src="/assets/js/course.js?v=552b42e4"></script>
+</body>
+</html>
