@@ -1,0 +1,36 @@
+{
+ "slug": "saved-brand-style-visuals",
+ "title": "On-brand posts from your saved brand style",
+ "published": "2026-10-22T00:40:00Z",
+ "kind": "image",
+ "tools": ["Gemini", "ChatGPT"],
+ "summary": "Save your colours, fonts and logo once, then ask AI for a week of matching posts: Halloween, fall sale and behind-the-scenes.",
+ "why": "On October 20, 2026, Google announced a small business hub in the Gemini app. One part lets you save your brand style (website, colours, fonts) once so its image model reuses it for on-brand visuals. Google says it is rolling out to Gemini app users worldwide in the coming days.",
+ "steps": [
+  "Gather your brand basics: your logo, two or three colours (hex codes if you have them), your fonts and your website link.",
+  "In Gemini, look for the business area and save your brand style there. If you don't see it yet, upload your logo and a screenshot of your website at the start of the chat instead.",
+  "Use the main prompt for one post, then the series prompt for a full week.",
+  "Check every image: spelling, prices, dates and your logo. Fix one thing at a time."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my saved brand style: my colours, fonts and logo. Make a square Instagram post for my business, [what you sell]. Theme: a cozy fall weekend. Show [one real product or service] on a wooden table with a few maple leaves and a warm drink nearby. Soft afternoon window light. Put a short headline at the top in my brand font: \"[your headline]\". Place my logo small in the bottom corner. Lots of clean space. Do not change my logo or invent new colours."
+  },
+  {
+   "label": "Variation: one week of posts",
+   "text": "Use my saved brand style. Plan and make five square posts for next week for my business, [what you sell]. 1) A cheerful Halloween post with a pumpkin and my product, no scary faces. 2) A behind-the-scenes shot of hands at work. 3) A simple quote card in my brand colours with this line: \"[your line]\". 4) A product close-up on a plain background in one of my colours. 5) A thank-you post for my customers. Keep the same fonts, colours and logo placement on all five so they look like a set."
+  },
+  {
+   "label": "Variation: no saved style yet",
+   "text": "Here is my logo and a screenshot of my website. Pick out my main colours and the feel of my fonts, and list them back to me first. Then make a square post for my business, [what you sell], announcing [your real news or offer]. Use only those colours, keep my logo exactly as it is, and use plenty of clean space. Short headline, no more than six words."
+  }
+ ],
+ "tips": [
+  "Only announce real offers and real prices. Never make up reviews, star ratings or customer numbers.",
+  "Ask for a set of five at once. Matching posts make your feed look planned.",
+  "AI can still bend logos and misspell words. Zoom in before you post.",
+  "Keep your brand colours to two or three. Too many makes every post look busy."
+ ],
+ "tags": ["business", "branding", "gemini", "instagram"]
+}

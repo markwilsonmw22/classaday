@@ -1,0 +1,36 @@
+{
+ "slug": "my-ride-is-here-broom",
+ "title": "My ride is here: the flying broom",
+ "published": "2026-10-22T00:40:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway"],
+ "summary": "Turn one photo of yourself into a short clip where you cruise past traffic on a witch's broom. Caption it \"my ride is here\".",
+ "why": "AI video site videosi's trend list, updated October 21, 2026, added \"Flying Broom AI\" on October 18: a clip of you riding a witch's broom beside traffic, also called \"my ride is here\".",
+ "steps": [
+  "Pick a clear, full-body or waist-up photo of yourself, facing the camera, with good light.",
+  "Upload it to an image-to-video tool and paste the main prompt. Ask for 5 to 8 seconds, vertical 9:16.",
+  "If the broom looks odd or your face changes, try again with a simpler background photo.",
+  "Post it with the caption \"my ride is here\" and a short spooky sound."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Animate the person in my photo. They sit side-saddle on an old wooden broom with a bristly straw end, floating about two metres above a busy city street at dusk. Cars with glowing headlights move below. The person glides smoothly past the camera, turns to look into the lens, gives a small confident wave, then speeds off ahead. Their hair and clothes blow in the wind. Keep their face, hairstyle and outfit exactly as in the photo. Handheld phone camera feel, as if a friend filmed it from the sidewalk. Natural, realistic lighting. Vertical 9:16, 6 seconds."
+  },
+  {
+   "label": "Variation: costume version",
+   "text": "Animate the person in my photo dressed in a long black cloak and a tall pointed hat, keeping their face exactly the same. They ride an old wooden broom low over a quiet suburban street lined with carved pumpkins and orange porch lights. A full moon hangs behind them. They swoop past the camera, laugh, and loop once around a street lamp. Smooth, steady camera move. Vertical 9:16, 6 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Animate the person in my photo riding an old wooden broom through a main street at dusk. A small paper bag with handles hangs from the end of the broom, and a little banner flutters behind it that reads \"[your shop name] delivers\". They float up to a front door, hand over the bag with a wink, and fly off. Keep their face and clothes exactly as in the photo. Warm street lights, realistic look. Vertical 9:16, 8 seconds."
+  }
+ ],
+ "tips": [
+  "Photos with plain backgrounds animate more cleanly than busy ones.",
+  "Only use your own photo, or a friend's who has said yes.",
+  "Keep the broom ride playful. Skip fake crash or near-miss shots with real traffic.",
+  "If text on the banner comes out wrong, leave it out and add your shop name as an on-screen caption instead."
+ ],
+ "tags": ["halloween", "video", "witch", "business"]
+}
