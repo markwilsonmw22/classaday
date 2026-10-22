@@ -1,6 +1,6 @@
 # Class a Day — notes for Claude
 
-Static site for classaday.com (renamed from SchoolAura in October 2026: the GitHub repo is now `markwilsonmw22/classaday` and the Supabase project is named `classaday` (its address, mxezkygvkvekhirheblb.supabase.co, never changes); the Vercel project is still called `schoolaura`. Internal names keep the old `sa` prefix on purpose: `sa.*` localStorage keys, the `sa_m` cookie and `SA_*` globals; renaming them would wipe visitors' progress). No local dev environment: changes are made by Claude, pushed to GitHub, and Vercel deploys `public/` automatically.
+Static site for classaday.com (renamed from SchoolAura in October 2026: the GitHub repo is now `markwilsonmw22/classaday` and the Supabase project is named `classaday` (its address, mxezkygvkvekhirheblb.supabase.co, never changes); the Vercel project is named `classaday` too. Internal names keep the old `sa` prefix on purpose: `sa.*` localStorage keys, the `sa_m` cookie and `SA_*` globals; renaming them would wipe visitors' progress). No local dev environment: changes are made by Claude, pushed to GitHub, and Vercel deploys `public/` automatically.
 
 ## Rules
 - Edit sources, not generated HTML: courses in `content/*.md`, pages in `content/pages/*.html`, books in `vault-src/*.md`, templates in `templates-src/*/index.html`. Then run the matching script in `build/` and commit `public/` too.

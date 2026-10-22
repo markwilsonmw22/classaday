@@ -2,7 +2,7 @@
 
 The website for **classaday.com**: self-paced courses with day-by-day plans and a progress calendar, a downloadable Recipe Vault, and a website template pack.
 
-Formerly SchoolAura. The repo is `markwilsonmw22/classaday` and the Supabase project is named `classaday` (address unchanged: mxezkygvkvekhirheblb.supabase.co); the Vercel project is still called `schoolaura`. Internal keys keep the `sa` prefix (`sa.*` in localStorage, the `sa_m` cookie), so visitors' saved progress carries over.
+Formerly SchoolAura. The repo is `markwilsonmw22/classaday` and the Supabase project is named `classaday` (address unchanged: mxezkygvkvekhirheblb.supabase.co); the Vercel project is named `classaday` too. Internal keys keep the `sa` prefix (`sa.*` in localStorage, the `sa_m` cookie), so visitors' saved progress carries over.
 
 ## What's on the site
 
