@@ -70,7 +70,7 @@ test("gate: lessons, prompts and downloads", () => {
 
 test("middleware: does nothing while membership is not live", async () => {
   CONFIG.live = false;
-  const r = await middleware(new Request("https://schoolaura.test/courses/ai-mastery/day-5/"));
+  const r = await middleware(new Request("https://classaday.test/courses/ai-mastery/day-5/"));
   assert.equal(r.headers.get("x-middleware-next"), "1");
 });
 
@@ -79,26 +79,26 @@ test("middleware: previews for visitors, full pages for members", async () => {
   CONFIG.gate = { freeDays: [1], freePrompts: ["newest-pack"] };
   process.env.MEMBER_COOKIE_SECRET = SECRET;
   try {
-    const visitor = await middleware(new Request("https://schoolaura.test/courses/ai-mastery/day-5/"));
-    assert.equal(visitor.headers.get("x-middleware-rewrite"), "https://schoolaura.test/courses/ai-mastery/day-5/preview/");
+    const visitor = await middleware(new Request("https://classaday.test/courses/ai-mastery/day-5/"));
+    assert.equal(visitor.headers.get("x-middleware-rewrite"), "https://classaday.test/courses/ai-mastery/day-5/preview/");
 
-    const free = await middleware(new Request("https://schoolaura.test/courses/ai-mastery/day-1/"));
+    const free = await middleware(new Request("https://classaday.test/courses/ai-mastery/day-1/"));
     assert.equal(free.headers.get("x-middleware-next"), "1");
 
     const tok = await sign({ uid: "u1", plan: "monthly", exp: now() + 600 }, SECRET);
-    const member = await middleware(new Request("https://schoolaura.test/courses/ai-mastery/day-5/", { headers: { cookie: `sa_m=${tok}` } }));
+    const member = await middleware(new Request("https://classaday.test/courses/ai-mastery/day-5/", { headers: { cookie: `sa_m=${tok}` } }));
     assert.equal(member.headers.get("x-middleware-next"), "1");
 
-    const bad = await middleware(new Request("https://schoolaura.test/courses/ai-mastery/day-5/", { headers: { cookie: `sa_m=${tok}x` } }));
+    const bad = await middleware(new Request("https://classaday.test/courses/ai-mastery/day-5/", { headers: { cookie: `sa_m=${tok}x` } }));
     assert.ok(bad.headers.get("x-middleware-rewrite"));
 
-    const dl = await middleware(new Request("https://schoolaura.test/downloads/templates/ember.zip"));
+    const dl = await middleware(new Request("https://classaday.test/downloads/templates/ember.zip"));
     assert.equal(dl.status, 302);
-    assert.equal(dl.headers.get("location"), "https://schoolaura.test/join/?locked=download");
+    assert.equal(dl.headers.get("location"), "https://classaday.test/join/?locked=download");
 
-    const hub = await middleware(new Request("https://schoolaura.test/prompts/"));
-    assert.equal(hub.headers.get("x-middleware-rewrite"), "https://schoolaura.test/prompts/preview/");
-    const hubMember = await middleware(new Request("https://schoolaura.test/prompts/", { headers: { cookie: `sa_m=${tok}` } }));
+    const hub = await middleware(new Request("https://classaday.test/prompts/"));
+    assert.equal(hub.headers.get("x-middleware-rewrite"), "https://classaday.test/prompts/preview/");
+    const hubMember = await middleware(new Request("https://classaday.test/prompts/", { headers: { cookie: `sa_m=${tok}` } }));
     assert.equal(hubMember.headers.get("x-middleware-next"), "1");
 
     assert.ok(await memberFromRequest(new Request("https://x.test/", { headers: { cookie: `sa_m=${tok}` } })));

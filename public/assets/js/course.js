@@ -1,4 +1,4 @@
-/* SchoolAura course engine: classroom (lessons), calendar, quizzes, certificate and progress.
+/* Class a Day course engine: classroom (lessons), calendar, quizzes, certificate and progress.
    Progress lives in this browser (localStorage) until accounts arrive with membership. */
 (function () {
   var C = window.COURSE;
@@ -238,7 +238,7 @@
       '<div style="display:flex;gap:8px;flex-wrap:wrap">' + doneToggle(n) + (next ? '<a class="btn" href="' + dayHref(next.n) + '">Next lesson →</a>' : QZ ? '<a class="btn" href="' + homeHref("quizzes") + '">Final exam →</a>' : '<a class="btn" href="' + homeHref("plan") + '">Back to calendar</a>') + "</div></div>";
     renderNav(n);
     if (window.SATools) SATools.mount($("#lesson"));
-    document.title = d.title + " · " + C.title + " Day " + n + " · SchoolAura";
+    document.title = d.title + " · " + C.title + " Day " + n + " · Class a Day";
     var abs = dayHref(n); try { abs = new URL(abs, location.href).href; } catch (e) {}
     engage("setLast", { slug: C.slug, title: C.title, day: n, dayTitle: d.title, href: abs });
   }
@@ -280,7 +280,7 @@
     var m = isFinal ? null : C.modules.filter(function (x) { return x.n === mn; })[0];
     var qs = isFinal ? SAQuiz.shuffle(allQuestions()).slice(0, Math.min(FINAL.count, allQuestions().length)) : modQs(mn);
     var nextMod = isFinal ? null : C.modules.filter(function (x) { return x.n === mn + 1; })[0];
-    document.title = (isFinal ? "Final exam" : "Module " + mn + " quiz") + " · " + C.title + " · SchoolAura";
+    document.title = (isFinal ? "Final exam" : "Module " + mn + " quiz") + " · " + C.title + " · Class a Day";
     SAQuiz.run(root, {
       title: isFinal ? C.title + " final exam" : "Module " + mn + ": " + m.title,
       questions: qs, pass: isFinal ? FINAL.pass : 80, shuffleQuestions: !isFinal,
@@ -342,7 +342,7 @@
       var bx = 120, by = 150, cols = ["#e2702a", "#3462e0", "#2b8a57", "#d24660"];
       cols.forEach(function (c, i) { x.beginPath(); x.moveTo(bx, by); x.arc(bx, by, 22, -Math.PI / 2 + i * Math.PI / 2, -Math.PI / 2 + (i + 1) * Math.PI / 2); x.closePath(); x.fillStyle = c; x.fill(); });
       x.beginPath(); x.arc(bx, by, 11, 0, Math.PI * 2); x.fillStyle = "#fffdf9"; x.fill();
-      x.fillStyle = "#1d1e20"; x.font = "800 36px Figtree, system-ui, sans-serif"; x.textAlign = "left"; x.textBaseline = "middle"; x.fillText("schoolaura", bx + 36, by + 1);
+      x.fillStyle = "#1d1e20"; x.font = "800 36px Figtree, system-ui, sans-serif"; x.textAlign = "left"; x.textBaseline = "middle"; var wx = bx + 36; [["class", "#1d1e20"], ["a", "#9b9da2"], ["day", "#1d1e20"]].forEach(function (p) { x.fillStyle = p[1]; x.fillText(p[0], wx, by + 1); wx += x.measureText(p[0]).width; });
       x.textAlign = "right"; x.fillStyle = "#6c6e73"; x.font = "700 24px Figtree, system-ui, sans-serif"; x.fillText(C.code, W - 120, by + 1);
       // body
       x.textAlign = "center"; x.textBaseline = "alphabetic";
@@ -368,16 +368,16 @@
       x.beginPath(); x.arc(cx, fy - 30, 62, 0, Math.PI * 2); x.strokeStyle = "rgba(255,255,255,.7)"; x.lineWidth = 2; x.stroke();
       x.fillStyle = "#fff"; x.textAlign = "center"; x.font = "800 40px Figtree, system-ui, sans-serif"; x.fillText("✓", cx, fy - 30);
       x.font = "800 15px Figtree, system-ui, sans-serif"; x.fillText("COMPLETED", cx, fy + 2);
-      x.fillStyle = "#9b9da2"; x.font = "600 20px Figtree, system-ui, sans-serif"; x.fillText("schoolaura.com", cx, H - 82);
+      x.fillStyle = "#9b9da2"; x.font = "600 20px Figtree, system-ui, sans-serif"; x.fillText("classaday.com", cx, H - 82);
       updateShare(name);
     };
     if (document.fonts && document.fonts.load) document.fonts.load("800 40px Figtree").then(go, go); else go();
   }
   function updateShare(name) {
     var li = $("#cert-li"), xs = $("#cert-x"); if (!li) return;
-    var d = S.certDate ? parse(S.certDate) : today(), url = "https://schoolaura.com/courses/" + C.slug + "/";
-    li.href = "https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=" + encodeURIComponent(C.title) + "&organizationName=SchoolAura&issueYear=" + d.getFullYear() + "&issueMonth=" + (d.getMonth() + 1) + "&certUrl=" + encodeURIComponent(url) + "&certId=" + encodeURIComponent(certId(name));
-    xs.href = "https://x.com/intent/tweet?text=" + encodeURIComponent("I just finished " + C.title + " on SchoolAura: " + C.days.length + " lessons, about " + C.hours + " hours, and the final exam. ") + "&url=" + encodeURIComponent(url);
+    var d = S.certDate ? parse(S.certDate) : today(), url = "https://classaday.com/courses/" + C.slug + "/";
+    li.href = "https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=" + encodeURIComponent(C.title) + "&organizationName=Class a Day&issueYear=" + d.getFullYear() + "&issueMonth=" + (d.getMonth() + 1) + "&certUrl=" + encodeURIComponent(url) + "&certId=" + encodeURIComponent(certId(name));
+    xs.href = "https://x.com/intent/tweet?text=" + encodeURIComponent("I just finished " + C.title + " on Class a Day: " + C.days.length + " lessons, about " + C.hours + " hours, and the final exam. ") + "&url=" + encodeURIComponent(url);
   }
 
   /* ---------- calendar ---------- */
@@ -526,7 +526,7 @@
       var cv = $("#cert-canvas"), nm = ($("#cert-name") || {}).value || "";
       if (!nm.trim()) { SA.toast("Add your name first."); var ni = $("#cert-name"); if (ni) ni.focus(); return; }
       var a = document.createElement("a");
-      a.download = "schoolaura-certificate-" + C.slug + ".png";
+      a.download = "classaday-certificate-" + C.slug + ".png";
       a.href = cv.toDataURL("image/png");
       document.body.appendChild(a); a.click(); a.remove();
       SA.toast("Certificate downloaded.");

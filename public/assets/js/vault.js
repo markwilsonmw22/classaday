@@ -1,6 +1,6 @@
 /* Recipe Vault: pick books and download them */
 (function () {
-  var base = "/downloads/recipe-vault/schoolaura-";
+  var base = "/downloads/recipe-vault/classaday-";
   var boxes = Array.prototype.slice.call(document.querySelectorAll(".pick input"));
   var label = document.getElementById("vault-count");
   var btn = document.getElementById("vault-dl");

@@ -1,6 +1,8 @@
-# SchoolAura
+# Class a Day
 
-The website for **schoolaura.com**: self-paced courses with day-by-day plans and a progress calendar, a downloadable Recipe Vault, and a website template pack.
+The website for **classaday.com**: self-paced courses with day-by-day plans and a progress calendar, a downloadable Recipe Vault, and a website template pack.
+
+Formerly SchoolAura. The GitHub repo, Vercel project and Supabase project keep the old `schoolaura` name, and internal keys keep the `sa` prefix (`sa.*` in localStorage, the `sa_m` cookie), so visitors' saved progress carries over.
 
 ## What's on the site
 
@@ -26,7 +28,7 @@ Two switches in `MEMBERSHIP` at the top of `build/build.py` control it. Both are
 - **`accounts`**: shows "Log in" / "Account" in the header and builds `/login/` and `/account/`. Login is by email link or 6-digit code (Supabase Auth), plus Google if it's enabled in Supabase. Logged-in visitors' progress (`sa.course.*`, `sa.engage`, `sa.prompts`, `sa.name`) syncs to the `progress` table with a three-way merge, so two devices combine instead of overwriting.
 - **`live`**: locks members-only content and sells the membership through Stripe Checkout. Free for everyone: Day 1 of every course (`free_days`) and the 3 newest Viral Prompts packs (`free_prompts`). Everything else, plus quizzes and the downloads, needs a membership. While `live` is off the site is in early access: everything is free and the buttons say "Start free now".
 
-Prices are in `PRICING` (CAD, before tax): full price $9/month or $19 once; visitors from the countries listed in `lib/pricing.js` see and pay `half` ($5 / $10). The Stripe product and prices are created automatically on the first checkout (lookup keys like `schoolaura_monthly_full_cad_900`), so changing a price here makes a new Stripe price; existing subscribers stay on theirs.
+Prices are in `PRICING` (CAD, before tax): full price $9/month or $19 once; visitors from the countries listed in `lib/pricing.js` see and pay `half` ($5 / $10). The Stripe product and prices are created automatically on the first checkout (lookup keys like `classaday_monthly_full_cad_900`), so changing a price here makes a new Stripe price; existing subscribers stay on theirs.
 
 How it fits together:
 
@@ -53,7 +55,7 @@ Environment variables (Vercel → Project → Settings → Environment Variables
 | Name | What it is |
 | --- | --- |
 | `STRIPE_SECRET_KEY` | Stripe secret key (`sk_live_...`, or `sk_test_...` on Preview) |
-| `STRIPE_WEBHOOK_SECRET` | Signing secret of the webhook endpoint `https://schoolaura.com/api/stripe-webhook/` (keep the trailing slash) |
+| `STRIPE_WEBHOOK_SECRET` | Signing secret of the webhook endpoint `https://classaday.com/api/stripe-webhook/` (keep the trailing slash) |
 | `SUPABASE_SECRET_KEY` | Supabase secret key (`sb_secret_...`), used only by the webhook. The member cookie is signed with a key derived from it unless `MEMBER_COOKIE_SECRET` is set |
 | `STRIPE_AUTOMATIC_TAX` | `true` once Stripe Tax is set up (origin address and registrations), so tax is added at checkout |
 | optional | `MEMBER_COOKIE_SECRET` (32+ characters), `SITE_URL`, `PRICE_CURRENCY`, `STRIPE_TAX_CODE` (default `txcd_20060358`, online courses with written material), `STRIPE_PRICE_<MONTHLY/LIFETIME>_<FULL/HALF>` to use your own price IDs |
@@ -109,6 +111,7 @@ python3 build/vault.py          # Recipe Vault PDFs (only if vault-src changes)
 python3 -m http.server 8765 --directory public &   # needed for template screenshots
 python3 build/templates.py      # template previews, screenshots and ZIPs (only if templates-src changes)
 python3 build/covers.py         # card cover images (only if covers, figures or templates change)
+python3 build/og.py             # default share image (after covers.py, or if the brand changes)
 python3 build/build.py          # all HTML pages: run after any content change
 ```
 
@@ -116,6 +119,6 @@ Task times in lessons are written as `(45 min)` at the end of each task line. Th
 
 ## Before switching on
 
-1. **Domain:** add `schoolaura.com` in Vercel → Project → Domains and set the DNS records Vercel shows. Set up the `support@schoolaura.com` mailbox (or forwarding) used on the legal pages.
-2. **Supabase:** Auth → URL Configuration: Site URL `https://schoolaura.com`, redirect URLs `https://schoolaura.com/**` and `https://*-markwilsonmw22s-projects.vercel.app/**`. Auth → SMTP: connect an email sender (the built-in one only sends to your own team). Auth → Email Templates → Magic Link: include both `{{ .ConfirmationURL }}` and `{{ .Token }}` so people can click or type the code. Optional: Auth → Providers → Google. Then set `accounts` to True and rebuild.
+1. **Domain:** add `classaday.com` in Vercel → Project → Domains and set the DNS records Vercel shows. Set up the `support@classaday.com` mailbox (or forwarding) used on the legal pages.
+2. **Supabase:** Auth → URL Configuration: Site URL `https://classaday.com`, redirect URLs `https://classaday.com/**` and `https://*-markwilsonmw22s-projects.vercel.app/**`. Auth → SMTP: connect an email sender (the built-in one only sends to your own team). Auth → Email Templates → Magic Link: include both `{{ .ConfirmationURL }}` and `{{ .Token }}` so people can click or type the code. Optional: Auth → Providers → Google. Then set `accounts` to True and rebuild.
 3. **Stripe:** add the environment variables above, create the webhook endpoint for `checkout.session.completed`, `checkout.session.async_payment_succeeded`, `customer.subscription.created/updated/deleted/paused/resumed` and `charge.refunded`, turn on the customer portal, and set up Stripe Tax. Then set `live` to True and rebuild.

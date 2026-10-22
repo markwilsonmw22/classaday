@@ -1,4 +1,4 @@
-Haven — SchoolAura website template
+Haven — Class a Day website template
 ====================================
 
 WHAT'S INSIDE
@@ -13,7 +13,7 @@ QUICK START (10 minutes)
      Change the colours and fonts there. The whole site updates.
   4. Search the file for the sample business name and replace text section by section.
   5. Drop your photos into images/ using the same file names (or change the src="" paths).
-  6. Open index.html in your browser to check, then publish (see the SchoolAura guide, Day 6).
+  6. Open index.html in your browser to check, then publish (see the Class a Day guide, Day 6).
 
 IMAGES USED BY THIS TEMPLATE
   images/agent.jpg
@@ -27,4 +27,4 @@ TIPS
   - Forms are demo-only. Day 5 of the guide shows how to make them send you emails.
   - Replace sample reviews with real ones from your customers, or remove the section.
 
-Full 7-day guide: https://schoolaura.com/courses/website-builders/
+Full 7-day guide: https://classaday.com/courses/website-builders/

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SchoolAura static site builder.
+"""Class a Day static site builder.
 
 Reads course sources from content/*.md (JSON front matter + day blocks), figures from
 content/figures/*.svg and page fragments from content/pages/*.html, and writes the
@@ -14,7 +14,7 @@ import markdown
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 PUBLIC = ROOT / "public"
-SITE = "https://schoolaura.com"
+SITE = "https://classaday.com"
 COURSE_FILES = ["dropshipping.md", "ai-mastery.md", "digital-marketing.md", "website-builders.md"]
 
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "sane_lists", "attr_list"])
@@ -191,7 +191,7 @@ if os.environ.get("SA_LIVE") in ("0", "1"):
     MEMBERSHIP["live"] = os.environ["SA_LIVE"] == "1"
     MEMBERSHIP["accounts"] = MEMBERSHIP["accounts"] or MEMBERSHIP["live"]
 SUPABASE = {"url": "https://mxezkygvkvekhirheblb.supabase.co", "key": "sb_publishable_yGeteIMzk6eXJCcrcEYRXw_JuRRBXyq"}
-SUPPORT_EMAIL = "support@schoolaura.com"
+SUPPORT_EMAIL = "support@classaday.com"
 assert MEMBERSHIP["accounts"] or not MEMBERSHIP["live"], "live membership needs accounts"
 
 
@@ -218,7 +218,7 @@ SEO_TITLES = {
     "digital-marketing": "Digital Marketing Course: SEO, Social Media, Ads and Your Own Agency",
     "website-builders": "Website Templates Guide: Rebrand, Publish and Sell Websites in 7 Days",
 }
-ORG = {"@type": "Organization", "name": "SchoolAura", "url": SITE + "/"}
+ORG = {"@type": "Organization", "name": "Class a Day", "url": SITE + "/"}
 KIND_LABEL = {"image": "Image", "video": "Video", "text": "Text", "voice": "Voice"}
 
 
@@ -290,7 +290,7 @@ def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonl
 <meta name="description" content="{html.escape(desc)}">
 {'<meta name="robots" content="noindex">' if noindex else f'<link rel="canonical" href="{url}">'}
 <meta property="og:type" content="{og_type}">
-<meta property="og:site_name" content="SchoolAura">
+<meta property="og:site_name" content="Class a Day">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{url}">
@@ -306,7 +306,7 @@ def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonl
 <body data-aura="{aura}">
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="SchoolAura home"><span class="mark" aria-hidden="true"></span>schoolaura</a>
+    <a class="brand" href="/" aria-label="Class a Day home"><span class="mark" aria-hidden="true"></span><span class="wm">class<span>a</span>day</span></a>
     <nav class="nav" id="site-nav" aria-label="Main">
       <a href="/courses/"{cur('/courses/') if path == '/courses/' else ''}>Classroom</a>
       <a href="/courses/dropshipping/"{cur('/courses/dropshipping')}>Dropshipping</a>
@@ -319,7 +319,7 @@ def head(title, desc, path, aura="drop", og_image=None, og_type="website", jsonl
       {'<a class="nav-acct" href="/join/" data-join-link>Join</a>' if live() else ''}
     </nav>
     <div class="head-right">
-      <button class="search-btn" type="button" data-search-open aria-label="Search SchoolAura">{SEARCH_ICON}<span>Search</span><kbd>/</kbd></button>
+      <button class="search-btn" type="button" data-search-open aria-label="Search Class a Day">{SEARCH_ICON}<span>Search</span><kbd>/</kbd></button>
       {'<a class="head-link" href="/login/" data-auth-link>Log in</a>' if accounts() else ''}
       <a class="btn sm start-btn" href="/join/" data-join-link>Join</a>
       <button class="menu-btn" type="button" data-menu aria-controls="site-nav" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -355,7 +355,7 @@ def foot(extra_js="", pre_js=""):
     return f"""</main>
 <footer class="site-foot">
   <div class="wrap">
-    <span>© <span data-year>2026</span> SchoolAura</span>
+    <span>© <span data-year>2026</span> Class a Day</span>
     <nav aria-label="Footer"><a href="/courses/">Classroom</a><a href="/join/">Pricing</a><a href="/prompts/">Viral Prompts</a><a href="/recipe-vault/">Recipe Vault</a><a href="/templates/">Templates</a><a href="/#faq">FAQ</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="/refunds/">Refunds</a></nav>
   </div>
 </footer>
@@ -392,7 +392,7 @@ def course_head(c, title_tag, tabs_current, base_href):
     return f"""
 <div class="course-head">
   <div class="wrap">
-    <span class="icon-sq">{ICON.get(c['aura'], 'SA')}</span>
+    <span class="icon-sq">{ICON.get(c['aura'], 'CD')}</span>
     <div class="ch-text">{title}<p class="sub">{c['code']} · {days_n} lessons · about {fmt_h(H)} hours</p></div>
     <div id="me-chip" class="ch-chip"></div>
   </div>
@@ -545,7 +545,7 @@ def course_page(c, data_src):
                        "url": SITE + "/join/"}] if live() else
                      [{"@type": "Offer", "category": "Free", "price": 0, "priceCurrency": PRICING["currency"]}]},
           crumbs_ld([("Home", "/"), ("Classroom", "/courses/"), (c["title"], base)])]
-    page = head(f"{SEO_TITLES.get(slug, c['title'])} · SchoolAura", c["metaDescription"], base, c["aura"],
+    page = head(f"{SEO_TITLES.get(slug, c['title'])} · Class a Day", c["metaDescription"], base, c["aura"],
                 og_image=f"/assets/img/og/{slug}.jpg", jsonld=ld)
     return page + body + foot(f'<script src="{data_src}"></script>\n<script src="/assets/js/quiz.js"></script>\n<script src="/assets/js/course.js"></script>')
 
@@ -615,7 +615,7 @@ DAY_CONTENT_KEYS = ["lesson", "demo", "tasks", "deliverable", "tip"]
 def lesson_shell(c, d, body, data_src, inline_js):
     slug, n, base = c["slug"], d["n"], f"/courses/{c['slug']}/"
     url = f"{base}day-{n}/"
-    title = f"{d['title']} · {c['title']} Day {n} · SchoolAura"
+    title = f"{d['title']} · {c['title']} Day {n} · Class a Day"
     ld = [{"@type": "LearningResource", "name": d["title"], "description": d["goal"], "url": SITE + url,
            "learningResourceType": "Lesson", "educationalLevel": c["level"], "timeRequired": iso_dur(d["hours"]),
            "inLanguage": "en", "isAccessibleForFree": free_day(n), "publisher": ORG,
@@ -800,7 +800,7 @@ def prompts_hub(packs, locked=False):
            "mainEntity": {"@type": "ItemList", "itemListElement": [
                {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/prompts/{p['slug']}/", "name": p["title"]} for i, p in enumerate(packs)]}},
           crumbs_ld([("Home", "/"), ("Viral Prompts", "/prompts/")])]
-    page = head("Viral AI Prompts: Trending Photo and Video Prompts to Copy · SchoolAura",
+    page = head("Viral AI Prompts: Trending Photo and Video Prompts to Copy · Class a Day",
                 "Copy-ready prompts for the AI photo and video trends people are sharing right now, for ChatGPT, Gemini, Runway, Kling, Veo and more. New packs as trends appear.",
                 "/prompts/", "vp", og_image="/assets/img/og/viral-prompts.jpg", jsonld=ld)
     return page + body + foot(f'<script src="{asset("/assets/js/prompts.js")}"></script>')
@@ -860,7 +860,7 @@ def prompt_page(p, packs, locked=False):
           crumbs_ld([("Home", "/"), ("Viral Prompts", "/prompts/"), (p["title"], url)])]
     if live():
         ld[0]["isAccessibleForFree"] = p["slug"] in free_packs(packs)
-    page = head(f"{p['title']} prompt ({tools}) · Viral Prompts · SchoolAura", p["summary"], url, "vp",
+    page = head(f"{p['title']} prompt ({tools}) · Viral Prompts · Class a Day", p["summary"], url, "vp",
                 og_image="/assets/img/og/viral-prompts.jpg", og_type="article", jsonld=ld)
     return page + body + foot(f'<script src="{asset("/assets/js/prompts.js")}"></script>')
 
@@ -940,7 +940,7 @@ def vault_numbers():
     rep, total = {}, 0
     vdir = PUBLIC / "downloads" / "recipe-vault"
     for slug in ("cake-studio", "keto-kitchen", "know-your-food", "simple-quick", "recipe-vault-complete"):
-        f = vdir / f"schoolaura-{slug}.pdf"
+        f = vdir / f"classaday-{slug}.pdf"
         n = len(PdfReader(f).pages) if f.exists() else 0
         key = "complete" if slug == "recipe-vault-complete" else slug
         rep[f"P_{key}"] = str(n)
@@ -995,9 +995,9 @@ def home_page(courses, tpl_count, vault, packs):
         frag = frag.replace("{{" + k + "}}", v)
     assert "{{" not in frag, re.findall(r"\{\{\w+\}\}", frag)
     ld = [dict(ORG, description="Step-by-step online courses in AI, digital marketing and dropshipping, plus trending AI prompts and recipe books."),
-          {"@type": "WebSite", "name": "SchoolAura", "url": SITE + "/",
+          {"@type": "WebSite", "name": "Class a Day", "url": SITE + "/",
            "potentialAction": {"@type": "SearchAction", "target": SITE + "/?q={search_term_string}", "query-input": "required name=search_term_string"}}]
-    page = head("SchoolAura · Online courses in AI, digital marketing and dropshipping",
+    page = head("Class a Day · Online courses in AI, digital marketing and dropshipping",
                 "Step-by-step online courses in AI (Claude, ChatGPT, Cursor, Runway), digital marketing and dropshipping, plus trending AI prompts, recipe books and website templates. Daily lessons, real tasks and a calendar.",
                 "/", "drop", jsonld=ld)
     return page + frag + foot()
@@ -1068,13 +1068,13 @@ def join_page(courses, packs, tpls, vault):
         frag = frag.replace("{{" + k + "}}", v)
     assert "{{" not in frag, re.findall(r"\{\{\w+\}\}", frag)
     faq = re.findall(r"<details[^>]*><summary>(.*?)</summary><p>(.*?)</p></details>", frag, re.S)
-    ld = [{"@type": "WebPage", "name": "SchoolAura membership and pricing", "url": SITE + "/join/", "publisher": ORG},
+    ld = [{"@type": "WebPage", "name": "Class a Day membership and pricing", "url": SITE + "/join/", "publisher": ORG},
           {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": squash(strip_tags(q)),
                                                "acceptedAnswer": {"@type": "Answer", "text": squash(strip_tags(a))}} for q, a in faq]},
           crumbs_ld([("Home", "/"), ("Pricing", "/join/")])]
     pmo, plife = money(P["monthly"]), money(P["lifetime"])
-    title = f"SchoolAura Membership: Every Course for {pmo} a Month or {plife} for Life"
-    desc = (f"One membership for every SchoolAura course ({lessons} daily lessons in AI, digital marketing and dropshipping), the Recipe Vault, "
+    title = f"Class a Day Membership: Every Course for {pmo} a Month or {plife} for Life"
+    desc = (f"One membership for every Class a Day course ({lessons} daily lessons in AI, digital marketing and dropshipping), the Recipe Vault, "
             f"{len(tpls)} website templates and Viral Prompts. {pmo} a month or {plife} once, with a {days}-day money-back guarantee.")
     return head(title, desc, "/join/", "drop", jsonld=ld) + frag + foot(f'<script src="{asset("/assets/js/join.js")}"></script>' if live() else "")
 
@@ -1099,9 +1099,9 @@ def js_json(v):
 
 
 LEGAL_PAGES = [
-    ("terms", "Terms of Service · SchoolAura", "The rules for using SchoolAura and the SchoolAura membership: accounts, payment, cancelling, refunds and content use."),
-    ("privacy", "Privacy Policy · SchoolAura", "What SchoolAura collects, why, who helps run the service, and your choices. No advertising cookies, no selling your data."),
-    ("refunds", "Refund Policy: 30-Day Money-Back Guarantee · SchoolAura", "How the SchoolAura 30-day money-back guarantee works for monthly and lifetime memberships, and how to ask for a refund."),
+    ("terms", "Terms of Service · Class a Day", "The rules for using Class a Day and the Class a Day membership: accounts, payment, cancelling, refunds and content use."),
+    ("privacy", "Privacy Policy · Class a Day", "What Class a Day collects, why, who helps run the service, and your choices. No advertising cookies, no selling your data."),
+    ("refunds", "Refund Policy: 30-Day Money-Back Guarantee · Class a Day", "How the Class a Day 30-day money-back guarantee works for monthly and lifetime memberships, and how to ask for a refund."),
 ]
 
 
@@ -1119,8 +1119,8 @@ def write_account_pages():
         (PUBLIC / slug).mkdir(exist_ok=True)
         (PUBLIC / slug / "index.html").write_text(page)
         rows.append((f"/{slug}/", updated))
-    pages = {"login": ("Log in · SchoolAura", "Log in to SchoolAura with your email. No password needed."),
-             "account": ("Your account · SchoolAura", "Your SchoolAura membership, billing and saved progress.")}
+    pages = {"login": ("Log in · Class a Day", "Log in to Class a Day with your email. No password needed."),
+             "account": ("Your account · Class a Day", "Your Class a Day membership, billing and saved progress.")}
     for slug, (title, desc) in pages.items():
         d = PUBLIC / slug
         if not accounts():
@@ -1199,14 +1199,14 @@ def main():
 
     (PUBLIC / "index.html").write_text(home_page(courses, len(tpls), vault, packs))
     (PUBLIC / "courses" / "index.html").write_text(simple_page(
-        "classroom.html", "Classroom: All Courses and Your Progress · SchoolAura", "All SchoolAura courses, your progress, streaks and badges, and a question of the day.", "/courses/", "drop",
+        "classroom.html", "Classroom: All Courses and Your Progress · Class a Day", "All Class a Day courses, your progress, streaks and badges, and a question of the day.", "/courses/", "drop",
         replacements={"CARDS": cards_html(courses, len(tpls), vault, packs, with_progress=True),
                       "SAVED_NOTE": "Progress, streaks and badges are saved on this device, and to your account when you log in." if accounts()
                       else "Progress, streaks and badges are saved on this device."},
         pre_js=f"<script>window.SA_DAILY = {js_json(daily_pool(courses))};</script>"))
     (PUBLIC / "recipe-vault").mkdir(exist_ok=True)
     (PUBLIC / "recipe-vault" / "index.html").write_text(simple_page(
-        "vault.html", "The Recipe Vault: Cake, Keto and Meal Plan PDF Recipe Books · SchoolAura",
+        "vault.html", "The Recipe Vault: Cake, Keto and Meal Plan PDF Recipe Books · Class a Day",
         "Four downloadable recipe books: Cake Studio, Keto Kitchen, Know Your Food and the Simple & Quick Food Plan. Instant PDF, grams and cups, °C and °F.",
         "/recipe-vault/", "vault",
         f'<script>window.VAULT_QUIZ = {js_json(json.loads((CONTENT / "quizzes" / "recipe-vault.json").read_text()))};</script>\n'
@@ -1254,7 +1254,7 @@ def main():
 </article>""")
     (PUBLIC / "templates").mkdir(exist_ok=True)
     (PUBLIC / "templates" / "index.html").write_text(simple_page(
-        "templates.html", "Website Templates: 6 Free HTML Templates to Rebrand and Sell · SchoolAura",
+        "templates.html", "Website Templates: 6 Free HTML Templates to Rebrand and Sell · Class a Day",
         f"{len(tpls)} ready-made website templates in one bulk download, plus a 7-day guide to redesign, publish and sell websites.",
         "/templates/", "web", replacements={"TPL_CARDS": "\n".join(cards), "TPL_COUNT": str(len(tpls))},
         og_image="/assets/img/og/website-builders.jpg"))
@@ -1262,7 +1262,7 @@ def main():
     (PUBLIC / "join").mkdir(exist_ok=True)
     (PUBLIC / "join" / "index.html").write_text(join_page(courses, packs, tpls, vault))
     sitemap.append(("/join/", git_date(CONTENT / "pages" / "join.html", ROOT / "build" / "build.py")))
-    (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · SchoolAura", "This page doesn't exist.", "/404", "drop", noindex=True))
+    (PUBLIC / "404.html").write_text(simple_page("404.html", "Page not found · Class a Day", "This page doesn't exist.", "/404", "drop", noindex=True))
     sitemap += write_account_pages()
     write_site_config(packs)
 

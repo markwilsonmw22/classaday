@@ -7,7 +7,7 @@ import {
 } from "../lib/server.js";
 import { countryOf, tierFor, lookupKey } from "../lib/pricing.js";
 
-const PRODUCT_ID = "schoolaura_membership";
+const PRODUCT_ID = "classaday_membership";
 // "On demand Online Courses - written material content (viewable or viewable and downloadable)".
 const TAX_CODE = process.env.STRIPE_TAX_CODE || "txcd_20060358";
 const priceCache = new Map();
@@ -17,8 +17,8 @@ async function ensureProduct() {
   try {
     await stripe("POST", "/products", {
       id: PRODUCT_ID,
-      name: "SchoolAura membership",
-      description: "Every SchoolAura course, the Recipe Vault, website templates and Viral Prompts.",
+      name: "Class a Day membership",
+      description: "Every Class a Day course, the Recipe Vault, website templates and Viral Prompts.",
       tax_code: TAX_CODE,
     });
   } catch (e) { if (e.code !== "resource_already_exists") throw e; }

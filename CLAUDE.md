@@ -1,12 +1,12 @@
-# SchoolAura — notes for Claude
+# Class a Day — notes for Claude
 
-Static site for schoolaura.com. No local dev environment: changes are made by Claude, pushed to GitHub, and Vercel deploys `public/` automatically.
+Static site for classaday.com (renamed from SchoolAura in October 2026: the GitHub repo, Vercel project and Supabase project are still called `schoolaura`, and internal names keep the old `sa` prefix on purpose: `sa.*` localStorage keys, the `sa_m` cookie and `SA_*` globals; renaming them would wipe visitors' progress). No local dev environment: changes are made by Claude, pushed to GitHub, and Vercel deploys `public/` automatically.
 
 ## Rules
 - Edit sources, not generated HTML: courses in `content/*.md`, pages in `content/pages/*.html`, books in `vault-src/*.md`, templates in `templates-src/*/index.html`. Then run the matching script in `build/` and commit `public/` too.
 - Design: light, simple, Skool-style (off-white canvas, white cards, Figtree). Tokens live at the top of `public/assets/css/site.css`, with one colour per course (drop orange, ai blue, mkt purple, vault rose, web green, vp amber for Viral Prompts) used only for covers, icons and progress. Keep new UI on those tokens.
 - Card covers are rendered by `build/covers.py` (needs the local server on :8765). Fonts are self-hosted in `public/assets/fonts`.
-- Never show the owner's personal details (name, address, email, phone, other businesses) anywhere on the site or in downloads. The brand is SchoolAura.
+- Never show the owner's personal details (name, address, email, phone, other businesses) anywhere on the site or in downloads. The brand is Class a Day.
 - Never invent reviews, testimonials, student numbers or results. Sample reviews exist only inside templates and are labelled as samples.
 - Course content: plain English, short sentences, Canadian context where relevant, task lines end with `(N min)`.
 - Progress is in `localStorage` under `sa.course.<slug>` (`done`, `tasks`, `quiz`, `notes`, `feel`, `certDate`); streaks, badges and the daily question are in `sa.engage`, the certificate name in `sa.name`. Logged-in users' copies sync to Supabase (`auth.js`); new progress keys must start with `sa.course.` or be added to `SYNC_RE` there.

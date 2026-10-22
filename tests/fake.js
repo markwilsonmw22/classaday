@@ -7,7 +7,7 @@ export const ENV = {
   STRIPE_API_BASE: "https://stripe.test",
   STRIPE_WEBHOOK_SECRET: "whsec_test",
   MEMBER_COOKIE_SECRET: "test-cookie-secret-that-is-long-enough-123",
-  SITE_URL: "https://schoolaura.test",
+  SITE_URL: "https://classaday.test",
 };
 
 export function setEnv(extra = {}) {

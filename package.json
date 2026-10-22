@@ -1,8 +1,8 @@
 {
-  "name": "schoolaura",
+  "name": "classaday",
   "private": true,
   "type": "module",
-  "description": "schoolaura.com: static site in public/, members API in api/, members-only gating in middleware.js",
+  "description": "classaday.com: static site in public/, members API in api/, members-only gating in middleware.js",
   "scripts": {
     "test": "node --test tests/*.test.js"
   },

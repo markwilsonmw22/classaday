@@ -1,4 +1,4 @@
-/* SchoolAura — light, simple community-style design.
+/* Class a Day — light, simple community-style design.
    Layout: a calm off-white canvas, white cards with soft borders, one readable sans,
    and a colour per course used only for covers, icons and progress. */
 :root {
@@ -68,6 +68,7 @@ p { margin: 0; }
 .site-head .wrap { display: flex; align-items: center; gap: 28px; height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; font-weight: 800; font-size: 1.28rem; letter-spacing: -0.03em; color: var(--ink); }
 .brand .mark { width: 22px; height: 22px; border-radius: 50%; background: conic-gradient(var(--c-drop) 0 25%, var(--c-ai) 0 50%, var(--c-web) 0 75%, var(--c-vault) 0); position: relative; flex: none; }
+.brand .wm span { color: var(--faint); }
 .brand .mark::after { content: ""; position: absolute; inset: 5px; border-radius: 50%; background: var(--card); }
 .nav { display: flex; gap: 4px; align-items: center; }
 .nav a { text-decoration: none; color: var(--muted); font-weight: 600; font-size: .95rem; padding: 8px 12px; border-radius: 8px; }

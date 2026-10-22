@@ -192,7 +192,7 @@ html, body { margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: e
 <div class="top"><span>The Recipe Vault</span><span>Volume NN</span></div>
 <div class="art">ART</div>
 <div class="t"><p class="k">The Recipe Vault · Vol. NN</p><h1>TITLE</h1><p>KICKER</p></div>
-<div class="foot"><span class="brand">School<i>Aura</i></span><span>SCHOOLAURA.COM · FOD 110</span></div>
+<div class="foot"><span class="brand">Class <i>a</i> Day</span><span>CLASSADAY.COM · FOD 110</span></div>
 </div></body></html>"""
 
 
@@ -257,8 +257,8 @@ async def main():
             for part in (cover, body):
                 for pg in PdfReader(io.BytesIO(part)).pages:
                     w.add_page(pg)
-            w.add_metadata({"/Title": f"The Recipe Vault · {vol['title']}", "/Author": "SchoolAura", "/Subject": vol["kicker"]})
-            out = OUT / f"schoolaura-{vol['slug']}.pdf"
+            w.add_metadata({"/Title": f"The Recipe Vault · {vol['title']}", "/Author": "Class a Day", "/Subject": vol["kicker"]})
+            out = OUT / f"classaday-{vol['slug']}.pdf"
             with open(out, "wb") as f:
                 w.write(f)
             missing = [t for k, t, a in toc if a not in pages]
@@ -272,8 +272,8 @@ async def main():
     for f in built:
         for pg in PdfReader(f).pages:
             w.add_page(pg)
-    w.add_metadata({"/Title": "The Recipe Vault · Complete Edition", "/Author": "SchoolAura"})
-    full = OUT / "schoolaura-recipe-vault-complete.pdf"
+    w.add_metadata({"/Title": "The Recipe Vault · Complete Edition", "/Author": "Class a Day"})
+    full = OUT / "classaday-recipe-vault-complete.pdf"
     with open(full, "wb") as f:
         w.write(f)
     print(f"  {full.name}: {len(PdfReader(full).pages)} pages, {full.stat().st_size // 1024} KB")

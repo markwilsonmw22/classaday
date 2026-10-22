@@ -21,7 +21,7 @@ async function applySubscription(sub, uidHint) {
     const byCustomer = await adminMemberBy("stripe_customer_id", customer);
     uid = byCustomer && byCustomer.user_id;
   }
-  if (!uid) { console.warn("webhook: subscription with no SchoolAura user", sub.id); return; }
+  if (!uid) { console.warn("webhook: subscription with no Class a Day user", sub.id); return; }
 
   const existing = await adminMemberBy("user_id", uid);
   // Lifetime access always wins over subscription changes (for example the old monthly plan being cancelled).
@@ -55,7 +55,7 @@ async function freshSubscription(subOrId) {
 
 async function onCheckout(s) {
   const uid = (s.metadata && s.metadata.user_id) || s.client_reference_id;
-  if (!uid) return; // not a SchoolAura membership checkout
+  if (!uid) return; // not a Class a Day membership checkout
   const base = {
     user_id: uid,
     email: (s.customer_details && s.customer_details.email) || s.customer_email || undefined,

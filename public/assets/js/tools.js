@@ -1,4 +1,4 @@
-/* SchoolAura interactive lesson tools. Any element with data-tool="name" becomes a live tool.
+/* Class a Day interactive lesson tools. Any element with data-tool="name" becomes a live tool.
    SATools.mount(root) is called after a lesson renders; pages without lessons call it on load. */
 (function () {
   var uid = 0;

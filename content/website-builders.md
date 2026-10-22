@@ -6,10 +6,10 @@
   "titleHtml": "Website Builders, <em>redesign with templates</em>",
   "aura": "web",
   "level": "Beginner",
-  "lede": "A 7-day guide to the SchoolAura template pack. You'll make a template yours, publish it for free on your own domain, and learn to sell website redesigns to local businesses.",
-  "metaDescription": "A 7-day guide to editing, publishing and selling websites with the SchoolAura template pack. Plain English, no prior coding needed.",
+  "lede": "A 7-day guide to the Class a Day template pack. You'll make a template yours, publish it for free on your own domain, and learn to sell website redesigns to local businesses.",
+  "metaDescription": "A 7-day guide to editing, publishing and selling websites with the Class a Day template pack. Plain English, no prior coding needed.",
   "outcome": "Take a professional template, make it fully yours and put it live on your own domain.",
-  "extraOverview": "<div class=\"block\" style=\"display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:var(--c-web-bg);border-radius:10px;padding:16px 18px;margin-bottom:26px\"><div><h2 style=\"margin:0;font-size:1.1rem\">Start with the template pack</h2><p class=\"muted\" style=\"margin-top:4px\">Six complete websites in one ZIP. You'll use them from Day 1.</p></div><div style=\"display:flex;gap:8px;flex-wrap:wrap\"><a class=\"btn light sm\" href=\"/templates/\">Browse templates</a><a class=\"btn sm\" href=\"/downloads/templates/schoolaura-template-pack.zip\" download>Download all</a></div></div>",
+  "extraOverview": "<div class=\"block\" style=\"display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:var(--c-web-bg);border-radius:10px;padding:16px 18px;margin-bottom:26px\"><div><h2 style=\"margin:0;font-size:1.1rem\">Start with the template pack</h2><p class=\"muted\" style=\"margin-top:4px\">Six complete websites in one ZIP. You'll use them from Day 1.</p></div><div style=\"display:flex;gap:8px;flex-wrap:wrap\"><a class=\"btn light sm\" href=\"/templates/\">Browse templates</a><a class=\"btn sm\" href=\"/downloads/templates/classaday-template-pack.zip\" download>Download all</a></div></div>",
   "learn": [
     "Open, preview and edit a website template on any computer",
     "Change text, images, links and sections without breaking the layout",
@@ -38,7 +38,7 @@
 ## D1 | Set up and choose your template | 3 | Set up
 @goal Download the pack, install a free editor, preview a template on your computer, and understand how its files fit together.
 @lesson
-Every template in the SchoolAura pack is a **complete website in one folder**. There's nothing to install and no monthly fee. If you can edit a document, you can edit these.
+Every template in the Class a Day pack is a **complete website in one folder**. There's nothing to install and no monthly fee. If you can edit a document, you can edit these.
 
 {{fig:web-anatomy|Each template is a folder with one page, its fonts and its images. The page is built from sections you can edit, move or delete.}}
 

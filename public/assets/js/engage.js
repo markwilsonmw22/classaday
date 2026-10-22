@@ -1,4 +1,4 @@
-/* SchoolAura engagement: streaks, XP, levels, badges, "continue where you left off", question of the day.
+/* Class a Day engagement: streaks, XP, levels, badges, "continue where you left off", question of the day.
    Everything is derived from progress saved in this browser (sa.course.*) plus a small activity log (sa.engage).
    window.SA_META = {slug: {title, href, days, modules: [[day,...], ...]}} is injected by the build. */
 (function () {

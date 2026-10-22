@@ -1,4 +1,4 @@
-/* SchoolAura accounts: login state in the header, the member cookie, regional prices and progress sync.
+/* Class a Day accounts: login state in the header, the member cookie, regional prices and progress sync.
    Loaded on every page when accounts are switched on (MEMBERSHIP in build/build.py).
    Supabase's sign-in library is only downloaded when someone is logged in or on the login page.
 

@@ -17,7 +17,7 @@ BOOKS = [("cake-studio", "#b4475a"), ("keto-kitchen", "#2f6b4f"), ("know-your-fo
 
 # Render the first page of each PDF to an image.
 for slug, _ in BOOKS:
-    pdf = PUB / "downloads" / "recipe-vault" / f"schoolaura-{slug}.pdf"
+    pdf = PUB / "downloads" / "recipe-vault" / f"classaday-{slug}.pdf"
     subprocess.run(["pdftoppm", "-f", "1", "-l", "1", "-r", "90", "-png", "-singlefile", str(pdf), str(TMP / f"book-{slug}")], check=True)
 
 BASE = """<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="/assets/css/fonts.css"><link rel="stylesheet" href="/assets/css/site.css"><style>

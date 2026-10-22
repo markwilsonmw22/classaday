@@ -119,4 +119,4 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => console.log(`SchoolAura on ${ORIGIN}${backend ? " (fake Supabase and Stripe)" : ""}`));
+server.listen(PORT, "127.0.0.1", () => console.log(`Class a Day on ${ORIGIN}${backend ? " (fake Supabase and Stripe)" : ""}`));

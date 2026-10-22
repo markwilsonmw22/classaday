@@ -18,7 +18,7 @@ TEMPLATES = [
     {"slug": "keystone", "name": "Keystone", "desc": "A trustworthy site for contractors and trades. Quote form, services, before and after, process and service areas.", "tags": ["Trades", "Contractor", "Lead gen"]},
 ]
 
-LICENSE = """SchoolAura Website Templates — Licence
+LICENSE = """Class a Day Website Templates — Licence
 
 You may:
   - Use these templates for your own websites.
@@ -34,10 +34,10 @@ Placeholder images are abstract and may be used freely, but you should replace t
 Sample business names, addresses, phone numbers (555 numbers) and reviews are fictional examples.
 Only publish real reviews from your own customers.
 
-© SchoolAura. schoolaura.com
+© Class a Day. classaday.com
 """
 
-README = """{name} — SchoolAura website template
+README = """{name} — Class a Day website template
 ====================================
 
 WHAT'S INSIDE
@@ -52,7 +52,7 @@ QUICK START (10 minutes)
      Change the colours and fonts there. The whole site updates.
   4. Search the file for the sample business name and replace text section by section.
   5. Drop your photos into images/ using the same file names (or change the src="" paths).
-  6. Open index.html in your browser to check, then publish (see the SchoolAura guide, Day 6).
+  6. Open index.html in your browser to check, then publish (see the Class a Day guide, Day 6).
 
 IMAGES USED BY THIS TEMPLATE
 {images}
@@ -62,10 +62,10 @@ TIPS
   - Forms are demo-only. Day 5 of the guide shows how to make them send you emails.
   - Replace sample reviews with real ones from your customers, or remove the section.
 
-Full 7-day guide: https://schoolaura.com/courses/website-builders/
+Full 7-day guide: https://classaday.com/courses/website-builders/
 """
 
-START = """SchoolAura Website Template Pack
+START = """Class a Day Website Template Pack
 ===============================
 
 {count} complete website templates, one folder each:
@@ -73,7 +73,7 @@ START = """SchoolAura Website Template Pack
 {list}
 
 Each folder has its own README.txt. Start with the 7-day guide:
-https://schoolaura.com/courses/website-builders/
+https://classaday.com/courses/website-builders/
 
 Licence: see LICENSE.txt. Use them for yourself and for unlimited client projects.
 """
@@ -128,12 +128,12 @@ def main():
             shutil.rmtree(dest)
         shutil.copytree(src, dest, ignore=shutil.ignore_patterns("README.txt", "LICENSE.txt"))
         with zipfile.ZipFile(dl / f"{t['slug']}.zip", "w", zipfile.ZIP_DEFLATED) as zf:
-            zip_dir(zf, src, f"schoolaura-{t['slug']}")
-    with zipfile.ZipFile(dl / "schoolaura-template-pack.zip", "w", zipfile.ZIP_DEFLATED) as zf:
-        zf.writestr("schoolaura-template-pack/START-HERE.txt", START.format(count=len(TEMPLATES), list="\n".join(f"  {t['slug']}/  {t['name']}: {t['desc']}" for t in TEMPLATES)))
-        zf.writestr("schoolaura-template-pack/LICENSE.txt", LICENSE)
+            zip_dir(zf, src, f"classaday-{t['slug']}")
+    with zipfile.ZipFile(dl / "classaday-template-pack.zip", "w", zipfile.ZIP_DEFLATED) as zf:
+        zf.writestr("classaday-template-pack/START-HERE.txt", START.format(count=len(TEMPLATES), list="\n".join(f"  {t['slug']}/  {t['name']}: {t['desc']}" for t in TEMPLATES)))
+        zf.writestr("classaday-template-pack/LICENSE.txt", LICENSE)
         for t in TEMPLATES:
-            zip_dir(zf, SRC / t["slug"], f"schoolaura-template-pack/{t['slug']}")
+            zip_dir(zf, SRC / t["slug"], f"classaday-template-pack/{t['slug']}")
     (SRC / "manifest.json").write_text(json.dumps(TEMPLATES, indent=2))
     asyncio.run(screenshots())
     for f in sorted(dl.glob("*.zip")):

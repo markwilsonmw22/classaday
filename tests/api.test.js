@@ -12,7 +12,7 @@ import * as webhook from "../api/stripe-webhook.js";
 let B;
 beforeEach(() => { setEnv(); B = makeBackend(); B.install(); });
 
-const SITE = "https://schoolaura.test";
+const SITE = "https://classaday.test";
 const cookieOf = (r) => (r.headers.get("set-cookie") || "").split(";")[0].replace(/^sa_m=/, "");
 
 async function sendEvent(event, secret = ENV.STRIPE_WEBHOOK_SECRET) {
@@ -127,10 +127,10 @@ test("checkout: monthly, Canada: creates product and price once, then a subscrip
   const j = await r.json();
   assert.equal(r.status, 200, JSON.stringify(j));
   assert.match(j.url, /^https:\/\/checkout\.stripe\.test\//);
-  const prod = B.stripe.products.get("schoolaura_membership");
+  const prod = B.stripe.products.get("classaday_membership");
   assert.equal(prod.tax_code, "txcd_20060358");
   const price = B.stripe.prices[0];
-  assert.equal(price.lookup_key, "schoolaura_monthly_full_cad_900");
+  assert.equal(price.lookup_key, "classaday_monthly_full_cad_900");
   assert.equal(price.unit_amount, 900);
   assert.equal(price["recurring[interval]"], "month");
   assert.equal(price.tax_behavior, "exclusive");
@@ -157,7 +157,7 @@ test("checkout: lifetime from India uses the half price, tax on, existing custom
   B.db.members.push({ user_id: "u2", plan: "monthly", status: "canceled", stripe_customer_id: "cus_9" });
   const r = await checkout.POST(req(`${SITE}/api/checkout/`, { method: "POST", token: "tok2", body: { plan: "lifetime" }, headers: { "x-vercel-ip-country": "IN" } }));
   assert.equal(r.status, 200);
-  const price = B.stripe.prices.find((x) => x.lookup_key === "schoolaura_lifetime_half_cad_1000");
+  const price = B.stripe.prices.find((x) => x.lookup_key === "classaday_lifetime_half_cad_1000");
   assert.ok(price && !price["recurring[interval]"]);
   const p = B.stripe.sessions.at(-1).params;
   assert.equal(p.mode, "payment");

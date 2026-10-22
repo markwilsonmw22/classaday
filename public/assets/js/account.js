@@ -133,7 +133,7 @@
   function memberCard(rec) {
     var el = $("#acct-member");
     if (!CFG.live) {
-      el.innerHTML = '<h2>Membership</h2><p class="muted">Everything on SchoolAura is free during early access, so there\'s nothing to buy yet. ' +
+      el.innerHTML = '<h2>Membership</h2><p class="muted">Everything on Class a Day is free during early access, so there\'s nothing to buy yet. ' +
         "Your progress is saved to this account, so it's waiting for you on any device.</p>" +
         '<div class="acct-actions"><a class="btn" href="/courses/">Go to the Classroom</a></div>';
       return;

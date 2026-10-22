@@ -34,7 +34,7 @@ for f in OUT.rglob("*.html"):
 css = OUT / "assets" / "css" / "fonts.css"
 css.write_text(css.read_text().replace('url("/assets/fonts/', 'url("../fonts/'))
 js = OUT / "assets" / "js" / "vault.js"
-js.write_text(js.read_text().replace('"/downloads/recipe-vault/schoolaura-"', '"../downloads/recipe-vault/schoolaura-"'))
+js.write_text(js.read_text().replace('"/downloads/recipe-vault/classaday-"', '"../downloads/recipe-vault/classaday-"'))
 
 # Entry page: the artifact host supplies doctype/html/head/body, so unwrap index.html.
 idx = OUT / "index.html"
@@ -46,7 +46,7 @@ head = re.sub(r'<meta charset[^>]*>\s*|<meta name="viewport"[^>]*>\s*', "", head
 title = re.search(r"<title>.*?</title>", head).group(0)
 head = head.replace(title, "")
 aura = re.search(r'data-aura="(\w+)"', body_tag).group(1)
-entry = f'''{title.replace("SchoolAura · Learn one skill properly, one day at a time", "SchoolAura")}
+entry = f'''{title.replace("Class a Day · Learn one skill properly, one day at a time", "Class a Day")}
 <meta name="claude:viewport-fit-sides" content="cover">
 {head}
 <script>document.body.setAttribute("data-aura", "{aura}");</script>

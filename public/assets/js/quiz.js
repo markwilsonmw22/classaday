@@ -1,4 +1,4 @@
-/* SchoolAura quiz runner.
+/* Class a Day quiz runner.
    SAQuiz.run(root, {
      title, questions: [{q, o: [..4], a, why, day?|book?}], pass: 80,
      shuffleQuestions: bool,

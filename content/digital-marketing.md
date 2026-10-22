@@ -320,7 +320,7 @@ Start lean. Almost everything has a free plan.
 | Job | Free / cheap to start | Upgrade later |
 |---|---|---|
 | Email, docs, calendar | Google Workspace (paid, about the price of a coffee a week) | — |
-| Website | SchoolAura template + Netlify or Vercel | Webflow, WordPress |
+| Website | Class a Day template + Netlify or Vercel | Webflow, WordPress |
 | Design | Canva Free | Canva Pro |
 | Video | CapCut | Adobe Premiere |
 | CRM and pipeline | HubSpot Free CRM | HubSpot Starter, Pipedrive |
@@ -337,7 +337,7 @@ Start lean. Almost everything has a free plan.
 
 ### Your agency website
 
-One page is enough to start: who you help, what you do, proof (or "how we work" if you have no case studies yet), packages or "starting at" prices, a booking link and your contact details. The Northline or Keystone template from the SchoolAura pack works well.
+One page is enough to start: who you help, what you do, proof (or "how we work" if you have no case studies yet), packages or "starting at" prices, a booking link and your contact details. The Northline or Keystone template from the Class a Day pack works well.
 
 ### LinkedIn is your shop window
 
@@ -2363,7 +2363,7 @@ Tools for testing: VWO, Optimizely, Convert, or landing page builders like Unbou
 
 ### Tools for building pages
 
-The SchoolAura templates, WordPress with a page builder, Webflow, Framer, Shopify (for stores), Unbounce or Leadpages. Choose what the client can maintain.
+The Class a Day templates, WordPress with a page builder, Webflow, Framer, Shopify (for stores), Unbounce or Leadpages. Choose what the client can maintain.
 @demo
 **Northfield's furnace tune-up page.**
 

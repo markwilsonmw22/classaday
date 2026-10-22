@@ -1,4 +1,4 @@
-/* SchoolAura — shared behaviour: menu, toast, copy buttons, card progress, discovery filters,
+/* Class a Day — shared behaviour: menu, toast, copy buttons, card progress, discovery filters,
    site-wide search, and the "new prompts" dot for Viral Prompts subscribers. */
 (function () {
   window.SA = window.SA || {};
@@ -124,7 +124,7 @@
     if (!dlg) {
       dlg = document.createElement("div");
       dlg.className = "sd"; dlg.hidden = true;
-      dlg.innerHTML = '<div class="sd-box" role="dialog" aria-modal="true" aria-label="Search SchoolAura">' +
+      dlg.innerHTML = '<div class="sd-box" role="dialog" aria-modal="true" aria-label="Search Class a Day">' +
         '<div class="sd-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>' +
         '<input type="search" id="sd-q" placeholder="Search lessons, courses and prompts" autocomplete="off" aria-label="Search"><button type="button" class="sd-x" data-sd-close aria-label="Close search">Esc</button></div>' +
         '<div class="sd-res" id="sd-res" role="listbox"></div></div>';
