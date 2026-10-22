@@ -1,0 +1,40 @@
+{
+ "slug": "zombie-hug-love-story",
+ "title": "Zombie hug: the last embrace",
+ "published": "2026-10-22T12:55:00Z",
+ "kind": "video",
+ "tools": ["Seedance", "Higgsfield", "Kling"],
+ "summary": "A short, sad-sweet clip: your partner or best friend steps out as a zombie, you recognize them, and you hug anyway. Then it cuts to a warm memory.",
+ "why": "Trend guides updated October 15 to 19, 2026 report a \"zombie love story\" or \"zombie hug\" clip that spread from Instagram in late September to TikTok in early October under #zombieaitrend, with Google searches for \"zombie trend\" peaking on October 4.",
+ "steps": [
+  "Pick two clear, front-facing photos: one of you and one of your partner, friend or family member who has said yes.",
+  "Upload both to an image-to-video tool that takes two reference photos and paste the main prompt. Ask for 10 to 15 seconds, vertical 9:16.",
+  "If faces drift, make the two scenes as separate clips, then join them in your video editor with a quick cut.",
+  "Post it with a soft, slow piano sound and a short caption like \"I'd still pick you\"."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use the two people in my photos. Scene 1: a quiet snowed-in cabin at dusk, cold blue-grey light, snow drifting past the window. Person A stands by the door, nervous and teary. The door creaks open and Person B steps in as a gentle movie-style zombie: pale grey skin, cloudy eyes, messy hair, the same clothes, still clearly the same face. Person A freezes, then recognizes them, softens and opens their arms. Person B stumbles forward into a long, tight hug. Hard cut at the hug. Scene 2: the same two people laughing together in a golden wheat field at sunset, warm and bright. Keep both faces exactly as in the photos. No weapons, no blood. Cinematic, slow camera push-in. Vertical 9:16, 12 seconds."
+  },
+  {
+   "label": "Variation: best friends on a rooftop",
+   "text": "Use the two people in my photos. Scene 1: a rainy city rooftop at night, neon glow on wet concrete. Person A waits under an umbrella. Person B shuffles out of the stairwell door as a soft, not-scary zombie with pale skin and tired, cloudy eyes, wearing the same hoodie as in the photo. Person A drops the umbrella, smiles through tears and pulls them into a hug while the rain keeps falling. Hard cut. Scene 2: the same two friends laughing and sharing fries on a sunny beach boardwalk. Keep both faces exactly as in the photos. No gore. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: your pet",
+   "text": "Use the person and the pet in my photos. Scene 1: a dim farmhouse kitchen at night, moonlight through the window. The person sits on the floor, worried. The pet pads in as a cute, cartoon-like zombie version of itself: grey-green fur, droopy ears, sleepy glowing eyes, same markings and collar. The person laughs, opens their arms, and the pet jumps into their lap for a cuddle. Hard cut. Scene 2: the same person and pet running across a sunny backyard in autumn leaves. Keep the pet's face and markings exactly as in the photo. Nothing scary. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use the person in my photo as the shop owner. Scene 1: a cozy small shop at closing time on Halloween night, string lights on, pumpkins on the counter. The owner hears the door bell. A friendly zombie customer shuffles in: pale skin, cloudy eyes, torn cardigan, holding an empty mug. The owner smiles, fills the mug, and the zombie gives them a big grateful hug over the counter. Hard cut. Scene 2: the same shop the next morning, bright and busy, with a chalkboard sign that reads \"[your shop name]: even zombies come back\". Keep the owner's face exactly as in the photo. No gore. Vertical 9:16, 12 seconds."
+  }
+ ],
+ "tips": [
+  "Only use photos of people who have agreed to be in the video, and show them before you post.",
+  "Keep it tender, not gory. Leave out weapons and blood; the hug is the whole point.",
+  "The cut to the warm memory works best right as the hug starts, around 8 to 10 seconds in.",
+  "If text on the chalkboard comes out wrong, leave it out and add your shop name as an on-screen caption."
+ ],
+ "tags": ["halloween", "video", "zombie", "couples", "business"]
+}
