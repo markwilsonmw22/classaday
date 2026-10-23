@@ -1,0 +1,36 @@
+{
+ "slug": "tools-then-process",
+ "title": "The tools, the process, the result",
+ "published": "2026-10-23T12:40:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Show the tools laid out neatly, then each step, then the finished piece. AI tidies your tools into a clean overhead shot and writes the step captions.",
+ "why": "An Instagram trends roundup dated October 19, 2026 lists \"The tools, the process\": creators show each step of how they make something, then reveal the finished result.",
+ "steps": [
+  "Take one overhead photo of the real tools or ingredients you use. Good light, plain surface.",
+  "Use the main prompt to turn it into a neat, organized opening shot.",
+  "Film or photograph 3 to 5 real steps of your process, then the finished result.",
+  "Ask the AI for short step captions and add them on screen."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: neat tools shot",
+   "text": "Using my photo, rearrange these exact tools into a tidy overhead layout on the same surface. Line them up in neat rows with even gaps, all at right angles, with soft daylight from one side and gentle shadows. Keep every tool as it is in my photo: same shape, size, colour and wear. Don't add or remove anything, and don't add any text or logos."
+  },
+  {
+   "label": "Step captions",
+   "text": "I'm posting a short video called \"the tools, the process\". I'm making [what you make, for example: a loaf of sourdough, a knitted toque, a hand-painted mug]. My real steps are: [list your steps]. Write one caption per step, under 6 words each, plus a 3-word caption for the final reveal. Keep it calm and plain."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bike repair shop]. Help me plan a \"the tools, the process\" video for one real job we do, like [for example: a fall tune-up]. Give me a shot list: one opening shot of the tools, 4 process shots and one result shot, each with a caption under 6 words. Add a short post caption. No made-up prices, reviews or customer claims."
+  }
+ ],
+ "tips": [
+  "Only the opening tools shot uses AI. Film the real steps yourself so the result is honest.",
+  "Check the AI image closely. If it changed or added a tool, ask it to match your photo exactly.",
+  "Keep each step clip short, about one second, so the reveal comes quickly.",
+  "Use the same angle for the tools shot and the result shot. The match makes the reveal feel satisfying."
+ ],
+ "tags": ["process", "reveal", "instagram", "business"]
+}

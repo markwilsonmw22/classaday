@@ -1,0 +1,36 @@
+{
+ "slug": "its-officially-fall-reveal",
+ "title": "It's officially fall: the cosy switch",
+ "published": "2026-10-23T12:40:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Start with your room, porch or shop window as it is, then cut to a cosy fall version on the beat. AI makes the fall look from your own photo.",
+ "why": "An Instagram trends roundup lists \"It's officially fall\" under October 13, 2026: creators lip-sync the opening of the audio and use the switch in the sound to reveal something fall-themed.",
+ "steps": [
+  "Take a clear, straight-on photo of the space you want to change: a room corner, porch, desk or shop window.",
+  "Use the main prompt to make the fall version from that photo.",
+  "Film a few seconds of you in the real space, then cut to the fall image right on the sound switch.",
+  "If you decorate for real after, add that as a final clip."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using my photo, make a cosy fall version of this exact space. Keep the same room, layout, furniture and camera angle. Add warm late-afternoon light, a knit throw, a few small pumpkins and gourds, dried leaves in a vase, a lit candle and a mug of something hot. Use rust, mustard, deep green and cream. Keep it tidy and realistic, like a real photo, not a painting. No text or logos."
+  },
+  {
+   "label": "Variation: outdoor or porch",
+   "text": "Using my photo of my porch or front steps, show the same spot in mid-October in Canada. Keep the house, door and steps exactly as they are. Add red and orange maple leaves on the ground and steps, a few pumpkins, a straw bale, a wool blanket on a chair and soft golden light. Realistic, no text."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Using my photo of my shop window or counter, make a fall version with the same layout and the same products, kept exactly as they are. Add warm light, a few pumpkins, dried leaves and a small chalkboard with the words \"[your short message, for example: Fall hours start Monday]\". Don't change the shop sign or add any other text or logos."
+  }
+ ],
+ "tips": [
+  "The cut has to land right on the switch in the sound. Line it up in your editor before you post.",
+  "Keep the camera angle the same in the before clip and the AI image, so it feels like a magic switch.",
+  "Say in your caption that the fall version is AI, especially for a business post.",
+  "If the AI moves your furniture, ask it again to keep everything in the same place."
+ ],
+ "tags": ["fall", "transition", "decor", "business"]
+}

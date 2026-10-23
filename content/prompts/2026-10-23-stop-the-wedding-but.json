@@ -1,0 +1,36 @@
+{
+ "slug": "stop-the-wedding-but",
+ "title": "\"Stop the wedding, but…\" carousel",
+ "published": "2026-10-23T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A photo carousel that opens with \"Stop the wedding, but…\", then shares the small, funny things you'd do differently. AI helps you write the slides.",
+ "why": "A TikTok trend roundup last updated October 14, 2026 lists \"Stop the Wedding\" in its October top 10: a photo carousel that opens with \"Stop the wedding, but...\" and follows with wedding regrets.",
+ "steps": [
+  "Pick 5 to 8 of your own wedding photos (or photos from any big event you planned).",
+  "Paste the main prompt into the AI and choose the lines that sound most like you.",
+  "Put \"Stop the wedding, but…\" on the first slide, then one line per photo after it.",
+  "End on a sweet slide, so the post feels warm, not bitter."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a photo carousel. Slide 1 says \"Stop the wedding, but…\". Each slide after that is one small, funny thing I'd do differently at my wedding. Here's what I remember about the day: [for example: we were outside in October, my shoes hurt, we barely ate, the playlist had one song twice]. Write 10 short lines, each under 12 words, that are light and relatable. Keep it kind to everyone involved. Finish with one sweet closing line about what I wouldn't change."
+  },
+  {
+   "label": "Variation: any big event",
+   "text": "Same idea, but for a different big day: [for example: my graduation, our housewarming, my 40th birthday party]. Start with \"Stop the party, but…\" and write 8 short, funny things I'd change, each under 12 words. Keep it kind, with one warm closing line."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of wedding business, for example: florist in Halifax]. Write a carousel that starts \"Stop the wedding, but…\" and lists 7 small things couples often wish they'd planned differently, each under 15 words, plus one short practical tip for each from my line of work. Keep it helpful and friendly. No made-up statistics, reviews, prices or customer stories. End with a soft invite to get in touch."
+  }
+ ],
+ "tips": [
+  "Use your own real photos. The joke works because the regret matches the picture.",
+  "Keep it about small things: the shoes, the cold, the cake you never tasted. Not about people.",
+  "Ask anyone who appears in the photos before you post.",
+  "Read the lines out loud. If one sounds harsh, ask the AI to make it softer."
+ ],
+ "tags": ["text", "carousel", "wedding", "funny", "business"]
+}
