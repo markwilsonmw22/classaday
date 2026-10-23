@@ -1,0 +1,46 @@
+{
+ "slug": "age-reaction-numbers",
+ "title": "How I'd react to the age you…",
+ "published": "2026-10-23T00:40:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "Numbers count up on screen while your face reacts: calm, then worried, then shocked. AI picks the topic and writes the reaction cues for each number.",
+ "why": "A TikTok trend report published October 21, 2026 lists \"How I'd react to the age you…\" in its October roundup: creators react as on-screen numbers rise. The same report says it also works with prices and habits.",
+ "steps": [
+  "Choose a safe, light topic: the age you first stayed up past midnight, how many coffees a day, how many tabs you keep open.",
+  "Use the main prompt to get the number ladder and a reaction cue for each step.",
+  "Film one take of your face, changing expression each time a number changes, then add the numbers as text in your editor.",
+  "End on a big, over-the-top reaction for the last number."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a \"How I'd react to the age you…\" video. Suggest 8 light, family-friendly topics, like \"the age you learned to ride a bike\" or \"the age you first saw a scary movie\". Then, for the topic I pick, [topic], give me a ladder of 8 numbers from low to high and a short facial reaction cue for each one, like \"proud nod\", \"slight squint\" or \"full gasp\". Keep it kind, not judgy. Nothing about money worries, health or anything personal."
+  },
+  {
+   "label": "Variation: everyday habits",
+   "text": "Write a \"How I'd react to how many…\" ladder about an everyday habit, for example: [how many browser tabs you have open]. Give 8 numbers from small to huge, a reaction cue for each, and a funny final line for the last number. Add 3 caption ideas that invite people to comment their number."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bike repair shop]. Write a \"How I'd react to how long since you…\" video about a friendly maintenance habit, like [how long since you pumped up your tires]. Give 8 time steps from \"last week\" to \"never\", a reaction cue for each, and a short, honest tip at the end. No scare tactics, made-up stats or fake offers."
+  }
+ ],
+ "tips": [
+  "One continuous take of your face is easier than 8 separate clips. Add the numbers afterwards.",
+  "Exaggerate a little more with each step so the build is easy to follow.",
+  "Leave a gap of about one second per number so people can read it.",
+  "Ask viewers to comment their number. It gets people talking without any pressure."
+ ],
+ "tags": [
+  "text",
+  "reaction",
+  "funny",
+  "tiktok",
+  "business"
+ ]
+}

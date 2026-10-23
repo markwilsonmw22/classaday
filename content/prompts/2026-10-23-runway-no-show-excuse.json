@@ -1,0 +1,46 @@
+{
+ "slug": "runway-no-show-excuse",
+ "title": "Sorry, I won't be walking the runway this year",
+ "published": "2026-10-23T00:40:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "Announce, very seriously, that you won't be walking the big fashion show this year, then give a tiny, everyday excuse. AI writes the excuses.",
+ "why": "A TikTok trend report published October 21, 2026 lists this in its October roundup: creators apologize for not walking a famous fashion show runway, then give a mundane or oddly specific reason, like being at a pumpkin patch every Sunday in October.",
+ "steps": [
+  "Think about what fills your calendar right now: a hobby, a chore, a seasonal outing or your pet.",
+  "Paste the main prompt into the AI and pick the excuse that makes you laugh most.",
+  "Film a short clip of you doing that exact thing, with the apology as on-screen text first and the excuse second.",
+  "Keep a straight face. The joke is how seriously you take it."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a funny TikTok. The on-screen text starts: \"Sorry, I won't be walking the big fashion show runway this year.\" Then I give a very ordinary, oddly specific reason. My life right now includes: [for example: soccer practice drop-offs, raking leaves and a sourdough starter]. Write 10 short excuses, each under 15 words, that sound polite and official but are clearly about everyday life. Make a few of them about fall. Don't name any real people, shows or brands."
+  },
+  {
+   "label": "Variation: pet version",
+   "text": "Write 8 excuses from my pet's point of view for why it won't be walking the big fashion show runway this year. My pet is a [type of pet, for example: lazy orange cat] who loves [for example: the sunny spot on the couch]. Each excuse is under 15 words and sounds like a formal statement. Add 3 short captions to go with the video."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bakery in a small town]. Write 8 excuses for why my team won't be walking the big fashion show runway this year, each about real, honest work we're busy with this season, like [for example: Thanksgiving pie orders]. Under 15 words each. Keep it playful. No made-up discounts, prices, customer numbers or claims. Add a short caption with a friendly invite to visit."
+  }
+ ],
+ "tips": [
+  "Film the excuse, not the runway. A shot of you up to your elbows in leaves is funnier than any fashion shot.",
+  "Use a formal font or a press-release style for the apology line, then plain text for the excuse.",
+  "Leave out the name of any real fashion show or brand. \"The big fashion show\" gets the joke across.",
+  "Short, specific excuses beat long ones. \"Every Sunday in October\" is better than \"I'm busy\"."
+ ],
+ "tags": [
+  "text",
+  "funny",
+  "tiktok",
+  "fall",
+  "business"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "slug": "directed-spooky-voiceover",
+ "title": "Directed spooky story voice-over",
+ "published": "2026-10-23T00:40:00Z",
+ "kind": "voice",
+ "tools": [
+  "Fish Audio",
+  "ChatGPT",
+  "Claude"
+ ],
+ "summary": "Write a short Halloween campfire story with stage directions like [voice drops to a whisper], then let an AI voice read it with real feeling.",
+ "why": "Fish Audio released its Drama 3 voice model on October 13, 2026. You direct the delivery in plain words inside square brackets, and its launch post uses a spooky \"do not open that door\" line as an example. Halloween is October 31.",
+ "steps": [
+  "Ask a text AI for a 30 to 45 second spooky story with directions in square brackets.",
+  "Paste the story into an AI voice tool that understands written directions, and pick a stock voice or your own.",
+  "Listen once, then tweak the directions where the feeling is off, for example [slower] or [nervous laugh].",
+  "Lay the audio over a dark clip of your porch, a candle or a hallway and post it before Halloween."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write a spooky but family-friendly campfire story that takes about 40 seconds to read aloud. Set it [for example: on a quiet street in a small Canadian town on Halloween night]. Add short acting directions in square brackets before lines, like [breathless, speaking fast], [voice drops to a whisper], [slow and serious] or [shaky laugh]. Change the direction at least 5 times so the mood builds. End on a twist that is creepy, not gory. Use short sentences. No real people, places you can find on a map, or famous characters."
+  },
+  {
+   "label": "Variation: kid-friendly",
+   "text": "Write a 30-second not-too-scary Halloween story for kids aged 6 to 9, about [for example: a jack-o'-lantern that won't stop giggling]. Add acting directions in square brackets, like [curious], [tiny gasp] or [cheerful whisper]. End with a funny, happy twist. Keep words simple."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: candle shop]. Write a 30-second spooky story narration set in my shop after closing, with acting directions in square brackets, like [whispering] or [slow, mysterious]. The twist reveals something fun and true about the shop, such as [our new fall scent]. No fake reviews, made-up prices or false claims. Add a short caption for the post."
+  }
+ ],
+ "tips": [
+  "Short directions work best. Three to five words in the brackets is plenty.",
+  "Only use your own voice or one that someone agreed to share. Never copy a real person's voice without permission.",
+  "Read the story out loud once yourself. If you stumble, the AI voice will too.",
+  "Add quiet background sound like wind or a creaky door, but keep it under the voice."
+ ],
+ "tags": [
+  "halloween",
+  "voice",
+  "storytelling",
+  "business"
+ ]
+}
