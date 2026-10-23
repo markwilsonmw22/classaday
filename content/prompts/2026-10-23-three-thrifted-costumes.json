@@ -1,0 +1,40 @@
+{
+ "slug": "three-thrifted-costumes",
+ "title": "Three thrifted Halloween costumes",
+ "published": "2026-10-23T18:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Pick a few second-hand pieces, let AI turn them into three different costume ideas, then film the try-on as a quick challenge video.",
+ "why": "A weekly Instagram trends report covering October 10 to 17, 2026 lists a Halloween challenge where creators build three costumes from thrifted finds. This pack uses AI to plan the costumes before you shop or dig through your closet.",
+ "steps": [
+  "Set a small budget and a time limit, or start with clothes you already own.",
+  "Use the main prompt to get three costume ideas built from simple second-hand pieces.",
+  "Shop or gather the pieces, then film a quick clip of each costume, one after another.",
+  "Use the caption prompt for on-screen text and your post caption."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm doing a thrift store Halloween challenge: three costumes, about $[budget] each, using only second-hand clothes and things I have at home. Give me three costume ideas that are easy to recognize. For each one, list the clothing pieces to look for (colours and types, not brands), one cheap prop I could make at home, and a simple hair or makeup touch. Keep them original: no characters from movies, shows or games. Make one funny, one spooky and one classy."
+  },
+  {
+   "label": "Variation: start from what I found",
+   "text": "Here is what I found at the thrift store: [list pieces, for example: long black skirt, plaid blazer, wool scarf, old lace curtain]. Suggest three different Halloween costumes I can make by mixing these pieces, plus at most two more cheap items each. Say which pieces go with which costume, and give each costume a short, catchy name for my video."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of shop, for example: consignment shop or vintage store] in [town]. Plan a three-costume challenge video using only items we sell. Suggest three costume ideas, the pieces to pull from the racks for each, and a short on-screen caption for each costume. End with a friendly line inviting people to come build their own costume. No made-up prices or claims."
+  },
+  {
+   "label": "Captions",
+   "text": "Write on-screen text for a video where I show three thrifted Halloween costumes, one after another. Give me a short hook for the first two seconds, a two-to-four word label for each costume, and a one-line ending. Then write a short, friendly caption with three hashtags. Plain, casual words."
+  }
+ ],
+ "tips": [
+  "Film all three costumes in the same spot and from the same angle, so the cuts feel snappy.",
+  "Show the price tag or a quick shot of the pieces before each costume if you stuck to a budget.",
+  "Check thrifted clothes for pins and loose threads, and wash them before wearing.",
+  "Ask the AI to swap any idea that turns out to be a known character."
+ ],
+ "tags": ["halloween", "costume", "thrift", "text", "business"]
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "fall-photos-to-take-checklist",
+ "title": "Fall photos to remember to take",
+ "published": "2026-10-23T18:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Let AI write your own list of small fall moments worth photographing, then post it as a checklist carousel or tick it off as a photo dump.",
+ "why": "A weekly Instagram trends report covering October 10 to 17, 2026 lists \"pictures to remember to take this fall\" photo dumps among the formats doing well. This pack helps you make a list that fits your own life and town.",
+ "steps": [
+  "Use the main prompt to get a list of fall photo ideas that fit where you live.",
+  "Pick your favourite eight to ten and save them as a checklist on your phone.",
+  "Take the photos over the next week or two, in natural light where you can.",
+  "Post them as a carousel with the list on the first slide, or one idea per slide."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write a list of 15 small fall moments worth taking a photo of. I live in [town or region, for example: a small town in Ontario] and I like [two or three interests, for example: walks, baking, my dog]. Keep each idea under ten words, make them specific and simple (for example: steam rising off your first hot cider), and include a few that happen indoors on rainy days. No brand names."
+  },
+  {
+   "label": "Variation: shot tips",
+   "text": "For each idea on this list, give me one short phone photo tip: where to stand, what light to look for, or what to put in the frame. Keep each tip to one sentence. List: [paste your list]."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business] in [town]. Write a list of 10 fall photos I should take for our social media this month: behind the scenes, our space, our products and our neighbourhood. Keep each idea under twelve words and add a one-line caption idea for each. Don't invent customers, quotes or numbers."
+  }
+ ],
+ "tips": [
+  "Fall light is softest in the late afternoon. Plan two or three outdoor shots around that.",
+  "Use the same edit on every photo so the carousel looks like a set.",
+  "Put the checklist on the first slide so people save the post.",
+  "Only include people in your photos if they're happy to be posted."
+ ],
+ "tags": ["fall", "photo-dump", "carousel", "text", "business"]
+}
