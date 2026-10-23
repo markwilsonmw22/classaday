@@ -1,0 +1,46 @@
+{
+ "slug": "some-people-call-me",
+ "title": "\"Some people call me…\" nickname intro",
+ "published": "2026-10-23T06:45:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Claude",
+  "Gemini"
+ ],
+ "summary": "Open with a funny nickname, then show the habit, hobby or product that earned it. AI brainstorms the nicknames and the reveal lines.",
+ "why": "A TikTok trend guide updated October 8, 2026 lists \"Some people call me…\" as an October format: you start with a nickname or inside joke, then reveal the reason, often a product or service.",
+ "steps": [
+  "Think of something you're known for: always early, always baking, always fixing things, always lost in a book.",
+  "Use the main prompt to get nickname ideas and a short reveal line for each.",
+  "Film yourself saying \"Some people call me…\" with the nickname on screen, then cut to the thing that explains it.",
+  "Ask viewers what people call them. Nicknames make easy comments."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a \"Some people call me…\" video. Here's what I'm known for: [always bringing snacks for everyone]. Give me 8 short, funny, kind nicknames that fit, each with a one-line reveal for the second half of the video, like \"Some people call me the Snack Concierge… because my bag has never been empty.\" Keep them family-friendly. No teasing about looks, money or health."
+  },
+  {
+   "label": "Variation: a friend who agreed",
+   "text": "My friend [first name] said yes to being in a \"Some people call her…\" video. She's known for [planning every trip down to the minute]. Write 6 nickname ideas with a quick reveal line for each, and pick the one that's the most affectionate. It should feel like an inside joke, never a put-down."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: bike repair shop in Calgary]. Write 6 \"Some people call me…\" openers where the nickname leads into what we actually do, like \"Some people call me the flat-tire whisperer… because I fix them same day.\" Only use claims I can back up: [list 2–3 true things about the business]. No made-up reviews, awards or customer numbers."
+  }
+ ],
+ "tips": [
+  "Say the nickname with a straight face. The reveal does the work.",
+  "Put the nickname on screen in big text so people get it with the sound off.",
+  "Keep the whole video under 10 seconds for an easy rewatch.",
+  "For a business, the reveal should be true and specific: a real service, a real habit, a real product."
+ ],
+ "tags": [
+  "text",
+  "funny",
+  "tiktok",
+  "intro",
+  "business"
+ ]
+}

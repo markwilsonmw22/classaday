@@ -1,0 +1,47 @@
+{
+ "slug": "everyday-nature-documentary",
+ "title": "Your ordinary day as a serious documentary",
+ "published": "2026-10-23T06:45:00Z",
+ "kind": "voice",
+ "tools": [
+  "ChatGPT",
+  "Claude",
+  "Gemini",
+  "ElevenLabs"
+ ],
+ "summary": "Sit in a chair or do one dull task while a slow, serious documentary voice narrates it like a big life moment. AI writes the script and reads it.",
+ "why": "An Instagram Reels trend roundup updated in October 2026 lists a documentary-style chair-sit format: a slow documentary score over very ordinary narration, crossing over from TikTok to Reels.",
+ "steps": [
+  "Pick one boring moment: sitting down with a coffee, choosing a snack, folding laundry, opening the shop in the morning.",
+  "Use the main prompt to get a 20 to 30 second narration in a calm, serious documentary tone.",
+  "Paste the script into an AI voice tool and choose a low, slow narrator voice. Or read it yourself, very seriously.",
+  "Film the moment in one take, add soft piano or strings from your editor's free music, and lay the voice on top."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write a 25-second narration for a short video in the tone of a slow, serious nature documentary. The subject is me doing something very ordinary: [sitting down in my favourite chair after work]. Treat it like a rare, important event. Use short sentences, long pauses marked with \"...\", and one gentle joke near the end. Keep it kind and family-friendly. No real people's names, no brand names and no famous narrator impressions."
+  },
+  {
+   "label": "Variation: your pet",
+   "text": "Write a 20-second documentary-style narration about my [cat] doing something very normal: [staring at an empty food bowl]. Describe it like a wildlife film, with calm wonder and a dry, funny final line. Add [pause] where the voice should stop for a beat. Keep it under 70 words."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: small bakery in Halifax]. Write a 30-second documentary-style narration of an ordinary morning task, like [pulling the first tray of muffins out of the oven]. Make it calm, warm and a little funny, and end with one honest line about what we make. No made-up awards, reviews or customer numbers, and no prices."
+  }
+ ],
+ "tips": [
+  "The flatter and slower the voice, the funnier it gets. Don't rush the pauses.",
+  "Keep the camera still. One wide shot makes it feel like real wildlife footage.",
+  "Pick a stock AI voice or your own. Don't clone anyone else's voice.",
+  "Add captions. Lots of people watch with the sound off."
+ ],
+ "tags": [
+  "voice",
+  "funny",
+  "reels",
+  "storytelling",
+  "business"
+ ]
+}
