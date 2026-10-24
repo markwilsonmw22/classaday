@@ -1,0 +1,36 @@
+{
+ "slug": "im-so-sorry-costume-reveal",
+ "title": "\"I'm so sorry\" costume glow-up reveal",
+ "published": "2026-10-24T18:52:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Post a glammed-up AI version of an old Halloween costume photo, then confess with the real, homemade original on the last slide.",
+ "why": "A Know Your Meme guide published October 22, 2026 explains the \"I'm so sorry\" slideshow trend: creators open on a flattering, edited photo, then reveal the real one with an apology. It says the trend surged in October, mostly with old Halloween costumes.",
+ "steps": [
+  "Find an old Halloween photo of yourself in a homemade or not-so-great costume.",
+  "Upload it with the main prompt to make a polished, over-the-top version.",
+  "Make a slideshow: the glow-up first, one or two close-ups of the \"best\" details, then the real photo last.",
+  "Put \"I'm so sorry\" on the final slide. The honest reveal is the joke."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using my uploaded photo, keep my face, expression, pose and body exactly the same. Upgrade my homemade Halloween costume into a polished, film-quality version of the same idea: rich fabrics, neat seams, detailed props and proper makeup. Put me in a moody, well-lit Halloween setting with soft fog and warm practical lights. Make it look like a real high-end photo, not a cartoon. Don't add any logos, brand names or text."
+  },
+  {
+   "label": "Variation: detail close-ups",
+   "text": "From the upgraded costume photo, make two close-up crops that show off the most impressive details, like the props, fabric texture or makeup. Keep everything identical to the full image so the slides match."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Using my uploaded photo of our shop's first-ever Halloween display, keep the same layout and products but show it as a polished, magazine-quality version with better lighting, tidy styling and a cosy spooky mood. Don't add logos, prices or any text. (I'll post the real first attempt on the last slide.)"
+  }
+ ],
+ "tips": [
+  "Always end on the real photo. The trend only works because you own up.",
+  "The worse the original costume, the better the payoff.",
+  "Only use photos of friends or family if they say yes first.",
+  "Keep the slides in the same crop so the reveal feels like a before and after."
+ ],
+ "tags": ["halloween", "costume", "glow-up", "slideshow", "business"]
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "while-theyre-out-partying",
+ "title": "While they're out partying…",
+ "published": "2026-10-24T18:50:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Show off one oddly specific, totally useless skill under the caption \"While they're out partying…\". AI helps you pick the skill and write the line.",
+ "why": "Know Your Meme added the \"While they're out partying\" entry on October 21, 2026. It lists October posts in this format with millions of views within days, where creators show a useless skill they've mastered under that caption.",
+ "steps": [
+  "Use the main prompt to brainstorm useless skills you already have, or could learn in an afternoon.",
+  "Pick the one that looks best on camera and practise it a few times.",
+  "Film it in one take, straight on, with good light. Deadpan works best.",
+  "Add the caption from the prompt as on-screen text and post it as a Reel or TikTok."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short video for the \"While they're out partying…\" trend, where you show off a skill that's oddly specific and completely useless. Here's a bit about me: [hobbies, job, things I'm weirdly good at]. Give me 10 skill ideas I could film at home in under a minute, nothing dangerous. For each one, write the on-screen caption in the style \"While they're out partying, I [skill]\". Keep each caption under 15 words and rank them by how funny they'd look on camera."
+  },
+  {
+   "label": "Variation: learn one this weekend",
+   "text": "Suggest 8 harmless, oddly specific skills I could learn in one afternoon with things already in my kitchen or junk drawer, for a \"While they're out partying…\" video. For each one, give me 3 quick practice steps and the caption to put on screen."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 8 captions for a \"While they're out partying…\" video showing the oddly specific, behind-the-scenes skills my job needs, like [an example task]. Keep it playful and true to how we really work. Don't make up numbers, reviews or results."
+  }
+ ],
+ "tips": [
+  "The more specific the skill, the funnier it lands. Folding a fitted sheet beats \"cleaning\".",
+  "Don't smile or explain. Let the caption do the joke.",
+  "Keep it safe: no stunts, knives, fire or anything you'd regret.",
+  "For a business, a satisfying close-up of a real task works really well."
+ ],
+ "tags": ["text", "funny", "tiktok", "skills", "business"]
+}
