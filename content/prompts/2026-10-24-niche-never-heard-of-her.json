@@ -1,0 +1,36 @@
+{
+ "slug": "niche-never-heard-of-her",
+ "title": "Niche? Never heard of her",
+ "published": "2026-10-24T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Open with \"Niche? Never heard of her\", then rush through all your interests with a quick photo dump for each. AI helps you name and order them.",
+ "why": "An Instagram Reels trends roundup updated October 23, 2026 lists a new \"refuse to be limited by a single niche\" format: creators open with a line like \"Niche? Never heard of her\", then show each of their interests with a rapid photo dump.",
+ "steps": [
+  "List the interests you actually post about, or wish you did. Five or six is plenty.",
+  "Use the main prompt to get short, punchy labels and a running order.",
+  "Gather three to five photos or clips for each interest from your camera roll.",
+  "Edit it as label, quick photos, next label, and finish on your favourite one."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a Reel that opens with \"Niche? Never heard of her\". My interests are: [list five or six]. For each one, write an on-screen label of 2 to 4 words that sounds fun, like a title card. Then suggest an order that starts strong, mixes up very different interests, and ends on the most surprising one. Also give me 3 short closing lines for the last frame. No hashtags."
+  },
+  {
+   "label": "Variation: camera roll helper",
+   "text": "Here's a list of what's in my camera roll from the last few months: [describe the kinds of photos you have]. Group them into 5 or 6 interests for a \"Niche? Never heard of her\" Reel, give each group a 2 to 4 word label, and tell me which kinds of photos to use for each one."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business] and we do more than one thing: [list your products, services or side projects]. Write a \"Niche? Never heard of her\" Reel plan with a 2 to 4 word label for each, in a good running order, plus one friendly closing line that tells people what to check out first. Don't make up prices, reviews or results."
+  }
+ ],
+ "tips": [
+  "Keep each photo on screen for a split second. Fast is the point.",
+  "Big contrast between interests is funnier, like pottery then hockey stats.",
+  "Use your own photos. Real moments beat AI images here.",
+  "Put the label on the first photo of each group so people can follow."
+ ],
+ "tags": ["text", "photo-dump", "reels", "intro", "business"]
+}

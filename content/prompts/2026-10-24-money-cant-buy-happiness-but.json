@@ -1,0 +1,36 @@
+{
+ "slug": "money-cant-buy-happiness-but",
+ "title": "Money can't buy happiness, but…",
+ "published": "2026-10-24T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "One short clip with \"Money can't buy happiness, but it can buy…\" and the small treat that really lifts your mood. AI helps you write the lines.",
+ "why": "An Instagram Reels trends roundup updated October 23, 2026 lists \"Money can't buy happiness but…\" as a trend from October 16: one clip of about seven seconds with a few lines of text showing what a small purchase does for your mood.",
+ "steps": [
+  "Film about seven seconds of a small thing that makes you happy: a warm drink, fresh flowers, new socks.",
+  "Use the main prompt to get a few short text lines that fit the clip.",
+  "Add \"Money can't buy happiness, but…\" first, then your line underneath.",
+  "Keep it to one clip and post with a sound from the app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write 8 options for on-screen text that starts \"Money can't buy happiness, but it can buy…\". My clip shows [what's in your clip]. Each ending is under 10 words and about a small, everyday joy, not luxury. Make a few funny and a few cosy. Use Canadian spelling. No hashtags."
+  },
+  {
+   "label": "Variation: fall edition",
+   "text": "Write 8 endings for \"Money can't buy happiness, but it can buy…\" about small fall treats in Canada, like a hot drink on a cold morning, a new toque, a pumpkin from the farm stand or a cosy candle. Each ending under 10 words, warm and a little funny."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business] and sell [your product or service]. Write 6 endings for \"Money can't buy happiness, but it can buy…\" that show the small, honest mood boost my customers get, like [one real example]. Each ending under 10 words. Friendly, not pushy. Don't make up prices, reviews, results or deadlines."
+  }
+ ],
+ "tips": [
+  "Small and real wins. A good coffee is more relatable than a fancy purchase.",
+  "Show the moment of joy in the clip, like the first sip or the box opening.",
+  "Seven seconds is enough. Give the text time to be read.",
+  "For business posts, only promise what your product really does."
+ ],
+ "tags": ["text", "reels", "funny", "fall", "business"]
+}

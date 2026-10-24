@@ -1,0 +1,36 @@
+{
+ "slug": "not-all-angels-in-heaven",
+ "title": "Not all angels are in heaven…",
+ "published": "2026-10-24T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "\"Not all angels are in heaven… some are\" plus your whole personality. AI helps you find a funny, true ending that fits your job or your quirks.",
+ "why": "An Instagram Reels trends roundup updated October 23, 2026 lists \"Not all angels are in heaven\" as a trend from October 16: on-screen text starts the line, and creators finish it with something that fits their job or their quirks.",
+ "steps": [
+  "Film a short clip of yourself doing the thing that makes you you: at your desk, in your kitchen, behind the counter.",
+  "Use the main prompt to get a list of endings, then pick the one that makes you laugh.",
+  "Add \"Not all angels are in heaven…\" as text first, then reveal the ending a second later.",
+  "Post with a trending sound from the app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me finish this on-screen text: \"Not all angels are in heaven… some are\". Give me 10 endings, each under 12 words. Make them about me, based on these details: my job is [your job], my funny habits are [two or three habits], and people always ask me for help with [one thing]. Keep it kind and a little self-mocking. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: the friend group",
+   "text": "Give me 8 endings for \"Not all angels are in heaven… some are\" about a friend group role, like the one who always drives, the one who brings snacks or the one who remembers every birthday. I'm usually [your role]. Each ending under 12 words, warm and funny."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 8 endings for \"Not all angels are in heaven… some are\" from the point of view of my business or my team. Think small, real things we do for customers, like [one or two examples]. Each ending under 12 words. Friendly, not salesy. Don't make up prices, reviews or deadlines."
+  }
+ ],
+ "tips": [
+  "The more specific the ending, the better. \"Answering emails at 11 p.m.\" beats \"working hard\".",
+  "Leave a short pause before the ending so people read the first part.",
+  "Keep the clip quiet and simple so the text does the work.",
+  "Only use friends in the video if they've said yes."
+ ],
+ "tags": ["text", "funny", "reels", "personality", "business"]
+}
