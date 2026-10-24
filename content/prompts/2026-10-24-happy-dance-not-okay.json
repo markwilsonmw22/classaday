@@ -1,0 +1,36 @@
+{
+ "slug": "happy-dance-not-okay",
+ "title": "Happy dance, not-okay caption",
+ "published": "2026-10-24T06:39:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Dance like everything is fine while the on-screen text admits one small thing that is very much not fine. AI helps you write the caption.",
+ "why": "A TikTok trends roundup last updated October 14, 2026 lists the \"Be OK\" trend in its October top ten: creators dance happily to a cheerful song while on-screen text confesses a small, relatable thing they are not okay about.",
+ "steps": [
+  "Use the main prompt to get a list of small, relatable confessions in your own voice.",
+  "Pick the one that makes you laugh first. Shorter is better.",
+  "Film yourself dancing with a big smile, as if nothing is wrong.",
+  "Add the line as text on screen, pick the trending cheerful sound in the app and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write 10 short on-screen captions for a video where I dance happily but the text admits something I'm not okay about. Each caption is one sentence, under 15 words, and starts with \"Me after\" or \"When I\". Keep them small, everyday and relatable, like sending an email that says \"see attached\" with nothing attached. Here is a bit about my life: [your job, hobbies or daily routine]. Light and funny, nothing mean or sad. No hashtags."
+  },
+  {
+   "label": "Variation: Canadian fall",
+   "text": "Write 8 short on-screen captions for a happy-dance video where the text admits a small fall problem I'm not okay about. Think scraping frost off the car, the first snow tires appointment, the clocks changing, or wearing a toque indoors because the heat isn't on yet. Each caption under 15 words, playful, nothing mean. No hashtags."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 8 short on-screen captions for a happy-dance video where the text admits a funny, harmless behind-the-scenes struggle, like a printer jam on the busiest day or a customer asking a question that's on the sign. Each caption under 15 words. Keep it kind to customers and staff. Don't make up sales, reviews or numbers."
+  }
+ ],
+ "tips": [
+  "The joke works best when your face gives nothing away. Keep smiling.",
+  "Pick a struggle lots of people share. The more people see themselves, the better.",
+  "Leave the caption on screen long enough to read twice.",
+  "Read it out loud and cut any line that sounds like a complaint about a real person."
+ ],
+ "tags": ["text", "funny", "tiktok", "dance", "business"]
+}

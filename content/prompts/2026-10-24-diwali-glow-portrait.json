@@ -1,0 +1,40 @@
+{
+ "slug": "diwali-glow-portrait",
+ "title": "Diwali glow portrait with diyas and rangoli",
+ "published": "2026-10-24T06:40:00Z",
+ "kind": "image",
+ "tools": ["Gemini", "ChatGPT"],
+ "summary": "Turn your own family or friends photo into a warm Diwali portrait lit by diyas, marigolds and fairy lights, with a rangoli at your feet.",
+ "why": "Diwali falls on Sunday, November 8 this year. AI prompt guides for Diwali 2026, updated this month, focus on diya-lit scenes, rangoli and family portraits made from your own photos, which were popular festive edits last year too.",
+ "steps": [
+  "Choose a clear, well-lit photo of you, or of family or friends who are happy to be in it.",
+  "Upload it and paste the main prompt. Ask the tool to keep everyone's faces the same.",
+  "If the light looks too orange or the faces change, ask for one fix at a time.",
+  "Save your favourite and share it as a greeting, or print it as a card."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using the people in my photo, keep their faces, hair and expressions exactly the same. Place them at the front door of a home on Diwali evening. Rows of small clay diyas glow along the steps, strings of marigold flowers frame the doorway, and warm fairy lights twinkle behind them. A bright, colourful rangoli made of flower petals and coloured powder lies on the ground at their feet. Dress them in festive clothes in rich jewel colours. Soft, warm light from the lamps on their faces, a little glow in the air, natural skin texture, photo-realistic, portrait framing."
+  },
+  {
+   "label": "Variation: making rangoli together",
+   "text": "Using the people in my photo, keep their faces the same. Show them kneeling on the floor, smiling as they finish a round rangoli together with bowls of coloured powder and marigold petals around them. Small diyas form a circle around the design. Evening light, warm and cosy, shot from slightly above, photo-realistic."
+  },
+  {
+   "label": "Variation: snowy Canadian Diwali",
+   "text": "Using the people in my photo, keep their faces the same. They stand on the front porch of a house in a Canadian neighbourhood on Diwali night, with a light dusting of early snow on the railings. Diyas glow along the steps, fairy lights wrap the porch posts and a small rangoli sits on the doormat. They wear festive clothes with warm shawls. Calm night sky, warm light against cool blue snow, photo-realistic."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Create a warm Diwali photo of my product: [describe your product]. Set it on a wooden table with a few clay diyas, marigold petals and a small rangoli pattern nearby. Soft fairy lights blurred in the background, warm glow, clean and uncluttered so the product stays the hero. Leave space at the top for the words \"Happy Diwali\". No logos, prices or extra text."
+  }
+ ],
+ "tips": [
+  "Only use photos of people who said yes, and ask before you post them.",
+  "If faces drift, say \"keep every face exactly as in my photo\" and try again.",
+  "Ask for flower-petal rangoli if the coloured-powder version looks messy.",
+  "Add your own greeting in an editing app afterward. AI text often has spelling mistakes."
+ ],
+ "tags": ["diwali", "festival", "portrait", "family", "business"]
+}
