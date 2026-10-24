@@ -1,0 +1,36 @@
+{
+ "slug": "halloween-decor-comes-alive",
+ "title": "My Halloween decor came alive",
+ "published": "2026-10-24T00:45:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway"],
+ "summary": "Film your skeleton, scarecrow or inflatable, then use AI to make it move when you look away. A short, funny Halloween gag from one photo.",
+ "why": "An Instagram Reels trends roundup for October 12 to 25, 2026 lists a retro rock sound used for Halloween gags where a decoration seems to be alive, with about 305,000 Reels at its peak.",
+ "steps": [
+  "Take a clear, steady photo of one decoration where it really sits: on the porch, lawn, stairs or shop counter.",
+  "Use that photo as the first frame in an image-to-video tool and paste the main prompt.",
+  "Film yourself walking past and looking away, then cut to the AI clip. Cut back to you doing a double take.",
+  "Add a spooky or rock sound from the app's library and keep the whole post under 15 seconds."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my photo as the first frame. Keep the decoration, the house and the background exactly as they are. The decoration stays still for one second, then slowly turns its head toward the camera, tilts it, and gives a small wave. Then it snaps back into its first pose, as if nothing happened. Realistic evening light, handheld phone video, slight camera shake. No other people, no text. 6 seconds, 9:16."
+  },
+  {
+   "label": "Variation: little dance",
+   "text": "Use my photo as the first frame. Keep the yard and house the same. The Halloween decoration comes to life and does a short, goofy dance in place, bobbing its head and swinging its arms, then freezes in the exact same pose it started in. Porch light on, dusk sky, real phone video look. No text. 6 seconds, 9:16."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use my photo of my shop counter or window as the first frame. Keep the shop, the products and the layout exactly as they are. The Halloween decoration beside the counter slowly leans over, picks up one product, looks at it, and puts it back neatly before freezing again. Warm shop lighting, real phone video look. Don't add any text, signs or logos. 6 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Pick a decoration with a clear face or head. It is easier for the AI to move.",
+  "Ask for the decoration to end in the same pose it started in, so the gag lands when you look back.",
+  "If the house or yard changes shape, run it again and say \"keep the background exactly the same\".",
+  "Say in your caption that the moving part is AI."
+ ],
+ "tags": ["halloween", "video", "decor", "funny", "business"]
+}

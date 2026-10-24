@@ -1,0 +1,36 @@
+{
+ "slug": "october-is-all-about-me",
+ "title": "October is all about me",
+ "published": "2026-10-24T00:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A main-character text overlay listing the small ways this month is all about you. AI helps you write lines that sound like you.",
+ "why": "A TikTok trends roundup dated October 16, 2026 lists \"October is all about me\": creators use a seasonal sound with on-screen text that frames the month as their main-character moment.",
+ "steps": [
+  "Film a few seconds of something you love about October: a walk, a warm drink, a cosy corner.",
+  "Use the main prompt to get a short list of lines in your own voice.",
+  "Pick three or four lines and add them as text on screen, one at a time.",
+  "Choose a trending seasonal sound in the app and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write 8 short lines for an on-screen text video called \"October is all about me\". Each line is under 8 words and starts with \"October is\" or \"This month\". Make them about small, happy things: cosy mornings, long walks, saying no to plans, treating myself. Here are three things I love about this time of year: [your three things]. Keep it light and confident, not bragging. No hashtags."
+  },
+  {
+   "label": "Variation: Canadian fall",
+   "text": "Write 8 short on-screen text lines for \"October is all about me\", set in a Canadian fall. Think Thanksgiving leftovers, the first toque of the year, frosty windshields, hot drinks and crunchy leaves. Each line under 8 words, playful and warm. No hashtags."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 6 short on-screen text lines for an \"October is all about me\" video, written as if my business is talking. Make it about small treats for my customers this month, like [your offer or fall product]. Each line under 8 words. Friendly and fun. Don't make up prices, reviews or deadlines."
+  }
+ ],
+ "tips": [
+  "Give the AI your own details. Generic lines look like everyone else's.",
+  "Three or four lines is plenty. Each should stay on screen long enough to read.",
+  "Match each line to a clip, like your drink for a coffee line.",
+  "Read the list out loud and cut any line you wouldn't really say."
+ ],
+ "tags": ["text", "fall", "tiktok", "main-character", "business"]
+}
