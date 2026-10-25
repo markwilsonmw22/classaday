@@ -1,0 +1,40 @@
+{
+ "slug": "dia-de-muertos-family-ofrenda",
+ "title": "Día de Muertos family ofrenda photo",
+ "published": "2026-10-25T00:40:00Z",
+ "kind": "image",
+ "tools": ["Gemini", "ChatGPT"],
+ "summary": "Turn an old family photo into a warm Día de Muertos ofrenda scene with marigolds, candles and papel picado, to remember someone you love.",
+ "why": "Día de Muertos is on November 1 and 2. AI prompt guides for it published this month focus on ofrenda scenes, marigolds and papel picado, and last year people shared AI memorial pictures of loved ones and pets for the holiday.",
+ "steps": [
+  "Choose a photo of a family member or pet you want to remember. Check with your family first.",
+  "Upload it and paste the main prompt. Ask the tool to keep the photo itself exactly as it is.",
+  "If the scene looks too busy or the photo changes, ask for one fix at a time.",
+  "Share it with family, print it for your own ofrenda, or post it with a few words about them."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Place my photo, unchanged, in a simple wooden frame on a family ofrenda for Día de Muertos. Do not change the face or the photo in any way. Around the frame: bright orange and yellow marigold flowers, tall white candles glowing softly, a few pieces of sweet bread, a glass of water and small sugar skulls with colourful icing. Strings of colourful cut-paper banners hang above. Warm candlelight, a calm and loving mood, photo-realistic, shot at eye level."
+  },
+  {
+   "label": "Variation: a pet you miss",
+   "text": "Place the photo of my pet, unchanged, in a small painted frame on a cosy home ofrenda. Around it: marigold petals, glowing candles, their favourite toy, a little bowl and a path of petals leading to the frame. Colourful cut-paper banners above. Soft, warm light, gentle and sweet, photo-realistic."
+  },
+  {
+   "label": "Variation: Canadian home",
+   "text": "Place my photo, unchanged, in a wooden frame on an ofrenda set up on a windowsill in a Canadian home in early November. Marigolds, candles and colourful cut-paper banners on the sill, with bare trees and a light frost outside the window. Warm candlelight inside against the cool blue evening outside, calm and loving, photo-realistic."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "A warm Día de Muertos photo of my product: [describe your product]. Set it on a wooden table with marigold flowers, a few glowing candles and colourful cut-paper banners blurred in the background. Clean and uncluttered so the product stays the hero. Leave space at the top for a short greeting. No logos, prices or extra text."
+  }
+ ],
+ "tips": [
+  "This is a day of remembrance. Keep it warm and respectful, not a costume or a joke.",
+  "Ask family before you post a photo of someone who has passed away.",
+  "If the face changes, say \"do not edit the photo inside the frame\" and try again.",
+  "Add names or dates yourself in an editing app. AI text often has spelling mistakes."
+ ],
+ "tags": ["dia-de-muertos", "family", "remembrance", "pets", "business"]
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "halloween-vector-sticker-sheet",
+ "title": "Halloween sticker sheet as editable vectors",
+ "published": "2026-10-25T00:40:00Z",
+ "kind": "image",
+ "tools": ["Ideogram"],
+ "summary": "Make a sheet of cute Halloween stickers as a clean vector file you can recolour, resize and print, cut or post without blurry edges.",
+ "why": "On October 22 and 23, AI news digests reported that Ideogram can now make editable vector graphics (SVG files) from a text prompt, and turn existing images into vectors. That makes print-ready stickers, labels and decals much easier than with normal AI pictures.",
+ "steps": [
+  "Open the vector option in the tool and paste the main prompt.",
+  "Pick the sheet you like best and download it as an SVG file.",
+  "Open the SVG in any design app to change colours, move pieces or delete ones you don't want.",
+  "Print it on sticker paper, send it to a cutting machine, or post the designs as a sticker pack."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "A flat vector sticker sheet of 9 cute Halloween stickers on a plain white background: a smiling pumpkin, a small ghost with rosy cheeks, a black cat with a curled tail, a bat, a witch hat, a candy corn, a full moon with stars, a spooky little house and a cauldron with green bubbles. Bold, clean outlines, a thick white border around each sticker, simple shapes, a limited palette of orange, purple, black, lime green and cream. No gradients, no shadows, no text, evenly spaced in a 3 by 3 grid."
+  },
+  {
+   "label": "Variation: your pet as a sticker",
+   "text": "A flat vector sticker of a small fluffy dog wearing a pumpkin costume, sitting and smiling, with a thick white border. Simple shapes, bold outlines, flat colours in orange, brown and cream. No gradients, no text, plain white background."
+  },
+  {
+   "label": "Variation: cosy Canadian fall",
+   "text": "A flat vector sticker sheet of 6 cosy fall stickers: a red maple leaf, a steaming mug with a marshmallow, a plaid scarf, a pair of mittens, a pumpkin on a hay bale and a canoe on a calm lake. Bold outlines, thick white borders, flat colours in rust, mustard, forest green and cream. No gradients, no text, evenly spaced."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "A flat vector shop window decal for a small [type of business, for example bakery]: a friendly ghost holding [your product], with a few bats and stars around it. Bold, clean outlines, simple shapes, 3 flat colours only: orange, black and white. No gradients, no text, no logos, plain background, designed to be cut from vinyl."
+  }
+ ],
+ "tips": [
+  "Say \"flat\", \"no gradients\" and \"bold outlines\". Simple shapes make cleaner vector files.",
+  "Leave text out of the prompt and add your own words in a design app. AI lettering often has typos.",
+  "Use fewer colours for vinyl cutting. Every colour is a separate layer to cut.",
+  "Only sell designs you're happy are your own idea, and never ask for logos or famous characters."
+ ],
+ "tags": ["halloween", "stickers", "vector", "ideogram", "business"]
+}
