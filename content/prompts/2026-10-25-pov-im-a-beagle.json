@@ -1,0 +1,36 @@
+{
+ "slug": "pov-im-a-beagle",
+ "title": "POV: I'm a beagle",
+ "published": "2026-10-25T12:39:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Claude", "Gemini"],
+ "summary": "Film something ordinary, caption it as if a beagle is doing it, and end with a bark. AI writes the beagle's inner thoughts for you.",
+ "why": "A social media trends roundup dated October 21, 2026 lists \"POV: I'm a beagle\" as just starting to catch on: a normal everyday task with a beagle-persona twist that ends in a bark.",
+ "steps": [
+  "Pick an ordinary task you can film in 10 to 15 seconds: grocery shopping, opening the fridge, a work meeting, a walk.",
+  "Ask a text AI for beagle-brain captions with the main prompt.",
+  "Film the task, add two or three captions on screen, and end the clip with a loud bark (yours, or your own dog's).",
+  "Post it with the caption \"POV: I'm a beagle\"."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a short clip of me [ordinary task, for example: unpacking groceries]. Write 6 caption ideas for a \"POV: I'm a beagle\" video. Each caption is the inner thoughts of a very excited, food-obsessed, nose-first beagle doing that task. Keep each under 10 words. Make them build from calm to completely distracted by a smell. The last one should lead into a bark. Funny, warm, family-friendly."
+  },
+  {
+   "label": "Variation: your own dog",
+   "text": "My dog is a [breed or mix] named [name] who loves [favourite thing] and hates [least favourite thing]. Write 5 short on-screen captions for a \"POV: I'm [name]\" video where I act out my dog's day: waking up, seeing the leash, hearing the mail carrier, dinner time and bedtime. Under 10 words each, funny and kind. End with a bark or howl cue."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: a coffee shop]. Write 5 short captions for a \"POV: I'm a beagle working at [type of business]\" video. The beagle notices the smells and sounds of my shop, gets very excited about [a real product we sell], and ends with a bark. Under 10 words each. No prices, no claims we can't back up."
+  }
+ ],
+ "tips": [
+  "The bark at the end is the punchline. Make it loud and sudden.",
+  "Shoot from low down, around knee height, to feel like a dog's view.",
+  "Short captions work best. Two or three on screen is plenty.",
+  "If you film your own dog, keep it calm and fun for them."
+ ],
+ "tags": ["pets", "funny", "tiktok", "pov", "business"]
+}

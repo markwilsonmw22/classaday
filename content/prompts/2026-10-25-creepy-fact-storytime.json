@@ -1,0 +1,40 @@
+{
+ "slug": "creepy-fact-storytime",
+ "title": "Creepy-but-true fact over one slow shot",
+ "published": "2026-10-25T12:39:00Z",
+ "kind": "video",
+ "tools": ["ChatGPT", "Claude", "Veo", "Kling"],
+ "summary": "One slow, moody shot with no cuts, and one unsettling true fact typed on screen. Use AI to find the fact and build the shot.",
+ "why": "Two TikTok trend reports from mid-October 2026 (October 15 and October 18) list \"creepy fact storytime\" as rising: an unsettling fact over a slow shot with no cuts, set to a quiet eerie sound. Halloween is October 31.",
+ "steps": [
+  "Ask a text AI for a few creepy-but-true facts on a topic you like, then check the one you pick on a trusted site.",
+  "Film one slow shot yourself (a dark hallway, a foggy field, the bottom of a lake), or make one with an AI video tool using the shot prompt.",
+  "Add the fact as on-screen text in two or three short lines. Keep the shot going with no cuts.",
+  "Add a quiet, eerie sound from the app's library and post it before Halloween."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the fact",
+   "text": "Give me 5 creepy but true facts about [topic, for example: the deep ocean, the human body, old houses, or Canadian winters]. Each one must be well known and easy to check, with no gore. Write each as two short lines that work as on-screen text: line 1 sets it up, line 2 is the chilling part. After each fact, name the kind of source I could check it with, like an encyclopedia or a science museum website. Don't include anything you are unsure of."
+  },
+  {
+   "label": "Shot prompt: AI video",
+   "text": "A single slow, steady camera push forward down [scene, for example: an empty wooden hallway lit only by a window at the far end]. Late evening, cool blue light, light dust in the air. Nothing jumps out and nothing moves except the camera. Vertical 9:16, about 8 seconds, no cuts, no people, no text."
+  },
+  {
+   "label": "Variation: cosy, not scary",
+   "text": "Give me 5 strange but true facts about [topic, for example: owls, the moon, or autumn leaves] that feel a little eerie but are fine for kids. Write each as two short on-screen lines. Name the kind of source I could check it with. Nothing gory or frightening for young children."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, for example: an old bookshop in a heritage building]. Give me 3 eerie but true facts about [something real tied to my business, for example: the history of paper, or old buildings like mine], written as two short on-screen lines each. End with a soft caption that invites people in for Halloween week. No made-up history, no ghost claims about my building, no prices."
+  }
+ ],
+ "tips": [
+  "Check every fact before you post. AI can sound sure and still be wrong.",
+  "Slow is the point. A steady push or a still shot works better than fast edits.",
+  "Keep the text on screen long enough to read twice.",
+  "Leave a pause before the chilling line so it lands."
+ ],
+ "tags": ["halloween", "video", "facts", "tiktok", "business"]
+}

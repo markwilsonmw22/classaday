@@ -1,0 +1,40 @@
+{
+ "slug": "character-reference-sheet",
+ "title": "Yourself as a character reference sheet",
+ "published": "2026-10-25T12:39:00Z",
+ "kind": "image",
+ "tools": ["Gemini", "ChatGPT"],
+ "summary": "Turn one selfie into a clean character sheet: front, side and back views, plus close-ups of your face and outfit details, like a design for an animated film.",
+ "why": "An October 20, 2026 roundup of AI photo formats spreading on Instagram, TikTok and X this month lists the character reference sheet and calls it the newest of the group.",
+ "steps": [
+  "Pick a full-length photo of yourself in a good light, with your whole outfit showing.",
+  "Upload it to Gemini or ChatGPT and paste the main prompt.",
+  "If a view looks off, ask for a fix in one short line, like \"make the side view match the front view's shoes\".",
+  "Post the sheet on its own, or as a carousel with your original photo first."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my photo. Make a character reference sheet of me, as if I were a character being designed for an animated film. Show me standing in a relaxed pose in three full-body views side by side: front, side and back. Keep my face, hair, body shape and outfit exactly as in the photo. Under the views, add three small close-up boxes: my face with a neutral expression, my face smiling, and one outfit detail like my shoes or a bag. Use a plain light grey background with thin guide lines and small neat labels: FRONT, SIDE, BACK. Soft, even studio light. Clean, simple and tidy. No logos and no extra text."
+  },
+  {
+   "label": "Variation: illustrated style",
+   "text": "Use my photo. Turn me into a hand-drawn cartoon character and lay it out as a character reference sheet. Show front, three-quarter and back views in a clean line-art style with soft flat colours. Keep my hairstyle, glasses, outfit colours and overall look from the photo. Add a small colour palette strip along the bottom with five swatches taken from my outfit, and a few short handwritten-style notes like \"always wears the green scarf\". Off-white paper background."
+  },
+  {
+   "label": "Variation: your pet",
+   "text": "Use my photo of my pet. Make a character reference sheet for my pet as a lovable animated film character. Show front, side and back views, plus two close-ups: a happy face and a sleepy face. Keep the markings, fur colour and eye colour exactly as in the photo. Plain light background, thin guide lines, small neat labels. Add the name [pet's name] in a friendly rounded font at the top."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use my photo of me in my work clothes at [type of business, for example: my bakery]. Make a friendly character reference sheet of me as the face of the business. Show front, side and back views, and close-ups of my apron, my tools and my smile. Keep my real look and outfit from the photo. Add a short title at the top: \"Meet [first name], [role]\". Clean light background, simple labels. No made-up facts, no prices and no logos other than what is already on my clothes."
+  }
+ ],
+ "tips": [
+  "A full-length photo against a plain wall gives the most accurate side and back views.",
+  "Ask for a wide 16:9 or 3:2 shape so all three views fit without squeezing.",
+  "The back view is a guess. Check that it matches your real hair and outfit before you post.",
+  "Only use photos of friends or family if they have said yes."
+ ],
+ "tags": ["portrait", "character", "gemini", "pets", "business"]
+}
