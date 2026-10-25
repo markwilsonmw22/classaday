@@ -1,0 +1,36 @@
+{
+ "slug": "look-its-a-spider-real-fear",
+ "title": "\"Look… it's a spider\": the real fear reveal",
+ "published": "2026-10-25T06:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A friend points out a spider and you panic. Then they point out the thing that really scares you. AI helps you find a funny, relatable second fear.",
+ "why": "A TikTok trends roundup updated October 21, 2026 lists the \"Look…\" format: one person says \"oh look, it's a spider\", the other panics, then the setup flips to a second, much more personal fear.",
+ "steps": [
+  "Use the main prompt to get a list of funny everyday fears that fit your life.",
+  "Pick one a lot of people will recognize. Short and specific works best.",
+  "Film two quick shots with a friend: the spider line and a big panic, then the second \"look…\" line and an even bigger reaction.",
+  "Put both lines on screen as text and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a two-person video. First my friend says \"Oh look, it's a spider\" and I panic. Then my friend says \"Look…\" and points to something that scares me far more. Write 10 ideas for that second, scarier thing. Keep them everyday and relatable, like an unread voicemail from my mom or the group chat planning a 6 a.m. hike. Here is a bit about me: [your job, age group, hobbies]. Each idea under 12 words. Light and funny, nothing mean. No hashtags."
+  },
+  {
+   "label": "Variation: Canadian fall and winter",
+   "text": "Write 8 ideas for the scary second reveal in a \"Look… it's a spider\" video, all about fall and winter in Canada. Think the first frost on the windshield, a snow tire booking reminder, or the heating bill envelope on the counter. Each under 12 words, playful, nothing mean. No hashtags."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 8 ideas for a \"Look… it's a spider\" video where the second, scarier reveal is a harmless behind-the-scenes struggle, like a printer out of ink on the busiest day or a box of receipts to sort. Then write 3 versions where the last shot shows how we solve it, kept honest. Each line under 12 words. Don't make up reviews, sales or numbers."
+  }
+ ],
+ "tips": [
+  "Make the second reaction bigger than the first. That's the whole joke.",
+  "Use a fake or toy spider. No need to scare anyone for real.",
+  "Keep the second fear about you, not about a real person you know.",
+  "Leave each line on screen long enough to read twice."
+ ],
+ "tags": ["text", "funny", "tiktok", "friends", "business"]
+}

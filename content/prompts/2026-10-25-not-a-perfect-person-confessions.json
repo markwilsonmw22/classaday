@@ -1,0 +1,36 @@
+{
+ "slug": "not-a-perfect-person-confessions",
+ "title": "Not a perfect person: tiny confessions",
+ "published": "2026-10-25T06:41:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Own up to one small, funny habit you know you shouldn't have, then mouth along to the trending sound like a guilty shrug. AI helps you find the line.",
+ "why": "A TikTok trends roundup updated October 21, 2026 lists the \"Not a perfect person\" format: creators put a confession about a bad habit or questionable choice on screen, then lip-sync the line \"I'm not a perfect person\" as a playful admission.",
+ "steps": [
+  "Use the main prompt to get a list of harmless confessions in your own voice.",
+  "Pick the one that makes you cringe and laugh at the same time.",
+  "Film a close-up of your face, looking a little guilty, while you mouth along to the trending sound in the app.",
+  "Add the confession as on-screen text and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write 10 short, funny confessions for an on-screen caption about small habits I know I shouldn't have. Each one is a single sentence under 18 words, written in the first person, and starts with something like \"Told everyone\" or \"Every single time\". Keep them harmless and relatable, like saying I'm five minutes away when I haven't left yet. Here is a bit about me: [your job, hobbies, daily routine]. Nothing mean about anyone else, nothing about money or health. No hashtags."
+  },
+  {
+   "label": "Variation: fall habits",
+   "text": "Write 8 short, funny first-person confessions about fall habits I know are a bit much, like buying a third cosy blanket when I already own two, or turning on the fireplace video in October. Each under 18 words, playful and harmless. Canadian spelling. No hashtags."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 8 short, funny confessions about my own harmless work habits, like reorganizing the shelf instead of answering emails, or taste-testing the samples one too many times. First person, each under 18 words. Keep it kind to customers and staff. Don't make up sales, reviews or numbers."
+  }
+ ],
+ "tips": [
+  "Confess about yourself, never about a friend or partner. It keeps it funny, not mean.",
+  "Small and specific beats big and vague.",
+  "A tiny guilty smile at the end sells the joke.",
+  "Skip anything you wouldn't want your boss or family to read."
+ ],
+ "tags": ["text", "funny", "tiktok", "confession", "business"]
+}
