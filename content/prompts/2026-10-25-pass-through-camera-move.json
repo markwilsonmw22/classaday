@@ -1,0 +1,51 @@
+{
+ "slug": "pass-through-camera-move",
+ "title": "The pass-through camera: through a keyhole and beyond",
+ "published": "2026-10-25T18:40:00Z",
+ "kind": "video",
+ "tools": [
+  "Higgsfield",
+  "Kling",
+  "Veo",
+  "Runway"
+ ],
+ "summary": "One unbroken camera move that slips through a keyhole, a mug or a phone screen and comes out somewhere new.",
+ "why": "Higgsfield's first weekly film challenge, running October 21 to 28, has the theme \"Impossible Camera\". This builds on our street-to-space zoom pack with a new twist: the camera passes through small objects instead of just flying up.",
+ "steps": [
+  "Pick a start (your front door, your desk, your shop counter) and an end place you want to reveal.",
+  "Take a clear photo of the start and use it as the first frame.",
+  "Paste the prompt, naming the object the camera goes through and what is on the other side.",
+  "Keep the best take and add one short caption at the end."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use the image as the first frame. One continuous camera move with no cuts. The camera glides slowly toward the old keyhole in the door, shrinks to fit, and passes right through it. On the other side it comes out into a warm, candlelit room with a pumpkin on the table, then keeps drifting forward and settles on the window. Smooth and steady, soft natural light, realistic. 10 seconds, 9:16."
+  },
+  {
+   "label": "Variation: into the mug",
+   "text": "Use the image as the first frame. One continuous move with no cuts. The camera dips into the steam rising from the coffee mug on the desk, dives into the dark coffee, and comes out of the surface of a calm lake at sunrise with fall trees on the shore. Gentle, dreamy pace, realistic colours. 10 seconds, 9:16."
+  },
+  {
+   "label": "Variation: out of the phone",
+   "text": "Use the image as the first frame. One continuous move with no cuts. The camera pushes into the phone screen lying on the table, travels through a bright tunnel of tiny photo thumbnails, and bursts out into a sunny city park in autumn, slowing down over a path covered in red maple leaves. Smooth, fast in the middle, slow at the end. 10 seconds, 9:16."
+  },
+  {
+   "label": "Variation: small business reveal",
+   "text": "Use the image as the first frame, a photo of my shop's front window. One continuous move with no cuts. The camera moves up to the glass, passes straight through it, weaves between the shelves at table height, and slows down to stop on the counter where a freshly made product sits under warm light. Realistic, cosy, steady. 10 seconds, 9:16."
+  }
+ ],
+ "tips": [
+  "Say \"one continuous move, no cuts\" and name the object it passes through, or the model may jump to a new shot.",
+  "A slow start, fast middle and slow end feels more cinematic than one speed all the way.",
+  "Small, round openings (keyholes, mug rims, letterbox slots) give the cleanest pass-through.",
+  "Use your own photo as the first frame so the start of the clip is real."
+ ],
+ "tags": [
+  "video",
+  "cinematic",
+  "camera-move",
+  "higgsfield",
+  "business"
+ ]
+}
