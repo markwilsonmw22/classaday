@@ -1,0 +1,40 @@
+{
+ "slug": "desk-concert-lead-singer",
+ "title": "Lead singer at your own desk concert",
+ "published": "2026-10-26T06:45:00Z",
+ "kind": "video",
+ "tools": ["Higgsfield", "Kling", "Veo"],
+ "summary": "Turn one photo of yourself into a 10-second clip of you singing lead at a cosy office-desk concert, backed by an AI band and an original groove.",
+ "why": "Explainer and how-to pages dated October 23 and 24, 2026 say the AI desk-concert video took off on TikTok in October, after a clip that swapped people into a small office concert passed 2 million views. Template sites now offer a one-photo version where you sing lead yourself.",
+ "steps": [
+  "Pick a clear, front-facing photo of yourself, chest up, with good light. Add up to two friends' photos if they agree to be your bandmates.",
+  "Paste the main prompt into an image-to-video tool, attach your photo, and set the clip to 9:16 and about 10 seconds with sound on.",
+  "If your tool can't make music, make a short original groove in a music AI and add it in your editor.",
+  "Post it with a funny caption about why you're performing, like the playlist of your week."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use the person in my photo as the lead singer. They stand behind a cluttered wooden office desk in a small, warm room packed with bookshelves, string lights and old records. They sing into a vintage microphone with real feeling, eyes half closed, one hand raised. Behind them, a small band plays: a keyboard player, a bass player, a drummer with a tiny kit and two backup singers swaying together. Soft, warm lamp light, a slightly handheld camera that slowly pushes in. Smooth, upbeat original funk and soul groove. Keep the singer's face, hair and clothes exactly like the photo. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: bad week concert",
+   "text": "Use the person in my photo as the lead singer at a cosy office-desk concert, with a small band and two backup singers behind them. They sing a slow, heartfelt soul ballad about a small, funny everyday loss: [for example: my coffee went cold three times today]. Write short, original lyrics for it, two lines only. Dramatic, warm lamp light, the camera slowly pushes in as the band leans in. Keep the face exactly like the photo. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: friends as the band",
+   "text": "Use photo 1 as the lead singer, photo 2 as the keyboard player and photo 3 as the backup singer. They perform behind a small office desk crowded with plants and books, in a warm, cosy room. Everyone is having fun and grooving in time. Upbeat original soul groove, warm light, handheld camera. Keep each person's face and clothes like their photo. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Use the person in my photo as the lead singer at a cosy desk concert set inside my [type of business, for example: bakery]. The desk is our counter, with our real [product] on it. A small band and two backup singers play behind them. They sing a short, original, upbeat jingle: two lines about [what we do]. Warm light, handheld camera, fun and friendly. No prices or claims. Vertical 9:16, 10 seconds."
+  }
+ ],
+ "tips": [
+  "Only use your own photo, or friends who said yes. Don't swap in famous people or real performers.",
+  "Ask for an original song. Don't name a real artist, song or concert series.",
+  "A clear, well-lit face keeps the likeness strong when the camera moves.",
+  "The caption is half the joke. Say what you're singing about."
+ ],
+ "tags": ["video", "music", "funny", "tiktok", "business"]
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "smug-head-shake",
+ "title": "The smug slow head shake",
+ "published": "2026-10-26T06:45:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Higgsfield"],
+ "summary": "Turn a photo of your pet (or yourself) into a close-up where they grin smugly, shake their head slowly, then stare wide-eyed with the tongue just out.",
+ "why": "A trend tracker logs AI pet head-shake clips on TikTok from October 19 to 24, 2026, with the first ones passing 2 to 4 million views and the hashtag reaching about 1 million views by October 25. It's a new pet reaction, different from our slow-clap pack.",
+ "steps": [
+  "Pick a clear close-up photo of your pet's face, or a selfie of yourself, looking at the camera.",
+  "Paste the main prompt into an image-to-video tool and attach the photo. Set 9:16 and about 10 seconds.",
+  "Add a caption that sets up the reaction, like \"Me when someone says they don't like cats\".",
+  "Post it and use a matching sound if your app has one trending."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Animate the animal in my photo in a tight face close-up. First it closes its eyes with a smug, satisfied little grin. Then it slowly shakes its head side to side, like it can't believe what it just heard. Then it stops, opens its eyes very wide and stares straight into the camera with the tip of its tongue poking out. Keep its fur, markings and face exactly like the photo. Soft natural light, still camera, funny and cute. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: you",
+   "text": "Animate the adult in my selfie in a tight face close-up. They close their eyes with a smug, knowing smile, slowly shake their head side to side, then stop and stare wide-eyed into the camera with the tip of their tongue out, very silly. Keep their face, hair and clothes exactly like the photo. Natural light, still camera, playful. Vertical 9:16, 10 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Animate the shop pet (or mascot plush) in my photo in a close-up on our counter at [type of business]. It closes its eyes with a smug grin, slowly shakes its head, then stares wide-eyed into the camera with its tongue just out. Keep it exactly like the photo, with our real shop softly blurred behind it. Warm light, funny, friendly. Vertical 9:16, 10 seconds."
+  }
+ ],
+ "tips": [
+  "A front-facing photo with both eyes visible gives the best head shake.",
+  "Captions like \"Me when…\" or \"My cat when…\" make the reaction land.",
+  "If the head turns too far, add \"small, gentle head shake\" to the prompt.",
+  "Use your own pet or your own face, not someone else's."
+ ],
+ "tags": ["pets", "video", "meme", "reaction", "business"]
+}
