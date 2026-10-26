@@ -1,0 +1,36 @@
+{
+ "slug": "say-it-then-prove-it-wrong",
+ "title": "Say it, then prove it wrong",
+ "published": "2026-10-26T18:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Open with a common belief on screen, then show the proof that it's wrong in the very next shot. AI helps you find the claims and plan the shots.",
+ "why": "An Instagram weekly trend report covering October 17–24, 2026 lists \"contrarian proof\" Reels: short videos that open with a claim on screen and then show a quick visual demo that disproves it.",
+ "steps": [
+  "Use the main prompt to get a list of common beliefs about your hobby, skill or job that you can disprove on camera.",
+  "Pick one you can show, not just say. The proof has to be something people can see.",
+  "Film the claim as on-screen text over a plain first shot, then cut straight to the proof.",
+  "Keep it short: about 6 to 18 seconds. Post with a trending sound from the app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I make short videos about [your hobby or skill, e.g. home cooking / small-space decorating / hiking with kids]. List 10 common beliefs about it that I could prove wrong on camera in under 15 seconds. For each one give: the claim as on-screen text (under 10 words), the one shot that proves it wrong, and what I need to film it. Only include things that are actually true and safe to show. No health, money or medical claims."
+  },
+  {
+   "label": "Variation: shot list for one claim",
+   "text": "Here is the claim I want to prove wrong: \"[your claim]\". Plan a 15-second vertical video. Shot 1 shows the claim as on-screen text over a simple opening shot. Then give 2 or 3 fast shots that show the proof, with what's in frame and how long each lasts. End with a short closing text line under 8 words. Keep it honest: don't fake or speed up anything in a way that misleads."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. List 8 things customers often assume about my work that I can prove wrong on camera, like how long a job takes or what's possible in a small space. For each: the assumption as on-screen text (under 10 words) and the one shot that proves it. Use only things I really do. Don't invent prices, numbers, reviews or results."
+  }
+ ],
+ "tips": [
+  "The proof must be real. If it only works with a cut or a trick, say so on screen or pick another claim.",
+  "Show the proof within the first two seconds after the claim. Don't make people wait.",
+  "Pick claims that are mild and fun to disagree with, not ones that start a fight.",
+  "No voice-over needed. Big on-screen text plus a clear shot does the job."
+ ],
+ "tags": ["text", "reels", "hooks", "myth-busting", "business"]
+}
