@@ -1,0 +1,36 @@
+{
+ "slug": "vhs-end-credits-recap",
+ "title": "VHS end-credits recap",
+ "published": "2026-10-26T00:37:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Roll your month, trip or season like the end of an old movie on tape. AI writes the funny credits; you add them over your clips.",
+ "why": "A weekly Instagram trend report covering posts from October 17 to 24, 2026 lists a VHS end-credits recap template among the formats getting traction: a recap of clips styled like the credits at the end of an old taped movie.",
+ "steps": [
+  "Pick 6–10 short clips or photos from your month, trip or season.",
+  "Use the main prompt to write the credits, then cut any line that isn't true or isn't funny.",
+  "In your editor, add a soft VHS filter and scroll the credits slowly up the screen over your clips.",
+  "Finish on one title card, like \"The End\" or \"See you next month\", and add a trending sound from the app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write movie end credits for my [month / trip / season], styled like the credits at the end of an old film on videotape. Use roles like Starring, Special Guest Star, Stunt Coordinator, Catering, Wardrobe, Location Scout and Best Supporting Snack. Base every credit on these real moments: [list 6–10 things that happened, who was there, and any running jokes]. Use first names or nicknames only. Keep each line short, warm and a little silly. Finish with one closing line. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: the family year so far",
+   "text": "Write end credits for our family's fall so far, like the last minute of an old taped movie. Real moments: [list them]. Give the kids and pets their own roles, like Head of Noise or Chief Leaf Pile Tester. Use only the names I give you. Short lines, kind humour, one closing line that says \"to be continued\"."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write end credits for our [month / season] like the end of an old movie on tape. Give real credits to my team and to things like the coffee machine, the delivery van or the shop cat, based on these moments: [list them]. End with a thank-you to our customers. Short, friendly lines. Don't make up numbers, reviews, awards or customer names."
+  }
+ ],
+ "tips": [
+  "Keep it to 15–25 lines so people can read them as they scroll.",
+  "Real, specific moments land better than generic jokes.",
+  "Ask before you put a friend's name or face in your recap.",
+  "Most editors have a free VHS or film grain filter, so you don't need a special app."
+ ],
+ "tags": ["text", "recap", "retro", "reels", "business"]
+}

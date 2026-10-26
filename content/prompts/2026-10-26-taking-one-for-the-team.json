@@ -1,0 +1,36 @@
+{
+ "slug": "taking-one-for-the-team",
+ "title": "Taking one for the team",
+ "published": "2026-10-26T00:37:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A short bit about the role you always end up with: the driver, the photographer, the planner. AI helps you write the setup and the punchline.",
+ "why": "An Instagram Reels trends roundup updated October 23, 2026 lists \"Taking one for the team\" as a trend from October 16: a role-based bit about the person who always takes the job nobody wants, like the designated driver or the group photographer.",
+ "steps": [
+  "Pick your role: the driver, the photographer, the one who books the table, the one who carries everything.",
+  "Use the main prompt to get on-screen text ideas and pick your favourite.",
+  "Film a short clip of you in that role, like holding everyone's bags or taking the group photo.",
+  "Add the text over the clip and post with a trending sound from the app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm always the [your role, e.g. designated driver / group photographer / planner] in my friend group. Write 8 short on-screen text ideas for a \"taking one for the team\" video about it. Each one has a setup line and a punchline, both under 12 words. Use real details: [two or three things that always happen to you in this role]. Make it fond and funny, not bitter. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: Halloween night",
+   "text": "Write 6 \"taking one for the team\" on-screen texts about the person who does the boring job on Halloween night: walking the kids around, handing out candy at the door, or wearing the costume nobody else wanted. My role is [your role]. Setup and punchline, each under 12 words. Warm and silly."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 6 \"taking one for the team\" on-screen texts about the jobs someone on my team always takes on, like [examples: closing up, cleaning the espresso machine, answering the phone during the rush]. Setup and punchline, each under 12 words. Make the team look good and human. Don't make up numbers, reviews or offers."
+  }
+ ],
+ "tips": [
+  "The more specific the detail, the funnier it is. \"Holding six coats at the door\" beats \"helping out\".",
+  "Show the role on screen so people get the joke before they read it.",
+  "Tag friends only if they're happy to be in it.",
+  "If you're the driver, keep filming to when you're parked."
+ ],
+ "tags": ["text", "funny", "reels", "friends", "business"]
+}

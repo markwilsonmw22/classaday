@@ -1,0 +1,36 @@
+{
+ "slug": "vlog-timestamps",
+ "title": "Vlog timestamps: my day, hour by hour",
+ "published": "2026-10-26T00:37:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Short clips of your day, each with a time and a one-line caption. AI turns your rough notes into punchy timestamp captions.",
+ "why": "An Instagram Reels trends roundup updated October 23, 2026 lists \"Vlog timestamps\" as a new trend that week: every clip of the day gets its own timestamp, with quick swipe transitions from one moment to the next.",
+ "steps": [
+  "Film a 2–3 second clip at each moment of your day and jot down the time.",
+  "Paste your notes into the main prompt to get one caption per clip.",
+  "Put the time and caption on each clip, and use a quick swipe transition between them.",
+  "Post with a trending sound from the app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Turn my notes into on-screen captions for a timestamp vlog. Each caption starts with the time, then a short line under 10 words. Notes: [paste your times and what happened, e.g. 6:45 a.m. alarm, 7:10 coffee spill, 12:30 lunch at desk]. Keep my real times. Make the lines honest and a bit funny, like I'm talking to a friend. Keep one calm, sweet moment near the end. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: a fall Saturday",
+   "text": "Write timestamp captions for a cosy fall Saturday vlog in Canada. My real plan: [list your times and activities, like a farmers' market, raking leaves, soup on the stove]. Each line starts with the time and is under 10 words. Warm and a little funny. Give me a closing line for the last clip."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write timestamp captions for a \"day in the life\" vlog of my business, from opening to close. Real moments: [list times and what happens, e.g. 7:00 a.m. ovens on, 11:30 lunch rush]. Each line starts with the time and is under 10 words. Show the work behind the scenes. Friendly, not salesy. Don't make up sales numbers, reviews or offers."
+  }
+ ],
+ "tips": [
+  "Use your real times. Viewers like seeing how the day actually went.",
+  "Keep each clip short so the video stays under 30 seconds.",
+  "Mix busy clips with one quiet one so the ending feels earned.",
+  "Only film people who have said yes."
+ ],
+ "tags": ["text", "vlog", "reels", "day-in-the-life", "business"]
+}
