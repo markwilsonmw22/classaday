@@ -1,0 +1,40 @@
+{
+ "slug": "travel-photo-editorial-cutout",
+ "title": "Travel photo to surreal magazine cutout",
+ "published": "2026-10-26T12:42:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Turn an ordinary trip photo into a bold, surreal magazine-style cutout: you, cut out cleanly, on a flat colour page with one giant dreamlike detail.",
+ "why": "An Instagram trend report covering October 17–24, 2026 names a ChatGPT workflow that turns ordinary travel photos into surreal editorial cutouts as the strongest AI tutorial of the week. Those posts show the finished pictures first, then the quick how-to.",
+ "steps": [
+  "Pick a travel photo where you are clearly visible, head to toe if you can, with a landmark, beach or street behind you.",
+  "Paste the main prompt into ChatGPT or Gemini and attach the photo. Ask for a 4:5 portrait image.",
+  "Make two or three versions with different colours, then post them as a carousel.",
+  "For a Reel, show the finished pictures first, then a few seconds of your screen with the prompt."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Turn my travel photo into a surreal fashion magazine page. Cut me out cleanly, keeping my face, hair, outfit and pose exactly as they are, with a thin white paper border around me like a hand-cut sticker. Place me on a flat, bold background colour taken from the photo. Cut out one detail from the place I visited, like a building, a palm tree or a boat, and make it oversized and floating beside me, slightly out of scale. Add a soft drop shadow so the cutouts look like paper laid on the page. Keep it clean and minimal, with lots of empty space. Add a small, neat caption in the bottom corner with the city name and year. Vertical 4:5."
+  },
+  {
+   "label": "Variation: dreamy collage",
+   "text": "Make a surreal collage from my travel photo. Cut me out with a clean white border and keep my face and clothes exactly the same. Put me on a soft pastel background. Around me, float a few cutout pieces of the trip at odd sizes: a giant coffee cup, a tiny version of the main landmark, a stamp-like ticket and a cloud. Some pieces overlap my shoulders like layered paper. Gentle shadows, matte paper texture, calm and playful. Vertical 4:5."
+  },
+  {
+   "label": "Variation: friends' trip",
+   "text": "Use this photo of me and my friends (they've agreed to be in it). Cut each of us out with a white paper border and keep every face, outfit and pose exactly the same. Stand us in a row on a flat warm-coloured background, like a magazine cover. Behind us, place one huge cutout of the place we visited, cropped at the top of the page. Add soft shadows and a short caption with the place name and year. Clean, bright, editorial. Vertical 4:5."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Turn this photo of our product (or our team at an outdoor event) into a surreal magazine-style page for [type of business]. Cut it out cleanly with a white paper border and keep it exactly as it is, including any labels. Place it on a flat background in our brand colour [colour]. Add one oversized cutout detail that hints at where it's made or used, like a mountain, a wheat stalk or a coffee bean, floating beside it. Soft shadows, lots of empty space, a small caption with our town name. Vertical 4:5."
+  }
+ ],
+ "tips": [
+  "A photo with your full outfit visible and a simple pose gives the cleanest cutout.",
+  "If your face changes, add \"do not change my face at all\" and try again.",
+  "Pick the background colour from the trip itself, like the sea, a wall or a sunset.",
+  "Only use photos of people who agreed to be in it."
+ ],
+ "tags": ["travel", "collage", "chatgpt", "instagram", "business"]
+}
