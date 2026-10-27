@@ -1,0 +1,36 @@
+{
+ "slug": "my-reaction-no-words",
+ "title": "My reaction: an honest review with no words",
+ "published": "2026-10-27T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Show something from your niche on screen, then give your honest opinion with your face alone. AI picks the topics and writes the captions.",
+ "why": "A Reels trend roundup published October 23, 2026 lists \"My reaction\" as a new October format: creators pick something from their niche and give an honest opinion using only facial expressions, over original audio.",
+ "steps": [
+  "Use the main prompt to get a list of things in your niche that people have strong feelings about.",
+  "Pick one and put it on screen as a short caption, or hold it up to the camera.",
+  "Film a few seconds of your face reacting. No talking. Let your expression do the review.",
+  "Post it and ask viewers to guess or share their own reaction in the comments."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "My niche is [your niche, for example home cooking, running or houseplants]. I'm making short videos where I show one thing and react with my face only, no words. Write 12 short on-screen captions naming things in my niche that people love, hate or argue about. Mix easy wins, mild debates and a few surprises. Each caption under 8 words. Harmless and fun. No real people, no brands, no politics, no health or money topics, no emojis."
+  },
+  {
+   "label": "Variation: rate the reaction",
+   "text": "For each of these topics: [paste your list], suggest which facial reaction would be funniest (slow smile, confused squint, disappointed stare, pure joy, and so on) and one short caption to add at the end, under 6 words, that tells viewers my final verdict. Keep it light. No emojis."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 10 short on-screen captions for wordless reaction videos about my work. Include common customer requests, new products, before-and-after results and behind-the-scenes moments. Example for a bakery: \"When someone orders the last cinnamon bun.\" Each under 10 words. Warm and playful, never mocking a real customer. No emojis."
+  }
+ ],
+ "tips": [
+  "Hold the reaction for two or three seconds. Rushing it kills the joke.",
+  "Film in good light, close to the camera, so small expressions show.",
+  "Never react to a real person, a real customer's order or a competitor. Keep it about things, not people.",
+  "Read the AI's list and cut anything that could hurt someone's feelings."
+ ],
+ "tags": ["text", "reaction", "reels", "niche", "business"]
+}

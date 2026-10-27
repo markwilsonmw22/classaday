@@ -1,0 +1,36 @@
+{
+ "slug": "tiny-annoyance-dramatized",
+ "title": "Tiny everyday annoyance, played like a tragedy",
+ "published": "2026-10-27T12:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Act out one small, relatable annoyance in a short loop, with way too much drama. AI finds the annoyances and writes the captions.",
+ "why": "A UGC trend report covering October 17 to 24, 2026 names relatable micro-problems as a top format this week. Its example is an eight-second loop that dramatizes water running down your arm while washing your face, with no product in sight.",
+ "steps": [
+  "Use the main prompt to get a list of tiny annoyances almost everyone has lived through.",
+  "Pick one you can act out at home in under 10 seconds.",
+  "Film it with big, serious drama, then add the caption on screen.",
+  "Trim it so the end flows back into the start, so it plays as a loop."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making 8-second videos where I act out a tiny everyday annoyance like it's a tragedy. Write 15 relatable micro-problems that almost everyone has had, that I can film at home with no special props. Example: \"Water running down your arm while you wash your face.\" For each, add a short on-screen caption under 10 words and one note on how to act it out. Harmless and funny. No real people, no brands, no health, money or politics, no emojis."
+  },
+  {
+   "label": "Variation: Canadian fall and winter",
+   "text": "Write 10 tiny annoyances that come with fall and early winter in Canada, like a wet glove, a foggy windshield, or a toque that keeps sliding up. Each one must be something I can act out in under 10 seconds. Give a short caption under 10 words for each. Playful, no emojis."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 10 tiny, relatable annoyances from my line of work that I can act out in a short, dramatic loop. Example for a florist: \"The one stem that won't stand up straight.\" Give each a caption under 10 words. Light and self-aware, never blaming a customer. No emojis."
+  }
+ ],
+ "tips": [
+  "The smaller the problem, the bigger the reaction should be.",
+  "Keep it under 10 seconds. Short loops get watched twice.",
+  "If you sell something, leave it out of the first clip. Let the joke land first.",
+  "Read the AI's list and cut anything that could hurt someone's feelings."
+ ],
+ "tags": ["text", "funny", "relatable", "loop", "business"]
+}
