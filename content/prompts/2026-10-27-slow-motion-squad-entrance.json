@@ -1,0 +1,36 @@
+{
+ "slug": "slow-motion-squad-entrance",
+ "title": "Slow-motion squad entrance",
+ "published": "2026-10-27T00:40:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway"],
+ "summary": "Your friends, team or pets enter the frame one by one in dramatic slow motion. Film it for real, or have AI animate a group photo.",
+ "why": "A TikTok trends roundup updated October 26, 2026 lists a slow-motion trend among the top trends this week: friends or teammates take turns entering the frame in exaggerated slow motion from different directions, set to a dramatic song.",
+ "steps": [
+  "Decide who's in it and get a clear yes from everyone.",
+  "To film it for real, shoot at a high frame rate and have each person walk in from a different side.",
+  "To make it with AI, upload one group photo to an image-to-video tool and paste the main prompt.",
+  "Add a dramatic trending sound and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: animate a group photo",
+   "text": "Starting from this photo, make an 8-second video. The scene begins empty. One by one, each person walks into the frame in very slow motion from a different side: left, right, then from behind the camera. Hair and jackets drift in the air. Serious, confident faces. They end standing together in a line, looking straight at the camera. Low camera angle, golden evening light, a little haze. Keep everyone's faces and clothes the same as in the photo."
+  },
+  {
+   "label": "Variation: pets",
+   "text": "Make an 8-second video from this photo of my pets. Each pet enters the frame in dramatic slow motion, one at a time, from a different side. Ears flop, fur ripples, very serious expressions. They stop side by side and stare at the camera. Low angle, soft backlight, a few fall leaves floating by. Keep each pet looking the same as in the photo."
+  },
+  {
+   "label": "Variation: small business team intro",
+   "text": "Make an 8-second video from this photo of my team at [your type of business]. Each person walks into the frame in slow motion from a different direction, holding a tool of the trade: [list items, e.g. rolling pin, coffee pot, clipboard]. Confident, friendly faces. They end shoulder to shoulder in front of the shop counter, looking at the camera. Warm light, gentle lens flare. Keep everyone's faces and clothes the same as in the photo."
+  }
+ ],
+ "tips": [
+  "Only use photos of people who agreed to be in the video.",
+  "Pick a photo where everyone's face is clear and well lit. AI keeps faces better that way.",
+  "If people start to look different, try a shorter clip or fewer people.",
+  "Filming for real? Your phone's slow-motion mode works. Walk at normal speed and let the camera do the rest."
+ ],
+ "tags": ["video", "slow-motion", "friends", "pets", "business"]
+}

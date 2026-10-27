@@ -1,0 +1,36 @@
+{
+ "slug": "defend-a-harmless-take",
+ "title": "Defend a harmless take with total seriousness",
+ "published": "2026-10-27T00:39:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Pick a silly, low-stakes opinion and argue for it like a lawyer. AI writes the dead-serious on-screen lines for your lip-sync video.",
+ "why": "A TikTok trends roundup updated October 26, 2026 lists \"Two Fishes\" among the top trends this week: creators lip-sync a sound from a reality dating show while defending a questionable opinion with complete seriousness, with on-screen text naming the take.",
+ "steps": [
+  "Pick a harmless opinion you'll stand behind, like cereal before milk or socks with sandals.",
+  "Use the main prompt to get a hook line and three serious-sounding points.",
+  "Film yourself with a straight face and the trending sound, and put the lines on screen one by one.",
+  "Hold eye contact with the camera at the end. Don't smile."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short video where I defend a silly, harmless opinion with total seriousness. My opinion: [your take, e.g. pineapple belongs on pizza]. Write one opening on-screen line that states the take, then three short lines that defend it like a confident expert. Each line under 10 words. Deadpan, not mean. No insults to anyone, no hashtags, no emojis."
+  },
+  {
+   "label": "Variation: give me ideas",
+   "text": "Give me 10 harmless, slightly divisive everyday opinions I could defend in a funny video. Think food, chores, weather, routines and fall habits in Canada. Nothing about politics, religion, health, money or real people. Rate each from 1 (mild) to 5 (people will argue in the comments)."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write a deadpan on-screen script defending one harmless opinion about my trade, e.g. [your take, like \"winter tires go on before Halloween\"]. One line to state the take, then three short, confident reasons, each under 10 words. Fun and true, not salesy. Don't make claims I can't back up."
+  }
+ ],
+ "tips": [
+  "The joke works best when the take is tiny and your face is very serious.",
+  "Let each line stay on screen long enough to read, about two seconds.",
+  "Keep it light. Pick takes about things, never about people or groups.",
+  "Ask viewers to share their own harmless take in the comments."
+ ],
+ "tags": ["text", "funny", "tiktok", "deadpan", "business"]
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "poster-that-plans-its-layout",
+ "title": "A poster that plans its own layout",
+ "published": "2026-10-27T00:38:00Z",
+ "kind": "image",
+ "tools": ["Canva"],
+ "summary": "Describe a party flyer, menu or sale sign in plain words and get a finished layout with readable text, ready to tweak and post.",
+ "why": "On October 22, 2026, Canva released Craft, its first in-house image model, to all users in its Dream Lab tab. News coverage says it plans the layout and the words first, then draws the image, and it was trained mostly on designed templates like posters, menus and social posts.",
+ "steps": [
+  "Open Dream Lab in Canva and choose the size you need (story, square post or letter-size poster).",
+  "Paste the main prompt and fill in your real details in the brackets.",
+  "Check every word, date and time on the result. Fix any mistakes before you share it.",
+  "If you want to move or edit pieces, try turning the image into editable layers in Canva."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: Halloween party flyer",
+   "text": "A Halloween house party flyer, portrait size. Big headline at the top: \"[Your party name]\". Under it, three short lines: \"[Day and date]\", \"[Start time]\", \"[Street or neighbourhood]\". Small line at the bottom: \"Costumes encouraged\". Style: deep purple night sky, a glowing orange moon, a few bats and a row of carved pumpkins along the bottom. Bold, rounded lettering that is easy to read from across a room. Leave clear space around the text."
+  },
+  {
+   "label": "Variation: fall menu board",
+   "text": "A cosy fall menu poster for a small café, portrait size. Title: \"Fall menu\". List these items with prices in a neat column: [item 1 and price], [item 2 and price], [item 3 and price], [item 4 and price]. Warm cream background, hand-drawn maple leaves in the corners, dark brown text, simple clean layout. Every word must be spelled exactly as written."
+  },
+  {
+   "label": "Variation: small business promo post",
+   "text": "A square social post for [your type of business]. Headline: \"[Your real offer, e.g. 15% off fall tune-ups]\". One line under it: \"[Real dates]\". Small line at the bottom: \"[Your shop name or website]\". Place a large photo-style image of [your product or service] on one side and the text on the other. Colours: [your two brand colours]. Clean, modern, lots of white space. Only use the words I gave you."
+  }
+ ],
+ "tips": [
+  "Put every word you want in quotes. The tool is more likely to spell them exactly.",
+  "Keep text short. Three or four lines read better than a paragraph.",
+  "Only list real prices, dates and offers. Don't add a fake \"was\" price or a countdown.",
+  "Small print can still come out wrong, so zoom in and proofread before you post or print."
+ ],
+ "tags": ["poster", "canva", "halloween", "menu", "business"]
+}
