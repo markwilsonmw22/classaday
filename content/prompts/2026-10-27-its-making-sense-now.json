@@ -1,0 +1,36 @@
+{
+ "slug": "its-making-sense-now",
+ "title": "\"It's making sense now\": the fake lightbulb moment",
+ "published": "2026-10-27T06:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Act out a slow, serious lightbulb moment about something that makes no sense at all. AI writes the absurd situations for your on-screen text.",
+ "why": "A content trend tracker updated October 26, 2026 lists \"It's making sense now\" as a fresh format, up sharply from the week before: over an audio clip of someone saying \"It's making sense now… I get it,\" creators pretend to finally understand an absurd situation.",
+ "steps": [
+  "Use the main prompt to get a list of silly, harmless situations.",
+  "Pick one and put it on screen as text at the start.",
+  "Film yourself with the trending audio, nodding slowly like it all just clicked.",
+  "Keep it short: one situation, one slow realization, done."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short video where I pretend to finally understand something that makes no sense. Write 10 one-line on-screen captions that describe an absurd but harmless everyday situation, each one followed by my fake \"oh, I get it now\" moment. Example: \"My cat knocked my phone off the table, looked at me, then knocked off the charger too.\" Each line under 20 words. Funny, not mean. No real people, no politics, no health or money topics, no emojis."
+  },
+  {
+   "label": "Variation: fall and Halloween",
+   "text": "Write 8 short on-screen captions about absurd fall and Halloween moments that I pretend to suddenly understand. Think pumpkins, early snow, trick-or-treaters, leaf piles and the first cold morning in Canada. Each line under 20 words. Playful and harmless. No emojis."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 8 short on-screen captions about strange but harmless things that happen in my work, for a video where I nod slowly like it all finally makes sense. Example for a café: \"Customer orders an iced coffee, then asks for it extra hot.\" Each under 20 words. Gentle humour, never mocking a real customer. No emojis."
+  }
+ ],
+ "tips": [
+  "The slower the nod, the funnier it lands.",
+  "Pick situations your followers have lived through. Recognition gets the comments going.",
+  "Don't use a real customer's words or photo. Keep the situation general.",
+  "Read the AI's list and cut anything that could hurt someone's feelings."
+ ],
+ "tags": ["text", "funny", "tiktok", "reaction", "business"]
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "how-i-see-myself-moodboard",
+ "title": "How I see myself: the self-image moodboard",
+ "published": "2026-10-27T06:41:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Turn your own photo into a confident, dreamy moodboard of how you see yourself. Then post it as a slideshow with a playful caption.",
+ "why": "A content trend tracker updated October 26, 2026 lists \"Editing how I see myself\" as a new format this week: creators open with a text card saying they're editing how they see themselves because they're so cool, then show a moodboard of photos and clips set to a dreamy slow song.",
+ "steps": [
+  "Choose one clear photo of yourself in good light.",
+  "Upload it and paste the main prompt. Fill in three words that describe how you see yourself.",
+  "Make two or three more images with the variations so you have a set.",
+  "Post them as a slideshow with a dreamy sound and the caption: \"Editing how I see myself because I'm so cool.\""
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: moodboard collage",
+   "text": "Using my photo, make a square moodboard collage of how I see myself: [three words, e.g. calm, creative, fearless]. Put me in the centre, looking relaxed and confident. Around me, add small framed pictures that match those words: a sunset sky, a coffee on a windowsill, a stack of books, a road at dusk. Soft film grain, warm faded colours, slight light leaks, torn paper edges and tape. Keep my face, hair and features exactly the same as in the photo. No text."
+  },
+  {
+   "label": "Variation: dreamy portrait",
+   "text": "Turn my photo into a dreamy portrait, like a still from a moody 1970s film. Golden hour light from the side, soft haze, gentle lens flare, warm faded colours and fine film grain. I'm looking slightly away from the camera with a calm, confident face. Keep my face and features exactly the same as in the photo."
+  },
+  {
+   "label": "Variation: my everyday aesthetic",
+   "text": "Make a flat-lay photo of the things that sum up how I see myself: [list 5 items, e.g. sketchbook, hiking boots, a mug of tea, film camera, maple leaf]. Arrange them on a soft linen sheet in morning light from a window. Warm, calm colours and soft shadows. No people, no brand names or logos."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Make a square moodboard collage for my business, [your type of business], showing how we want customers to see us: [three words, e.g. cosy, local, handmade]. Include small framed pictures of [your products or space], warm light, textures that match the words, and torn paper edges with tape. Soft film grain and warm colours. No logos, no text."
+  }
+ ],
+ "tips": [
+  "Use a photo where your face is sharp and well lit. AI keeps your likeness better.",
+  "If your face changes, upload the photo again and say: keep my face exactly the same.",
+  "Only use photos of friends or family if they said yes.",
+  "Pick the three words first. They make the whole set feel like you."
+ ],
+ "tags": ["selfie", "moodboard", "aesthetic", "slideshow", "business"]
+}

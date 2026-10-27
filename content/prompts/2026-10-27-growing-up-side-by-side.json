@@ -1,0 +1,40 @@
+{
+ "slug": "growing-up-side-by-side",
+ "title": "Then and now: growing up side by side",
+ "published": "2026-10-27T06:42:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Pair an old photo of you and your partner, best friend or pet with a fresh one in the same pose. AI restores the old photo and plans the remake.",
+ "why": "A content trend tracker updated October 26, 2026 lists \"Growing up beside you\" as a new format this week: creators show an old photo of themselves with a partner or pet, with their ages on screen, then cut to a current video of the two of them to a sentimental song lyric.",
+ "steps": [
+  "Find an old photo of you with your partner, friend, sibling or pet. Ask the other person if it's okay to post.",
+  "Use the main prompt to gently restore the old photo.",
+  "Use the remake prompt to plan a new photo or clip in the same pose today.",
+  "Post the old one first with both ages on screen, then the new one with today's ages."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: restore the old photo",
+   "text": "Restore this old photo. Remove dust, scratches and creases, fix faded colours and sharpen it a little. Keep it looking like a real photo from that time, with the same clothes, background and light. Do not change anyone's face, age, expression or body. Do not add or remove anything."
+  },
+  {
+   "label": "Variation: plan the remake",
+   "text": "Look at this old photo of two people (or a person and a pet). Describe exactly how to recreate it today: where each of us stands or sits, the pose, the camera height and angle, the distance, and the kind of light. Then suggest two small details we could copy, like a hand on a shoulder or the same snack. Keep it to a short checklist."
+  },
+  {
+   "label": "Variation: pet then and now",
+   "text": "Restore this old photo of me with my pet. Remove scratches and blur, and bring back natural colour. Keep both of us exactly as we were, with the same pose and background. Then add a small white text label in the bottom corner: \"[your age] and [pet's age]\"."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Restore this old photo from the early days of my business, [your type of business]. Remove dust and scratches and bring back the colours, but keep everything real: same people, same shop, same signs. Then write a short caption pairing it with a photo of today, with the year we started and this year. Warm and thankful, no sales pitch."
+  }
+ ],
+ "tips": [
+  "Only post people who said yes, and leave out kids' full names.",
+  "Restoring is fine. Changing faces or adding things that weren't there is not.",
+  "The remake hits harder when the pose and angle match closely.",
+  "Write the ages big on screen. They are the point of the trend."
+ ],
+ "tags": ["then-and-now", "photo-restore", "couples", "pets", "business"]
+}
