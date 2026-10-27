@@ -1,0 +1,40 @@
+{
+ "slug": "sorry-i-was-dramatic",
+ "title": "\"Sorry if I was a bit dramatic today\"",
+ "published": "2026-10-27T18:46:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Apologize for being dramatic, hear \"it's okay\", then walk off offended anyway. AI writes the scene, the captions and the twist.",
+ "why": "A TikTok trends roundup updated October 14, 2026 lists this as a new October trend: the creator apologizes to friends or family for being \"dramatic\" or hangry, they say it's fine, and the creator is then shown walking off offended, told with quick cuts and text on screen.",
+ "steps": [
+  "Ask a friend or family member to play along, and check they're happy to be in the video.",
+  "Use the main prompt to write the apology, the reply and the walk-off caption.",
+  "Film three short clips: the apology, their calm reply, and you storming off.",
+  "Add the lines as text on screen and keep the whole thing under 15 seconds."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short video. I apologize to a friend for being dramatic today. They say \"it's okay\". Then I get offended by something tiny in their reply and walk off. Write 8 versions of this scene. For each, give: my apology line, their reply, the tiny thing that offends me, and a short on-screen caption for the walk-off. Each line under 12 words. Harmless and funny, no insults, no real people, no emojis."
+  },
+  {
+   "label": "Variation: hangry edition",
+   "text": "Write 6 versions of a short scene where I apologize for being hangry earlier, the other person is kind about it, and then I get offended again because they mention food the wrong way. Give the three lines for each, under 12 words each. Light and silly, no emojis."
+  },
+  {
+   "label": "Variation: me and my pet",
+   "text": "Write 6 short scenes where I apologize to my [dog or cat] for being dramatic today, the pet \"answers\" with a caption, and then I'm offended by the pet's reply and walk off. Give each line under 10 words. Playful, no emojis."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business]. Write 6 versions of this scene with me apologizing to a piece of my own equipment or stock for being dramatic today (for example the espresso machine or the till), its \"reply\" as a caption, and me walking off offended. Each line under 12 words. Never about a customer or a staff member. Funny, kind, no emojis."
+  }
+ ],
+ "tips": [
+  "The offended walk-off is the punchline. Play it big and slow.",
+  "Keep the apology sincere. The flip only works if the start feels real.",
+  "Only film people who agreed, and keep it kind so nobody looks bad.",
+  "Read the AI's lines out loud and cut any that feel mean."
+ ],
+ "tags": ["text", "funny", "tiktok", "skit", "business"]
+}

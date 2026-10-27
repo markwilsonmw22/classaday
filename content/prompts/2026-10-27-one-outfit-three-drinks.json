@@ -1,0 +1,40 @@
+{
+ "slug": "one-outfit-three-drinks",
+ "title": "One outfit, three drinks: let them vote",
+ "published": "2026-10-27T18:45:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Show one outfit next to three drinks that match it in different ways, then ask people to vote in the comments. AI picks the drinks and styles the shots.",
+ "why": "A weekly Instagram Reels audio roundup for October 12 to 25, 2026 lists a rising format where creators pair one outfit with three drinks and ask viewers to vote for the best match in the comments.",
+ "steps": [
+  "Take one clear photo of your outfit, standing against a plain wall.",
+  "Use the main prompt to get three drink ideas that match the outfit's colours and mood.",
+  "Make the drinks yourself and photograph each one, or use the styling prompt to make matching drink photos.",
+  "Post the outfit first, then the three drinks as 1, 2 and 3, and ask people to vote in the comments."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: pick the drinks",
+   "text": "Look at the outfit in this photo. Suggest three drinks that match it, each in a different way: one that matches the main colour, one that matches the mood, and one surprise pick. They can be coffee, tea, juice, a smoothie or a mocktail. For each, give the name, a one-line description of how it looks in the glass, and a short on-screen label under 6 words. No alcohol and no brand names."
+  },
+  {
+   "label": "Variation: style the drink photos",
+   "text": "Create three matching square photos of drinks, one per image: [drink 1], [drink 2], [drink 3]. Each drink sits on the same light wooden table by a window, in soft morning light, shot from slightly above. Match the colours to this outfit photo: use its main colours in the cup, the napkin and the background. Real, simple glassware with no logos or writing. Make the three photos look like a set."
+  },
+  {
+   "label": "Variation: the three-panel vote card",
+   "text": "Make one tall image split into four parts. The top part shows this outfit photo, unchanged. Below it, three drinks sit side by side, numbered 1, 2 and 3 in a clean, simple font. Each drink matches the outfit's colours in a different way. Plain off-white background, soft shadows, no logos. Keep my face, body and clothes exactly as they are in the photo."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your café, bakery or shop]. Suggest one item we sell to be the \"outfit\" (for example our fall scarf, a cake or a candle) and three of our drinks or products that could pair with it. For each pairing, write a short label under 6 words and a one-line reason it works. Then write a caption that asks people to vote 1, 2 or 3 in the comments. Friendly, no pressure to buy, no emojis."
+  }
+ ],
+ "tips": [
+  "Use the same light and the same table for all three drinks so they look like a set.",
+  "Make the three picks clearly different, or the vote feels too easy.",
+  "Reply to the votes. The comments are where this trend grows.",
+  "If you use AI drink photos for a business, only show drinks you actually sell."
+ ],
+ "tags": ["fashion", "drinks", "instagram", "vote", "business"]
+}
