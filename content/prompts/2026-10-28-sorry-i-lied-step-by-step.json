@@ -1,0 +1,40 @@
+{
+ "slug": "sorry-i-lied-step-by-step",
+ "title": "\"Sorry, I lied\": undo the AI glow-up one slide at a time",
+ "published": "2026-10-28T00:39:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Post an over-polished AI version of an old school or baby photo, then take back each edit, slide by slide, until the real photo shows up.",
+ "why": "An article published October 27, 2026 on AOL describes the viral \"I'm so sorry\" trend spreading beyond costumes: people post an AI-polished version of an everyday photo, like a school portrait or baby picture, then walk back the edits with captions until the unedited original is the punchline. It builds on our \"I'm so sorry\" costume pack with a slide-by-slide confession.",
+ "steps": [
+  "Pick an old photo of yourself, like a school picture or a baby photo. The more awkward, the better.",
+  "Use the main prompt to make a polished version with three or four obvious upgrades.",
+  "Use the step-back prompt to remove one upgrade at a time. Save each version.",
+  "Post a slideshow: the polished one first, then each step back with a caption like \"Sorry, I lied, my hair was never that shiny\", and the real photo last."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using my uploaded photo, keep my face, age, expression and pose the same so it's clearly still me. Make four upgrades that are easy to spot: 1) swap the background for a dramatic, softly lit studio backdrop, 2) make my outfit look sharp and well-fitted, 3) give my hair a smooth, glossy, styled look, 4) add warm, flattering light like a professional portrait. Keep it looking like a real photo, not a cartoon. No text, logos or brand names."
+  },
+  {
+   "label": "Variation: step back one edit",
+   "text": "Take the last image you made and undo only one upgrade: [the background / the outfit / the hair / the lighting]. Put that part back exactly as it was in my original photo. Keep everything else the same, with the same crop and framing, so the slides line up."
+  },
+  {
+   "label": "Variation: caption ideas",
+   "text": "I'm posting a slideshow that starts with an AI-polished photo of me and takes back one edit per slide. The edits were: [list them]. Write one short, funny confession caption for each slide in the style \"Sorry, I lied…\", plus a final caption for the real photo. Keep it light and kind to my younger self. Under ten words each."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Using my uploaded photo of our first shop sign, first product or first market table, keep the same layout and items but make a polished, magazine-style version with three clear upgrades: better lighting, tidier styling and a cleaner background. Don't add logos, prices or text. (I'll take back each upgrade slide by slide and end on the real first attempt.)"
+  }
+ ],
+ "tips": [
+  "Always end on the real photo. Owning up is the whole joke.",
+  "Keep the same crop on every slide so each change is easy to see.",
+  "Use your own photos. Only include friends or family if they say yes first.",
+  "Three or four steps is plenty. More than that drags."
+ ],
+ "tags": ["glow-up", "slideshow", "throwback", "funny", "business"]
+}

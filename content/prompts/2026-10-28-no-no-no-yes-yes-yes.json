@@ -1,0 +1,40 @@
+{
+ "slug": "no-no-no-yes-yes-yes",
+ "title": "No no no… yes yes yes: what I skip vs. what I pick",
+ "published": "2026-10-28T00:39:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Show the things you turn down, then switch on the beat to the one you choose. Use AI to brainstorm sharp, funny pairs for your niche.",
+ "why": "Ramdam's Instagram trends roundup dated October 13, 2026 lists \"No no no no\": creators use a \"no no no, yes yes yes\" audio to show what they reject, then switch to what they approve, with short on-screen text.",
+ "steps": [
+  "Use the main prompt to get a list of reject-and-pick pairs. Choose the one that feels most like you.",
+  "Film two or three quick clips of the things you turn down, and one clip of the thing you pick.",
+  "In Reels, add the \"no no no, yes yes yes\" audio. Put the rejects on the \"no\" part and your pick on the switch.",
+  "Add one short line of text on each clip. Keep it to a few words."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short Reel with a \"no no no, then yes yes yes\" structure. My topic is [your hobby, routine or niche]. Give me 10 ideas. For each one, list three things I'd turn down and one thing I'd happily pick instead. The rejects should be relatable and a little funny, and the pick should be a small, specific thing. Keep each item under six words so it fits as on-screen text. No brand names."
+  },
+  {
+   "label": "Variation: everyday life",
+   "text": "Give me 8 \"no no no… yes yes yes\" ideas from ordinary life in Canada in late fall: weekend plans, weather, food, staying in, getting outside. For each, three things I'd say no to and one I'd say yes to. Short, playful and kind, under six words each. No brands, no people's names."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Write 6 \"no no no… yes yes yes\" ideas for a Reel. The \"no\" items should be common frustrations my customers have (slow service, confusing options, things that don't last). The \"yes\" item should be one honest thing we do differently. Keep each line under six words. Don't make claims I can't back up, and don't mention competitors by name."
+  },
+  {
+   "label": "Variation: shot list",
+   "text": "Here's my idea: [paste your three rejects and one pick]. Write a simple shot list for a 7-second vertical video: what to film for each item, how long each clip should be, and one tip to make the switch to the \"yes\" feel satisfying. I'm filming on my phone."
+  }
+ ],
+ "tips": [
+  "Make the rejects quick and the pick linger a little longer. The switch is the payoff.",
+  "A small change in your face or the lighting on the \"yes\" clip makes the switch land.",
+  "Pick audio from the Reels library so you know it's cleared for your account type.",
+  "Keep the \"yes\" honest. If it's your product, show something it really does."
+ ],
+ "tags": ["text", "reels", "funny", "before-after", "business"]
+}
