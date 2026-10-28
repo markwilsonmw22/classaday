@@ -1,0 +1,49 @@
+{
+ "slug": "reshoot-from-new-angle",
+ "title": "Wrong angle? Reshoot your photo in 3D",
+ "published": "2026-10-28T18:40:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Higgsfield"
+ ],
+ "summary": "Turn one good photo into a 3D scene, then walk the camera around it to get the overhead, low or close-up shot you missed.",
+ "why": "On October 19, Higgsfield added 3D Angles to its ChatGPT plugin. It turns a photo, a video or a written description into a 3D scene you can move through and reshoot, with lens, aperture and frame size controls, as a photo or a short video.",
+ "steps": [
+  "Pick a sharp, well-lit photo where the whole subject is visible (a dish, a product, a room, your pet on the couch).",
+  "Open the Higgsfield plugin in ChatGPT, choose 3D Angles and upload the photo.",
+  "Move the camera to the angle you want, then paste one of the prompts below to set the lens and the look.",
+  "Save the new shot, or ask for a short video of the camera move."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Rebuild my photo as a 3D scene and keep every object, colour and detail exactly as it is. Reshoot it from directly above, looking straight down, like a flat-lay. Use a 35 mm lens, sharp focus from edge to edge, and soft, even daylight with gentle shadows. Square 1:1 frame. Do not add or remove anything."
+  },
+  {
+   "label": "Variation: low and dramatic",
+   "text": "Rebuild my photo as a 3D scene and keep the subject exactly the same. Move the camera down to just above the floor, looking up at the subject so it feels big and important. Use a 24 mm wide lens, keep the background softly blurred, and add a little warm light from one side. Tall 9:16 frame."
+  },
+  {
+   "label": "Variation: slow orbit video",
+   "text": "Rebuild my photo as a 3D scene with nothing added or changed. Make a 6-second video where the camera circles slowly halfway around the subject at eye level, then stops on a clean side view. Use an 85 mm lens with a softly blurred background. Smooth, steady movement, natural light. 9:16."
+  },
+  {
+   "label": "Variation: small business product set",
+   "text": "Rebuild my product photo as a 3D scene and keep the product exactly as it is, including the label text and colours. Give me four new shots for my online shop: straight on, a three-quarter view from the left, a close-up of the best detail with a 100 mm lens at f/2.8, and a top-down view. Clean, bright, even light and the same background in every shot. Square 1:1."
+  }
+ ],
+ "tips": [
+  "The more of the subject your photo shows, the better the hidden sides will look. A photo taken from a slight angle helps.",
+  "Small moves look the most real. Swinging all the way to the back means the AI has to guess what it never saw.",
+  "Longer lenses (85 mm and up) flatter faces and products. Wide lenses (24 mm) feel bold and dramatic.",
+  "For products you sell, always check the new shots against the real item so the photos stay honest."
+ ],
+ "tags": [
+  "3d",
+  "camera-angle",
+  "chatgpt",
+  "product-photo",
+  "business"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "slug": "ten-keyframe-journey",
+ "title": "Ten photos, one smooth video: the keyframe journey",
+ "published": "2026-10-28T18:40:00Z",
+ "kind": "video",
+ "tools": [
+  "Kling",
+  "Higgsfield"
+ ],
+ "summary": "Pin up to ten of your own photos as keyframes and let AI fill the motion between them, from pumpkin patch to glowing jack-o'-lantern.",
+ "why": "Kling 4.0 went live on Higgsfield on October 21. It lets you pin up to 10 keyframe images across one clip of up to 30 seconds, instead of only a first and last frame. This is a new twist on our 30-second three-shot story pack: you plan the stops with real photos, and the AI only fills the gaps.",
+ "steps": [
+  "Take 5 to 10 photos of one thing changing, from the same spot if you can (a pumpkin being carved, a room being decorated, a cake being made).",
+  "Upload them in order as keyframes and set the clip length (about 3 seconds per photo works well).",
+  "Paste the prompt and describe how the camera and light should move between the frames.",
+  "Watch the draft, swap out any photo that causes a jump, and add one caption at the end."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Use my photos as keyframes, in order. Create one smooth, continuous video that moves from each photo to the next with no hard cuts. The story: a round orange pumpkin on a farm field, then on the kitchen table, then the lid cut off, then the face carved, then glowing on the front step at night. Keep the pumpkin the same size and shape all the way through. The camera drifts slowly forward. Daylight fades to dusk near the end, and the candle flickers on the last frame. Realistic, warm and cosy. 9:16, about 20 seconds."
+  },
+  {
+   "label": "Variation: room makeover",
+   "text": "Use my photos as keyframes, in order. One continuous video with no cuts. The room changes from empty and plain to fully decorated for fall: rug, then lamp, then blankets and pillows, then candles and dried leaves on the shelf. The camera stays in the same corner and pushes in very slowly. Objects appear gently, as if placed by an invisible hand. Soft afternoon light that turns golden at the end. 9:16, about 20 seconds."
+  },
+  {
+   "label": "Variation: my day in ten stops",
+   "text": "Use my ten photos as keyframes, in order, from morning coffee to the last light switched off at night. Join them into one continuous video with smooth camera moves that follow my path from place to place, like one long walk. Keep my face, hair and clothes the same as in my photos. Light changes naturally from morning to night. Calm, steady and realistic. 9:16, 30 seconds."
+  },
+  {
+   "label": "Variation: small business, from idea to product",
+   "text": "Use my photos as keyframes, in order: the first sketch, the raw materials, my hands at work, the finished product, and the product wrapped and ready on the counter. Make one continuous video with no cuts that moves smoothly from step to step. Close, gentle camera moves, warm workshop light, realistic textures. End on a slow push-in to the finished product. 9:16, about 20 seconds."
+  }
+ ],
+ "tips": [
+  "Shoot every photo from the same spot and height. Big jumps in angle make the in-between motion look strange.",
+  "Leave about 2 to 4 seconds between keyframes so the motion has room to breathe.",
+  "Name what must not change (\"keep the pumpkin the same size\", \"keep my face the same\") so it stays consistent.",
+  "Start with 4 or 5 keyframes. Add more only once the short version looks smooth."
+ ],
+ "tags": [
+  "video",
+  "keyframes",
+  "kling",
+  "halloween",
+  "business"
+ ]
+}
