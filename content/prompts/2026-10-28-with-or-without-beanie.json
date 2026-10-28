@@ -1,0 +1,40 @@
+{
+ "slug": "with-or-without-beanie",
+ "title": "With or without? The one-beanie confidence switch",
+ "published": "2026-10-28T06:43:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Go from plain and awkward to intense and confident by adding one black beanie on the beat. AI makes the \"after\" shot and the caption.",
+ "why": "Know Your Meme added the \"Skull Cap Trend\" on October 27, 2026. It says the trend took off on TikTok in mid-October, with examples from October 16 to 23 reaching 7 to 12 million views each: creators look plain, pull on a black knit cap and switch to an intense stare on the beat drop.",
+ "steps": [
+  "Take two photos or clips of yourself in the same spot: one looking plain and a bit awkward, one with a plain black knit beanie and a serious stare. No beanie? Use the main prompt to make the \"after\" from your own photo.",
+  "Put the plain shot first and the beanie shot second. Cut on the beat drop of a trending sound from the app's library.",
+  "Add a short caption like \"With or without?\" or one of the ideas from the caption prompt.",
+  "Keep it under 8 seconds so the switch is the whole video."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the \"after\" shot",
+   "text": "Use my uploaded photo. Keep my face, hair colour, skin tone and clothes exactly the same. Add a snug, plain black knit beanie pulled low just above my eyebrows, with no logo or text. Change my expression to a calm, intense, slightly smouldering stare straight into the camera, chin a little down. Keep the same background and room, but make the lighting a bit moodier, with soft shadow on one side of my face. Vertical 9:16 photo, phone-camera look, no filters that change my features."
+  },
+  {
+   "label": "Variation: the \"before\" shot",
+   "text": "Use my uploaded photo. Keep my face and clothes the same and don't add anything to my head. Make it look like an ordinary, slightly awkward phone snap: flat overhead room light, a small polite half-smile, shoulders a little hunched. Same background as the original. Vertical 9:16. It should look like the boring \"before\" in a before-and-after."
+  },
+  {
+   "label": "Variation: caption ideas",
+   "text": "I'm posting a short before-and-after video. In the first half I look plain and awkward. In the second half I put on a black beanie and suddenly look intense and confident. Write 10 short on-screen captions for it, under six words each. Mix deadpan, self-aware and a little silly. Include \"With or without?\" as one option. No song lyrics, no names of real people."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. I want to make a playful \"one thing changes everything\" video: a plain before shot, then one item from my shop added on the beat for a confident after shot. Suggest 6 ideas where the item is something I really sell (for example a hat, scarf, mug, candle, frame or apron). For each, describe the before shot, the after shot and a caption under six words. Keep it honest: the item is the only thing that changes, and no claims about results."
+  }
+ ],
+ "tips": [
+  "Match the framing in both shots. If your head moves a lot, the switch feels less sharp.",
+  "The joke is the over-the-top seriousness. Hold the stare for a full second before the video ends.",
+  "If you use the AI \"after\" shot, check that it still looks like you and doesn't smooth or reshape your face.",
+  "Pick the sound from the app's own library so it's cleared for your account."
+ ],
+ "tags": ["glow-up", "before-after", "selfie", "tiktok", "business"]
+}
