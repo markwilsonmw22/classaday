@@ -1,0 +1,40 @@
+{
+ "slug": "four-labelled-fall-colour-combos",
+ "title": "Four fall colour combos, each one labelled",
+ "published": "2026-10-28T12:45:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Turn the clothes you already own into four labelled fall colour pairings, then film one quick look per pairing. AI plans the combos and the labels.",
+ "why": "A weekly Instagram trend report for October 17 to 24, 2026 says the strongest style Reels now add a usable system, such as an outfit Reel showing four labelled fall colour combinations with a repeated move between looks.",
+ "steps": [
+  "Lay your fall pieces on a bed or the floor and take one clear photo from above.",
+  "Use the main prompt to get four colour pairings and a short label for each one.",
+  "Make a planning board with the board prompt so you know what to wear in each shot.",
+  "Film each look with the same move between them (a kick, a spin or a step forward), and put the label on screen for each one."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: plan four combos",
+   "text": "Look at the clothes in this photo. Using only these pieces, put together four outfits for fall, each built on a different two- or three-colour pairing. For each one, list the pieces, name the colours in plain words (for example rust and cream) and write an on-screen label under 5 words. Make the four pairings clearly different from each other. No brand names."
+  },
+  {
+   "label": "Variation: the planning board",
+   "text": "Make one square image split into four equal panels. In each panel, show a flat lay of one outfit from this list on a plain off-white background: [outfit 1], [outfit 2], [outfit 3], [outfit 4]. Use the real pieces from my photo, folded neatly, seen from above, in soft daylight. Add two small colour swatches and a short label in a clean, simple font at the bottom of each panel. No logos or other writing."
+  },
+  {
+   "label": "Variation: the stage labels",
+   "text": "Write on-screen text for a short video that shows my four fall outfits one after another. Give each look a number, a colour-pairing label under 5 words and a one-line note on when to wear it (work, weekend, a walk, dinner). End with a one-line question asking which combo people would wear first. Plain, friendly words, no emojis."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your clothing shop, thrift store or accessories brand]. Using only these items we sell: [list items], suggest four fall colour pairings. For each, list the items, name the colours in plain words and write a label under 5 words. Then write a short, friendly caption that invites people to save the post for later. No pressure to buy, no prices, no emojis."
+  }
+ ],
+ "tips": [
+  "Shoot all four looks in the same spot and light so the colours are the only thing that changes.",
+  "Keep the labels short. People should read them in under a second.",
+  "Repeat the exact same move between looks. That rhythm is what makes it watchable.",
+  "If you sell clothes, only show pieces you actually have in stock."
+ ],
+ "tags": ["fashion", "fall", "outfits", "reels", "business"]
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "early-holiday-wish-list",
+ "title": "Early holiday wish list board",
+ "published": "2026-10-28T12:45:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Turn your holiday wish list into a cosy, festive board you can post or share with family. AI styles your own product photos into one tidy layout.",
+ "why": "A weekly UGC trend report for October 17 to 24, 2026 says holiday shopping content started early, with festive music showing up under beauty wish lists, home decor, store hauls and product demos well before the usual November push.",
+ "steps": [
+  "Collect photos of the things on your list. Your own photos or plain product shots work best.",
+  "Use the main prompt to arrange them into one festive wish-list board.",
+  "Use the caption prompt for a short, friendly post or a note to send to family.",
+  "Post it as one image, or film a slow scroll across it with festive music from the app's library."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the wish-list board",
+   "text": "Arrange the items in these photos into one tall wish-list board. Place each item on its own soft white card with a gentle shadow, like a neat collage on a warm cream background. Add small winter touches around the edges: pine sprigs, a little twine, a few warm fairy lights. Put a short, clean title at the top: \"My wish list\". Number each item and add a one-word note under it. Keep every item looking exactly like the photo. No logos, brand names or prices."
+  },
+  {
+   "label": "Variation: cosy flat lay",
+   "text": "Create a photo of these items laid out together on a knitted blanket, seen from directly above, in soft window light. Add a mug of cocoa, a small candle and a strip of plaid ribbon. Keep the items looking exactly like my photos, and hide or remove any logos and labels. Warm, calm, simple."
+  },
+  {
+   "label": "Variation: the caption or family note",
+   "text": "Write two short versions of a message to go with my holiday wish list: [list items]. One is a light, funny caption for social media. The other is a warm note to send to my family, with a line saying there's no pressure and a homemade gift is just as good. Plain words, under 60 words each, no emojis."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your shop or studio]. Using only these products we sell: [list products], make a festive gift-ideas board. Put each product on its own soft white card on a warm cream background with small winter touches around the edges. Add a short title, \"Gift ideas\", and a one-line note under each item saying who it's for (for a host, for a teen, for a dog lover). Keep each product looking exactly like the photo. No prices or fake discounts."
+  }
+ ],
+ "tips": [
+  "Use clear, bright photos. The AI can only keep items accurate if it can see them well.",
+  "Check every item after generating. AI sometimes changes colours, labels or small details.",
+  "Six to nine items fit well on one board. More than that gets cluttered.",
+  "For a business, only show products you actually sell, at their real look."
+ ],
+ "tags": ["holiday", "wish-list", "gift-ideas", "collage", "business"]
+}
