@@ -1,0 +1,40 @@
+{
+ "slug": "wedding-day-cinematic-build",
+ "title": "Wedding day, cut like a movie: soft start, big finish",
+ "published": "2026-10-29T18:40:00Z",
+ "kind": "video",
+ "tools": ["ChatGPT", "Gemini", "Claude", "CapCut"],
+ "summary": "Turn five to eight wedding clips into a short cinematic edit that builds to one big moment. AI plans the order, the cuts and the captions.",
+ "why": "A TikTok trends roundup updated October 26, 2026 lists wedding videos re-edited into romantic, cinematic montages set to a new pop song that is also on that week's trending sounds chart. Couples start with quiet moments and build to a final reveal timed to the song's closing line.",
+ "steps": [
+  "Pick five to eight short clips from your wedding day: getting ready, the first look, the aisle, a hug, the kiss, a dance.",
+  "Paste a plain list of your clips into the main prompt and let AI put them in an order that builds.",
+  "Pick the trending sound in the app, then line up your biggest moment with the song's final line.",
+  "Keep transitions simple (straight cuts or a soft fade) and add one short caption at the start or the end."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a 20 to 30 second vertical video from our wedding footage. It should start soft and quiet and build to one big emotional moment at the very end. Here are my clips, with a few words about each: [list your clips, e.g. \"1. Mom doing up my dress, 2. first look by the lake, 3. walking down the aisle\"]. Put them in the best order, say roughly how many seconds each one should get, tell me which clip should be the final reveal, and suggest where to slow a clip down. Then write five short captions (under 10 words) that feel romantic but not cheesy."
+  },
+  {
+   "label": "Variation: anniversary edit",
+   "text": "We're celebrating [number] years together. Plan a 30-second video that starts with a few clips from our wedding day and ends with clips from our life now (our home, our kids or pets, a recent trip). Give me the clip order, where to cut from then to now, and four captions that feel warm and a little funny."
+  },
+  {
+   "label": "Variation: no video, just photos",
+   "text": "I only have photos from our wedding, no video. Plan a 20-second slideshow from [number] photos that builds like a movie: which photo goes first, which goes last, how long each one stays on screen, and which ones to give a slow zoom. Add three caption ideas."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I'm a [wedding photographer / videographer / florist / venue / baker]. A couple has said yes to me sharing their wedding footage. Plan a 25-second highlight edit that builds to one big moment, and write a caption that thanks the couple by first name only (if they agree) and says what I did for the day. Don't make up reviews, quotes or booking numbers."
+  }
+ ],
+ "tips": [
+  "Save the best moment for last. The whole format is a slow build to one payoff.",
+  "Fewer clips work better. Five to eight is plenty for 30 seconds.",
+  "Use the app's own trending sound so the music is licensed.",
+  "Ask before you post clips that show guests, family or kids up close."
+ ],
+ "tags": ["wedding", "video", "montage", "tiktok", "business"]
+}

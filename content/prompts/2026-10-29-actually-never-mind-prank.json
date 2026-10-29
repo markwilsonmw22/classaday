@@ -1,0 +1,40 @@
+{
+ "slug": "actually-never-mind-prank",
+ "title": "\"Actually, never mind\": the shaving cream prank switch",
+ "published": "2026-10-29T18:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Act like you're in on a silly shaving cream prank, then back out at the last second. AI writes the setup, the line and a safe shot list.",
+ "why": "A TikTok trends roundup updated October 26, 2026 lists the Shaving Cream Prank Reveal among the week's top trends: a parent seems ready to join a shaving cream prank with their child, then casually changes their mind, and the child's reaction is the best part.",
+ "steps": [
+  "Agree on the prank with your partner in crime first. Everyone in the video should be happy to be in it.",
+  "Use the main prompt to plan the setup and the exact moment you back out.",
+  "Film in one steady shot with the phone on a shelf, so the reaction is caught in real time.",
+  "Add a short overlay line at the start and let the reaction play out with no extra edits."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a short, gentle family prank. My [child / partner / sibling] and I plan to put a small dab of shaving cream on someone's hand while they nap or look at their phone. At the last second I'll casually back out and say something like \"Actually, never mind.\" Write: 1) a simple shot list for one steady phone shot; 2) five different ways to say the back-out line so it sounds natural; 3) four overlay text ideas under 10 words; 4) a quick safety checklist. Keep it kind and funny. Nobody should be scared, hurt or embarrassed."
+  },
+  {
+   "label": "Variation: no shaving cream",
+   "text": "Give me 8 harmless swaps for the shaving cream in an \"actually, never mind\" prank video, such as whipped cream on a plate, a feather, a sticky note or a silly hat. For each one, write the setup in one sentence and the funniest moment to back out."
+  },
+  {
+   "label": "Variation: friends or roommates",
+   "text": "Plan an \"actually, never mind\" prank video with my roommate or friend, where we both pretend to set up a prank on a third friend who already knows about it and agreed to be filmed. Write the setup, the back-out moment, and three ways the friend could react on cue. Under 15 seconds total."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [café / bakery / shop / salon]. Write a 10-second \"actually, never mind\" skit with two of my staff (who agreed to be filmed), using something from our work, like a squirt of whipped cream or a dusting of flour. Give me the setup, the back-out line and a caption. Keep it clean and food-safe, and don't film customers."
+  }
+ ],
+ "tips": [
+  "Use only skin-safe products, keep them well away from eyes, and use a tiny amount.",
+  "Everyone in the clip should be in on filming it. The fun is the shared laugh, not a real shock.",
+  "Don't prank anyone who is asleep for real, upset or unwell. Pick a calm, happy moment.",
+  "Ask before you post a clip that shows kids, and keep your home details out of frame."
+ ],
+ "tags": ["text", "tiktok", "prank", "family", "business"]
+}
