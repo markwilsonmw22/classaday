@@ -1,0 +1,40 @@
+{
+ "slug": "finished-dish-first",
+ "title": "Finished dish first, recipe second",
+ "published": "2026-10-29T13:00:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Open your food video on the best bite of the finished dish, then rewind to the recipe. AI writes the hook, the order of shots and the captions.",
+ "why": "A weekly UGC trend report for October 17 to 24, 2026 names \"payoff-first food\" as a top format: the video opens on the finished dish before the recipe starts. The same report lists \"the result-first command\" as one of the hook styles working that week.",
+ "steps": [
+  "Use the main prompt with your recipe to get a hook line and a shot list that starts at the end.",
+  "Film the payoff shot first while the food is hot: the cheese pull, the crunch, the steam, the first bite.",
+  "Film the recipe steps in short, quick clips, then edit so the payoff plays in the first 2 seconds.",
+  "Add the on-screen text from the prompt and end with the payoff shot once more."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a short vertical recipe video that opens on the finished dish and only then shows how to make it. The recipe is: [paste your recipe or describe it]. Write: 1) three options for a one-line hook that tells viewers what to do, for example \"Make these tonight\" style, under 8 words; 2) the single best payoff shot to open on and how to film it with a phone; 3) a shot list of 6 to 8 quick recipe clips, each under 3 seconds; 4) short on-screen text for each clip. Use Canadian measurements and spelling."
+  },
+  {
+   "label": "Variation: fall comfort food",
+   "text": "Suggest 8 easy fall or early-winter comfort dishes that look amazing in the first 2 seconds of a video (a stretch, a crunch, a pour or steam rising). For each, give the payoff shot, a 6-word hook and the number of ingredients. Keep them cheap and doable on a weeknight in Canada."
+  },
+  {
+   "label": "Variation: leftover Halloween candy",
+   "text": "Give me 5 simple treats I can make with leftover Halloween candy. For each one, describe the payoff shot to open the video with, a short hook line and the steps in 5 lines or less. Keep it kid-friendly and safe for a home kitchen."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [café, bakery, food truck, restaurant or catering business]. My dish is [name and short description]. Write a payoff-first video plan: the opening shot of the finished dish, a 6-word hook, 5 quick behind-the-counter clips showing how we make it, and a closing line that tells people where and when they can get it. Keep it honest: no prices I haven't given you, no claims like \"best in town\"."
+  }
+ ],
+ "tips": [
+  "The first 2 seconds decide everything. If the payoff shot isn't mouth-watering, reshoot it before you film the rest.",
+  "Use daylight from a window and film close. Food looks best with soft side light.",
+  "Keep the recipe clips fast. Viewers already know the ending, so they want the how, not the waiting.",
+  "Put the full recipe in the caption so people can save the post."
+ ],
+ "tags": ["food", "recipe", "hooks", "reels", "business"]
+}

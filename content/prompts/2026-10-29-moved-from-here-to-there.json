@@ -1,0 +1,40 @@
+{
+ "slug": "moved-from-here-to-there",
+ "title": "I moved from here to there: 7 things nobody told me",
+ "published": "2026-10-29T13:00:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Turn your own move, city to city or province to province, into a numbered list of oddly specific local discoveries. AI helps you dig them out and polish them.",
+ "why": "A weekly UGC trend report for October 17 to 24, 2026 names \"lived-specificity advice hooks\" as a format working this week: numbered, very local observations from someone who moved, with moving from the American South to Minnesota as its example.",
+ "steps": [
+  "Use the main prompt and answer its questions about your move. The details have to come from you.",
+  "Pick the 5 to 7 most specific, surprising points. Cut anything that could be said about any city.",
+  "Film one short clip or take one photo for each point, or talk to the camera with the list on screen.",
+  "Open with the hook line from the prompt and end by asking locals what you missed."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I moved from [where you lived before] to [where you live now] about [how long] ago. Interview me with 10 short questions to pull out small, specific things that surprised me: weather, food, how people talk, driving, prices of everyday things, unwritten rules. Ask one question at a time. When I'm done, turn my answers into a numbered list of 7 points, each under 20 words, plus 3 hook lines like \"I moved from X to Y. Here's what nobody told me.\" Only use what I told you. Don't invent facts about either place."
+  },
+  {
+   "label": "Variation: Canadian moves",
+   "text": "I moved within Canada, from [city or province] to [city or province]. Help me brainstorm categories of small differences I might have noticed: winter habits, words people use, coffee and food, transit, how people greet strangers, sports, store hours. Ask me about each one, then write a numbered list from my answers only. Keep it friendly. Poke fun at myself, not at the people who live there."
+  },
+  {
+   "label": "Variation: new to a job or school",
+   "text": "Use the same format, but for starting a new job, school or hobby group instead of a new city: \"I started [new thing] after [old thing]. 7 things nobody told me.\" Ask me questions first, then write the list from my answers. Keep it kind and don't name the company, school or any real person."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business] in [town or neighbourhood]. Write a list post: \"7 things you only know if you live in [neighbourhood]\", based on these notes from me: [paste your notes]. Work in one natural mention of my business, not a sales pitch. Only use facts from my notes."
+  }
+ ],
+ "tips": [
+  "Specific beats general. \"People leave their cars running in the parking lot in February\" works. \"The weather is different\" doesn't.",
+  "AI doesn't know your town. Let it ask the questions and shape the list, but every fact should come from you.",
+  "Laugh at yourself, not at the locals. The comments stay friendlier.",
+  "Don't show your street, house number or anything that pins down where you live."
+ ],
+ "tags": ["text", "canada", "list", "local", "business"]
+}

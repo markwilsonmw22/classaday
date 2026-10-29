@@ -1,0 +1,36 @@
+{
+ "slug": "outfit-then-the-work",
+ "title": "The outfit, then the work that pays for it",
+ "published": "2026-10-29T13:00:00Z",
+ "kind": "video",
+ "tools": ["ChatGPT", "Gemini", "CapCut"],
+ "summary": "Show off a full outfit, then cut to the real, everyday work that pays for it. AI plans the shots, the cut and the overlay text.",
+ "why": "A TikTok trends roundup updated October 26, 2026 lists outfit and work reveals set to a new pop single called \"Housewife\": creators show their look, then the job that pays for it. A UGC trend report for October 17 to 24 also lists the song under lifestyle montages.",
+ "steps": [
+  "Use the main prompt to plan the two halves: the outfit reveal and the work clip.",
+  "Film the outfit like a mini runway: feet first, a slow tilt up, a turn.",
+  "Film 2 or 3 short clips of your real work, the messier and more honest the better.",
+  "Cut on a beat from the last outfit pose straight into the work, and add the overlay text. Pick a trending sound in the app so the audio is licensed."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short vertical video in two halves: first my best outfit, then the real work that pays for it. My job is [your job or side hustle]. Write: 1) a shot list for a 6-second outfit reveal I can film alone with my phone on a shelf; 2) three quick work clips that honestly show what my day looks like; 3) the exact moment to cut between the two; 4) five options for funny, self-aware overlay text, under 12 words each. No brand names."
+  },
+  {
+   "label": "Variation: ordinary jobs",
+   "text": "Write 10 overlay text ideas for an \"outfit, then the work that pays for it\" video, one for each of these jobs: nurse on night shift, snowplough driver, teacher, barista, plumber, student with a part-time job, farmer, warehouse worker, parent at home with toddlers, retail worker in holiday season. Keep them warm and funny, never mean about any job."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of small business]. Plan a 10-second video: first me dressed up for a night out, then the behind-the-scenes work that keeps the business going (packing orders, early mornings, cleaning up). Give me a shot list, the cut point, and 4 overlay lines that are honest and a bit funny. Don't make up sales numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "The contrast is the joke. The dressier the outfit and the more ordinary the work, the better it lands.",
+  "Keep the work clips real. Viewers love seeing the unglamorous part.",
+  "Use the app's own trending sound so you don't run into music rights problems.",
+  "Don't show customers, patients, students or coworkers without asking them first, and never film private details at work."
+ ],
+ "tags": ["fashion", "video", "work", "tiktok", "business"]
+}
