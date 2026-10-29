@@ -1,0 +1,40 @@
+{
+ "slug": "your-brain-gives-a-hint",
+ "title": "\"Then your brain gives you a hint\": the lightbulb skit",
+ "published": "2026-10-29T06:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Act out doing something the hard way, then freeze when the easy answer finally hits you. AI writes the overlay lines for your niche.",
+ "why": "Ramdam's TikTok trends roundup lists \"Your brain gives you a hint\" in its October 27, 2026 update: creators act out searching or struggling, then react when a sudden clue lands, with a text overlay explaining the task.",
+ "steps": [
+  "Use the main prompt to get overlay lines. Each one describes a task done the hard way and the moment the easier way pops into your head.",
+  "Film yourself struggling with the task for 3 or 4 seconds: squinting, searching, sighing.",
+  "Film the hint moment: you stop, look up, eyes wide. Then show the easier way for a second or two.",
+  "Add the overlay text across the whole clip and pick the trending sound for this format."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a short skit. I do a task the slow, hard way, then suddenly my brain gives me a hint and I realize there's an easier way. My niche is [your hobby, job or topic]. Write 10 overlay lines in this style: \"when you're [doing it the hard way] and your brain remembers [the easier way]\". Make the hard way specific and relatable. Keep each line under 25 words. No brand names."
+  },
+  {
+   "label": "Variation: everyday life",
+   "text": "Write 8 \"…and then your brain gives you a hint\" overlay lines about ordinary life in Canada in late fall: scraping frost off the car, finding a lost glove, choosing a Halloween costume at the last minute, cooking supper with what's left in the fridge. Each line shows the hard way, then the simple fix that suddenly comes to mind. Short, warm and funny."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Write 6 overlay lines for a \"your brain gives you a hint\" skit. Each starts with a common, frustrating way customers try to solve a problem on their own, then the hint: they remember a business like mine can help. Keep it light, honest and under 25 words. Don't make claims I can't back up, and don't mention competitors."
+  },
+  {
+   "label": "Variation: shot list",
+   "text": "Here's my overlay line: [paste it]. Write a shot list for an 8-second vertical video filmed on my phone, with what to film, how long each shot lasts, my facial expression in each shot, and the exact moment the hint should land."
+  }
+ ],
+ "tips": [
+  "Sell the hint with your face. A slow freeze and a slow look at the camera works better than a big jump.",
+  "Keep the struggle short. Three or four seconds is enough before the hint arrives.",
+  "Make the hard way something your viewers really do, so they laugh at themselves.",
+  "For a business post, the hint is the soft sell. Don't add a long pitch after it."
+ ],
+ "tags": ["text", "tiktok", "skit", "funny", "business"]
+}

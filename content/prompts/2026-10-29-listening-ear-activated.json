@@ -1,0 +1,40 @@
+{
+ "slug": "listening-ear-activated",
+ "title": "Listening ear activated: the instant lock-in reaction",
+ "published": "2026-10-29T06:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Look bored, then lock in the second someone says the one thing you care about. AI writes the trigger lines for your niche.",
+ "why": "Ramdam's TikTok trends roundup lists \"Listening ear activated\" in its October 19, 2026 update: creators look distracted, then go fully alert when a trigger line plays, with a text overlay that sets up the situation.",
+ "steps": [
+  "Use the main prompt to get trigger lines: the one sentence that would make you stop everything and listen.",
+  "Film yourself bored or half-listening for 2 or 3 seconds (scrolling, staring out the window, slumped in a chair).",
+  "On the trigger, snap to full attention: sit up, lean in, turn your head slowly toward the camera.",
+  "Add the overlay text and line up the sound so the switch happens right on the trigger."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a reaction clip where I'm bored, then I suddenly lock in when someone says something I care about. My niche is [your hobby, job or topic]. Write 10 overlay lines in this style: \"When someone tells me [the thing that makes me pay attention]\". Make each one specific to people in my niche, a little funny and under 25 words. No brand names, no real people."
+  },
+  {
+   "label": "Variation: everyday life",
+   "text": "Write 8 \"listening ear activated\" overlay lines about ordinary life in Canada in fall and early winter, for example someone mentioning leftover Halloween candy, a snow day, a long weekend or free parking. Each line starts with \"When someone says…\". Short, playful and kind."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Write 6 \"listening ear activated\" overlay lines where I perk up when a customer or friend mentions something I love to help with. Start each with \"When someone tells me…\". Keep them honest, warm and under 25 words. Don't make claims I can't back up, and don't mention competitors."
+  },
+  {
+   "label": "Variation: shot list",
+   "text": "Here's my overlay line: [paste it]. Write a shot list for a 6-second vertical phone video: what I'm doing while I'm bored, the exact moment I switch, and three ways to show I'm now fully listening. Keep it simple enough to film alone with my phone on a shelf."
+  }
+ ],
+ "tips": [
+  "The switch is the whole joke. Make the bored part really bored and the lock-in really sharp.",
+  "Film on a shelf or tripod so you can do it in one take.",
+  "Pick a trigger your viewers will recognize right away. If they have to think, the moment is lost.",
+  "If a friend or family member appears in the clip, ask them first."
+ ],
+ "tags": ["text", "tiktok", "reaction", "funny", "business"]
+}

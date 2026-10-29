@@ -1,0 +1,40 @@
+{
+ "slug": "haunted-house-but-its-just",
+ "title": "Haunted house, but it's just… your real-life nightmare",
+ "published": "2026-10-29T06:45:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Turn your own photo into a spooky haunted-house scene, then caption it with the everyday task that truly scares you.",
+ "why": "Ramdam's Instagram trends roundup lists \"Haunted house but it's just\" in its October 27, 2026 update: a spooky photo with the text \"haunted house but it's just…\", finished with a relatable nightmare from your niche.",
+ "steps": [
+  "Use the caption prompt to get a list of everyday \"nightmares\" for your hobby, job or niche. Pick the most specific one.",
+  "Use the image prompt with your own photo (or a photo of your desk, kitchen or shop) to make it look like a haunted house.",
+  "Add the text \"haunted house but it's just…\" and finish it with your nightmare. Two short lines are plenty.",
+  "Post it as a photo or a slow 5-second Reel with any popular spooky sound."
+ ],
+ "prompts": [
+  {
+   "label": "Caption prompt",
+   "text": "I'm posting a Halloween meme with the text \"haunted house but it's just…\". My niche is [your hobby, job or topic]. Give me 12 endings that describe a small, everyday task that feels scary to people like me. Make them specific and relatable, a little funny, and under 15 words each. Nothing gory, no real people, no brand names."
+  },
+  {
+   "label": "Image prompt: my photo, haunted",
+   "text": "Edit my photo so the room looks like a haunted house at night. Keep me, my face and my clothes exactly the same. Add dim bluish moonlight through a dusty window, cobwebs in the corners, a few flickering candles, peeling wallpaper and a thin layer of fog on the floor. Keep the mood spooky but playful, not gory. Leave clear space at the top for two lines of text. Realistic photo, vertical 4:5."
+  },
+  {
+   "label": "Variation: just the scene",
+   "text": "Create a photo of [the place where your nightmare happens, for example a messy desk with a laptop, a kitchen sink full of dishes, a closet full of clothes] styled as a haunted house. Creaky wooden floor, cobwebs, cold moonlight, one candle, soft fog. A white sheet ghost peeks in from the edge of the frame. Spooky but cute. Leave space at the top for text. Realistic, vertical 4:5."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Give me 8 \"haunted house but it's just…\" endings about small things my customers find scary that we make easier (for example, choosing between too many options or booking an appointment). Keep them kind and under 15 words. Don't make claims I can't back up, and don't mention competitors."
+  }
+ ],
+ "tips": [
+  "The more specific the nightmare, the better. \"Planning a trip\" is fine; \"planning a 10-day trip in one spreadsheet\" gets the laugh.",
+  "Keep the image readable: dark scene, light text, and nothing busy behind the words.",
+  "If you use a photo with other people in it, ask them first.",
+  "Post it before Halloween night while the format is fresh."
+ ],
+ "tags": ["halloween", "meme", "instagram", "relatable", "business"]
+}
