@@ -1,0 +1,40 @@
+{
+ "slug": "todays-to-do-list",
+ "title": "Today's to-do list: one honest overlay on a normal clip",
+ "published": "2026-10-30T06:50:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Film yourself getting ready or working, then add one overlay: \"Today's to-do list\". AI helps you write a list that's short, real and a little funny.",
+ "why": "An Instagram trends roundup dated October 27, 2026 lists \"Today's to-do list\": a casual clip of the creator getting ready or working, with the overlay \"Today's to-do list\" and a list of everyday tasks, set to a trending sound.",
+ "steps": [
+  "Film one relaxed clip of 5 to 10 seconds: making coffee, getting ready, opening the shop or sitting down to work.",
+  "Use the main prompt to turn your real plans for the day into a short list. Pick the version that sounds most like you.",
+  "Add the title \"Today's to-do list\" at the top and the list underneath, in large text that is easy to read on a phone.",
+  "Pick a trending sound in the app and post. Ask people to share their own list in the comments."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Here are the things I really need to do today: [paste your rough list]. Turn them into a \"Today's to-do list\" for a short video overlay. Keep it to 5 or 6 items, each under 6 words. Keep the real tasks, but make one or two of them a little funny or honest, like \"drink the coffee while it's still hot\". Put the items in the order I'd actually do them. Write 3 versions: calm, chaotic and very honest."
+  },
+  {
+   "label": "Variation: the honest twist",
+   "text": "Write a \"Today's to-do list\" with 5 items for a short video. The first 4 should sound productive and normal, like \"reply to emails\" and \"go for a walk\". The last item should be a gentle, relatable twist that shows what really happened, like \"move all of this to tomorrow\". Keep each item under 6 words. My day is about: [your day]. Keep it kind and light, no jokes about anyone else."
+  },
+  {
+   "label": "Variation: checked off",
+   "text": "I want to film the same clip twice: once in the morning and once at night. Write a \"Today's to-do list\" with 5 items for the morning version. Then write the night version of the same list, with a check mark or an honest note beside each item, for example \"done\", \"half done\" or \"tomorrow\". My plans: [your list]. Keep each line short enough to read in 2 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write a \"Today's to-do list\" for a short video of me opening up. Use 5 or 6 real tasks from a normal day, like [example tasks]. Make one item warm and personal, like \"say hi to our regulars\". Add a one-line caption that invites people to drop by or ask a question. No made-up sales, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Use your real day. The trend works because the list is ordinary and believable.",
+  "Keep the list short. If people need to pause the video to read it, cut items.",
+  "Leave the text on screen for the whole clip, so it's easy to read before it loops.",
+  "Pick the sound inside the app so it's licensed for your post."
+ ],
+ "tags": ["text", "instagram", "to-do-list", "day-in-the-life", "business"]
+}
