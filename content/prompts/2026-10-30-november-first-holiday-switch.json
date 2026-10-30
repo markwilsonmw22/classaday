@@ -1,0 +1,49 @@
+{
+ "slug": "november-first-holiday-switch",
+ "title": "November 1: Halloween out, holidays in",
+ "published": "2026-10-30T18:42:00Z",
+ "kind": "image",
+ "tools": [
+  "ChatGPT",
+  "Gemini"
+ ],
+ "summary": "Turn one photo of your room, door or shop window from Halloween to holiday in five steps. AI does the restyling, you post it as a beat-by-beat reveal.",
+ "why": "SocialPilot's weekly Reels audio list, updated October 30, 2026, puts a rising holiday song with the hook \"Christmas starts November 1\" in its October 31 to November 10 picks, used for clips that style a bare tree over five quick cuts.",
+ "steps": [
+  "Take one clear photo of the spot you decorated for Halloween: a mantel, front door, desk or shop window. Shoot it straight on, in good light.",
+  "Use the main prompt to make five versions, from spooky to fully festive. Ask for one image at a time and say \"keep everything else the same\" each time.",
+  "Put the five images in order in a Reel or TikTok slideshow and set each one to a beat of an upbeat holiday song from the app's library.",
+  "Post on November 1 with a caption that asks people if it's too early. Then decorate for real if you love the result."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "This is a photo of my [mantel, front door, desk or window] decorated for Halloween. Make 5 versions that change it to holiday decor, one step at a time, like a slow switch. Version 1: take away the Halloween items so it's bare and clean. Version 2: add evergreen branches and warm fairy lights. Version 3: add a few soft red and cream accents. Version 4: add small wrapped gifts and candles. Version 5: fully cosy and festive, with a light dusting of snow outside if there's a window. Keep the room, camera angle and lighting the same in every version. Make it look like a real photo, not a cartoon."
+  },
+  {
+   "label": "Variation: the bare tree, five cuts",
+   "text": "Here is a photo of a plain, undecorated tree in my living room. Make 5 versions where it gets decorated one layer at a time: 1) warm white lights, 2) ribbon wrapped around it, 3) ornaments in [two or three colours], 4) a star or bow on top, 5) gifts underneath and the room lights dimmed so the tree glows. Keep the tree shape, room and angle exactly the same in every image. Realistic photo style."
+  },
+  {
+   "label": "Variation: pick my style",
+   "text": "Using this photo of my space, show me the same spot decorated for the holidays in 4 different styles: classic red and green, Scandinavian white and wood, cosy cabin plaid, and modern silver and blue. Keep the room and camera angle the same. Label each image with the style name in small, clean text in a corner so I can post them as a vote."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "This is a photo of my [shop window, counter or front entrance] with Halloween decor. I run a [type of business]. Make 5 versions that switch it to holiday decor step by step, ending with a warm, welcoming festive look. Leave room on the counter or in the window to show our [product or menu item]. Keep the space, signage area and angle the same, but leave any sign blank. Realistic photo style. Don't add prices, sale signs or text."
+  }
+ ],
+ "tips": [
+  "Shoot your starting photo before you take the Halloween decor down. You only get one chance at the \"before\".",
+  "If the room changes shape between versions, upload your first photo again and say \"same room, same angle, only change the decor\".",
+  "Use a song from the app's own library so your post isn't muted. Business accounts should use the commercial sound library.",
+  "Keep the cuts quick. Five images at one beat each is about the right length."
+ ],
+ "tags": [
+  "holiday",
+  "decor",
+  "slideshow",
+  "chatgpt",
+  "business"
+ ]
+}
