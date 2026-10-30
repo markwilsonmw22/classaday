@@ -1,0 +1,50 @@
+{
+ "slug": "i-hate-niche-halloween",
+ "title": "\"I hate ___ Halloween\": the too-niche costume joke",
+ "published": "2026-10-30T12:40:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "Joke about the costumes only your hobby, job or friend group would understand. AI helps you brainstorm the in-jokes and write the caption.",
+ "why": "A TikTok trend report lists \"I hate _ Halloween\" on October 28, 2026: \"I hate _ Halloween because what do you mean…\", used to joke about very niche costumes that only one group would get. It's a fresh last-minute twist before Halloween on October 31.",
+ "steps": [
+  "Pick your group: your job, your hobby, your town, your family or your friend group.",
+  "Use the main prompt to brainstorm costume ideas that only that group would understand.",
+  "Pick your favourite and either wear it or show a photo of it. Film a short clip with the text over it.",
+  "Ask people in the comments what the most niche costume in their world would be."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short video for the trend \"I hate [group] Halloween because what do you mean you're dressed as…\". My group is [job, hobby, town or friend group]. Brainstorm 10 costume ideas that only people in that group would understand, like an inside joke, a common problem or a famous moment in our small world. Keep them kind and fun. Then write the full on-screen line for my top 3, each under 20 words."
+  },
+  {
+   "label": "Variation: make it from what I own",
+   "text": "I want to dress up as this niche idea: [your idea]. I have [list of clothes and things at home]. Suggest the simplest way to make the costume tonight with what I have, in 5 steps or fewer. Then give me one short line of on-screen text that explains the joke to people outside my group, to add at the end."
+  },
+  {
+   "label": "Variation: friend group edition",
+   "text": "Write 6 lines for a carousel post: \"I hate our friend group's Halloween because what do you mean you're dressed as…\". Base each line on these harmless in-jokes from our group: [list 3 to 6 shared memories or sayings]. Keep every joke friendly, with nothing that would embarrass anyone. Suggest a closing slide that tags everyone."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business]. Write 5 lines for the trend \"I hate [our trade or industry] Halloween because what do you mean you're dressed as…\", based on things only people in our line of work or our regulars would get, like [examples of common moments or tools]. Keep the jokes about the work, not about customers. Add a caption that invites people to share their own trade's version."
+  }
+ ],
+ "tips": [
+  "The more specific, the better. A joke only 50 people get often gets the most comments from those 50.",
+  "Keep jokes about situations and things, not about real people or customers.",
+  "A cardboard sign or one prop is enough. The text does most of the work.",
+  "Post today or tomorrow. This one is tied to Halloween on October 31."
+ ],
+ "tags": [
+  "halloween",
+  "costume",
+  "text",
+  "tiktok",
+  "business"
+ ]
+}

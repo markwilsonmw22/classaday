@@ -1,0 +1,50 @@
+{
+ "slug": "day-one-month-six-one-year",
+ "title": "Day 1, Month 6, 1 Year: the same moment, more extra each time",
+ "published": "2026-10-30T12:40:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "Act out one everyday moment three times: on day 1, at month 6 and after 1 year, getting more exaggerated each time. AI writes the three versions.",
+ "why": "A TikTok trends tracker updated October 26, 2026 lists \"Day 1 vs later\" as peaking, with its newest example on October 23: the same scene shown at Day 1, Month 6 and 1 Year, each one more exaggerated.",
+ "steps": [
+  "Pick one moment that changes over time: a new job, a new pet, a new gym habit, a new hobby or a new neighbour.",
+  "Use the main prompt to write three short versions of the same scene, from careful to completely relaxed (or completely obsessed).",
+  "Film the same shot three times in the same spot, changing only how you act, your outfit or one prop.",
+  "Put a label at the top of each part: \"Day 1\", \"Month 6\", \"1 Year\". Keep each part under 5 seconds."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming the \"Day 1 vs Month 6 vs 1 Year\" trend. The moment is: [for example, arriving at my new job, walking my new dog, going to the gym]. Write three short versions of the same scene. Day 1 is careful and polite, Month 6 is more relaxed, and 1 Year is a funny, exaggerated version. For each one, give me one action, one line I can say or show as text (under 10 words) and one small prop or outfit change. Keep it kind and relatable."
+  },
+  {
+   "label": "Variation: the opposite direction",
+   "text": "Write the \"Day 1, Month 6, 1 Year\" trend for [hobby or habit], but make it go the other way: on Day 1 I'm only a little into it, and by 1 Year I'm completely obsessed. Give me three scenes with one action and one short text line each. Suggest one thing in the background that grows from scene to scene, like more gear or more plants."
+  },
+  {
+   "label": "Variation: pets",
+   "text": "I want to show my [pet] at Day 1, Month 6 and 1 Year in our home. Write three short captions in the voice of the pet, from shy and polite on Day 1 to fully in charge of the house at 1 Year. Suggest a shot for each one that I can film with a phone, using things my pet already does. Keep it gentle and funny."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business]. Write the \"Day 1, Month 6, 1 Year\" trend as a short video about [a new staff member, a regular customer who agreed to be filmed, or me as the owner]. Day 1 is nervous and new, Month 6 knows the routine, and 1 Year runs the place like family. Give each scene one action and one line under 10 words. Keep it warm and true to our real day. No made-up sales or numbers."
+  }
+ ],
+ "tips": [
+  "Film from the same spot each time. Keeping the frame the same makes the change funny.",
+  "Make each step bigger than the last. The 1 Year part should be the most extra.",
+  "Only film people who have agreed to be in it.",
+  "Use the app's own sounds so your music is licensed."
+ ],
+ "tags": [
+  "text",
+  "tiktok",
+  "skit",
+  "before-after",
+  "business"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "slug": "what-tablet-hidden-in-shot",
+ "title": "\"What tablet?\": deny it while it's hiding in the shot",
+ "published": "2026-10-30T12:40:00Z",
+ "kind": "text",
+ "tools": [
+  "ChatGPT",
+  "Gemini",
+  "Claude"
+ ],
+ "summary": "Swear to camera that you don't own a thing while it sits somewhere in the frame. AI writes the straight-faced denial and helps you plan the hiding spot.",
+ "why": "A TikTok trends roundup updated October 26, 2026 lists a new format spotted that day: creators insist they don't own a certain tablet while one is hidden in the shot, and viewers hunt for it in the comments.",
+ "steps": [
+  "Pick the object you will \"not own\". It can be anything: a tablet, a second coffee mug, a pile of yarn, a new pair of boots.",
+  "Use the main prompt to write a short, serious denial and three hiding spots that are hard but fair to find.",
+  "Film one take of you talking to camera, with the object tucked into the background, a reflection or your hand.",
+  "Post with a caption that dares people to find it. Reply to the first person who spots it."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a short video where I look at the camera and deny owning [object], while it is hidden somewhere in the shot. Write 3 versions of a denial I can say in under 10 seconds: calm, offended and over-the-top serious. Each one should get more specific, like I'm trying too hard to convince people. Then suggest 3 places in [room or setting] where I can hide the object so it's tricky but fair to spot. Keep it light and silly."
+  },
+  {
+   "label": "Variation: the slow give-away",
+   "text": "Write a 15-second script where I deny owning [object] three times. After each denial, the object should become a little easier to see: first hidden, then half in the frame, then right in my hand while I keep denying it. Give me the three lines and a short note on where the object sits in each shot. End with one line that admits nothing."
+  },
+  {
+   "label": "Variation: caption and comments",
+   "text": "My video shows me denying that I own [object] while it's hidden in the shot. Write 5 short captions that invite people to find it without giving away where it is. Then write 5 friendly replies I can use when people find it, and 3 replies for when people guess wrong. Keep every line under 12 words."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business]. I want to film the \"I don't own that\" trend, where I deny having something while it's hidden in the shot. Make the hidden thing our new [product or menu item]. Write a 10-second denial that sounds fun, not salesy, and 3 hiding spots in our [shop, kitchen or workspace]. Add a caption that asks people to spot it and mentions where they can find it for real. No made-up prices, sales or customer quotes."
+  }
+ ],
+ "tips": [
+  "Keep a straight face. The joke works because you sound sure of yourself.",
+  "Hide it in a fair spot. If nobody can find it, people stop looking.",
+  "Check the frame on your phone before you film, so the object isn't cut off.",
+  "Pick any object you like. You don't need to show a brand for the joke to land."
+ ],
+ "tags": [
+  "text",
+  "tiktok",
+  "funny",
+  "hidden-object",
+  "business"
+ ]
+}
