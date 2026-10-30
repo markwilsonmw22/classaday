@@ -1,0 +1,40 @@
+{
+ "slug": "study-until-flight-lands",
+ "title": "Study until this flight lands: the constraint challenge",
+ "published": "2026-10-30T00:39:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Pick a real flight in the air and work until it lands. AI turns any task into a timed challenge with a hook, a setup and a clear finish line.",
+ "why": "A weekly UGC trend report for October 17 to 24, 2026 lists \"constraints as challenges\" as a theme, with a creator who picks a random live flight and studies until it lands. The same report names \"the measurable constraint\" as a hook style that worked that week.",
+ "steps": [
+  "Open a free flight-tracking site, pick a plane that is in the air and note when it lands. That is your timer.",
+  "Use the main prompt to plan the session: the hook, what to film at the start, and what to show at the end.",
+  "Film the setup (the flight on screen, your desk, the task), then a sped-up middle with the time left on screen.",
+  "End on the landing and a clear result: pages read, cards learned, rooms cleaned or emails cleared."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm filming a short vertical video where I study until a random flight lands. The flight is about [number] hours long and I'm studying [subject or task]. Write: 1) three hook lines under 10 words that state the challenge, for example \"I'm studying until this plane lands\" style; 2) a plan that splits the flight time into focus blocks and short breaks; 3) 4 on-screen text updates for the middle of the video (time left, what I finished); 4) an ending line that shows a clear result, like a number of pages or flashcards. Keep it upbeat and realistic. Use Canadian spelling."
+  },
+  {
+   "label": "Variation: other time limits",
+   "text": "Give me 10 fun, real-world time limits I could use for a \"work until it ends\" video instead of a flight. Examples: a ferry crossing, a slow cooker recipe, a full playlist, the time until sunset. For each one, suggest a task that fits the length and a hook line under 10 words."
+  },
+  {
+   "label": "Variation: study with friends",
+   "text": "My friends and I each picked a different flight and we study until our own plane lands. Plan a short video for this: a hook, how to show all the flights side by side, three quick check-ins as each plane lands, and a final scoreboard of what each person finished. Keep it friendly, not competitive in a mean way."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Plan a short video where my team takes on one task (for example [packing orders, prepping for opening, restocking shelves]) and has to finish before a real flight lands. Write the hook, the setup shot, 4 on-screen time updates and an honest ending that shows the real result, even if we didn't finish. No made-up numbers."
+  }
+ ],
+ "tips": [
+  "Say the limit in the first line. A clear finish line is what makes people stay to the end.",
+  "Keep the flight tracker in a corner of the screen so viewers can watch the plane move.",
+  "Show a number at the end. \"42 flashcards\" lands better than \"I got a lot done\".",
+  "Turn it into a series: new flight, new subject, new result each time."
+ ],
+ "tags": ["text", "study", "challenge", "reels", "business"]
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "sent-back-from-2069",
+ "title": "Sent back from the year 2069: the future-object review",
+ "published": "2026-10-30T00:39:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini", "Kling"],
+ "summary": "Open with a joke: your everyday thing arrived from 2069. AI makes the future version, then you give a real, honest review of the real one.",
+ "why": "A weekly UGC trend report for October 17 to 24, 2026 says tech demos are \"borrowing absurd comedy\". Its example introduces a computer case as if it had travelled back from the year 2069, then follows up with real tests and pricing.",
+ "steps": [
+  "Take a clear photo of the object you want to review: your desk setup, a gadget, a mug, a bike or a tool.",
+  "Use the main prompt to make the funny \"from 2069\" version. Animate it in a video tool if you want a short arrival clip.",
+  "Open the video with the future version and one silly line, then cut to the real object.",
+  "Give a real review with things you actually checked: how it feels, how long it lasts, what it costs, what you'd change."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using my photo of [object], show the same object as if it had just arrived from the year 2069. Keep its basic shape so people can tell it's the same thing, but add believable future details: soft glowing edges, a thin floating display, smooth brushed metal, tiny moving lights. Place it on my real desk, still a bit steamy and frosty like it just came out of a time machine. Realistic photo, soft daylight, vertical 9:16. No logos, no brand names and no readable text."
+  },
+  {
+   "label": "Variation: arrival clip",
+   "text": "Animate this image as a 5-second vertical clip. A soft flash of light fills the room, then fades to show the future object sitting on the desk. A thin wisp of cool vapour drifts off it and its lights blink on one by one. The camera slowly pushes in. Calm, realistic lighting, no people, no text."
+  },
+  {
+   "label": "Variation: future review script",
+   "text": "Write a 45-second script for a funny but honest review. Open with: \"This [object] just arrived from the year 2069.\" Give two quick jokes about its future features. Then switch to the real object and list 4 real things to test on camera, for example how it feels, how loud it is, how long the battery lasts or how easy it is to clean. End with a one-line honest verdict. I'll fill in the real results myself, so leave blanks for them."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I sell [product]. Make an image of my product as if it had arrived from the year 2069: same shape and colours, with playful future details like soft glowing trim and a thin floating display. Show it on a simple shop counter. Then write a short caption that makes the joke clear and moves to 3 true facts about the real product that I will fill in. No logos, no fake reviews and no claims I can't prove."
+  }
+ ],
+ "tips": [
+  "Keep the future version close to the real shape. The joke works because people recognize the object.",
+  "Make the switch obvious: a sound effect or a quick \"OK, the real one\" line.",
+  "The review has to be real. Show the tests on camera instead of just saying the results.",
+  "Never pass off the AI picture as the real product. Label it as the 2069 joke."
+ ],
+ "tags": ["product-review", "future", "funny", "chatgpt", "business"]
+}
