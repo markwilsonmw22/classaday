@@ -1,0 +1,40 @@
+{
+ "slug": "extra-hour-fall-back",
+ "title": "Clocks fall back: what I'll really do with the extra hour",
+ "published": "2026-10-31T12:55:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Clocks go back an hour on November 1 in much of Canada. Post the big plans for your bonus hour, then the honest truth.",
+ "why": "Daily Hive reported on October 14, 2026 that daylight saving time ends on Sunday, November 1, in most of Canada, and that a petition to stop changing the clocks comes back every November. It's a timely, shared moment, so this pack is pegged to the date, not to a measured trend.",
+ "steps": [
+  "Film two short clips: one where you look ready for a big, productive day, and one of what you're really doing (napping, scrolling, a second coffee).",
+  "Use the main prompt to write the plan list and the honest reveal. Pick the pair that sounds most like you.",
+  "Put the plan on the first clip and the reveal on the second. Keep each on screen for 2 to 3 seconds.",
+  "Post on Saturday night or Sunday morning, and ask people what they did with their extra hour."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "The clocks go back one hour this Sunday, so I get an extra hour. Write a short text overlay for a two-part video. Part 1: \"What I'll do with my extra hour\" and a list of 4 ambitious plans, each under 6 words, like \"meal prep for the week\". Part 2: \"What I actually did\" and one honest, relatable line. Something about my life: [your routine or hobby]. Write 3 versions: cosy, chaotic and very honest. Keep it light and kind."
+  },
+  {
+   "label": "Variation: the clock-change confusion",
+   "text": "Write 5 short, relatable lines about the morning after the clocks go back, for a text-on-screen video. Examples of the feeling: the microwave clock is still wrong, the pet still wants breakfast at the old time, it gets dark before dinner. Each line under 10 words. Start with a hook like \"Things that happen when the clocks fall back:\". Canadian spelling, no jokes about anyone else."
+  },
+  {
+   "label": "Variation: bonus-hour challenge",
+   "text": "Give me 6 ideas for using one extra hour on a Sunday in November, for a carousel post called \"One bonus hour, 6 better ways to spend it\". Mix cosy and useful ideas, like a walk before it gets dark early or swapping the batteries in the smoke alarm. One line each, under 10 words, plus a one-line caption that asks people to pick their favourite."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write a short, friendly post for this weekend about the clocks going back one hour. Include a reminder to change the clocks, our real hours for Sunday [your hours], and one warm idea for spending the extra hour that fits what we do, like [example]. Under 60 words. No made-up deals, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Check your province first. Not every part of Canada changes its clocks, so word your post to fit where you live.",
+  "Timing matters. This one only works this weekend, so post by Sunday afternoon.",
+  "Keep the reveal short. One honest line lands better than a second list.",
+  "Pick the sound inside the app so it's licensed for your post."
+ ],
+ "tags": ["text", "canada", "seasonal", "funny", "business"]
+}
