@@ -1,0 +1,40 @@
+{
+ "slug": "shared-avatar-starring-together",
+ "title": "Starring together: you and a friend's shared avatar",
+ "published": "2026-10-31T18:38:00Z",
+ "kind": "image",
+ "tools": ["Gemini"],
+ "summary": "Swap avatars with a friend who agrees, then put the two of you in one silly, cinematic scene: a picture or a short clip.",
+ "why": "On October 29, 2026, Google announced that Gemini users can now share their personal avatar with friends, so both people can star in the same images and videos. Digital Trends covered the launch on October 30. Your friend has to share their avatar with you, and you have to accept, before you can use it.",
+ "steps": [
+  "Make your own avatar first. In the Gemini app, open Add Files, then Avatar, and record your face and voice. Use even light, hold the phone at eye level and keep other faces out of the shot.",
+  "Ask a friend or family member who wants to join in to make theirs and share it with you from Settings, then Avatar, then Share. Accept it when it shows up under \"Avatars shared with you\".",
+  "Type @ in the prompt box to pick your avatar and theirs, then use one of the prompts below. Images work on their own. Videos need a Google AI plan.",
+  "Post it with a clear \"made with AI\" note, and send it to your friend before you post so they can say yes or no."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the movie poster moment",
+   "text": "Make a wide, cinematic image of @[me] and @[friend] as the two heroes of a cosy adventure film. We're standing side by side on a snowy hill at dusk, wearing warm winter coats and scarves, with a small town glowing below us. Soft golden light on our faces, light snow falling, slight film grain. We both look confident and a little bit too serious. No text, no logos and no other people."
+  },
+  {
+   "label": "Variation: the silly short clip",
+   "text": "Make an 8-second video of @[me] and @[friend] in a bright kitchen, trying very hard to flip one pancake at the same time. The pancake lands on the floor. We freeze, look at each other, then both burst out laughing. Handheld camera, warm morning light, natural sound of a sizzling pan and our laughter. Keep it light and friendly. No text and no logos."
+  },
+  {
+   "label": "Variation: then and now with a twist",
+   "text": "Make two matching images of @[me] and @[friend] in the same pose, side by side. Left: us as an old-timey duo in a 1920s photo studio, sepia tones, stiff posture, very formal. Right: the same pose today, in hoodies on a couch with a bowl of popcorn, bright and messy. Keep our faces the same in both. No text, no logos."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Make a friendly, bright image of @[me] and @[business partner or teammate who shared their avatar] behind the counter of a small [type of business, like a bakery or bike repair shop], high-fiving because the first snow day brought in a rush of customers. Warm lighting, cosy shop details, a little steam from a coffee cup. Don't add any shop name, logo, prices or text, and don't add customers' faces."
+  }
+ ],
+ "tips": [
+  "Only use avatars people shared with you on purpose, and check with them before you post. They can remove your access at any time.",
+  "Say it's AI in the caption. The point is fun, not fooling anyone into thinking it really happened.",
+  "Describe one clear moment: where you are, what you're doing, and the light. Short, specific scenes look more like the two of you.",
+  "The feature is English only, for adults with a personal Google Account. If you don't see Avatar yet, it may still be rolling out to you."
+ ],
+ "tags": ["friends", "avatar", "gemini", "video", "business"]
+}
