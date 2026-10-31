@@ -1,0 +1,40 @@
+{
+ "slug": "one-percent-to-full-charge",
+ "title": "1% to 100%: the recharge before-and-after",
+ "published": "2026-10-31T00:38:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Show yourself, your pet or your space at 1% battery, then fully charged at 100%. AI makes the battery overlays and the \"after\" shot.",
+ "why": "Later's Instagram Reels trends roundup, updated October 30, 2026, lists \"Recharged\" as a new trend that week: a before-and-after Reel that goes from 1% to 100%, opening on a low-battery hook.",
+ "steps": [
+  "Pick your before-and-after. It can be you before and after coffee, your dog before and after a walk, a messy desk before and after a tidy, or a shop before and after opening.",
+  "Take the real \"before\" photo or clip. Then use the main prompt to add a low-battery icon, or film the real \"after\" and add a full-battery icon to it.",
+  "Put the two shots back to back in a Reel or TikTok. Show the 1% shot for a second, then cut to 100% on a beat.",
+  "Add a short hook on screen, like \"Down to 1%. Watch this.\" Keep the caption short."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: add the battery overlay",
+   "text": "Here are two photos of me. Photo 1 is my \"before\": tired, slumped, low energy. Photo 2 is my \"after\": awake and ready to go. Don't change my face, body or the room. Add a large, simple phone-style battery icon in the top corner of each photo. On photo 1, the battery is almost empty, with a thin red sliver and \"1%\" next to it. On photo 2, the battery is full and green with \"100%\" next to it. Use a clean, flat icon with no phone brand or logo. Keep everything else exactly as it is."
+  },
+  {
+   "label": "Variation: make the 100% shot",
+   "text": "This photo shows me at the end of a long day, looking drained, with a small red battery icon reading \"1%\" in the top corner. Make a matching \"100%\" version: same person, same face, same outfit, same room and camera angle, but now I'm sitting up straight, smiling, with a hot drink in my hand and warm morning light through the window. Change the battery icon to full and green, reading \"100%\". Keep it looking like a real photo."
+  },
+  {
+   "label": "Variation: pet edition",
+   "text": "Here is a photo of my [dog or cat] flopped out asleep. Add a simple flat battery icon above its head, nearly empty and red, labelled \"1%\". Then make a second image of the same pet, same markings and same room, now wide awake and mid-zoomie with its ears up, with a full green battery icon labelled \"100%\". Realistic photo style, no logos."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, like a café, salon or repair shop]. Here are two real photos of our space: one before we open, dark and empty, and one during the day, open and busy. Don't change the space or add customers who aren't there. Add a simple flat battery icon in the top corner of each: red and \"1%\" on the before photo, green and \"100%\" on the open photo. Leave any signs as they are and don't add prices, sale banners or extra text."
+  }
+ ],
+ "tips": [
+  "Use your own real before-and-after where you can. AI is best used for the battery icons, not for faking results.",
+  "Shoot both photos from the same spot and angle. The cut feels much more satisfying when only the energy changes.",
+  "If the AI changes your face, upload the original again and say \"keep my face exactly the same, only add the icon\".",
+  "Business accounts should pick a sound from the app's commercial library so the Reel isn't muted."
+ ],
+ "tags": ["before-after", "reels", "funny", "pets", "business"]
+}

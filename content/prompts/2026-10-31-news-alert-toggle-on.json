@@ -1,0 +1,40 @@
+{
+ "slug": "news-alert-toggle-on",
+ "title": "\"News alert: toggle on\": tease your announcement",
+ "published": "2026-10-31T00:38:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini", "Canva"],
+ "summary": "A big on/off switch flicks on to tease something new. AI designs the switch graphics in your colours and writes the reveal lines.",
+ "why": "Later's Instagram Reels trends roundup, updated October 30, 2026, lists \"Toggle on\" as a new trend that week: creators tease an announcement with the line \"News alert: toggle on.\"",
+ "steps": [
+  "Decide what you're announcing. It can be big or small: a new hobby, a move, a new menu item, holiday hours or a launch date.",
+  "Use the main prompt to make two matching images: the switch off, then the switch on with your news. Use the writing prompt if you want a few reveal lines to choose from.",
+  "In a Reel or TikTok, show the \"off\" image for a moment, then cut to \"on\" on a beat. Add a third slide with the details if you need it.",
+  "Keep the caption short and let the switch do the work. Answer questions in the comments."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: off and on",
+   "text": "Make two matching square images for an announcement tease. Image 1: a large, rounded on/off toggle switch in the centre of a clean [your colour] background, switched off and grey, with small text above it that reads \"News alert\". Image 2: exactly the same layout, but the switch is now on and glowing [accent colour], and below it in bold, friendly letters it says \"[your news in five words or fewer]\". Flat, modern style. Keep the switch, fonts and position identical in both images. No phone brand, logo or app icons."
+  },
+  {
+   "label": "Variation: switch in real life",
+   "text": "Make a realistic close-up photo of a hand flicking a chunky, glossy toggle switch on a wooden table. Soft daylight, shallow depth of field. The switch is mounted on a small panel with a tiny label that reads \"[your news]\". Make two versions: one with the switch off, and one with it on and a small warm light glowing beside it. Same angle and lighting in both. No logos or brand names."
+  },
+  {
+   "label": "Variation: write my reveal lines",
+   "text": "I'm posting a short \"news alert, toggle on\" video to tease some news: [describe your news]. Write 5 options for the on-screen text that appears when the switch flips on. Each one should be under eight words, plain and upbeat, with no hype, fake urgency or made-up numbers. Then write a one-line caption that invites questions."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Make three matching vertical images for a Reel. Image 1: a big rounded toggle switch, switched off, on a [brand colour] background, with \"News alert\" above it. Image 2: the same switch flipped on and glowing, with \"[your real news, like 'Holiday hours are here']\" below it. Image 3: the same background with a simple list of the real details: [dates, hours or item names]. Clean, flat style. Don't add prices, discounts, countdown timers or any logo."
+  }
+ ],
+ "tips": [
+  "Check the words on every slide. AI still misspells short text now and then, so fix it before you post.",
+  "Keep the switch in the same spot on every slide. If it jumps around, the flick won't feel smooth.",
+  "Only announce real news with real dates. A tease works because people trust the reveal.",
+  "Canva is handy for swapping in your exact brand colours and fonts after the AI makes the first version."
+ ],
+ "tags": ["announcement", "reels", "instagram", "text", "business"]
+}
