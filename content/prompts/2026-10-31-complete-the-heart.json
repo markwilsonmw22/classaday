@@ -1,0 +1,40 @@
+{
+ "slug": "complete-the-heart",
+ "title": "\"Complete it?\": the half-heart text with a twist",
+ "published": "2026-10-31T06:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Claude", "Gemini"],
+ "summary": "Someone sends half a heart and asks you to complete it. The reply finishes the heart with what they really want. AI writes the punchlines.",
+ "why": "Blue Bear Creative's weekly social trends post for October 28, 2026 lists \"Complete it?\" at heat level 3 of 4: a half-heart text exchange where the reply completes the heart with what the sender actually wants.",
+ "steps": [
+  "Set up a short, friendly chat with a friend or family member who agreed to be in it. One person sends half a heart and \"complete it?\".",
+  "Use the main prompt to brainstorm the twist: the reply that completes the heart with something unexpected, like a slice of pizza or the last cookie.",
+  "Screen-record or screenshot the chat. Crop out real names, numbers and profile photos, or use nicknames.",
+  "Post it as a photo, or a short video with the reply popping in on a beat."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: twist replies",
+   "text": "There's a meme where someone texts half a heart and \"complete it?\", and the reply completes the heart with what they really want instead of love. Write 12 funny, clean versions of the reply. Each one is a short message plus the emoji or object that finishes the heart, for example \"🍕 there, now it's complete\". Make them about everyday things: snacks, sleep, the TV remote, the warm side of the bed, the dog. Keep each reply under 10 words. Nothing mean, rude or romantic-gone-wrong."
+  },
+  {
+   "label": "Variation: family edition",
+   "text": "Write 8 versions of the \"complete it?\" half-heart text meme where the chat is between family members. The parent or sibling completes the heart with a chore, a reminder or a household thing, like \"🧺 the laundry is still in the dryer\". Make them warm and funny, the kind of thing a mom or brother would actually send. Each reply under 12 words."
+  },
+  {
+   "label": "Variation: pet's point of view",
+   "text": "Write 8 versions of the \"complete it?\" half-heart text meme where the reply comes from a pet, as if the pet could text. The pet completes the heart with what it really wants: treats, a walk, the sunny spot on the couch, the box the parcel came in. Use a simple emoji to finish the heart and keep each reply under 10 words."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, like a coffee shop, bakery or bike shop]. Write 8 versions of the \"complete it?\" half-heart text meme for our social media. A customer sends half a heart and \"complete it?\", and our account replies by completing it with something we really sell or do: [list 3 to 5 real items or services]. Keep it playful and under 12 words per reply. No prices, no discounts, no made-up claims and no fake customer names."
+  }
+ ],
+ "tips": [
+  "Only use chats with people who agreed to be in the post, and hide real names, phone numbers and photos.",
+  "The surprise is the whole joke. Keep the first message sweet so the twist lands.",
+  "For a business, make it clear it's a playful post from your own account, not a real customer conversation.",
+  "Post a few versions as a carousel and ask followers which one is most like them."
+ ],
+ "tags": ["text", "meme", "funny", "tiktok", "business"]
+}

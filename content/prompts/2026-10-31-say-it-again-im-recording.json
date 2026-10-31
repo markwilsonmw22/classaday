@@ -1,0 +1,40 @@
+{
+ "slug": "say-it-again-im-recording",
+ "title": "\"Say it again, I'm recording\": the complaint that turns into a pitch",
+ "published": "2026-10-31T06:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Claude", "Gemini"],
+ "summary": "A short skit: someone starts a tense complaint, the other person hits record, and it turns into an over-the-top pitch. AI writes the script.",
+ "why": "Blue Bear Creative's weekly social trends post for October 21, 2026 lists \"Say it again, I'm recording\" at heat level 3 of 4: a tense customer confrontation that turns into an over-the-top product pitch.",
+ "steps": [
+  "Pick the thing being \"complained\" about. It can be your cooking, your tidy closet, your dog's fancy haircut, or something your business makes.",
+  "Use the main prompt to write a 20 to 30 second script with two parts: a tense opening line, then the twist into a gushing pitch.",
+  "Film it with a friend, partner or co-worker who agreed to be in it. One person holds up a phone and says \"Say it again, I'm recording.\"",
+  "Cut straight from the serious face to the big pitch. Add on-screen text if the audio is hard to hear."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the skit script",
+   "text": "Write a 25-second comedy skit for a short video. Two people. Person A walks up looking upset and says something that sounds like a complaint about [thing, for example \"my lasagna\"]. Person B calmly takes out a phone and says \"Say it again, I'm recording.\" Person A then turns the complaint into an over-the-top, gushing pitch, like a TV commercial: how good it is, why everyone needs it. Write it as short lines with simple stage directions. Keep it friendly, with no shouting, insults or swearing. Give me 3 different versions."
+  },
+  {
+   "label": "Variation: family or roommates",
+   "text": "Write 3 versions of the \"Say it again, I'm recording\" skit set at home with family or roommates. Each starts with what sounds like a serious complaint, like \"We need to talk about the dishwasher\", and turns into an over-the-top compliment about something the other person did, like how well they loaded it. Under 30 seconds each, short lines, clean and kind."
+  },
+  {
+   "label": "Variation: on-screen text only",
+   "text": "I want to do the \"Say it again, I'm recording\" trend without speaking. Write 5 versions as on-screen text only, 3 or 4 short text cards each. Card 1 is a serious complaint about [thing], card 2 is \"Say it again, I'm recording\", and the last cards are an over-the-top rave. Keep each card under 10 words."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business]. Write 3 versions of the \"Say it again, I'm recording\" skit for our social media, acted by our own staff. A staff member plays a \"customer\" who walks up looking annoyed, then turns the complaint into an over-the-top pitch for our real [product or service]. Only mention things that are true about it: [list 2 or 3 real features]. No prices, no discounts, no fake results, and don't present it as a real customer or a real review. Under 30 seconds each."
+  }
+ ],
+ "tips": [
+  "Make it obvious it's a skit. Never film real customers or strangers for this, and don't present it as a real review.",
+  "The joke lives in the switch. Play the opening line completely straight, then go big.",
+  "Keep the pitch true. Exaggerate the energy, not the facts.",
+  "Business accounts should use the app's commercial sound library or their own audio."
+ ],
+ "tags": ["text", "skit", "funny", "reels", "business"]
+}

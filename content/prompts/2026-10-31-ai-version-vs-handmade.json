@@ -1,0 +1,40 @@
+{
+ "slug": "ai-version-vs-handmade",
+ "title": "AI version vs. handmade: show both, side by side",
+ "published": "2026-10-31T06:38:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Show the polished AI version of something you make, then the real one you made by hand. Let people compare, laugh or pick a favourite.",
+ "why": "SocialPilot's TikTok trends roundup, published October 30, 2026, lists \"AI vs. Handmade\" as a current format: a polished AI version first, then the real handmade one, both bouncing to the same beat.",
+ "steps": [
+  "Pick something you made by hand: a cake, a pumpkin carving, a drawing, a knitted hat, a haircut, a shelf you built.",
+  "Use the main prompt to make the AI version from a photo of your real piece or from a short description of it.",
+  "Make a Reel or TikTok: the AI image first with \"AI version\" on screen, then your real one with \"Handmade\". Cut on the beat so both get the same rhythm.",
+  "End with a question in the caption, like \"Which one would you rather eat?\" Let the comments do the rest."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the AI version",
+   "text": "Here is a photo of something I made by hand: [what it is]. Make the \"AI version\" of it: the same object, same colours and same idea, but polished to look perfect, like a studio product photo. Smooth edges, even lighting, a clean light background, soft shadow underneath. Don't add any text, logos or brand names. It should be clearly recognizable as the same thing, just impossibly neat."
+  },
+  {
+   "label": "Variation: from a description",
+   "text": "Make a realistic photo of a [describe your handmade thing, for example \"three-layer chocolate cake with orange icing and a wobbly piped pumpkin on top\"], made perfectly by a professional. Bright, clean kitchen counter, natural window light, sharp focus, no people, no text and no logos. Make it look almost too perfect, so it contrasts well with a real home-made version."
+  },
+  {
+   "label": "Variation: on-screen labels",
+   "text": "I'm making a short side-by-side video: an AI-made picture of [thing] and the real one I made by hand. Write 6 pairs of short on-screen labels for the two shots. Keep each label under 6 words. Mix funny and proud, for example \"AI: flawless\" / \"Me: made with love (and panic)\". Then suggest 3 short captions that end with a question for comments. No hashtags."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run a [type of business, like a bakery, florist or woodworking shop]. Here is a real photo of one of our handmade pieces: [item]. Make an \"AI version\" of the same item: same shape, colours and size, but machine-perfect and glossy, on a plain light background. Don't add a logo, sign, price or any text. I will post it next to the real photo so customers can see the difference handmade makes."
+  }
+ ],
+ "tips": [
+  "Always label which one is AI. The trend only works if people know which is which, and it keeps you honest.",
+  "Shoot the real piece in the same angle and light as the AI image. The gap is funnier or prouder when the setup matches.",
+  "For a business, let the handmade one win: show the little details, the texture and the hands that made it.",
+  "Business accounts should pick a sound from the app's commercial library so the post isn't muted."
+ ],
+ "tags": ["handmade", "before-after", "tiktok", "chatgpt", "business"]
+}
