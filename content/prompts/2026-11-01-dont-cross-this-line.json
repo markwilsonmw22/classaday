@@ -1,0 +1,40 @@
+{
+ "slug": "dont-cross-this-line",
+ "title": "Don't cross this line: your tiny, very serious boundaries",
+ "published": "2026-11-01T12:50:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Call out the small things nobody should ever do near you, like jeans on the bed. AI helps you find funny, relatable lines that fit your life or your shop.",
+ "why": "A weekly social media trends roundup published October 28, 2026 lists \"Don't Cross This Line\" in its October 21 section: creators pair a viral sound bite with a small, relatable boundary, like sitting on the bed in jeans that touched the subway floor.",
+ "steps": [
+  "Use the main prompt to get a list of small boundaries that fit you, then pick the one people will nod along to.",
+  "Film a short clip of the line being crossed, or just about to be: the jeans near the bed, the hand reaching for the fries.",
+  "Add your boundary as on-screen text and pick the trending sound in the app.",
+  "Ask viewers in the caption to share their own line."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short video where I call out a tiny boundary that people cross. Give me 10 boundaries, each under 12 words, written as on-screen text. Make them small, everyday and relatable, like \"Outside jeans on my bed\". Base them on my life: I live [your living situation], I work as [your job], and my pet peeves are [two or three]. Keep it light and playful, never mean. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: friends and family edition",
+   "text": "Give me 8 funny \"don't cross this line\" boundaries about sharing things with friends or family, like borrowing a hoodie and never giving it back, or eating the last slice without asking. Each under 12 words. Warm, teasing, nothing that names or shames a real person."
+  },
+  {
+   "label": "Variation: shot ideas",
+   "text": "I picked this boundary for my video: \"[your boundary]\". Suggest 3 simple ways to film it in under 10 seconds with just a phone, at home. For each one, say what's in the frame, where the camera sits and the exact moment the text should appear."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business] in [your town]. Write 8 playful \"don't cross this line\" boundaries from our side of the counter, about small things customers or staff do, like [one or two examples]. Each under 12 words. Friendly and in on the joke, never rude to customers. Don't make up prices, reviews or deals."
+  }
+ ],
+ "tips": [
+  "Small and specific wins. \"Shoes past the doormat\" lands better than \"being rude\".",
+  "Keep it about habits, not about a real person. Nobody should feel called out.",
+  "Show the line being crossed in the first second, then let the text do the work.",
+  "Only film friends or family who have said yes."
+ ],
+ "tags": ["text", "funny", "relatable", "tiktok", "business"]
+}

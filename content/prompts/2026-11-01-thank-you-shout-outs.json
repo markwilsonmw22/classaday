@@ -1,0 +1,40 @@
+{
+ "slug": "thank-you-shout-outs",
+ "title": "Thank you, baby: shout-outs for the small things",
+ "published": "2026-11-01T12:52:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "A quick, slightly sappy thank-you list for the people and little things that make life better. AI helps you turn vague thanks into short, specific lines.",
+ "why": "A weekly social media trends roundup published October 28, 2026 lists \"Thank You Baby\" in its October 21 section: creators use a catchy thank-you audio to spotlight things they're grateful for, like a partner who does the dishes or a friend with great food tips.",
+ "steps": [
+  "Jot down a few people and small things you're grateful for this week.",
+  "Use the main prompt to turn them into short, specific thank-you lines.",
+  "Film a quick clip for each line, or one clip with the lines appearing in turn, and add the trending thank-you sound from the app.",
+  "Tag the people you thanked, if they're happy to be in it."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me make a short gratitude video. Turn this list into 6 thank-you lines for on-screen text, each under 10 words, each starting with \"Thank you\". Make them specific and a little sappy, not generic. Here's what I'm grateful for: [your list, for example: my partner doing the dishes, my friend who always picks the restaurant, my dog waiting at the door]. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: funny version",
+   "text": "Write 8 short, funny thank-you lines for on-screen text, each under 10 words, thanking small everyday things as if they were heroes. For example the last clean mug, a green light when I'm late, or my phone at 1 per cent hanging on. Keep it warm and silly."
+  },
+  {
+   "label": "Variation: a note to send",
+   "text": "I want to send a short thank-you message to [who] for [what they did]. Write 3 versions under 50 words each: one heartfelt, one funny, one that fits in a text. Mention the specific thing they did and how it helped me. Plain words, no clichés."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [your type of business] in [your town]. Write 8 thank-you lines for a short video, each under 10 words, where our team thanks real groups of people: regulars, first-time visitors, our suppliers, our staff, people who share our posts. Mention real things we do, like [one or two examples]. Warm, not salesy. Don't make up customer names, numbers, reviews or deals."
+  }
+ ],
+ "tips": [
+  "Specific beats general. \"Thank you for always saving me the window seat\" hits harder than \"thanks for everything\".",
+  "Ask before you tag or film someone you're thanking.",
+  "Keep each line on screen long enough to read: about two seconds.",
+  "Businesses: thank groups, not invented customers. Never make up quotes or numbers."
+ ],
+ "tags": ["text", "gratitude", "tiktok", "feel-good", "business"]
+}
