@@ -1,0 +1,40 @@
+{
+ "slug": "crochet-doll-of-you",
+ "title": "Crochet doll of you: your photo, made of yarn",
+ "published": "2026-11-01T18:38:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Turn one photo into a tiny crocheted yarn doll of you, with your hair, outfit and pose, sitting in a crocheted copy of the scene.",
+ "why": "A trend-tracking page dates this to a TikTok post on October 14, 2026, where a creator shared crochet doll versions of photos made with ChatGPT. English how-to guides calling it the crochet or amigurumi filter followed from October 16. Sources still describe it as early.",
+ "steps": [
+  "Pick a clear photo of yourself where your outfit and hair are easy to see. Keep other people out of it unless they agreed.",
+  "Upload it and paste the main prompt. Ask for a square image.",
+  "If the doll looks too human, ask again with \"more visible stitches and yarn texture, rounder doll shape\".",
+  "Post the real photo first and the crochet version second, so people can swipe to compare."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Turn the person in my photo into a small handmade crochet doll. Keep my hairstyle, hair colour, skin tone, outfit colours and pose the same, but make everything out of soft yarn with clear, even stitches. Give the doll a round head, small stitched eyes and a gentle smile. Rebuild the background from my photo in crochet too, with chunky yarn shapes. Soft daylight, shallow depth of field, like a close-up photo of a real handmade toy on a table."
+  },
+  {
+   "label": "Variation: cosy winter scene",
+   "text": "Make me into a little crochet doll wearing a knitted toque and scarf, standing in a crochet snowy park with yarn pine trees and fluffy white yarn snow on the ground. Keep my face shape, hair and skin tone recognisable. Warm, soft light, close-up photo of a real handmade toy."
+  },
+  {
+   "label": "Variation: family or pet set",
+   "text": "Turn everyone in this photo into matching crochet dolls sitting side by side on a wooden shelf. Keep each person's hair, clothes and skin tone, and keep the pet's coat colour and markings. Use the same yarn texture and stitch size for all of them so they look like one handmade set. Plain cream wall behind them."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Turn this photo of my [product or shop front] into a crochet version made of soft yarn with visible stitches. Keep the real shapes and colours [your colours] so people can tell what it is. Put it on a plain wooden table with soft daylight. Leave clean space at the top for a short line of text I will add myself. No logos, prices or extra text."
+  }
+ ],
+ "tips": [
+  "Bright, simple outfits turn into the best yarn colours. Busy patterns can get lost.",
+  "Ask for \"visible stitches\" in every prompt. That's what makes it read as crochet, not plastic.",
+  "Only use photos of yourself, or of friends and family who said yes.",
+  "If you really crochet, say the picture is AI so nobody orders a doll you didn't make."
+ ],
+ "tags": ["crochet", "selfie", "handmade", "chatgpt", "business"]
+}
