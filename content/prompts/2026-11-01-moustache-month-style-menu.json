@@ -1,0 +1,40 @@
+{
+ "slug": "moustache-month-style-menu",
+ "title": "Moustache month: try four styles before you grow one",
+ "published": "2026-11-01T00:45:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "November is moustache-growing month. Put four moustache styles on your own selfie, then ask friends to vote on the one you'll grow.",
+ "why": "SocialPilot's TikTok trends roundup, updated October 30, 2026, lists the November moustache-growing month, starting November 1, among the dated moments to plan posts around. This pack is pegged to that date, not to a measured trend.",
+ "steps": [
+  "Take a clear, front-facing selfie in even light. No hat or sunglasses, and keep other faces out of the shot.",
+  "Upload it and use the main prompt to get a four-panel style menu with your own face.",
+  "Post the grid and ask people to vote 1, 2, 3 or 4 in the comments. Then grow the winner, or keep it digital.",
+  "At the end of the month, post your real result next to the AI version you picked."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using my photo, make a 2 by 2 grid of four portraits of me, each with a different moustache: 1. a thick, neat classic, 2. a thin pencil line, 3. a wide horseshoe that runs down to the jaw, 4. a curled, waxed handlebar. Keep my face, skin tone, hair, expression and clothes exactly the same in every panel. Match the moustache colour to my hair. Plain warm grey background, soft front light. Put a large number 1 to 4 in a small white circle in the corner of each panel. No other text."
+  },
+  {
+   "label": "Variation: retro barbershop poster",
+   "text": "Turn my photo into a vintage barbershop style chart from the 1970s. Show me four times in a row, each with a different moustache, with a hand-lettered style name under each one: The Classic, The Pencil, The Horseshoe, The Handlebar. Cream paper texture, faded brown and mustard ink, slight print grain. Keep my face and features the same in every version."
+  },
+  {
+   "label": "Variation: give your pet a moustache",
+   "text": "Add a big, fluffy, slightly ridiculous moustache to my pet in this photo. Make the fur colour match my pet's coat so it looks like it grew there. Keep the pet, the pose and the background the same. Add a tiny bow tie for extra charm. Make it look like a proud, formal portrait."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Make a fun square graphic for November that says \"Moustache month at [business name]\" with four cartoon moustache styles drawn in our colours [your colours], each labelled with a style name. Leave clean space at the bottom for our real offer or event: [your real offer or event]. No made-up prices, deals or customer quotes."
+  }
+ ],
+ "tips": [
+  "Say \"keep my face exactly the same\" in every prompt. If the face drifts, try again with a sharper, closer selfie.",
+  "Only use photos of yourself, or of friends and family who said yes.",
+  "If you're fundraising this month, link the official page and let it do the explaining.",
+  "Post early in the month. The vote works best before the real moustache starts growing in."
+ ],
+ "tags": ["selfie", "seasonal", "funny", "pets", "business"]
+}
