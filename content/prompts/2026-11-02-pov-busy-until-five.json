@@ -1,0 +1,40 @@
+{
+ "slug": "pov-busy-until-five",
+ "title": "POV: busy until 5, dinner at 6: the two-lives glow-up",
+ "published": "2026-11-02T06:41:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "One POV line about your busy day, then a quick switch to your off-duty self. AI helps you write the line and plan the two shots.",
+ "why": "SocialPilot's TikTok trends report, published October 30, 2026, lists a \"POV\" glow-up format for its October 27 to November 10 cycle: a POV line on screen, like a demanding job until 5 but dinner at 6, while the creator lip-syncs a trending pop song released in mid-October. The report says that sound is at its peak.",
+ "steps": [
+  "Think of the busiest part of your day and the plans you still have after it.",
+  "Use the main prompt to get short POV lines that put the two side by side.",
+  "Film two quick shots: you in work mode, then you dressed up and ready to go. Put the POV line on screen over both.",
+  "Add the trending sound from the app's own library and post."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short POV video. Write 8 on-screen lines in the pattern \"pov: you [busy thing] until [time] but [fun plan] at [time]\". Each line under 14 words. Here's my life: I work as [your job or what you study], and after it I like to [your plans, for example: dinner with friends, hockey, a date night]. Make the gap between the times tight and a little funny. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: plan the two shots",
+   "text": "I'm filming a two-shot POV glow-up. Shot 1 is me in work mode as a [job]. Shot 2 is me ready for [evening plan]. Give me a simple plan for each shot: what to wear, where to stand, what to hold, and one small action to do. Then tell me the best moment to cut between them. I only have my phone and a 30-minute window."
+  },
+  {
+   "label": "Variation: everyday life",
+   "text": "Write 8 funny POV lines about squeezing a fun plan into a full day, for someone who isn't working: a parent, a student or a retiree. Use the pattern \"pov: you [thing] until [time] but [plan] at [time]\". Keep each line under 14 words and kind, not mean about anyone."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 6 POV lines for a short video in the pattern \"pov: you [busy part of running the business] until [time] but [what we do next] at [time]\". Show real parts of our day, like [one or two examples]. Then add one short caption that mentions our hours or a real event we have coming up. Don't make up sales, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Real times make it funnier. \"Until 5:45 but dinner at 6\" beats a vague \"busy all day\".",
+  "Do the switch on a beat of the song so the change feels snappy.",
+  "Keep the line short enough to read in two seconds and leave it on screen the whole time.",
+  "Use a sound from the app's library. Business accounts should pick from the commercial sound library."
+ ],
+ "tags": ["text", "pov", "tiktok", "glow-up", "business"]
+}

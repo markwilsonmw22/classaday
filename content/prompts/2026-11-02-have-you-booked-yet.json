@@ -1,0 +1,40 @@
+{
+ "slug": "have-you-booked-yet",
+ "title": "\"It's time. Have you booked yet?\": the holiday booking nudge",
+ "published": "2026-11-02T06:41:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "The holiday music is back, so remind people to book early. AI writes a short, friendly \"it's time\" nudge for your Reel and caption, with no fake urgency.",
+ "why": "SocialPilot's Instagram Reels audio list, published October 30, 2026, says the most famous holiday pop song returns every November 1 with \"it's time\" memes. It names service businesses using it for booking pushes, like a salon asking \"have you booked yet?\", and lists another business posting \"November bookings are open\".",
+ "steps": [
+  "Pick what people should book before the holidays: an appointment, a table, a class or a gift order.",
+  "Use the main prompt to write the on-screen lines and a caption.",
+  "Film one short clip: you or your space going from calm to festive, with the lines appearing in turn.",
+  "Add a holiday song from the app's own library and post it early in November."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I run [type of business, for example a hair salon, barber, nail studio, restaurant or photography studio] in [town]. Write a short Instagram Reel for early November about booking before the holidays. Give me: 1) 4 on-screen lines, each under 8 words, starting with \"It's time.\" and ending with \"Have you booked yet?\", 2) a caption under 60 words that says how to book: [online, phone, DM], 3) one line for the end screen. Friendly and festive, a little funny. Only use these real details: [your holiday hours or dates]. No fake countdowns, no \"only 2 spots left\", no made-up discounts."
+  },
+  {
+   "label": "Variation: \"bookings are open\" post",
+   "text": "Write 3 short versions of a \"Holiday bookings are open\" post for my [business]. One cosy, one funny, one very short for a Story. Each under 40 words. Mention [what people can book] and [how to book]. Don't make up prices, numbers, reviews or deadlines I didn't give you."
+  },
+  {
+   "label": "Variation: friends and family",
+   "text": "Write 5 funny \"It's time.\" lines for a group chat or Reel reminding my friends and family to lock in holiday plans: who's hosting, the secret gift exchange date, the potluck list, the photo day. Each under 12 words. Warm and teasing, not bossy."
+  },
+  {
+   "label": "Variation: plan the clip",
+   "text": "I want to film a 10-second Reel for my [business] that switches from normal to holiday mode on a beat, then shows a \"Have you booked yet?\" line. Give me a shot list of 3 to 4 quick shots I can film on my phone in 15 minutes in my [shop, studio or restaurant], plus where each line of text should appear."
+  }
+ ],
+ "tips": [
+  "Be honest about availability. Say when you're really booking up, and never invent a countdown or \"last spots\".",
+  "Put how to book in the first line of the caption, so people don't have to hunt.",
+  "Use a holiday song from the app's library. Business accounts should use the commercial sound library so the post isn't muted.",
+  "Pin the post to your profile until mid-December so new visitors see it."
+ ],
+ "tags": ["holiday", "booking", "reels", "text", "business"]
+}
