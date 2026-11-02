@@ -1,0 +1,35 @@
+{
+  "slug": "someone-has-to-hold-it-down",
+  "title": "\"Someone has to hold it down\": a love letter to your town",
+  "published": "2026-11-02T18:45:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Not everyone can live in a big city. Someone has to hold it down in your town. AI writes the line and plans the clips.",
+  "why": "NapoleonCat's TikTok trends roundup, published November 1, 2026, lists \"Someone's gotta hold it down\" among its October trends: people film the one place or person still going while everyone else is away, set to a trending sound. An October 7, 2026 write-up on Vadbav describes the same format as picking the underrated option on purpose.",
+  "steps": [
+    "Paste the main prompt into ChatGPT, Gemini or Claude and fill in your town and three things you love about it.",
+    "Pick one on-screen line and film the 5 or 6 quick clips from the shot list. Two or three seconds each is plenty.",
+    "Put the line on the first clip, add the trending sound in the app, and post."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "I'm joining the \"someone has to hold it down\" trend on TikTok and Reels. The joke: not everyone can live in a big famous city, so someone has to hold it down in my town. My town is [town, province]. Three things I love about it: [for example: the coffee drive-thru line at 7 a.m., the hockey rink, the lake in October]. Give me 5 short on-screen lines in the style \"Not everyone can be in [big city]. Someone has to hold it down in [my town].\" Make them warm and a bit funny, never mean about anyone. Then give me a shot list of 6 clips, 2 to 3 seconds each, that I can film on my phone this week. Plain words, short lines."
+    },
+    {
+      "label": "Variation: the underrated pick",
+      "text": "Write 6 on-screen lines for the \"someone has to hold it down\" trend, but about choices instead of places. The idea: everyone picks the popular option, so someone has to represent the underrated one. My underrated picks are [for example: plain toast, November, the middle seat, board games over going out]. One line for each, under 15 words, proud and a little dramatic. Suggest one simple clip to film for each line."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a small [type of business, for example: hardware store] in [town, province]. Write 4 on-screen lines for the \"someone has to hold it down\" trend from the business's point of view, for example: everyone's on vacation, but someone has to keep the coffee hot on Main Street. Make it friendly and local, no prices, no sales pitch. Then give me a 6-clip shot list (2 to 3 seconds each) showing the shop opening, the regulars' favourite corner, the team at work and the street outside. End with one short caption that thanks the people who shop local."
+    }
+  ],
+  "tips": [
+    "Real, ordinary moments work best: the empty main street at dawn, the snowbank by the post office, the one stoplight.",
+    "Keep it affectionate. The joke is that you're proud to be there, not that the place is bad.",
+    "Ask before filming people's faces, and skip licence plates and house numbers.",
+    "Add the trending sound inside TikTok or Instagram; don't download it from elsewhere."
+  ],
+  "tags": ["text", "local", "canada", "tiktok", "business"]
+}

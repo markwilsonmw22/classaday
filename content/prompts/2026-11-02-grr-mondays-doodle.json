@@ -1,0 +1,39 @@
+{
+  "slug": "grr-mondays-doodle",
+  "title": "Grr, Mondays: your real Monday as a grumpy doodle",
+  "published": "2026-11-02T18:46:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Post your honest, unglamorous Monday with \"grr mondays\" on it. AI redraws your photo as a scribbly, grumpy cartoon.",
+  "why": "NapoleonCat's memes roundup, published November 1, 2026, lists #GrrMondays as an ongoing trend: people post their real, unflattering Monday with \"grr mondays\" on the image, and some redraw it as a cartoon. SocialBee's Instagram sounds roundup (October 7, 2026) says the matching audio is used on Reels about small annoyances and bad moods.",
+  "steps": [
+    "Snap one honest photo of your Monday: the alarm, the cold coffee, the pile of laundry, your face at 7 a.m.",
+    "Attach it to ChatGPT or Gemini and paste the main prompt.",
+    "Post the doodle on its own, or as slide two after the real photo, with the hashtag in the caption."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Redraw the attached photo as a quick, grumpy hand-drawn doodle. Thick wobbly black marker lines on plain off-white paper, a few flat fills of muted colour, slightly messy on purpose, like it was drawn in 5 minutes on a sticky note. Keep the scene and the main objects from my photo so it's clearly the same moment. If a person is in it, keep them recognisable but cartoon them with a scowl and a little storm cloud over their head. Add the words \"grr mondays\" in big, uneven lowercase marker letters across the top. Square 1:1 image. No other text."
+    },
+    {
+      "label": "Variation: no photo",
+      "text": "Draw a grumpy hand-drawn doodle of a typical Monday morning: [describe it, for example: a person in a toque scraping frost off a car windshield with a travel mug balanced on the roof]. Thick wobbly black marker lines on off-white paper, flat muted colours, a small storm cloud over their head. Big uneven lowercase marker letters across the top: \"grr mondays\". Square 1:1. No other text."
+    },
+    {
+      "label": "Variation: pets",
+      "text": "Redraw the attached photo of my pet as a grumpy marker doodle on off-white paper. Keep their colours and markings so they're clearly the same animal. Give them a deep frown, half-closed eyes and a tiny storm cloud overhead, as if Monday personally offended them. Big uneven lowercase letters across the top: \"grr mondays\". Square 1:1. No other text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Redraw the attached photo of our [type of business, for example: café counter] on a Monday morning as a friendly, grumpy marker doodle on off-white paper. Keep the layout and the products so regulars recognise the place. Draw the coffee machine with a little storm cloud over it. Big uneven lowercase letters across the top: \"grr mondays\", and smaller letters at the bottom: \"we're open anyway\". Square 1:1. No logos and no other text."
+    }
+  ],
+  "tips": [
+    "The less glamorous the photo, the better. The trend is about honest Mondays, not pretty ones.",
+    "Post the real photo first and the doodle second, so people can compare.",
+    "If the letters come out misspelled, ask for the image with no text and add \"grr mondays\" in your editing app.",
+    "Only redraw friends or family who are happy to be in it."
+  ],
+  "tags": ["meme", "monday", "doodle", "relatable", "business"]
+}
