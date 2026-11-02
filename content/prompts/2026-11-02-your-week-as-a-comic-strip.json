@@ -1,0 +1,40 @@
+{
+ "slug": "your-week-as-a-comic-strip",
+ "title": "Your week as a four-panel comic strip",
+ "published": "2026-11-02T00:39:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Turn one photo and four short moments from your week into a four-panel comic strip, with speech bubbles and a punchline in the last panel.",
+ "why": "OpenAI's developer community picked \"Comics\" as its November 2026 image theme on October 31, and members were posting multi-panel strips with speech bubbles by November 1. It's a small, early signal, not a big viral wave yet.",
+ "steps": [
+  "Write down four tiny moments from your week, in order. The fourth one should be the funny or surprising one.",
+  "Upload a clear photo of yourself, so the character looks like you. Leave other people out unless they agreed.",
+  "Paste the main prompt with your four moments filled in. Ask for a square or tall image.",
+  "If a speech bubble comes out garbled, ask again with that line shorter, or add the text yourself in an editing app."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Make a four-panel comic strip starring the person in my photo. Keep my face shape, hairstyle, hair colour and skin tone so the character looks like me. Clean black ink lines, flat bright colours, simple backgrounds. Panel 1: [moment 1]. Panel 2: [moment 2]. Panel 3: [moment 3]. Panel 4: [the funny ending]. Give each panel one short speech bubble, under eight words, in clear printed letters. Same outfit and same character in every panel. White gutters between panels."
+  },
+  {
+   "label": "Variation: Monday morning disaster",
+   "text": "Make a four-panel comic strip of me, based on my photo, having a very Canadian Monday morning. Panel 1: I wake up and see snow out the window, bubble says \"Not yet...\". Panel 2: I scrape ice off the car in my toque, bubble says \"It's only November!\". Panel 3: I arrive at work proud, holding a coffee. Panel 4: I realise I'm still wearing slippers, bubble says \"...Oh no.\" Bold ink lines, warm flat colours, expressive faces."
+  },
+  {
+   "label": "Variation: pet's point of view",
+   "text": "Turn my pet in this photo into the star of a four-panel comic strip. Keep its coat colour and markings. Panel 1: it watches me leave for the day. Panel 2: it guards the front window like a serious security guard. Panel 3: it hears my keys and runs. Panel 4: it pretends it was asleep the whole time, with a thought bubble that says \"Played it cool.\" Soft rounded art style, cheerful colours."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Make a four-panel comic strip that tells a short, honest story about my [type of business]. Panel 1: a customer has a common problem: [problem]. Panel 2: they find us. Panel 3: we help with [what you do]. Panel 4: a happy, simple ending. Use our colours [your colours]. Friendly ink-and-colour style, short speech bubbles under eight words. No logos, prices, star ratings or customer quotes."
+  }
+ ],
+ "tips": [
+  "Keep every speech bubble short. Long lines are where AI text usually breaks.",
+  "Put the joke in panel 4. Panels 1 to 3 are just the setup.",
+  "Describe the look you want (thick ink lines, flat colours, halftone dots) instead of naming a famous comic or artist.",
+  "Post it as one image, or crop each panel into a carousel so people swipe to the punchline."
+ ],
+ "tags": ["comic", "storytelling", "selfie", "chatgpt", "business"]
+}
