@@ -1,0 +1,39 @@
+{
+  "slug": "tool-fuel-work",
+  "title": "The tool, the fuel, the work: your day in three photos",
+  "published": "2026-11-02T12:41:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Three slides: the tool you use, the fuel that keeps you going, then the work you made. AI turns your phone snaps into a matching set.",
+  "why": "SocialBee's Instagram trends roundup, updated October 29, 2026, lists \"The tool, the fuel, the work\" as a new trend: three clips in a row showing the tool you work with, the fuel that keeps you going (often coffee or a snack) and the finished work. It adds a fuel shot to the tools-and-process format from October.",
+  "steps": [
+    "Take three quick phone photos: your main tool, your go-to drink or snack, and something you finished today.",
+    "Attach all three to ChatGPT or Gemini and paste the main prompt.",
+    "Check that each object still looks like yours, then post the three images as a carousel or a short Reel with the labels \"the tool\", \"the fuel\", \"the work\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "I've attached three photos: my tool, my fuel and my finished work. Turn them into a matching set of three vertical 4:5 images. Keep every object exactly as it is in my photos: same shape, colour, wear and details. Give all three the same look: shot from slightly above on the same warm wooden table, soft morning window light from the left, a little shadow, a calm cream background. Add a small, clean lowercase label in the top-left corner of each one: \"the tool\", \"the fuel\", \"the work\". Same font, size and spot on all three. No other text."
+    },
+    {
+      "label": "Variation: no photos yet",
+      "text": "I'm a [your job or hobby, for example: home baker, student, painter]. Make three matching vertical 4:5 photos. 1: the tool I use most, close up on a tidy desk. 2: my fuel, a mug of tea steaming beside a half-eaten muffin. 3: the work, the finished thing I make, shown proudly in the centre. Same soft daylight, same neutral colours and same camera height in all three, so they look like one set. Small lowercase labels in the top-left: \"the tool\", \"the fuel\", \"the work\"."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a small [type of business, for example: flower shop]. I've attached photos of our main tool, the team's coffee order and a finished product we sold today. Make three matching vertical 4:5 images. Keep our products and tools exactly as they look in the photos. Bright, friendly daylight, the same light-grey counter in all three, a few loose ingredients or offcuts at the edges. Small labels in the top-left: \"the tool\", \"the fuel\", \"the work\". No logos or extra text."
+    },
+    {
+      "label": "Caption helper",
+      "text": "Write 5 short Instagram captions for a three-slide post called \"the tool, the fuel, the work\". My tool is [tool], my fuel is [drink or snack] and the work is [what I made]. Keep each caption under 15 words, friendly and a little funny. End with a question that asks people to share their own fuel."
+    }
+  ],
+  "tips": [
+    "Be honest with the fuel. A slightly sad granola bar gets more comments than a perfect latte.",
+    "Shoot all three photos from the same height and in the same room so the AI has less to change.",
+    "If a label comes out misspelled, ask for the image again without text and add the labels in your editing app.",
+    "As a Reel, cut on the beat: one second for the tool, one for the fuel, then hold longer on the work."
+  ],
+  "tags": ["carousel", "work", "instagram", "day-in-the-life", "business"]
+}
