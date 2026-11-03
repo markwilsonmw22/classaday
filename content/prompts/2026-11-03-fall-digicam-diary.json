@@ -1,0 +1,40 @@
+{
+  "slug": "fall-digicam-diary",
+  "title": "Fall digicam diary: your autumn photos, early-2000s style",
+  "published": "2026-11-03T00:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Turn your real fall phone photos into a matching set that looks shot on a small 2000s digital camera, date stamp and all, for a carousel or Reel.",
+  "why": "SocialPilot's Instagram Reels audio list, published October 30, 2026, lists \"fall digicam diaries\" as the format behind a rising 1990s rock ballad sound for October 31 to November 10. Creators post a run of autumn moments that look like they came off an old compact digital camera.",
+  "steps": [
+    "Pick 5 to 8 real photos from your fall: a walk in the leaves, a warm drink, a cosy night in, a market, a sunset.",
+    "Attach one photo at a time to ChatGPT or Gemini and paste the main prompt. Keep the same chat so every photo gets the same look.",
+    "Put the results in order as a carousel, or as a Reel with each photo on screen for about one second.",
+    "Add a short caption like \"fall 2026, on the old camera\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Edit the attached photo so it looks like it was taken on a small pocket digital camera from around 2005. Keep the scene, the people and the objects exactly as they are. Do not change faces. Make it a 4:3 frame with slightly soft focus, a little digital noise in the shadows, warm but slightly washed-out colours, and bright highlights that clip a bit. If it's dark, add a harsh straight-on flash. Add a small orange date stamp in the bottom right corner that reads [date, for example: 11 03 2026]. No other text, no borders."
+    },
+    {
+      "label": "Variation: keep the whole set matching",
+      "text": "Use the exact same look as the last photo you made: same pocket-camera softness, noise, colours, 4:3 frame and orange date stamp in the same spot. Apply it to this new attached photo. Change the date stamp to [date]. Keep everything in the photo as it is."
+    },
+    {
+      "label": "Variation: no photo",
+      "text": "Create a casual snapshot that looks like it was taken on a small pocket digital camera around 2005: [describe the moment, for example: a mittened hand holding a paper cup of hot apple cider at a farmers' market, maple leaves on the ground]. 4:3 frame, slightly soft focus, a little digital noise, warm washed-out colours, a slightly crooked angle like a quick candid shot. Small orange date stamp in the bottom right reading [date]. No people's faces, no other text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Edit the attached photo of our [type of business, for example: bakery display case with pumpkin loaves] so it looks like a candid shot from a small pocket digital camera around 2005. Keep the products, layout and colours true so customers recognise them. 4:3 frame, soft focus, light digital noise, warm washed-out colours, a little straight-on flash glare on the glass. Small orange date stamp in the bottom right reading [date]. No logos and no other text."
+    }
+  ],
+  "tips": [
+    "Real moments work best. The look is meant to feel like a quick, unplanned snap, so skip posed shots.",
+    "Use today's date or the real date the photo was taken. Don't stamp a fake date on a product photo.",
+    "If the date stamp comes out garbled, ask for the photo with no stamp and add it in your editing app.",
+    "Only edit photos of friends or family who are happy to be posted."
+  ],
+  "tags": ["fall", "retro", "photo-dump", "carousel", "business"]
+}
