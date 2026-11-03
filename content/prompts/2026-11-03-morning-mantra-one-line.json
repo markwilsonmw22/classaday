@@ -1,0 +1,40 @@
+{
+ "slug": "morning-mantra-one-line",
+ "title": "Morning mantra: one face, one line, one goal for the day",
+ "published": "2026-11-03T18:41:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Lip-sync one line of a trending song as you start your day, with your own funny \"morning mantra\" on screen. AI writes the mantras.",
+ "why": "NapoleonCat's Instagram Reels trends page, published November 1, 2026, lists a quieter \"morning mantra\" version of a trending pop-song Reel: one face, one lip-synced line and one text overlay, for anyone who would rather not dance. It's a new, low-effort twist on the same mid-October song behind our \"POV: busy until 5\" pack.",
+ "steps": [
+  "Think about how your day really starts and the one small goal you're chasing.",
+  "Use the main prompt to get short \"morning mantra\" lines.",
+  "Film yourself walking into your day, like out the door, into the kitchen or behind the counter, and lip-sync one line of the trending sound.",
+  "Put one mantra on screen and post. Add the sound from the app's own library."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Write 10 short on-screen lines that start with \"Morning mantra:\" for a lip-sync video. Each one is a tiny, honest, slightly funny goal for my day, under 10 words. Example: \"Morning mantra: reply to that email before lunch.\" About my day: [your job, school or home life, and the small things you're always trying to get done]. Keep them upbeat and kind. No hashtags, no emojis."
+  },
+  {
+   "label": "Variation: week of mantras",
+   "text": "Plan a week of \"Morning mantra:\" videos, Monday to Sunday. For each day, give one on-screen mantra under 10 words and one simple setting to film in, using only places I already have: [your home, commute, work or school spots]. Make the mantras build a small story across the week, like getting ready for [an event or goal you have coming up]."
+  },
+  {
+   "label": "Variation: family or pets",
+   "text": "Write 8 \"Morning mantra:\" lines from the point of view of my [pet, or a family member who has agreed to be filmed]. They describe their morning goals in a funny, sweet way, for example a dog whose mantra is \"Morning mantra: be near the toaster.\" About them: [what they're like in the morning]. Under 10 words each."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 8 \"Morning mantra:\" lines I can lip-sync as I open up for the day. Use real parts of our morning, like [one or two examples: unlocking the door, the first batch, loading the van]. Under 10 words each. Then write one short caption with our real opening hours. Don't make up sales, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Film where your day really starts: the front door, the van, the front desk. A plain, real spot reads better than a polished studio.",
+  "One line on screen is enough. Leave it up for the whole clip.",
+  "Not a dancer? You don't need to be. Just walk in and mouth one line.",
+  "Pick the sound from the app's library. Business accounts should use the commercial sound library."
+ ],
+ "tags": ["text", "lip-sync", "instagram", "morning", "business"]
+}

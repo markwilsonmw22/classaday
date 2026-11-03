@@ -1,0 +1,40 @@
+{
+ "slug": "what-even-is-opposite-b-roll",
+ "title": "\"What even is…?\": say you don't get it while doing exactly that",
+ "published": "2026-11-03T18:40:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Put \"what even is ___?\" on screen, then show yourself fully doing that very thing. AI helps you find the funniest lines.",
+ "why": "New Engen's Instagram trends list, updated November 2, 2026, includes a \"what is…\" format: creators ask on screen what a habit or aesthetic even is, while the clip shows them leaning into the opposite. The page suggests a straight face, text held for 2–3 seconds and a Reel under 15 seconds.",
+ "steps": [
+  "Pick a habit, trend or look you claim not to understand, but that is secretly (or not so secretly) your whole life.",
+  "Use the main prompt to get short \"what even is…?\" lines with a matching shot for each.",
+  "Film a short clip of you fully committed to the thing. Keep a flat, serious face.",
+  "Put the line on screen for 2–3 seconds, keep the whole clip under 15 seconds and post with original sound or a voice-over."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short deadpan video. Write 8 on-screen lines in the pattern \"what even is [thing]??\" where the thing is a habit, trend or style I pretend not to understand. For each line, add the shot that proves I'm fully into it, for example \"what even is a cosy night in??\" over me wrapped in three blankets with tea and a candle. Here's my life: [your hobbies, habits and little obsessions]. Keep each line under 8 words. No swearing, no hashtags, no emojis."
+  },
+  {
+   "label": "Variation: the reverse",
+   "text": "Flip the joke. Write 6 lines in the pattern \"what even is [thing]??\" where the thing is something I clearly never do, and the shot shows me doing the exact opposite. Example: \"what even is a quick grocery run??\" over me with a cart that's full to the top. About me: [a few honest habits]. Keep it light and kind to myself."
+  },
+  {
+   "label": "Variation: plan the shot",
+   "text": "I'm filming one \"what even is…?\" clip. The line is: \"[your line]\". Give me a simple shot plan I can do with my phone in 10 minutes: where to set the camera, what to wear, what props to use, and one small action that makes the joke land. Keep the clip under 15 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 6 \"what even is [thing]??\" lines that poke fun at something our business is clearly obsessed with, like [one or two real examples, for example: a tidy shelf, one more coat of paint, extra cheese]. For each, describe a real behind-the-scenes shot from our day. Then write one short caption. Don't make up sales, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "The flat face is the joke. Don't smile or wink at the camera.",
+  "Pick something specific. \"What even is a second coffee??\" beats \"what even is caffeine??\".",
+  "Keep the text near the top of the screen so it isn't hidden by captions and buttons.",
+  "Original sound or a voice-over works for any account, including business accounts."
+ ],
+ "tags": ["text", "deadpan", "instagram", "funny", "business"]
+}
