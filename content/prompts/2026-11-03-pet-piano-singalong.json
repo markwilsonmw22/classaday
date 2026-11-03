@@ -1,0 +1,40 @@
+{
+  "slug": "pet-piano-singalong",
+  "title": "Your pet at the piano, singing its heart out",
+  "published": "2026-11-03T06:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Gemini", "ChatGPT"],
+  "summary": "Turn a photo of your cat or dog into a short clip of it playing piano and singing, dead serious, like a lounge performer.",
+  "why": "A trend-tracking site says a clip of AI cats singing at a piano started on Instagram on October 31, 2026 and had about 125,600 likes by November 2. Its template version lets you put your own pet, or your pet and you, at the keys.",
+  "steps": [
+    "Pick a clear, front-facing photo of your pet. One pet, or two sitting together, works best.",
+    "If you want a nicer set, first make a still image with the photo prompt in ChatGPT or Gemini.",
+    "Upload the photo or the still to Kling or Veo as the first frame and paste the video prompt.",
+    "Add your own music in your editing app, or pick a sound in TikTok or Reels that's cleared for your account."
+  ],
+  "prompts": [
+    {
+      "label": "Photo prompt (the set)",
+      "text": "Using the attached photo of my [cat / dog], create an image of the same pet sitting on a small stool at an upright piano in a cosy living room at night. Keep its fur colour, markings and face exactly the same. Front paws resting on the keys, head tilted up, mouth slightly open as if singing. Warm lamp light, a little window behind with snow outside. Realistic photo style. No text, no logos."
+    },
+    {
+      "label": "Video prompt",
+      "text": "Use the attached image as the first frame. Twelve seconds. The pet plays the piano with its front paws, swaying gently, and sings with its mouth opening and closing in time, eyes half closed, very serious and emotional. Slow push-in from a medium shot to a close-up of its face. Warm, soft lighting. Keep the pet's markings and face the same throughout. No text, no extra animals, no people."
+    },
+    {
+      "label": "Variation: duet with you",
+      "text": "Use the attached photo of me and my [pet] as the first frame. Twelve seconds. We sit side by side at an upright piano. I play while my pet sings beside me with its head tilted back, then it reaches out a paw and plays a few keys too. I glance at it and try not to laugh. Keep both our faces and looks the same. Warm living-room light. No text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached photo of our shop [cat / dog] as the first frame. Twelve seconds. The pet sits at a small piano inside our [café / bookstore / salon], plays with its paws and sings with great feeling, while the space behind it stays calm and softly lit. Slow push-in to its face. Keep the pet and the room the same as in the photo. No text, no logos, no people."
+    }
+  ],
+  "tips": [
+    "Pick music you have the rights to. Many popular songs are blocked on business accounts.",
+    "Say it's AI in your caption. Some viewers will think your pet can really play.",
+    "If the paws turn into hands, add \"real animal paws, no human hands\" to the prompt.",
+    "Front-facing photos with the mouth visible give the best singing motion."
+  ],
+  "tags": ["pets", "music", "video", "funny", "business"]
+}

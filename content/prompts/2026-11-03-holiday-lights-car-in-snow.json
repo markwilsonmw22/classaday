@@ -1,0 +1,40 @@
+{
+  "slug": "holiday-lights-car-in-snow",
+  "title": "Your car, wrapped in holiday lights in the falling snow",
+  "published": "2026-11-03T06:42:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Turn one photo of your car into a cosy holiday card: warm string lights wrapped around it, snow falling, then a 10-second clip.",
+  "why": "A trend-tracking site listed \"Christmas Lights Car\" as a new trend on November 2, 2026, at about 291,000 views: one car photo becomes a 10-second holiday-card clip of the car wrapped in warm lights in falling snow. It's an early holiday signal, not a huge wave yet.",
+  "steps": [
+    "Take a clear photo of your car from the side or at a three-quarter angle, in daylight, with nothing blocking it.",
+    "Attach it to ChatGPT or Gemini and paste the main prompt to get the still holiday-card image.",
+    "To make it move, upload that still to Kling or Veo as the first frame and paste the video prompt.",
+    "Post the clip as a Reel or Story, or use the still as your holiday card."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (photo)",
+      "text": "Edit the attached photo of my car into a cosy holiday card image. Keep the car's shape, colour and details exactly the same. Wrap the whole car in strings of small warm-white lights, looping over the roof, around the mirrors and along the doors, so it glows softly. Put it on a quiet snowy street at dusk, with fresh snow on the ground and big soft flakes falling. Blue evening light, warm glow from the bulbs on the snow. Blur or remove the licence plate. No text, no logos, no people."
+    },
+    {
+      "label": "Video prompt",
+      "text": "Use the attached image as the first frame. Ten seconds, slow and calm. The camera drifts slowly toward the car and arcs a little to one side. Snowflakes fall gently through the frame. The string lights twinkle softly, a few at a time. A little cold mist hangs in the air. Keep the car's shape and colour the same the whole time. No text, no people, no sudden movement."
+    },
+    {
+      "label": "Variation: you and your car",
+      "text": "Edit the attached photo of me standing beside my car into a holiday card. Keep my face, body and clothes exactly as they are. Wrap the car in strings of warm-white lights and add a snowy street at dusk with soft falling snow. Put a knit toque and scarf on me if I'm not wearing one. Warm glow from the lights on my face. Blur the licence plate. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Edit the attached photo of our [delivery van / food truck / work truck] into a festive holiday image. Keep the vehicle's shape and colours exactly the same and keep our own painted signage as it is, without changing the wording. Wrap the vehicle in strings of warm-white lights and park it on a snowy main street at dusk, with soft falling snow and warm shop windows in the background. Blur the licence plate. No extra text or logos."
+    }
+  ],
+  "tips": [
+    "A clean, well-lit photo of the car gives the best result. Night photos tend to come back blurry.",
+    "Always blur or crop the licence plate before you post.",
+    "If the car's shape changes, say \"keep the car exactly the same\" again and ask it to only add the lights and snow.",
+    "Only include friends or family who are happy to be posted."
+  ],
+  "tags": ["holiday", "cars", "snow", "video", "business"]
+}
