@@ -1,0 +1,51 @@
+{
+  "slug": "team-shoulder-bounce",
+  "title": "The whole-team shoulder bounce",
+  "published": "2026-11-04T18:55:00Z",
+  "kind": "video",
+  "tools": [
+    "Kling",
+    "Veo",
+    "ChatGPT",
+    "Gemini"
+  ],
+  "summary": "Your family, friends or co-workers line up and bounce their shoulders together on the beat, one person joining at a time. Film it for real or make it with AI.",
+  "why": "Postdom's Instagram trends page, checked November 2, 2026, lists a shoulder-bounce dance to a trending Latin track, done by everyone from TV casts and dancers to whole work teams, with the sound in 162K reels. Our earlier \"AI version vs. handmade\" pack used the same beat for a product comparison; this one is the group dance itself.",
+  "steps": [
+    "Ask everyone if they're happy to be in it. Use only photos of people who agreed.",
+    "Film it for real: line up, start with one person bouncing, and have the others join one by one. Or upload a group photo to Kling or Veo and paste the main prompt.",
+    "Use ChatGPT or Gemini to write the caption, then add the text in your editor, not in the video prompt.",
+    "Add the trending sound in Reels or TikTok and keep it under ten seconds."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (video)",
+      "text": "Use the attached group photo as the people. Eight seconds, vertical 9:16, phone camera at chest height, in a bright, ordinary [kitchen / living room / backyard]. Everyone stands in a loose line facing the camera. Second 1: the person in the middle starts bouncing their shoulders up and down to a steady beat, with a straight face. Seconds 2 to 6: the others join in one at a time, left and right, until the whole group is bouncing together in time. Seconds 7 to 8: everyone stops at once and breaks into laughter. Keep every face, hair and outfit the same as in the photo. Natural, slightly clumsy movement, no text, no logos, no extra people."
+    },
+    {
+      "label": "Caption ideas (text)",
+      "text": "Write 10 short captions for a video where my [family / friends / team] bounces their shoulders together, one person joining at a time. Make them warm and a little funny, under 12 words each, like \"It took one person. Then it took all of us.\" Canadian spelling."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached photo of my team, who all agreed to be in this. Eight seconds, vertical 9:16, inside our [café / shop / office / workshop] during the day, in our work clothes. One person behind the counter starts bouncing their shoulders to a steady beat while working. One by one, co-workers nearby join in, still holding their tools, until the whole team is bouncing together. Last second: everyone goes straight back to work as if nothing happened. Keep the room and every face the same as the photo. No text, no logos, no customers."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Use the attached photo of me and my [dog / cat]. Six seconds, vertical 9:16, on the couch at home. I bounce my shoulders to a beat with a serious face. My pet watches, then tilts its head and wiggles along in its own way. I look at the camera, trying not to laugh. Keep my face and the pet's fur and markings the same as the photo. Real animal movement, no text, no logos."
+    }
+  ],
+  "tips": [
+    "The fun is people joining one at a time. Keep the first person deadpan.",
+    "AI can blur faces in big groups. Three to six people works best.",
+    "Say it's AI in your caption if you made it with AI, and only use people who said yes.",
+    "Business accounts should check the sound is cleared for them, or pick a similar cleared beat."
+  ],
+  "tags": [
+    "dance",
+    "video",
+    "friends",
+    "team",
+    "business"
+  ]
+}

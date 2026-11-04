@@ -1,0 +1,51 @@
+{
+  "slug": "couch-to-night-out-hard-cut",
+  "title": "Couch to night out: the hard-cut glam reveal",
+  "published": "2026-11-04T18:50:00Z",
+  "kind": "image",
+  "tools": [
+    "ChatGPT",
+    "Gemini",
+    "Kling",
+    "Veo"
+  ],
+  "summary": "Start on a plain at-home selfie in loungewear, then hard-cut to you dressed up for a night out, lit by city lights through a car window.",
+  "why": "Postdom's Instagram trends page for November 2 to 8, 2026 lists a hair, makeup and outfit reveal where the plain \"before\" cuts straight into the finished, red-carpet-style look, with its sound in 82K reels. New Engen's Instagram trends page, updated November 2, 2026, describes the same cut from loungewear to a going-out look, often filmed at night from a car window. Our earlier glow-up packs used a beanie or a costume; this one is the dressed-up night out.",
+  "steps": [
+    "Take or pick a plain selfie at home: loungewear, no makeup or hair done, normal room light.",
+    "Attach it to ChatGPT or Gemini and paste the main prompt to make the \"after\" photo. Keep your face exactly the same.",
+    "Optional: turn the after photo into a 5-second clip in Kling or Veo with the video variation.",
+    "In TikTok or Reels, show the before for one or two seconds, then cut to the after right on the beat. Add one short line of text and a trending sound."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (the after photo)",
+      "text": "Use the attached selfie. Keep my face, skin tone, eye colour and features exactly the same. Make the \"after\" shot of a night-out glow-up: I'm sitting in the back seat of a car at night, dressed up in a [sleek black outfit / sparkly top / sharp blazer], hair styled, polished makeup that still looks like me. Soft city lights and blurred street lamps glow through the side window behind me, with warm and cool reflections on my face. Vertical 9:16, shot like a phone photo with a little film grain. Calm, confident expression, looking just past the camera. No text, no logos, no other people."
+    },
+    {
+      "label": "Variation: short video (Kling or Veo)",
+      "text": "Use the attached photo as the person and the scene. Five seconds, vertical 9:16, inside a car at night. The person sits by the window, glances out at the passing city lights, then slowly turns to the camera with a small, confident smile. Streetlights slide across their face and outfit as the car moves. Keep the face, hair and outfit the same as the photo. Gentle handheld feel, natural movement, no text, no logos, no other people."
+    },
+    {
+      "label": "Caption ideas (text)",
+      "text": "Write 10 short on-screen lines for a glow-up video that cuts from me on the couch in loungewear to me dressed up for a night out. Keep them playful and kind, under 10 words each, like \"5 minutes ago vs. now\" or \"I said I was staying in.\" Canadian spelling, no emojis."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached photo of my client, who agreed to be in this post. Keep their face and features exactly the same. Make the \"after\" shot of their [hair / makeup / styling] appointment: the finished look, ready for a night out, in a car at night with soft city lights glowing through the window behind them. Vertical 9:16, phone-photo look with light film grain. No text, no logos, no other people. I will show it next to their real \"before\" photo."
+    }
+  ],
+  "tips": [
+    "The cut is the whole trick. Keep the before short and plain, and land the after right on the beat.",
+    "Make sure the after still looks like you. If the face drifts, say \"keep my face exactly the same\" again and retry.",
+    "Salons and stylists: use your real finished photo when you have one, and only use AI when the client agrees. Say it's AI if it is.",
+    "Business accounts have a smaller music library, so pick a sound cleared for your account."
+  ],
+  "tags": [
+    "glow-up",
+    "before-after",
+    "selfie",
+    "reels",
+    "business"
+  ]
+}
