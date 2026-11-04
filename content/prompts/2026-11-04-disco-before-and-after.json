@@ -1,0 +1,40 @@
+{
+  "slug": "disco-before-and-after",
+  "title": "Disco before-and-after: your ordinary room, turned into a 1970s dance floor",
+  "published": "2026-11-04T06:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Snap a plain everyday photo, then have AI turn the same scene into a glittering 1970s disco version for a quick before-and-after Reel.",
+  "why": "Buffer's list of trending Instagram sounds for November 2026, published November 3, names a classic disco song used for \"disco before-and-after transitions\". This pack does the \"after\" with AI, using your own photo as the \"before\".",
+  "steps": [
+    "Take a plain, well-lit photo of an ordinary spot: your living room, kitchen, desk or a selfie in a regular outfit.",
+    "Attach it to ChatGPT or Gemini and paste the main prompt to get the disco version.",
+    "Optional: upload the disco image to Kling or Veo as the first frame with the video prompt to make it move.",
+    "In your editing app, show the plain photo for 1 to 2 seconds, then cut to the disco version on the beat of a sound from the app's library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Turn the attached photo into a 1970s disco version of the same scene. Keep the room layout, the furniture and any people in the same places. Do not change faces or body shapes. Add a big mirror ball on the ceiling throwing little spots of light everywhere, a glowing light-up floor in pink, orange and purple squares, shimmering streamers and a little haze in the air. Warm, saturated colours, soft glow on everything, slight film grain like an old photo. No text, no logos."
+    },
+    {
+      "label": "Variation: me in disco clothes",
+      "text": "Edit the attached selfie into a 1970s disco portrait. Keep my face, hair colour and expression exactly as they are. Dress me in a shiny sequined outfit with wide flared trousers or a wrap dress, and big confident jewellery. Put me in front of a mirror ball with sparkles of light on my face and a hazy, glowing pink and gold background. Slight film grain. No text."
+    },
+    {
+      "label": "Video prompt",
+      "text": "Use the attached image as the first frame. Five seconds. The mirror ball turns slowly and spots of light sweep across the room. The floor squares light up in a simple pattern. A little haze drifts through. Keep the room and any people the same. No text, no new people, no fast camera moves."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Turn the attached photo of our [shop counter / salon chair / café table / product shelf] into a 1970s disco version. Keep the products and layout exactly the same so customers recognise them, and keep our own sign as it is without changing the wording. Add a mirror ball overhead throwing sparkles across everything, a glowing light-up floor in pink, orange and purple, shimmering streamers and a soft haze. Warm, saturated colours, slight film grain. No extra text, no other logos, no people."
+    }
+  ],
+  "tips": [
+    "The plainer the \"before\" photo, the bigger the payoff. A messy Monday kitchen works great.",
+    "Shoot the before photo straight on and keep the same framing so the cut lines up.",
+    "If faces change, say \"keep every face exactly as it is in the photo\" and try again.",
+    "Only include friends or family who are happy to be posted."
+  ],
+  "tags": ["before-after", "retro", "transition", "reels", "business"]
+}

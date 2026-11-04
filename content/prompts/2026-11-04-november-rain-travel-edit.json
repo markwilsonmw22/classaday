@@ -1,0 +1,40 @@
+{
+  "slug": "november-rain-travel-edit",
+  "title": "November rain: your travel photos as a moody rainy-day film",
+  "published": "2026-11-04T06:45:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo", "Runway"],
+  "summary": "Turn three or four of your own travel photos into slow, rainy, cinematic clips, then cut them together for a November Reel.",
+  "why": "SocialPilot's Instagram Reels list (published October 30, 2026, for October 31 to November 10) and Buffer's November 2026 sounds list (published November 3) both name a classic rock ballad that comes back every November, used for cinematic travel edits and then-vs-now posts. Adding soft rain to your own photos is a new twist on it.",
+  "steps": [
+    "Pick 3 or 4 real travel photos with a clear subject: a street, a bridge, a lake, a café window, a view from a train.",
+    "Attach one photo to ChatGPT or Gemini and paste the main prompt to get a rainy version. Keep the same chat so the set matches.",
+    "Upload each rainy still to Kling, Veo or Runway as the first frame and paste the video prompt.",
+    "Cut the clips together in your editing app, about 3 to 4 seconds each, and add a trending sound from the app's own library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (photo)",
+      "text": "Edit the attached travel photo so it looks like a quiet, rainy November evening. Keep the place, the buildings and any people exactly as they are. Do not change faces. Add steady light rain, wet pavement with soft reflections, a grey-blue sky and a few warm lights glowing in windows or street lamps. Slightly cool colours, gentle film grain, a wide cinematic frame. No text, no logos."
+    },
+    {
+      "label": "Video prompt",
+      "text": "Use the attached image as the first frame. Five seconds, slow and moody. Light rain falls through the whole frame. The camera pushes in very slowly. Raindrops ripple in puddles and the reflections shimmer. Warm lights flicker softly. Keep the place and any people the same the whole time. No text, no sudden movement, no new people."
+    },
+    {
+      "label": "Variation: then and now",
+      "text": "I'm attaching two photos of the same place: one from [year] and one from this year. Edit both so they match as a pair: the same rainy November evening, wet ground with reflections, grey-blue sky, warm window lights, the same cool colours and gentle film grain. Keep each place and any people exactly as they are in their own photo. Do not change faces. No text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Edit the attached photo of the outside of our [shop / café / studio] so it looks like a cosy rainy November evening. Keep the building, windows and our own painted sign exactly as they are, without changing the wording. Add light rain, wet sidewalk with reflections of our window lights, and a warm, inviting glow from inside. Cool blue street, warm golden windows. No extra text, no other logos, no people."
+    }
+  ],
+  "tips": [
+    "Photos with streets, water or windows work best because the rain has something to reflect in.",
+    "If the video tool adds heavy storms or lightning, add \"light, gentle rain only\" to the prompt.",
+    "Pick a sound from the app's own library so your Reel isn't muted.",
+    "Only include friends or family who are happy to be posted."
+  ],
+  "tags": ["travel", "video", "cinematic", "seasonal", "business"]
+}
