@@ -1,0 +1,40 @@
+{
+  "slug": "christmas-fan-runs-past",
+  "title": "Every year on November 1st: the Christmas fan dashes past",
+  "published": "2026-11-04T12:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "ChatGPT", "Gemini"],
+  "summary": "An eight-second skit: someone calmly grabs a drink while the household's biggest Christmas fan sprints past behind them, trailing lit-up string lights.",
+  "why": "A making-of post dated November 3, 2026 says a one-take, eight-second family skit called \"my wife every year on November 1st\" reached 1.4 million views on TikTok in two days, and that a second couple's copy passed 1.3 million. Our earlier November 1st pack restyled a room; this one is the quick comedy skit.",
+  "steps": [
+    "Ask the person who'll star as the Christmas fan if they're happy to be in it. Use only photos of people who agreed.",
+    "Film it for real in one take, or make it with AI: upload a photo of each of you as references in Kling or Veo and paste the main prompt.",
+    "Use ChatGPT or Gemini to write the on-screen caption, then add it in your editor, not in the video prompt.",
+    "Add a cleared holiday sound in TikTok or Reels and keep it under ten seconds."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (video)",
+      "text": "Use the attached photos as the two people. Eight seconds, vertical 9:16, phone camera at chest height, in a bright, ordinary home kitchen in daylight. Shot 1 (2 seconds): the first person opens the fridge and takes out a drink, calm and a little tired. Shot 2 (3 seconds): behind them, the second person, wearing a fuzzy red reindeer onesie, sprints past from left to right with a long strand of glowing warm-white string lights trailing behind them. Shot 3 (3 seconds): the first person slowly turns to the camera with a flat, knowing look and sips the drink. Keep both faces, hair and builds the same as in the photos. Natural movement, light comedy, no text, no logos, no other people."
+    },
+    {
+      "label": "Caption ideas (text)",
+      "text": "Write 10 short on-screen captions for a skit where someone in my home goes all-in on Christmas the moment Halloween ends. Start each with \"my [partner / mom / roommate / dog] every year on November 1st\" or a similar plain line. Keep them kind, never mean. Under 12 words each. Canadian spelling."
+    },
+    {
+      "label": "Variation: your pet",
+      "text": "Use the attached photos of me and my [dog / cat]. Eight seconds, vertical 9:16, cosy living room. I sit on the couch scrolling my phone. Behind me, my pet zooms past wearing a tiny knitted holiday sweater, with a short strand of glowing string lights tangled loosely on its back. I look up at the camera, unimpressed. Keep my face and the pet's fur and markings the same as the photos. Real animal movement. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached photos of me and my co-worker, who agreed to be in this. Eight seconds, vertical 9:16, inside our [café / salon / shop] during the day. I'm calmly wiping the counter. Behind me, my co-worker runs past in a festive sweater and a soft Santa-style hat, carrying a box of holiday decorations with lit string lights spilling out. I turn to the camera and raise one eyebrow. Keep the room as in the photo. No text, no logos, no other people."
+    }
+  ],
+  "tips": [
+    "The joke is the deadpan look at the end. Keep the first person calm and the runner fast.",
+    "Fake string lights or battery lights are safer than a real plug-in strand if you film it yourself.",
+    "Say it's AI in your caption if you made it with AI, and only use people who said yes.",
+    "Business accounts have a smaller music library, so pick a sound that's cleared for your account."
+  ],
+  "tags": ["holiday", "skit", "video", "funny", "business"]
+}
