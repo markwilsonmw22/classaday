@@ -1,0 +1,40 @@
+{
+  "slug": "bicep-heart",
+  "title": "Bicep heart: flex one arm, make a heart with the other",
+  "published": "2026-11-04T00:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "ChatGPT", "Gemini"],
+  "summary": "Turn one photo into a short clip where you flex an arm and curl your other hand against it to make a heart. Works for pets too.",
+  "why": "A template site tracking the trend says the #bicepheart hashtag first showed up on TikTok on October 26, 2026, and that single videos of the move passed 1.6 to 3.6 million views by November 1. The same site says AI versions only started appearing in early November.",
+  "steps": [
+    "Pick a clear photo of yourself from the waist up, facing the camera, with both arms visible.",
+    "Upload it to Kling, Veo or Seedance as the first frame and paste the main prompt.",
+    "If the hands look odd, make a still first in ChatGPT or Gemini with the still prompt, then animate that.",
+    "Add the trending sound in TikTok or Reels, or your own music, and keep the clip short."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (video)",
+      "text": "Use the attached photo of me as the first frame. Seven seconds, vertical 9:16. I smile at the camera, then raise my right arm and flex my bicep. I bring my left hand up and curl my fingers and thumb against the flexed arm so my hand and arm together make the shape of a heart. I hold the pose, give a small proud nod, then laugh. Steady medium shot, soft natural light. Keep my face, hair and clothes the same as in the photo. Five fingers on each hand. No text, no extra people."
+    },
+    {
+      "label": "Still prompt (to animate after)",
+      "text": "Using the attached photo of me, create a realistic photo of the same person, waist up, facing the camera with a big smile. One arm is raised and flexed. The other hand is curled against that bicep so the hand and the arm form a clear heart shape. Keep my face, hair and clothes exactly the same. Bright, clean background. Natural hands with five fingers. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet",
+      "text": "Use the attached photo of my [dog / cat] as the first frame. Seven seconds, vertical 9:16. The pet sits up on its back legs, lifts one front leg and flexes it like a bodybuilder, then curls the other paw against it to make a heart shape. It looks very proud of itself, then tilts its head. Keep its fur, markings and face the same. Real animal paws, no human hands. Cosy living-room light. No text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached photo of me in our [gym / bakery / shop] as the first frame. Seven seconds, vertical 9:16. I stand behind the counter, flex one arm and curl my other hand against it to make a heart, then point to the space around me and smile. The room stays the same as in the photo, softly lit. Keep my face and clothes the same. Five fingers on each hand. No text, no logos, no other people."
+    }
+  ],
+  "tips": [
+    "Write a caption like \"bicep hearts for everyone who needs one today\". The trend is about sending a little love.",
+    "Hands are the hard part. If the heart looks wrong, try again or make the still first.",
+    "Say it's AI in your caption, especially for the pet version.",
+    "Only use sounds that are cleared for your account. Business accounts have a smaller music library."
+  ],
+  "tags": ["video", "selfie", "pets", "tiktok", "business"]
+}
