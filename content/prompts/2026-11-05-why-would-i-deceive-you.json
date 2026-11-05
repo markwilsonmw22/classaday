@@ -1,0 +1,40 @@
+{
+  "slug": "why-would-i-deceive-you",
+  "title": "\"Why would I deceive you?\": the promise that's about to let you down",
+  "published": "2026-11-05T12:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Put a too-good-to-be-true promise on screen, then look into the camera with a straight face and total innocence. AI writes the setups.",
+  "why": "New Engen's November 2026 TikTok trends roundup (updated this week) lists \"Why Would I Deceive You?\": a deadpan, overly innocent lip-sync or cut-out template, with on-screen text about something that's about to let you down, like a pet denying the mess or a \"5-minute\" assembly estimate.",
+  "steps": [
+    "Paste the main prompt into ChatGPT, Gemini or Claude and pick the setup that makes you laugh.",
+    "Find the trending sound in the app. Business accounts should check it's available to them first.",
+    "Film 4 to 6 seconds of you (or your pet) looking straight at the camera with a calm, slightly too-innocent smile. Keep still.",
+    "Put the setup on screen in big text for the whole clip. Post with a short caption."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: setups",
+      "text": "I'm making a short video for the \"Why would I deceive you?\" trend. I look at the camera with a straight face and an innocent smile while the on-screen text shows a promise that's clearly about to go wrong. Write 10 on-screen setups about everyday life, like \"Me saying I'll only watch one episode\" or \"The weather app promising sunshine all weekend\". Keep each one under 12 words. Relatable, harmless, no brands, no real people."
+    },
+    {
+      "label": "Variation: your pet",
+      "text": "Write 8 on-screen setups for the \"Why would I deceive you?\" trend from my [dog / cat / rabbit]'s point of view, about things it clearly did, like the chewed slipper or the empty food bowl. The pet will just stare at the camera. Under 12 words each. Keep it affectionate and funny."
+    },
+    {
+      "label": "Variation: Canadian everyday life",
+      "text": "Write 8 setups for the \"Why would I deceive you?\" trend about everyday life in Canada in November, like \"The forecast saying it's just a light dusting\" or \"Me saying I'll put the snow tires on this weekend\". Under 12 words each. Light and relatable, nothing political."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business] in [city]. Write 8 setups for the \"Why would I deceive you?\" trend that poke fun at my own industry, like \"Me telling you this will only take five minutes\". The joke should be on us, never on customers or other businesses. Keep it honest: no fake claims, no discounts, no urgency. Add a one-line caption for each that says plainly what we do."
+    }
+  ],
+  "tips": [
+    "Don't blink, don't laugh. The stiller you are, the funnier it is.",
+    "The best setups are tiny promises everyone has broken, not big lies.",
+    "Pets are perfect for this: a calm stare next to the evidence says it all.",
+    "Keep jokes about your own business light. Never make fun of a customer."
+  ],
+  "tags": ["text", "deadpan", "tiktok", "pets", "business"]
+}

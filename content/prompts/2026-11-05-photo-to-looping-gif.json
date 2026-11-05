@@ -1,0 +1,40 @@
+{
+  "slug": "photo-to-looping-gif",
+  "title": "Photo to looping GIF: make your pet, sketch or product move",
+  "published": "2026-11-05T12:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT"],
+  "summary": "ChatGPT can now turn a photo or sketch into a short looping GIF. Make a reaction GIF of your pet, a doodle that waves, or a product that spins.",
+  "why": "OpenAI rolled out Images 2.6 in ChatGPT this week. TestingCatalog and The Mobile Indian (both November 5, 2026) report it adds GIF creation, turning photos, characters, sketches and product shots into looping animations, plus saved reference images of yourself, pets and characters you can reuse without uploading again.",
+  "steps": [
+    "Open ChatGPT and upload one clear photo: your pet, a sketch, a selfie or a product on a plain background. If you saved it as a reference image, pick it instead.",
+    "Paste the main prompt and change the bracketed parts. Ask for one small, simple movement. Small moves loop best.",
+    "Check the result. If it jumps at the loop point, ask ChatGPT to make the first and last frames match, or to slow the animation down.",
+    "Download the GIF and use it as a reply, a story sticker or a post. If you share it, say it was made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: reaction GIF",
+      "text": "Turn this photo into a short looping GIF. Keep the subject looking exactly like the photo: same face, colours, markings and background. Animate one small movement: [a slow blink and a head tilt / ears perking up / a slow, judging stare that turns toward the camera]. Keep the camera still. Make the last frame match the first so the loop is smooth. Add the caption \"[when someone says it's Monday]\" in bold white letters with a black outline at the bottom."
+    },
+    {
+      "label": "Variation: bring a sketch to life",
+      "text": "Animate this hand-drawn sketch as a looping GIF. Keep my pencil lines, paper texture and any smudges so it still looks hand-drawn. Make the character [wave hello / bounce on the spot / blink and smile]. Keep the movement simple, like a flip book, and the background still. Make the loop seamless."
+    },
+    {
+      "label": "Variation: you, in a little loop",
+      "text": "Using this photo of me (or my saved reference image), make a short looping GIF of me [doing a tiny celebration dance / raising a mug / giving a thumbs up and a wink]. Keep my face, hair and outfit the same as the photo. Soft, even lighting and a plain [colour] background. No text. Smooth loop with matching first and last frames."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Turn this product photo into a clean looping GIF for my [shop / café / studio] website and social posts. Keep the product exactly as it looks: shape, colours and label text unchanged. Animate one gentle move: [a slow turn on the spot / steam rising from the cup / the lid lifting and closing]. Plain [colour] background, soft shadow, no extra objects and no added text. Seamless loop."
+    }
+  ],
+  "tips": [
+    "One movement per GIF. Ask for a blink or a wave, not a whole scene, and it stays looking like your photo.",
+    "Saving a reference image of your pet or your mascot means every new GIF keeps the same look.",
+    "Captions work best short: five words or fewer.",
+    "Only animate photos of people who agreed to it. Never use a GIF to make it look like someone said or did something they didn't."
+  ],
+  "tags": ["gif", "animation", "chatgpt", "pets", "business"]
+}
