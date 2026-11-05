@@ -1,0 +1,40 @@
+{
+  "slug": "reasons-you-dont-need",
+  "title": "\"Reasons why you don't need to…\": the advice video nobody can hear",
+  "published": "2026-11-05T06:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Look very serious, explain why you don't need that thing, and muffle the sound so the reasons never come through. AI writes the hooks and the script.",
+  "why": "Pepper Agency's TikTok and Instagram trends post for November 2026 (published November 2) lists \"Reasons why you don't need to…\": an advice video with deliberately muffled audio, because there's no real reason at all. It suggests brands use it before Black Friday.",
+  "steps": [
+    "Paste the main prompt into ChatGPT, Gemini or Claude and pick the hook that makes you laugh.",
+    "Film yourself talking to the camera like a serious expert for 6 to 10 seconds. Use the script so your face and hands look convincing.",
+    "In your editing app, put the hook on screen and muffle the audio: turn on a low-pass, underwater or 'muffled' voice effect, or lower the volume and add a background sound.",
+    "End on a clear last line or a shot of you giving in, so the joke lands."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: hooks",
+      "text": "I'm making a short video for the \"Reasons why you don't need to…\" trend. I talk to the camera like a serious expert, but the sound is muffled, so nobody can hear my reasons. The joke is that I don't really have any. Write 10 on-screen hooks that start with \"Reasons why you don't need…\" about small, everyday treats or habits, like another mug, a third coffee, a new hoodie, or one more episode. Keep each one under 10 words. Make them relatable and harmless. No brands."
+    },
+    {
+      "label": "Script for the muffled part",
+      "text": "Write a 15-second script for me to say to the camera for the hook \"[your hook]\". It will be muffled in the edit, so the words only need to look convincing. Use confident, serious phrasing with a few pauses where I can point, count on my fingers or nod. Add 3 simple gestures to do. Then write one short, clear last line I can say unmuffled, where I give in to the thing anyway."
+    },
+    {
+      "label": "Variation: friends and family",
+      "text": "Write 8 hooks for the \"Reasons why you don't need…\" trend about things my [partner / roommate / mom / dog] always wants, like another throw pillow, a bigger TV or a second dinner. Keep them affectionate, not mean. Under 10 words each. Add a one-line caption for each."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business] in [city]. Write 8 hooks for the \"Reasons why you don't need…\" trend about my own products or services, for example \"Reasons why you don't need another candle\". The joke is that I'm the one trying to talk people out of it, but the sound is muffled. Keep it light, honest and not pushy. No discount claims, no fake urgency, no comparisons to other businesses. Then write a short caption for each that mentions what I sell in plain words."
+    }
+  ],
+  "tips": [
+    "The serious face does the work. Don't smile until the last line.",
+    "Muffle the voice, not the music. A trending sound under the muffled talk makes it clear it's on purpose.",
+    "Keep the on-screen hook big and short, so people get the joke before they read the caption.",
+    "For a shop, show the product on the counter behind you the whole time."
+  ],
+  "tags": ["text", "funny", "tiktok", "deadpan", "business"]
+}

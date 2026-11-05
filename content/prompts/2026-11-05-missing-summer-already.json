@@ -1,0 +1,40 @@
+{
+  "slug": "missing-summer-already",
+  "title": "Missing summer already? Your summer photo vs. the same spot in November",
+  "published": "2026-11-05T06:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Take one of your sunny summer photos and let AI show the same spot on a dark, cold November morning. Post them side by side or as a quick cut.",
+  "why": "Pepper Agency's November 2026 trends post (published November 2) notes that while some creators lean into cosy winter content, others post summer-memory montages cut against dark November mornings. Making the matching November shot with AI is a new twist on it.",
+  "steps": [
+    "Pick a real summer photo you took: a beach, a patio, a dock, a park or your shop's sunny front.",
+    "Attach it to ChatGPT or Gemini and paste the main prompt. You'll get the same spot on a grey November morning.",
+    "Post the two as a carousel (summer first), or cut them together in Reels or TikTok with the switch on the beat.",
+    "Optional: turn the November still into a short clip with the video prompt in Kling or Veo."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (image)",
+      "text": "Use the attached summer photo. Keep the exact same place, angle, buildings, trees, furniture and objects. Change the season and time to a dark, cold November morning around 7 a.m.: low grey sky, the sun not up yet, bare trees, a few wet brown leaves on the ground, light frost on surfaces, a cold blue tint, maybe one warm light on in a window. Any water looks dark and still. Remove all people. Real photo look, same framing and size as the original. No text, no logos."
+    },
+    {
+      "label": "Video prompt",
+      "text": "Use the attached image as the first frame. Five seconds, vertical 9:16. A cold, still November morning. A light drizzle starts, a few dry leaves blow across the ground, breath-like mist drifts low, and a streetlight flickers off. The camera stays still or pushes in very slowly. Keep every object and the layout exactly the same. Quiet and a little gloomy. No people, no text, no logos."
+    },
+    {
+      "label": "Variation: missing summer caption ideas",
+      "text": "I'm posting a summer photo next to the same spot in November. Write 8 short, funny captions about missing summer when it's dark at 5 p.m. Canadian tone, relatable, under 12 words each. Avoid weather clichés like \"winter is coming\"."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached summer photo of my [patio / storefront / dock / garden]. Keep the building, sign shape and layout exactly the same, and don't change or invent any words on signs. Show it on a dark November morning: grey sky, bare trees, wet leaves, frost on the railings, but warm golden light glowing from inside the windows so it looks cosy and open. Real photo look, same framing. No people, no new text, no new logos."
+    }
+  ],
+  "tips": [
+    "Pick a summer photo with lots of sun and colour. The bigger the contrast, the better the joke.",
+    "Use a photo you took yourself, and leave people out of the November version.",
+    "For a business, end on the cosy version: \"Summer's gone, but we're still open.\"",
+    "Say the November shot was made with AI in your caption."
+  ],
+  "tags": ["seasonal", "before-after", "canada", "carousel", "business"]
+}
