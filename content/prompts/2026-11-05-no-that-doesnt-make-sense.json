@@ -1,0 +1,40 @@
+{
+  "slug": "no-that-doesnt-make-sense",
+  "title": "\"No, that doesn't make any sense\": call out an everyday contradiction",
+  "published": "2026-11-05T18:38:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Lip-sync a confused \"no, that doesn't make any sense\" while the on-screen text points out a funny everyday contradiction. AI writes them.",
+  "why": "A TikTok trends post from Ramdam dated November 3, 2026 lists the \"No that doesn't make any sense\" trend: a lip-sync with a puzzled face and a text overlay pointing out a contradiction. Unlike our \"It's making sense now\" pack, where you pretend to finally get it, here you refuse to.",
+  "steps": [
+    "Paste the main prompt into ChatGPT, Gemini or Claude and pick the contradiction that makes you laugh.",
+    "Find the trending sound in the app. Business accounts should check it's available to them first.",
+    "Film 4 to 6 seconds of you lip-syncing with a slow, puzzled frown. Tilt your head, squint, shake it once.",
+    "Put the contradiction on screen in big text from the first frame. Post with a short caption."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: contradictions",
+      "text": "I'm making a short video for the \"No, that doesn't make any sense\" trend. I lip-sync with a confused face while on-screen text points out a funny everyday contradiction. Write 10 of them, like \"Me buying a planner to get organized, then losing the planner\" or \"Parking lots with a 'no parking' sign\". Under 15 words each. Relatable, harmless, no brands, no real people, nothing political."
+    },
+    {
+      "label": "Variation: Canadian November",
+      "text": "Write 8 on-screen lines for the \"No, that doesn't make any sense\" trend about everyday life in Canada in November, like \"Wearing shorts with a winter parka\" or \"Saying 'it's not that cold' at minus five\". Under 15 words each. Light and relatable, nothing political."
+    },
+    {
+      "label": "Variation: family and roommates",
+      "text": "Write 8 on-screen lines for the \"No, that doesn't make any sense\" trend about harmless things families or roommates do, like \"Putting an empty milk carton back in the fridge\" or \"Saving the good dishes for guests who never come\". Under 15 words each. Affectionate, never mean."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business] in [city]. Write 8 on-screen lines for the \"No, that doesn't make any sense\" trend about common habits or myths in my field that our work clears up, like \"Waiting until it breaks to book a tune-up\". The joke should be on the habit, never on a customer or another business. No fake claims, no discounts, no urgency. Add a one-line caption for each that says plainly what we do."
+    }
+  ],
+  "tips": [
+    "The slower the frown, the funnier it lands. Hold the confused look to the end.",
+    "Pick contradictions people have done themselves, so they tag a friend.",
+    "Keep the text short enough to read in two seconds.",
+    "For a business, poke fun at a habit, not at the people who have it."
+  ],
+  "tags": ["text", "lip-sync", "funny", "tiktok", "business"]
+}

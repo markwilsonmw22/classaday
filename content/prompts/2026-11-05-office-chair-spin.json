@@ -1,0 +1,40 @@
+{
+  "slug": "office-chair-spin",
+  "title": "The office chair spin: one photo, one slow happy twirl",
+  "published": "2026-11-05T18:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Gemini", "Runway"],
+  "summary": "Turn one photo of you (or your pet) into a short clip of a slow, carefree spin in an office chair, with the camera holding still.",
+  "why": "Starrd's monthly AI video trends roundup, updated November 5, 2026, lists an office-chair spin set to a soft pop song in its November section and says template sites started carrying it in the last days of October. AI video template sites now offer it as a one-photo effect.",
+  "steps": [
+    "Pick a clear photo of yourself, a friend or family member who has agreed, or your pet. Sitting photos work best, but a waist-up shot is fine.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a 5 to 8 second clip.",
+    "If the face changes during the turn, try again with a shorter clip or a slower spin.",
+    "Add a soft, dreamy sound from the app's library and a short caption. Business accounts should use a sound cleared for commercial use."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: slow happy spin",
+      "text": "Animate the person in this photo sitting in a padded office chair. They lean back, lift their feet a little and spin slowly in one full circle, smiling with their eyes half closed, like they have nowhere to be. Hair and clothes move gently with the turn. The camera stays still at eye level. Soft afternoon light from a window, a tidy desk in the background. Keep their face, hair and outfit exactly the same as the photo. Natural movement, 6 seconds, no text."
+    },
+    {
+      "label": "Variation: your pet takes a spin",
+      "text": "Animate my [dog / cat] from this photo sitting calmly in a small office chair. The chair turns slowly in one full circle while my pet stays perfectly still and looks straight at the camera each time it comes around, totally unbothered. Fur moves a little with the turn. Camera fixed, cozy home office, warm light. Keep the pet's markings and face the same as the photo. 6 seconds, no text."
+    },
+    {
+      "label": "Variation: the Friday 4:59 spin",
+      "text": "Animate the person in this photo at a desk in a quiet office. They glance at the clock on the wall, push back from the desk and spin slowly in their chair with their arms out, grinning. Golden late-day light, papers on the desk, camera fixed at eye level. Keep their face and clothes the same as the photo. Calm, joyful mood, 7 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate the person in this photo spinning slowly in a chair in my [type of business: salon chair, bakery stool, workshop stool]. They do one relaxed full turn, smiling, and the camera stays still so the shop is visible behind them each time they come around. Keep their face and clothes the same as the photo, and keep the shop looking like a real, tidy workspace. Warm light, 6 seconds, no logos, no text."
+    }
+  ],
+  "tips": [
+    "Slow wins. A fast spin makes faces warp; ask for \"slow\" and \"one full circle\".",
+    "Keep the camera still so the spin does all the work.",
+    "Only use photos of people who said yes, and never anyone famous.",
+    "For your shop, add your own caption saying what you do; the chair is just the hook."
+  ],
+  "tags": ["video", "image-to-video", "funny", "pets", "business"]
+}
