@@ -1,0 +1,36 @@
+{
+  "slug": "took-the-chance-montage",
+  "title": "I took the chance: a montage of the leaps that changed things",
+  "published": "2026-11-05T00:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Cut your own clips of big decisions, like a move, a new job or opening a shop, into a fast montage, with AI writing the short on-screen lines.",
+  "why": "CreatorDB's Instagram audio chart for the week of November 4, 2026 lists a rising \"Take a Chance Growth Montage\" format with about 111,000 Reels: a lyric about taking a chance over clips of career changes, moves and new businesses. It says brands and entrepreneurs use it to show risks taken and milestones reached.",
+  "steps": [
+    "Collect 5 to 8 short clips or photos of real turning points: the day you decided, the first step, the hard part and where you are now.",
+    "Paste the main prompt into ChatGPT, Gemini or Claude and fill in your story to get one short line per clip.",
+    "Put the clips in order in Reels or CapCut, add one line on each and cut on the beat of an upbeat trending sound.",
+    "Keep the whole thing under 20 seconds and end on today."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (text)",
+      "text": "Help me write on-screen text for a short Reel montage about a risk I took. My story: [what I decided, e.g. moved from Winnipeg to Halifax / left my job to go back to school / started baking for money]. I have [6] clips: [describe each clip in a few words, in order]. Write one line per clip, under 8 words each. The first line is the moment I almost said no. The middle lines show the small, real steps. The last line is where I am now. Warm and honest, no bragging, no promises about money. Canadian spelling."
+    },
+    {
+      "label": "Hook ideas",
+      "text": "Write 10 short opening lines for a Reel that shows a risk I took and what came after. Each under 10 words. Mix styles: a question, a plain fact, a small confession. Examples of the tone I want: \"A year ago I almost didn't send the email.\" Keep them true to a normal person's life, not a movie. Canadian spelling."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Write on-screen text for a montage about how my small business started. Business: [type, town]. Clips in order: [e.g. kitchen table sketches, first market stall, empty shop on signing day, opening morning, a regular customer's order today]. One line per clip, under 8 words. Show real steps and real dates if I give them. Don't invent sales numbers, awards or customer quotes. End with a soft thank-you to the people who came by. Canadian spelling."
+    }
+  ],
+  "tips": [
+    "Use only your own footage. Old phone clips with bad lighting make it feel more real.",
+    "Ask before showing friends, family or customers in your clips.",
+    "Keep the numbers true. If you share a date or a milestone, make sure it really happened.",
+    "Business accounts should pick a sound that's cleared for commercial use."
+  ],
+  "tags": ["montage", "reels", "text", "milestones", "business"]
+}

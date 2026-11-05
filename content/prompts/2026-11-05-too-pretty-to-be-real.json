@@ -1,0 +1,40 @@
+{
+  "slug": "too-pretty-to-be-real",
+  "title": "Too pretty to be real: your best spot in a golden-hour glow",
+  "published": "2026-11-05T00:40:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo", "Runway"],
+  "summary": "Turn one real photo of a room, a view or a product into a slow, glowing golden-hour clip that looks almost too pretty to be real.",
+  "why": "CreatorDB's Instagram audio chart for the week of November 4, 2026 lists a \"Too Pretty to Be Real\" format on a dreamy pop track with about 211,000 Reels, and says nearly half were posted in the last week. It notes hotels filming their best rooms at golden hour and jewellers opening ring boxes toward the light.",
+  "steps": [
+    "Pick one real photo you took: your favourite corner of home, a view from a trip, your shop window or your best product.",
+    "Attach it to ChatGPT or Gemini and paste the main prompt to get a golden-hour version. Keep the room, the view or the product the same.",
+    "Upload the new still to Kling, Veo or Runway as the first frame and paste the video prompt.",
+    "Add a dreamy trending sound in Reels and keep it between 5 and 8 seconds."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (image)",
+      "text": "Use the attached photo. Keep the same place, layout, furniture and objects. Relight it as late golden hour: low, warm sunlight coming in from one side, soft honey-coloured glow on every surface, long gentle shadows, a few floating dust specks catching the light, a faint soft haze in the air. Slightly lift the colours so it feels dreamy but still real. Sharp focus on the main subject, soft background. Vertical 9:16. No people, no text, no logos, no added objects."
+    },
+    {
+      "label": "Video prompt",
+      "text": "Use the attached image as the first frame. Six seconds, vertical 9:16. A very slow, smooth push-in toward the brightest spot in the frame, like a camera on a gentle slider. The warm sunlight shifts a little, dust specks drift through the light, curtains or leaves move softly if there are any. Keep every object and the layout exactly the same. Calm, glowing, almost unreal. No people, no text, no logos, no fast motion."
+    },
+    {
+      "label": "Variation: travel view",
+      "text": "Use the attached photo of a view I took on a trip. Keep the same skyline, water, mountains or street. Make it sunset golden hour: warm pink and gold sky, the sun just above the horizon, soft light glinting off windows and water, a light haze far away. Real-looking, not a painting. Vertical 9:16. No people, no text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use the attached photo of my [product / best room / table setting]. Keep the product's shape, colour and details exactly the same, and change no labels. Place it in warm golden-hour window light: low sun from the side, a soft gleam on its edges, a gentle glow behind it, the background softly blurred. Clean and calm, like a quiet morning in a boutique. Vertical 9:16. No people, no added text, no new logos."
+    }
+  ],
+  "tips": [
+    "Start from a photo you really took. The trend works because the place looks real, just at its most beautiful.",
+    "If you're a hotel, café or shop, don't let the AI add features you don't have. Customers should find what they saw.",
+    "A slow camera move looks better than a fast one. Ask for \"very slow\" if the clip feels rushed.",
+    "Say it's AI-enhanced in your caption if the light was added with AI."
+  ],
+  "tags": ["golden-hour", "video", "reels", "aesthetic", "business"]
+}
