@@ -1,0 +1,40 @@
+{
+ "slug": "go-go-go-urgent-moment",
+ "title": "\"Go, go, go!\": the everyday moment that needs you right now",
+ "published": "2026-11-06T06:43:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Lip-sync a frantic \"go, go, go\" sound with big hand moves over text about a tiny moment that needs action now. AI writes the situations.",
+ "why": "New Engen's TikTok trends list for November 2026, updated November 5, includes \"Go, Go, Go\": creators lip-sync a frantic \"go\" audio with big hand motions over on-screen text about a situation that needs immediate action. The page suggests brands can use it for a launch or a limited-time offer, and says to check the audio is available in-app.",
+ "steps": [
+  "Use the main prompt to get a list of short, relatable \"act now\" moments.",
+  "Pick one and put it on screen as text before the sound kicks in.",
+  "Film yourself lip-syncing the \"go\" sound with big, urgent hand waves, like you're directing traffic.",
+  "Keep it under 10 seconds so the panic feels real and people watch it twice."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short lip-sync video. On screen I'll show one everyday moment that needs action right now, then I'll mouth \"go, go, go!\" with frantic hand moves. Write 12 of these moments, each under 15 words. Mix: home life, work, weather and small wins. Examples of the tone: \"When the snow stops for five minutes and your car is still buried\" or \"When the microwave says 0:01 and you're across the room.\" About me: [your life, job, town]. No hashtags, no emojis, nothing mean."
+  },
+  {
+   "label": "Variation: Canadian November",
+   "text": "Write 10 \"go, go, go\" moments that only make sense in a Canadian November: first snow, early sunsets, tire changes, the last warm day, cold mornings. Each under 15 words, starting with \"When\". Make them funny and true to life, not about any real person, company or news event."
+  },
+  {
+   "label": "Variation: friends and family",
+   "text": "Write 8 \"go, go, go\" moments for a video I'll make with [friends / my family / roommates], where we all scramble at once. For example: \"When someone says 'group photo' and you're the only one with your eyes open.\" Add one simple shot idea for each so everyone knows where to stand."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 8 \"go, go, go\" moments for our account. Use real, honest moments only: [for example: a fresh batch just came out, the patio is open one last day, a new item just went on the shelf, our team racing to set up before opening]. If I mention an offer, only use the real end date I give you: [date, or 'no offer']. Don't invent countdowns, stock levels, prices or customer quotes."
+  }
+ ],
+ "tips": [
+  "The bigger your hand moves, the funnier it lands. Think airport ground crew.",
+  "Show the text a beat before the sound starts so people read it first.",
+  "Only use real deadlines. Fake urgency loses people's trust fast.",
+  "Business accounts may not have the trending sound. Use an original sound or check TikTok's commercial music library."
+ ],
+ "tags": ["text", "lip-sync", "tiktok", "funny", "business"]
+}

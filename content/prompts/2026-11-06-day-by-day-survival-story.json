@@ -1,0 +1,40 @@
+{
+ "slug": "day-by-day-survival-story",
+ "title": "Day-by-day survival story: \"you\" are stuck somewhere ordinary",
+ "published": "2026-11-06T06:43:00Z",
+ "kind": "video",
+ "tools": ["ChatGPT", "Gemini", "Kling", "Veo", "ElevenLabs"],
+ "summary": "A numbered, narrated cartoon series told to \"you\": a silly zombie outbreak in a normal place, one day per part, ending on a choice for viewers.",
+ "why": "New Engen's TikTok trends list for November 2026, updated November 5, includes zombie outbreak survival stories: animated, second-person stories in numbered parts set in an everyday place, moving day by day and often ending on a choice or cliffhanger, often made with simple AI-animated stick figures. It suggests brands set the story in their own shop and label AI visuals. This builds on our micro-drama series pack with a new twist: the viewer is the hero.",
+ "steps": [
+  "Use the story prompt to plan 5 parts set somewhere you know well.",
+  "Make one simple stick-figure style image for each part, keeping the same look every time.",
+  "Turn each image into a short clip, then add the narration with a calm, serious voice.",
+  "Post the parts in order with \"Part 1\", \"Part 2\" on screen, and end each one with a question for the comments."
+ ],
+ "prompts": [
+  {
+   "label": "Step 1: plan the story",
+   "text": "Write a 5-part survival story told in second person (\"you\"). Setting: [an everyday place, for example: a public library in a small Canadian town during a snowstorm]. The threat is a goofy, slow cartoon zombie outbreak: the zombies only shuffle and groan, and nobody gets hurt. Each part covers one day, is about 30 seconds of narration, and is built from clever choices: where to hide, what to bring, how to get snacks. End every part with a choice for viewers, like \"Do you take the stairs or the book cart?\" Keep it family-friendly. No blood, no fighting, no injuries, no real people, places or brands."
+  },
+  {
+   "label": "Step 2: the scene image",
+   "text": "Simple 2D animation still in a hand-drawn stick-figure style: thin black outlines, round heads, dot eyes, flat soft colours on a clean background. Scene: [paste one moment from your plan, for example: you, a stick figure in a red toque, hiding behind a library cart while three slow green stick-figure zombies shuffle past the window]. Calm and funny, not scary. Vertical 9:16. No text."
+  },
+  {
+   "label": "Step 3: animate it",
+   "text": "Animate the attached image for 5 seconds. Keep the stick-figure style and colours exactly the same. The zombies shuffle slowly from left to right. The hero peeks out, freezes, then ducks back down. Gentle, simple movement, no camera shake, nothing gory."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write a 4-part, second-person survival story set in my shop during a silly cartoon zombie outbreak, where the hero survives using everyday things we really have, like [two or three real items or spots in your shop]. Keep it light and family-friendly, with no fighting or injuries. End each part with a choice for viewers. No prices, claims, sales pitches or real people."
+  }
+ ],
+ "tips": [
+  "Keep the same art style and the same hero outfit in every part so people know it's a series.",
+  "Narrate in a calm, serious voice. The flat delivery is what makes it funny.",
+  "Use the viewers' answers from the comments to decide what happens in the next part.",
+  "Turn on TikTok's AI-generated content label when you post AI visuals."
+ ],
+ "tags": ["video", "storytelling", "series", "animation", "business"]
+}
