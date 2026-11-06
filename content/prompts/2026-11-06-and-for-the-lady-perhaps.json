@@ -1,0 +1,40 @@
+{
+ "slug": "and-for-the-lady-perhaps",
+ "title": "\"And for the lady, perhaps…\": the tiny treat that's made for someone",
+ "published": "2026-11-06T12:50:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Write \"And for the [person], perhaps…\" over a slow, cozy clip of their perfect little treat. AI writes the lines so friends tag each other.",
+ "why": "New Engen's Instagram trends list for November 2026, updated November 5, includes \"And For the Lady, Perhaps\": an overlay reads \"And for the [person], perhaps…\" over footage of their ideal small luxury, often set to a classic holiday standard. The page says viewers tag the friend who fits the line, and suggests cafes, shops, spas and travel brands use it as a soft gift guide.",
+ "steps": [
+  "Use the main prompt to get a list of \"And for the…, perhaps…\" lines for different kinds of people.",
+  "Pick one and film the treat slowly: the drink being poured, the quiet walk, the blanket on the couch.",
+  "Put the line on screen at the start and let the clip play for 7 to 12 seconds.",
+  "Make a few for different people and post them as a small series."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short Instagram Reel. The on-screen text will say \"And for the [type of person], perhaps…\" and then name their perfect small treat, while the video shows that treat slowly and cozily. Write 12 of these lines. Each one names a type of person (for example: the homebody, the early riser, the group-chat planner, the one who's always cold) and one very specific, affordable treat they'd love. Keep each line under 18 words. Example of the tone: \"And for the homebody, perhaps… a fresh blanket, a new candle and absolutely no plans.\" Add a one-line shot idea under each. No hashtags, no emojis, nothing mean."
+  },
+  {
+   "label": "Variation: Canadian winter edition",
+   "text": "Write 10 \"And for the…, perhaps…\" lines with a Canadian late-fall and winter feel: first snow, toques, hot chocolate after shovelling, a cabin weekend, warm boots by the door, the first skate of the year. Each line names a type of person and one cozy, everyday treat. Keep them under 18 words, warm and a little funny. Don't mention any real person, brand or company."
+  },
+  {
+   "label": "Variation: for my friends and family",
+   "text": "I want to make a series of these for people in my life who are happy to be tagged. Here are a few of them and what they love: [for example: my sister, who loves quiet mornings and bookstores; my dad, who loves fixing things in the garage]. Write one \"And for the…, perhaps…\" line for each, using a fun nickname-style description instead of their real name, plus a simple shot I can film at home."
+  },
+  {
+   "label": "Variation: small business gift guide",
+   "text": "I run [type of business] in [town]. Write 8 \"And for the…, perhaps…\" lines that match real customers to real things we sell or do. Here's what we actually offer: [list your products or services]. Each line names a type of person (the coffee snob, the last-minute shopper, the one who has everything) and one item from my list. Only use items and prices I gave you. Don't invent sales, stock levels, reviews or customer quotes. Add a slow, cozy shot idea for each."
+  }
+ ],
+ "tips": [
+  "Be specific. \"A warm cinnamon bun and a window seat\" beats \"something nice\".",
+  "Film slow and close. Pouring, steam and soft light do most of the work.",
+  "Business accounts may not have the classic holiday songs. Check the app or use an original sound.",
+  "Make several versions for different people. Each one gets tagged by a different crowd."
+ ],
+ "tags": ["text", "holiday", "instagram", "gift-guide", "business"]
+}

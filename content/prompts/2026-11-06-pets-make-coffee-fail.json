@@ -1,0 +1,40 @@
+{
+ "slug": "pets-make-coffee-fail",
+ "title": "Two pets try to make your morning coffee (and the milk wins)",
+ "published": "2026-11-06T12:50:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway", "Gemini"],
+ "summary": "Turn a photo of your pets into a short clip of them carefully making coffee, until the milk overflows across the counter.",
+ "why": "Starrd's monthly AI video trends roundup, updated November 5, 2026, lists \"Dog Coffee Fail\" in its November section: two dogs make coffee until the milk floods the counter. It's offered as a photo-to-video effect, so people are making it with their own pets.",
+ "steps": [
+  "Pick a clear photo of your pets, or two photos you can combine into one picture first. Faces and markings should be easy to see.",
+  "Upload it to an image-to-video tool and paste the main prompt. Ask for a 6 to 8 second clip.",
+  "If the pets change shape or colour, try a shorter clip or a simpler kitchen.",
+  "Add a calm morning sound, then let the spill land on the last beat. Business accounts should use a sound cleared for commercial use."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the milk flood",
+   "text": "Animate the two pets from this photo standing on their back legs at a kitchen counter, making coffee like careful baristas. One holds a mug steady with both paws. The other tips a carton of milk into it, very slowly and proudly. The mug fills, then keeps filling, and milk spills over and spreads across the whole counter. Both pets freeze and stare at the camera, wide-eyed. Bright morning light, tidy home kitchen, camera fixed at counter height. Keep each pet's face, fur colour and markings exactly the same as the photo. Gentle, funny, 7 seconds, no text."
+  },
+  {
+   "label": "Variation: one pet, one very serious latte",
+   "text": "Animate my [dog / cat] from this photo at a kitchen counter wearing a small apron. It concentrates hard while pouring milk into a mug, tongue slightly out. The foam rises, wobbles and slowly slides over the edge onto the counter. My pet looks at the spill, then back at the camera, totally calm, and pushes the mug toward me. Soft morning light, camera still. Keep my pet's face and markings the same as the photo. 6 seconds, no text."
+  },
+  {
+   "label": "Variation: the snowy-morning hot chocolate",
+   "text": "Animate the pets from this photo at a cozy kitchen window with snow falling outside. They're making hot chocolate. One adds marshmallows one at a time, the other keeps adding more until a tower of marshmallows tips over and rolls across the counter. They both look at the camera, then at each other. Warm light, camera fixed. Keep each pet's face and markings the same as the photo. 7 seconds, no text."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Animate the pet in this photo (our shop's own pet, or a team member's pet, with their okay) behind the counter of my [cafe / bakery / shop]. It tries to help by pouring milk into a cup, very proudly, and the milk overflows across the counter. The pet freezes and looks at the camera. Keep the shop looking like a real, tidy space with no logos or signs. Keep the pet's face and markings the same as the photo. Bright, friendly, 7 seconds, no text."
+  }
+ ],
+ "tips": [
+  "Say \"slowly\" for the pour. Fast motion is where AI pets start to warp.",
+  "End on the pets staring at the camera. That freeze is the joke.",
+  "Label it as AI in the app's settings so nobody thinks your pets really did this.",
+  "For your shop, add your own caption about your real coffee or opening hours; the spill is just the hook."
+ ],
+ "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}
