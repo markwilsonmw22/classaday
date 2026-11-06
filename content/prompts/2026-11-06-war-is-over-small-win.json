@@ -1,0 +1,40 @@
+{
+ "slug": "war-is-over-small-win",
+ "title": "\"War is over.\": the tiny battle you finally won",
+ "published": "2026-11-06T18:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Put \"war is over.\" on screen, then show the small everyday fight you just won. AI helps you find the funniest, most relatable wins.",
+ "why": "New Engen's Instagram trends list for November 2026, updated November 5, includes \"War Is Over\": creators set a classic holiday song under the on-screen text \"war is over.\" and end the clip on a small personal win. It's an early holiday-season format that works with any ordinary footage.",
+ "steps": [
+  "Use the main prompt to get a list of small wins that fit your life.",
+  "Film the win itself: the last dish put away, the inbox at zero, the cat finally in the carrier.",
+  "Add \"war is over.\" as the first text, then a second line that names the win.",
+  "Keep it 5 to 8 seconds and end on the win, not on you talking."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "I'm making a short holiday-season video. The on-screen text says \"war is over.\" and then a second line names a tiny everyday battle I just won. Write 12 second lines: 4 about home, 4 about work or school, 4 about the cold-weather season in Canada (for example: \"the winter tires are on\" or \"I found both mitts\"). About me: [your home, job, pets, habits]. Keep each line under 10 words. Light and playful, no hashtags, no emojis."
+  },
+  {
+   "label": "Variation: match my clip",
+   "text": "I've filmed this clip: [describe it, for example: me closing a perfectly packed dishwasher]. Write 6 short \"war is over.\" follow-up lines that fit what's on screen, from deadpan to dramatic. Then pick the one that lands best and say why in one sentence."
+  },
+  {
+   "label": "Variation: family or roommates",
+   "text": "Write 8 \"war is over.\" lines about small, friendly household disputes finally settled, like who gets the good blanket or where the remote lives. Keep them warm and silly, never mean, and nothing about real conflict or the news. For each, suggest a one-shot clip I could film at home with people who've agreed to be in it."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 8 \"war is over.\" lines about small, real wins behind the scenes, like [one or two real things, for example: the new shelving is finally up, the holiday menu is done]. For each, suggest a behind-the-scenes shot. Don't invent sales, numbers, discounts or customer quotes."
+  }
+ ],
+ "tips": [
+  "Smaller is funnier. A win everyone recognises beats a big achievement.",
+  "Let the clip show the win before the second line appears, so the text lands as the punchline.",
+  "Keep it about everyday life. Skip anything that sounds like real-world conflict.",
+  "Business accounts may not have the trending song. Use a licensed holiday track or an original sound."
+ ],
+ "tags": ["text", "holiday", "relatable", "reels", "business"]
+}

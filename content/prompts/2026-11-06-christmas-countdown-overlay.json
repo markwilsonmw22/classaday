@@ -1,0 +1,40 @@
+{
+ "slug": "christmas-countdown-overlay",
+ "title": "The Christmas countdown: \"6 Fridays left\" over your cosiest clip",
+ "published": "2026-11-06T18:38:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Count down to Christmas in fun units, like Fridays or snowfalls, over cosy everyday clips. AI writes the countdown lines and plans a weekly series.",
+ "why": "Startups.co.uk's list of social media trends for November 2026, published November 2, includes the Christmas countdown: overlays such as \"99 days until Christmas\" on cosy clips, with milestone updates like \"10 Fridays left.\" Our earlier holiday packs cover decorating and booking; this one is about the countdown itself.",
+ "steps": [
+  "Check today's date and work out your real number. From Friday, November 6, 2026, there are 49 days and 6 more Fridays before Christmas Day.",
+  "Use the main prompt to turn that number into fun units and lines.",
+  "Film something cosy: a mug by the window, the first snow, a pet under a blanket. Put the countdown line on screen.",
+  "Post an update at each milestone with the same text style, so it reads as a series."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Today is [date] and Christmas is [number] days away. Turn that into 10 fun countdown lines for short videos, using different units: Fridays left, weekends left, paydays, hot chocolates, snowfalls, Sunday dinners, episodes of my favourite show. Do the maths for each one and show your working in brackets so I can check it. About me: [your routines, where you live in Canada]. Keep each line under 8 words. No emojis."
+  },
+  {
+   "label": "Variation: weekly series plan",
+   "text": "Plan a weekly Christmas countdown series from [today's date] to December 24. For each week give: the countdown line (for example \"5 Fridays left\"), one cosy clip idea I can film at home or outside in [town], and a short caption. Make each week feel a little more festive than the last, starting with late-fall vibes and ending with full holiday mode."
+  },
+  {
+   "label": "Variation: countdown card image",
+   "text": "Make a square image of a cosy countdown card. A small chalkboard sign leans on a frosty windowsill with a steaming mug and a sprig of evergreen. The sign reads \"[number] Fridays left\" in neat hand-lettering. Soft morning light, gentle snow outside, warm and calm colours. Leave clear space at the top for a caption."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 6 countdown lines for our account that tie the real date to things we're actually doing, like [for example: the holiday menu starts, the last day we can ship before Christmas, our real holiday hours]. Use only dates I give you. Don't invent deadlines, \"last chance\" pressure, discounts or limited stock."
+  }
+ ],
+ "tips": [
+  "Check the maths. People love to correct a wrong countdown in the comments.",
+  "Pick one text style and colour and keep it for every update, so followers spot the series.",
+  "Odd units are more fun than days. \"7 more snow shovellings\" gets a smile.",
+  "Businesses: count down to real dates only, like real shipping cut-offs or holiday hours. Never fake urgency."
+ ],
+ "tags": ["holiday", "christmas", "countdown", "reels", "business"]
+}
