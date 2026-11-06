@@ -1,0 +1,40 @@
+{
+ "slug": "sorry-i-wasnt-listening-daydream",
+ "title": "\"Sorry, I wasn't listening\": turn your holiday daydream into a clip",
+ "published": "2026-11-06T00:47:00Z",
+ "kind": "video",
+ "tools": ["Gemini", "Veo", "Kling", "Runway", "ChatGPT"],
+ "summary": "Caption \"Sorry, I wasn't listening. I was thinking about…\" and show the daydream. AI turns a photo into the snowy trip, party or market in your head.",
+ "why": "New Engen's Instagram trends list for November 2026, updated November 5, includes \"Sorry, I Wasn't Listening\": text reads \"Sorry, I wasn't listening…\" and finishes with a daydream, while a classic holiday song plays and the footage shows the trip, party or decorated street. The page suggests one line of text and 7 to 15 seconds, and says brands can tease holiday events or launches.",
+ "steps": [
+  "Pick the daydream: a trip, a holiday party, a snowy street, a cosy night in, or your first day off.",
+  "Make a still with the image prompt (use your own photo if you want to be in it), then turn it into a short clip with the video prompt.",
+  "Add one line of text: \"Sorry, I wasn't listening. I was thinking about ___.\" You can open on a quick real clip of you looking far away first.",
+  "Keep it 7 to 15 seconds. Use the trending song if your account has it, or an upbeat original sound."
+ ],
+ "prompts": [
+  {
+   "label": "Image prompt: the daydream",
+   "text": "Using my photo, place me in this daydream: [your daydream, for example: a small-town holiday market at dusk, light snow, strings of warm lights, a hot drink in my hands]. Keep my face, hair and build exactly as they are. Make it look like a soft, dreamy film still: warm glow, gentle haze at the edges, shallow depth of field, slightly faded colours. Vertical 9:16. No text, no logos."
+  },
+  {
+   "label": "Video prompt: bring it to life",
+   "text": "Animate this image into a 6-second vertical dream clip. The camera drifts slowly forward. Snow falls softly, the lights twinkle and my breath shows in the cold air. I glance up and smile. Keep my face and clothes the same as the image. Dreamy, warm and calm. No text, no logos, no fast cuts."
+  },
+  {
+   "label": "Variation: no photo of me",
+   "text": "Create a vertical 9:16 dream scene of [your daydream, for example: a cabin window looking out on a snowy lake, a mug of cocoa on the sill, a crackling fire reflected in the glass]. Soft focus, warm light, a gentle haze like a memory. No people, no text, no logos. Then describe a slow 6-second camera move to animate it."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. We have [a real upcoming holiday event, product or opening date]. Write 5 lines that start \"Sorry, I wasn't listening. I was thinking about…\" and tease it. Then write an image prompt for a dreamy, warm, snowy scene of [your shop, product or event setting] with no people, no text and no logos. Don't invent discounts, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Make the daydream specific. \"The first skate on the outdoor rink\" beats \"the holidays\".",
+  "A quick real clip of you staring into space, then the dream, makes the joke clearer.",
+  "If the face drifts in the video, use a wider shot or a scene with no people.",
+  "Business accounts may not have the trending song. An upbeat original sound works too."
+ ],
+ "tags": ["holiday", "video", "image-to-video", "reels", "business"]
+}

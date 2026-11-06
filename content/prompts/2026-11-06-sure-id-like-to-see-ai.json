@@ -1,0 +1,40 @@
+{
+ "slug": "sure-id-like-to-see-ai",
+ "title": "\"AI will replace you\" / \"Sure, I'd like to see AI…\": the messy part of your job",
+ "published": "2026-11-06T00:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Open on \"AI will replace you,\" then show the messiest, most human part of your day. AI helps you pick the funniest moments to film.",
+ "why": "New Engen's Instagram trends list for November 2026, updated November 5, includes \"AI Will Replace You\": a Reel opens with that line, then cuts to \"Sure, I'd like to see AI…\" over an awkward real-life task, set to a loud rock track. The page calls it affectionate rather than anti-tech, suggests 7 to 12 seconds, and says it suits trades, hospitality and service businesses.",
+ "steps": [
+  "Use the main prompt to list the oddly specific, hands-on parts of your work or home life.",
+  "Pick one you can film today. Bonus points if it goes a little wrong.",
+  "Put \"AI will replace you\" on screen for the first second, then \"Sure, I'd like to see AI…\" plus the task as the clip starts.",
+  "Keep it 7 to 12 seconds. Use a trending sound if your account has it, or a high-energy original sound."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short, playful video. It opens with the text \"AI will replace you\", then cuts to me doing a messy, very human task with the text \"Sure, I'd like to see AI…\" and the task. Here's my job and daily life: [what you do, your home life, hobbies]. Give me 10 ideas. For each one write the finished line (under 12 words, for example \"Sure, I'd like to see AI carry a ladder through a tiny doorway\") and the shot to film. Keep it friendly. Don't make fun of AI users or of anyone else."
+  },
+  {
+   "label": "Variation: parent and home life",
+   "text": "Write 8 \"Sure, I'd like to see AI…\" lines about the chaotic parts of running a home: [your situation, for example: two kids, a dog, a busy kitchen]. Make them specific and a bit silly, like \"Sure, I'd like to see AI find the other mitten before the bus comes.\" Add a 3-second shot idea for each."
+  },
+  {
+   "label": "Variation: plan the shot",
+   "text": "My line is: \"Sure, I'd like to see AI [your task]\". Plan a 10-second clip I can film with my phone. Tell me where to put the camera, when the text should appear, and one small moment of things going slightly wrong that makes it funny. Keep it safe: no risky stunts."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 6 \"Sure, I'd like to see AI…\" lines that show the skilled, hands-on work behind what we do, like [one or two real tasks]. Each line should make customers appreciate the human effort. Add a shot idea for each and one short caption. Don't invent sales, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Specific beats general. \"Sure, I'd like to see AI parallel park a cube van\" is funnier than \"Sure, I'd like to see AI do my job\".",
+  "Let it go wrong a little. A dropped box or a ladder stuck in a doorway is the payoff.",
+  "Keep it kind. The joke is about the job, not about AI or the people who use it.",
+  "Business accounts may not have the trending song. An upbeat original sound works too."
+ ],
+ "tags": ["text", "funny", "work", "instagram", "business"]
+}

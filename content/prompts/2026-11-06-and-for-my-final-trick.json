@@ -1,0 +1,40 @@
+{
+ "slug": "and-for-my-final-trick",
+ "title": "\"And for my final trick…\": a tiny promise to yourself",
+ "published": "2026-11-06T00:46:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Over a quiet, moody clip, write \"and for my final trick\" and finish it with a funny or heartfelt promise. AI helps you find the line.",
+ "why": "New Engen's Instagram trends list for November 2026, updated November 5, includes \"And For My Final Trick\": text that starts \"and for my final trick\" and ends with a relatable or sincere promise, over a simple clip. The page says some creators add a fisheye effect for a magic-show feel, suggests 6 to 10 seconds, and notes small business owners have picked it up to share the why behind their work.",
+ "steps": [
+  "Use the main prompt to get a list of endings, from silly to sincere.",
+  "Film a simple, moody clip: you at your desk, on a walk, or doing your work with your hands.",
+  "Add the text \"and for my final trick\" and finish the sentence. Try a fisheye effect if your editor has one.",
+  "Keep it 6 to 10 seconds and leave the text up long enough to read twice."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short video. The on-screen text starts with \"and for my final trick\" and ends with a promise to myself. Write 12 endings: 4 funny, 4 relatable, 4 sincere. Examples of the tone: \"I'll turn one errand into a whole day of treats\" or \"I'll stop waiting until I feel ready.\" About me and what I'm working on: [your goals, habits, this season of life]. Keep each ending under 14 words. No hashtags, no emojis, nothing preachy."
+  },
+  {
+   "label": "Variation: match the clip",
+   "text": "I've filmed this clip: [describe it, for example: me pouring coffee at 6 a.m. on a dark November morning]. Write 6 \"and for my final trick…\" endings that fit what's on screen, from playful to heartfelt. Then pick the one you think lands best and say why in one sentence."
+  },
+  {
+   "label": "Variation: the series",
+   "text": "Plan a 5-part \"and for my final trick\" series for the rest of November. Each part gets one promise, one simple shot idea and a one-line caption. The promises should build on each other, from small (\"I'll drink a glass of water before coffee\") to bigger. About me: [your goals]. Keep it realistic and kind to myself."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 8 \"and for my final trick…\" endings that share why we do this work or what we're promising our customers this season, like [one or two real things you care about]. Mix one or two light, funny ones with sincere ones. For each, suggest a behind-the-scenes shot. Don't invent sales, numbers, discounts or customer quotes."
+  }
+ ],
+ "tips": [
+  "Sincere often works better than funny. A real goal said plainly is what people share.",
+  "Choose a calm, slightly dark clip. Moody light makes the text feel like the big reveal.",
+  "Leave the text on screen for the whole clip so nobody misses it.",
+  "Business accounts may not have the trending song. Use an original sound if it isn't available."
+ ],
+ "tags": ["text", "motivation", "instagram", "reels", "business"]
+}
