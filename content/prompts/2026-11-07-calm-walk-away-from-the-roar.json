@@ -1,0 +1,40 @@
+{
+  "slug": "calm-walk-away-from-the-roar",
+  "title": "Calm walk-away: you stroll off while the whole stadium roars",
+  "published": "2026-11-07T00:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Gemini", "Runway"],
+  "summary": "Turn one photo into a clip of you walking calmly away from a packed, roaring stadium, totally unbothered. Add a caption about the chaos you're skipping.",
+  "why": "Starrd's monthly AI video trends roundup, updated November 5, 2026, lists a one-photo \"stadium calm down\" clip in its November section, where a calm person walks away from a roaring stadium, and says it has been trending since late October 2026.",
+  "steps": [
+    "Pick a clear, full-body or waist-up photo of yourself, or a friend or family member who has agreed.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a 6 to 8 second clip.",
+    "Add a caption that names the chaos you're walking away from, like \"Me leaving the group chat after 200 messages\".",
+    "Pick a crowd or calm-music sound from the app's library. Business accounts should use a sound cleared for commercial use."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: calm in the chaos",
+      "text": "Animate the person in this photo walking slowly toward the camera along the edge of a huge, packed stadium at night. Behind them the crowd is on its feet, cheering, waving and jumping under bright floodlights. The person is completely calm: hands in pockets, relaxed face, steady pace, not looking back once. The camera moves backward in front of them at the same speed. Keep their face, hair and outfit exactly the same as the photo. No team colours, no logos, no readable signs. 7 seconds, no text."
+    },
+    {
+      "label": "Variation: the family dinner",
+      "text": "Animate the person in this photo walking calmly out of a busy dining room toward the camera. Behind them a big family dinner is loud and lively: people laughing, passing plates, talking over each other. The person carries a small plate of dessert and looks peaceful, with a tiny smile. Slow camera move backward, warm indoor light. Keep their face and clothes the same as the photo. 7 seconds, no text."
+    },
+    {
+      "label": "Variation: my pet ignores the party",
+      "text": "Animate my [dog / cat] from this photo strolling slowly toward the camera down a hallway, totally unbothered. Behind it, out of focus, a lively birthday party is going on with balloons, music and people dancing. The pet keeps a steady, dignified walk and looks straight ahead. Camera low to the floor, moving backward with it. Keep the pet's markings and face the same as the photo. 6 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate the person in this photo walking calmly toward the camera through my [type of business: café, shop, studio] during a busy rush. Behind them, out of focus, the space is full and buzzing. They hold a finished order in both hands and look relaxed and confident, like everything is under control. Slow camera move backward, warm light. Keep their face and clothes the same as the photo. Keep the shop looking real and tidy. No logos, no text, 7 seconds."
+    }
+  ],
+  "tips": [
+    "The joke is the contrast. Ask for a \"steady pace\" and \"not looking back\" so the person stays calm while everything behind them is loud.",
+    "Keep crowds generic. Leave out team names, jerseys and logos.",
+    "Only use photos of people who said yes, and never anyone famous.",
+    "For your shop, the caption does the selling: \"Busy Saturday? We've got it.\""
+  ],
+  "tags": ["video", "image-to-video", "funny", "relatable", "business"]
+}

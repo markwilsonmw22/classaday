@@ -1,0 +1,40 @@
+{
+  "slug": "bottle-kick-off-the-box",
+  "title": "The bottle kick: you (or your pet) knock a row of bottles off a box",
+  "published": "2026-11-07T00:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Gemini", "Runway"],
+  "summary": "Turn one photo into a short clip where you, or your pet, neatly kick a row of plastic bottles off the top of a box. Simple, silly and easy to share.",
+  "why": "Starrd's monthly AI video trends roundup, updated November 5, 2026, lists a one-photo \"bottle kick challenge\" in its November section, where a person or a pet kicks bottles off a box.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself, a friend or family member who has agreed, or your pet. Shots with feet or paws visible work best.",
+    "Upload it to an image-to-video tool and paste a prompt. Ask for a 5 to 6 second clip.",
+    "If the bottles move strangely, try again and ask for \"three empty plastic bottles\" and \"one clean kick\".",
+    "Add an upbeat sound from the app's library and a short caption. Business accounts should use a sound cleared for commercial use."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: one clean kick",
+      "text": "Animate the person in this photo standing next to a plain cardboard box about waist high, with three empty plastic water bottles standing in a row on top. They take one step, swing their leg up in a smooth, controlled kick and knock all three bottles off the box. The bottles tumble and bounce on the floor. The person lands lightly and grins at the camera. Camera fixed at waist height, bright living room, daylight. Keep their face, hair and outfit exactly the same as the photo. Plain bottles with no labels. 6 seconds, no text."
+    },
+    {
+      "label": "Variation: my pet does it better",
+      "text": "Animate my [dog / cat] from this photo sitting on a low cardboard box with three small empty plastic bottles lined up beside it. My pet looks at the camera, then calmly pushes the bottles off the box one by one with a paw. They drop onto a soft rug. My pet looks back at the camera, pleased with itself. Camera low and fixed, cozy home, warm light. Keep the pet's markings and face the same as the photo. Plain bottles with no labels. 6 seconds, no text."
+    },
+    {
+      "label": "Variation: the near miss",
+      "text": "Animate the person in this photo lining up a big kick at three empty plastic bottles on top of a cardboard box. They kick, miss every bottle, spin halfway round, and then one bottle slowly tips over on its own. They freeze and stare at the camera. Camera fixed, bright room. Keep their face and clothes the same as the photo. Plain bottles with no labels. Funny, light mood, 6 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate the person in this photo standing in my [type of business: gym, dance studio, café, shop] next to a box with three empty plastic bottles on top. They knock all three off with one neat kick, then catch one before it hits the floor and smile at the camera. Camera fixed at waist height, warm light. Keep their face and clothes the same as the photo. Keep the space looking real and tidy. Plain bottles, no logos, no text, 6 seconds."
+    }
+  ],
+  "tips": [
+    "Ask for \"empty plastic bottles\" and \"plain, no labels\". It keeps the clip safe-looking and keeps brand logos out.",
+    "A fixed camera at waist height makes the kick easy to follow.",
+    "Only use photos of people who said yes, and never anyone famous.",
+    "Trying it for real? Use empty plastic bottles and clear space around you."
+  ],
+  "tags": ["video", "image-to-video", "challenge", "pets", "business"]
+}
