@@ -1,0 +1,40 @@
+{
+  "slug": "hip-pop-runway-walk",
+  "title": "The hip-pop runway walk: slow stride, one pop, a not-so-sure turn",
+  "published": "2026-11-07T06:47:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Gemini"],
+  "summary": "Turn one photo into a slow, dramatic runway walk down your hallway, with one big hip pop and an unsure little turn to the camera at the end.",
+  "why": "New Engen's TikTok trends report (updated November 5, 2026), Anijam's November 2026 TikTok roundup and Postdom's Instagram report for November 2–8 all list a runway-walk trend that recreates a viral October fashion-show walk: a slow stride, a hip pop and a hesitant turn to the camera.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself, or a friend or family member who has agreed. A pet photo works too.",
+    "Upload it to an image-to-video tool, paste the main prompt and ask for 7 to 9 seconds.",
+    "Check the turn at the end. If it looks too confident, ask for \"a small, unsure pause before turning\".",
+    "Add a caption about your ordinary runway, like \"Walking to the fridge at 11 p.m.\". Pick a sound from the app's library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the hallway runway",
+      "text": "Animate the person in this photo walking slowly toward the camera down a long, narrow hallway like it's a fashion runway. Long, confident steps, shoulders back, chin up. Halfway down, they stop and do one big, dramatic hip pop to the side. Then they take two more steps, pause, look a little unsure, and do a small, awkward half-turn to the camera with a shy smile. Bright, slightly harsh light like a runway. Keep their face, hair and outfit exactly the same as the photo. No logos, no text, 8 seconds."
+    },
+    {
+      "label": "Variation: my pet walks the runway",
+      "text": "Animate my [dog / cat] from this photo strutting slowly toward the camera down a hallway, like a model on a runway. Head high, slow and proud steps. Halfway, it pauses and swings its hips to one side. At the end it stops, looks unsure, and turns its head to the camera with a puzzled look. Low camera at floor level, bright light from above. Keep the pet's markings and face the same as the photo. Funny, no text, 7 seconds."
+    },
+    {
+      "label": "Variation: the winter boots walk",
+      "text": "Animate the person in this photo doing a slow runway walk toward the camera down a snowy sidewalk in winter boots, a puffy coat and a toque. Long, dramatic steps. Halfway down, one big hip pop. At the end, they slip just a little, catch themselves, and turn to the camera with an embarrassed laugh. Soft grey winter light, light snow falling. Keep their face the same as the photo. No logos, no text, 8 seconds."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of my team member, who has agreed, walking slowly toward the camera down the main aisle of my [type of business: boutique, salon, shop] like it's a runway. They wear or carry one of my real products. Halfway down, one confident hip pop. At the end, a small, unsure turn to the camera and a friendly smile. Bright, clean light. Keep the person, the product and the shop looking real. No logos, no text, 8 seconds."
+    }
+  ],
+  "tips": [
+    "The joke is the ending. Ask for the turn to look unsure, not polished.",
+    "Describe the walk, not the show or the model. Never name or copy a real person.",
+    "Only use photos of people who said yes, and never anyone famous.",
+    "Ordinary settings make it funnier: a hallway, a grocery aisle, the driveway."
+  ],
+  "tags": ["video", "image-to-video", "fashion", "pets", "business"]
+}

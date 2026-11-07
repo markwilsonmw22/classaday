@@ -1,0 +1,40 @@
+{
+  "slug": "add-to-cart-hands",
+  "title": "\"Add to cart\": push each thing you love into the frame",
+  "published": "2026-11-07T06:45:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Claude", "Kling", "Veo"],
+  "summary": "Hands slide one item at a time into the frame, and each one gets a quick \"add to cart\". Use AI to plan your lineup, write the labels and animate a still.",
+  "why": "New Engen's weekly Instagram trends report, updated November 6, 2026, lists \"Add to Cart\": hands push products into the frame one at a time, each answered with \"add to cart\", in clips of about 8 to 15 seconds using original audio.",
+  "steps": [
+    "Use the planning prompt to pick 4 to 6 items and a short label for each. Keep the order from fun to best.",
+    "Film from above on a plain table. Slide each item in with one hand, hold it for a second, then say or show \"add to cart\". One cut per item.",
+    "No camera handy? Take one flat-lay photo and use the image-to-video prompt to animate the hands.",
+    "Add each label as on-screen text and keep the whole clip under 15 seconds. Business accounts should use original audio or a sound cleared for commercial use."
+  ],
+  "prompts": [
+    {
+      "label": "Planning prompt: my lineup",
+      "text": "I'm making a short \"add to cart\" video. Hands slide items into the frame one at a time and each one gets \"add to cart\". My theme is [for example: my cosy November must-haves / gifts for my sister / things I use every day]. Suggest 6 everyday items that fit, in order from small and funny to the best one last. For each, write an on-screen label of 5 words or fewer. Then suggest one twist ending, like an item that gets pushed back out. No brand names."
+    },
+    {
+      "label": "Image-to-video: the sliding hands",
+      "text": "Animate this top-down photo of items on a table. Start with an empty part of the table on the left. Then, one at a time, a relaxed hand slides each item into the centre of the frame, pauses for one second, and pulls back. Steady overhead camera, no camera movement. Soft daylight, gentle shadows. Keep every item's shape, colour and size exactly as in the photo. No logos, no readable labels, no text. 10 seconds."
+    },
+    {
+      "label": "Variation: my pet decides",
+      "text": "Animate this top-down photo of a wooden floor. A hand slides a pet toy into the frame, and a paw from the side pats it as if to say yes. The hand slides a second toy in, and the paw pushes it back out. Then a third toy, and the paw pulls it close. Steady overhead camera, warm indoor light. Keep the toys and the paw's colour the same as the photo. Playful, no text, 9 seconds."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business: bakery, candle shop, bookstore]. Plan a 12-second \"add to cart\" video for my holiday stock. Pick 5 of these real products: [list your products]. Put them in an order that builds to my best seller. For each, write a label of 5 words or fewer that says what it's for, like \"for the host\" or \"for the teacher\". End with a line that tells people how to order. Keep it honest: no fake prices, no fake discounts, no \"almost sold out\"."
+    }
+  ],
+  "tips": [
+    "One item per cut, about one to two seconds each. The rhythm is the fun part.",
+    "Shoot straight down on a plain surface so the hands and items stand out.",
+    "Save the best or funniest item for last, or end with one that gets pushed back out.",
+    "If you animate a photo, check that the items didn't change shape or pick up fake labels."
+  ],
+  "tags": ["video", "instagram", "gift-ideas", "product-photo", "business"]
+}
