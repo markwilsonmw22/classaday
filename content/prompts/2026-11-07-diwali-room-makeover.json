@@ -1,0 +1,40 @@
+{
+ "slug": "diwali-room-makeover",
+ "title": "Diwali room makeover: your own room, dressed for the festival",
+ "published": "2026-11-07T12:40:00Z",
+ "kind": "image",
+ "tools": ["ChatGPT", "Gemini"],
+ "summary": "Upload a photo of your living room, balcony or front door and see it decorated for Diwali with diyas, marigolds, lanterns and a rangoli, before you decorate.",
+ "why": "Diwali falls on Sunday, November 8 this year. A Sunday Guardian guide published November 6 shares ChatGPT and Gemini prompts for Diwali home decoration ideas, from balconies and entrances to rangoli. Our earlier Diwali glow portrait pack puts people in the scene; this one restyles your real room instead.",
+ "steps": [
+  "Take a wide, bright photo of the space you want to decorate: a living room, balcony, entrance or shop front. Tidy it a little first.",
+  "Upload it and paste the main prompt. Ask the tool to keep the room's layout and furniture the same.",
+  "Try one style at a time (cosy, minimal or evening glow) and save the ones you like.",
+  "Post the before and after side by side, or use the picture as your shopping and planning list."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Using my photo of this room, keep the walls, windows, furniture and layout exactly the same. Decorate it for Diwali evening. Place rows of small clay diyas along the window ledge and side tables, hang strings of orange and yellow marigold flowers across the doorway and window, and add a few paper lanterns in warm colours. Put a round, colourful rangoli made of flower petals and coloured powder on the floor near the entrance. Add soft fairy lights and a few brass bowls with floating candles. Warm, golden lamplight, gentle shadows, cosy and festive but not cluttered, photo-realistic, same camera angle as my photo."
+  },
+  {
+   "label": "Variation: minimal and calm",
+   "text": "Using my photo of this room, keep everything in the room the same. Add a simple, minimal Diwali look: a short line of white clay diyas on one shelf, one small marigold garland, a single round rangoli in soft pastel colours, and warm light from a few candles. Lots of empty space, clean lines, calm and elegant. Photo-realistic, same camera angle."
+  },
+  {
+   "label": "Variation: balcony or front step in the cold",
+   "text": "Using my photo of this balcony or front step, keep the railings, door and walls the same. Decorate it for Diwali night in a Canadian November: diyas in glass holders so the wind can't blow them out, marigold garlands on the railing, warm fairy lights and a small rangoli on a mat by the door. A light frost on the edges, a cool blue night sky, warm glow against the cold. Photo-realistic, same camera angle."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Using my photo of my shop, café or studio, keep the counter, shelves, signage area and layout the same. Decorate it for Diwali: diyas along the counter, marigold garlands over the door, warm paper lanterns, and a rangoli near the entrance where customers walk in. Keep my products visible and uncluttered. Warm, welcoming evening light, photo-realistic. Do not add any logos, prices or text."
+  }
+ ],
+ "tips": [
+  "Shoot in daylight from a corner of the room. A wide, clear photo gives the AI more to keep.",
+  "If the AI moves your furniture, say \"keep every object where it is, only add decorations\" and try again.",
+  "Real flames near curtains and garlands are a fire risk. Use battery diyas or glass holders when you copy the look at home.",
+  "Use the picture as a plan, and show the real result next to it once you've decorated."
+ ],
+ "tags": ["diwali", "festival", "decor", "before-after", "business"]
+}
