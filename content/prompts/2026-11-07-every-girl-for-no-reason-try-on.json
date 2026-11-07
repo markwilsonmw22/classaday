@@ -1,0 +1,40 @@
+{
+ "slug": "every-girl-for-no-reason-try-on",
+ "title": "\"For absolutely no reason\": the pyjamas-to-new-outfit try-on",
+ "published": "2026-11-07T18:45:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "You're scrolling in pyjamas, then for absolutely no reason you're trying on a new outfit to a grand waltz. AI writes the on-screen lines.",
+ "why": "Later's Instagram Reels trends list, updated November 6, 2026, adds \"Every girl for absolutely no reason\": a creator in pyjamas is scrolling on their phone, then for absolutely no reason tries on a new outfit, set to a famous classical waltz. Later says it's perfect for fashion and lifestyle creators, or brands, showing off their latest buys.",
+ "steps": [
+  "Use the main prompt to get a set of short on-screen lines for your version.",
+  "Film two parts: you on the couch in pyjamas, scrolling, then you in the new outfit doing a slow, dramatic spin or walk.",
+  "Put the first line over the couch shot and cut to the outfit on the big swell of the music.",
+  "Keep it under 15 seconds. Business accounts should use a sound cleared for commercial use, or a royalty-free classical recording."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short Instagram Reel. It starts with me in pyjamas scrolling on my phone, then cuts to me trying on a new outfit with a grand, over-the-top waltz playing, \"for absolutely no reason\". Write 10 on-screen text ideas for the first shot, like \"Me at 11 p.m. with nowhere to be:\" or \"Every [type of person] for absolutely no reason:\". Keep each one under 12 words. Then give me 3 ideas for a dramatic but simple move in the outfit shot (a slow turn, a walk down the hallway, a twirl in the kitchen). Funny, warm, no hashtags, no emojis."
+  },
+  {
+   "label": "Variation: Canadian winter edition",
+   "text": "Write 8 on-screen lines for a \"for absolutely no reason\" try-on Reel with a Canadian winter twist. I'm on the couch in pyjamas, then suddenly I'm modelling my full winter gear (new boots, a big parka, a toque) in the living room like it's a red carpet. Make the lines about things like the first snow, the fall-back time change or staying in on a cold night. Under 12 words each, funny and kind."
+  },
+  {
+   "label": "Variation: not just fashion",
+   "text": "Write 8 \"for absolutely no reason\" Reel ideas that aren't about clothes. Each one starts with me doing nothing on the couch, then cuts to me very grandly doing something small: setting the table with the good dishes, putting my dog in its winter sweater, trying on my holiday party look in November. Give the on-screen line (under 12 words) and the shot for each."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business, e.g. a clothing boutique or gift shop] in [town]. Write 6 \"for absolutely no reason\" Reel ideas that show real things we sell. Here's what we have: [list real products]. Each idea starts with someone relaxing at home, then cuts to them trying or using one of our products in a grand, playful way. Give the on-screen line and the shot. Only use products I listed. Don't invent prices, sales, stock levels or customer quotes."
+  }
+ ],
+ "tips": [
+  "The bigger the contrast, the better: messy bun and old pyjamas, then full outfit.",
+  "Cut on the music's big swell. Timing is most of the joke.",
+  "Change the line to fit you. \"Every girl\" is how it started, but \"every dad\" or \"every cat owner\" works too.",
+  "For a shop, film the outfit part in your own store and tag the real items in the caption."
+ ],
+ "tags": ["fashion", "try-on", "instagram", "funny", "business"]
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "goodbye-2026-hello-2027-hug",
+ "title": "Goodbye 2026, hello 2027: you hug your future self, then they drive off",
+ "published": "2026-11-07T18:45:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+ "summary": "One photo of you becomes a short clip: 2026 you hugs 2027 you on a rainy road, then the new-year you gets in a car and drives away.",
+ "why": "Neurocartel's roundup of AI video trends for early November 2026, published November 2, lists \"Goodbye 2026 Welcome 2027\": two versions of the same person hug on a wet road under two year signs, then 2027 drives off. It says the earliest tutorial appeared on October 28 and that it runs from a single photo.",
+ "steps": [
+  "Pick one clear photo of yourself, face to the camera, good light. Only use someone else's photo if they've agreed.",
+  "Upload it to an image-to-video tool and paste the main prompt. Ask for a 5 to 8 second clip.",
+  "If the two versions of you look like different people, try a shorter clip or a simpler outfit change.",
+  "Add a soft, emotional sound and post it with your own caption about the year. Business accounts should use a sound cleared for commercial use."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the year-end hug",
+   "text": "Using the person in this photo, make two versions of them standing on a quiet, wet road at dusk. Above the left one is a simple road sign that reads \"2026\". Above the right one is a matching sign that reads \"2027\". The 2026 version wears a slightly worn everyday outfit. The 2027 version wears a fresh, neat outfit. They walk toward each other and share a long, warm hug. Then the 2027 version smiles, steps into a plain car with no logos, and drives slowly away while the 2026 version waves. Light rain, glowing street lights, reflections on the road. Keep the face exactly the same as the photo in both versions. Cinematic, gentle, 7 seconds, no other text."
+  },
+  {
+   "label": "Variation: snowy Canadian street",
+   "text": "Using the person in this photo, make two versions of them on a snowy small-town street at night, with soft snow falling. Two simple signs above them read \"2026\" and \"2027\". The 2026 version is in a toque and a well-used winter coat. The 2027 version is in a bright new parka. They hug, laugh, and the 2027 version climbs into a plain car with no logos and drives off, tail lights glowing in the snow. Keep the face the same as the photo in both versions. Warm, hopeful, 7 seconds."
+  },
+  {
+   "label": "Variation: you and your pet",
+   "text": "Using the person and the pet in this photo, show two versions of the pair on a wet road at dusk under signs reading \"2026\" and \"2027\". The 2026 pair walks up to the 2027 pair. The two people hug and the two pets sniff noses. Then the 2027 pair gets into a plain car with no logos, the pet looking out the back window, and they drive slowly away. Keep the person's face and the pet's markings the same as the photo. Gentle, a little funny, 7 seconds."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "Using this photo of [me / our shopfront / our best-selling product], make a short year-end clip on a wet road at dusk. A simple sign reads \"2026\" on the left and \"2027\" on the right. The 2026 version [of me / of the product] hugs or meets the 2027 version, which is holding [one real new thing we're planning, e.g. a new menu card or a new product]. Then the 2027 version drives off in a plain car with no logos. No other text, no signs or brand names besides the years. Keep the face or product the same as the photo. Warm, cinematic, 7 seconds."
+  }
+ ],
+ "tips": [
+  "Keep the outfits clearly different. That's what tells viewers which year is which.",
+  "Say \"slowly\" for the drive-away so the car doesn't warp or vanish.",
+  "Label it as AI in the app's settings so nobody thinks it's real footage.",
+  "For a business, only show plans you're sure of. Don't tease a product or date you can't deliver."
+ ],
+ "tags": ["new-year", "video", "image-to-video", "cinematic", "business"]
+}

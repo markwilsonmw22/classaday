@@ -1,0 +1,40 @@
+{
+ "slug": "upside-down-bouquet-flip",
+ "title": "The upside-down bouquet flip: one small bunch turns into an armful",
+ "published": "2026-11-07T18:45:00Z",
+ "kind": "video",
+ "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+ "summary": "Turn a photo of a bouquet in your hand into a clip where it flips right side up and blooms into a huge armful of flowers.",
+ "why": "Neurocartel's early-November 2026 roundup of AI video trends, published November 2, lists \"I Hope He Buys You Flowers\": a bouquet held upside down flips into an armful of flowers, set to a well-known breakup ballad. It says the first AI versions showed up on October 29 and that each one starts from a single photo of a bouquet in hand.",
+ "steps": [
+  "Take a photo of a bouquet held upside down in your hand. Plain background, good light, flowers clearly visible.",
+  "Upload it to an image-to-video tool and paste the main prompt. Ask for an 8 to 10 second clip.",
+  "If the flowers melt or change colour, ask for a slower flip and fewer kinds of flowers.",
+  "Add a soft, romantic sound. Business accounts should check the song is cleared for commercial use, or use an original sound."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the flip",
+   "text": "Animate this photo. A hand holds a small bouquet upside down, flowers pointing at the floor. After a short pause, the hand slowly turns the bouquet right side up. As it turns, the flowers multiply and open until the person is holding a huge, overflowing armful of fresh blooms in the same colours. A few petals drift down. Soft window light, plain background, camera still at chest height. Keep the hand and the original flowers looking the same as the photo. Gentle and a little bittersweet, 9 seconds, no text."
+  },
+  {
+   "label": "Variation: winter bouquet",
+   "text": "Animate this photo of a small bouquet held upside down. The hand slowly flips it upright and it grows into a big winter armful: red berries, evergreen sprigs, white flowers and pine cones. Light snow falls outside a window behind. Camera still. Keep the hand and the original flowers the same as the photo. Calm and cozy, 9 seconds, no text."
+  },
+  {
+   "label": "Variation: from your kid or pet",
+   "text": "Animate this photo of a small, slightly messy handful of flowers held upside down (picked by my kid, or held in front of my dog). It flips right side up and grows into a giant, proud armful of the same flowers, almost too big to hold. End with a small wobble as the armful nearly tips over. Keep the colours and the hand or pet the same as the photo. Sweet and funny, 8 seconds, no text."
+  },
+  {
+   "label": "Variation: small business (florist or gift shop)",
+   "text": "Animate this photo of one of our own bouquets, held upside down by a hand over our shop counter. The hand slowly turns it upright and it opens into a full, generous armful of the same flowers. Petals drift onto the counter. Keep our real flowers, colours and wrapping the same as the photo. No logos, signs or text in the video. Warm, soft light, 9 seconds."
+  }
+ ],
+ "tips": [
+  "Shoot the start photo yourself so the flowers in the clip match what you really have.",
+  "Fewer kinds of flowers means less warping. Two or three colours is plenty.",
+  "Put your own words on screen, like \"buy yourself the flowers\". Don't copy song lyrics into your caption.",
+  "For a shop, show the real bouquet afterwards so customers see what they'd actually get."
+ ],
+ "tags": ["flowers", "video", "image-to-video", "romance", "business"]
+}
