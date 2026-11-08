@@ -1,0 +1,40 @@
+{
+ "slug": "major-cheat-code-in-life",
+ "title": "\"Major cheat code in life\": one tiny tip that makes things easier",
+ "published": "2026-11-08T18:43:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Write \"Major cheat code in life:\" over a quick clip and share one small, useful tip. AI helps you turn what you already know into a short, clear line.",
+ "why": "SocialBee's latest Instagram trends post, dated November 5, 2026, lists \"Major cheat code in life\" as a new Reels trend: the text \"Major cheat code in life:\" followed by a useful tip. Its example shows a business using it to share a tip from its own field.",
+ "steps": [
+  "Use the main prompt to turn your own know-how into a list of short tips.",
+  "Pick one tip and film a quick clip that shows it, or just you doing the thing.",
+  "Add the text \"Major cheat code in life:\" and the tip underneath. Keep the tip on one or two lines.",
+  "Post one tip per Reel. Save the rest for a series."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short Reel. The on-screen text says \"Major cheat code in life:\" and then one simple, useful tip. Here's what I know a lot about: [your skills, hobbies, job, for example: cooking on a budget, winter driving, keeping houseplants alive]. Write 12 tips that are practical, true and easy to try today. Each tip under 15 words. No health, legal or money advice, and no tips that need you to buy something."
+  },
+  {
+   "label": "Variation: winter in Canada",
+   "text": "Write 10 \"Major cheat code in life:\" tips for getting through a Canadian November and December: dark mornings, first snow, cold car mornings, wet boots, busy holiday weeks. Keep each tip under 15 words, practical and safe. For each, suggest a 3-second shot that shows it."
+  },
+  {
+   "label": "Variation: check my tip",
+   "text": "Here's a tip I want to share: [your tip]. Rewrite it as a \"Major cheat code in life:\" line in under 15 words. Then tell me plainly if any part of it could be wrong, unsafe or misleading, and suggest a safer wording if needed."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 8 \"Major cheat code in life:\" tips from my field that customers can use at home, for example [one or two things you get asked about]. They should be useful on their own, not a sales pitch. For each, suggest a simple shot from my workspace. Don't invent results, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Share something you've actually tried. A tip you can show on screen is more convincing.",
+  "Keep it small. \"Lay out tomorrow's clothes tonight\" beats a big life lesson.",
+  "Check every AI-written tip yourself before posting. If you're not sure it's true, skip it.",
+  "Turn your best tips into a numbered series so people come back for the next one."
+ ],
+ "tags": ["text", "tips", "instagram", "reels", "business"]
+}

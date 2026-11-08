@@ -1,0 +1,40 @@
+{
+ "slug": "life-handed-me-lemons",
+ "title": "\"Life never handed me lemons. It handed me…\": your funniest flaw",
+ "published": "2026-11-08T18:42:00Z",
+ "kind": "text",
+ "tools": ["ChatGPT", "Gemini", "Claude"],
+ "summary": "Start with \"Life never handed me lemons. It handed me…\" and finish it with a harmless flaw or bad habit. AI helps you find the funniest ending.",
+ "why": "SocialBee's latest Instagram trends post, dated November 5, 2026, lists \"Life never handed me lemons. It handed me…\" as a new Reels trend: a text overlay that sets up the old saying, then lands on a funny flaw or bad habit.",
+ "steps": [
+  "Use the main prompt to get a list of endings that fit you.",
+  "Film a short, ordinary clip that matches the ending: your messy desk, your fifth coffee, the pile of laundry on the chair.",
+  "Add the text \"Life never handed me lemons. It handed me…\" first, then reveal the ending a beat later.",
+  "Keep it 5 to 8 seconds so people watch it twice."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt",
+   "text": "Help me with a short Reel. The on-screen text starts \"Life never handed me lemons. It handed me…\" and ends with a harmless flaw or bad habit of mine, said in a funny, self-aware way. Write 12 endings, under 12 words each. For example: \"a phone at 3% and a strong will to ignore it.\" About me: [your habits, quirks, job, hobbies]. Keep it light and kind. Nothing about health, money troubles or other people."
+  },
+  {
+   "label": "Variation: match the clip",
+   "text": "I've already filmed this clip: [describe it, for example: me hunting for my keys for the third time this morning]. Write 6 \"Life never handed me lemons. It handed me…\" endings that fit what's on screen. Then pick the strongest one and tell me where in the clip the ending should appear."
+  },
+  {
+   "label": "Variation: pets",
+   "text": "Write 8 \"Life never handed me lemons. It handed me…\" endings from my pet's point of view. My pet: [type, name, habits, for example: a cat who sits on every keyboard]. Keep them playful and short, under 12 words each."
+  },
+  {
+   "label": "Variation: small business",
+   "text": "I run [type of business] in [town]. Write 8 \"Life never handed me lemons. It handed me…\" endings about the funny, honest side of running it: the odd requests, the tiny workspace, the 6 a.m. starts. Each one should feel friendly, not like a complaint, and never poke fun at customers. Suggest a simple behind-the-scenes shot for each. Don't invent sales, numbers or customer quotes."
+  }
+ ],
+ "tips": [
+  "Pick a flaw people will recognise in themselves. Relatable beats clever.",
+  "Pause before the ending. The short gap is where the laugh comes from.",
+  "Keep it about you, not someone else. Gentle self-teasing is the whole point.",
+  "Business accounts may not have the trending sound. An original sound works fine."
+ ],
+ "tags": ["text", "funny", "instagram", "reels", "business"]
+}
