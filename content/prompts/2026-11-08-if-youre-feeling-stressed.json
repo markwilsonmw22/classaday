@@ -1,0 +1,40 @@
+{
+  "slug": "if-youre-feeling-stressed",
+  "title": "\"If you're feeling stressed\": a calm 10-second scene to send someone",
+  "published": "2026-11-08T12:39:00Z",
+  "kind": "video",
+  "tools": ["Veo", "Kling", "Sora", "Runway"],
+  "summary": "Make a slow, cosy clip of a quiet moment, like rain on a cabin window or a kettle on the stove, with one gentle line of text, for the calming-Reel trend.",
+  "why": "Nuelink's list of Instagram trends for November 2026, updated November 3, includes an \"If You're Feeling Stressed\" format: Reels of calming routines, peaceful moments and self-care tips set to the trend's audio. This pack makes the calm scene with AI when you don't have the footage.",
+  "steps": [
+    "Pick one calm moment you'd like to be in right now: a rainy window, a snowy porch, a lake at dawn.",
+    "Paste the main prompt into a video tool and ask for 8 to 10 seconds with no text and no sound.",
+    "In your editor, add the trending audio from Instagram and one short line of your own on screen, like \"if you're feeling stressed, stay here for ten seconds\".",
+    "Label the post as made with AI so nobody thinks it's your real cabin."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: rainy cabin window",
+      "text": "Make a slow, calm video looking out a cabin window on a rainy November afternoon. Raindrops run down the glass. Outside, dark pine trees and a grey lake fade into mist. On the windowsill, a mug of tea gives off a thin curl of steam next to a folded wool blanket and an open paperback. Warm lamp light inside, cool blue light outside. The camera stays almost still, with a very slow push toward the glass. Soft focus, gentle, no people, no text, 10 seconds."
+    },
+    {
+      "label": "Variation: first snow on the porch",
+      "text": "Make a slow, peaceful video of a wooden porch at dusk as big, soft snowflakes fall. A string of warm white lights hangs along the railing. Two empty chairs sit with a blanket over one arm. The snow settles quietly on the steps and the trees behind are dark blue. The camera drifts very slowly sideways. Calm and cosy, no people, no text, 10 seconds."
+    },
+    {
+      "label": "Variation: your own photo, calmer",
+      "text": "Animate this photo of my [room / backyard / favourite spot] into a calm, slow video. Keep everything in the photo where it is. Add only small, gentle movement: [curtains moving in a light breeze / steam rising from a mug / leaves drifting down / candle flame flickering]. Warm, soft light. The camera barely moves. No people, no text, 8 seconds."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a slow, calm video inside my [café / spa / bookshop / studio] before opening. Morning light comes through the front window and lands on [describe a real corner: a reading chair, a tray of fresh buns, folded towels, a row of plants]. Dust floats in the light, steam rises from one cup on the counter. The camera moves very slowly toward that corner. Quiet and welcoming, no people, no logos, no text, 10 seconds."
+    }
+  ],
+  "tips": [
+    "Slow is the whole point. Ask for \"very slow\" or \"almost still\" camera moves, and cut any clip that feels busy.",
+    "Keep your on-screen line short and kind. Don't promise it fixes anything; just invite people to pause.",
+    "For the business version, describe your real space so the clip doesn't show a place customers won't find.",
+    "Post it on a Sunday night or Monday morning, when people are most likely to need it."
+  ],
+  "tags": ["video", "calm", "cosy", "reels", "business"]
+}

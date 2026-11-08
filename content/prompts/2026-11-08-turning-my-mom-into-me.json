@@ -1,0 +1,40 @@
+{
+  "slug": "turning-my-mom-into-me",
+  "title": "Turning my mom into me: she walks out as herself and back dressed as you",
+  "published": "2026-11-08T12:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Runway"],
+  "summary": "Two photos, one doorway: your mom (or any family member who said yes) walks out in her own clothes and strolls back in wearing your outfit.",
+  "why": "ViralRemix's TikTok trend chart for November 2, 2026 lists \"Turning My Mom Into Me\" as rising, up 27% on its seven-day average: a mom walks out as herself and comes back dressed as her kid. Template sites offer it as a two-photo effect.",
+  "steps": [
+    "Ask first. Only use a photo of your mom, dad or another family member who has agreed to be in the video.",
+    "Pick two full-length photos: one of them in their usual clothes, and one of you in a stand-out outfit (your hoodie, your going-out look, your work uniform).",
+    "Upload both photos to an image-to-video tool, paste the main prompt and ask for 8 to 10 seconds.",
+    "If the outfit swap looks messy, make two short clips (walking out, walking back) and join them with a hard cut in your editor. Label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: out as herself, back as you",
+      "text": "Make a video of the woman from photo one in a bright hallway at home. She walks out through a doorway toward the camera in her own clothes from the photo, gives a small wave and steps back out of frame. A second later she walks back in through the same doorway wearing the exact outfit from photo two: same top, pants, shoes and accessories. She copies a pose from photo two, hand on hip, and tries hard to keep a straight face before she bursts out laughing. Keep her face, hair and body exactly like photo one. Steady camera at waist height, soft daylight, 9 seconds, no text."
+    },
+    {
+      "label": "Variation: dad edition",
+      "text": "Make a video of the man from photo one walking out of a kitchen doorway in his everyday clothes. He nods at the camera and walks off. He comes straight back wearing the outfit from photo two, the full look, with a serious face and a slow model walk. He stops, does one quick spin and points at the camera. Keep his face and hair the same as photo one; only the clothes change. Fixed camera, warm indoor light, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: grandparent, winter edition",
+      "text": "Make a video of the older person from photo one stepping out of a front door onto a snowy porch in their own coat and boots. They wave and go back inside. They come out again wearing the outfit from photo two: a puffy jacket, toque and big sneakers. They pull the toque down, strike a cool pose on the step and then laugh. Keep their face exactly like photo one. Light snow falling, soft grey daylight, steady camera, 9 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the person from photo one, the owner of my [type of shop], walking out of the back room in their own clothes. They come back wearing the outfit from photo two, a look from our shop: [describe the items]. They stop by the counter, show off the look with a turn and give a thumbs up. Keep their face the same as photo one; only the clothes change. Bright shop light, steady camera, 9 seconds, no logos, no text."
+    }
+  ],
+  "tips": [
+    "Full-length photos with shoes in frame give the cleanest swap.",
+    "Describe the outfit in your prompt too. Tools copy clothes better when you name the colours and pieces.",
+    "Add your own caption, like \"turning my mom into me\", in your editor instead of asking the tool for text.",
+    "Show them the finished clip before you post it."
+  ],
+  "tags": ["video", "image-to-video", "family", "fashion", "business"]
+}
