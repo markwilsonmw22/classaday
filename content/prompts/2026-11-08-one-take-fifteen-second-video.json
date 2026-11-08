@@ -1,0 +1,40 @@
+{
+ "slug": "one-take-fifteen-second-video",
+ "title": "One take, 15 seconds: your trip, project or product as a single smooth shot",
+ "published": "2026-11-08T00:38:00Z",
+ "kind": "video",
+ "tools": ["Google Vids", "Gemini", "Flow"],
+ "summary": "Upload a few of your own photos and get one 15-second video with no cuts: a gliding camera that ties your trip, project or product together.",
+ "why": "On November 5, 2026, Google said anyone with a Google account can now make up to three 15-second videos a month in Google Vids at no cost, using its new Omni 1.2 Flash model. Google's post highlights single-take promos \"without a single cut\" and turning uploaded trip or school-project photos into a video. The Next Web reported the same day that clips are now up to 15 seconds, up from 10, and that faces, clothes and packaging stay more consistent.",
+ "steps": [
+  "Pick 2 to 4 of your own photos that belong together: one trip, one project or one product. Clear light, no other people's faces unless they agreed.",
+  "Open Google Vids, start a new video, choose to generate a clip, upload the photos as references and paste a prompt below. Ask for 15 seconds.",
+  "You only get a few free clips a month, so write the whole shot out first. Say where the camera starts, how it moves and where it ends.",
+  "Add your own caption or voice-over and post it as a Reel or Short. The clip carries an invisible AI watermark, so say it's AI-made in your caption too."
+ ],
+ "prompts": [
+  {
+   "label": "Main prompt: the trip in one shot",
+   "text": "Make one continuous 15-second video with no cuts, using my uploaded photos as reference. The camera starts low on a quiet street from the first photo at sunrise, glides forward and rises over the rooftops, then drifts down to the lookout from the second photo and ends slowly circling the café table from the third photo as the light turns golden. Keep each place looking like my photos. Smooth, steady camera, soft natural colours, gentle ambient sound, no text, no people's faces."
+  },
+  {
+   "label": "Variation: school or work project",
+   "text": "Make one continuous 15-second video with no cuts from my uploaded photos of a project I built. The camera starts on a close-up of the first rough sketch on a desk, pulls back and floats across the table past the half-finished model from the second photo, then rises to reveal the finished project from the third photo in bright, even light. Keep every detail the same as my photos. Calm, proud mood, light background music, no text."
+  },
+  {
+   "label": "Variation: your pet's big day",
+   "text": "Make one continuous 15-second video with no cuts, using my uploaded photos of my dog as reference. The camera follows the dog at its eye level from a sunny front porch, down a leafy fall path and into a park, where it stops and looks back at the camera with its tail wagging. Keep the dog's colours, markings and size exactly like the photos. Warm afternoon light, playful music, no text."
+  },
+  {
+   "label": "Variation: small business product promo",
+   "text": "Make one continuous 15-second product video with no cuts, using my uploaded photos of our own product as reference. The camera starts on the product sitting on a wooden counter in morning light, slowly circles it to show the back and the side, then pushes in close on the texture and ends on a clean front view with empty space above for a caption. Keep the product's shape, colours and packaging exactly like the photos. No logos, signs or text added. Clean, cosy, quiet background music."
+  }
+ ],
+ "tips": [
+  "One shot means one camera path. If the clip jumps or warps, cut it down to two places instead of three.",
+  "Plan before you press generate. Three free clips a month goes fast if you test with rough prompts.",
+  "Use your own photos only, so the places and products in the clip are real ones you can stand behind.",
+  "For a shop, put the price or offer in your caption, not in the prompt. AI text inside videos often comes out garbled."
+ ],
+ "tags": ["video", "google-vids", "travel", "product-video", "business"]
+}
