@@ -1,0 +1,40 @@
+{
+  "slug": "two-friends-one-mic-studio-duet",
+  "title": "Two friends, one mic: the colour-wall studio duet",
+  "published": "2026-11-08T06:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "HeyGen"],
+  "summary": "Turn two photos into a clip of you and a friend sharing one hanging mic in a bold, single-colour studio. One takes the hook, the other takes the verse.",
+  "why": "Starrd's monthly AI video trends roundup, updated November 7, 2026, lists a two-person studio session in its November section: two people at one hanging mic in a teal room, one on the hook and one on the verse, restaged from a music session posted October 30. Template sites offer it as a two-photo effect.",
+  "steps": [
+    "Pick two clear, front-facing photos: you and a friend or family member who has agreed. Shoulders-up shots work best.",
+    "Write four short lines of your own: two for the hook, two for the verse. Keep it about something real, like your Sunday plans or your group chat.",
+    "Upload both photos to an image-to-video tool that can lip-sync, paste the main prompt, and add your lines or a voice recording. Ask for 8 to 10 seconds.",
+    "If faces drift, try again with one photo per clip and join the two halves in your editor. Label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the duet",
+      "text": "Make a video of the two people from these photos standing face to face in a small recording studio. The walls, floor and curtains are all one bold teal colour. One vintage microphone hangs from the ceiling between them. Person one leans in and sings the hook with a big smile: \"[your hook line]\". Then person two steps in, nods to the beat and raps the verse: \"[your verse line]\". The other person bobs their head and grins while they wait. Soft, even light, camera slowly drifting left to right at chest height. Keep both faces, hair and clothes exactly like the photos. Natural mouth movement in time with the words, 10 seconds, no text on screen."
+    },
+    {
+      "label": "Variation: pick your colour",
+      "text": "Same scene as before, but the whole studio is one solid colour: [warm mustard / deep red / soft lilac / forest green]. The two people from these photos share one hanging microphone and trade lines: \"[line one]\" then \"[line two]\". Match their outfits to the room with a little contrast so they stand out. Slow sideways camera move, clean even light. Keep both faces the same as the photos. 8 seconds, no text."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Make a video of the person from photo one and the [dog / cat] from photo two in a small studio painted one bold teal colour, with a single microphone hanging between them. The person sings a short line to the pet: \"[your line]\". The pet tilts its head, then leans toward the mic and lets out one tiny, perfectly timed [bark / meow]. The person laughs. Camera fixed at chest height, soft light. Keep the person's face and the pet's markings the same as the photos. 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the two people from these photos, coworkers at my [type of business], sharing one hanging microphone in a studio painted in [your shop colour]. They wear their work aprons or uniforms. Person one sings a short hook about the shop: \"[for example: fresh bread at seven]\". Person two answers with a quick line about what you sell or when you're open: \"[your line]\". Both finish with a small nod to the camera. Slow sideways camera move, soft light. Keep both faces and outfits the same as the photos. 10 seconds, no logos, no text."
+    }
+  ],
+  "tips": [
+    "Write your own lines. Don't paste lyrics from a real song; short, silly original lines get the laugh anyway.",
+    "Keep each line under eight words. Long lines make mouths go out of sync.",
+    "Only use photos of people who said yes, and never anyone famous.",
+    "Pick a room colour that clashes nicely with both outfits so you both pop on screen."
+  ],
+  "tags": ["video", "image-to-video", "music", "friends", "business"]
+}
