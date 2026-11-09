@@ -1,0 +1,40 @@
+{
+  "slug": "hand-flip-upside-down-reveal",
+  "title": "The hand-flip reveal: one swipe across the lens turns your before into the after",
+  "published": "2026-11-09T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "ChatGPT", "Gemini"],
+  "summary": "A hand sweeps across the camera, the picture flips upside down and spins back as the finished look. Make both halves from your own photos.",
+  "why": "InMagic's weekly Reels list for November 9, 2026 includes a hand-flip reveal: a hand sweeps across the lens and the shot flips to the after, set to a disco-era remix. Virlo's TikTok tracker (October 29, 2026) lists the same \"upside down\" camera-flip transition as peaking, with 52 creators posting it in a week.",
+  "steps": [
+    "Take a plain \"before\" photo: your bare face, a messy room, an empty shelf or a plain plate.",
+    "Use the image prompt to make the \"after\" from that same photo, or use a real after photo you took yourself.",
+    "Give both photos to an image-to-video tool that takes a start and end frame, and paste the video prompt.",
+    "Add the trending sound in the app you post to, so the flip lands on the beat, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Image prompt: make the after",
+      "text": "Use this photo as the before. Make the after: the same person in the same spot, same camera angle and same framing, now with [describe the finished look, for example: soft glam makeup, glossy hair, a cosy winter knit sweater]. Keep their face, skin tone and features exactly like the photo. Keep the background the same, just tidier and with warmer light. Phone-camera style, natural, not airbrushed. No text."
+    },
+    {
+      "label": "Video prompt: the hand flip",
+      "text": "Start on the first image, a close, phone-style shot. After two seconds, a hand comes in from the right side and sweeps across the lens, covering it for a moment. As the hand passes, the whole picture rotates 180 degrees and spins back upright, landing on the second image. The person in the after shot gives a small, confident smile and tilts their head. The flip should feel quick and smooth, like a real handheld camera trick. Keep the person's face the same in both shots. 6 seconds, no text."
+    },
+    {
+      "label": "Variation: room or desk makeover",
+      "text": "Start on the first image: my [bedroom / desk / front entrance], messy and plain. After two seconds, a hand swipes across the lens, the picture flips upside down and spins back to the second image: the same space from the same angle, tidy and dressed for the holidays with warm string lights, a small wreath and a soft blanket. The camera drifts in slowly after the flip. Keep the room's layout, walls and furniture the same. 6 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Start on the first image: an empty display shelf or plain counter in my [shop / bakery / studio]. After two seconds, a hand swipes across the lens, the picture flips 180 degrees and spins back to the second image: the same shelf from the same angle, now full of our [product] arranged neatly, with soft, bright light. The camera pushes in a little on the finished display. Match my space's colours: [describe them]. No logos, no text, 6 seconds."
+    }
+  ],
+  "tips": [
+    "Shoot the before and after from the exact same spot. The flip only works if the framing matches.",
+    "Keep the after realistic. A small, believable change looks better than a full new face.",
+    "Use a start-and-end-frame option if your video tool has one. It keeps both halves steady.",
+    "Only use photos of people who agreed to be in it. Never use a famous person's face."
+  ],
+  "tags": ["video", "transition", "before-after", "glow-up", "business"]
+}

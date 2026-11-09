@@ -1,0 +1,36 @@
+{
+  "slug": "i-just-wanna-dream-life",
+  "title": "\"I just wanna…\": your dream-life list, then the real reveal",
+  "published": "2026-11-09T18:45:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "\"I just wanna…\" over dreamy clips of the life you'd love, then a funny or honest reveal. AI writes the lines and the shot list.",
+  "why": "Later's Instagram Reels list, updated November 6, 2026, adds \"I just wanna\": dreamy lifestyle clips with \"I just wanna…\" on screen, set to a new pop song, then a reveal of what the creator would actually spend the money on. InMagic's list for the week of November 9, 2026 has the same \"dream-life reveal\", ending on the real work or result.",
+  "steps": [
+    "Use the main prompt to get several \"I just wanna…\" lines and a reveal that fits you.",
+    "Film three or four short, pretty clips you already have the chance to shoot: a coffee by the window, a snowy walk, a cosy blanket.",
+    "Put one line on each clip, then cut to the reveal shot on the beat. Keep it under 12 seconds.",
+    "Add the trending sound in the app you post to. Business accounts should pick a sound cleared for commercial use."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Help me make a short Instagram Reel in the \"I just wanna…\" format. The first part shows dreamy clips of a slow, comfortable life with \"I just wanna…\" lines on screen. The last clip is a funny, honest reveal. About me: [your job, hobbies, where you live in Canada, what a dream day looks like to you]. Write 5 versions. Each has 3 short \"I just wanna…\" lines (under 8 words each) and one reveal line (under 10 words). Make the reveals light and relatable, like what I'd really spend the money on. Then suggest one simple clip I could film for each line, using things I already have at home."
+    },
+    {
+      "label": "Variation: the real-work reveal",
+      "text": "Rewrite the \"I just wanna…\" Reel so the reveal is the work behind the dream instead of a joke. The dreamy lines show what I'm working toward: [describe your goal, for example a cabin trip, a home studio, paying off a course]. The reveal shows me doing the unglamorous part: [describe it, for example a late shift, studying at the kitchen table, packing orders]. Give me 5 versions with 3 lines and one reveal line each. Keep it upbeat and honest, with no promises about money or results."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Write an \"I just wanna…\" Reel for my small business, a [type of business] in [town or city, Canada]. The dreamy lines are things our customers want to feel, for example warm, slow mornings or a fresh new look. The reveal shows how we help, in one plain line, with no prices, discounts or made-up claims. Give me 5 versions with 3 lines and one reveal each, plus a shot idea for each line I can film in our space."
+    }
+  ],
+  "tips": [
+    "Keep the dream lines soft and short. The reveal is the joke, so give it the most time on screen.",
+    "Real clips beat polished ones here. A steamy mug and a window are enough.",
+    "Keep money talk light. Skip real prices, debts or \"get rich\" claims.",
+    "Post the reveal shot as the cover so people know there's a twist."
+  ],
+  "tags": ["text", "reels", "instagram", "funny", "business"]
+}
