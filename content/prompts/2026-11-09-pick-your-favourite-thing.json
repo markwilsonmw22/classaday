@@ -1,0 +1,40 @@
+{
+  "slug": "pick-your-favourite-thing",
+  "title": "Pick your favourite thing: on three, they grab you",
+  "published": "2026-11-09T06:41:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "A table full of treats, a count to three, and a sweet twist: your partner, friend or pet skips every prize and grabs you instead.",
+  "why": "Virlo's trend tracker (updated October 29, 2026) lists the \"pick your favorite thing\" challenge as rising on TikTok, with daily creators going from 2 to 22 in a week. Two people stand behind a table of items, count to three and both grab something, and the payoff is when one grabs the other. This pack makes an AI version from photos.",
+  "steps": [
+    "Pick a clear, waist-up photo of yourself and one of your partner, friend, family member or pet. People must agree to be in it.",
+    "Paste the main prompt into an image-to-video tool and list the items you want on the table in the brackets.",
+    "Keep it to one fixed shot. The joke lands best when the count and the grab happen in one clean take.",
+    "Add the caption \"pick your favourite thing\" and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: they pick you",
+      "text": "Make a video of the two people in these photos standing side by side behind a long table in a bright living room. On the table: [a slice of cake, a gaming controller, a bouquet, a bag of chips, a cosy blanket]. Front-on medium shot, camera still. They look at the camera and count \"one, two, three\" with their fingers. On three, person one grabs the cake. Person two ignores every item and wraps both arms around person one in a big hug. Person one freezes, looks at the cake, then puts it down and hugs back, laughing. Keep both faces, hair and clothes exactly like the photos. Warm daylight, sweet mood, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: the dog picks you",
+      "text": "Make a video of the person and the dog in these photos behind a low table covered with [a squeaky toy, a tennis ball, a bone, a bowl of treats]. The person counts to three with their fingers and grabs the tennis ball. The dog sniffs every item, then jumps up and leans its whole body into the person's arms, tail wagging. The person drops the ball and laughs. Keep the person's face and clothes and the dog's breed, colours and markings exactly like the photos. Soft daylight, still camera, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: best friends, twist ending",
+      "text": "Make a video of the two friends in these photos behind a kitchen table with [a pizza box, concert tickets, a new phone, a coffee]. They count to three. Friend one reaches past everything to hug friend two. Friend two, at the exact same moment, grabs the pizza box. Pause. Friend two looks at the camera, sets the pizza down slowly and joins the hug, still holding one slice. Keep both faces and outfits the same as the photos. Bright, playful light, still camera, 12 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the person in this photo, the owner of my [shop / studio / café], behind a counter lined with our best products: [describe three to five items]. A regular customer stands beside them. They count to three. The owner grabs a product to show off. The customer skips every item and gives the owner a quick, friendly high five, then points at the shop around them as if to say \"this place is my favourite.\" Clean, bright light that matches my space: [describe colours]. No logos, no text, 10 seconds."
+    }
+  ],
+  "tips": [
+    "Put things on the table that the person really loves. The choice feels bigger when the prizes are tempting.",
+    "Ask for one still, front-on shot so the count and the grab are easy to follow.",
+    "Only use photos of people who agreed to be in it. Never use a famous person's face.",
+    "Shops can swap the hug for a high five or a wave so it stays friendly and professional."
+  ],
+  "tags": ["video", "image-to-video", "couples", "pets", "business"]
+}

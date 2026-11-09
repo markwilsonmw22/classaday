@@ -1,0 +1,40 @@
+{
+  "slug": "rock-paper-scissors-big-bite",
+  "title": "Rock, paper, scissors… big bite: the one-plate showdown",
+  "published": "2026-11-09T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Turn two photos into a quick food duel: you and a friend play rock, paper, scissors over one plate, and the winner takes a huge bite.",
+  "why": "Virlo's trend tracker (updated October 29, 2026) lists the rock paper scissors food challenge as rising on TikTok, with daily creators jumping from 2 to 54 in a week. Friends or family play over one shared plate, and each round's winner takes a big bite. This pack makes an AI version from photos.",
+  "steps": [
+    "Pick a clear, waist-up photo of yourself and one of a friend or family member who has agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool that takes two reference photos. Swap the food in brackets for something you actually love.",
+    "Ask for two or three short rounds. If the hands look odd, make each round its own 5-second clip and join them in your editor.",
+    "Add the caption \"loser watches\" or a running score, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: two friends, one plate",
+      "text": "Make a video of the two people in these photos sitting across a small kitchen table, facing each other, with one big plate of [pizza slices / dumplings / fries] between them. Warm evening light, front-on medium shot, camera still. They pump their fists and play rock, paper, scissors. Round one: person one wins, grabs a piece and takes a huge, happy bite while person two groans. Round two: person two wins and takes an even bigger bite, cheeks full, grinning. Round three: they tie three times in a row, stare at each other, then both reach for the last piece at once. Keep both faces, hair and clothes exactly like the photos. Light, playful mood, 15 seconds, no text."
+    },
+    {
+      "label": "Variation: your pets play for treats",
+      "text": "Make a cute, cartoon-realistic video of the two pets in these photos sitting on chairs at a small table, a plate of pet treats between them. They raise one paw each and play rock, paper, scissors with their paws. The winner leans in and gobbles a treat while the other pet looks shocked, ears down. Next round, the other pet wins and takes two treats. Keep each pet's breed, colours and markings exactly like the photos. Soft daylight, still camera, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: family dessert duel",
+      "text": "Make a video of the people in these photos, a parent and their grown-up kid, at a cosy kitchen counter with one plate of [butter tarts / Nanaimo bars / cookies]. They play rock, paper, scissors with big, dramatic hand pumps. The kid wins and takes a slow, smug bite. The parent wins the next round and takes the biggest piece, laughing. End with both of them sharing the last one, half each. Keep faces and clothes the same as the photos. Warm light, still camera, 12 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the two people in these photos, staff at my [bakery / café / restaurant], behind the counter with one plate of our [describe your signature item] between them. They play rock, paper, scissors. Each winner takes a big, happy bite while the other pretends to be heartbroken. In the last round they both lose to a customer's hand that reaches in from the side and takes the final piece. Bright, clean shop lighting that matches my space: [describe colours and counter]. No logos, no text, 12 seconds."
+    }
+  ],
+  "tips": [
+    "Hands are the hard part for AI video. Ask for big, slow hand shapes and keep each round short.",
+    "Use food you would really share. A familiar plate makes it feel real, even when it's AI.",
+    "Only use photos of people who said yes. Never use a famous person's face.",
+    "Food spots can film the real version with staff, then post the AI one as a part two."
+  ],
+  "tags": ["video", "image-to-video", "food", "friends", "business"]
+}
