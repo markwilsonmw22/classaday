@@ -1,0 +1,40 @@
+{
+  "slug": "pose-then-the-big-bow",
+  "title": "Pose, then the big bow: flashbulbs pop and you take a deep bow on the drop",
+  "published": "2026-11-09T12:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Camera flashes go off, you strike a few proud poses, then the beat drops and you fold into a slow, dramatic bow. Make it from one photo.",
+  "why": "Virlo's TikTok trend tracker (updated October 29, 2026) lists a \"paparazzi bowing\" trend as rising, with 33 creators posting it in a week, up from 22. The person poses for the camera like a star on a red carpet, then bows deeply right on the beat drop of a sped-up pop song. This pack makes an AI version from a photo, with room for pets and shops.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself (or a friend or family member who agreed) standing up straight.",
+    "Paste the main prompt into an image-to-video tool. Keep it one still, front-on shot so the bow reads clearly.",
+    "Trim the clip so the bow lands on the beat drop of the trending sound in the app you post to.",
+    "Add a short caption about what you're bowing for, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the red-carpet bow",
+      "text": "Make a video of the person in this photo standing on a short red carpet in front of a dark backdrop. Camera flashes pop from both sides, lighting them in quick white bursts. For the first five seconds they strike three proud poses: hand on hip, a chin-up look over the shoulder, then a small wave. Then the flashes stop for half a second, and they fold into a slow, very deep theatrical bow, one arm across the chest, the other swept out to the side. They hold the bow for two seconds, then pop back up with a big grin. Front-on full-body shot, camera still. Keep their face, hair and clothes exactly like the photo. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: the everyday win",
+      "text": "Make a video of the person in this photo standing in their own kitchen, holding a spatula like a trophy. Phone camera flashes pop from off-screen as if a crowd of photographers is there. They pose proudly next to a tray of slightly burnt cookies: a thumbs up, a hand on the hip, a serious side profile. Then they take a slow, deep, over-the-top bow toward the camera, spatula held to their chest. They stand back up and nod once, very serious. Still camera, warm home lighting, keep their face and clothes exactly like the photo. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: your pet takes a bow",
+      "text": "Make a video of the dog or cat in this photo sitting on a tiny red rug in the living room. Little camera flashes pop around it. The pet turns its head left, then right, then lifts its chin like a star. Then it stretches its front legs forward and lowers its chest to the floor in a long, slow play-bow, tail up. It holds the bow, then sits back up and blinks at the camera. Keep the pet's breed, colours and markings exactly like the photo. Soft daylight, still camera, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the person in this photo, the owner of my [bakery / salon / shop], standing in front of our counter next to our newest [product]. Camera flashes pop as if it's a big premiere. They pose with the product: holding it up, pointing at it, giving a proud nod. Then they set it down and take a slow, deep, theatrical bow, one hand on their heart. They come back up smiling and gesture at the product as if to say \"you're welcome.\" Bright, clean light that matches my space: [describe colours]. No logos, no text, 10 seconds."
+    }
+  ],
+  "tips": [
+    "Ask for a full-body shot. A bow cut off at the waist loses the joke.",
+    "Make the poses proud and a little silly. The bigger the build-up, the funnier the bow.",
+    "Add the music in the app you post to, so the bow lines up with the drop.",
+    "Only use photos of people who agreed to be in it. Never use a famous person's face."
+  ],
+  "tags": ["video", "image-to-video", "funny", "pets", "business"]
+}
