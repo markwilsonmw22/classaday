@@ -1,0 +1,40 @@
+{
+  "slug": "back-to-back-bump-dance",
+  "title": "Back-to-back bump: two people collide, then dance in perfect sync",
+  "published": "2026-11-09T00:46:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Two photos become a clip where you and a friend walk backward, bump backs, turn in surprise and break into the same little dance at the same time.",
+  "why": "SocialBee's trending Instagram songs roundup, updated November 5, 2026, lists a new pop track whose Reels show two people bumping back to back, then breaking into a coordinated dance, and suggests brands film team members doing it. Our team shoulder-bounce pack was a freestyle group dance; this one is a two-person bump-and-sync moment.",
+  "steps": [
+    "Pick two clear, full-body photos: you and a friend, partner, coworker or family member who has agreed. Similar lighting helps.",
+    "Paste the main prompt into an image-to-video tool that takes two reference photos. Ask for 8 to 10 seconds and one simple, matching dance move.",
+    "If the two people don't move in sync, make the bump and the dance as two shorter clips and join them in your editor on a beat.",
+    "Add your own audio in the app and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the bump and sync",
+      "text": "Make a video of the two people from these photos in a bright, empty hallway with a polished floor. They start on opposite sides, each walking slowly backward toward the centre while looking at their phones. Their backs gently bump together. Both jump a little, spin around and stare at each other in mock shock. Then, at exactly the same moment, they both break into the same simple dance: two shoulder shrugs, a side step left, a side step right and a finger point at the camera. They end shoulder to shoulder, grinning. Camera fixed at waist height, wide enough to see both from head to toe. Keep both faces, hair and outfits exactly like the photos. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: two pets",
+      "text": "Make a video of the two [dogs / cats] from these photos in a cosy living room. Each one backs up slowly toward the middle of the rug, sniffing the floor, until their tails bump. Both whip around, freeze and stare at each other. Then both do the same tiny happy wiggle at the same time and sit down side by side, facing the camera. Keep each pet's breed, colours and markings exactly like the photos. Fixed camera at floor height, soft lamp light. 8 seconds, no text."
+    },
+    {
+      "label": "Variation: winter sidewalk",
+      "text": "Same idea, but outside on a snowy sidewalk at dusk with warm shop windows behind. The two people from these photos wear winter coats, toques and mitts. They shuffle backward, bump backs, turn around with puffs of breath in the cold air, then do the same quick dance together: two shoulder shrugs, a slide on the snow and a matching mitten wave at the camera. Light snow falling. Keep both faces the same as the photos. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the two people from these photos, coworkers at my [bakery / salon / shop], inside a space that looks like my business: [describe your counter, shelves and colours]. Each one backs out from behind a shelf carrying [a tray / a box / a coffee] until their backs bump. They turn, laugh, set down what they're carrying and do the same short dance together, ending with a point at [your product on the counter]. Wearing their work aprons. Fixed wide shot, warm light, no logos, no text. 10 seconds."
+    }
+  ],
+  "tips": [
+    "Pick one easy move you both repeat. Simple, matching steps look far more in sync than a long routine.",
+    "Tell the tool where the camera is and keep it still. A moving camera makes the bump hard to read.",
+    "Only use photos of people who agreed to it. Never use a famous person's face.",
+    "Teams can film the real version first, then post the AI winter version as a holiday follow-up."
+  ],
+  "tags": ["video", "image-to-video", "dance", "friends", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "first-time-in-a-fancy-cafe",
+  "title": "First time in a fancy café: you sit on the table by mistake",
+  "published": "2026-11-09T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Turn a photo into a deadpan skit: you perch on a tiny café table like it's a stool, a stranger sits properly, and you slowly realize your mistake.",
+  "why": "Trend roundups from Trending4 (November 5, 2026) and several AI template sites (November 3 to 5, 2026) describe a \"first time in a fancy café\" skit that took off on TikTok and Instagram from November 1. Someone sits on a small café table, a second person uses the bench properly, and the first person quietly climbs down. Template sites now offer it as a one- or two-photo AI video.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself. For the two-person version, add a photo of a friend or family member who has agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool and swap the bracketed parts. Ask for one fixed, wide shot with no cuts, about 10 to 15 seconds.",
+    "If the scene gets crowded or faces drift, cut it into two shorter clips (perched, then climbing down) and join them in your editor.",
+    "Add the caption \"POV: your first time in a fancy café\" and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the table mix-up",
+      "text": "Make a video of the person in this photo in a minimal, very modern café. Bare grey concrete wall, a long low concrete bench, and two small round steel tables, each only big enough for one cup. One fixed, front-on wide shot, no cuts, soft daylight. The person sits on top of the left table like it's a stool, legs dangling, calmly sipping a coffee and looking pleased. A well-dressed stranger walks in from the right, sits on the bench and sets their cup on the right-hand table without a glance. The person looks at the stranger, then down at their own seat, and slowly realizes it's a table. They climb down, sit on the bench and put their cup on the table. Last two seconds: they stare straight at the camera, totally deadpan. Keep the face, hair and clothes exactly like the photo. 15 seconds, no text."
+    },
+    {
+      "label": "Variation: with a friend",
+      "text": "Same concrete café and fixed wide shot. The person from photo one is perched on the left table holding a takeaway cup, swinging their feet. The person from photo two walks in, sits on the bench, puts their cup on the right table and starts scrolling their phone. Person one notices, freezes, and climbs down as quietly as possible. Person two never looks up, but a tiny smile appears at the very end. Both faces and outfits stay the same as the photos. Soft, even light, no music, 12 seconds, no text."
+    },
+    {
+      "label": "Variation: your pet tries the café",
+      "text": "Make a video of the [dog / cat] in this photo in a minimal concrete café with a low bench and two small round steel tables. The pet sits proudly on top of one table next to a tiny cup. A person walks in, sits on the bench and puts their cup on the other table. The pet looks at the person, then at the table under its paws, and slowly steps down onto the bench beside them. It ends with the pet staring at the camera, unbothered. Keep the pet's breed, colours and markings exactly like the photo. Fixed wide shot, soft daylight, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the person in this photo, the owner of my [café / furniture shop / design studio], in a bright, minimal space that looks like my shop: [describe your walls, seating and colours]. They sit on top of a small side table like it's a stool, sipping a drink. A customer walks in and sits properly on the [bench / chair]. The owner notices, climbs down, sits beside them and gives the camera a small, embarrassed shrug. Fixed wide shot, warm natural light, no logos, no text. 12 seconds."
+    }
+  ],
+  "tips": [
+    "The joke works because nobody talks. Keep it silent or add a calm, slow track of your own.",
+    "One fixed, wide shot makes it feel like a real security-camera moment. Ask for no zooms and no cuts.",
+    "Only use photos of people who agreed to be in it. Never put a famous person's face in the scene.",
+    "Cafés and furniture shops can film the real version with staff in their own space, then post the AI one beside it."
+  ],
+  "tags": ["video", "image-to-video", "funny", "cafe", "business"]
+}
