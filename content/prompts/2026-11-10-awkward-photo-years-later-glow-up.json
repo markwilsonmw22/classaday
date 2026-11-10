@@ -1,0 +1,40 @@
+{
+  "slug": "awkward-photo-years-later-glow-up",
+  "title": "Awkward photo, years later: the on-the-beat glow-up flip",
+  "published": "2026-11-10T12:38:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Flip from your most awkward old photo to a polished shot of you today, right on the beat. AI cleans up the old print and styles the new one.",
+  "why": "Postdom's Instagram trends page for November 9 to 15, 2026 (checked November 10) lists a glow-up where people flip from an awkward old photo to a glow-up shot on a single beat of a Latin pop song, with the sound in about 29K reels. Our earlier glow-up packs cut from loungewear to a same-day look; this one spans years, starting from a real old photo.",
+  "steps": [
+    "Find your most awkward old photo: school picture, bad haircut, big glasses, anything. Scan it or snap it flat in good light.",
+    "Use the first prompt to clean up the old photo. Keep it awkward. You only want the dust and scratches gone.",
+    "Take a fresh selfie in the same pose and use the second prompt to turn it into your polished \"now\" shot.",
+    "Put the old photo first and the new one second, and cut on the beat drop. Two to four seconds in total is plenty."
+  ],
+  "prompts": [
+    {
+      "label": "Step 1: clean up the old photo (keep it awkward)",
+      "text": "Restore this old photo of me. Remove the dust, scratches, creases and colour fading, and sharpen it a little. Do not change my face, hair, glasses, teeth, clothes, pose or the background in any way. Keep the original era look: the same colours, the same film grain and the same slightly flat flash. It should look like the same photo on a good day, not a new photo. Keep the same size and framing."
+    },
+    {
+      "label": "Step 2: the glow-up \"now\" shot",
+      "text": "Turn this selfie of me into a polished portrait for a glow-up reveal. Keep my face, features, skin tone, hair and body exactly as they are. Do not slim, smooth or change my face. Copy the pose and framing of the old photo I'm also uploading, so the two line up when I cut between them. Give it soft, flattering window light, a clean, warm background and a gentle shallow focus. Make it look like a real photo taken on a good camera, not a painting. Vertical 4:5, no text."
+    },
+    {
+      "label": "Variation: your pet's awkward phase",
+      "text": "I'm uploading two photos of my pet: one from their gangly, awkward baby phase and one from today. Clean up the old one by fixing blur and grain only, without changing the animal. Then restyle the new one into a proud, glossy portrait in the same pose and framing as the old photo, with soft light and a plain, warm background. Keep the pet's colours, markings and shape exactly as they are. Vertical 4:5, no text."
+    },
+    {
+      "label": "Variation: small business, then and now",
+      "text": "I'm uploading two photos of my [shop / food truck / studio]: one from our very first day and one from today. Clean up the first one gently (light, blur and grain only) and keep everything in it as it really was. Then line up today's photo with the same angle and framing, with bright, welcoming light, a tidy front and the space looking its best. Do not add anything that isn't really there, and no logos or text. Vertical 4:5."
+    }
+  ],
+  "tips": [
+    "The joke works best when the old photo stays real. Don't let AI \"fix\" the awkward part.",
+    "Line up your head in the same spot in both photos. The flip feels much smoother.",
+    "Keep your real face in the \"now\" shot. A glow-up that changes your features isn't you anymore.",
+    "Only post old photos of other people, like siblings in the shot, if they say yes."
+  ],
+  "tags": ["glow-up", "then-and-now", "photo-restore", "reels", "business"]
+}
