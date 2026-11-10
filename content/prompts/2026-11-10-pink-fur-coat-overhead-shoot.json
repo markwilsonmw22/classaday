@@ -1,0 +1,40 @@
+{
+  "slug": "pink-fur-coat-overhead-shoot",
+  "title": "Pink fur coat photoshoot: an overhead glam shoot in your own living room",
+  "published": "2026-11-10T06:47:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Higgsfield"],
+  "summary": "Turn one photo into a glossy, shot-from-above fashion moment: you on the living-room floor in an oversized pink faux-fur coat and dark sunglasses.",
+  "why": "FIKKU's roundup of November 2026 TikTok trends (published November 7, 2026) lists the pink fur coat pose among the ten trends people are remaking most this month: a living-room photoshoot shot from above, in an oversized pink coat and sunglasses. The page gives no view counts.",
+  "steps": [
+    "Pick one clear photo of yourself where your face is easy to see.",
+    "Paste the main prompt into ChatGPT or Gemini to make the still photo.",
+    "Want it to move? Put the finished photo into an image-to-video tool with the video variation.",
+    "Post the photo, the clip, or both, and label it as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the overhead glam shot",
+      "text": "Using the person in this photo, make a fashion photo shot from directly above. They lie back on a cream rug in a bright, cosy living room, wrapped in a huge, fluffy, pale pink faux-fur coat that spreads out around them. They wear dark oval sunglasses and look up at the camera with a relaxed, confident half-smile, one hand resting near their face. A coffee mug and a stack of magazines sit on the rug beside them. Soft window light, gentle shadows, crisp detail in the fur. Keep their face and hair exactly like the photo. Vertical, magazine-cover feel, no text."
+    },
+    {
+      "label": "Variation: make it move",
+      "text": "Make a vertical video from this photo, shot from directly above. The person in the pink faux-fur coat lies still for a beat, then slowly lowers their sunglasses with one finger, raises an eyebrow at the camera and pushes the glasses back up. The camera drifts down a little closer. The fur moves softly. Keep their face, coat and room exactly like the photo. Soft window light, 6 seconds, no text."
+    },
+    {
+      "label": "Variation: best friends shoot",
+      "text": "Using the two people in these photos, make an overhead fashion photo of them lying head to head on a cream living-room rug, both in oversized fluffy faux-fur coats, one pale pink and one mint green. Both wear dark sunglasses. One gives a cool stare, the other is mid-laugh. Bright, soft daylight, crisp fur detail. Keep both faces and hair exactly like the photos. Vertical, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Using the person in this photo, make an overhead fashion photo of them lying on a cream rug in a bright living room, wearing [our coat, scarf or sweater, described in colour and texture] and dark sunglasses. Around them on the rug, place [three of our products] in a neat curve so they're easy to see. Soft window light, magazine-cover feel. Keep their face exactly like the photo. No logos, no text, vertical."
+    }
+  ],
+  "tips": [
+    "Say \"shot from directly above\". It's what makes the look.",
+    "Ask for \"crisp fur detail\". Without it, the coat can look like a blurry blob.",
+    "Pick a coat colour that pops against a light rug: pale pink, mint or lilac.",
+    "Only use photos of people who agreed to be in it."
+  ],
+  "tags": ["fashion", "photoshoot", "selfie", "chatgpt", "business"]
+}

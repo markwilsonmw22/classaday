@@ -1,0 +1,40 @@
+{
+  "slug": "gold-elevator-mirror-selfie",
+  "title": "Gold elevator mirror selfie: one films, one leans on their shoulder",
+  "published": "2026-11-10T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Two photos become a short clip in a shiny gold elevator: one person films the mirror while the other drapes over their shoulder and plays to the camera.",
+  "why": "FIKKU's roundup of November 2026 TikTok trends (published November 7, 2026) lists the elevator couple selfie among the ten trends people are remaking most this month. It is made from two photos: one person films in a gold elevator mirror while the other leans over their shoulder. The page gives no view counts.",
+  "steps": [
+    "Pick two clear photos: one of you and one of your partner or friend. Faces should be well lit and facing the camera.",
+    "Upload both to an image-to-video tool that takes more than one reference photo, then paste the main prompt.",
+    "Check that both faces still look like you. If not, try again with sharper photos.",
+    "Add a sound in the app you post to, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the gold elevator selfie",
+      "text": "Make a vertical video of the two people in these photos inside a small, polished elevator with warm gold mirrored walls and soft lights in the ceiling. Person one stands facing the mirror and holds up a phone to film their reflection. Person two stands just behind, drapes both arms over person one's shoulders and rests their chin there. They both look into the mirror. Person two gives a slow, smug smile and a little wink. Person one tries to stay cool, then breaks into a laugh. The elevator hums and the floor light ticks up. Keep both faces, hair and clothes exactly like the photos. Handheld phone feel, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: best friends",
+      "text": "Make a vertical video of the two friends in these photos in a gold mirrored elevator. One holds a phone up to the mirror. The other hangs over their shoulder, pulls a silly face, then pretends to fix their hair in the reflection. They both burst out laughing just as the doors start to open. Warm, glowing light. Keep their faces and clothes exactly like the photos. Handheld phone feel, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Make a vertical video of the person and the pet in these photos in a shiny gold elevator. The person films their reflection with a phone in one hand. The pet sits in the crook of their other arm and rests its chin on their shoulder, looking straight into the mirror with a calm, unimpressed face. The person grins. The pet slowly blinks. Keep the person's face and the pet's markings exactly like the photos. Handheld phone feel, 7 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the two team members in these photos from my [salon / studio / shop], dressed up for a night out, in a gold mirrored elevator. One films the mirror. The other leans over their shoulder and holds up [our newest product] next to their face with a proud grin. They both nod at the camera as the doors open. Warm, glamorous light. Keep both faces and outfits exactly like the photos. No logos, no text, 8 seconds."
+    }
+  ],
+  "tips": [
+    "Use photos where both people face the camera. Side angles make the faces drift.",
+    "Keep the phone visible in the mirror. It sells the selfie look.",
+    "Write a short caption that sets up the joke, like \"Us leaving a party we said we'd stay at till midnight.\"",
+    "Only use photos of people who agreed to be in it."
+  ],
+  "tags": ["video", "image-to-video", "couples", "friends", "business"]
+}

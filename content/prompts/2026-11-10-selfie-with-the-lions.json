@@ -1,0 +1,40 @@
+{
+  "slug": "selfie-with-the-lions",
+  "title": "Selfie with the lions: a calm, cuddly pride joins your shot",
+  "published": "2026-11-10T06:46:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "One photo of you becomes a handheld savanna selfie where a lion cub and a few adult lions wander into frame and settle in beside you.",
+  "why": "FIKKU's roundup of November 2026 TikTok trends (published November 7, 2026) lists the lion selfie among the ten trends people are remaking most this month: a handheld savanna selfie with a lion cub and adult lions, made from one photo. The page gives no view counts.",
+  "steps": [
+    "Pick one clear, front-on photo of yourself. Daylight works best because the scene is sunny.",
+    "Paste the main prompt into an image-to-video tool. Ask for a shaky, handheld selfie feel.",
+    "Watch it back. If the lions look scary instead of sleepy, add \"relaxed, lazy, gentle\" and try again.",
+    "Label the post as made with AI so nobody thinks it's a real encounter."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the savanna selfie",
+      "text": "Make a vertical, handheld selfie video of the person in this photo on a golden grass savanna in late-afternoon sun, with flat-topped trees in the distance. They hold the phone at arm's length and smile. A fluffy lion cub tumbles in from the bottom of the frame and plops against their leg. Then two large adult lions stroll in behind them, calm and sleepy, and lie down in the grass. One yawns. The person's eyes go wide, then they give a nervous, delighted grin. The camera wobbles a little. Keep their face, hair and clothes exactly like the photo. Warm light, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: the cub steals the show",
+      "text": "Make a vertical selfie video of the person in this photo kneeling in tall golden grass on a sunny savanna. A small lion cub climbs onto their shoulder, sniffs their ear and then licks the phone screen, so the view goes blurry for a moment. The person laughs. In the background, an adult lion watches lazily from the shade of a tree. Keep their face and clothes exactly like the photo. Handheld feel, 7 seconds, no text."
+    },
+    {
+      "label": "Variation: your house cat meets the pride",
+      "text": "Make a vertical video in the style of a phone selfie, starring the cat in this photo on a golden savanna at sunset. The cat sits in front of the camera, looking proud. Three big lions walk up behind it and sit down in a row, the same pose as the cat. The cat turns its head to look at them, then back at the camera, totally unbothered. Keep the cat's colours and markings exactly like the photo. Warm light, gentle wobble, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical selfie video of the person in this photo, the owner of my [travel agency / outdoor gear shop / photo studio], on a sunny savanna wearing [our branded hat or shirt, described without a logo]. A lion cub wanders up and sits beside them. They point to the cub, then back at the camera, with a big smile, as if to say \"Look where this job takes you.\" Warm, golden light, handheld feel. No logos, no text, 8 seconds."
+    }
+  ],
+  "tips": [
+    "Ask for \"calm, sleepy, gentle\" lions. It keeps the clip cute, not scary.",
+    "A shaky camera makes it feel like a real phone selfie. Ask for it.",
+    "Always label it as AI. Never try to get close to real wild animals for a photo.",
+    "Only use photos of yourself or of people who agreed to be in it."
+  ],
+  "tags": ["video", "image-to-video", "animals", "selfie", "business"]
+}
