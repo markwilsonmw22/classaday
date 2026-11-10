@@ -1,0 +1,40 @@
+{
+  "slug": "pet-dj-headlines-the-arena",
+  "title": "Your pet headlines the arena: paws on the decks, confetti on the drop",
+  "published": "2026-11-10T18:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "One photo of your cat or dog becomes a big-stage DJ set: paws on the turntables, a packed crowd, spotlights and confetti.",
+  "why": "MakeTrendAI added a pet DJ template on its page updated November 6, 2026. It says the idea comes from a real arena DJ highlight reel posted in July 2026, and that cat and dog remakes are spreading on Instagram and TikTok this fall. It gives no count for the remakes.",
+  "steps": [
+    "Pick a clear photo of your pet, face and front paws visible. Good light helps the tool keep the markings right.",
+    "Paste the main prompt into an image-to-video tool. Ask for 10 to 15 seconds.",
+    "Add your own upbeat track in your editor and cut the confetti moment on the beat drop.",
+    "Label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the arena set",
+      "text": "Make a vertical video starring the pet in this photo as the headline DJ at a huge indoor arena. Start with a side close-up of its paws on two turntables and a mixer, glowing buttons under its paws. Cut to a shot from behind the pet, looking out over a packed crowd with hands in the air. Then a close-up of its face, mouth open, ears up, fully in the moment. End with the pet bobbing its head as bright stage lights sweep the room and confetti rains down. Keep the pet's fur colour, markings and size exactly like the photo. Cinematic concert lighting, 12 seconds, no text, no logos."
+    },
+    {
+      "label": "Variation: from the crowd",
+      "text": "Make a vertical video filmed from the middle of a cheering crowd at a dark arena. Far away on the stage, the pet in this photo stands alone behind DJ decks in a single white spotlight. Silhouetted hands wave in front of the camera. Slowly zoom in until we see the pet nodding to the beat, then a burst of coloured lights and confetti. Keep the pet's colours and markings exactly like the photo. Shaky phone-camera feel, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: two pets, back-to-back set",
+      "text": "Make a vertical video of the two pets in this photo sharing a DJ booth on a big festival stage at night. One works the turntables, the other leans on the mixer and bobs its head. On the beat drop, both throw a paw in the air at the same moment and the crowd goes wild. Keep both pets' colours and markings exactly like the photo. Bright stage lights, 12 seconds, no text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the pet in this photo, the mascot of my [pet shop / grooming salon / café], as a DJ on a small, cosy stage built in our shop. It taps the turntables while a few happy people dance in front. A banner behind it says \"[your event, for example: Saturday adoption party]\" in simple white letters. Keep the pet's colours and markings exactly like the photo. Warm party lights, 10 seconds, no logos."
+    }
+  ],
+  "tips": [
+    "Front-facing photos with both front paws showing make the turntable shots look much better.",
+    "Use a song you have the rights to, or the platform's own music library. Business accounts may not get trending songs.",
+    "Ask for \"happy, excited\" if the pet's face comes out too serious.",
+    "Only use photos of your own pets, or pets whose owners said yes."
+  ],
+  "tags": ["pets", "video", "image-to-video", "music", "business"]
+}

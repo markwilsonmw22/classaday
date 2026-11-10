@@ -1,0 +1,40 @@
+{
+  "slug": "pet-water-drum-solo",
+  "title": "The water drum solo: your pet soaks the drum, then plays through the splash",
+  "published": "2026-11-10T18:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Your pet pours water on a drum, tosses the bottle and plays a splashy solo under red stage lights. All from one photo.",
+  "why": "MakeTrendAI added a pet drummer template on its page updated November 6, 2026. It says it remakes a real drummer's water-soaked cover that passed 11 million views on Instagram and 12 million on TikTok this summer, and that AI creators have started swapping in pets. It gives no count for the pet versions.",
+  "steps": [
+    "Choose a sharp photo of your pet sitting up, with its front paws visible.",
+    "Paste the main prompt into an image-to-video tool and ask for about 12 to 14 seconds.",
+    "Add a drum-heavy track in your editor. Line up the first splash with the first big beat.",
+    "Label it as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the splash solo",
+      "text": "Make a vertical video of the pet in this photo standing behind a drum kit on a dark stage. It looks at the camera with a straight face and slowly pours a bottle of water onto the top of the snare drum. It tosses the bottle over its shoulder and picks up two glowing drumsticks. Then it plays hard. Every hit sends a spray of water flying, lit up red and gold by the stage lights. Cut to a low angle behind the wet drum for a few big overhead swings, then back to the front as it plays faster and bobs its head. Keep the pet's fur colour, markings and size exactly like the photo. 13 seconds, no text, no logos."
+    },
+    {
+      "label": "Variation: slow-motion finale",
+      "text": "Make a vertical video of the pet in this photo drumming on a wet snare drum on a dark stage. Most of the clip is normal speed and full of energy. On the last hit, switch to slow motion: water droplets hang in the air, lit red, and the pet's ears flop mid-swing. Hold the slow-motion moment for two seconds, then cut to black. Keep the pet's colours and markings exactly like the photo. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: kitchen pots and pans",
+      "text": "Make a vertical video of the pet in this photo in a home kitchen, sitting behind an upside-down row of pots and a mixing bowl like a drum kit. It pours a cup of water onto the biggest pot, grabs two wooden spoons and plays a wild solo, splashing water across the counter. Warm kitchen light. Keep the pet's colours and markings exactly like the photo. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the pet in this photo, the mascot of my [music shop / car wash / pet grooming salon], playing a drum solo on a small stage in our shop. It pours water on the drum first, then every hit sends up a splash. On the last beat, a simple sign behind it lights up with \"[your message, for example: Now open Sundays]\". Keep the pet's colours and markings exactly like the photo. Red and gold lights, 12 seconds, no logos."
+    }
+  ],
+  "tips": [
+    "Ask for a \"straight face\" during the water pour. The deadpan start is half the joke.",
+    "If the drumsticks look odd in its paws, try \"holding sticks in its front paws like a cartoon\".",
+    "This is an AI clip only. Never splash a real pet or put it near loud drums.",
+    "Use music you have the rights to, or pick from the platform's own library."
+  ],
+  "tags": ["pets", "video", "image-to-video", "music", "business"]
+}
