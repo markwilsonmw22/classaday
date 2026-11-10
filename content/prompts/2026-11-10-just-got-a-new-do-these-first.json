@@ -1,0 +1,40 @@
+{
+  "slug": "just-got-a-new-do-these-first",
+  "title": "\"Just got a new ___? Do these 5 things first\": the first-day checklist",
+  "published": "2026-11-10T00:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Write a short, numbered checklist for people who just got something new: a phone, a bike, a plant, a puppy. Hook first, five quick steps, done.",
+  "why": "Volume's tech-and-AI tracker (measured November 8, 2026) lists \"settings to change on a brand-new device\" as a top format. It says posts aimed at people who just bought or updated a device reached about 45 times their account's usual reach. The hook is \"If you just got the new ___, here are ___ things to do first.\" This pack turns that hook into a checklist for any new thing, not just gadgets.",
+  "steps": [
+    "Pick one new thing your followers often get: a phone, a laptop, an air fryer, a winter coat, a puppy.",
+    "Paste the main prompt into a chatbot and fill in the blanks. Ask for plain, short steps.",
+    "Check every step yourself before you post. Remove anything you haven't tried or can't confirm.",
+    "Film yourself doing each step, or put the steps on five simple slides, with the hook on the first one."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the five-step checklist",
+      "text": "Write a short checklist for a social media video. The hook is: \"If you just got a new [thing], do these 5 things first.\" The audience is beginners in Canada. Give exactly five steps, numbered. Each step is one short sentence saying what to do, then one short sentence saying why it helps. Only include steps that are safe, simple and take under five minutes each. No brand names, no product links, no prices. Plain English, Canadian spelling. End with one friendly line telling people to save the post for later."
+    },
+    {
+      "label": "Variation: new for the season",
+      "text": "Write a five-step checklist with the hook: \"Just put your [winter tires / snow shovel / winter coat / furnace] into use for the season? Do these 5 things first.\" Write it for people in Canada getting ready for the first cold snap. Each step is one short action and one short reason. Keep it practical and safe, and tell people to check the maker's instructions for anything technical. No brand names. Plain English, Canadian spelling."
+    },
+    {
+      "label": "Variation: you just got a new pet or plant",
+      "text": "Write a gentle, five-step checklist with the hook: \"Just brought home a new [puppy / kitten / houseplant]? Do these 5 things in the first week.\" Each step is one short action and one short reason. Keep it calm and friendly, not bossy. Add one line at the end saying a vet or a local plant shop can help with questions. No brand names. Plain English, Canadian spelling."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business] and my customers often buy [product or service]. Write a five-step checklist with the hook: \"Just picked up your new [product] from us? Do these 5 things first.\" Each step is one short action and one short reason that helps the customer get the most out of it. Make the last step an easy way to reach us if they have a question. No discounts, no sales pressure, no claims I can't back up. Plain English, Canadian spelling."
+    }
+  ],
+  "tips": [
+    "Put the full hook on screen in the first second. People who just got the thing will stop scrolling.",
+    "Five steps is the sweet spot. More than that and people stop reading.",
+    "Test every step before you post. Wrong advice gets called out fast in the comments.",
+    "Ask people to save it. Checklists get saved and shared more than they get liked."
+  ],
+  "tags": ["text", "checklist", "tips", "reels", "business"]
+}

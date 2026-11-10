@@ -1,0 +1,40 @@
+{
+  "slug": "pet-claps-and-shakes-on-it",
+  "title": "Deal sealed: your pet claps, then shakes on it",
+  "published": "2026-11-10T00:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Your cat or dog claps its paws with a big grin, then shakes your hand to seal the deal. Made from one photo, with a caption naming the deal.",
+  "why": "Virlo's TikTok trend tracker (updated October 29, 2026) lists a clapping cat handshake meme as peaking, and says the format has about 528.7 million views in total. People post a clapping cat that then shakes hands, with a caption about a deal. This pack makes your own pet the star instead of the meme cat.",
+  "steps": [
+    "Pick a clear, front-on photo of your cat or dog sitting up, with its front paws visible.",
+    "Paste the main prompt into an image-to-video tool. Keep the camera still so the clap and handshake read clearly.",
+    "Add a caption at the top that names the deal, like \"Me and the cat agreeing that 5 a.m. breakfast is fine now.\"",
+    "Add a short, upbeat sound in the app you post to, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the paw clap and handshake",
+      "text": "Make a video of the pet in this photo sitting upright on a couch, facing the camera. It looks pleased with itself and squints happily. It lifts its front paws and claps them together four times, quick and cheerful, with a wide, cheeky grin. Then a human hand reaches in from the right side of the frame. The pet stops clapping, puts one paw in the hand, and they shake on it twice, very seriously. The pet gives one firm nod at the camera. Keep the pet's breed, colours and markings exactly like the photo. Still camera, soft indoor light, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: two pets make a deal",
+      "text": "Make a video of the two pets in this photo sitting side by side on a rug, facing each other. They both clap their front paws together three times, as if they've just agreed on something big. Then they each lift one paw and shake paws in the middle of the frame. They both turn to look at the camera at the same time, very proud. Keep both pets' breeds, colours and markings exactly like the photo. Warm living-room light, still camera, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Make a video of the person and the pet in this photo sitting together at a kitchen table, like two people at a business meeting. The pet claps its front paws together three times with a cheeky grin. The person claps back, slowly and seriously. Then they lean across the table and shake: the person's hand holds the pet's paw. They both nod once, deal done. Keep their faces, clothes and the pet's markings exactly like the photo. Bright daylight, still camera, 9 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the shop pet in this photo, the dog or cat at my [café / bookshop / salon], sitting on our front counter next to [our newest product]. It claps its front paws together four times with a happy grin. Then a customer's hand reaches in, and the pet places its paw in the hand and shakes twice, as if closing a sale. The pet looks at the camera and blinks slowly. Clean, bright light that matches my space: [describe colours]. No logos, no text, 8 seconds."
+    }
+  ],
+  "tips": [
+    "Use a photo where both front paws can be seen. Hidden paws make the clap look strange.",
+    "The caption is the joke. Name a small, silly deal: who gets the warm spot, or treats after every walk.",
+    "Keep it short. Eight seconds is plenty for a clap and a shake.",
+    "Only use photos of your own pets and of people who agreed to be in it."
+  ],
+  "tags": ["pets", "video", "image-to-video", "meme", "business"]
+}

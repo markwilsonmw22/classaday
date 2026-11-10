@@ -1,0 +1,40 @@
+{
+  "slug": "screenshot-worthy-tip-cards",
+  "title": "Tip cards worth a screenshot: a matching set of five saveable slides",
+  "published": "2026-11-10T00:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Canva"],
+  "summary": "Turn five useful tips into a set of matching cards: same layout, same colours, one tip per card. Made for people to screenshot and keep.",
+  "why": "Volume's tech-and-AI tracker (measured November 8, 2026) lists \"saveable flashcards you'll want to screenshot\" as a top format, with posts reaching about 30 times their account's usual reach. The posts are slideshows of uniform cards with tips or settings, under hooks like \"hidden tips you probably didn't know existed.\" This pack helps you write the tips and design the cards for any topic.",
+  "steps": [
+    "Ask a chatbot for five short, useful tips on your topic with the first prompt, then check each one yourself.",
+    "Make the cards with the design prompt. Ask for one card at a time, using the same description each time so they match.",
+    "Check every card for spelling mistakes in the text. Fix any wrong words in Canva or ask the tool to redo just that card.",
+    "Post them as a carousel. The first card is the hook, then one tip per card, and the last card says \"Save this for later.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: write the five tips",
+      "text": "Give me five tips about [topic] that most people don't know but would use every week. Each tip has a short title of four words or fewer and one sentence of explanation, under 20 words. Only include tips that are true, safe and easy to try. No brand names. Then write a hook for the first slide in this style: \"[Number] [topic] tips you probably didn't know existed.\" Plain English, Canadian spelling."
+    },
+    {
+      "label": "Design prompt: one matching card",
+      "text": "Make a square card for an Instagram carousel. Off-white background, a thin rounded border, lots of space around the edges. At the top, a small number badge in a soft circle that says \"[1]\". In the middle, the title in large, bold, clean sans-serif letters: \"[tip title]\". Under it, in smaller letters: \"[one-sentence explanation]\". At the bottom, a small, simple flat icon that fits the tip. Use only two colours: dark charcoal for text and [one accent colour] for the badge and icon. Spell every word exactly as written. No logos, no other text."
+    },
+    {
+      "label": "Variation: the cosy winter set",
+      "text": "Make a square card for a carousel of winter-at-home tips. Warm cream background, a soft knitted texture along the bottom edge, a small snowflake in one corner. A number badge at the top says \"[1]\". The title in large, friendly rounded letters: \"[tip title]\". Under it, one line in smaller letters: \"[explanation]\". Colours: deep forest green text and a soft red accent. Keep the layout simple so every card in the set can match. Spell every word exactly as written. No logos, no other text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business]. Make a square carousel card that shares one useful tip with my customers. Background in [my main colour, lightened], bold title in [my text colour]: \"[tip title]\". Under it, one short line: \"[explanation]\". A number badge \"[1]\" in the top corner and a small, simple icon of [something related to the tip] at the bottom. Clean, modern layout with lots of white space. Spell every word exactly as written. No logos, no prices, no other text."
+    }
+  ],
+  "tips": [
+    "Keep every card the same: same layout, colours and font. That's what makes the set feel worth saving.",
+    "One tip per card, and fewer than 25 words on each. If it's hard to read on a phone, cut words.",
+    "AI image tools still slip on spelling sometimes. Read every card out loud before you post.",
+    "Only share tips you've tried. People screenshot these and come back to them."
+  ],
+  "tags": ["carousel", "tips", "design", "instagram", "business"]
+}
