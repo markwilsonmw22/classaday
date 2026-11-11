@@ -1,0 +1,40 @@
+{
+  "slug": "same-skill-years-apart",
+  "title": "Same pose, years apart: your first try at a skill vs. you today",
+  "published": "2026-11-11T12:44:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Cut from an old photo of your first wobbly try at something to the same pose, place or skill today. AI cleans up the old shot and helps you match it.",
+  "why": "Postdom's Instagram trends page for November 9 to 15, 2026 (checked November 10) marks \"Time: then and now\" as trending: people cut from an old photo or clip to the same pose, place or skill today, often years apart, over a slow classic rock track, with the sound in about 445K reels. Our earlier then-and-now packs were about couples and glow-ups; this one is about a skill or a place.",
+  "steps": [
+    "Find an old photo of you trying something for the first time: your first skate, cake, guitar chord or day at the shop.",
+    "Use the main prompt to clean up the old photo. Then ask for the matching guide so you can recreate the shot.",
+    "Take the new photo in the same pose and spot, doing the same thing, now with years of practice.",
+    "Post the old shot, then cut to the new one on the beat. Keep the caption to the two years."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: restore the old shot",
+      "text": "Restore this old photo of me. Remove scratches, dust and fading, fix the colour gently and make it a little sharper. Keep my face, body, clothes, the place and the pose exactly the same. Do not add or remove anything, and keep it looking like a real photo from that year. No text."
+    },
+    {
+      "label": "Variation: the matching guide",
+      "text": "Look at this old photo. I want to recreate it today in the same pose and spot, doing the same activity. Tell me in short plain steps: where the camera was, how high it was, how far away, the angle, where I should stand, what my hands and feet are doing, and what light to look for. Then list 3 small details that will make the two photos line up perfectly when I cut between them."
+    },
+    {
+      "label": "Variation: when you have no old photo",
+      "text": "Using my photo as reference, make a gentle, believable picture of me as a total beginner at [skill, for example skating on an outdoor rink]: wobbly stance, borrowed gear, big nervous smile, plain winter daylight. Make it look like a slightly faded phone photo from about ten years ago. Keep my face recognisable. Add a small label in the corner that says \"AI recreation\"."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Restore this early photo of our shop, first product or founding team. Fix the fading and scratches, keep everything else exactly as it was, and keep it looking like a real photo from that time. Then tell me how to take the same shot today: camera spot, height, angle and framing, so the two photos line up when I cut between them. No logos, no added text."
+    }
+  ],
+  "tips": [
+    "The more exactly the new shot matches the old one, the better the cut feels.",
+    "Pick a skill you really kept up. The trend works because the years are real.",
+    "Never pass off an AI-made \"old\" photo as real. Label it, or use a real one.",
+    "Only post old photos of other people if they say yes."
+  ],
+  "tags": ["then-and-now", "photo-restore", "skills", "reels", "business"]
+}

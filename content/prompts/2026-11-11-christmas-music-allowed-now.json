@@ -1,0 +1,40 @@
+{
+  "slug": "christmas-music-allowed-now",
+  "title": "\"Christmas music is allowed now\": your first cosy moment of the season",
+  "published": "2026-11-11T12:44:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Film the first small, cosy moment of your holiday season and announce that the festive playlist is officially back on. AI plans the shots and the line.",
+  "why": "Postdom's Instagram trends page for November 9 to 15, 2026 (checked November 10) marks \"Christmas music is allowed now\" as trending: people post their first cosy, festive moment of the season over a classic 1980s Christmas pop song, with the sound in about 753K reels. Our earlier packs did the full room switch and the Christmas-fan skit; this one is the quiet first moment.",
+  "steps": [
+    "Ask AI for a short shot list and one on-screen line using the main prompt.",
+    "Film three or four short, slow clips of the first festive things you do: the first mug, the first string of lights, the first song on the speaker.",
+    "Add the line on screen and pick a classic Christmas song from the app's sound library.",
+    "Keep it under 15 seconds and post it the day you really did it."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: shot list and line",
+      "text": "Help me make a 12-second vertical video for the trend where people announce that Christmas music is officially allowed again. My first cosy moment this year is: [describe it, for example making hot chocolate after a cold walk]. Give me 4 short shots I can film on my phone in my own home, each 2 to 3 seconds, in order. For each shot, tell me the angle, what moves, and the light to look for. Then write 5 options for one short on-screen line, under 8 words each, warm and a little playful. No song lyrics."
+    },
+    {
+      "label": "Variation: the cosy photo touch-up",
+      "text": "Edit this photo of my living room so it shows the very first festive touch of the season, not a full makeover. Add one warm string of small lights along the window, a steaming mug on the table and a soft knit blanket over the chair. Keep the room, furniture and colours exactly as they are. Evening light, gentle and real, like a phone photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the Canadian first snow",
+      "text": "Write 5 short on-screen lines for a video of the first snowfall in my Canadian town, announcing that Christmas music is now allowed. Mix in small local details like toques, scraping the car, or the first hot drink after shovelling. Under 10 words each. Friendly, not sarcastic."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business, for example a small café]. Plan a 12-second vertical video for the day our holiday playlist goes on for the first time this year. Give me 4 shots that show what changes with it, such as the first holiday drink on the menu board, the window going up, or staff in cosy sweaters. Then write 5 on-screen lines under 8 words each and 3 short captions that invite people to come by. No prices, no fake urgency, no song lyrics."
+    }
+  ],
+  "tips": [
+    "Small and real beats big and staged. One mug and one string of lights is enough.",
+    "Use the sound from the app's library so the music is licensed for the platform.",
+    "Film near a window or a lamp. Warm light does most of the work.",
+    "If you use the photo touch-up, post it as a still and say it was edited with AI."
+  ],
+  "tags": ["holiday", "christmas", "cosy", "reels", "business"]
+}
