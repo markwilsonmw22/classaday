@@ -1,0 +1,40 @@
+{
+  "slug": "parking-garage-handbag-dance",
+  "title": "Parking-garage handbag dance: spin, hair flip, bag swing on every beat",
+  "published": "2026-11-11T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "One photo becomes a high-energy dance in an empty parking garage: you spin, flip your hair, throw your arms wide and swing a small handbag on the beat.",
+  "why": "Fikku's TikTok trends roundup for November 2026, published November 7, lists a one-photo parking-garage dance where the dancer spins, flips their hair and swings a small black handbag on every beat, and says it is still everywhere after breaking out in October. Our other dance packs are duos and groups; this one is a solo move with a prop.",
+  "steps": [
+    "Pick one clear, full-body photo of yourself in an outfit you like. Plain background and good light work best.",
+    "Paste the main prompt into an image-to-video tool. Ask for 8 to 10 seconds and keep the moves simple.",
+    "Pick a trending upbeat sound inside the app and line up the bag swings with the beat. Trim the start so the first spin lands on a strong beat.",
+    "Label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the garage dance",
+      "text": "Make a video of the person from this photo dancing alone in an empty underground parking garage at night. Grey concrete pillars, painted lines on the floor, cool fluorescent lights overhead. They hold a small black handbag by its short strap. On each beat they do one move: a quick spin, a big hair flip, arms thrown wide, then a swing of the handbag out to the side and back. Confident, playful, a little dramatic. Camera fixed at chest height, wide enough to see them head to toe. Keep their face, hair and outfit exactly like the photo. 10 seconds, no text, no cars moving."
+    },
+    {
+      "label": "Variation: winter coat edition",
+      "text": "Same idea, but the person from this photo wears a long puffy winter coat, a toque and mitts, holding a small knit handbag. The garage entrance behind them shows snow falling outside. They spin, shake snow out of their hair, throw their arms wide and swing the bag on each beat, breath faintly visible in the cold air. Fixed wide camera, cool light with a warm glow from the entrance. Keep their face exactly like the photo. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: your pet",
+      "text": "Make a video of the [dog / cat] from this photo in an empty parking garage at night under fluorescent lights. A tiny handbag hangs from its mouth by the strap. On each beat it does a happy spin, a head shake that makes its ears flop, and a little hop that swings the bag. Fixed camera at floor level, wide shot. Keep the pet's breed, colours and markings exactly like the photo. 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the person from this photo, who works at my [boutique / bag shop / salon], dancing in an empty parking garage at night. Instead of a plain handbag, they swing [describe one of your products: a tote, a gift bag, a clutch] on each beat, with a spin and a hair flip between swings. On the last beat they hold the product up toward the camera. Fixed wide shot, cool fluorescent light, no logos, no text. 10 seconds."
+    }
+  ],
+  "tips": [
+    "Give the tool one move per beat in a set order. A long list of moves turns into a blur.",
+    "Shoes and full legs in your photo help the tool keep your feet on the floor.",
+    "Use your own photo or a friend who agreed. Never use a famous person's face.",
+    "Shops can swap the handbag for a product and post it as a gift idea for the holidays."
+  ],
+  "tags": ["video", "image-to-video", "dance", "fashion", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "street-party-trio-dance",
+  "title": "Street-party trio: three friends dance in the middle of a cheering crowd",
+  "published": "2026-11-11T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Up to three photos become a night-time street party where you and two friends dance in the centre while the crowd around you goes wild.",
+  "why": "Fikku's TikTok trends roundup for November 2026, published November 7, calls a three-friend dance at a packed night street party the group trend of the season and the one that gets tagged the most, built from one photo for the centre person and up to two for the sides. Our team shoulder-bounce pack was an indoor group dance; this one is a three-person street party with a crowd.",
+  "steps": [
+    "Pick three clear, full-body photos: you in the middle, plus two friends who have agreed. Similar lighting helps the three look like one scene.",
+    "Paste the main prompt into an image-to-video tool that takes several reference photos. Ask for 8 to 10 seconds.",
+    "If the faces drift, try fewer people in the crowd, or make a two-person version first and add the third later.",
+    "Add a trending sound in the app, tag your two friends and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the street party",
+      "text": "Make a video of the three people from these photos dancing side by side in the middle of a busy street party at night. The person from the first photo is in the centre, the other two on each side. Strings of warm lights hang above the street and a ring of cheering people surrounds them, clapping and filming with their phones. The three do the same easy moves together: a step to the left, a step to the right, a shoulder roll and a big arm swing up on the last beat. Big smiles, lots of energy. Camera at chest height, slowly pushing in from the crowd. Keep all three faces, hair and outfits exactly like the photos. 10 seconds, no text, no signs or logos."
+    },
+    {
+      "label": "Variation: winter street festival",
+      "text": "Same idea, but at an outdoor winter festival at night with snow on the ground, a lit-up ice rink in the background and people in toques and scarves cheering around them. The three people from these photos wear winter coats and mitts. They do the same three moves together, kicking up a little snow, and finish with a matching mitten wave at the camera. Light snow falling, warm string lights. Keep all three faces the same as the photos. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: three pets",
+      "text": "Make a video of the three [dogs / cats] from these photos sitting side by side in the middle of a night street party under warm string lights. A small crowd of people around them claps and cheers. All three bounce in place, wag their tails and do a little spin at the same time, then sit back down facing the camera. Keep each pet's breed, colours and markings exactly like the photos. Fixed camera at their eye level. 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a video of the three people from these photos, my team at my [café / gym / shop], dancing together in front of a space that looks like my business at night: [describe your storefront, colours and lights]. A friendly crowd of customers gathers around them, clapping. The three do the same simple moves together, then all point at [your product or your door] on the last beat. Warm string lights, no logos, no text. 10 seconds."
+    }
+  ],
+  "tips": [
+    "Put the main person's photo first and say who stands where. Tools mix people up less when the order is clear.",
+    "Keep the moves the same for all three. Matching steps hide small timing slips.",
+    "Only use photos of friends who agreed, and never a famous person's face.",
+    "A team version makes an easy holiday-party post for a small business."
+  ],
+  "tags": ["video", "image-to-video", "dance", "friends", "business"]
+}
