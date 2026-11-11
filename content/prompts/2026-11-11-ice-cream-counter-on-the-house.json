@@ -1,0 +1,40 @@
+{
+  "slug": "ice-cream-counter-on-the-house",
+  "title": "On the house: the ice cream counter skit",
+  "published": "2026-11-11T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Two photos become a short skit at a retro ice cream counter: a server in a bright yellow uniform hands over a cone and says it's on the house.",
+  "why": "Starrd's monthly roundup of AI video trends lists an ice cream counter scene restaged from a 2000s comedy film, posted on TikTok on November 8, 2026. People upload two photos, one as the customer and one as the server in a yellow uniform, and either role can be a pet. The page gives no view counts.",
+  "steps": [
+    "Pick two clear, front-facing photos: one for the customer and one for the server. A friend, a family member who agreed, or your pet all work.",
+    "Upload both to an image-to-video tool that takes more than one reference photo, then paste the main prompt.",
+    "Write your own short lines. Keep it to two or three lines so the lip-sync stays clean.",
+    "Add music or sound in the app you post to, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the free scoop",
+      "text": "Make a vertical video of the two people in these photos at a small retro ice cream parlour with a glass counter full of colourful tubs, pastel walls and bright, cheerful light. Person one is the server, behind the counter in a bright yellow short-sleeve uniform and a paper hat. Person two is the customer, in their own clothes from the photo, leaning on the counter. The server scoops a huge pink cone, leans in and says with a warm, slightly too intense smile: \"For you? It's on the house.\" The customer looks stunned, slowly takes the cone and whispers: \"Wait. Really?\" The server nods once, very serious. Keep both faces, hair and outfits exactly like the photos. Handheld film look, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: your pet runs the counter",
+      "text": "Make a vertical video of the person and the pet in these photos at a retro ice cream parlour with pastel walls and a glass counter of colourful tubs. The pet stands behind the counter on a stool, wearing a tiny yellow uniform and a paper hat. The person, in their own clothes, steps up to order. The pet slides a small cone across the counter with one paw and gives a slow, proud blink. The person gasps and says: \"On the house? You shouldn't have.\" Keep the person's face and the pet's markings exactly like the photos. 8 seconds, no text."
+    },
+    {
+      "label": "Variation: the pet is the customer",
+      "text": "Make a vertical video of the person and the pet in these photos at a retro ice cream parlour. The person is the server in a bright yellow uniform and paper hat. The pet sits on a stool at the counter, staring hopefully. The server looks around, leans down and whispers: \"Don't tell anyone. This one's on the house.\" They hand over a tiny cup with one small scoop. The pet's ears perk up. Keep the person's face and the pet's markings exactly like the photos. Bright, cheerful light, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the two team members in these photos at my [café / bakery / ice cream shop]. One stands behind the counter in a bright yellow apron. The other plays the customer. The server hands over [our signature treat] with a big smile and says: \"First one's on us this week.\" The customer takes a bite and gives a happy little shoulder shimmy. Warm, bright light. Keep both faces and outfits exactly like the photos. No logos, no text, 10 seconds."
+    }
+  ],
+  "tips": [
+    "Write your own lines instead of copying film dialogue. The joke works with any short, over-serious offer.",
+    "A plain wall behind each person in the photos helps the tool keep faces steady.",
+    "If you run a real free-scoop offer, say the actual terms in your caption. Don't promise anything you won't honour.",
+    "Only use photos of people who agreed to be in it."
+  ],
+  "tags": ["video", "image-to-video", "skit", "pets", "business"]
+}

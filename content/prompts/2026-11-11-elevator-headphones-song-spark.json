@@ -1,0 +1,40 @@
+{
+  "slug": "elevator-headphones-song-spark",
+  "title": "Elevator song spark: \"Wait, you like this band too?\"",
+  "published": "2026-11-11T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Two photos become a short, wide elevator scene: one person wears headphones, the other hears the song leaking out and can't stay quiet about it.",
+  "why": "Starrd's monthly roundup of AI video trends says people started restaging a famous elevator scene from a 2009 romantic comedy with a friend in early November 2026: one person wears headphones, the other speaks up about the music. Kapwing also offers it as a ready-made AI video generator. Neither page gives view counts.",
+  "steps": [
+    "Pick two clear, front-facing photos: one for the person with headphones and one for the person who speaks.",
+    "Upload both to an image-to-video tool that takes more than one reference photo. Set it to wide (16:9) for the film look.",
+    "Paste the main prompt and swap in your own line about the music.",
+    "Add your own music in the app you post to, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the elevator line",
+      "text": "Make a wide 16:9 video of the two people in these photos standing side by side in a plain, slightly old office elevator with brushed metal walls and soft overhead light. Person one wears big over-ear headphones and nods along to music we can faintly hear leaking out. Person two stands a little apart, glances over twice, then turns and says with quiet surprise: \"Sorry. Is that the band I think it is? I love them.\" Person one slides one headphone off, blinks, and breaks into a shy smile. The doors start to open. Muted, warm film colours, gentle film grain. Keep both faces, hair and clothes exactly like the photos. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: best friends, the first day you met",
+      "text": "Make a wide 16:9 video of the two friends in these photos in a small office elevator with metal walls. One wears headphones and is mouthing the words to a song. The other leans over, points at the headphones and says: \"No way. Nobody else knows that song.\" They both freeze, then start singing the next line together, badly. Soft, nostalgic film look. Keep both faces and clothes exactly like the photos. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: your pet hears it first",
+      "text": "Make a wide 16:9 video of the person and the pet in these photos in a quiet office elevator. The person wears big headphones and taps their foot. The pet sits beside them, tilts its head at the music leaking out, then looks up at the person with wide eyes. The person slides off one headphone and whispers: \"You like this one too?\" The pet wags or slowly blinks. Keep the person's face and the pet's markings exactly like the photos. Warm, muted colours, 8 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a wide 16:9 video of the two team members in these photos from my [shop / studio / office] in a quiet elevator. One wears headphones. The other holds [our product] and leans in: \"Is that our new playlist? The one we play in the shop?\" The first one grins and hands over one earbud. Warm, muted film colours. Keep both faces and outfits exactly like the photos. No logos, no text, 10 seconds."
+    }
+  ],
+  "tips": [
+    "Don't name a real band in the spoken line. Let your caption or the song you add do that.",
+    "Wide 16:9 gives the film look. Crop to vertical later if you post to Reels or TikTok.",
+    "Keep the line short. One sentence lip-syncs much better than two.",
+    "Only use photos of people who agreed to be in it."
+  ],
+  "tags": ["video", "image-to-video", "friends", "music", "business"]
+}
