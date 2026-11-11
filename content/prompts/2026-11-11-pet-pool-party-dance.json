@@ -1,0 +1,40 @@
+{
+  "slug": "pet-pool-party-dance",
+  "title": "Pool party pet: goggles, floaties and a dance by the water at night",
+  "published": "2026-11-11T00:38:00Z",
+  "kind": "video",
+  "tools": ["Seedance", "Kling", "Veo", "Higgsfield"],
+  "summary": "One photo of your dog or cat becomes a glowing night-time pool party where your pet dances in swim goggles and arm floaties.",
+  "why": "MakeTrend's trend tracker (updated November 9, 2026) lists the dancing dog pool party in its \"Just added\" section of the newest trends: a dog dancing by a pool at night in a swimsuit, goggles and floaties, made from one photo. A summer party is a fun break from grey November skies.",
+  "steps": [
+    "Pick one clear photo of your pet standing or sitting, so the tool can see its body.",
+    "Paste the main prompt into an image-to-video tool. Add an upbeat summer song after if the tool has no sound.",
+    "If the outfit hides your pet's face, ask for \"goggles pushed up on the forehead\" and try again.",
+    "Label it as AI. Real pets near water should always be supervised."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the night pool party",
+      "text": "Make a vertical video of the pet in this photo at a backyard pool party at night. The pool glows bright blue and strings of warm lights hang overhead. The pet stands on its back legs by the edge of the pool, wearing a bright pink swimsuit, swim goggles pushed up on its forehead and inflatable floaties on its front legs. It bops its head, wiggles its hips and spins in a circle to the beat. Balloons and a pool float bob in the water behind it. Keep the pet's face, fur colour and markings exactly like the photo. Fun, glowing, 12 seconds, no text."
+    },
+    {
+      "label": "Variation: the cannonball finish",
+      "text": "Make a vertical video of the pet in this photo dancing on a pool deck at night in swim goggles and a little striped swimsuit, under glowing party lights. After a few dance moves, it turns, runs and does a happy cannonball into the glowing blue pool with a big splash. It pops up wearing a tiny floatie ring, looking proud. Keep the pet's face, fur colour and markings exactly like the photo. 12 seconds, no text."
+    },
+    {
+      "label": "Variation: the snowy hot-tub party",
+      "text": "Make a vertical video of the pet in this photo at a backyard hot tub on a snowy winter night. Steam rises from the water and soft snow falls through warm string lights. The pet wears swim goggles and a cosy knitted toque. It dances on the deck, then hops in and floats on a small inflatable ring, eyes closed, totally relaxed. Keep the pet's face, fur colour and markings exactly like the photo. Cosy, 12 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the shop pet in this photo at a night-time pool party, wearing goggles and floaties. It dances beside a little table holding [our product, described without any logo], then nudges it toward the camera with its nose and does one last spin. Glowing blue water, warm string lights. Keep the pet's face and markings exactly like the photo. No logos, no text, 12 seconds."
+    }
+  ],
+  "tips": [
+    "Name each piece of the outfit. \"Swimsuit, goggles and floaties\" gives the tool a clear picture.",
+    "Night lighting with a glowing pool makes the colours pop on a phone screen.",
+    "In Canada in November, the snowy hot-tub version is a fun local twist.",
+    "Only use photos of pets you have permission to post."
+  ],
+  "tags": ["pets", "video", "image-to-video", "dance", "business"]
+}

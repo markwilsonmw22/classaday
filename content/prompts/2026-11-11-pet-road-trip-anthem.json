@@ -1,0 +1,40 @@
+{
+  "slug": "pet-road-trip-anthem",
+  "title": "Road-trip anthem: your pet takes the wheel and belts the chorus",
+  "published": "2026-11-11T00:38:00Z",
+  "kind": "video",
+  "tools": ["Seedance", "Kling", "Veo", "Higgsfield"],
+  "summary": "One photo of your dog or cat becomes a sunny road-trip clip: paws on the wheel, wind in the ears, singing a big rock chorus at full volume.",
+  "why": "Starrd's monthly roundup of AI video trends (updated November 10, 2026) says the dog-at-the-wheel rock anthem clip started spreading as an AI video trend in early November 2026. Template sites like Media.io also now carry it as a one-photo template.",
+  "steps": [
+    "Pick one clear photo of your pet where you can see its whole face.",
+    "Paste the main prompt into an image-to-video tool that can add sound, or add your own upbeat track after.",
+    "Watch it back. If your pet's face changes, add \"keep the same fur colour, markings and eyes\" and try again.",
+    "Label the post as made with AI. Real pets should ride buckled in, not drive."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the open-road chorus",
+      "text": "Make a vertical video of the pet in this photo sitting in the driver's seat of an old convertible on an empty highway on a sunny day. Its front paws rest on the steering wheel. The wind blows its ears and fur back. It throws its head back and sings a big, loud rock chorus, mouth wide open, eyes half closed with joy. The camera is mounted on the dashboard, looking back at the pet, with fields and blue sky rolling past behind it. Keep the pet's face, fur colour and markings exactly like the photo. Bright, happy, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: the fall drive",
+      "text": "Make a vertical video of the pet in this photo behind the wheel of a small car on a winding country road lined with orange and red maple trees. It wears tiny sunglasses pushed up on its head. As the chorus kicks in, it pounds one paw on the wheel to the beat and howls along. Leaves blow past the open window. Keep the pet's face, fur colour and markings exactly like the photo. Warm fall light, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: pet and owner duet",
+      "text": "Make a vertical video from the dashboard of a car on a sunny highway. The pet in the first photo sits in the driver's seat with its paws on the wheel. The person in the second photo sits in the passenger seat. They both sing the same loud chorus, then turn to look at each other on the last line and point at each other. Keep both faces exactly like the photos. Wind in their hair and fur, bright light, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the shop pet in this photo driving a small delivery van down a sunny main street. A neat stack of boxes sits on the seat beside it, plain with no logos. The pet sings a big rock chorus with its head out the window, then pulls up outside a little storefront and gives a happy bark at the camera. Keep the pet's face and markings exactly like the photo. Bright, cheerful, 10 seconds, no text."
+    }
+  ],
+  "tips": [
+    "Use a song you have the rights to, or the platform's own sound library. Don't name a band in the prompt.",
+    "Ask for \"mouth wide open, head thrown back\". It's the big singing face that makes people laugh.",
+    "A dashboard camera angle looking back at the driver sells the road-trip feel.",
+    "Only use photos of pets and people you have permission to post."
+  ],
+  "tags": ["pets", "video", "image-to-video", "music", "business"]
+}

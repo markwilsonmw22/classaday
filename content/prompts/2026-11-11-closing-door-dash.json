@@ -1,0 +1,40 @@
+{
+  "slug": "closing-door-dash",
+  "title": "The closing-door dash: you sprint, it shuts, you land on the floor",
+  "published": "2026-11-11T00:38:00Z",
+  "kind": "video",
+  "tools": ["Seedance", "Kling", "Veo", "Higgsfield"],
+  "summary": "One photo of you becomes a slow-motion sprint for a closing door that shuts one second too soon, and you slide to a stop on the floor.",
+  "why": "MakeTrend's trend tracker (updated November 9, 2026) lists the closing door prank in its \"Just added\" section of the newest trends, as a 12-second clip made from one or two photos. Media.io also offers it as a ready-made AI video template.",
+  "steps": [
+    "Pick one full-body photo of yourself, or two if a friend is in on the joke.",
+    "Paste the main prompt into an image-to-video tool. Ask for slow motion near the end.",
+    "Add an on-screen line that says what you just missed, like \"Me trying to make the last bus\".",
+    "Label it as AI so nobody worries you got hurt."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the last-second miss",
+      "text": "Make a vertical video of the person in this photo at the end of a long, bright hallway. A heavy glass door at the far end starts to swing shut. They spot it, gasp and sprint toward it with arms pumping. The camera follows from behind, then cuts to the front. Just as they reach it, the door clicks shut and they slide to a stop, landing gently on their bum on the shiny floor. They sit there, stunned, and look straight at the camera. Comedy timing, slow motion for the last two seconds. Keep their face and clothes exactly like the photo. 12 seconds, no text."
+    },
+    {
+      "label": "Variation: the elevator",
+      "text": "Make a vertical video of the person in this photo running across an office lobby with a coffee in one hand. The elevator doors ahead start to close. They lunge forward with one hand out, but the doors shut a moment too soon. They skid to their knees on the polished floor, the coffee held perfectly upright without spilling a drop. They glance at the cup, relieved, then at the camera. Keep their face and clothes exactly like the photo. 10 seconds, no text."
+    },
+    {
+      "label": "Variation: the friend who closes it",
+      "text": "Make a vertical video using the two people in these photos. The first person waits inside a doorway, holding the door open with a big smile. The second person runs toward it from across a parking lot. Right as they arrive, the first person gives a tiny wave and lets the door close. The runner slides to a stop on the ground, then bursts out laughing. Keep both faces and outfits exactly like the photos. Playful, 10 seconds, no text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a vertical video of the person in this photo racing down a sidewalk toward a small shop at closing time. The shopkeeper flips the sign on the door to closed and locks it just as they arrive. The runner slides to a stop and sits on the ground. Then the door opens again and the shopkeeper hands them a small wrapped treat with a smile. No logos or readable signs. Keep the runner's face and clothes exactly like the photo. 12 seconds, no text."
+    }
+  ],
+  "tips": [
+    "Ask for \"lands gently\" so the fall reads as silly, not painful.",
+    "Slow motion on the last two seconds is where the laugh is.",
+    "The caption does the work. Name something everyone has missed by one second.",
+    "Only use photos of people who agreed to be in it."
+  ],
+  "tags": ["video", "image-to-video", "funny", "relatable", "business"]
+}
