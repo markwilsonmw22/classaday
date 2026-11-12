@@ -1,0 +1,40 @@
+{
+  "slug": "birthday-candles-car-window",
+  "title": "Drive-by birthday: one big breath out the car window",
+  "published": "2026-11-12T18:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "A four-second clip: you lean out of the driver's window and blow out every candle on a birthday cake in one big breath.",
+  "why": "Jump on the Trend's weekly page (updated November 9, 2026) lists \"Birthday Car\" as a format that went live on November 7, with about 1.7 million views. It's a one-person, four-second clip: leaning out of a car window to blow out all the candles at once.",
+  "steps": [
+    "Pick a clear photo of the birthday person, face visible, ideally sitting in a car or looking to the side.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a vertical clip, 4 to 5 seconds.",
+    "Check the ending: every flame should go out in one breath. If some stay lit, run it again.",
+    "Post it on the birthday with a short caption, like \"Another year, one breath.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: one breath, all the candles",
+      "text": "Use the person in this photo. They sit in the driver's seat of a parked car on a quiet street at golden hour. A friend outside, only their hands in view, holds up a birthday cake covered in lit candles at the open window. The person leans out of the window, takes a big breath, and blows out every candle in one go. Smoke curls up, they grin and throw both hands up. Handheld phone camera, warm light, natural colours, one smooth shot, 4 seconds, vertical. Keep their face and hair the same as the photo."
+    },
+    {
+      "label": "Variation: Canadian winter drive-by",
+      "text": "Use the person in this photo. Snowy evening on a quiet street, warm porch lights, snowflakes falling. They sit in the driver's seat wearing a toque and scarf, window rolled down. A friend in mittens holds up a small cake with lit candles. The person leans out, blows out all the candles in one big puff, and the breath shows as a little cloud in the cold air. They laugh and wave. Handheld phone camera, cosy and bright, one shot, 5 seconds, vertical. Keep their face the same as the photo."
+    },
+    {
+      "label": "Variation: your pet's birthday",
+      "text": "Use the pet in this photo. The pet sits in the driver's seat of a parked car, front paws on the steering wheel, wearing a tiny paper party hat. A hand holds a small pet-friendly cake with two candles at the open window. The pet leans out, gives a big puff, and both candles go out. The pet's ears flop and it looks very proud. Bright afternoon light, playful and cute, one shot, 4 seconds, vertical. Keep the pet's markings the same as the photo."
+    },
+    {
+      "label": "Variation: small business drive-thru birthday",
+      "text": "Make a 5-second vertical video for a small bakery or café drive-thru window. A smiling staff member in a plain apron, no logos, holds a cupcake with one lit candle out to a customer in a car. The customer leans out of the driver's window and blows it out. Both of them cheer. Warm afternoon light, friendly and simple, one shot. Leave the top third clear so I can add text like \"Birthday treat on us this week\"."
+    }
+  ],
+  "tips": [
+    "Only make a clip of someone else if they agree. Birthday surprises are fun, but ask first.",
+    "Shorter is better here. The whole joke is one breath, so 4 to 5 seconds is plenty.",
+    "If the cake looks odd, add \"a simple round cake with white icing\" to the prompt.",
+    "Only post a business offer you really run, and say when it ends."
+  ],
+  "tags": ["birthday", "car", "short-video", "pets", "business"]
+}

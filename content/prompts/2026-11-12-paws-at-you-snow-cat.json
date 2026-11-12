@@ -1,0 +1,40 @@
+{
+  "slug": "paws-at-you-snow-cat",
+  "title": "\"Paws at you\": a big-eyed snow cat that asks your friends to hang out",
+  "published": "2026-11-12T18:50:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Midjourney"],
+  "summary": "Make a soft, big-eyed snow leopard reaching one paw toward the camera, then send it with \"paws at you\" to ask a friend to play or hang out.",
+  "why": "Trendhaus's TikTok trends page lists \"Snow Leopard Paws At You\" as first seen on November 8, 2026: an AI-made snow leopard with big eyes reaches a paw toward the viewer, captioned \"paws at you\" to ask friends to play games. The page shows only a couple of examples and gives no view counts, so this is an early, small meme.",
+  "steps": [
+    "Paste the main prompt into an image tool and ask for a square or vertical image.",
+    "If the paw looks odd, ask for \"one large, fluffy front paw with soft pink pads, reaching toward the camera\".",
+    "Send it in a group chat or post it with a short caption like \"paws at you\" or \"*paws at you* game night?\"",
+    "Want it to move? Upload the image to a video tool and ask for a slow, gentle paw reach, 3 seconds."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the snow cat reaching out",
+      "text": "A fluffy young snow leopard lying in soft snow, looking straight at the camera with huge, round, shiny eyes and a hopeful face. It stretches one big front paw toward the viewer, pads showing, as if gently tapping the screen. Soft winter daylight, light snow falling, pale blue and grey background with a gentle blur. Cute and cosy, highly detailed fur, realistic but a little storybook. Close-up, the paw large in the foreground. No text."
+    },
+    {
+      "label": "Variation: your own pet paws at you",
+      "text": "Use the pet in this photo. Show the pet lying on a cosy blanket by a frosty window, looking up at the camera with big, hopeful eyes. It reaches one front paw toward the viewer, pads showing, as if asking for attention. Warm lamp light inside, snowy evening outside. Keep the pet's colours and markings the same as the photo. Close-up, the paw large in the foreground. No text."
+    },
+    {
+      "label": "Variation: \"paws at you\" invite card",
+      "text": "Make a vertical invite image. A big-eyed, fluffy snow leopard cub peeks up from the bottom of the frame and reaches one paw up toward the text. Soft snowy background in pale blue. Friendly rounded lettering at the top: \"*paws at you*\". Smaller text under it: \"[game night / skating / coffee] on [day]?\" Lots of clean space, cute and simple. No logos."
+    },
+    {
+      "label": "Variation: small business \"come visit\" post",
+      "text": "Make a square image for a small shop's social post. A fluffy, big-eyed snow leopard cub sits on a snowy windowsill outside a cosy shop window with warm lights inside, and reaches one paw toward the viewer. Gentle snowfall, soft blues and warm golden light. Leave the top quarter clear for my own text, like \"*paws at you* we're open late this week\". No logos, no signs with words."
+    }
+  ],
+  "tips": [
+    "Big, shiny eyes and a paw close to the camera are the whole look. Say both in your prompt.",
+    "Keep it gentle: a soft tap, not claws out.",
+    "Image tools still misspell short text sometimes. Check the words before you send.",
+    "Say clearly it's AI-made if you post it publicly. Don't pass it off as a real wild animal photo."
+  ],
+  "tags": ["animals", "meme", "winter", "pets", "business"]
+}
