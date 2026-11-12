@@ -1,0 +1,40 @@
+{
+  "slug": "fpv-drone-dive-to-you",
+  "title": "The drone dive: a fast flight through the city that lands on you",
+  "published": "2026-11-12T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "One unbroken racing-drone flight dives between towers, skims the street and stops right on you, coffee in hand. Five seconds, one photo.",
+  "why": "Jump on the Trend added this as a new trend on November 8, 2026 (page updated November 9). It says the version that ends on a person first showed up as an AI video template on November 6 and estimates about 900,000 views across YouTube, TikTok and X so far. It copies the look of real first-person drone flights through big cities.",
+  "steps": [
+    "Pick a clear photo of yourself from the chest up, facing the camera.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a vertical, 5-second clip.",
+    "If the flight cuts or jumps, run it again. The whole trick is one smooth, unbroken move.",
+    "Add a fast beat from the app's music library and post it with a short caption, like \"Morning commute.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: dive through the city to you",
+      "text": "Use my photo as the person at the end of the video. Keep my face exactly the same. One continuous first-person racing-drone flight, no cuts. Start high above a busy downtown of tall glass and stone towers on a clear morning. The drone tilts down and dives fast between the buildings, then levels out and skims low over the street, past cars and crosswalks. It swings onto the sidewalk, glides along an old stone wall and slows to a stop right in front of me. I'm standing on the sidewalk holding a takeaway coffee. I take a sip and look straight into the lens with a small smile. Vertical 9:16, 5 seconds, sharp and real, with slight motion blur at speed. No text, no logos."
+    },
+    {
+      "label": "Variation: Canadian winter city",
+      "text": "Use my photo and keep my face exactly the same. One continuous first-person racing-drone flight, no cuts. Start high over a snowy Canadian downtown beside a frozen river, with towers and a skating rink below. The drone dives between the buildings, skims low over a snowy street and past a streetcar, then slides along the sidewalk and stops in front of me. I'm in a warm coat and a toque, holding a hot drink with steam rising. I raise the cup to the lens and smile. Vertical 9:16, 5 seconds, crisp winter light. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet at the end",
+      "text": "Use my pet's photo. Keep its colours, markings and face exactly the same. One continuous first-person racing-drone flight, no cuts. Start high above a quiet neighbourhood of rooftops and trees. The drone dives down, races along the street, swoops over a fence into a backyard and stops right in front of my pet, who is sitting on the grass. My pet tilts its head at the lens. Vertical 9:16, 5 seconds, bright and real. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use my photo and keep my face exactly the same. One continuous first-person racing-drone flight, no cuts. Start high above a small-town main street. The drone dives down, races low along the street past shop windows, swoops through an open front door into a bright, tidy shop and stops in front of me behind the counter. I hold up one of our products and smile at the lens. Vertical 9:16, 5 seconds, sharp and real. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Ask for \"one continuous shot, no cuts\". Without it, many tools cut to a new angle halfway.",
+    "Keep it short. Five seconds of speed feels exciting. Fifteen starts to feel slow.",
+    "A chest-up photo works best, since the flight ends close to your face.",
+    "It's an AI clip, not real drone footage. Don't caption it as if you flew a drone downtown."
+  ],
+  "tags": ["video", "image-to-video", "cinematic", "camera-move", "business"]
+}

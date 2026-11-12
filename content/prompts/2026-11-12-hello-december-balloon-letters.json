@@ -1,0 +1,40 @@
+{
+  "slug": "hello-december-balloon-letters",
+  "title": "Hello December: you, leaning on giant balloon letters that spell the month",
+  "published": "2026-11-12T06:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "A studio portrait of you beside a tall stack of shiny 3D balloon letters spelling the month. Do November now, then December on the 1st.",
+  "why": "Jump on the Trend (updated November 6, 2026) tracks this as a monthly photo trend that started on TikTok in October. It lists an October version from October 8 with about 3.9 million views, and two November versions from October 28 and 29 with about 834,000 and 1.1 million views. It added a December version as well.",
+  "steps": [
+    "Pick a clear, full-length photo of yourself standing, with good light on your face.",
+    "Upload it to ChatGPT or Gemini and paste the main prompt. Change the month if you like.",
+    "Check that every letter is spelled right. If one is off, ask it to fix just that letter.",
+    "Post it on the 1st of the month with a caption like \"Hello December\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: Hello December",
+      "text": "Use my photo as the person in this picture. Keep my face, hair and body exactly the same. A clean studio portrait with a soft cream background and a smooth floor. Beside me stands a tall column of big, glossy 3D balloon letters, stacked one on top of the other, spelling DECEMBER from top to bottom, eight letters. The letters are shiny red, deep green and gold. A few gold baubles lie on the floor. I'm standing full length next to the column in a cosy winter outfit, leaning one elbow on it and smiling at the camera. Soft, even studio light, gentle shadows. Vertical 4:5. Check that the word is spelled exactly D-E-C-E-M-B-E-R. No other text, no logos."
+    },
+    {
+      "label": "Variation: Hello November",
+      "text": "Use my photo and keep my face, hair and body exactly the same. A clean studio portrait with a warm peach background. Beside me stands a tall column of big, glossy 3D balloon letters stacked top to bottom, spelling NOVEMBER, eight letters, in warm autumn shades of rust, mustard and cream. I stand full length next to it in a fall sweater, leaning on the column and smiling at the camera. Soft studio light. Vertical 4:5. Check that the word is spelled exactly N-O-V-E-M-B-E-R. No other text, no logos."
+    },
+    {
+      "label": "Variation: with tiny toy versions of me",
+      "text": "Use my photo and keep my face exactly the same. A bright cream room. A tall column of pastel 3D balloon letters spells DECEMBER from top to bottom. I stand next to it smiling. Three small toy figurines that look just like me, in different winter outfits, sit and stand on the letters: one waving from the top, one sitting in the middle, one hugging the bottom letter. Soft studio light. Vertical 4:5. Spell the word exactly D-E-C-E-M-B-E-R. No other text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use my photo and keep my face exactly the same. A clean studio portrait with a soft background in my shop's main colour. Beside me stands a tall column of glossy 3D balloon letters spelling DECEMBER from top to bottom. I stand full length next to it, leaning on the column and holding one of our products toward the camera with a smile. A few of our products sit neatly at the base of the letters. Soft studio light. Vertical 4:5. Spell the word exactly D-E-C-E-M-B-E-R. No other text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "AI tools often misspell long words. Always zoom in and check each letter before you post.",
+    "If the letters come out side by side, say \"stacked in one tall column, top to bottom\" again.",
+    "Make one for each month. A matching set looks great on your grid.",
+    "A full-length photo works better than a selfie, since you're standing next to a tall stack."
+  ],
+  "tags": ["selfie", "seasonal", "holiday", "chatgpt", "business"]
+}

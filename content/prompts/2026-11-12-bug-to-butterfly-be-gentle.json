@@ -1,0 +1,40 @@
+{
+  "slug": "bug-to-butterfly-be-gentle",
+  "title": "Bug to butterfly: the \"be gentle\" glow-up carousel",
+  "published": "2026-11-12T06:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "CapCut"],
+  "summary": "Slide one: your awkward old photo with a little bug sticker and \"Ew, squish it!\". Slide two: butterflies. Then your glow-up photos, each with \"Be gentle\".",
+  "why": "Jump on the Trend added it on November 8, 2026 (page updated November 9). It says a three-slide bug-to-butterfly glow-up post on TikTok from October 27 had about 5.6 million views, a template version from November 1 had about 1.1 million, and it estimates about 8.9 million views across posts. It's a new spin on the glow-up flip, told as a little story.",
+  "steps": [
+    "Pick one awkward or unflattering old photo of yourself, and five to eight photos of you now that you love.",
+    "Use the first prompt on the old photo, the second to make the butterfly slide, and the third on each of your new photos.",
+    "Put them in order as a photo carousel or a fast slideshow: bug slide, butterfly slide, then the glow-up photos.",
+    "Add a soft, dreamy sound from the app's library and post it. The captions on the slides tell the story."
+  ],
+  "prompts": [
+    {
+      "label": "Slide 1: the bug photo",
+      "text": "Edit my photo. Keep my face and the scene exactly the same. Make the colours a little flat and grey, like a dull, cloudy day. Add one small cartoon sticker of a brown beetle-like bug in a corner, drawn in a simple, cute cut-out sticker style with a white border. Add short text near the top in a plain white font with a thin black outline: \"Ew, squish it!\". Vertical 4:5. No other text, no logos."
+    },
+    {
+      "label": "Slide 2: the butterflies",
+      "text": "Make a vertical 4:5 image: a pure black background filled with dozens of orange and black butterflies in flight, at different sizes, some sharp and some soft and blurred, as if they're bursting toward the camera. A soft golden glow in the middle. No text, no logos."
+    },
+    {
+      "label": "Slides 3 and on: the glow-up",
+      "text": "Edit my photo. Keep my face, body and the scene exactly the same. Give it a warm golden-hour glow, soft and bright, like the best version of the day. Add one small orange and black butterfly sticker in a corner, in a simple cut-out sticker style with a white border. Add short text near the top in a plain white font with a thin black outline: \"Be gentle\". Vertical 4:5. No other text, no logos."
+    },
+    {
+      "label": "Variation: small business glow-up",
+      "text": "Edit this photo of our shop, product or work from our early days. Keep it real and recognizable. Make it flat and grey and add a small cartoon bug sticker in a corner with the text \"Ew, squish it!\". Then, for a second image, take a photo of how it looks today, give it a warm golden-hour glow and add a small orange and black butterfly sticker with the text \"Be gentle\". Both vertical 4:5, plain white font with a thin black outline. No other text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Pick an old photo you can laugh at. The trend is playful, not a put-down.",
+    "Keep the edits light. Your glow-up photos should still look like you, just warmer.",
+    "Use the same sticker style and font on every slide so the set feels like one story.",
+    "Only use photos of other people, like a friend's glow-up, if they've said yes."
+  ],
+  "tags": ["glow-up", "carousel", "before-after", "slideshow", "business"]
+}
