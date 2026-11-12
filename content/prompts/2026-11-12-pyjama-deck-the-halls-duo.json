@@ -1,0 +1,36 @@
+{
+  "slug": "pyjama-deck-the-halls-duo",
+  "title": "Matching pyjamas: the Deck the Halls duo dance by the tree",
+  "published": "2026-11-12T00:46:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway"],
+  "summary": "You and a partner, friend, kid or pet in matching plaid pyjamas do a short, bouncy Deck the Halls routine by the first lit tree.",
+  "why": "Postdom's TikTok trends page for November 9 to 15, 2026 lists the Deck the Halls Christmas dance: pairs or small groups do a short bouncy routine in front of their first decorations, with the sound in about 40.4K videos. AI template sites added matching-pyjama versions, including pets, between November 8 and 10. Our earlier holiday packs did the room switch, the Christmas-fan skit and the first cosy moment; this one is the dance.",
+  "steps": [
+    "Pick your dance partner: a partner, friend, kid or pet. Get their OK before you use their photo.",
+    "Take one full-body photo of each dancer, head to feet, standing and facing the camera in good light.",
+    "Upload both photos to an image-to-video tool and paste the main prompt. Add the Christmas song from the app's music library, not the AI.",
+    "Post it with one short line, like \"The pyjamas came out early this year.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the pyjama duo",
+      "text": "Use photo 1 as the person on the left and photo 2 as the person on the right. Keep both faces and body shapes exactly as in the photos. Dress them both in matching red and green plaid pyjamas. They stand side by side in a bright, cosy living room with a lit Christmas tree and warm fairy lights behind them. One fixed phone camera, full body, one continuous shot, vertical 9:16, 14 seconds. They start with a straight-faced holiday pose. Then, perfectly in step: small hip sways, knee lifts with hands on hips, arm rolls, a quick turn together, a big wave overhead, and they finish frozen in a cheerful pose. Natural home video look. No text, no logos."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Use photo 1 as me on the left and photo 2 as my pet on the right. Keep my face and my pet's colours and markings exactly the same. We both wear matching red and green plaid pyjamas. We stand by a lit Christmas tree in a warm kitchen at night. One fixed camera, full body, vertical, 14 seconds. I do a bouncy holiday routine: knee lifts, hands on hips, arm rolls and a wave. My pet copies the moves on its back legs, a half beat late, then sits proudly at the end. Funny but gentle. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use photo 1 and photo 2 as two of our team members. Keep their faces exactly as in the photos. They wear matching festive plaid pyjamas in our shop or café, next to a small lit tree and our holiday display. One fixed camera, full body, vertical, 14 seconds. They start serious behind the counter, then do a short, bouncy, in-sync holiday dance: hip sways, knee lifts, arm rolls, a turn and a wave. They end pointing at the display. Bright, friendly lighting. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Full-body photos with feet showing give much better dance moves.",
+    "Ask the AI for no music, then add the song in the app so the beat lines up.",
+    "Doing it for real? Learn the routine at half speed first, then film it in one take.",
+    "Only use photos of people who said yes to being in the video."
+  ],
+  "tags": ["holiday", "christmas", "dance", "image-to-video", "business"]
+}

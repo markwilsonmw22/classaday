@@ -1,0 +1,40 @@
+{
+  "slug": "santa-hat-christmas-profile-picture",
+  "title": "Christmas profile picture: you in a Santa hat, three ways",
+  "published": "2026-11-12T00:46:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Turn one photo into a set of square holiday profile pictures: Santa hat in the snow, by the tree, and a cartoon version. Works for couples, pets and shops too.",
+  "why": "Jump on the Trend's Christmas profile picture page (updated November 4, 2026) calls the trend rising and seasonal. It says one post from November 1, 2026 had about 2.4 million plays by November 11, and the hashtag had 3,559 videos and 76.8 million views on November 3. Make Meme Video added a Christmas profile picture template on November 5.",
+  "steps": [
+    "Pick a clear, front-facing photo where your face fills most of the frame.",
+    "Paste the main prompt with your photo. Then ask for the other two looks.",
+    "Choose your favourite and set it as your profile picture on every app.",
+    "Post all three as a carousel and ask people to pick one for you."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: Santa hat in the snow",
+      "text": "Using my photo, make a square profile picture of me. Keep my face, skin tone, hair and expression exactly the same. I wear a red velvet Santa hat with a thick white fur band and a soft white pompom. Snowflakes fall around me at blue dusk, with warm golden fairy-light bokeh behind me. Tight framing, face centred, looking into the camera. Soft, flattering light. It should look like a real photo. No text."
+    },
+    {
+      "label": "Variation: by the tree, then the cartoon",
+      "text": "Using the same photo, make two more square profile pictures of me in the same Santa hat. 1) Indoors, beside a lit Christmas tree, with warm lamp light and a cosy, real-photo look. 2) A clean cartoon illustration of me with simple bold outlines, on a snowy blue night background, that still looks clearly like me. Face centred in both. No text."
+    },
+    {
+      "label": "Variation: couples, family or pets",
+      "text": "Using these photos, make one square holiday profile picture with all of us together, close and smiling, each in a red velvet Santa hat with a white fur band. Keep every face, and every pet's colours and markings, exactly the same. Falling snow and warm fairy lights behind us. Tight framing, everyone looking at the camera. Real-photo look. No text."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a square holiday profile picture for our small business using this photo of our shop, product or team. Add a red velvet Santa hat to the main subject in a fun, natural way. Soft falling snow and warm fairy lights in the background. Centred and clear, so it still reads well as a tiny circle. Keep everything else exactly as in the photo. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Profile pictures show as small circles, so keep the face big and centred.",
+    "Ask for a square image so nothing important gets cut off.",
+    "Want it to move? Some video tools can add gently falling snow to the still image.",
+    "Only use friends' and family's photos if they say yes."
+  ],
+  "tags": ["holiday", "christmas", "selfie", "pets", "business"]
+}

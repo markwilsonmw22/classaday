@@ -1,0 +1,40 @@
+{
+  "slug": "flamingo-float-push-back",
+  "title": "The flamingo float: drifting to the edge, then one helpful push",
+  "published": "2026-11-12T00:46:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "You lounge on a pink flamingo float in a rooftop pool, eyes on your phone, drifting to the edge, until a hand pushes you back. One photo.",
+  "why": "Jump on the Trend's page for the flamingo float (updated November 9, 2026) marks it as rising. It says the original clip was posted on TikTok on November 2, 2026, had about 27.6 million views by November 6, and that the trend had an estimated 129 million views across posts by November 7. Make Meme Video added it as a one-photo AI template on November 11.",
+  "steps": [
+    "Pick a clear, front-facing photo of yourself, or of your dog or cat.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Add a calm, gentle instrumental from the app's music library.",
+    "Post it with a short caption, like \"Thank you, friend.\" Let the push be the punchline."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the push back",
+      "text": "Use my photo as the person in the video. Keep my face exactly the same. I lie back on a giant pink inflatable flamingo float in a rooftop infinity pool high above a city, on a sunny day. I'm relaxed, in sunglasses, scrolling on my phone and not paying attention. The float slowly drifts toward the glass edge of the pool, closer and closer, until it is right at the edge. A single hand reaches in from off camera and calmly pushes the float back toward the middle. I look up at the camera, give a small thumbs up and keep scrolling as the float glides away. One continuous handheld vertical shot, 11 seconds, bright and real. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet on the float",
+      "text": "Use my pet's photo. Keep its colours, markings and face exactly the same. My pet lounges on a giant pink inflatable flamingo float in a sunny rooftop pool, wearing tiny sunglasses, looking very relaxed. The float drifts slowly to the very edge of the pool. A hand reaches in from off camera and gently pushes it back. My pet looks at the camera with a calm, unbothered face as it floats away. One continuous vertical shot, 11 seconds, bright and real. No text, no logos."
+    },
+    {
+      "label": "Variation: Canadian winter twist",
+      "text": "Use my photo and keep my face exactly the same. I lie back on a giant pink inflatable flamingo float in a steaming outdoor hot tub on a snowy deck, with snow-covered pine trees and a frozen lake behind me. I'm in a toque and sunglasses, scrolling my phone. The float drifts toward the edge of the hot tub, right up to the snowbank. A hand in a mitten reaches in and pushes it back. I give the camera a thumbs up and keep scrolling. One continuous vertical shot, 11 seconds, soft winter daylight. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use my photo and keep my face exactly the same. I lie back on a giant pink inflatable flamingo float in a sunny pool, holding one of our products and looking completely relaxed. The float drifts to the very edge of the pool. A hand reaches in from off camera and pushes it back to the middle. I look at the camera, raise the product with a smile and float away. One continuous vertical shot, 11 seconds, bright and real. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "A sharp, front-facing photo keeps your face looking like you.",
+    "Keep it to one shot. A cut ruins the slow drift and the surprise.",
+    "Let the drift take most of the clip. The push only needs a second or two.",
+    "Never post it as if it were real footage of a dangerous moment. It's a joke, so keep it light."
+  ],
+  "tags": ["video", "image-to-video", "funny", "pets", "business"]
+}
