@@ -1,0 +1,40 @@
+{
+  "slug": "world-kindness-day-pass-it-on-cards",
+  "title": "World Kindness Day: \"pass it on\" cards to leave for someone",
+  "published": "2026-11-12T12:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Design a small printable card to tuck under a windshield wiper, in a lunch bag or on a neighbour's door for World Kindness Day, Friday, November 13.",
+  "why": "World Kindness Day falls on Friday, November 13, 2026, according to awareness-day calendars. This is a date to plan for, not a viral format. It's a different idea from our thank-you list pack: these cards are for leaving a small surprise for someone else.",
+  "steps": [
+    "Pick who the cards are for: a neighbour, a co-worker, a stranger at the bus stop, or your customers.",
+    "Paste the main prompt into an image tool and ask for a sheet of four cards on one page.",
+    "Print on card stock, cut them out and write a short line by hand on the back.",
+    "Leave them somewhere they'll be found. If you post about it, share the card design, not the person who found it."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: a sheet of four kindness cards",
+      "text": "Design a printable letter-size sheet with four matching small cards, each the size of a postcard, with thin dashed cut lines between them. Style: warm and hand-made, soft watercolour shapes in cream, sage green and blush pink, with small doodled hearts, leaves and stars. Each card has one short line in friendly hand-lettered text: \"Someone hopes your day goes well.\", \"This is your sign to take a break.\", \"You're doing better than you think.\" and \"Pass it on: do one kind thing today.\" Leave a blank area at the bottom of each card for a handwritten note. Clean white margins, easy to read, no logos."
+    },
+    {
+      "label": "Variation: Canadian winter neighbour card",
+      "text": "Design one printable card, postcard size, to leave on a neighbour's door after a snowfall. Show a cosy snowy street at dusk with a shovelled front walk, warm lights in the windows and a small toque hanging on a fence post. Hand-lettered text: \"I shovelled your walk. No need to thank me. Just pass it on.\" Soft blues and warm yellow, simple flat illustration style, plenty of empty space at the bottom for a short handwritten note. No logos."
+    },
+    {
+      "label": "Variation: 13 small acts for your week (text)",
+      "text": "World Kindness Day is November 13. Write me 13 small acts of kindness I could actually do this week. My week looks like this: [for example: office job, bus commute, two kids, a dog, a neighbour who lives alone]. Each one should take under 10 minutes, cost under $5 or nothing, and need no social media. Write each in one short sentence. Mix in a few for strangers, a few for people I know, and one for myself."
+    },
+    {
+      "label": "Variation: small business order insert",
+      "text": "Design a small printable card, 4 by 6 inches, to tuck into customer orders this week for World Kindness Day. Style: clean and warm, off-white background, simple line drawings of a small gift box and a heart in [my brand colour]. Big hand-lettered text: \"Thank you for shopping small.\" Smaller text underneath: \"Pass the kindness on: hold a door, send a nice text, or say hi to someone new.\" Leave space at the bottom for my shop name, which I'll add myself. No logos, no discount codes."
+    }
+  ],
+  "tips": [
+    "Check every word on the card before you print. Image tools still misspell short phrases sometimes.",
+    "Print on thicker card stock so the cards survive a windshield or a lunch bag.",
+    "Keep the message about the other person. Cards that ask for a follow or a sale feel less kind.",
+    "Don't film strangers finding your cards without asking. Share the cards, not their reactions."
+  ],
+  "tags": ["holiday", "kindness", "printable", "card-design", "business"]
+}
