@@ -1,0 +1,40 @@
+{
+  "slug": "dipsgiving-party-kit",
+  "title": "Dipsgiving: the everyone-brings-a-dip party kit",
+  "published": "2026-11-13T12:37:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Make an invite, a sign-up sheet and matching dip label cards for a Dipsgiving: a holiday potluck where every guest brings one dip.",
+  "why": "A November 9, 2026 news report described \"Dipsgiving\", a potluck where each person brings a different dip, as a TikTok trend that is moving from friend groups into office break rooms. A Friendsgiving survey reported on November 12 also found most hosts now use potluck-style gatherings.",
+  "steps": [
+    "Pick a date, a place and a rough headcount. Office parties and friend groups both work.",
+    "Paste the main prompt into an image tool to make the invite, then make the sign-up sheet so nobody brings the same dip.",
+    "On the day, print the label cards and set one beside each bowl with the dip's name and what's in it.",
+    "Post a photo of the full table. Ask before you film guests or co-workers."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the Dipsgiving invite",
+      "text": "Design a square party invite for a \"Dipsgiving\": a cosy fall potluck where every guest brings one dip. Show a long wooden table seen from above, covered with bowls of different dips in warm colours (orange, deep red, creamy white, green), surrounded by crackers, pita wedges, veggie sticks and tortilla chips. Add a few fall leaves and small candles. Big friendly hand-lettered title at the top: \"You're invited to Dipsgiving\". Underneath, in clean simple text: \"[Day, date] · [Time] · [Place]\" and \"Bring one dip. We'll handle the rest.\" Warm, inviting light. No logos or brand names on any packaging."
+    },
+    {
+      "label": "Variation: the sign-up sheet",
+      "text": "Design a printable letter-size sign-up sheet for a Dipsgiving potluck. Title at the top in friendly hand-lettering: \"Dipsgiving sign-up: one dip each, no repeats\". Below it, a clean table with 15 rows and three columns: \"Name\", \"Dip\" and \"Hot or cold?\". Add small doodles of a dip bowl, a cracker and a carrot in the corners. Cream background, soft orange and sage green accents, lots of white space so people can write by hand. Also add one small line at the bottom: \"Please note any nuts or common allergens on your label.\" No logos."
+    },
+    {
+      "label": "Variation: matching dip label cards",
+      "text": "Design a printable sheet of eight small tent cards to stand beside each dish at a Dipsgiving party, with dashed cut and fold lines. Each card has a blank line for the dip's name in big letters, a smaller line for \"Made by\", and three tick boxes: \"Vegetarian\", \"Spicy\" and \"Contains nuts\". Warm fall style: cream card, small doodled leaves and a tiny dip bowl icon, soft orange and deep green. Clear, easy-to-read text. No logos."
+    },
+    {
+      "label": "Variation: small business Dipsgiving post",
+      "text": "Design a square social post for my [café, deli or grocery shop] inviting customers to a Dipsgiving tasting at the store. Show four of our dips in small bowls on a wooden board with crackers and fresh vegetables, in a bright, natural-light food photo style. Text at the top: \"Dipsgiving at [shop name]\". Text at the bottom: \"Taste four dips · [date and time] · Free\". Leave a plain area where I can add my own logo. Keep the food looking real and appetizing, with no extra props or fake price tags."
+    }
+  ],
+  "tips": [
+    "Check every word before you print. Image tools still misspell short phrases, and \"Dipsgiving\" is an easy one to get wrong.",
+    "Use the sign-up sheet early. Three bowls of the same dip is the classic potluck problem.",
+    "Ask everyone to fill in the allergen boxes. It matters more at a work party where you don't know everyone's needs.",
+    "For a business post, use a real photo of your own dips as a reference so the picture matches what customers will taste."
+  ],
+  "tags": ["holiday", "potluck", "party", "printable", "business"]
+}
