@@ -1,0 +1,36 @@
+{
+  "slug": "waist-heart",
+  "title": "Waist heart: chin tap, flex, finger wag, then a heart at your waist",
+  "published": "2026-11-13T00:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "A nine-second clip: you tap your chin, flex, wag two fingers, then rest a curved hand on your waist so it makes a heart.",
+  "why": "Jump on the Trend's Waist Heart page (updated November 12, 2026) marks it as new: the first posts went up on Instagram and TikTok between November 3 and 6, and one TikTok version had about 1.5 million views by November 12. The page calls it a follow-up to the bicep heart, which already has its own pack here; this one ends with a heart at the waist instead.",
+  "steps": [
+    "Pick a clear, full-length or waist-up photo of yourself, standing, with both arms visible.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a vertical clip, about 9 seconds.",
+    "Check the last pose: your curved hand and your waist should clearly form a heart. If it looks like a plain hand on the hip, run it again.",
+    "Post it with a short, warm caption, like \"Sending love from the waist up.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the four-move waist heart",
+      "text": "Use the person in this photo. They stand in a bright, tidy room, facing a phone camera on a stand. One smooth shot, 9 seconds, vertical. Move 1: they tap their chin with one finger, as if thinking. Move 2: they flex one arm and look at it, proud. Move 3: they wag two fingers at the camera, playful. Move 4: they place one hand on their waist with the fingers curved, so the hand and the side of the waist form a clear heart shape. They hold it, smile and sway gently. Natural light, real skin, simple clothes. Keep their face, hair and outfit the same as the photo."
+    },
+    {
+      "label": "Variation: cosy winter version",
+      "text": "Use the person in this photo. They stand in a warm living room with a lit fireplace and a few fairy lights. They wear a chunky knit sweater. One shot, 9 seconds, vertical. They tap their chin, flex one arm, wag two fingers at the camera, then rest one curved hand on their waist so it makes a heart shape. They smile and sway. Soft, warm light, cosy feel. Keep their face and hair the same as the photo."
+    },
+    {
+      "label": "Variation: small business thank-you",
+      "text": "Make a 9-second vertical video for a small shop or studio. A friendly owner in a plain apron, no logos, stands in front of a shelf of their products. They tap their chin, flex one arm, wag two fingers at the camera, then rest one curved hand on their waist so it makes a heart shape. They smile warmly. Bright, clean light, one smooth shot. Leave the top third clear so I can add text like \"Thank you for shopping small this year\"."
+    }
+  ],
+  "tips": [
+    "The heart is the payoff. Say \"the hand and the waist form a clear heart shape\" in your prompt so the tool doesn't skip it.",
+    "A photo with your arms away from your body gives the tool more room to get the hand right.",
+    "If the moves blur together, add \"each move is clear and separate, about two seconds each\".",
+    "Pair it with your bicep heart clip as a two-part post."
+  ],
+  "tags": ["video", "image-to-video", "selfie", "tiktok", "business"]
+}

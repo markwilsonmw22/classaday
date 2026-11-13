@@ -1,0 +1,36 @@
+{
+  "slug": "retro-1950s-showroom-ad",
+  "title": "1950s showroom ad: your partner, on display in a pastel shop",
+  "published": "2026-11-13T00:38:00Z",
+  "kind": "video",
+  "tools": ["Veo", "Kling", "Sora", "Higgsfield"],
+  "summary": "A 14-second parody commercial: a cheerful 1950s salesperson shows off your partner on a gold pedestal in a candy-pink showroom.",
+  "why": "Jump on the Trend's page for this trend (updated November 11, 2026) marks it as breaking. It says a fake 1950s commercial made with an AI video tool, posted on TikTok on November 9, 2026, had about 876,000 views and 33,300 shares by November 11, and people now put their own partner on the pedestal.",
+  "steps": [
+    "Pick a clear, full-length photo of the person who goes on the pedestal. Only use your partner's photo if they agree and think it's funny.",
+    "Upload it to an image-to-video tool and paste the main prompt. Change the \"edition\" and the funny line to suit them.",
+    "Check that it looks like an old TV ad: soft colours, a slight film grain and a big, cheesy smile from the salesperson.",
+    "Post it with a caption that makes the joke clear, like \"Found him on sale. No returns.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the showroom pitch",
+      "text": "Make a 14-second vertical video that looks like a 1950s TV commercial. A candy-pink showroom with pastel walls, chrome trim and a round gold pedestal in the middle. The person in this photo stands on the pedestal, posing proudly like a display model, with a small sign that reads \"Gym Edition\". A cheerful salesperson in a 1950s suit gestures at them with a big smile. A shopper in a coral-red 1950s dress leans in, curious. The salesperson says: \"Strong, loyal and he talks to you. Mostly to the mirror.\" The person on the pedestal flexes. Soft colour, light film grain, bright studio lighting. Keep the person's face and hair the same as the photo."
+    },
+    {
+      "label": "Variation: you are the shopper",
+      "text": "Make a 14-second vertical video that looks like a 1950s TV commercial. A pastel mint showroom with chrome details. The person in this photo is the shopper, in a 1950s dress or suit, walking past a row of display pedestals. A beaming salesperson presents one pedestal labelled \"Cooks Dinner Edition\", where a smiling model holds a casserole dish. The shopper raises an eyebrow, then nods and points: \"I'll take it.\" Bright, cheerful, slightly grainy old-TV look. Keep the shopper's face and hair the same as the photo."
+    },
+    {
+      "label": "Variation: small business retro product ad",
+      "text": "Make a 14-second vertical video that looks like a 1950s TV commercial for a small business product, such as a candle, a loaf of bread or a mug. A pastel pink showroom with chrome trim and a round gold pedestal. The product sits on the pedestal under a soft spotlight, with no logos. A cheerful salesperson in a 1950s outfit gestures at it and says: \"New for this winter. Cosy, handmade, and it never forgets your birthday.\" A shopper claps. Soft colour, film grain, bright studio light. Leave the top third clear for my shop name."
+    }
+  ],
+  "tips": [
+    "Keep the joke kind. Tease a habit you both laugh about, not something that would hurt.",
+    "Write your own funny line. The best ones are a real, tiny habit, like \"Comes with 40 browser tabs open\".",
+    "Say \"1950s TV commercial, soft colour, light film grain\" to get the old-ad look.",
+    "For a business post, make it clearly a joke ad and only show what you really sell."
+  ],
+  "tags": ["video", "retro", "couples", "funny", "business"]
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "shoulder-carry-flip",
+  "title": "Shoulder carry flip: one carries, one swings up on top and points at the lens",
+  "published": "2026-11-13T00:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "A nine-second duo clip in a parking garage: one partner carries the other across their shoulders, bends forward, and the carried one swings up on top.",
+  "why": "Jump on the Trend's Shoulder Carry page (updated November 11, 2026) marks it as rising. It says the source reel from a parking garage, posted October 24, 2026, had about 780,000 views by November 12, and that AI template sites added it between November 3 and 7.",
+  "steps": [
+    "Get two clear photos, one of each person, or one photo of you both together. Only use a friend's or partner's photo if they agree.",
+    "Upload them to an image-to-video tool that takes two people and paste the main prompt. Ask for a vertical clip, about 9 seconds.",
+    "Check the swing: the carried person should end up sitting up on top, facing the camera. If arms or legs look odd, run it again or shorten the clip.",
+    "Post it with a playful caption, like \"Who carries who in this house?\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the parking-garage carry",
+      "text": "Use the two people in these photos. Grey underground parking garage, cool overhead lights, phone on a stand at chest height. One smooth shot, 9 seconds, vertical. Person A carries Person B draped across their shoulders, and Person A points at the camera with a confident grin. Person A turns and bends forward, and Person B swings up so they sit upright on Person A's shoulders, facing the lens. Person B points at the camera and mouths \"I'm the one\". Both laugh. Natural movement, safe and controlled, real faces. Keep both faces, hair and outfits the same as the photos."
+    },
+    {
+      "label": "Variation: roles reversed, outdoors",
+      "text": "Use the two people in these photos. A quiet park path in late fall, bare trees, soft grey light. One shot, 9 seconds, vertical. The smaller of the two carries the taller one across their shoulders, looking proud and a bit wobbly. They bend forward and the taller one swings up to sit on top, facing the camera, pointing and smiling. Both laugh at the end. Light, funny tone, handheld feel. Keep both faces the same as the photos."
+    },
+    {
+      "label": "Variation: small business team",
+      "text": "Make a 9-second vertical video for a small team, like a gym, a moving company or a café crew. Two staff members in plain matching T-shirts, no logos, stand in a clean workspace. One carries the other across their shoulders, bends forward, and the other swings up to sit on top, pointing at the camera. Both grin. Bright, upbeat light, one smooth shot. Leave the top third clear so I can add text like \"We've got your back\"."
+    }
+  ],
+  "tips": [
+    "This is an AI clip for a reason. Don't try the lift for real without training and a spotter.",
+    "Say \"safe and controlled\" in the prompt. It helps the tool keep the movement smooth instead of wild.",
+    "Pick a sound in the app after you make the clip. Use one that's free to use on the platform you post to.",
+    "If the tool mixes up the two faces, label them \"Person A (first photo)\" and \"Person B (second photo)\"."
+  ],
+  "tags": ["video", "image-to-video", "couples", "friends", "business"]
+}
