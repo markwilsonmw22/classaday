@@ -1,0 +1,40 @@
+{
+  "slug": "not-today-cupid-handbag",
+  "title": "Not today, Cupid: one handbag swing and he tumbles into a pile of feathers",
+  "published": "2026-11-13T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "A 15-second clip: a little winged Cupid dives at you with his bow, you swing your bag, he flops into feathers and you stroll on.",
+  "why": "Jump on the Trend added it on November 10, 2026. It copies an AI reel from October 11 that had about 747,000 likes when the site checked on November 10, and an earlier AI take on TikTok had about 326,000 plays by November 12. There's no song tied to it, so any sound works.",
+  "steps": [
+    "Pick a clear, full-length photo of yourself walking or standing, with a bag on your shoulder or in your hand.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a vertical clip, about 15 seconds.",
+    "Check the ending: Cupid should land softly in feathers and look dazed, not hurt. If the hit looks too rough, run it again with the tip below.",
+    "Post it with a caption like \"Not today, Cupid\" and add a sound you like."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the cathedral dive",
+      "text": "Use the person in this photo. Three shots, 15 seconds, vertical. Shot 1: a small, chubby winged Cupid in a white cloth wrap sits on the stone ledge of an old cathedral. He pulls back a little gold bow, aims at someone crossing a sunny stone square far below, then dives. The camera follows him down. Shot 2: at street level, the person walks toward the camera holding a plain dark handbag. Cupid swoops in behind them. They turn and swing the bag in a smooth, playful arc that bumps Cupid out of the air. Shot 3: he does a cartoonish flip and lands softly on the paving in a puff of white feathers, bow beside him, dazed but fine. The person smooths their jacket and walks calmly toward the camera with a small smile. Bright daylight, real skin, light comedy tone. Keep their face, hair and outfit the same as the photo."
+    },
+    {
+      "label": "Variation: snowy Canadian street",
+      "text": "Use the person in this photo. 15 seconds, vertical. A small winged Cupid in a white wrap and a tiny red scarf sits on a snowy rooftop above a quiet main street with brick shops and string lights. He aims a little gold bow at the person walking below, then dives through the falling snow. The person turns and swings their tote bag in a playful arc. Cupid flips and lands softly in a snowbank in a puff of feathers and snow, dazed but fine. The person fixes their toque and walks on toward the camera, smiling. Soft winter light. Keep their face and outfit the same as the photo."
+    },
+    {
+      "label": "Variation: your pet saves you",
+      "text": "Use the pet and the person in this photo. 15 seconds, vertical. A small winged Cupid with a gold bow swoops down a sunny park path toward the person. Just before he reaches them, the pet leaps up and catches the tip of his arrow in its mouth, very gently. Cupid tumbles into a soft pile of leaves and feathers, dazed but fine. The pet trots back proudly with the arrow and the person laughs. Bright daylight, playful tone. Keep the pet's colours and markings the same as the photo."
+    },
+    {
+      "label": "Variation: small business, \"too busy for love\"",
+      "text": "Make a 15-second vertical video for a small shop or café. A small winged Cupid aims his gold bow through the front window at a busy owner in a plain apron, no logos. He flies in and swoops at them. Without looking up, the owner lifts a full paper shopping bag and Cupid bumps into it, then flops softly onto a pile of tissue paper in a puff of feathers. The owner keeps wrapping orders. Warm, bright light, light comedy tone. Leave the top third clear so I can add text like \"Holiday rush. Not today, Cupid.\""
+    }
+  ],
+  "tips": [
+    "Say \"playful arc\", \"lands softly\" and \"dazed but fine\" so it reads as a cartoon gag, not a real hit.",
+    "If Cupid looks too lifelike, ask for \"a small cartoon-style Cupid with a round, toy-like face\" so the fall stays silly.",
+    "If the three shots blur together, add \"three clear shots: the dive, the swing, the landing\".",
+    "Only use photos of friends or family who have said yes to being in the video."
+  ],
+  "tags": ["video", "image-to-video", "funny", "pets", "business"]
+}
