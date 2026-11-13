@@ -1,0 +1,40 @@
+{
+  "slug": "observe-just-observe-mood-board",
+  "title": "Observe, just observe: you as a city, a season and a flower",
+  "published": "2026-11-13T18:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Ask an AI chatbot to look at your photo and answer in one word: if you were a city, a season, a flower, an animal. Then turn the answers into a mood board.",
+  "why": "A trend template page lists the \"If I was ChatGPT\" or \"Observe, just observe\" slideshow as starting on TikTok on November 6, 2026. By November 12 its main hashtag had about 109 videos and 846,000 views, and a how-to post from November 8 had about 389,000 views.",
+  "steps": [
+    "Pick a clear photo of yourself. For a friend or partner version, ask them first.",
+    "Paste the main prompt into a chatbot with your photo. It answers each question in one word.",
+    "Paste the mood board prompt with the same photo to put your answers around it in one picture.",
+    "Post the chat screenshot first, then the board, as a slideshow. Label it as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the one-word answers",
+      "text": "Observe the person in this photo. Just observe. Only dry answers, one word or a short name each, no explanations. If this person was a city, which city? A season? A flower? A kind of painting (describe the style in three words, no artist names)? An animal? An element? A food? A colour? List them as \"City: ...\", \"Season: ...\" and so on. Keep it kind and playful. Base it only on the mood of the photo: the light, the colours, the clothes and the setting. Don't guess age, weight, health or anything personal."
+    },
+    {
+      "label": "Mood board prompt: you in the middle",
+      "text": "Make a square mood board on a dark charcoal background, like a sleek, minimal chat app in dark mode. Put my photo in the centre in a rounded frame, keeping my face exactly the same. Around it, place six smaller rounded pictures, each with a short white label underneath: \"City: [answer]\", \"Season: [answer]\", \"Flower: [answer]\", \"Painting: [answer]\", \"Animal: [answer]\", \"Element: [answer]\". Each picture shows its answer in a soft, film-photo look: a street scene for the city, a landscape for the season, a close-up of the flower, an original painting in the described style, the animal in nature, and the element as a calm abstract image. Clean, simple text in a modern sans-serif font. No logos or app names."
+    },
+    {
+      "label": "Variation: your pet",
+      "text": "Observe the animal in this photo. Just observe. Only dry answers, one word each. If this pet was a city? A season? A dessert? A piece of furniture? A weather? A song mood (three words, no song titles)? List them as \"City: ...\" and so on. Keep it funny and affectionate."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Observe this photo of my [shop, café or studio]. Just observe. Only dry answers, one word each. If this place was a city? A season? A flower? A time of day? A drink? A texture? List them as \"City: ...\" and so on. Then make a square mood board on a dark background with my photo in the centre and six small pictures around it, each labelled with its answer in clean white text. Keep the colours close to the ones in my photo. Leave a small empty corner for my own logo. No other logos or brand names."
+    }
+  ],
+  "tips": [
+    "The answers are a fun guess from colours and mood, not a verdict on you. Run it twice if you want a different set.",
+    "Check the labels before you post. Image tools still misspell short words, especially flower and city names.",
+    "Keep the question list harmless. Skip anything about looks, age or personality scores.",
+    "For a business, this works as a quick brand vibe check: if the answers don't match the feel you want, that's useful too."
+  ],
+  "tags": ["selfie", "mood-board", "chatbot", "slideshow", "business"]
+}
