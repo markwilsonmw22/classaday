@@ -1,0 +1,40 @@
+{
+  "slug": "some-bills-are-non-negotiable",
+  "title": "\"Some bills are non-negotiable\": the little things you always make room for",
+  "published": "2026-11-14T00:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Open with \"Some bills are non-negotiable. The bills:\" then show the small, everyday things you never skip. AI helps you pick and word your list.",
+  "why": "SocialBee's Instagram trends post dated November 11, 2026 lists \"Some bills are non-negotiable\" as a new Reels format: that line on screen, then quick clips of the small things people treat as essentials, like a daily coffee or a weekly class.",
+  "steps": [
+    "Use the main prompt to brainstorm the little things you never give up, then pick three to five.",
+    "Film a two- or three-second clip of each one: your morning coffee, the dog walk, Sunday pancakes.",
+    "Start with the text \"Some bills are non-negotiable.\" then \"The bills:\" and label each clip with one or two words.",
+    "Keep the whole Reel under 15 seconds and add a sound from the app's library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Help me make a short Reel. It opens with the text \"Some bills are non-negotiable. The bills:\" and then shows small everyday things I never skip. Here's a bit about my life: [your routines, hobbies, pets, family habits]. Give me 12 ideas for \"bills\". Each one should be a small, wholesome habit or treat, two to five words long, and easy to film in three seconds. Make them funny or warm, not about spending money. For each one, suggest the shot."
+    },
+    {
+      "label": "Variation: Canadian winter edition",
+      "text": "Write 10 \"Some bills are non-negotiable\" ideas for a Canadian winter: things like a warm drink after shovelling, wool socks, the first skate of the season, a cosy movie on a snowy night. Keep each one under five words and add a quick, simple shot idea for each."
+    },
+    {
+      "label": "Variation: my pet's bills",
+      "text": "Write a \"Some bills are non-negotiable\" list from my pet's point of view. My pet is a [type of animal] called [name] who loves [two or three things]. Give me 8 short, funny \"bills\", each under five words, and a three-second shot idea for each one."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business] in [town]. Write 8 \"Some bills are non-negotiable\" lines about the small things we never skip for our customers, for example [one or two real habits, like hand-writing thank-you notes]. Only use things we really do. Keep each under six words and suggest a simple shot from our workspace. No prices, sales claims or invented numbers."
+    }
+  ],
+  "tips": [
+    "The joke works best with tiny things. \"Two coffees, not one\" lands better than something big.",
+    "Keep the labels short so people can read them in a second.",
+    "Show your own real routine. Viewers like spotting the habits they share with you.",
+    "Businesses: only list things you really do every time."
+  ],
+  "tags": ["text", "reels", "instagram", "routine", "business"]
+}

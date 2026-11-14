@@ -1,0 +1,36 @@
+{
+  "slug": "glowing-rooms-outfit-change",
+  "title": "Glowing rooms: you dance through bright colour-lit rooms, a new outfit at every cut",
+  "published": "2026-11-14T00:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "Turn one photo into a 17-second clip where you sway through glowing rooms, a lit corridor, a staircase and a light box, with a new outfit at each cut.",
+  "why": "Starrd's monthly roundup of viral AI video formats (updated November 13, 2026) lists this one in its November section, based on an edit posted November 12, 2026: a singer moves through glowing rooms like a corridor, a staircase and a light box, and the AI version uses one photo with a new outfit at each cut.",
+  "steps": [
+    "Pick one clear, well-lit photo of yourself from the waist up or full body.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a vertical clip of about 15 to 17 seconds. If your tool makes short clips, make each room separately and join them in an editor.",
+    "Check that your face stays the same in every room. Re-run any shot where it drifts.",
+    "Add a sound that's free to use on the platform you post to, and cut each room on the beat."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: four glowing rooms",
+      "text": "Use the person in this photo. Vertical video, about 16 seconds, four shots cut on the beat. Each shot is a small, empty room where the walls themselves glow with soft, even colour. Shot 1: a long corridor glowing warm orange; they walk toward the camera in a cosy oversized sweater, swaying and smiling. Shot 2: a staircase glowing soft blue; they lean on the rail in a long winter coat and do a slow, easy shuffle. Shot 3: a white light-box room, very bright; they spin once in a sharp black outfit. Shot 4: a room glowing deep purple; they dance loosely in a turtleneck and look into the lens. Relaxed, playful, slightly awkward dance moves. Keep the face, hair and build the same in every shot. No text, no logos."
+    },
+    {
+      "label": "Variation: holiday rooms",
+      "text": "Use the person in this photo. Vertical video, about 15 seconds, three shots cut on the beat. Shot 1: a room glowing deep red; they sway in a cream knit sweater. Shot 2: a room glowing pine green; they do a little side step in a plaid scarf and toque. Shot 3: a room glowing soft gold with a faint snowfall of light; they twirl in a party outfit and laugh. Gentle, cheerful moves. Same face and hair in every shot. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a 15-second vertical video for a clothing shop or stylist. One model from this photo moves through three small rooms with glowing walls: warm orange, cool blue, then bright white. In each room they wear a different outfit from these photos: [describe or upload three outfits]. Easy, confident moves and one slow turn per room so the clothes show clearly. Keep the face the same throughout. Leave space at the top for text. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Describe the outfits clearly, one per room. Vague prompts tend to repeat the same clothes.",
+    "Keep the dancing simple. Swaying, a side step and one spin look more natural than big moves.",
+    "Only use a friend's photo if they've agreed.",
+    "Businesses: use photos of clothes you really sell, and don't change how they look."
+  ],
+  "tags": ["video", "image-to-video", "dance", "fashion", "business"]
+}

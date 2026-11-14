@@ -1,0 +1,40 @@
+{
+  "slug": "its-cool-to-do-both",
+  "title": "\"It's cool to do both\": the split-screen of your two very different sides",
+  "published": "2026-11-14T00:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Show two sides of you that don't seem to fit together, side by side, with the line \"It's cool to do both.\" AI helps you find the funniest pairs.",
+  "why": "SocialBee's Instagram trends post dated November 11, 2026 lists \"It's cool to do both\" as a new trend: a split-screen or carousel showing two sides of one person that seem like they shouldn't go together, like working out and eating fast food, or dressing up and staying home.",
+  "steps": [
+    "Use the main prompt to find pairs of things you do that seem like opposites.",
+    "Pick one pair, or up to four for a carousel. Find or take a photo for each side.",
+    "Put the two photos side by side with a split-screen layout in your editing app, or as two slides.",
+    "Add the text \"It's cool to do both\" across the top and keep any labels to a word or two."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Help me with an \"It's cool to do both\" post. It shows two sides of me that seem like they don't go together, side by side. Here's a bit about me: [your job, hobbies, habits, the things friends tease you about]. Give me 10 funny pairs, written as \"[side one] / [side two]\", each side under five words. Keep them light and kind, nothing about health, money or politics. For each pair, suggest one photo for each side."
+    },
+    {
+      "label": "Variation: four-slide carousel",
+      "text": "Turn these pairs into a four-slide \"It's cool to do both\" carousel: [paste three or four pairs]. For each slide, write a two-word label for each side and describe a simple photo for the left half and the right half. Then write a short, friendly caption under 25 words."
+    },
+    {
+      "label": "Variation: make the photos with AI",
+      "text": "Use the person in this photo. Make one square image split down the middle with a thin white line. Left half: [side one, for example: them in a neat suit at a tidy desk]. Right half: [side two, for example: them in a parka and toque, ice fishing on a frozen lake]. Same face, hair and build on both sides. Natural light, realistic photo, no text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business]. Write 8 \"It's cool to do both\" pairs that show two true sides of our work, for example careful, fussy prep on one side and a relaxed, fun moment with customers on the other. Each side under five words. Suggest a real shot from our workspace for each half. No invented results or customer quotes."
+    }
+  ],
+  "tips": [
+    "The bigger the contrast, the better. Pick two things people wouldn't expect from the same person.",
+    "Use real photos where you can. The AI split-screen prompt is for when you don't have the shot.",
+    "Line the two photos up at the same height so faces sit level across the split.",
+    "Only include friends or family if they're happy to be in it."
+  ],
+  "tags": ["text", "split-screen", "instagram", "carousel", "business"]
+}
