@@ -1,0 +1,40 @@
+{
+  "slug": "holiday-red-curtain-stage-number",
+  "title": "Holiday stage number: you sing your favourite carol in front of a red velvet curtain",
+  "published": "2026-11-14T12:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "Turn one photo into a short clip where you take the stage in a festive retro outfit, under a spotlight, in front of a big red velvet curtain.",
+  "why": "Starrd's monthly roundup of viral AI video formats (updated November 13, 2026) lists a Christmas stage version in its November section, dated November 9, 2026: one photo becomes a lip-synced performance on a red-curtain stage in a festive retro outfit.",
+  "steps": [
+    "Pick one clear, well-lit photo of yourself, full body if you have one.",
+    "Upload it to an image-to-video tool and paste the main prompt. Ask for a vertical clip of about 15 to 25 seconds, or make two or three short shots and join them.",
+    "If your tool can lip-sync, add a holiday song you have the rights to use, or record yourself singing a few lines. Otherwise, pick a sound that's free to use on the platform you post to.",
+    "Watch the face closely. Re-run any shot where it drifts from your photo."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the red curtain number",
+      "text": "Use the person in this photo. Vertical video, about 20 seconds. They stand alone on a small, old-fashioned theatre stage in front of a tall red velvet curtain, lit by one warm spotlight. They wear a festive 1960s-style outfit: a short red dress with white fluffy trim and shiny white boots, or a red velvet suit with a white bow tie. A vintage silver microphone on a stand. Shot 1: they step up to the mic and smile at the lens. Shot 2: they sing with big, happy gestures and a little side-to-side sway. Shot 3: they spin once as soft gold confetti and fake snow fall from above, then point at the camera. Warm, cheerful, a little cheesy. Keep the face, hair and build the same throughout. No text, no logos."
+    },
+    {
+      "label": "Variation: family or friends trio",
+      "text": "Use the three people in these photos. Vertical video, about 15 seconds. They stand side by side on a small theatre stage in front of a red velvet curtain, under warm spotlights, each at their own vintage microphone. Matching festive outfits in red and white with sparkly trim. They sway in time, do one step-touch together, then lean in and sing the last line into one mic. Gold confetti falls on the final beat. Joyful and a bit silly. Keep each person's face the same. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet takes the stage",
+      "text": "Use the pet in this photo. Vertical video, about 12 seconds. The pet sits on a tall stool on a small theatre stage in front of a red velvet curtain, under one warm spotlight, wearing a tiny red bow tie with white fluffy trim. A vintage microphone is lowered to its height. It tilts its head, opens its mouth as if singing, and wiggles in time. Soft fake snow falls on the last beat. Keep the pet's markings and colours exactly the same. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a 15-second vertical video for a shop, café or studio's holiday post. The owner from this photo stands on a small theatre stage in front of a red velvet curtain, under a warm spotlight, in a festive red and white outfit. Beside them, on a little table, are these products: [describe or upload your real products]. They sing a few cheerful lines, then gesture to the table with a big smile as gold confetti falls. Leave space at the top for text such as your holiday hours. Keep the face and the products exactly as they are. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Describe the outfit in detail. Vague prompts tend to give plain clothes.",
+    "Keep the moves small: a sway, a point and one spin look more natural than big dance steps.",
+    "Only use a friend's or family member's photo if they've agreed, and label the clip as made with AI.",
+    "Businesses: show products as they really are, and don't use a song you don't have the rights to."
+  ],
+  "tags": ["holiday", "christmas", "video", "image-to-video", "business"]
+}
