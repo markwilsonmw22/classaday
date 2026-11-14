@@ -1,0 +1,40 @@
+{
+  "slug": "holiday-photobooth-strips",
+  "title": "Holiday photobooth strips: two of you, four poses, one festive strip",
+  "published": "2026-11-14T06:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Turn a photo of you and a friend or partner into classic holiday photobooth strips, then make a short clip that drifts down the frames.",
+  "why": "A trend template page (updated November 13, 2026) cites a two-strip holiday photobooth post from November 7, 2026 with about 3.3 million views by November 12, and a colour couple version from November 8 with about 830,000. It lists the #christmasphotobooth tag at about 642 videos and 4.2 million views on November 12.",
+  "steps": [
+    "Pick a clear photo of you and one other person who has agreed, faces well lit. Two separate selfies also work.",
+    "Paste the main prompt into an image tool to make the strips. Re-run if a face drifts or the frames look the same.",
+    "For the video version, upload the strip image to an image-to-video tool with the video prompt. Ask for about 10 to 15 seconds, vertical.",
+    "Add a holiday sound that's free to use on the platform you post to."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: two black-and-white strips",
+      "text": "Use the two people in this photo. Make two vintage photobooth strips lying side by side on a dark wooden table, each strip with four square frames and a thin white border. Black-and-white film look with soft grain and slight flash glare. Frame 1: both smile at the camera in cosy knit sweaters. Frame 2: one wears a red pom-pom toque, the other pretends to be shocked. Frame 3: they squish their cheeks together and laugh. Frame 4: they hold a small sprig of greenery between them and grin. A few fairy lights and a candy cane blurred on the table. Keep both faces true to the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: colour strip with a warm flash",
+      "text": "Use the two people in this photo. One tall photobooth strip with four frames, warm colour film with a bright on-camera flash and a deep red curtain behind them. Frame 1: matching plaid scarves, big smiles. Frame 2: one gives the other bunny ears. Frame 3: a surprised look as fake snow falls. Frame 4: a quick hug, eyes closed, laughing. Keep both faces the same in every frame. Add a small blank space at the bottom of the strip for a handwritten date. No text, no logos."
+    },
+    {
+      "label": "Video: slow drift down the strips",
+      "text": "Animate this photobooth strip image. Vertical video, about 12 seconds. The camera starts above the strips and drifts slowly down them. As each frame passes, the two people in it move a little: a blink, a laugh, a head tilt, a change of pose. Soft fairy lights twinkle on the table. Keep the faces the same as the still image. Gentle, cosy mood. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Make a holiday photobooth strip for a small shop or café. Four frames, black-and-white with soft grain. Use this photo of our team [upload, with everyone's OK]. Frame 1: the team smiles behind the counter. Frame 2: everyone in toques. Frame 3: someone holds up our best-selling item [describe it]. Frame 4: a big wave goodbye. Leave a blank space at the bottom for our holiday hours. Keep faces true to the photo. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Describe a different pose for each frame. Otherwise the tool tends to repeat the same smile four times.",
+    "Only use a friend's or partner's photo if they've agreed.",
+    "If faces drift in the video, make the clip shorter or animate one strip at a time.",
+    "Businesses: use real team photos and real products, and don't make it look like a customer's photo."
+  ],
+  "tags": ["holiday", "christmas", "couples", "friends", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "turkey-charcuterie-board-plan",
+  "title": "Turkey charcuterie board: plan it, preview it, then build it on camera",
+  "published": "2026-11-14T06:45:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Get AI to plan a turkey-shaped snack board for your crowd, with a shopping list, a top-down preview picture and an on-screen ingredient list.",
+  "why": "NewEngen's weekly Instagram trends page (updated November 13, 2026) lists turkey charcuterie boards this week: a top-down video of crackers, cheese and meats built into a turkey shape, with the ingredients shown on screen. American Thanksgiving is on November 26, 2026, and the board also works for a Friendsgiving or a holiday potluck.",
+  "steps": [
+    "Paste the planning prompt into a chatbot and fill in how many people, your budget and any foods to avoid.",
+    "Ask for the preview picture so you can see the layout before you shop.",
+    "Build the board on a tray from above, with your phone on a stand. Film it in quick cuts: base, feathers, body, face.",
+    "Use the short ingredient list as text on screen, one line per item."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: board plan and shopping list",
+      "text": "Help me plan a turkey-shaped snack board for [number] people. Budget: about $[amount] CAD. Foods to leave out: [list, or say none]. Give me: 1) a layout for a large round or oval tray, with a body in the middle and four or five rows of 'feathers' fanning out behind it, each row a different colour; 2) what goes in each part, using cheese, crackers, cured meats, fruit, vegetables and a dip; 3) how to make the head, eyes, beak and the red wattle from simple foods; 4) a shopping list grouped by store section, with amounts; 5) a build order that takes under 40 minutes. Short sentences, please."
+    },
+    {
+      "label": "Preview picture",
+      "text": "Make a top-down photo of a snack board shaped like a cartoon turkey on a large wooden tray. Behind the body, rows of 'feathers' fan out in bands: orange cheddar slices, rolled cured meat, round crackers, green grapes, and red apple slices. The body is a small bowl of dip surrounded by pretzels. The head is a pear with two candy eyes and a small triangle of yellow pepper for the beak. Soft daylight, a linen napkin and a few fall leaves at the edge. No text, no logos."
+    },
+    {
+      "label": "Variation: vegetarian or kid-friendly",
+      "text": "Rewrite this turkey board plan with no meat. Use cheese, hummus, vegetables, fruit, crackers and pretzels instead. Make it easy for young kids to grab, with no whole grapes or hard nuts for little ones. Keep the turkey shape and the colour bands. Give me the new shopping list and a 6-line ingredient list I can put on screen."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [deli / café / catering business] in [city]. Write a 15-second Reel plan for building a turkey-shaped snack board with items we actually sell: [list items]. Give me the shot list (top-down, four quick cuts), one line of on-screen text per shot, a caption under 40 words that says how to order before [date], and three hashtags. No made-up prices, reviews or customer counts."
+    }
+  ],
+  "tips": [
+    "Lay the feather rows first, then the body. It's easier to fill gaps at the end.",
+    "Check every AI amount against your own crowd. People eat more when the board is the main snack.",
+    "Label anything with nuts or other common allergens with a small card, for guests' sake.",
+    "Businesses: only show items you really sell, and use your real prices if you mention any."
+  ],
+  "tags": ["food", "thanksgiving", "party", "recipe", "business"]
+}
