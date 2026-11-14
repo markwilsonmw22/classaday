@@ -1,0 +1,36 @@
+{
+  "slug": "soft-launch-hint-reel",
+  "title": "Soft launch: hint at someone (or something) new without showing it",
+  "published": "2026-11-14T18:47:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Claude", "Gemini"],
+  "summary": "Three to five soft, dreamy clips that hint at a person, pet or product without showing it, one line of text, and a reveal on the chorus.",
+  "why": "New Engen's Instagram trends page, updated November 13, 2026, calls this soft-launch format the top TikTok trend that week and says it has spread to Instagram. People post 3 to 5 soft-focus clips that only hint at someone new (hands, the back of a head, a shared view), set to a gentle acoustic love-song cover, with the reveal on the chorus. It suggests brands swap the partner for a new product, a shop dog or a new location.",
+  "steps": [
+    "Decide what you're soft launching: a partner, a new pet, a new home, a new product or a new spot.",
+    "Paste the main prompt into a chatbot to get a shot list and your one line of text.",
+    "Film 3 to 5 short clips, 7 to 12 seconds in total, keeping faces or the full product out of frame until the last clip.",
+    "Pick the soft acoustic love-song cover trending under soft-launch posts in your app, and line the reveal up with the chorus."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: shot list and caption",
+      "text": "I want to make a 'soft launch' Reel that hints at [what's new, for example: my new partner / our new puppy / my first apartment] without fully showing it. Give me 4 short shot ideas, each 2 to 3 seconds, that only show small details: hands, a shadow, the back of a head, a shared view, a little daily ritual. Make the last shot a gentle reveal. Then write 5 options for one line of on-screen text, under 8 words each, sweet and a little mysterious. Plain, warm language. No hashtags."
+    },
+    {
+      "label": "Variation: new pet",
+      "text": "Help me soft launch our new pet in a 10-second Reel. Give me 4 shot ideas that only hint at it: a tiny bowl, a leash by the door, a paw on a blanket, a tail out of frame. The last shot shows its face. Then write 5 short on-screen lines, under 8 words, cute but not cheesy."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "We're about to launch [new product, menu item or location] at our [type of business]. Plan a 10-second soft-launch Reel that only hints at it: 4 close-up shot ideas (packaging edges, hands at work, a shadow on the counter, a peek through a door), with the last shot a clear but simple reveal. Write 5 one-line on-screen captions under 8 words that build curiosity without fake urgency or 'limited time' claims. Add one short post caption with the real launch date: [date]."
+    }
+  ],
+  "tips": [
+    "Soft focus does the work: tap to focus on something near the lens so the rest blurs.",
+    "Keep it to one line of text. The hints should carry the story.",
+    "Check the sound is cleared for business accounts, or use original audio.",
+    "Soft launching a person? Make sure they're happy to be posted first."
+  ],
+  "tags": ["text", "reels", "soft-launch", "announcement", "business"]
+}

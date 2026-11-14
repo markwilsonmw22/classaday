@@ -1,0 +1,40 @@
+{
+  "slug": "lately-on-my-sd-card",
+  "title": "\"Lately on my SD card\": a fast dump of your week, with a memory-card title",
+  "published": "2026-11-14T18:46:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Make a memory-card title graphic, then follow it with 8 to 15 of your recent clips and photos, each on screen for under a second.",
+  "why": "New Engen's Instagram trends page, updated November 13, 2026, lists \"Lately on my SD card\": a Reel opens on a memory-card graphic with those words, then runs a quick burst of recent clips and photos. It says photographers, groomers, drone operators and designers have made their own, since it shows recent work without filming anything new.",
+  "steps": [
+    "Pick 8 to 15 recent photos or clips: work in progress, behind the scenes, small details, one favourite shot to end on.",
+    "Ask ChatGPT or Gemini for the title card with the main prompt.",
+    "In your video app, put the title card first for about one second, then each clip or photo for under a second, ending on your favourite.",
+    "Use original sound or an upbeat track from the app's library, and post."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the title card",
+      "text": "Create a vertical 9:16 title card for a short video. In the middle, a close-up of a plain memory card with no brand name or logo, sitting on a [surface, for example: wooden desk next to a camera strap]. Soft natural daylight, shallow depth of field, slightly warm colours. Above the card, in clean lowercase white letters with a soft shadow, write: \"lately on my sd card\". No other text, no logos."
+    },
+    {
+      "label": "Variation: your own theme",
+      "text": "Make the same title card again, but set the memory card on [a surface that fits your life, for example: a snowy porch railing / a kitchen counter with flour / a car dashboard at sunset]. Keep the same lowercase white words \"lately on my sd card\" in the same spot. Keep it simple and clean. No brand names, no logos."
+    },
+    {
+      "label": "Variation: put the clips in order",
+      "text": "Here is a list of my recent clips and photos: [paste short descriptions, for example: 1. morning coffee, 2. client shoot setup, 3. dog in the snow...]. Put them in an order that feels fast and fun for a 10-second Reel. Start strong, mix close-ups with wide shots, and end on the one that makes people want to see more. Give me the order and one short caption under 10 words."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Create a vertical 9:16 title card. A plain memory card with no brand name rests beside [our work tools, for example: grooming scissors and a brush / a sketchbook and pencils]. Bright, clean light. In lowercase white letters at the top: \"lately on my sd card\". In small letters at the bottom: \"[business type] · [your town]\". No logos and no other text."
+    }
+  ],
+  "tips": [
+    "Keep every clip under one second. Fast is the whole point.",
+    "End on your best shot so it's the one people remember.",
+    "Use only your own real photos and clips after the title card, so it shows your actual work.",
+    "Ask before posting clips with clients or friends in them."
+  ],
+  "tags": ["photo-dump", "reels", "instagram", "recap", "business"]
+}

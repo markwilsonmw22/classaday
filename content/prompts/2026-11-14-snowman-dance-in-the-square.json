@@ -1,0 +1,36 @@
+{
+  "slug": "snowman-dance-in-the-square",
+  "title": "Snow-square duet: you and a partner dance under the holiday lights",
+  "published": "2026-11-14T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway"],
+  "summary": "Two people meet in a snowy town square under strings of holiday lights, step together, turn into a hug and finish facing each other.",
+  "why": "AI Trend Club's list, updated November 14, 2026, traces a snowy couple dance to a TikTok posted November 8: two dancers meet in a snow-covered square under holiday lights, step together, hug, then finish face to face. It had about 959K views by November 13. Our earlier holiday dance pack was a pyjama routine by the tree; this one is outdoors, slow and romantic.",
+  "steps": [
+    "Pick your partner: a partner, friend, kid or pet. Get their OK before you use their photo.",
+    "Take one full-body photo of each person, head to feet, in a winter coat if you have one, in good light.",
+    "Upload both photos to an image-to-video tool and paste the main prompt. Ask for no music.",
+    "Add a soft holiday song from the app's music library and post it with one short line."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the snow-square duet",
+      "text": "Use photo 1 as the person on the left and photo 2 as the person on the right. Keep both faces and body shapes exactly as in the photos. They wear warm winter coats, scarves and boots. Setting: a small town square at night, fresh snow on the ground, snow falling gently, strings of warm white holiday lights overhead and a lit tree in the background. One slow camera that drifts around them, full body, vertical 9:16, 15 seconds. They walk toward each other from opposite sides and reach out their hands. They take a few slow steps together, turn under each other's arm, then pull into a warm hug. They step apart and end facing each other, smiling, as snow falls. Soft, cinematic, gentle. No music, no text, no logos."
+    },
+    {
+      "label": "Variation: you and your dog",
+      "text": "Use photo 1 as me and photo 2 as my dog. Keep my face and my dog's colours and markings exactly the same. We are in a snowy town square at night under strings of warm holiday lights, with light snow falling. One slow drifting camera, full body, vertical, 15 seconds. I walk in from the left and my dog bounds in from the right. We do a slow little dance: I hold its front paws and we step side to side, then turn in a circle. I kneel and it jumps into a big hug. We end nose to nose in the snow. Sweet and funny. No music, no text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use photo 1 and photo 2 as two of our team members. Keep their faces exactly as in the photos. They wear warm winter coats and scarves and stand in the snowy square just outside our [type of business, for example: café], with its window glowing and holiday lights strung overhead. One slow drifting camera, full body, vertical, 15 seconds. They meet in the middle, take a few slow steps together, turn, share a quick friendly hug, then both turn and point at the warm shop window as snow falls. Cosy and cheerful. No music, no text, no logos."
+    }
+  ],
+  "tips": [
+    "Full-body photos with feet showing give smoother steps and turns.",
+    "Coats help: the AI keeps outfits steadier when the photo already looks wintry.",
+    "If the hug looks stiff, ask for \"a slower, softer hug that lasts two seconds\".",
+    "Only use photos of people who said yes to being in the video."
+  ],
+  "tags": ["holiday", "winter", "dance", "image-to-video", "business"]
+}
