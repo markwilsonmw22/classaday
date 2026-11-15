@@ -1,0 +1,40 @@
+{
+  "slug": "santa-nice-list-snow-globe",
+  "title": "Made the nice list: you (or your pet) in a golden frame or a snow globe on Santa's desk",
+  "published": "2026-11-15T18:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Turn one photo into a festive \"official nice list\" portrait: in a gold frame on Santa's desk, or tiny inside a snow globe.",
+  "why": "A TikTok trend chart dated November 13, 2026 lists a \"Santa nice list\" trend in its top 25: people put their photo into a golden frame on Santa's desk or inside a snow globe. It fits the early holiday posts going up this month.",
+  "steps": [
+    "Pick a clear, smiling photo of yourself, your family (with their OK) or your pet.",
+    "Paste the main prompt, or the snow globe one, into ChatGPT or Gemini with your photo.",
+    "Ask for small fixes in plain words, like \"make the frame smaller\" or \"warmer light\".",
+    "Post it as a holiday profile picture, a card, or a \"guess who made the list\" story."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: gold frame on Santa's desk",
+      "text": "Use the person in this photo. Put their portrait inside an ornate gold picture frame standing on a big wooden desk in a cosy North Pole workshop. Around the frame: a long rolled scroll titled \"Nice List\" with a red ribbon, a feather quill, a mug of hot cocoa, candy canes and a little brass bell. A fireplace glows softly in the background and snow falls past a frosty window. Keep their face, hair and smile exactly the same as the photo. Warm, magical lamp light, realistic photo, vertical 4:5. The only text is \"Nice List\" on the scroll. No logos."
+    },
+    {
+      "label": "Variation: inside a snow globe",
+      "text": "Use the person in this photo. Show them tiny, standing inside a glass snow globe, waving, in a small snowy village with pine trees and glowing cabins. Snowflakes swirl around them. The globe sits on a wooden base with a small gold plaque that says \"Nice List 2026\". The globe rests on a windowsill with fairy lights blurred behind it. Keep their face and outfit true to the photo. Soft, warm light, realistic, square. No other text, no logos."
+    },
+    {
+      "label": "Variation: your pet made the list too",
+      "text": "Use the pet in this photo. Put its portrait in an oval gold frame with a tiny red bow on top, hanging on a pine-green wall above a fireplace with stockings. A small card tucked into the frame says \"Nice List (mostly)\". Keep the pet's face, fur colour and markings exactly the same. Warm firelight, realistic photo, vertical 4:5. No other text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Use this photo of our team, shop or product [upload]. Put it inside a large snow globe on a festive counter, with snow swirling around a tiny version of our storefront or product. A small gold plaque on the base says \"[your real holiday message, for example: Open Dec 24 until 3 pm]\". Keep the photo true to life. Warm, cosy light, realistic, square. No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Close-up photos with good light keep your face looking like you inside a small frame or globe.",
+    "Ask for exact text in quotes. Short words like \"Nice List\" come out cleanly.",
+    "Make one for the whole family by doing each person or pet, then putting them in a carousel.",
+    "Only use photos of people who are happy to be in it."
+  ],
+  "tags": ["holiday", "christmas", "selfie", "pets", "business"]
+}

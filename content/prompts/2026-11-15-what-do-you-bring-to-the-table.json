@@ -1,0 +1,40 @@
+{
+  "slug": "what-do-you-bring-to-the-table",
+  "title": "\"What do you bring to the table?\": your list of essentials, with one funny twist",
+  "published": "2026-11-15T18:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Answer \"What do you bring to the table?\" with a list of your real strengths, then one honest, funny last item. AI helps you write it.",
+  "why": "Later's TikTok trends roundup, updated November 13, 2026, lists \"What do you bring to the table?\" as a new trend: people list the \"essentials\" they bring, with a joke twist at the end. It also lines up with holiday dinners and potlucks coming up.",
+  "steps": [
+    "Use the main prompt to write a short list of what you bring, ending with a twist.",
+    "Film a simple clip: you setting a table, walking up to a dinner, or just looking at the camera.",
+    "Put the question at the top, then show the list one line at a time, with the twist last.",
+    "Use the original sound from the trend in your app, or any free-to-use audio."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Help me with a \"What do you bring to the table?\" video. I show a list of what I bring, one line at a time, and the last line is a funny twist. Here's a bit about me: [your personality, hobbies, what friends say about you]. Write 3 versions. Each has 4 or 5 lines, each line under six words. The first lines are real, kind strengths. The last line is an honest, self-aware joke, like \"also: zero dishes\". Keep it light, nothing about health, money or politics."
+    },
+    {
+      "label": "Variation: holiday dinner edition",
+      "text": "Write a \"What do you bring to the table?\" list for a holiday dinner or potluck. I usually [what you really do at family dinners, for example: bring the same store-bought pie / tell long stories / take over the music]. Give me 3 lists of 5 lines, each line under six words, ending with a funny twist. Keep it warm and family-friendly."
+    },
+    {
+      "label": "Variation: for a friend or partner",
+      "text": "Write a \"What does [name] bring to the table?\" list as a sweet, teasing tribute to my [friend / partner / sibling]. Here's what they're like: [three or four things]. Give me 3 lists of 4 or 5 lines, each under six words. Mostly kind and true, with one gentle joke at the end they'd laugh at."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business]. Write 3 \"What do we bring to the table?\" lists of 5 lines for a short video. The first lines are true things we offer, for example [two or three real strengths]. The last line is a light, self-aware joke about us, like \"and way too many puns\". Each line under six words. No invented results, prices or customer quotes."
+    }
+  ],
+  "tips": [
+    "Hold the twist for the last line and give it an extra beat on screen.",
+    "Real strengths first. The joke lands better when the list sounds sincere.",
+    "A table, a plate or a dish in the shot makes the question feel literal and fun.",
+    "Only tag or show friends and family if they're happy to be in it."
+  ],
+  "tags": ["text", "tiktok", "funny", "holiday", "business"]
+}

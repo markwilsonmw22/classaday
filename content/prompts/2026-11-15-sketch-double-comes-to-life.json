@@ -1,0 +1,40 @@
+{
+  "slug": "sketch-double-comes-to-life",
+  "title": "Your sketch double: a pencil drawing of you fills with colour and dances beside you",
+  "published": "2026-11-15T18:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "ChatGPT", "Gemini"],
+  "summary": "A pencil-sketch copy of you appears next to you, fills in with colour stroke by stroke, then dances in sync with you. Made from one photo.",
+  "why": "A TikTok trend chart dated November 13, 2026 lists a \"magic double\" dance among its top trends: a pencil-sketch copy of the person fills with colour and dances beside them. It's an image-to-video take on the dance trends people are already posting this month.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself standing, with some space on one side of you.",
+    "Optional: use the sketch prompt in an image tool first, so your start frame already has the pencil double in it.",
+    "Paste the main prompt into an image-to-video tool. Ask for about 10 seconds, vertical, camera held still.",
+    "Add an upbeat sound that's free to use in your app, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo. Vertical video, about 10 seconds, camera held still at chest height. The person stands still and smiles at the lens. Next to them, a life-size pencil sketch of the same person draws itself in the air: quick grey lines for the outline first, then soft shading. The sketch fills in with colour, stroke by stroke, until it matches the real person's clothes and hair, but keeps a faint hand-drawn outline. The real person and the sketch double look at each other, nod, then do the same simple dance in perfect sync: a side step, a shoulder bounce, a spin and a point at the camera. Keep the face, hair and outfit the same as the photo. Bright, even light. No text, no logos."
+    },
+    {
+      "label": "Start frame: add the pencil double",
+      "text": "Use the person in this photo. Keep them exactly as they are. Next to them, add a life-size copy of the same person drawn as a loose pencil sketch on the air: grey lines, light cross-hatching, white paper texture inside the outline, same pose turned slightly toward the real person. The background stays as a real photo. Realistic, playful, no text, no logos."
+    },
+    {
+      "label": "Variation: two doubles, holiday edition",
+      "text": "Animate this photo. Vertical video, about 10 seconds, camera held still. The person stands in a cosy living room by a decorated tree. Two pencil sketches of them draw themselves in, one on each side, then fill with colour into matching red and green holiday sweaters. All three do a small, simple dance in sync, then the two sketch doubles turn back into pencil lines and drift away like snowflakes. Keep the person's face and hair the same as the photo. Warm lamp light. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of me at work in my [type of business, for example: bakery / salon / workshop]. Vertical video, about 10 seconds, camera held still. A pencil sketch of me draws itself beside me, fills in with colour, then copies what I'm doing in sync: [one real task, for example: dusting flour on a loaf / folding a towel / sanding a board]. We finish with a high five and the sketch fades back into pencil lines. Keep me true to the photo. Natural light. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Leave room beside you in the photo. The tool needs empty space to draw the double in.",
+    "Keep the dance simple. Two or three moves stay in sync much better than a full routine.",
+    "If the double keeps coming out as a real person, use the start-frame prompt first so the sketch look is locked in.",
+    "Only use photos of yourself, or friends and family who said yes."
+  ],
+  "tags": ["video", "image-to-video", "dance", "sketch", "business"]
+}
