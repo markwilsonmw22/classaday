@@ -1,0 +1,36 @@
+{
+  "slug": "busking-pet-tip-cup",
+  "title": "Busking pet: your pet sits behind a tip cup in the park and the coins roll in",
+  "published": "2026-11-15T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Turn one photo of your cat or dog into a short park clip where it sits proudly behind a paper cup and passers-by drop in coins.",
+  "why": "A trend template page lists a TikTok clip posted November 11, 2026 of a black cat grinning behind a cup on a park path while passers-by drop money in. The page says it had 1.3 million views on November 13 and 1.4 million on November 14.",
+  "steps": [
+    "Pick a clear photo of your cat or dog sitting up, face to the camera, with good light.",
+    "Paste the main prompt into an image-to-video tool. Ask for about 10 to 13 seconds, vertical, with a low, still camera.",
+    "Add a caption that tells the joke, like \"Saving up for the good treats.\"",
+    "Add a cheerful sound that's free to use in your app, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: park path busker",
+      "text": "Animate the pet in this photo. Vertical video, about 12 seconds, low camera at pet height, held still. The pet sits on a leafy park path on a sunny fall afternoon, with a clear paper cup on the ground in front of it. It looks very pleased with itself and gives a slow, happy blink. Passers-by walk past, shown only from the knees down. Two or three of them bend down and drop a coin into the cup, and the pet perks up each time. At the end, one person walks close past the camera and the pet stays proudly in place. Keep the pet's face, fur colour and markings the same as the photo. Natural daylight. No text, no logos."
+    },
+    {
+      "label": "Variation: winter sidewalk with a tiny sign",
+      "text": "Animate the pet in this photo. Vertical video, about 12 seconds, camera low and still. The pet sits on a snowy city sidewalk next to a small handwritten cardboard sign that reads \"TREAT FUND\", with a paper cup in front of it. Light snow falls and shop windows glow behind it. People in winter boots walk by, seen only from the knees down, and a few drop coins in the cup. The pet wags or flicks its tail each time. Keep the pet looking exactly like the photo. No logos or brand names."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of our shop pet [upload]. Vertical video, about 12 seconds, low camera held still. The pet sits just outside the door of our [type of shop, for example: bakery / bookstore] next to a small chalkboard that reads \"[your real offer or event, for example: Fresh bread at 8]\". People walk past, seen from the knees down, and a few stop and step inside. The pet looks proud and gives a slow blink. Keep the pet true to the photo. Cosy, friendly mood. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Keep the camera low and still. It's what makes the clip feel like someone filmed it on a phone.",
+    "Ask for people shown from the knees down. Faces of strangers tend to look odd and pull focus from your pet.",
+    "Make it clearly a joke. Don't use it to ask for real donations or pretend it really happened.",
+    "Only use photos of your own pet, or a friend's pet with their OK."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}

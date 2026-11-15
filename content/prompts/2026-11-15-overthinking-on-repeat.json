@@ -1,0 +1,36 @@
+{
+  "slug": "overthinking-on-repeat",
+  "title": "Overthinking on repeat: one tiny moment, a new worry every time it replays",
+  "published": "2026-11-15T00:45:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Claude", "Gemini"],
+  "summary": "Lip-sync the same short line a few times while the on-screen text spirals into bigger and sillier worries about one small, everyday moment.",
+  "why": "New Engen's TikTok trends page, updated November 13, 2026, lists a \"Paid Me No Mind\" overthinking format among the top trends that week. People lip-sync a line that shifts emphasis on each repeat, with on-screen text about what they're overthinking.",
+  "steps": [
+    "Pick one small, harmless moment you keep replaying in your head, like waving at someone who wasn't waving at you.",
+    "Paste the main prompt into a chatbot to get your on-screen text, one line per repeat.",
+    "Film yourself lip-syncing the trending overthinking sound in your app. Change your face a little on each repeat: calm, then unsure, then fully spiralling.",
+    "Add one text line per repeat, timed to the beat, and finish on a calm, funny last line."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the overthinking spiral",
+      "text": "I'm making a short TikTok about overthinking. The everyday moment is: [describe it, for example: I said \"you too\" when the server said \"enjoy your meal\"]. Write 4 short on-screen text lines, under 10 words each, one for each time the clip repeats. Line 1 is a calm thought. Lines 2 and 3 get more dramatic and silly. Line 4 is a funny, calm ending that shows it was no big deal. Keep it light and relatable. No real people, no mean jokes. Then give me 5 caption options under 8 words."
+    },
+    {
+      "label": "Variation: give me ten moments",
+      "text": "Give me 10 small, harmless everyday moments that people overthink for days, like a text sent with the wrong emoji or waving back at someone who was waving at a person behind you. Keep them Canadian-friendly and relatable to most people. For each one, write a 4-line overthinking spiral, under 10 words per line, that ends on a calm punchline."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run a [type of business]. Write a 4-line overthinking spiral for a short video, under 10 words per line, about a harmless, funny worry business owners have, like [example: did I sound weird when I answered the phone?]. Make the last line a warm, honest reassurance for customers, like how we really handle it. Keep it light. No made-up reviews, no customer names, no fake urgency."
+    }
+  ],
+  "tips": [
+    "Keep the moment small. The joke is how big it gets in your head, not how bad it really was.",
+    "Change one thing on each repeat, like a slower blink or a tilted head, so the spiral is easy to follow.",
+    "Use the trending sound from inside your app. Don't type out or caption the song's words.",
+    "Keep it about you. Don't name or film a real person you're worrying about."
+  ],
+  "tags": ["text", "funny", "tiktok", "relatable", "business"]
+}

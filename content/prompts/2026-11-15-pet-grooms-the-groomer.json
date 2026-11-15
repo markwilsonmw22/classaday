@@ -1,0 +1,36 @@
+{
+  "slug": "pet-grooms-the-groomer",
+  "title": "Grooming day, reversed: your dog takes the clippers and trims the groomer",
+  "published": "2026-11-15T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Make a short, silly clip from one photo of your dog: it sits up on the grooming table, pats the groomer, and gives them a gentle trim.",
+  "why": "A trend template page lists a TikTok posted November 8, 2026 of a dog on a grooming table that rises toward the groomer mid-haircut, lifts a paw beside them and ends on a close view of clippers by the person's head. The page says it had 1.6 million views and 79,000 likes on November 12.",
+  "steps": [
+    "Pick a clear photo of your dog, ideally standing or sitting, with its whole face in view.",
+    "Paste the main prompt into an image-to-video tool. Ask for about 10 to 12 seconds, vertical.",
+    "Add a caption at the top, like \"She said it was my turn.\"",
+    "Add a playful sound that's free to use in your app, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the role swap",
+      "text": "Animate the dog in this photo. Vertical video, about 11 seconds, in a bright, tidy grooming salon. The dog stands on a grooming table while a groomer in a smock trims its fur with quiet clippers. Halfway through, the dog sits up tall, gently puts one paw on the groomer's shoulder and looks at them like it has a plan. Quick cut: the groomer now sits on a stool, calm and laughing, while the dog holds the clippers in its paw and carefully trims a tiny bit of their hair. End on a close-up of the dog looking very proud. Gentle and playful, no one is hurt or scared. Keep the dog's face, coat and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the fluffy before-and-after",
+      "text": "Animate the dog in this photo. Vertical video, about 10 seconds, at a grooming salon. Start with the dog looking extra fluffy and a bit messy on the grooming table. A soft puff of fur, a quick cut, and the dog is now neatly trimmed with a small bow on its collar. It turns to the camera, does a little proud head tilt, then lifts a paw like it's waving. Bright, clean light. Keep the dog looking like the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of a dog from our grooming salon [upload, with the owner's OK]. Vertical video, about 10 seconds. The dog sits on our grooming table in a bright, clean room. It looks at our groomer, then gently taps the clippers with its paw as if it's checking our work. Cut to the dog, neatly groomed, giving a happy head tilt to the camera. Friendly, calm mood, no one is hurt or scared. Keep the dog true to the photo. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Say the mood out loud in the prompt: calm, playful, no one hurt. It keeps the clip gentle.",
+    "Short clips work best. Faces and paws drift more after about 12 seconds.",
+    "If the clippers look odd in a paw, try a paw resting on the clippers instead of holding them.",
+    "Groomers and other pet businesses: only post a client's pet with the owner's OK."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}
