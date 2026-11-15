@@ -1,0 +1,40 @@
+{
+  "slug": "sped-up-trio-turn-taking-dance",
+  "title": "The sped-up trio dance: three of you in a row, taking turns up front",
+  "published": "2026-11-15T12:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "Turn a photo of you and two friends or siblings into the quick trio dance where you spin, swap places and take turns in front of the camera.",
+  "why": "New Engen's TikTok trends page, updated November 13, 2026, lists a trio dance to a sped-up, high-pitched '80s pop sound among this week's top trends, with some people using templates to animate a photo. A November 1 explainer traced it to mid-October, with several trio versions passing millions of plays.",
+  "steps": [
+    "Pick a clear, well-lit photo of three people standing side by side, full body, with space around them. Only use people who have agreed to it.",
+    "Upload it to an image-to-video tool and paste the main prompt. Set the clip to vertical and about 10 to 15 seconds.",
+    "Check that faces and outfits stay the same the whole way through. If someone changes, try again with a shorter, simpler set of moves.",
+    "Add the trending trio-dance sound from inside your app and line up the first spin with the beat."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the trio dance",
+      "text": "Animate this photo of three people standing in a row on a backyard court at golden hour. The phone camera stays fixed at chest height, one continuous take. They do a quick, upbeat, slightly goofy routine: all three bounce, twirl one finger in the air and spin together. Then they take turns stepping to the front: the left person moves to the middle, the right person runs up close to the lens and spins, then steps back. Each one gets a hair flip or a little shoulder bounce when they're in front. Big smiles, playful energy. Keep everyone's face, body and clothes exactly as in the photo. Vertical 9:16, about 12 seconds, natural light, no text."
+    },
+    {
+      "label": "Variation: matching colours",
+      "text": "Use this photo of three people. Dress each one in a cosy matching hoodie in a different colour I pick: [colour 1], [colour 2], [colour 3]. Keep their faces and hair exactly the same. Set them in a living room cleared for dancing, with soft holiday lights in the background. Fixed camera, one take. They do a fast, playful trio routine: bounce, spin, swap places, and each one takes a turn up close to the camera with a hair flip. Vertical 9:16, about 12 seconds."
+    },
+    {
+      "label": "Variation: three pets",
+      "text": "Animate this photo of my three pets sitting in a row. They stand up on their back legs and do a quick, cute trio dance: a little bounce, a spin, then each one hops toward the camera in turn, does a happy wiggle and hops back. Keep each pet's markings, colour and size exactly as in the photo. Bright backyard, fixed camera, vertical 9:16, about 10 seconds, playful and gentle."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of three team members standing in a row in our [type of business, for example: bakery, salon, garden centre]. Keep their faces, uniforms and the shop exactly as they are. They do a quick, upbeat trio dance: bounce, spin together, then each one steps to the front in turn holding one of our products and gives a little shoulder bounce. Fixed camera, bright and friendly, vertical 9:16, about 12 seconds. No text, no logos added."
+    }
+  ],
+  "tips": [
+    "Three people only. A fourth person in the photo tends to blur or merge into the others.",
+    "Leave room at the edges of the photo so spins and hair flips don't get cut off.",
+    "Add the sound inside your app. Don't type out or caption the song's words.",
+    "Get a yes from everyone in the photo before you post it, and from the team before using staff photos."
+  ],
+  "tags": ["video", "image-to-video", "dance", "friends", "business"]
+}
