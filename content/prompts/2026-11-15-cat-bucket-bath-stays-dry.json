@@ -1,0 +1,36 @@
+{
+  "slug": "cat-bucket-bath-stays-dry",
+  "title": "Bath time, cat style: your cat scoops from a bucket and somehow stays dry",
+  "published": "2026-11-15T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Turn one photo of your cat into a short bathroom clip where it scoops from a bucket like it's having a wash, stays bone dry, then walks off.",
+  "why": "A trend template page lists a TikTok posted November 7, 2026 of a grey cat dipping a scoop into a pink bucket in a tiled bathroom, staying dry, then walking off toward a bedroom. The page says it had 1.4 million views and 41,000 likes on November 14.",
+  "steps": [
+    "Pick a clear photo of your cat sitting up, face to the camera, in good light.",
+    "Paste the main prompt into an image-to-video tool. Ask for about 12 seconds, vertical, with the camera held still at cat height.",
+    "Add a caption that tells the joke, like \"Bath done. Didn't get wet once.\"",
+    "Add a calm, cheerful sound that's free to use in your app, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the dry bucket bath",
+      "text": "Animate the cat in this photo. Vertical video, about 12 seconds, low camera at cat height, held still. The cat sits upright on a white tiled bathroom floor next to a pink plastic bucket with a white scoop in it. With one front paw it dips the scoop into the bucket, lifts it, and tips it over its head like someone taking a bucket bath, but not a single drop lands on it. Its fur stays fluffy and dry. It does this twice, looking calm and pleased with itself. Then it turns to the camera with a slow blink, puts the scoop down and walks out of the bathroom toward a cosy bedroom. Keep the cat's face, fur colour and markings the same as the photo. Soft warm bathroom light. No text, no logos."
+    },
+    {
+      "label": "Variation: spa day with a towel",
+      "text": "Animate the cat in this photo. Vertical video, about 12 seconds, camera held still. The cat sits on a bath mat beside a small wooden bucket, with a rolled white towel and a candle on the tub edge. It dips a little scoop, pretends to pour it over its back, and stays perfectly dry. Then it drapes the small towel over its head like after a spa visit and strolls away. Keep the cat looking exactly like the photo. Calm, warm light. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of our shop pet [upload]. Vertical video, about 12 seconds, low camera held still. The pet sits by a bucket and scoop in a clean, bright washroom at our [type of business, for example: grooming salon / spa / soap shop]. It scoops and pours like it's having a wash and stays completely dry, then looks at the camera, pleased. A small sign on the wall reads \"[your real offer, for example: Book a bath for your pet]\". Keep the pet true to the photo. Friendly, funny mood. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Say \"stays completely dry\" clearly in the prompt. The joke is that the cat does the whole routine and never gets wet.",
+    "Keep the camera low and still, like a phone propped on the bathroom floor.",
+    "This is a pretend clip. Never try to bathe a real cat this way for a video.",
+    "Only use photos of your own pet, or a friend's pet with their OK."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}

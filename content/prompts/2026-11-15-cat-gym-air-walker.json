@@ -1,0 +1,40 @@
+{
+  "slug": "cat-gym-air-walker",
+  "title": "Gym day: your cat hops on the park air walker and slowly loses the rhythm",
+  "published": "2026-11-15T06:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Turn one photo of your cat into a short clip where it grabs the handles of an outdoor fitness machine, starts striding, then slides off.",
+  "why": "A trend template page lists an Instagram reel posted November 7, 2026 of a cat gripping an outdoor air walker, striding with the swinging footplates, then slipping off. The page says the reel had 836,000 likes on November 14.",
+  "steps": [
+    "Pick a clear, well-lit photo of your cat standing or sitting up, with its whole body in view.",
+    "Paste the main prompt into an image-to-video tool. Ask for about 10 to 12 seconds, vertical, with the camera held still.",
+    "Add a caption that sells the joke, like \"New year, new me. Starting early.\"",
+    "Add an upbeat workout sound that's free to use in your app, and label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: park air walker",
+      "text": "Animate the cat in this photo. Vertical video, about 11 seconds, camera at waist height, held still. The cat is at an outdoor fitness park on a crisp fall morning, standing on a metal air walker machine with yellow footplates and red handles. It grips the handles with its front paws and looks very determined. Its back legs start to stride as the footplates swing back and forth, slowly at first, then faster. The cat's face goes from proud to worried as the swing gets bigger. On the last swing it loses its grip and slides gently down onto the soft grass, lands on its feet, and looks around as if nothing happened. Keep the cat's face, fur colour and markings the same as the photo. Natural daylight. No text, no logos."
+    },
+    {
+      "label": "Variation: winter workout, toque included",
+      "text": "Animate the cat in this photo. Vertical video, about 11 seconds, camera held still. The cat wears a tiny knitted toque and is on an outdoor air walker machine in a snowy park, with light snow falling and pine trees behind. It holds the handles and strides with the swinging footplates, puffing little clouds of breath. The swing gets bigger, the cat's eyes go wide, and it slides off into a soft snowbank, then pops its head out looking unbothered. Keep the cat looking exactly like the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: your dog's turn",
+      "text": "Animate the dog in this photo. Vertical video, about 11 seconds, camera held still. The dog stands on an outdoor air walker at a park, front paws on the handles, tail wagging. It strides happily as the footplates swing, tongue out, then gets so excited it hops off mid-swing and runs a happy lap around the machine before trying again. Keep the dog's face, fur and markings the same as the photo. Bright fall daylight. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of our shop pet [upload]. Vertical video, about 11 seconds, camera held still. The pet is on an outdoor air walker machine just outside our [type of business, for example: gym / physio clinic / pet store]. It grips the handles and strides along, looking serious, then slowly slides off and lands softly. A small chalkboard beside the machine reads \"[your real offer or class, for example: Beginner class Saturdays 9 am]\". Keep the pet true to the photo. Friendly, funny mood. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Keep the fall soft and silly: a slide onto grass or snow, landing on its feet. It should look funny, not painful.",
+    "Hold the camera still in the prompt. A fixed, phone-on-a-bench shot is what makes the clip feel real.",
+    "A photo where you can see all four paws helps the tool get the striding legs right.",
+    "Only use photos of your own pet, or a friend's pet with their OK."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}
