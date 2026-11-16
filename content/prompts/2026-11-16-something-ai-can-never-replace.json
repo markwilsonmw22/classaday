@@ -1,0 +1,36 @@
+{
+  "slug": "something-ai-can-never-replace",
+  "title": "\"Building something AI can never replace\": the small human moments",
+  "published": "2026-11-16T12:43:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "A short, warm Reel of the real-life moments no machine can stand in for. AI helps you pick the shots and write the on-screen lines.",
+  "why": "Later's TikTok trends roundup, published November 13, 2026, lists \"Building something AI can never replace\": creators share footage of things AI can't replace, like human connection. It's the heartfelt cousin of our November 6 pack \"Sure, I'd like to see AI…\", which played the same idea for laughs.",
+  "steps": [
+    "Use the main prompt to get a shot list from your own life: people, places and habits that matter to you.",
+    "Film 4–6 short clips over a few days. Ask anyone in the shot if they're happy to be in it.",
+    "Open on the line \"Building something AI can never replace\", then let each clip play with one short caption.",
+    "End on your favourite moment and hold it for an extra second."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Help me plan a short video for the trend \"Building something AI can never replace\". It shows real moments of human connection in my life. About me: [e.g. two kids, a weekly hockey game with friends, Sunday calls with my grandma]. Give me 6 shot ideas I can film this week with my phone. For each one, write a caption under 8 words that is warm and specific, not cheesy. Then suggest the best order, ending on the most heartfelt shot. No hashtags, no emojis."
+    },
+    {
+      "label": "Variation: Canadian winter",
+      "text": "Write 6 on-screen captions for a \"Building something AI can never replace\" video set in a Canadian winter. Ideas to draw from: shovelling a neighbour's driveway, a backyard rink, hot chocolate after tobogganing, a potluck, teaching a kid to skate. Each caption is under 8 words, plain and kind. Suggest one simple shot for each. End with a line about the people who show up when it's cold."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business, e.g. a bakery or a hair salon]. Write a shot list and captions for a \"Building something AI can never replace\" Reel about the human side of my work. My real moments: [e.g. knowing regulars by name, handwritten notes on orders, the team's morning chat]. 5 shots, each caption under 8 words. Warm and honest, not salesy. Don't invent customer quotes, reviews, numbers or results, and don't knock other businesses or tools."
+    }
+  ],
+  "tips": [
+    "Real beats polished. Shaky, candid clips feel more human than a perfect setup.",
+    "Pick specific moments, like one hand-written card, rather than big ideas like \"family\".",
+    "Keep it gentle. The trend is about what people bring, not about bashing AI.",
+    "Use a soft, slow sound and keep the whole video under 20 seconds."
+  ],
+  "tags": ["text", "reels", "tiktok", "connection", "business"]
+}
