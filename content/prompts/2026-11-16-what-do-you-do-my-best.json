@@ -1,0 +1,36 @@
+{
+  "slug": "what-do-you-do-my-best",
+  "title": "\"What do you do?\" \"My best.\": the barely-coping caption",
+  "published": "2026-11-16T06:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "A \"Me when...\" caption about a moment you're only just getting through, over the interview sound where the answer is \"My best.\" AI writes the captions.",
+  "why": "A trend tracker updated November 15, 2026 lists this as a fresh format with 229 creators that week: an interview sound asks \"what do you do?\", the answer is \"my best\", and the on-screen text starting with \"Me when...\" shows a situation the creator is barely coping with.",
+  "steps": [
+    "Find the interview sound in your app by searching the line \"what do you do? my best\".",
+    "Paste the main prompt and pick the caption that feels most like your real week.",
+    "Film a short clip of yourself in that moment, or use one photo. A tired half-smile or a slow nod sells it.",
+    "Put the caption on screen for the whole clip and post. Keep the text short so it's easy to read."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Write 10 short on-screen captions for a video trend. Each caption starts with \"Me when\" and describes a small, everyday moment where I'm only just coping, so the joke is that I'm doing \"my best\". Base them on my real life: [describe your week, job, kids, pets, commute, school]. Keep each one under 15 words. Make them warm and relatable, not sad or mean. No hashtags, no emojis."
+    },
+    {
+      "label": "Variation: November in Canada",
+      "text": "Write 8 \"Me when...\" captions about getting through November in Canada, where the joke is I'm doing my best. Use small moments like scraping the car at 7 a.m., the sun setting before 5 p.m., finding a matching pair of mitts, or the first slushy sidewalk. Each one under 15 words. Light and funny."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business]. Write 8 \"Me when...\" captions about busy-season moments where I'm doing my best, like [a few real examples: the holiday rush, the printer jamming, three orders at once]. Each under 15 words. Make customers smile and feel they know us. Keep it kind to customers. Don't make up sales numbers, reviews or customer quotes."
+    }
+  ],
+  "tips": [
+    "Pick a moment people see themselves in. Small and specific beats big and dramatic.",
+    "Let your face do the work. A calm, slightly frazzled look is funnier than a big reaction.",
+    "Keep it light. This trend is about getting by with a smile, not about real distress.",
+    "Only show people who have said yes."
+  ],
+  "tags": ["text", "tiktok", "funny", "relatable", "business"]
+}

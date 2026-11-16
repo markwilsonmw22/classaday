@@ -1,0 +1,36 @@
+{
+  "slug": "dont-let-a-fanatic-see-this",
+  "title": "\"Do NOT let a ___ fanatic see this\": the gift idea warning",
+  "published": "2026-11-16T06:42:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Show one niche product or gift with a playful warning: don't let a certain kind of fan see it. AI writes the hooks and a cosy product photo prompt.",
+  "why": "A trend tracker updated November 15, 2026 lists this as a rising format, up 75% on the week before: a niche product or gift idea with on-screen text like \"Do NOT let a...\" or \"Don't show this to...\", warning a certain kind of fanatic or mom who would want it right away.",
+  "steps": [
+    "Pick one item that a specific type of person would love: a sourdough baker, a hockey parent, a houseplant collector.",
+    "Paste the main prompt to get hook lines, then pick the one that names your audience best.",
+    "Film the item close up for 5–8 seconds: a slow turn, a hand picking it up, the best detail last.",
+    "Put the hook on screen for the whole clip. Add one short line in the caption about what it is."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: hook lines",
+      "text": "Write 10 on-screen hooks for a short video showing this item: [describe the item]. Each hook starts with \"Do NOT let a\" or \"Don't show this to\" and names one specific type of person who would want it right away, like a [type of fan or hobby]. Keep each under 12 words and playful. Then suggest 3 close-up shots I can film in under 10 seconds. No hashtags, no emojis, no brand names."
+    },
+    {
+      "label": "Prompt: cosy product photo",
+      "text": "Turn this photo of my item into a cosy holiday-season product shot. Keep the item exactly as it is, same shape, colours and details. Place it on a warm wooden table with soft window light, a knitted blanket and a few pine sprigs in the background, slightly out of focus. Vertical 9:16 with empty space at the top for on-screen text. No added text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business] and sell [the product]. Write 8 \"Do NOT let a ___ see this\" hooks, each naming a different type of customer who would love it, like [a few real customer types]. Each under 12 words. Then write one honest caption line saying what it is and where to find it. Don't invent prices, discounts, reviews, sales numbers or fake urgency."
+    }
+  ],
+  "tips": [
+    "The more specific the fan, the better. \"Cross-country ski mom\" beats \"anyone who likes winter\".",
+    "Save the best detail for the last second so people watch to the end.",
+    "Show the real item. If you use AI to make the photo nicer, keep the product exactly as it is.",
+    "Keep it a friendly tease, never a put-down of the people you name."
+  ],
+  "tags": ["text", "gift-ideas", "product-photo", "holiday", "business"]
+}

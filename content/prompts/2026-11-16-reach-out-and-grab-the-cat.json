@@ -1,0 +1,36 @@
+{
+  "slug": "reach-out-and-grab-the-cat",
+  "title": "Reach out, grab the cat: a dreamy reach that ends in a cuddle",
+  "published": "2026-11-16T06:41:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "Reach slowly toward the camera like a dreamy music video, then cut to you scooping up your cat. Film it for real, or animate one photo with AI.",
+  "why": "A trend tracker updated November 15, 2026 lists \"reaching out to touch a stranger cat\" as a fresh format, new that week, with 127 creators: you reach a hand toward the camera or ceiling to a trending 1980s pop sound, then cut to quickly grabbing or petting your cat.",
+  "steps": [
+    "Find the trending sound in your app (search the trend name). The reach goes on the slow, dreamy part.",
+    "Shot 1: film yourself reaching one hand slowly toward the camera or the ceiling, eyes soft, like a music video.",
+    "Shot 2: cut to you scooping up or petting your cat. If your cat won't play along, use the prompts below to animate a photo instead.",
+    "If you used AI for any part, label the post as made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: animate the reach",
+      "text": "Animate the person in this photo. Vertical video, about 5 seconds, soft warm living-room light, slight slow motion. They look up dreamily and slowly reach one open hand toward the camera, fingers stretching, like a moment in a 1980s music video. A gentle haze and a soft glow around the edges. Keep their face, hair and clothes exactly like the photo. No text, no logos."
+    },
+    {
+      "label": "Prompt: the cat grab",
+      "text": "Animate this photo of my cat on a couch. Vertical video, about 4 seconds, handheld phone look. A pair of hands comes in from the bottom of the frame and gently scoops the cat up into a cuddle. The cat looks surprised for a second, then relaxes and blinks slowly. Keep the cat's face, fur colour and markings the same as the photo. Cosy indoor light. No text, no logos."
+    },
+    {
+      "label": "Variation: pet shop or café",
+      "text": "Animate this photo taken at our [type of business, for example: cat café / pet store / grooming salon]. Vertical video, about 6 seconds. A staff member in a plain apron reaches one hand slowly toward the camera, dreamy and slow, then the shot cuts to them gently picking up our shop cat, who settles in happily. Keep the person and the cat true to the photo. Bright, friendly light. No logos or brand names."
+    }
+  ],
+  "tips": [
+    "Make the reach slow and a little over the top. The quick cut to the cat is the punchline.",
+    "Only pick up a cat that likes being held. Gentle hands, no grabbing a cat that's sleeping or upset.",
+    "Use your own cat, or a friend's cat with their OK. Despite the name, don't film strangers' pets.",
+    "Only animate photos of yourself or people who have said yes."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}
