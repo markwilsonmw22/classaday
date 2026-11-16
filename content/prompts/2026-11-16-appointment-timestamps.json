@@ -1,0 +1,36 @@
+{
+  "slug": "appointment-timestamps",
+  "title": "Appointment timestamps: one visit, walk-in to walk-out",
+  "published": "2026-11-16T00:44:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "A timestamp vlog of just one appointment, from the moment you walk in to the moment you leave. AI turns your notes into short timed captions.",
+  "why": "An Instagram Reels trends roundup updated November 13, 2026 lists \"Appointment timestamps\" as a new format that week. It's a twist on the timestamp vlog (see our October pack \"Vlog timestamps\"): instead of a whole day, it covers one appointment, walk-in to walk-out.",
+  "steps": [
+    "Pick an everyday appointment: a haircut, nails, a car service, a tattoo touch-up, a pet groom. Ask the business first if you can film.",
+    "Film a 2–3 second clip at each moment and note the time.",
+    "Paste your notes into the main prompt to get one timed caption per clip.",
+    "Add the time and caption to each clip, use quick cuts, and end on the finished result."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Turn my notes into on-screen captions for an appointment timestamp video, from walk-in to walk-out. The appointment: [e.g. a haircut]. My notes: [paste times and what happened, e.g. 2:58 p.m. walk in, 3:05 the big decision, 3:40 first look in the mirror]. Each caption starts with my real time, then one line under 10 words. Make it honest and a bit funny, like I'm telling a friend. End with a short line for the final reveal. No hashtags, no emojis."
+    },
+    {
+      "label": "Variation: winter tire swap",
+      "text": "Write appointment timestamp captions for getting my winter tires put on in Canada. My real times and moments: [list them, e.g. 8:00 a.m. drop off, 8:20 coffee in the waiting room, 9:15 keys back]. Each line starts with the time and is under 10 words. Warm and a little funny about the yearly tire rush. Close with a short line about feeling ready for snow."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business, e.g. a salon or pet grooming shop]. Write timestamp captions for one client appointment, walk-in to walk-out, filmed with the client's permission. Real moments: [list times and steps]. Each line starts with the time and is under 10 words. Show the care and skill behind each step. Friendly, not salesy. Don't make up reviews, quotes, prices or results."
+    }
+  ],
+  "tips": [
+    "Use your real times. The fun is seeing how long each step actually took.",
+    "Always ask the business and anyone else in the shot before you film.",
+    "Save the best clip, the finished look, for the very end.",
+    "Keep it under 30 seconds. Cut any step that doesn't change much on screen."
+  ],
+  "tags": ["text", "reels", "timestamps", "day-in-the-life", "business"]
+}

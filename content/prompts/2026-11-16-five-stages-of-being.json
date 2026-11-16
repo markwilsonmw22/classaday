@@ -1,0 +1,36 @@
+{
+  "slug": "five-stages-of-being",
+  "title": "\"5 stages of being...\": from hyped to overwhelmed in five clips",
+  "published": "2026-11-16T00:44:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Five short clips that slide from excited to swamped, each with a stage caption. AI writes the five stages for whatever you're living through.",
+  "why": "An Instagram Reels trends roundup updated November 13, 2026 lists \"5 stages of being...\" as a new format that week: five clips that move from hyped to overwhelmed, posted with original audio.",
+  "steps": [
+    "Pick the thing you're going through: a new puppy, holiday hosting, a first apartment, a new job.",
+    "Paste the main prompt to get five short stage captions, from most excited to most swamped.",
+    "Film one 2–3 second clip for each stage. Your face and body language do most of the work.",
+    "Put the title on the first clip and one stage caption on each clip, then post with original audio or a sound from the app."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Write the on-screen text for a \"5 stages of being [the thing, e.g. a new puppy owner]\" video. Give me a title line, then five stages in order, starting very excited and ending a bit overwhelmed but still loving it. Each stage is a number, a short name and one line under 10 words. Make it honest and funny, based on these real moments: [list 3–5 things that actually happened]. For each stage, suggest one simple shot I can film at home in 3 seconds. No hashtags, no emojis."
+    },
+    {
+      "label": "Variation: hosting the holidays",
+      "text": "Write a \"5 stages of hosting the holidays\" video in Canada. Start with the excited planning stage and end with the tired but happy stage after everyone leaves. Each stage gets a short name and one line under 10 words. Use small, relatable moments like the grocery list, the snow on the boots at the door and the fridge full of leftovers. Suggest one easy shot for each stage. Keep it warm, not mean about guests."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business]. Write a \"5 stages of being a small business owner in [busy season, e.g. December]\" video. Go from excited to overwhelmed to proud, with a short name and one line under 10 words per stage. Base it on real moments: [list a few]. Suggest a behind-the-scenes shot for each stage. Friendly, not salesy. Don't make up sales numbers, reviews or customer quotes."
+    }
+  ],
+  "tips": [
+    "Keep each clip under 3 seconds so all five stages fit in about 15 seconds.",
+    "Let the last stage land softly. Overwhelmed but smiling reads better than a meltdown.",
+    "Real moments beat jokes you'd never live. Give the AI your actual details.",
+    "Only film people who have said yes."
+  ],
+  "tags": ["text", "reels", "funny", "relatable", "business"]
+}
