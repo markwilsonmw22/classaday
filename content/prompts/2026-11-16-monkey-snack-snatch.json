@@ -1,0 +1,36 @@
+{
+  "slug": "monkey-snack-snatch",
+  "title": "The monkey snack snatch: a cheeky monkey steals your apple mid-bite",
+  "published": "2026-11-16T18:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "One photo of you holding a snack becomes a short clip: a monkey hops in, grabs it and eats it right in front of you.",
+  "why": "A monthly AI video trends roundup updated November 15, 2026 lists \"Monkey Eating Apple\" as circulating around November 11: a wild monkey steals a snack from you in a short three-shot clip. Several AI video apps have also added it as a one-photo effect.",
+  "steps": [
+    "Pick a clear photo of you outdoors holding a snack, like an apple, a banana or an ice cream. Face the camera, with some space beside you.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions and keep the one where the grab looks smooth and your reaction reads clearly.",
+    "Add a short caption like \"I was gone for one second\" and post it with a trending sound."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a short three-shot clip. Shot 1: I'm standing outside, about to take a bite of the apple in my hand. Shot 2: a small, fluffy monkey leaps in from the side, gently grabs the apple and sits on a railing next to me. Shot 3: close-up of the monkey happily munching the apple while I stare at it in shock. Keep my face, hair and clothes exactly the same. Natural daylight, handheld phone look, playful mood. No one is hurt and no one touches the monkey."
+    },
+    {
+      "label": "Variation: your pet is the victim",
+      "text": "Animate this photo of my dog sitting outside with a treat in front of it. A small, cheeky monkey drops in from a tree branch, picks up the treat and climbs back up to eat it. My dog tilts its head, confused, then looks at the camera. Keep my dog's look exactly the same. Soft daylight, real-phone feel, funny and gentle. No chasing, biting or fighting."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of a customer-free counter at my [bakery, café or snack shop] with one [signature treat] on a plate. A small monkey reaches in from the edge of the frame, grabs the treat, sniffs it and starts eating with a delighted face. End on the empty plate and a hand placing a fresh one down. Warm shop lighting, real-phone look, light and fun. No logos, no text, no people's faces."
+    }
+  ],
+  "tips": [
+    "Leave room beside you in the photo. The monkey needs a clear spot to land.",
+    "Keep it gentle. Clips where the animal just grabs and eats look cute; anything rough looks wrong.",
+    "This is for fun only. In real life, never feed or get close to wild monkeys.",
+    "Say it's made with AI in your caption so nobody thinks it really happened."
+  ],
+  "tags": ["video", "image-to-video", "animals", "funny", "business"]
+}

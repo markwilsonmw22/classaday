@@ -1,0 +1,36 @@
+{
+  "slug": "how-i-imagine-it-sounds-in-the-bag",
+  "title": "\"How I imagine my ___ sounds in the bag\": a camera-in-the-bag ride home",
+  "published": "2026-11-16T18:39:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Claude", "Gemini", "ElevenLabs"],
+  "summary": "Film from inside a shopping bag and add one line about how your new things sound on the way home. AI helps with the caption and a fun sound.",
+  "why": "An Instagram Reels trends roundup published November 3, 2026 and updated November 10 lists the \"How I Imagine\" trend: put the camera inside a bag and add the text \"How I imagine my [product] sounds in the bag coming home with me.\" The example on the page comes from a small business.",
+  "steps": [
+    "Put your phone inside a shopping bag with your new things and film a short walk, drive or bus ride.",
+    "Use the main prompt to get caption ideas, and pick the one that makes you smile.",
+    "Add the caption on screen. Use a trending sound, or make a short silly sound with an AI sound effects tool.",
+    "Keep it under 15 seconds and end on a peek out of the bag at home."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Give me 8 short on-screen captions for a video filmed from inside my shopping bag. The pattern is: \"How I imagine my [thing] sounds in the bag coming home with me.\" What I bought: [e.g. new winter boots, a plant, three books]. Make each one funny and specific, like the items are excited, chatty or a bit dramatic. Under 15 words each. No hashtags, no emojis."
+    },
+    {
+      "label": "Variation: the sound itself",
+      "text": "Write a short sound effect description I can paste into an AI sound effects tool. It should sound like [my new things, e.g. a bag of holiday ornaments] cheering and chattering in tiny happy voices inside a paper bag, with crinkling paper and footsteps outside. About 8 seconds, cosy and silly, no words anyone could understand."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business, e.g. a candle shop or bakery]. Write 6 captions for a video filmed inside one of our shopping bags on its way home with a customer, using the pattern \"How I imagine my [product] sounds in the bag coming home with me.\" Make the products sound happy to be going home. Warm and playful, not salesy. Don't make up reviews, prices or claims."
+    }
+  ],
+  "tips": [
+    "Light matters. A paper bag with the top open gives a soft glow; a dark bag shows nothing.",
+    "Hold the phone steady with tissue paper so it doesn't slide around.",
+    "Pick one item to be the star of the caption. Lists are less funny.",
+    "Business accounts may not have every trending sound, so an AI-made sound effect is a handy backup."
+  ],
+  "tags": ["text", "reels", "instagram", "shopping", "business"]
+}
