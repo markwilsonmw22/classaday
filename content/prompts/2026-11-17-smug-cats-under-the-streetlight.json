@@ -1,0 +1,40 @@
+{
+  "slug": "smug-cats-under-the-streetlight",
+  "title": "Smug cats under the streetlight: the pet stare-down",
+  "published": "2026-11-17T06:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "One photo of your cat becomes a moody night clip where it sits by the road beside another cat, both looking far too pleased with themselves.",
+  "why": "AI Trend Club's list, updated November 16, 2026, marks \"Cat Mogging\" as a new trend from a TikTok posted November 13, 2026 that showed 2.6M views and 480K likes on November 16: a grey kitten in little glasses sits beside a white kitten by a dark road under streetlights, both holding a smug look, then a close-up of one exaggerated face. Our October pack \"Smug head shake\" was one pet; this one is a side-by-side duo at night.",
+  "steps": [
+    "Pick a clear photo of your cat (or two cats) where the face is sharp and well lit.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where your cat still looks like your cat and the close-up lands.",
+    "Add a slow, dramatic song from your app's sound library and a caption like \"Nobody does it like us.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 12-second vertical clip. Night, a quiet roadside lit by warm streetlights, with soft glow on the pavement. The cat from my photo sits upright beside a second cat, both facing the camera. My cat wears tiny round glasses. Both cats hold a calm, smug look, chins slightly raised. They slowly turn their heads toward each other, then back to the camera. Cut to a close-up of my cat's face as it narrows its eyes in a very pleased expression. Keep my cat's fur colour, markings and face exactly as in the photo. Static camera, moody cinematic lighting, funny mood. No text, no logos."
+    },
+    {
+      "label": "Variation: two of your own pets",
+      "text": "Use both pets from this photo. Night, a quiet street under orange streetlights. The two pets sit side by side on the curb, very still and very serious. One slowly lifts its chin. The other copies it a moment later. Close-up on each face in turn, both looking smug. Keep each pet's fur, markings and face exactly the same. Static camera, moody night look, funny. No text, no logos."
+    },
+    {
+      "label": "Variation: snowy night",
+      "text": "A snowy sidewalk at night, with light snow falling through the glow of a streetlight. My cat sits on a snowbank in a tiny knitted scarf, beside a second cat. Both stare at the camera with a smug, unbothered look while snowflakes land on their fur. Slow push-in to my cat's face as it blinks slowly. Keep my cat's fur and face exactly the same. Cinematic and cosy. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Night, a quiet street outside a small shop with a warm light in the window. My shop cat sits on the step beside a [my product], both lit by the streetlight. The cat looks at the product, then back at the camera with a smug, approving look. Close-up on the cat's face. Keep the cat's fur and face, and the product, exactly the same. Static camera, moody night look, playful. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Keep the joke on the cats. Don't use it to compare or rate how people look.",
+    "A sharp, front-facing photo keeps your cat's markings from drifting.",
+    "Night scenes can get grainy. If it looks muddy, ask for warmer, brighter streetlights.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "dance-with-santa-by-the-tree",
+  "title": "Dance with Santa: a quick routine by the tree",
+  "published": "2026-11-17T06:41:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "Turn one photo of you into a 10-second clip where you dance side by side with Santa in a decorated living room.",
+  "why": "AI Trend Club's list, updated November 16, 2026, marks \"Dance With Santa\" as a new trend from a TikTok posted November 14, 2026 that showed 193K views and 4K likes on November 15: a dancer moves beside Santa in front of a decorated tree while he throws his arms up. Our earlier holiday dance packs were a pyjama duo and a snowy-square couple; this one puts Santa in as your dance partner.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself. Only use your own photo, or one from someone who agreed.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where your face stays steady and the steps match the beat.",
+    "Add a festive song from your app's sound library and a caption like \"Practising for the holiday party.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 10-second vertical clip. A cosy living room with a tall decorated tree, warm string lights and wrapped gifts. I dance beside a jolly Santa in a classic red suit with a white beard. We do simple, upbeat steps side by side: a step-touch, a shoulder bounce and a spin. Halfway through, Santa throws both arms up in the air while I keep dancing. We finish with a matching pose, pointing at the camera. Keep my face, hair and clothes exactly as in the photo. Steady camera, wide enough to see us both head to toe. Warm, fun holiday mood. No text, no logos."
+    },
+    {
+      "label": "Variation: Santa can't keep up",
+      "text": "Same cosy room with a decorated tree. I dance an energetic routine with quick footwork. Santa, in a red suit and white beard, tries to copy me, gets one step behind, then gives up, laughs and sits down on a gift box to clap along. I finish with a little bow. Keep my face and clothes exactly the same. Wide, steady shot. Light and funny. No text, no logos."
+    },
+    {
+      "label": "Variation: family dance-off",
+      "text": "A living room with a decorated tree and soft lights. The family from this photo lines up beside Santa in a red suit. Santa starts a simple move, then each person copies it in turn, getting sillier each time. Everyone ends in a group pose around the tree. Keep each person's face and clothes exactly the same. Wide, steady shot. Warm and cheerful. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "My shop decorated for the holidays, with a small tree and string lights by the counter. I stand beside Santa in a red suit. We do a short, upbeat dance together, then Santa reaches behind the counter and holds up a wrapped gift. I point at the camera with a big smile. Keep my face and clothes exactly the same. Wide, steady shot. Festive and friendly. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Use a photo where your whole body shows. The tool needs your legs and feet to make the steps look right.",
+    "Keep the moves simple. Big spins and jumps tend to blur faces.",
+    "Only put family or friends in the clip if they said yes.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["holiday", "christmas", "dance", "image-to-video", "business"]
+}

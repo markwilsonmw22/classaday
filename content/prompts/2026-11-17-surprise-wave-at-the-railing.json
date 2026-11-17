@@ -1,0 +1,40 @@
+{
+  "slug": "surprise-wave-at-the-railing",
+  "title": "Surprise wave: a big splash soaks the seaside walkway",
+  "published": "2026-11-17T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "One photo of you by a seaside railing becomes a short clip where a giant wave rolls over the wall, foams around you, then drains away.",
+  "why": "AI Trend Club's list, updated November 16, 2026, marks \"Tidal Wave\" as a new trend from an Instagram reel posted November 13, 2026 that showed about 1.9M likes on November 15: a small group stands by a seaside railing, a huge wave climbs the seawall and floods the walkway, then the water drains off the tiles.",
+  "steps": [
+    "Pick a clear photo of you, or of friends who agreed, standing by a railing or wall near water. A plain day shot works best.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where the wave looks big but everyone stays put and nobody gets hurt.",
+    "Add your own sound, like a gasp or a dramatic drumroll, and a caption such as \"The forecast said light breeze.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 12-second vertical clip. The camera holds still, facing the water from a stone walkway with a metal railing. The people in the photo stand at the railing, relaxed. Behind them, a huge wave rises over the seawall, curls, and crashes onto the walkway. White foam spreads across the ground and swirls around their feet. Everyone stays standing and freezes in surprise. Then the water drains away across the tiles and the calm sea comes back into view. Keep every face, outfit and pose exactly as in the photo. Bright daylight, real-phone look, playful mood. No text, no logos."
+    },
+    {
+      "label": "Variation: one-person shrug",
+      "text": "Same seaside walkway and railing. I stand alone, sipping a hot drink and looking at the camera. A giant wave rises behind me and crashes over the wall. Foam rushes past my ankles. I don't flinch. When the water drains away, I take another calm sip and shrug. Keep my face and clothes exactly the same. Fixed camera, real-phone look, deadpan and funny. No text, no logos."
+    },
+    {
+      "label": "Variation: winter lakeshore",
+      "text": "A cold, grey lakeshore in late fall, with a stone breakwall and a railing. I stand at the railing in a warm coat and toque. A tall, icy wave climbs the breakwall and splashes over the path in a big burst of spray and foam. I freeze, eyes wide, then laugh as the water runs off. Keep my face and clothes exactly the same. Fixed camera, natural light. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "A seaside walkway with a railing. I stand there holding a [my product] and smiling at the camera. A huge wave rolls over the wall and crashes around me in white foam. When the water drains away, I'm still standing, a bit surprised, and the [product] is still in my hands, perfectly fine. I hold it up to the camera. Keep my face, clothes and the product exactly the same. Fixed camera, bright daylight, playful. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Keep it clearly playful. Don't caption it as a real storm or post it as news.",
+    "A photo taken with the water behind you gives the tool room to build the wave.",
+    "Only use photos of yourself, or of friends who said yes.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "funny", "travel", "business"]
+}
