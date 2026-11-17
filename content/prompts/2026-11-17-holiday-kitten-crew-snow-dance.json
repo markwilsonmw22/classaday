@@ -1,0 +1,40 @@
+{
+  "slug": "holiday-kitten-crew-snow-dance",
+  "title": "Kitten crew in the snow: a holiday group dance with one cat in charge",
+  "published": "2026-11-17T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "Turn your cat's photo into the leader of a little snow-day kitten crew that tumbles, bunches up and dances under holiday lights.",
+  "why": "AI Trend Club's list, updated November 17, 2026, marks two snowy cat clips from the same TikTok account as new: \"Cat Dip Dance\", posted November 15 with 889K views on November 17, where three cats led by one in a red knit hat dance in the snow at night, and \"Christmas Cat Snow Play\", posted November 14 with 682K views, where a kitten tumbles in the snow under holiday lights. Our other pet packs star one pet; this one is a little crew with your pet as the lead.",
+  "steps": [
+    "Pick a clear, well-lit photo of your cat (or dog) looking at the camera.",
+    "Make the still first with the image prompt, then check that your pet still looks like your pet.",
+    "Bring that still into a video tool with the motion prompt. Keep it short: 7 to 12 seconds.",
+    "Add a cheerful holiday sound in the app and post it vertical."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the snowy still",
+      "text": "Using my photo as the reference, show my cat standing in fresh snow at night as the leader of a small crew of three fluffy kittens. My cat wears a little red knit hat with a white pompom. Strings of warm holiday lights hang overhead and soft snowflakes fall. Low camera angle at cat height, gentle blue night tones with warm golden light on the fur. Keep my cat's real colours, markings and eye colour exactly the same. Cute and cosy, photo-real, vertical 9:16."
+    },
+    {
+      "label": "Video prompt: the crew dance",
+      "text": "Animate this image as a 10-second vertical clip. The cat in the red hat hops forward toward the camera, and the three kittens scurry in behind it. They bunch together, bob side to side in time, and one kitten does a small spin. Quick, playful cuts. One kitten tumbles into the snow and pops back up. End on a close-up of the lead cat in the red hat looking straight at the camera as snow falls. Keep all the cats' faces and markings steady from start to finish."
+    },
+    {
+      "label": "Variation: the tumble and the lost hat",
+      "text": "Animate this image as a 7-second vertical clip. My kitten runs toward the camera across soft snow under holiday lights, trips and rolls in a puff of snow. Its little red knit hat falls off beside it. The kitten sniffs the hat, paws at it, then sits proudly next to it. End with a wide view of the snowy lane and the twinkling lights. Gentle, funny and sweet."
+    },
+    {
+      "label": "Variation: the shop's holiday crew",
+      "text": "Using my photo as the reference, show our shop cat leading a small crew of kittens in the snow outside a cosy storefront at night. Warm light glows through the window, and a wreath hangs on the door. Each kitten wears a tiny knit scarf in [our brand colour]. The cats hop, bunch together and bob side to side, then the lead cat sits by the door and looks at the camera. No signs, words or logos in the scene. Vertical 9:16, about 10 seconds."
+    }
+  ],
+  "tips": [
+    "Front-facing pet photos with good light give the steadiest faces. Avoid blurry or dark shots.",
+    "If your pet's markings change between shots, make the clip shorter or try again with fewer moves.",
+    "Add your own text or logo in the editing app afterwards. AI tools often scramble letters.",
+    "Mention in your caption that the clip is AI-made. It keeps things honest and people still love it."
+  ],
+  "tags": ["pets", "cats", "holiday", "snow", "dance"]
+}

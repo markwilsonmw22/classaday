@@ -1,0 +1,40 @@
+{
+  "slug": "cant-buy-it-so-heres-a-hug",
+  "title": "\"Can't buy it, so here's a hug\": the gift counter joke",
+  "published": "2026-11-17T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "A playful couple clip: one of you gazes at a pricey gift at a store counter, and the other sweeps in with a big hug instead of a purchase.",
+  "why": "AI Trend Club's list, updated November 17, 2026, marks \"Broke Boyfriend Hug\" as a new trend from a TikTok posted November 15, 2026 that showed 692K views and 162K likes on November 16: one person looks longingly at the shelves of a fragrance counter, and the other leans in and hugs them from behind instead. It lands right as holiday gift shopping starts.",
+  "steps": [
+    "Use two clear photos: one of you and one of your partner or friend, who has said yes to being in it.",
+    "Make the still of the store counter first, then animate it with the video prompt.",
+    "Add on-screen text like \"Me: I love that one. Them:\" in your editing app.",
+    "Keep it light and loving. The joke is the hug, not anyone's budget."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the gift counter still",
+      "text": "Using my two reference photos, show the first person standing at a bright, glossy department store counter, looking up at a shelf of elegant glass bottles with a hopeful, wistful smile. The second person stands just behind them, smiling. Warm holiday lights and a few wrapped gifts in the background. Plain unbranded bottles with no labels, words or logos. Keep both faces, hair and clothes exactly like the photos. Natural, candid look, as if filmed on a phone. Vertical 9:16."
+    },
+    {
+      "label": "Video prompt: the hug instead",
+      "text": "Animate this image as an 8-second vertical clip. The first person points at a bottle on the shelf and turns their head with a hopeful look. The second person glances at the shelf, then at the camera with a sheepish grin, steps in and wraps them in a warm hug from behind. The first person laughs and rolls their eyes, then leans back into the hug. Hold the embrace for the last two seconds. Handheld phone feel, soft store lighting."
+    },
+    {
+      "label": "Variation: friends at the bakery case",
+      "text": "Using my two reference photos, show two friends at a bakery counter full of fancy holiday cakes. The first friend presses close to the glass, staring at the biggest cake. The second friend looks at the price, then gives a cheeky smile and hugs them from the side instead. Both laugh. Cosy café lighting, no signs, words or logos. Vertical 9:16, about 8 seconds."
+    },
+    {
+      "label": "Variation: for a small shop",
+      "text": "Using my reference photo of my shop, show two shoppers at our counter looking at [our product] on display. One points at it hopefully, the other gives a playful hug instead, then both turn and laugh as a staff member holds up a small gift card with a smile. Warm holiday lights. Keep the shop looking like the photo. No words or logos in the scene. Vertical 9:16, about 10 seconds."
+    }
+  ],
+  "tips": [
+    "Only use photos of people who've agreed to be in the video.",
+    "Ask for unbranded bottles and boxes. Real logos can sneak in, so check every frame.",
+    "Keep the caption kind. \"Gifts come in many sizes\" plays better than jokes about money.",
+    "Shops can post it with a real gift card or wish-list idea. Don't invent prices or sales."
+  ],
+  "tags": ["couples", "holiday", "gifts", "comedy", "business"]
+}
