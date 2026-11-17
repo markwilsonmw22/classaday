@@ -1,0 +1,40 @@
+{
+  "slug": "finger-circle-travel-portal",
+  "title": "The finger-circle portal: one hand gesture at the airport, and you land somewhere new",
+  "published": "2026-11-17T00:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "One airport photo becomes a 9-second transition: you circle your fingers at the lens, it fills the frame, and you're on a night street in your destination.",
+  "why": "An AI trend tracker updated November 16, 2026 lists an \"Airport Transition\" Reel posted November 14 with about 183K likes: a traveller makes a finger circle at the camera in an airport, it fills the frame, and the clip cuts to her on a night street.",
+  "steps": [
+    "Pick a clear photo of yourself at an airport gate or in a terminal, facing the camera, with one hand free.",
+    "Upload it to an image-to-video tool and paste the main prompt. Swap in the place you're travelling to.",
+    "Make a few versions. Keep the one where the circle fills the frame cleanly and your face stays the same after the cut.",
+    "Add a trending sound and a short caption like \"See you on the other side\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 9-second vertical clip. Shot 1 (0–2 s): I'm standing in a bright airport waiting area. I raise one hand toward the camera and make a small circle with my thumb and finger, like I'm looking through it. Shot 2 (2–4 s): the camera pushes into the circle until it fills the whole frame. Shot 3 (4–9 s): inside the circle is a new place: me standing on a busy city street at night, with warm shop lights, wet pavement and soft reflections. I turn slowly to look down the street while the camera holds still. Keep my face, hair and clothes exactly the same in both places. Real-phone look, smooth and cinematic. No text, no logos, no airline names."
+    },
+    {
+      "label": "Variation: pick your destination",
+      "text": "Same finger-circle transition as before. Start with me at the airport gate making a circle with my hand. Push through the circle and land on [a snowy mountain village at dusk / a beach at sunset / an old stone street with string lights]. I'm already there in the same outfit, smiling and looking around. Keep my face and clothes exactly the same. Calm, dreamy travel feel. No text, no logos."
+    },
+    {
+      "label": "Variation: home for the holidays",
+      "text": "Animate this photo of me at the airport holding my carry-on. I make a circle with my thumb and finger toward the camera. The camera moves through the circle and lands on a cosy front porch at night, covered in fresh snow, with warm lights in the windows and a wreath on the door. I'm standing on the porch now, same outfit, and I wave at the camera. Keep my face exactly the same. Soft, warm and festive. No text, no brand names."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo of me standing outside my [shop, café or studio] in daylight. I raise my hand and make a small circle with my thumb and finger toward the camera. The camera pushes through the circle into the inside of the space at night, glowing and ready for customers: [describe your counter, shelves or chairs]. I'm now standing inside, same outfit, and I give a small welcome gesture. Keep my face exactly the same. Warm, inviting light, real-phone look. No logos, no signs, no other people's faces."
+    }
+  ],
+  "tips": [
+    "Use a photo of just you. Group photos make the cut messy.",
+    "Leave space around your hand in the photo so the circle has room to grow.",
+    "Night scenes with lights and reflections make the switch feel the most dramatic.",
+    "Say it's made with AI in your caption, especially if you didn't actually take the trip."
+  ],
+  "tags": ["video", "image-to-video", "travel", "transition", "business"]
+}

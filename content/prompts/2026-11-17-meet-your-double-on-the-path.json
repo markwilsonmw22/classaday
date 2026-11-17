@@ -1,0 +1,40 @@
+{
+  "slug": "meet-your-double-on-the-path",
+  "title": "Meet your double: two of you walk toward each other on a mountain path",
+  "published": "2026-11-17T00:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "One photo of you becomes a short clip where two copies of you walk up a gravel path from opposite ends and stop face to face.",
+  "why": "An AI trend tracker updated November 16, 2026 lists \"Twin Crossover\", from a TikTok posted November 12 with about 1M views: two copies of the same person walk toward each other on a path with mountains behind and meet face to face.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself standing outside. Only use your own photo, or one from someone who agreed.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where both copies look like you and the meeting moment lands cleanly.",
+    "Add a caption that gives the two of you roles, like \"Me vs. me before coffee\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 5-second vertical clip. Wide shot of a gravel path through green grass, with mountains in the background and soft daylight. One copy of me walks toward the centre from the left. A second, identical copy of me walks toward the centre from the right. We meet in the middle, stop face to face and look at each other for a moment. Both copies have exactly my face, hair and clothes. The camera holds still. Calm, slightly mysterious mood, real-phone look. No text, no logos."
+    },
+    {
+      "label": "Variation: two moods",
+      "text": "Same scene: a gravel path with mountains behind. Two copies of me walk toward each other from opposite sides. The one on the left is dressed for a cosy day in, with a big sweater and a mug. The one on the right is dressed for a big night out. Both have exactly my face and hair. We stop face to face, look each other up and down, then both shrug at the camera. Light and funny. No text, no logos."
+    },
+    {
+      "label": "Variation: winter path",
+      "text": "A snowy forest path at dusk, with soft snow falling and evergreen trees on both sides. Two identical copies of me, in the same winter coat and toque, walk toward each other from opposite ends and stop face to face. Our breath shows in the cold air. Keep my face and clothes exactly the same on both. Quiet, cinematic mood. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "A clean wide shot of a quiet path outside, with mountains behind. Two copies of me walk toward each other from opposite sides. One wears a plain apron and holds a [tool of my trade]. The other is dressed for a day off. We meet in the middle, nod to each other, and the one with the apron hands over the [tool]. Keep my face and clothes exactly the same. Friendly and simple. No logos, no text."
+    }
+  ],
+  "tips": [
+    "A full-body photo works best. The tool needs to see how you walk and what you're wearing.",
+    "Keep the background simple. Busy scenes make the two copies drift apart in how they look.",
+    "Only make doubles of yourself, or of a friend who said yes. Never use someone else's photo without asking.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "doppelganger", "cinematic", "business"]
+}
