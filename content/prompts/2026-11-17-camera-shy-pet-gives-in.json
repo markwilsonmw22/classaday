@@ -1,0 +1,40 @@
+{
+  "slug": "camera-shy-pet-gives-in",
+  "title": "Camera-shy pet: a grumpy \"hmph\", then it gives in and dances",
+  "published": "2026-11-17T12:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "One photo of your pet becomes a short clip where it turns away from the camera in a huff, peeks back, then can't help itself and starts to dance.",
+  "why": "SocialPilot's TikTok trend report, published November 17, 2026, lists a \"camera shy\" pet trend: the pet acts shy or grumpy (a little \"hmph\"), then gives in and dances. Our other pet packs are about one big action; this one is about the moody turn-around.",
+  "steps": [
+    "Pick a clear, well-lit photo of your pet facing the camera, with the whole body in view.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where the huff and the turn-around read clearly and your pet still looks like your pet.",
+    "Add a cute, bouncy track from your app's sound library and a caption like \"Not in the mood… okay, maybe a little.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 10-second vertical clip. My pet sits in a cosy living room, facing the camera. First, it lifts its chin, closes its eyes and turns its head away in a dramatic little huff, as if to say \"no pictures\". It peeks back at the camera out of the corner of its eye. Then it gives in: it stands up and does a small, happy dance, bouncing side to side and wiggling its tail. Keep my pet's fur colour, markings, size and face exactly as in the photo. Static camera at pet height, soft warm lighting, playful and funny mood. No text, no logos."
+    },
+    {
+      "label": "Variation: cat on the windowsill",
+      "text": "Animate this photo as a 10-second vertical clip. My cat sits on a sunny windowsill. It looks at the camera, flattens its ears a little and turns its whole body away with its tail flicking, clearly annoyed. A beat later it glances back over its shoulder, then hops down and does a slow, proud strut and a little wiggle on the rug. Keep my cat's fur, markings and face exactly the same. Static camera, bright natural light, funny mood. No text, no logos."
+    },
+    {
+      "label": "Variation: winter sweater",
+      "text": "Animate this photo as a 10-second vertical clip. My dog stands on a snowy porch in a knitted winter sweater. It looks at the camera, sighs, and turns its nose up and away as if embarrassed by the sweater. Snow falls softly. Then it shakes off the snow, spins in a happy circle and bounces in place. Keep my dog's fur, markings and face exactly the same. Static camera, soft daylight, cosy and funny. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Animate this photo as a 10-second vertical clip. My shop pet sits beside a [my product] on the counter of my small shop. It turns its head away from the product in a little huff, as if it doesn't care. Then it peeks at the product, leans in to sniff it, and does a small happy bounce right next to it. Keep the pet's fur and face, and the product, exactly the same. Static camera, warm shop lighting, playful. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Use a photo of a calm, happy pet. Never try to make your real pet act grumpy or upset for the camera.",
+    "A front-facing photo with the whole body in frame gives the dance room to move.",
+    "If the head turn looks stiff, ask for \"a slow, exaggerated head turn\" and a shorter dance.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}

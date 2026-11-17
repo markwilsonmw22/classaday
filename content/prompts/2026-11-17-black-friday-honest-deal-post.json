@@ -1,0 +1,40 @@
+{
+  "slug": "black-friday-honest-deal-post",
+  "title": "Black Friday deal post: clear, honest and ready to share",
+  "published": "2026-11-17T12:38:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Make a clean Black Friday post, a matching story and a window sign for your shop that show the real deal, the real dates and nothing fake.",
+  "why": "Black Friday is Friday, November 27, 2026, the day after US Thanksgiving, and Canadian shops run sales the same week. SocialPilot's November 17, 2026 trend report also lists TikTok Shop's Black Friday event as a current moment for sellers.",
+  "steps": [
+    "Write down your real offer: what's on sale, the discount, and the start and end dates.",
+    "Paste the main prompt into an image tool and fill in the brackets with your own details.",
+    "Make the story and window-sign versions so everything matches.",
+    "Check every word and number before you post. Then share it a few days ahead, not just on the day."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the square post",
+      "text": "Design a square social post for my small [type of shop] announcing a Black Friday sale. Clean, modern layout on a deep charcoal background with one warm accent colour, [my brand colour]. Big bold headline: \"Black Friday at [shop name]\". Below it, one clear line: \"[discount, e.g. 20% off] [what's included]\". Then: \"[start date] to [end date] · In store and online\". Show a simple, realistic photo-style arrangement of [my products] on a plain surface, with soft studio light. Leave a clean space in one corner for my own logo. Easy-to-read text, lots of space, no countdown clocks, no crossed-out prices and no extra claims."
+    },
+    {
+      "label": "Variation: the matching story",
+      "text": "Turn the same design into a tall 9:16 story. Keep the same charcoal background, accent colour and product photo. Put the headline \"Black Friday at [shop name]\" at the top, the offer in the middle, and the dates near the bottom. Leave the bottom fifth empty so the app's buttons don't cover anything. Clear, simple text. No logos except a blank space for mine."
+    },
+    {
+      "label": "Variation: the shop window sign",
+      "text": "Design a printable letter-size sign for my shop window or counter. White background with a thick border in [my brand colour]. Big friendly headline: \"Black Friday deals inside\". Below it, short and clear: \"[discount] on [what's included] · [start date] to [end date]\". Add one small line at the bottom: \"Ask us for details.\" Simple bold lettering that's easy to read from across the street. No logos."
+    },
+    {
+      "label": "Variation: shop small, gift-guide style",
+      "text": "Design a square carousel cover for my small shop's Black Friday gift picks. Warm, cosy flat-lay of [three of my products] on a wooden table with a little wrapping paper, twine and a few pine sprigs, soft daylight from the side. Text at the top: \"Black Friday gift picks from [shop name]\". Small line at the bottom: \"Swipe for prices\". Keep the products looking exactly like real ones, with no made-up labels or brand names."
+    }
+  ],
+  "tips": [
+    "Only show prices and discounts you're really offering. No made-up \"was\" prices and no fake countdowns.",
+    "Upload a real photo of your products as a reference so the picture matches what customers will get.",
+    "Image tools still misspell words and numbers. Read every line twice before you post or print.",
+    "Put the end date on everything, so nobody shows up after the sale is over."
+  ],
+  "tags": ["black-friday", "holiday", "shopping", "social-post", "business"]
+}
