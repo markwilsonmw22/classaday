@@ -1,0 +1,40 @@
+{
+  "slug": "flash-silhouette-glowing-heart",
+  "title": "Flash silhouette: two profiles in gold light, then a glowing heart",
+  "published": "2026-11-18T12:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Higgsfield", "Veo"],
+  "summary": "Turn a side-by-side photo of you and your partner, friend or pet into a moody black clip with gold rim light, a camera flash and a glowing heart.",
+  "why": "Remake the Trend's AI video list, updated November 17, 2026, added \"Flash Couple Silhouette\" on November 16: two profiles face each other on a black background with gold rim light, a flash goes off, and a glowing white heart floats up between them.",
+  "steps": [
+    "Use a photo where you and the other person (or your pet) face each other side-on. A plain background works best. Only use someone who has agreed.",
+    "Paste the main prompt into an image-to-video tool with your photo. Ask for 5 to 8 seconds.",
+    "Make a few versions. Keep the one where both faces still look like you and the heart rises slowly and cleanly.",
+    "Add a soft, slow track from your app's sound library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the couple silhouette",
+      "text": "Animate this photo as an 8-second vertical clip. The two people face each other in profile against a pure black background. Their faces and hair are lit only by a thin, warm gold rim light along the edges, so they look almost like silhouettes. They lean in slightly and smile. Then a bright camera flash fills the frame for a split second. As the flash fades, a soft glowing white heart appears between them and floats slowly upward. Slow, calm, romantic mood. Keep both faces true to the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: best friends",
+      "text": "Animate this photo as an 8-second vertical clip. Two friends face each other in profile on a black background, edged with warm gold rim light. They hold a serious, dramatic face, then both break into a laugh at the same moment. A quick camera flash goes off, and a small glowing white heart pops up between them and drifts away. Moody lighting, playful ending. Keep both faces true to the photo. No text."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Animate this photo as an 8-second vertical clip. Me and my pet face each other in profile against a black background, both outlined in a soft gold rim light. My pet tilts its head, then gives my nose a little nudge. A camera flash pops, and a glowing white heart floats up between us. Gentle, sweet mood. Keep my face and my pet's markings exactly as in the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the perfect pair",
+      "text": "Animate this photo as an 8-second vertical clip. Two of my products stand side by side on a black background, each outlined in a thin gold rim light. The camera slowly pushes in. A bright camera flash fills the frame, and as it fades a glowing white heart rises between the two products. Elegant and calm, like a gift ad. Keep both products, their shapes and labels exactly as in the photo. No new logos, no extra text."
+    }
+  ],
+  "tips": [
+    "Side-on photos work best. If you only have a front photo, ask the tool to \"turn both heads to face each other in profile\" and check the faces closely.",
+    "If the whole picture goes bright, ask for \"a thin gold rim light only, the rest stays black\".",
+    "The business version suits gift sets and \"perfect pair\" bundles for the holidays.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "couples", "cinematic", "business"]
+}

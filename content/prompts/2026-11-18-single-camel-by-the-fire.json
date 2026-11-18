@@ -1,0 +1,40 @@
+{
+  "slug": "single-camel-by-the-fire",
+  "title": "The single camel: a lonely walk past cosy couples by the fire",
+  "published": "2026-11-18T12:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "ChatGPT", "Gemini"],
+  "summary": "Turn your photo into a lonely camel in a worn coat who shuffles past happy camel couples by a campfire. A funny take on being single in cosy season.",
+  "why": "ViralRemix's TikTok trend chart for November 13, 2026 lists \"Single Camel AI\" at about 624 new videos a day and marks it as at its peak: a lonely camel in a torn coat walks past couples sitting by a fire, with the poster's own face on the single camel.",
+  "steps": [
+    "Pick a clear, front-facing photo of yourself (or your pet) with a good expression. A slightly sad or deadpan face works best.",
+    "Make the camel character first with the still-image prompt, so you can check it still looks like you.",
+    "Paste the main prompt into an image-to-video tool with that picture. Make a few versions and keep the one with the slowest, saddest walk.",
+    "Add a quiet, lonely sound from your app's library and a short caption, like \"me this winter\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the lonely walk",
+      "text": "Animate this picture as a 10-second vertical clip. A lonely cartoon camel with my face, hair and expression walks slowly along a sandy path at night, wearing a worn, patched coat. Beside the path, pairs of camels sit close together by small campfires, sharing blankets and warm drinks. The single camel glances at each happy couple, sighs, and keeps walking. The camera tracks beside it at walking pace. Warm firelight, deep blue starry sky, gentle and funny mood. Keep my face clearly recognizable. No text, no logos."
+    },
+    {
+      "label": "Still image first: make your camel",
+      "text": "Using this photo of me, make a friendly 3D cartoon camel character that has my face shape, eyes, hair and expression. The camel wears a worn brown coat with a few patches and a long knitted scarf. Full body, standing on sand at night, lit by warm firelight from the side. Soft, polished animated film look. Plain background so I can animate it next. No text."
+    },
+    {
+      "label": "Variation: your pet as the single camel",
+      "text": "Animate this photo of my pet as a 10-second vertical clip. My pet is now a small cartoon camel with my pet's face, colouring and markings, wearing a tiny patched coat. It walks slowly past camel couples snuggled by campfires under the stars, looks at them, gives a big dramatic sigh, then curls up alone by the last fire. Warm firelight, funny and sweet. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the last one on the shelf",
+      "text": "Animate this photo of my product as a 10-second vertical clip. The product gets a cute cartoon face and little legs. It walks slowly along a cosy shop shelf at night, past pairs of other items snuggled together under fairy lights. It looks lonely, sighs, then stops at the front edge of the shelf and looks hopefully at the camera. Warm, soft lighting. Keep the product's shape, colours and label exactly as in the photo. No new logos, no extra text."
+    }
+  ],
+  "tips": [
+    "Ask for a \"slow, heavy walk\" and a \"big sigh\". The joke works best when it's dramatic.",
+    "If your face gets lost on the camel, make the still image first and animate that.",
+    "For the business version, only use it for a product you really have left. Don't fake low stock.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "funny", "relatable", "business"]
+}
