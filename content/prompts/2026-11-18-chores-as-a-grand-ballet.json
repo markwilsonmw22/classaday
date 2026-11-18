@@ -1,0 +1,40 @@
+{
+  "slug": "chores-as-a-grand-ballet",
+  "title": "Chores as a grand ballet: you glide through the housework to a classical waltz",
+  "published": "2026-11-18T00:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "One photo of you mid-chore becomes a short clip where vacuuming, folding or dog grooming turns into an elegant ballet on a grand stage.",
+  "why": "SocialPilot's Instagram Reels audio list for November 17 to 25, 2026 shows a classical waltz rising, used to film an ordinary task as if it were a grand ballet, such as cleaning or grooming. Our earlier waltz pack was an outfit try-on; this one is about the everyday job itself.",
+  "steps": [
+    "Take a clear, full-body photo of yourself doing a chore: holding the vacuum, a laundry basket, a mop or a dog brush.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where the movement looks graceful and you still look like you.",
+    "Add a classical waltz from your app's sound library and a caption like \"Sunday reset, but make it the ballet.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the vacuum ballet",
+      "text": "Animate this photo as a 10-second vertical clip. I'm in my living room holding a vacuum. As the clip starts, the room slowly turns into a grand old theatre stage with a warm spotlight and a deep red curtain behind me. I rise up on my toes and glide across the floor with the vacuum as my dance partner, doing a slow spin, a graceful arm sweep and a deep, proud bow at the end. Keep my face, hair, body and clothes exactly as in the photo. Smooth, slow camera that follows me, soft golden stage light, elegant and funny mood. No text, no logos."
+    },
+    {
+      "label": "Variation: laundry pas de deux",
+      "text": "Animate this photo as a 10-second vertical clip. I'm holding a laundry basket in my bedroom. Towels and shirts float up out of the basket and drift around me like dancers, and I fold each one in mid-air with a graceful turn. Soft blue stage light fades in, with a little sparkle in the air. I finish by placing a neat stack of folded laundry down and curtsying. Keep my face, body and clothes exactly the same. Slow, steady camera, dreamy and playful. No text, no logos."
+    },
+    {
+      "label": "Variation: dog grooming duet",
+      "text": "Animate this photo as a 10-second vertical clip. I'm brushing my dog on the back porch. The porch lights dim and a soft spotlight falls on us. I brush in long, sweeping arcs like a ballet move while my dog turns slowly in a calm little circle, as if it's dancing too. At the end my dog sits tall with a fluffy, freshly brushed coat and I take a small bow beside it. Keep me and my dog exactly as in the photo, same fur and markings. Gentle, happy mood. No text, no logos."
+    },
+    {
+      "label": "Variation: small business closing time",
+      "text": "Animate this photo as a 10-second vertical clip. I'm in my [type of shop] at closing time, holding a broom. The lights dim to a warm spotlight and I sweep the floor in slow, elegant ballet steps, spinning past the counter and wiping it down with a graceful arm sweep. Chairs gently tuck themselves in as I pass. I finish by flipping the door sign and taking a bow. Keep my face, clothes and the shop exactly as in the photo. Warm, cosy light, funny and charming. No logos, no text."
+    }
+  ],
+  "tips": [
+    "A full-body photo with some empty floor around you gives the dance room to move.",
+    "If the moves look stiff, ask for \"slow, flowing movements\" and fewer of them.",
+    "Keep it short. One spin and one bow land better than a long routine.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "funny", "home", "business"]
+}

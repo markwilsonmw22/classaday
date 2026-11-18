@@ -1,0 +1,40 @@
+{
+  "slug": "christmas-market-shop-corner",
+  "title": "Christmas market corner: slow, cosy shots of your festive displays",
+  "published": "2026-11-18T00:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "ChatGPT", "Gemini"],
+  "summary": "Turn a photo of your shop shelf, market stall or decorated corner into a slow, glowing holiday clip that ends with a simple \"comment SHOP\" invite.",
+  "why": "SocialPilot's Instagram Reels audio list for November 17 to 25, 2026 shows a rising track called \"Christmas Market\" used for slow shots of holiday shop corners and displays, many ending with \"comment SHOP\". InMagic's list updated November 16, 2026 also puts slow festive makeovers of rooms and shops in its top 10. Our November 1 pack was a fast switch; this one is slow and lingering.",
+  "steps": [
+    "Take a steady, well-lit photo of one corner: a shelf, a stall table, a window display or a cosy nook at home.",
+    "Paste the main prompt into an image-to-video tool with your photo. Use the still-image prompt first if you want to plan the decor.",
+    "Make a few versions. Keep the one where your products still look exactly like the real ones.",
+    "Add a gentle holiday track from your app's sound library. Only say \"comment SHOP\" if you'll really reply with a link."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the slow shop corner",
+      "text": "Animate this photo as a 10-second vertical clip. It's a corner of my small shop, decorated for the holidays. The camera moves very slowly forward and a little to the side, like someone browsing. Warm fairy lights twinkle softly, a few snowflakes drift past the window behind the display, and steam rises from a mug on the counter. Keep every product, label and shelf exactly as in the photo. Soft, warm evening light, cosy Christmas market feel. No new logos, no extra text."
+    },
+    {
+      "label": "Variation: market stall at dusk",
+      "text": "Animate this photo as a 10-second vertical clip. It's my outdoor holiday market stall at dusk. Strings of warm lights glow above the table, light snow falls, and people's blurred shapes pass slowly in the background. The camera drifts gently along the table from one end to the other, pausing on [my best product]. Keep my products and table exactly as in the photo. Cold blue sky, warm golden lights, calm and inviting. No logos, no text."
+    },
+    {
+      "label": "Variation: plan the decor first (still image)",
+      "text": "Here is a photo of a corner of my [shop or home]. Show me the same corner decorated for a cosy Christmas market look: warm fairy lights along the shelf edges, a small pine garland, a few red and gold ornaments, a wooden crate with [my products] and a little chalkboard sign that says \"Holiday picks\". Keep the walls, furniture and my products exactly as they are. Soft evening light, realistic photo. No logos."
+    },
+    {
+      "label": "Variation: the cosy corner at home",
+      "text": "Animate this photo as a 10-second vertical clip. It's a cosy corner of my home decorated for the holidays: a chair, a blanket, a small tree. The camera slowly pushes in as the tree lights twinkle, a candle flickers and snow falls outside the window. Keep the room and everything in it exactly as in the photo. Warm, quiet, peaceful mood. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Slow is the whole point. If the camera moves too fast, ask for \"a very slow, gentle push in\".",
+    "Upload real photos of your products so the clip matches what customers will get.",
+    "If you post a still you made with AI, decorate the real space to match before people visit.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["holiday", "christmas", "video", "image-to-video", "business"]
+}
