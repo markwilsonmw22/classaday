@@ -1,0 +1,40 @@
+{
+  "slug": "red-cloak-forest-wolves",
+  "title": "Red cloak in the misty forest: the wolves sit, you lower the hood",
+  "published": "2026-11-18T06:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Higgsfield", "Veo"],
+  "summary": "A fairy-tale clip from one photo: you walk a foggy forest path in a red velvet cloak, three grey wolves sit at your side, and you lower your hood.",
+  "why": "Remake the Trend's AI video list, updated November 17, 2026, added a \"Red Riding Hood\" trend that day, with 12 creators posting it that week: a person in a red velvet cloak on a misty forest path, three grey wolves that sit down calmly, and a slow hood reveal.",
+  "steps": [
+    "Pick a clear photo of your face, front-on, with good light.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where your face stays the same when the hood comes down.",
+    "Add a soft, moody song and a caption like \"Took the long way through the woods.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 10-second vertical clip. A quiet pine forest at dawn, thick mist between the trees and soft grey light. I walk slowly toward the camera on a narrow dirt path, wearing a long red velvet cloak with the hood up. Three grey wolves walk beside me, calm and gentle. I stop, and the wolves sit down around my feet. I lift both hands and slowly lower the hood, then look straight into the camera with a small smile. Keep my face and hair exactly as in the photo. Slow push-in camera. Rich red against cool greys. Calm, magical mood. No text, no logos."
+    },
+    {
+      "label": "Variation: winter forest",
+      "text": "Same scene in a snowy forest with snow falling softly. I wear a deep red wool cloak with a fur-trimmed hood. Three wolves with frosty grey coats walk beside me, then lie down in the snow. I lower the hood and snowflakes catch in my hair. Keep my face exactly the same. Slow, steady camera. Quiet, wintry mood. No text, no logos."
+    },
+    {
+      "label": "Variation: your dog joins the pack",
+      "text": "A misty forest path at dawn. I walk in a red velvet cloak with the hood up, and my dog from this photo trots beside me with two calm grey wolves. All three sit at my feet, my dog wags its tail, and I lower the hood and laugh. Keep my face and my dog's markings exactly the same. Slow push-in. Gentle and magical. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "A misty forest path at dawn. I walk toward the camera in a red velvet cloak, carrying a woven basket filled with my handmade products. Three calm grey wolves sit beside me as I stop, lower my hood and hold the basket up to the camera with a smile. Keep my face and the products exactly the same. Slow push-in. Rich red and cool greys. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Say \"calm and gentle\" for the wolves. It keeps the clip magical, not scary.",
+    "A front-on face photo helps your face stay the same when the hood comes down.",
+    "Only use your own photo, or one from someone who agreed.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "fairy-tale", "cinematic", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "give-it-all-cinema-lobby-mic",
+  "title": "Give it all: one vintage mic, a packed old cinema lobby, hands in the air",
+  "published": "2026-11-18T06:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Higgsfield", "Veo"],
+  "summary": "Turn one photo into a clip where you perform into a corded vintage mic in a crowded old cinema lobby, the crowd throws its hands up, and you point at the lens.",
+  "why": "Remake the Trend's AI video list, updated November 17, 2026, added \"Give It All\" on November 16 and counted 58 creators posting it that week, the most of the newly described trends: a vintage corded mic in a dim, packed old cinema lobby, rolling arm moves, a crowd with hands up and a point at the camera. Our earlier mic packs were a desk concert and a two-friend studio duet; this one moves it into a crowd.",
+  "steps": [
+    "Pick a clear, waist-up photo of yourself.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where your face and hands look steady.",
+    "Add a song from your app's sound library and a caption like \"Gave it all on a Tuesday.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 10-second vertical clip. A grand old cinema lobby with red carpet, brass railings and warm, dim lights, packed with a happy crowd. I stand in the middle holding a silver vintage microphone on a long cable. I perform with energy, rolling my forearms in time with the beat and leaning toward the crowd. Everyone throws their hands in the air and cheers. On the last beat I point straight at the camera. Keep my face, hair and clothes exactly as in the photo. Handheld camera at chest height, slight movement. Warm golden light, a little film grain. No text, no logos."
+    },
+    {
+      "label": "Variation: holiday party",
+      "text": "Same old cinema lobby, decorated with garlands and warm string lights. I perform into a vintage corded mic wearing a festive sweater. The crowd in holiday hats bounces and throws their hands up. I finish by pointing at the camera with a grin. Keep my face exactly the same. Handheld camera, warm light. Fun and festive. No text, no logos."
+    },
+    {
+      "label": "Variation: two of you",
+      "text": "An old cinema lobby packed with a cheering crowd. My friend and I share one vintage corded mic, passing it back and forth, rolling our arms on the beat. On the last line we both point at the camera. Keep both faces and outfits exactly the same as in the photo. Handheld camera, dim warm light. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "My shop, packed with smiling customers and warm, dim lights. I stand behind the counter holding a vintage corded mic and perform with big arm moves while the crowd throws their hands up. On the last beat I hold up my best-selling product and point at the camera. Keep my face and the product exactly the same. Handheld camera. Fun and lively. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Use a photo where both hands show. The arm moves look better when the tool can see them.",
+    "Use a song from the app's library so your clip isn't muted.",
+    "Only include friends who said yes.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "music", "performance", "business"]
+}

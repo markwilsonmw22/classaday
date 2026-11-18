@@ -1,0 +1,40 @@
+{
+  "slug": "passenger-princess-road-trip-nap",
+  "title": "Passenger princess: coffee for the driver, then a cosy nap",
+  "published": "2026-11-18T06:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Higgsfield", "Veo"],
+  "summary": "Turn a car photo into a short road-trip clip: you hand the driver a coffee, get cosy with a pillow and blanket, and drift off.",
+  "why": "Remake the Trend's AI video list, updated November 17, 2026, added \"Passenger Princess\" that day and counted 20 creators posting it that week: a passenger hands the driver an iced coffee, clips on a neck pillow, pulls up a blanket and falls asleep while the driver smiles at the road.",
+  "steps": [
+    "Pick a clear photo of you (and the driver, if they agreed) in a car, or two separate photos of you both.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Make a few versions. Keep the one where both faces stay steady and the hands look natural.",
+    "Add a calm song from your app's sound library and a caption like \"My only job on road trips.\""
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Animate this photo as a 10-second vertical clip inside a car on a sunny highway. The camera sits on the dashboard and faces both front seats. I sit in the passenger seat and hand the driver an iced coffee with a sweet smile. Then I clip a soft neck pillow around my neck, pull a fluffy blanket up to my chin, lean back and slowly fall asleep. The driver takes a sip, glances at me and smiles at the road. Soft daylight through the windows, fields passing outside. Keep both faces and clothes exactly as in the photo. Steady camera. Warm, funny mood. No text, no logos."
+    },
+    {
+      "label": "Variation: snowy drive home",
+      "text": "Same idea on a snowy winter road at dusk, with snowflakes on the windshield. I pass the driver a hot drink in a plain mug, put on a knit hat, tuck a plaid blanket around me and nod off against the window. The driver turns the heat up a little and smiles. Keep both faces exactly the same. Steady dashboard view. Cosy mood. No text, no logos."
+    },
+    {
+      "label": "Variation: pet co-pilot",
+      "text": "Animate this photo of my pet in the passenger seat of a car. The pet nudges a snack toward the driver, then curls up under a small blanket with a tiny neck pillow and falls asleep, one ear twitching. The driver smiles at the road. Keep the pet's markings exactly the same. Steady dashboard view. Sweet and funny. No text, no logos."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "Inside a car on a sunny road. I hand the driver a drink in a plain takeaway cup from my café and a small paper bag of pastries. Then I get cosy with a pillow and blanket and fall asleep while the driver takes a happy bite. Keep my face exactly the same. Steady dashboard view. Warm and friendly. No logos, no text."
+    }
+  ],
+  "tips": [
+    "Only put the driver in the clip if they said yes. A clip of just you also works.",
+    "Never film or edit this while you're driving. Make it at home.",
+    "Ask for a steady dashboard camera. Moving cameras tend to warp faces in small spaces.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "road-trip", "couples", "business"]
+}
