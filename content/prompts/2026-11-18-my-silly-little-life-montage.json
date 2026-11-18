@@ -1,0 +1,36 @@
+{
+  "slug": "my-silly-little-life-montage",
+  "title": "\"My silly little life\": a fast-cut montage of tiny everyday joys",
+  "published": "2026-11-18T18:38:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Cut 10 to 15 tiny moments from your week into a quick, happy montage. AI turns your list of small joys into short captions and a shot plan.",
+  "why": "SocialPilot's Instagram Reels audio list for November 17 to 25, 2026 marks an upbeat pop song as rising, from about 49K to 116K Reels in under three weeks, used for \"silly little life\" montages: fast cuts of small, ordinary moments people are grateful for. Our thank-you pack was a list of shout-outs and our SD card pack is a work dump; this one is a quick, cheerful look at everyday life.",
+  "steps": [
+    "Scroll your camera roll and pick 10 to 15 small moments: a warm drink, a dog on the couch, first snow, a good lunch, a walk home.",
+    "Paste the main prompt with your list to get a title line and a short caption for each moment.",
+    "Trim each clip to under a second, or film the missing ones today. Put them in order so the energy builds.",
+    "Add the title on the first clip and the captions on top, then pick a trending upbeat sound in the app."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "I'm making a fast, happy Reel called \"my silly little life\". Here are the small moments I have clips of: [list 10 to 15 things, e.g. coffee on the balcony, my cat stealing my spot, first snow on the car]. Write a short title line for the first clip, then one caption of 2 to 5 words for each moment. Keep it warm, a little goofy and grateful, never showing off. Put the moments in an order that starts calm and ends on the happiest one. Suggest which 2 clips to cut if it runs over 15 seconds. No hashtags, no emojis."
+    },
+    {
+      "label": "Variation: fill the gaps with a shot list",
+      "text": "I want to film a \"my silly little life\" montage this week, but I only have a few clips. Give me a list of 12 tiny, ordinary moments I could film at home or around town in late November in Canada, each in under 3 seconds. Think cosy and small: a kettle steaming, mitts on the radiator, a frosty window, a library book, a neighbour's lights going up. For each one, give the shot (close-up, overhead or wide) and a 2 to 5 word caption."
+    },
+    {
+      "label": "Variation: small business",
+      "text": "I run [type of business]. Write a \"my silly little work life\" montage plan: 10 tiny behind-the-scenes moments from a normal week, like opening the blinds, the first order of the day, a tidy shelf or a team snack. Give each a caption of 2 to 5 words, warm and a bit playful. End on a simple thank-you line to the people who visit or buy from us. Don't make up sales numbers, reviews or customer quotes, and don't show customers' faces."
+    }
+  ],
+  "tips": [
+    "Real, plain moments work best. A messy desk with a good mug beats a staged scene.",
+    "Keep each cut very short. About 0.5 to 1 second per clip feels quick and happy.",
+    "Only include friends, family or staff who have said yes to being in it.",
+    "Business accounts may not be able to use popular songs. Check the sound in the app, or use a free upbeat instrumental."
+  ],
+  "tags": ["text", "montage", "reels", "gratitude", "business"]
+}
