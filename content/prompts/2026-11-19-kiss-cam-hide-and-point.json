@@ -1,0 +1,40 @@
+{
+  "slug": "kiss-cam-hide-and-point",
+  "title": "Kiss cam: one of you hides, one points, then a hand heart",
+  "published": "2026-11-19T00:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "Put you and your partner on a stadium kiss-cam screen. One ducks, one points, and you finish with a hand heart. Sweet, silly and no kiss needed.",
+  "why": "Remake the Trend's AI video list, updated November 18, 2026, added a \"Kiss Cam\" trend that day: the big stadium screen shows two people inside a heart frame, one hides while the other points at them, then they make a hand heart together. Our other couple packs are a photobooth strip and a gold-lit silhouette; this one puts you on the big screen.",
+  "steps": [
+    "Pick one clear photo of the two of you, faces visible, or two separate photos side by side. Only use someone who has agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool with that photo. Make a few versions and keep the one where the hide and the point look most natural.",
+    "Add a cheerful crowd sound or an upbeat song from your app's library.",
+    "Post with a caption like \"caught on the kiss cam\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the hide and point",
+      "text": "Animate this photo as a 10-second vertical clip. The two people in my photo sit side by side in the stands of a busy indoor arena at night. A huge screen above the crowd shows them live, framed by a glowing pink heart border with small hearts floating around it. They notice they're on the screen. One of them gasps and hides their face behind a jacket. The other laughs and points at them. Then they both turn to the camera and make a heart shape together with their hands. The crowd around them cheers. Keep both faces clearly recognizable. Bright arena lights, warm and playful mood. No text, no logos, no team names."
+    },
+    {
+      "label": "Variation: you and your pet",
+      "text": "Animate this photo of me and my pet as a 10-second vertical clip. We sit together in the stands of a packed arena. The giant screen above shows us inside a glowing heart frame. My pet sees itself on the screen, tilts its head, then hides behind my arm. I laugh and point at it. Then my pet pops back out and gives the camera a happy look while I make a heart with my hands. The crowd cheers. Keep my face and my pet's markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: best friends",
+      "text": "Animate this photo of two friends as a 10-second vertical clip. They sit in the stands at a bright indoor arena. The big screen shows them inside a heart frame. Both look shocked, then one points at the other and shakes their head, laughing. The other shrugs, then they both make a big heart over their heads with their arms. The crowd laughs and cheers. Keep both faces recognizable. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop cam",
+      "text": "Animate this photo of my shop counter as a 10-second vertical clip. A small TV screen behind the counter shows a live shot of a happy customer and their friend, framed by a glowing pink heart. They spot themselves, one hides behind a shopping bag and the other points and laughs. Then they both make a hand heart at the camera. Keep the shop's look the same as the photo. Warm, friendly lighting. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Describe the order clearly: \"first hides, then points, then a hand heart\". Tools follow a simple sequence better.",
+    "Keep team names, logos and real stadiums out of the prompt.",
+    "For the business version, only use photos of real customers who said yes. A made-up customer works too.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "couples", "funny", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "pet-crystal-carriage-snow-twirl",
+  "title": "Holiday carriage: your pet steps out in a tiny crown and twirls in the snow",
+  "published": "2026-11-19T00:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "Your pet arrives at a snowy holiday ball in a sparkling glass carriage, steps out wearing a little crown and does a happy twirl. A fairy-tale clip for the season.",
+  "why": "Jump On The Trend's 2026 list adds \"Christmas Princess Carriage\" on November 17, 2026: a pet steps out of a crystal carriage wearing a crown and twirls in the snow. Our other holiday pet packs are a snow dance crew and the nice-list frame; this one is a fairy-tale arrival.",
+  "steps": [
+    "Pick a clear, well-lit photo of your pet with its face and colouring easy to see.",
+    "Paste the main prompt into an image-to-video tool with that photo.",
+    "Make a few versions and keep the one where your pet looks most like itself.",
+    "Add soft, sparkly holiday music from your app's library and post it."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the grand arrival",
+      "text": "Animate this photo of my pet as a 10-second vertical clip. A small sparkling glass carriage with gold trim, pulled by two white ponies, rolls to a stop in a snowy palace courtyard at night. Tall evergreen trees with warm white lights line the path and snow falls softly. The carriage door opens and my pet steps out wearing a tiny gold crown and a little red velvet cape. My pet walks a few steps onto the fresh snow, does a happy twirl, and looks up at the camera. Keep my pet's face, fur colour and markings exactly as in the photo. Magical, cosy, fairy-tale mood. No text, no logos."
+    },
+    {
+      "label": "Variation: two pets arrive together",
+      "text": "Animate this photo of my two pets as a 10-second vertical clip. A sparkling glass carriage stops in a snowy courtyard lit by warm holiday lights. The door opens and both pets step out, each in a small crown and a velvet cape. They look around at the falling snow, then twirl together and sit side by side facing the camera. Keep both pets' faces and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: you and your pet at the ball",
+      "text": "Animate this photo of me and my pet as a 10-second vertical clip. A glass carriage stops at the steps of a glowing palace in the snow. I step out in a warm winter coat, then my pet hops down after me wearing a tiny crown. My pet twirls in the snow while I laugh and clap. Soft snowfall, warm golden light. Keep my face and my pet's markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the royal delivery",
+      "text": "Animate this photo of my product as a 10-second vertical clip. A small sparkling glass carriage rolls to a stop on a snowy path lined with holiday lights. The door opens and my product slides out onto a velvet cushion, wearing a tiny gold crown. Snow falls softly and the camera slowly pushes in on it. Keep the product's shape, colours and label exactly as in the photo. No new logos, no extra text."
+    }
+  ],
+  "tips": [
+    "Say \"keep the markings exactly as in the photo\". Costumes can make tools change your pet's face.",
+    "A short clip with one twirl looks better than lots of moves.",
+    "Leave out names of fairy-tale films or characters. Describe the carriage, crown and cape instead.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["pets", "holiday", "video", "image-to-video", "business"]
+}

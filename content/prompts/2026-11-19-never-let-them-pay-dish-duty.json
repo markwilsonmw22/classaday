@@ -1,0 +1,40 @@
+{
+  "slug": "never-let-them-pay-dish-duty",
+  "title": "\"Never let them pay\": you grab the bill, then end up washing dishes",
+  "published": "2026-11-19T00:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "ChatGPT", "Gemini"],
+  "summary": "A quick restaurant skit: you proudly snatch the bill on a date, check it, and the next shot is you at the sink in an apron. Funny, kind and very relatable.",
+  "why": "Jump On The Trend's 2026 list adds \"Never Let Her Pay\" on November 15, 2026 at about 25M views, based on a November 8 skit: one person insists on paying at dinner and ends up washing dishes in the back. We've written it so anyone can play either part.",
+  "steps": [
+    "Pick a clear photo of yourself, or of you and your date, friend or partner (with their okay).",
+    "Make the still image first if you want, then paste the main prompt into an image-to-video tool with your photo.",
+    "Make a few versions and keep the one with the biggest proud face before the cut.",
+    "Add a short caption like \"never let them pay\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the bill grab",
+      "text": "Animate this photo as a 12-second vertical clip in two shots. Shot one: a cosy restaurant at night with candles on the table. The person in my photo sits across from their date. The server sets down the bill. My person quickly slides it to their side, holds up a hand to say \"I've got this\", and gives a proud, confident smile. They open the bill, read it, and freeze. Hard cut. Shot two: the same person now stands at a big steel sink in the restaurant kitchen, wearing an apron and yellow rubber gloves, scrubbing a tall stack of plates with a tired but funny face. They look at the camera and shrug. Keep the face clearly recognizable in both shots. Warm, funny mood. No text, no logos."
+    },
+    {
+      "label": "Still image first: the proud moment",
+      "text": "Using this photo of me, make a picture of me sitting at a candlelit restaurant table at night, holding the bill folder close to my chest with one hand and raising the other hand like I'm saying \"I've got this\". Big proud smile. A blurred date sits across from me. Warm, cinematic light. Keep my face and hair the same. No text."
+    },
+    {
+      "label": "Variation: friends' night out",
+      "text": "Animate this photo of a group of friends as a 12-second vertical clip in two shots. Shot one: they sit around a pizza place table. One friend jumps up, grabs the bill from the server and waves everyone's wallets away with a big grin. They look at the bill and their smile slowly drops. Hard cut. Shot two: that friend is in the back kitchen in an apron, drying a mountain of pizza trays, while the other friends wave at them through the kitchen window. Keep everyone's faces recognizable. Funny, warm mood. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the owner at the sink",
+      "text": "Animate this photo of me in my restaurant or café as a 12-second vertical clip in two shots. Shot one: I bring a dessert to a happy table and say it's on the house, with a big generous smile. Hard cut. Shot two: I'm in the back in an apron, washing a tall stack of dishes, looking at the camera and laughing. Keep my face and the look of my space the same as the photo. Warm, friendly mood. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Write \"hard cut\" between the two shots. It makes the joke land.",
+    "A slow face drop when they read the bill is the funniest part. Ask for it.",
+    "Don't show real prices or a real bill. A closed bill folder keeps it a joke.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "skit", "funny", "business"]
+}
