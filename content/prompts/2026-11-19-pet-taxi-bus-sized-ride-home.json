@@ -1,0 +1,51 @@
+{
+  "slug": "pet-taxi-bus-sized-ride-home",
+  "title": "Pet taxi: you hail a cab at night and your giant pet carries you home",
+  "published": "2026-11-19T18:39:00Z",
+  "kind": "video",
+  "tools": [
+    "Kling",
+    "Seedance",
+    "Veo",
+    "Higgsfield"
+  ],
+  "summary": "After a long day you wave down a ride on a rainy street, and your cat or dog pulls up the size of a bus to carry you home.",
+  "why": "Jump On The Trend's 2026 list added \"Pet Taxi\" on November 14, 2026, Make Meme's trend page listed it as Rising on November 15, and ClipRemake's trend page, updated November 18, tagged it \"New this week\": you hail a cab at night and your pet arrives bus-sized to carry you home. Our other pet packs are dances and car rides; this one makes your pet the ride.",
+  "steps": [
+    "Pick two photos: a full-body photo of yourself and a clear photo of your pet.",
+    "Paste the main prompt into an image-to-video tool with both photos. Make a few versions and keep the one where your pet still looks like your pet.",
+    "Add soft city sounds or calm late-night music in your editing app.",
+    "Post it with a caption like \"my ride's here\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the rainy-night pickup",
+      "text": "Use these two photos: one of me and one of my pet. Make a 12-second vertical clip. It is night on a quiet city street after rain, with wet pavement reflecting the street lights. I stand at the curb in my work clothes, tired, and raise my hand to hail a ride. Headlight-like glows appear down the street, and my pet walks up, now as tall as a city bus, with the same fur, colours and face as the photo. It lowers its head, I climb onto its back, and it pads gently down the street toward home while I relax. Smooth camera, realistic lighting, cosy and funny. Keep my face and clothes the same as the photo. No text, no logos, no real taxi company names."
+    },
+    {
+      "label": "Variation: the snowy ride",
+      "text": "Use these two photos: one of me and one of my pet. Make a 12-second vertical clip. It is a snowy winter evening on a small-town main street with holiday lights in the windows. I stand at the curb with shopping bags and wave for a ride. My pet arrives the size of a bus, snow on its fur, looking exactly like the photo. It kneels down, I climb onto its back with my bags, and it trots off through the falling snow. Warm, cosy light, gentle and funny. Keep my face and coat the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: two friends, one giant pet",
+      "text": "Use these photos of me, my friend and my pet. Make a 12-second vertical clip. We walk out of a restaurant late at night, laughing, and I hail a ride. My pet pulls up the size of a bus, looking exactly like the photo. It lies down so we can both climb onto its back, then it carries us down the glowing street while we wave at the camera. Realistic night lighting, cheerful and funny. Keep both faces and outfits the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the delivery ride",
+      "text": "Use these two photos: one of my shop's front and one of our shop pet. Make a 12-second vertical clip. A customer steps out of my shop at dusk holding a wrapped parcel and waves for a ride. Our shop pet walks up the size of a bus, looking exactly like the photo, lowers its head, and the customer climbs on and rides off happily down the street. Keep the shop front and colours the same as the photo. Cosy and funny. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Use a clear, front-facing photo of your pet so its markings stay the same at giant size.",
+    "Say \"gentle\" and \"cosy\". It keeps a huge animal friendly, not scary.",
+    "Don't name a real taxi or ride app. Just say \"hail a ride\".",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": [
+    "video",
+    "image-to-video",
+    "pets",
+    "funny",
+    "business"
+  ]
+}

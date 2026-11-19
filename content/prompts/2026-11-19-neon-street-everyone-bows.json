@@ -1,0 +1,51 @@
+{
+  "slug": "neon-street-everyone-bows",
+  "title": "Everyone bows: you stand still at the top of a neon street as the crowd bows",
+  "published": "2026-11-19T18:39:00Z",
+  "kind": "video",
+  "tools": [
+    "Kling",
+    "Seedance",
+    "Veo",
+    "Higgsfield"
+  ],
+  "summary": "You stand calmly at the top of a busy neon-lit street, and the whole crowd stops and bows to you. You don't move a muscle.",
+  "why": "Make Meme's trend page, updated November 19, 2026, added \"King Jin\" on November 17 with the line \"Everyone bows. You don't move.\", and ClipRemake's trend page, updated November 18, tagged it \"New this week\" and Rising: you stand at the top of a neon street while the whole crowd bows to you. We've left out the show it comes from and written it so it works for anyone, a team or a shop.",
+  "steps": [
+    "Pick a full-body photo of yourself standing straight, facing the camera.",
+    "Paste the main prompt into an image-to-video tool with that photo. Make a few versions and keep the one where you stay perfectly still.",
+    "Add a big, slow, dramatic sound in your editing app.",
+    "Post it with a funny caption, like \"me after finally cleaning the kitchen\", and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the neon street",
+      "text": "Animate this photo of me as a 10-second vertical clip. It is night. I stand still at the top of a few wide steps at the end of a busy street lit by glowing neon signs in pink, blue and orange, with a light mist in the air. A big crowd of people fills the street below me. One by one, then all together, they stop, turn toward me and bow deeply in a slow wave from front to back. I don't move at all. I just look calmly at the camera. The camera slowly pushes in from behind the crowd toward me. Cinematic, dramatic and a little funny. Keep my face, hair and clothes the same as the photo. The signs show only coloured shapes and lights, no readable words, no logos."
+    },
+    {
+      "label": "Variation: the office hallway",
+      "text": "Animate this photo of me as a 10-second vertical clip. I stand still at the end of a long, bright office hallway holding a coffee mug. My coworkers fill the hallway. As I appear, they stop typing, stand up from their desks and bow deeply in a slow wave toward me. I don't move. I just take one slow sip of coffee. Dramatic slow camera push-in, bright office light, funny and over the top. Keep my face and clothes the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the family kitchen",
+      "text": "Animate this photo of me as a 10-second vertical clip. I stand still in my kitchen holding a big tray of fresh cookies. My family, and the family dog, line up in front of me. One by one they bow deeply, and the dog lies down with its paws forward. I don't move. I just raise one eyebrow. Warm home lighting, slow dramatic camera, funny. Keep my face and clothes the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the grand opening",
+      "text": "Animate this photo of me in front of my shop as a 10-second vertical clip. It is evening and my shop front glows with warm lights. A small crowd of customers on the sidewalk turns toward me and bows in a slow wave, then claps and smiles. I stand still in my apron, then give one small nod. Slow dramatic camera push-in. Keep my face, my shop front and its colours the same as the photo. Fun and friendly. No readable text except what is already on my sign, no other logos."
+    }
+  ],
+  "tips": [
+    "Ask for you to \"not move at all\". Your stillness is the joke.",
+    "Say the bow happens \"in a slow wave from front to back\". It looks more dramatic.",
+    "Ask for signs with \"no readable words\". AI text on signs often comes out garbled.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": [
+    "video",
+    "image-to-video",
+    "funny",
+    "cinematic",
+    "business"
+  ]
+}
