@@ -1,0 +1,40 @@
+{
+  "slug": "two-cards-swipe-car-reveal",
+  "title": "Two cards, one swipe: your dream car appears behind you",
+  "published": "2026-11-19T06:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "Flick two number cards, swipe a hand across the lens, and a sleek car is suddenly parked behind you under the floodlights.",
+  "why": "Remake the Trend's AI video list, updated November 18, 2026, added the \"Unforgettable Car\" trend on November 17 and counted 17 creators posting it that week. Its trend page counted about 2,253 videos and 23M views on the trend's hashtag that day: you hold up two red number cards in a night car park, swipe across the lens, and a grey sports car appears behind you. Our hand-flip pack is a before-and-after of you; this one is a reveal of something you'd love.",
+  "steps": [
+    "Pick a clear waist-up photo of yourself, ideally outdoors at night or in even light.",
+    "Choose your two numbers. A lucky number, your birthday or the year you're dreaming of all work.",
+    "Paste the main prompt into an image-to-video tool with your photo. Keep the version where the car appears cleanly as your hand clears.",
+    "Add a smooth, slow R&B track from your app's library and say it's made with AI in your caption."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the floodlit reveal",
+      "text": "Animate this photo of me as a 10-second vertical clip. I stand in an empty outdoor parking lot at night under tall white floodlights, the asphalt wet and shiny. I hold up two red playing-card-sized cards, one with a big white 2 and one with a big white 4, and flick them at the camera. Then I lower them and sweep my hand across the lens. As my hand clears, a sleek grey sports coupé with no badges is parked right behind me, headlights on. The camera drifts sideways to show the car's side while I step back beside it. I lean against the door, arms crossed, with a small smile. Handheld camera at chest height, one continuous shot. Keep my face the same as the photo. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation: your own numbers and colour",
+      "text": "Animate this photo of me as a 10-second vertical clip. I stand on a quiet street at dusk with warm streetlights. I hold up two cards showing the numbers [YOUR TWO NUMBERS] and flick them at the camera. I swipe my hand across the lens, and when it clears a gleaming [COLOUR] vintage convertible with no badges is parked behind me. I walk around to the driver's door, rest one hand on it and look back at the camera. One continuous shot. Keep my face the same as the photo. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation: the dream bike",
+      "text": "Animate this photo of me as a 10-second vertical clip. I stand in a snowy trailhead parking lot at golden hour. I hold up two cards with numbers on them and flick them. I swipe my hand across the lens, and when it clears a shiny new mountain bike with no logos stands beside me on a kickstand, snow sparkling around it. I put on a helmet and grin at the camera. One continuous shot. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the product reveal",
+      "text": "Animate this photo of me in my shop as a 10-second vertical clip. I stand behind my counter and hold up two cards: one shows a big 1, the other a big 1 too, for \"one of one\". I flick them at the camera, then swipe my hand across the lens. As my hand clears, my product from the second photo sits on the counter in front of me under a soft spotlight. The camera drifts slowly around it while I step back and smile. Keep my face, my shop and the product the same as the photos. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Leave out car makes, models and badges. Describe the shape and colour instead: \"sleek grey coupé\", \"vintage convertible\".",
+    "Say \"as my hand clears\" so the tool knows exactly when the reveal happens.",
+    "This is a dream, not a flex. Say it's made with AI so nobody thinks you bought a car.",
+    "For the business version, upload your product as a second photo so it looks like the real thing."
+  ],
+  "tags": ["video", "image-to-video", "transition", "reveal", "business"]
+}

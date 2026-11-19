@@ -1,0 +1,40 @@
+{
+  "slug": "rainy-court-90s-duo-dance",
+  "title": "Rainy-court 90s duo: two friends in windbreakers, nod, bounce, point",
+  "published": "2026-11-19T06:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "You and a friend in loud 90s windbreakers dance in sync on a wet outdoor basketball court, then point at the camera with a smirk.",
+  "why": "Remake the Trend's AI video list, updated November 18, 2026, added this 90s court dance on November 18. Its trend page says 23 creators posted it in the week to November 19, based on a November 5 dance post: two friends in colour-block windbreakers do head nods, knee lifts and a low bounce on a wet basketball court. Our other duo dances are in a studio, a street party and pyjamas; this one is retro and outdoors.",
+  "steps": [
+    "Pick one photo of you and a friend standing side by side, full body if you can. Only use someone who has agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool with that photo. Make a few versions and keep the one where you move most in sync.",
+    "Add an upbeat 90s-style hip-hop track from your app's music library.",
+    "Post it with a caption like \"we've been practising (we have not)\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the court routine",
+      "text": "Animate this photo of two friends as a 10-second vertical clip. They stand side by side on a wet outdoor basketball court on a grey winter day, a hoop and bare trees behind them. Both wear loud colour-block 90s windbreakers and baggy trousers. They dance perfectly in sync to an upbeat hip-hop beat: first head nods with bouncy shoulders, then one hand raised to shoulder height tapping the air, then alternating knee lifts, then hands on their belts with two low, wide-kneed bounces. They finish standing tall and both point at the camera with a small smirk. Fixed camera at chest height, one continuous shot, no cuts. Keep both faces recognizable. No text, no logos."
+    },
+    {
+      "label": "Variation: parent and kid",
+      "text": "Animate this photo of a parent and their child as a 10-second vertical clip. They stand on an outdoor basketball court after the rain, both in bright matching 90s windbreakers. They try the same dance in sync: head nods, an air tap, knee lifts, a low bounce. The child nails every move. The parent is half a beat behind and laughs. They finish by pointing at the camera together. Keep both faces the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the snowy court",
+      "text": "Animate this photo of two friends as a 10-second vertical clip. They stand on an outdoor basketball court dusted with fresh snow, breath showing in the cold air. Both wear puffy colour-block 90s windbreakers and toques. They dance in sync: head nods, an air tap, knee lifts that kick up a little snow, a low bounce, then both point at the camera with a grin. Fixed camera, one continuous shot. Keep both faces recognizable. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the team throwback",
+      "text": "Animate this photo of two people from my team as a 10-second vertical clip. They stand in front of my shop on a wet sidewalk, both in bright colour-block 90s windbreakers. They dance in sync: head nods, an air tap, knee lifts, two low bounces. Then they both point at the shop door behind them with a smirk. Keep their faces and the shop front the same as the photo. No text, no logos."
+    }
+  ],
+  "tips": [
+    "List the moves in order. Tools keep two people in sync better when the steps are simple and clear.",
+    "A full-body photo gives the knee lifts and bounces something to work with.",
+    "Use a track from your app's library, not a famous song, so your post isn't muted.",
+    "Only include people who said yes, and say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "dance", "friends", "business"]
+}

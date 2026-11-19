@@ -1,0 +1,40 @@
+{
+  "slug": "car-alarm-pet-dance",
+  "title": "Car alarm dance: your pet hears the beeps and busts a move",
+  "published": "2026-11-19T06:39:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "A parked car's alarm goes off and your pet stands up and dances to every beep, then drops back down like nothing happened.",
+  "why": "Remake the Trend's AI video list, updated November 18, 2026, added \"Car Alarm Dance\" on November 17 and counted 7 creators posting it that week. Its trend page counted about 120 videos and 731K views on the hashtag that day: a pet by a parked car rears up and dances to the beeping alarm. Our other pet dance packs use music; this one turns an everyday noise into the beat.",
+  "steps": [
+    "Pick a clear photo of your pet, ideally standing or sitting, with its whole body in view.",
+    "Paste the main prompt into an image-to-video tool with that photo. Make a few versions and keep the one where the dance lands on the beeps.",
+    "If your tool makes sound, keep the alarm beeps. If not, add a simple beeping sound in your editing app.",
+    "Post it with a caption like \"when the beat drops in the parking lot\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the parking lot dance",
+      "text": "Animate this photo of my pet as a 10-second vertical clip. My pet stands next to a parked white car in a wet outdoor parking lot on a grey, drizzly day. The car's lights flash and its alarm starts beeping in a steady rhythm. My pet's ears perk up and it looks at the car. Then it rises onto its back legs and dances: front paws waving on every beep, little side steps, one hop and a half turn. The alarm stops. My pet drops back onto all fours and looks at the camera, tongue out, very pleased with itself. Handheld phone camera at pet height, one continuous shot, no cuts. Keep my pet's face, colours and markings the same as the photo. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation: two pets, one alarm",
+      "text": "Animate this photo of my two pets as a 10-second vertical clip. They sit side by side next to a parked car in a quiet driveway at dusk. The car alarm starts beeping. They look at each other, then both stand up on their back legs and dance in sync, paws waving on the beeps. One spins, the other copies it a beat too late. The alarm stops and they both sit down at the same time and stare at the camera. Keep both pets' looks the same as the photo. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation: the snowy driveway",
+      "text": "Animate this photo of my pet as a 10-second vertical clip. My pet stands in a snowy driveway beside a parked car covered in fresh snow. The car's lights blink and the alarm beeps. Snow slides off the roof as my pet rears up and dances on its back legs, paws waving, a hop, a little spin, snowflakes flying. The alarm stops and my pet lands in the snow and gives the camera a proud look. Keep my pet's face and markings the same as the photo. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation for a small business: the shop pet",
+      "text": "Animate this photo of my shop's pet as a 10-second vertical clip. The pet sits by the front door of my shop, with the street and a parked delivery van outside. The van's alarm starts beeping. The pet stands up on its back legs and dances to the beeps in the doorway, paws waving, a hop and a turn. The alarm stops and the pet sits back down on its welcome mat and looks at the camera. Keep the shop front and the pet the same as the photo. No text, no logos, no van branding."
+    }
+  ],
+  "tips": [
+    "Say \"paws waving on every beep\". Linking the moves to the sound helps the timing.",
+    "A full-body photo works best. Close-up face photos make the tool guess the legs.",
+    "Keep car makes and badges out of the prompt.",
+    "Say it's made with AI in your caption, so nobody thinks your pet really does this."
+  ],
+  "tags": ["pets", "video", "image-to-video", "dance", "business"]
+}
