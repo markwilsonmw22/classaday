@@ -1,0 +1,40 @@
+{
+  "slug": "walking-a-pet-pterodactyl",
+  "title": "Walking my pet pterodactyl: a calm stroll with a flapping prehistoric friend on a leash",
+  "published": "2026-11-19T12:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "You walk a pterodactyl on a leash through a shiny indoor space like it's the family dog, while it waddles, flaps and looks around.",
+  "why": "AI Trend Club's trend list, updated November 18, 2026, added \"Mexico Pterodactyl\", based on a November 16 TikTok post it says had about 5M views when checked on November 18: a person walks a pterodactyl on a leash across a glossy indoor floor while it steps and flaps its wings. We have no dinosaur or exotic-pet walk pack yet.",
+  "steps": [
+    "Pick a full-body photo of yourself standing or walking, with your hands in view.",
+    "Paste the main prompt into an image-to-video tool with that photo. Make a few versions and keep the one where you stay calm and the creature looks natural.",
+    "Add light, matter-of-fact music or just room sound in your editing app.",
+    "Post it with a caption like \"he needed his walk\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the mall stroll",
+      "text": "Animate this photo of me as a 10-second vertical clip. I walk calmly through a bright indoor shopping hall with a glossy, reflective floor, holding a long leash in one hand. On the other end of the leash is a large, friendly pterodactyl with leathery grey-brown wings and a long beak. It waddles beside me on its wing knuckles and feet, looks around curiously, and gives two big flaps that ruffle my hair. I keep walking like this is completely normal. The camera follows us from behind and slightly to the side, one continuous shot, no cuts. Realistic lighting and reflections on the floor. Keep my face, hair and clothes the same as the photo. Calm and funny, not scary. No text, no logos, no store signs."
+    },
+    {
+      "label": "Variation: the snowy park walk",
+      "text": "Animate this photo of me as a 10-second vertical clip. I walk along a snowy park path in a winter coat, holding a leash. On the leash is a friendly pterodactyl, waddling through the snow and leaving odd footprints. It stops to sniff a snowbank, flaps its wings and shakes off the snow. I wait patiently, then we keep walking. Soft winter daylight, gentle snowfall. Keep my face and coat the same as the photo. Calm and funny. No text, no logos."
+    },
+    {
+      "label": "Variation: two of us, two pets",
+      "text": "Animate this photo of me and my friend as a 10-second vertical clip. We walk side by side down a quiet city sidewalk, chatting. I hold a leash with a small, friendly pterodactyl. My friend holds a leash with a small, friendly long-necked dinosaur. The two creatures look at each other, then both waddle along happily. Nobody reacts. Keep both of our faces and clothes the same as the photo. Calm and funny. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop greeter",
+      "text": "Animate this photo of my shop as a 10-second vertical clip. I walk across my shop floor holding a leash with a friendly pterodactyl on the end. It waddles past the shelves, peeks at a display with its long beak, then sits by the front counter and folds its wings like a good greeter. Keep the shop layout, colours and my products the same as the photo. Calm and funny. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Say \"calm and funny, not scary\". It keeps the creature friendly.",
+    "Describe the creature's look (wings, beak, colours) instead of naming a film or character.",
+    "Your calm walk is the joke. Ask for it to stay normal and unbothered.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "funny", "animals", "business"]
+}

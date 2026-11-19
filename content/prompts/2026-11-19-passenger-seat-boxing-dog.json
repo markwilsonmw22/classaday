@@ -1,0 +1,40 @@
+{
+  "slug": "passenger-seat-boxing-dog",
+  "title": "Passenger-seat boxer: your dog throws quick paw punches on a night drive",
+  "published": "2026-11-19T12:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "Your dog sits calmly in the front seat at night, then breaks into fast, playful boxing jabs with its front paws as the city lights go by.",
+  "why": "AI Trend Club's trend list, updated November 18, 2026, added \"Boxing Dog\", based on a November 14 TikTok post it says had about 1.2M views when checked on November 18: a dog sitting upright in a car's passenger seat at night starts boxing with its front paws. Our other car pet packs are the alarm dance outside the car and the road-trip singalong; this one is all about the paws.",
+  "steps": [
+    "Pick a clear photo of your dog sitting up, with its chest and front legs in view.",
+    "Paste the main prompt into an image-to-video tool with that photo. Make a few versions and keep the one where the jabs look quick and playful, not wild.",
+    "Add an upbeat track or a few boxing-bell dings in your editing app if your tool has no sound.",
+    "Post it with a caption like \"don't ask him to change the station\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the night drive jabs",
+      "text": "Animate this photo of my dog as a 10-second vertical clip. My dog sits upright in the front passenger seat of a car at night, facing forward. Soft orange and red traffic lights glow through the windshield and side window. For two seconds my dog sits very still and serious. Then it lifts both front paws and starts boxing: quick left-right jabs, a little bob of the head, ears flapping. It pauses, looks at the camera, then throws two more fast jabs. Camera filmed from the driver's side at seat height, one continuous shot, no cuts. Keep my dog's face, colours and markings the same as the photo. Playful, not aggressive. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation: the drive-through wait",
+      "text": "Animate this photo of my dog as a 10-second vertical clip. My dog sits in the passenger seat of a parked car in a quiet, well-lit lot on a snowy evening, snow falling past the window. It stares out the window, then turns, raises its front paws and does a fast boxing routine: jab, jab, a duck to the side, jab. It stops and sits back down with its tongue out. Keep my dog's look the same as the photo. Playful and silly. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation: two pets, one round",
+      "text": "Animate this photo of my two pets as a 10-second vertical clip. They sit side by side on the back seat of a car at night, city lights passing outside. One starts boxing the air with quick paw jabs. The other watches, then joins in, copying the moves a beat late. Neither touches the other. They both stop and look at the camera at the same time. Keep both pets the same as the photo. Gentle and funny. No text, no logos, no car badges."
+    },
+    {
+      "label": "Variation for a small business: the delivery co-pilot",
+      "text": "Animate this photo of my shop's dog as a 10-second vertical clip. The dog sits in the passenger seat of my plain delivery van at dusk, with a stack of wrapped parcels on the floor. It throws a few quick, happy paw jabs at the air, then turns and rests one paw on the top parcel like it is ready for the next stop. Keep the dog the same as the photo. No text, no logos, no van branding."
+    }
+  ],
+  "tips": [
+    "Say \"playful, not aggressive\". It keeps the moves light and funny.",
+    "A photo where your dog sits upright works best. A lying-down photo makes the tool guess the pose.",
+    "Never film a real pet loose in the front seat while driving. Let the AI do the driving scene.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}
