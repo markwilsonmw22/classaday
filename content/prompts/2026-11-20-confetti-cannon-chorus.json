@@ -1,0 +1,40 @@
+{
+  "slug": "confetti-cannon-chorus",
+  "title": "Confetti cannon chorus: you sing to the camera and every beat drop fires confetti",
+  "published": "2026-11-20T18:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "You sing a catchy chorus to your phone in a bright white room. On each big beat, a confetti cannon fires: silver first, then a huge gold burst. Made from one photo.",
+  "why": "AI Trend Club lists \"Boom Clap Confetti\" as a new trend, based on a post from November 16, 2026 that had 334,500 views as of November 20, and Remake the Trend lists it under its new trends. In the format, someone sings a pop chorus straight to the camera and confetti cannons burst on the beat. Our other singing packs are on a stage or at a desk; this one is a simple living room with a big payoff.",
+  "steps": [
+    "Pick a clear photo of yourself from the chest up, looking at the camera. A pet photo works too.",
+    "Paste the main prompt into an image-to-video tool with your photo.",
+    "In your editing app, add an upbeat song you have the rights to use, and line the confetti bursts up with its biggest beats.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: two confetti bursts",
+      "text": "Use this photo of me. Make a 12-second vertical clip. I stand in a bright, all-white living room, framed from the chest up, phone camera held still in front of me. I sing a happy pop chorus straight to the camera: I point one finger up, make a heart with my hands, then cross my arms and grin. At about 2 seconds, a confetti cannon fires from behind the camera and white and silver confetti rains down around me. At about 7 seconds, a second, much bigger burst of gold confetti fills the frame and I laugh. Bright, soft daylight. Fixed camera, one continuous shot. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: holiday party",
+      "text": "Use this photo of me. Make a 12-second vertical clip. I stand in a cosy living room with a lit Christmas tree and string lights behind me, framed from the chest up. I sing a cheerful chorus to the camera, pointing up, then making a heart with my hands. On the first big beat, a burst of red and green confetti shoots across the frame. On the second, a huge shower of gold confetti and tiny paper snowflakes falls around me and I throw my arms up. Warm, glowing light. Fixed camera, one shot. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet sings",
+      "text": "Use this photo of my pet. Make a 12-second vertical clip. My pet sits in a bright white living room, framed from the chest up, looking into the camera and moving its mouth like it is singing a happy chorus. It tilts its head and lifts one paw. On the first beat, white and silver confetti bursts from behind the camera and lands on its fur. On the second beat, a big gold burst fills the frame and my pet blinks in surprise. Bright daylight. Fixed camera, one shot. Keep my pet's face and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: launch day celebration",
+      "text": "Use this photo of me in my shop. Make a 12-second vertical clip. I stand behind my counter, framed from the chest up, holding up my newest product toward the camera. I sing a happy chorus and point at the product. On the first beat, a confetti cannon fires and silver confetti rains down over the counter. On the second beat, a huge gold burst fills the frame and I give a big thumbs-up. Bright, clean light. Fixed camera, one shot. Keep my face the same as the photo. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Give the confetti timing in seconds so the bursts land where you want them.",
+    "Only use music you have the rights to, or pick a track from your app's licensed library.",
+    "A plain, bright background makes the confetti colours pop.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "singing", "confetti", "celebration", "business"]
+}

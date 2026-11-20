@@ -1,0 +1,40 @@
+{
+  "slug": "oh-my-carne-asada-howling-pet",
+  "title": "\"Oh my, carne asada\": your pet howls, then sings a wobbly chant to the camera",
+  "published": "2026-11-20T18:42:00Z",
+  "kind": "video",
+  "tools": ["Veo", "Kling", "Higgsfield"],
+  "summary": "Your dog or cat throws its head back in a long howl, then stares into the lens and sings \"oh my, carne asada\" with a sly grin. Made from one photo.",
+  "why": "Remake the Trend added the \"Oh My Carne Asada\" singing dog trend on November 20, 2026. It traces it to a TikTok clip posted November 12 with about 2.7 million plays and says 51 creators posted it in the 7 days to November 20. AI Trend Club also listed it, with 2.7M views on the original as of November 20. Our other singing pets play piano or sing in the car; this one is a short, silly howl-and-chant close-up.",
+  "steps": [
+    "Pick a clear, front-facing photo of your pet's head and chest. Good light on the eyes helps a lot.",
+    "Paste the main prompt into an image-to-video tool that makes sound, like Veo, with your photo. If your tool makes silent clips, add the howl in your editing app.",
+    "Make a few versions and keep the one with the biggest eyes and the funniest grin at the end.",
+    "Post it with a question like \"what is this dog actually saying?\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the howl and the chant",
+      "text": "Use this photo of my pet. Make a 10-second vertical clip with sound. My pet sits alone in front of a plain bright green background, head and chest filling the frame. First it tips its head back and lets out a long, wobbly howl that rises and falls. Then it snaps its head down, looks straight into the camera with huge round eyes, and sings a short, yelpy chant that sounds like \"oh my, carne asada\". It ends on a sly, toothy little grin. Fixed camera at the pet's eye level, close-up, one continuous shot, no cuts, no zoom. Keep my pet's face, fur and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: in your kitchen",
+      "text": "Use this photo of my pet. Make a 10-second vertical clip with sound. My pet sits on a kitchen floor next to a warm stove, the smell of dinner in the air. It lifts its nose, closes its eyes and gives a long, wavy howl. Then it looks right into the camera with big round eyes and sings a quick, yelpy \"oh my, carne asada\", then licks its lips and grins. Warm evening light. Fixed close-up camera at the pet's eye level, one shot. Keep my pet's face and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: two pets, one song",
+      "text": "Use these two photos of my pets. Make a 10-second vertical clip with sound. Both pets sit side by side in front of a plain bright green background. The first pet tips its head back and howls a long, wobbly note. The second pet joins in, a little off-key. Then both snap their heads down, stare into the camera with huge eyes and sing \"oh my, carne asada\" together, ending with matching sly grins. Fixed camera at eye level, one continuous shot. Keep both pets' faces and markings the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop dog announces lunch",
+      "text": "Use this photo of my shop's dog. Make a 10-second vertical clip with sound. The dog sits behind the counter of a small, cosy restaurant, with a chalkboard menu blurred behind it. It tips its head back and howls a long, wobbly note, then looks straight into the camera with big round eyes and sings a yelpy \"oh my, carne asada\", then grins as a plate of grilled food slides into view beside it. Warm light. Fixed camera at the dog's eye level, one shot. Keep the dog's face and markings the same as the photo. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "A photo where your pet looks straight at you gives the best stare-down moment.",
+    "If the howl sounds too human, add \"a real dog's howl, rough and wobbly\" to the prompt.",
+    "A plain green background keeps all eyes on your pet and is easy to swap later.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "pets", "singing", "funny", "business"]
+}
