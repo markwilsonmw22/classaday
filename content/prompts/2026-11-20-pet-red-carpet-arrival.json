@@ -1,0 +1,40 @@
+{
+  "slug": "pet-red-carpet-arrival",
+  "title": "Red carpet arrival: your pet steps out of the car to a wall of camera flashes",
+  "published": "2026-11-20T12:38:00Z",
+  "kind": "video",
+  "tools": ["Seedance", "Kling", "Veo", "Higgsfield"],
+  "summary": "A shiny black car pulls up to a red carpet, the door opens and your pet steps out in a tiny suit while photographers flash away. Made from one pet photo.",
+  "why": "AI Trend Club lists \"Pet Red Carpet Arrival\" as a new trend. It traces it to a TikTok clip posted November 10, 2026, which had about 3.5 million views when the site checked it on November 19. Our flashbulb pack is about posing and bowing; this one is the big entrance from the car.",
+  "steps": [
+    "Pick a clear photo of your pet standing or sitting, with its face and whole body in view.",
+    "Paste the main prompt into an image-to-video tool with your photo. Keep the clip short, 4 to 6 seconds, so it feels like a real arrival shot.",
+    "Add a dramatic music sting or the sound of camera shutters in your editing app.",
+    "Post it with a caption like \"arriving at dinner like\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the big arrival",
+      "text": "Use this photo of my pet. Make a 6-second vertical clip at night. A shiny black car stops beside a long red carpet outside a grand building with warm lights. A door opens and my pet steps out, wearing a small black suit jacket and a bow tie. A person in a dark suit walks beside it as an escort. Rows of photographers behind a rope raise their cameras and flashes pop. My pet pauses on the carpet, looks toward the cameras, then walks on toward the doors with its head held high. Cinematic lighting, shallow focus. Keep my pet's face, fur colour and markings the same as the photo. No text, no logos, no real people's faces in focus."
+    },
+    {
+      "label": "Variation: holiday gala",
+      "text": "Use this photo of my pet. Make a 6-second vertical clip at night in light snow. A shiny black car stops beside a red carpet lined with tall lit Christmas trees. My pet steps out wearing a tiny velvet jacket with a gold trim. Photographers behind a velvet rope raise their cameras and flashes pop through the falling snow. My pet stops, gives a little head tilt to the cameras, then trots toward the glowing doors. Warm, festive light. Keep my pet's face, fur colour and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: two pets, one entrance",
+      "text": "Use this photo of my two pets. Make a 6-second vertical clip at night. A shiny black car stops beside a red carpet. The door opens and my two pets step out one after the other, one in a small suit jacket and one in a sparkly collar with a bow. Photographers behind a rope raise their cameras and flashes pop. The pets pause side by side, look at the cameras, then walk in together. Cinematic lighting. Keep both pets' faces, fur colours and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: grand reopening or new arrival",
+      "text": "Use this photo of our shop pet, or a client's pet with the owner's okay. Make a 6-second vertical clip in the evening. A shiny black car stops at the front door of our shop, with a short red carpet rolled out to the entrance and string lights over the window. The pet steps out in a tiny suit jacket. A small crowd of friendly neighbours cheer and take photos with their phones. The pet walks up the carpet and sits proudly at the open door. Warm, welcoming light. Keep the pet's face, fur colour and markings the same as the photo. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Describe the action in order: car stops, door opens, pet steps out, flashes, walk. The AI follows it like a script.",
+    "Short clips work best here. Longer ones tend to drift and change your pet's face.",
+    "If the suit looks odd, ask for \"a simple bow tie\" instead.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["pets", "video", "image-to-video", "funny", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "sketch-on-the-wall-self-hug",
+  "title": "Self-hug sketch: a giant pencil drawing of you leans off the wall to hug you",
+  "published": "2026-11-20T12:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Seedance", "Veo", "Higgsfield"],
+  "summary": "You lean on a plain concrete wall. A huge pencil sketch of you, drawn behind you, leans down and wraps its arms around your shoulders. Made from one photo.",
+  "why": "Remake the Trend added the \"Self Hug Sketch\" trend on November 15, 2026. It says the format spread on TikTok from November 8 and listed it among its top trends in the week to November 19. Our sketch-double pack has a drawing that dances beside you; this one is quieter: the drawing gives you a hug.",
+  "steps": [
+    "Pick a clear photo of yourself standing, from the knees or waist up, with a plain background if you can.",
+    "Paste the main prompt into an image-to-video tool with your photo. Make a few versions and keep the one where the sketch's face looks most like you.",
+    "Add soft piano or strings in your editing app so the hug lands slowly.",
+    "Post it with a kind caption, like \"a reminder to be gentle with yourself\", and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the wall hug",
+      "text": "Use this photo of me. Make a 10-second vertical clip. I stand in colour, leaning back against a plain grey concrete wall. Behind me, a giant pencil sketch of me is drawn on the wall in soft graphite lines, about twice my size, with the same face and hair. The sketch slowly leans forward off the wall. Its drawn arms come out of the concrete and wrap gently around my shoulders from behind. I close my eyes, rest my hands on the drawn arms and smile. The sketch stays black and white, I stay in full colour. Soft, even daylight. Steady camera at chest height. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: still image first",
+      "text": "Use this photo of me. Make a vertical photo. I stand in full colour in front of a plain grey concrete wall. A large pencil drawing of me, in soft grey graphite lines, is sketched on the wall behind me and its arms reach around my shoulders in a gentle hug. Small handwritten words on the wall beside us say \"be kind to yourself\" with a tiny drawn heart. Soft daylight, calm and quiet mood. Keep my face the same as the photo."
+    },
+    {
+      "label": "Variation: chalk on a brick wall",
+      "text": "Use this photo of me. Make a 10-second vertical clip. I sit on a low step in front of an old red brick wall at golden hour. A big white chalk drawing of me is sketched on the bricks behind me. The chalk drawing slowly bends down, a little chalk dust falls, and its arms fold around me in a hug. I lean my head back and laugh. The drawing stays white chalk, I stay in full colour. Warm, low sunlight. Steady camera. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the maker and their sketch",
+      "text": "Use this photo of me at work in my studio or shop. Make a 10-second vertical clip. I stand in colour in front of a plain light wall, holding one of my finished pieces. Behind me, a large pencil sketch of me is drawn on the wall, holding the first rough version of the same piece. The sketch leans forward and puts an arm around my shoulders, like a proud past self. I smile and lift the finished piece toward the camera. Soft, even light. Steady camera. Keep my face the same as the photo. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "A photo with your arms relaxed at your sides makes the hug look natural.",
+    "Say \"the sketch stays black and white, I stay in colour\" so the two don't blend.",
+    "If the arms look stiff, add \"slow, gentle movement\" to the prompt.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "sketch", "self-care", "business"]
+}
