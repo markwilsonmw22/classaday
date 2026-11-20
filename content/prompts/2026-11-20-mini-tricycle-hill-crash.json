@@ -1,0 +1,51 @@
+{
+  "slug": "mini-tricycle-hill-crash",
+  "title": "Mini tricycle crash: you race a tiny trike down a hill and hug a tree",
+  "published": "2026-11-20T00:37:00Z",
+  "kind": "video",
+  "tools": [
+    "Kling",
+    "Seedance",
+    "Veo",
+    "Higgsfield"
+  ],
+  "summary": "A grown-up on a tiny kids' tricycle pedals down a gravel hill, hits a bump, flies up with a peace sign and ends up clinging to a big tree.",
+  "why": "Remake the Trend's AI video list, updated November 19, 2026, added the \"Mini Tricycle Crash\" trend that day, based on a November 13 TikTok post, and counted 31 creators posting it in the week to November 19. Our other funny packs are falls and slips; this one is a ride that goes wrong, with no one getting hurt.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself in casual clothes.",
+    "Paste the main prompt into an image-to-video tool with your photo. Make a few versions and keep the funniest one where you still look like you.",
+    "Add a goofy sound or a quick music sting in your editing app.",
+    "Post it with a caption like \"I'm fine\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the gravel hill",
+      "text": "Use this photo of me. Make a 10-second vertical clip filmed like a handheld phone video. I sit on a tiny yellow kids' tricycle at the top of a gravel country road, my knees up near my chin. I start pedalling and speed up down the hill toward the camera, legs spinning fast. The front wheel hits a small bump and I pop up into the air, smiling and flashing a peace sign. I land softly next to a big roadside tree, wrap my arms around the trunk and hold on as the tricycle tips over. Then I slide down to sit on the grass, look a little dazed and give the camera a sheepish wave. Funny and light, nobody gets hurt. Keep my face and clothes the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the snowy hill",
+      "text": "Use this photo of me. Make a 10-second vertical clip filmed like a handheld phone video. I sit on a tiny red kids' tricycle at the top of a snowy hill in a winter coat and toque. I pedal and pick up speed through the snow, then hit a snowbank and pop into the air with a big grin and a peace sign. I land softly in a deep pile of fresh snow beside a pine tree, the tricycle tipping over next to me. I sit up covered in snow and wave at the camera. Funny and cosy, nobody gets hurt. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: two friends, two trikes",
+      "text": "Use this photo of me and my friend. Make a 10-second vertical clip filmed like a handheld phone video. We each sit on a tiny kids' tricycle at the top of a gentle grassy hill and race each other down, laughing. We both hit the same bump, pop into the air together with peace signs, and land softly in a pile of autumn leaves at the bottom while the trikes roll away. We sit up, look at each other and burst out laughing. Funny and light, nobody gets hurt. Keep both faces and outfits the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the toy or bike shop",
+      "text": "Use these two photos: one of me and one of a kids' tricycle we sell. Make a 10-second vertical clip filmed like a handheld phone video. I sit on the tricycle from the photo, much too big for it, at the top of a gentle park path. I pedal down the slope, hit a small bump, pop up with a thumbs-up and land softly on the grass beside the path. I sit up, point at the tricycle and laugh. Keep the tricycle's colour and shape the same as the photo. Funny and friendly, nobody gets hurt. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Say \"handheld phone video\" so it looks like a friend filmed it.",
+    "Add \"nobody gets hurt\" and \"lands softly\" to keep the crash silly, not painful.",
+    "Don't try this on a real trike. Let the AI do the stunt.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": [
+    "video",
+    "image-to-video",
+    "funny",
+    "fail",
+    "business"
+  ]
+}

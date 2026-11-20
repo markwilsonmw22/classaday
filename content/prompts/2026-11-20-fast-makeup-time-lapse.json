@@ -1,0 +1,51 @@
+{
+  "slug": "fast-makeup-time-lapse",
+  "title": "Fast makeup: helping hands do a full glam look on you in seconds",
+  "published": "2026-11-20T00:37:00Z",
+  "kind": "video",
+  "tools": [
+    "Kling",
+    "Veo",
+    "Seedance",
+    "Higgsfield"
+  ],
+  "summary": "Start bare-faced with your eyes closed. Hands with brushes swoop in and build a bold makeup look in fast-forward, then you open your eyes and smile.",
+  "why": "Remake the Trend's AI video list, updated November 19, 2026, added the \"Fast Makeup\" trend that day and counted 14 creators posting it in the week to November 19, with tutorial posts at about 670,000 plays (November 12) and 300,000 plays (November 18). Our other glow-up packs cut from before to after; this one shows the whole look being built.",
+  "steps": [
+    "Pick a clear, front-facing photo of your bare face, or with light makeup, in good light.",
+    "Paste the main prompt into an image-to-video tool with your photo. Make a few versions and keep the one where your face stays most like you.",
+    "Add an upbeat track in your editing app so the fast steps land on the beat.",
+    "Post it with a caption like \"if only it were this quick\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the bold party look",
+      "text": "Use this photo of me. Make a 10-second vertical close-up clip. My face is bare, my hair is pulled back with a cream headband, and the background is soft pink. My eyes are gently closed. Hands holding makeup brushes reach in from the sides of the frame and work fast, like a time-lapse: first foundation, then blush and soft contour, then bright orange, pink and purple eyeshadow, a sharp winged liner and fluttery lashes, then a glossy pink lip. The hands leave the frame, I open my eyes and give the camera a confident smile. Bright, even light, smooth and steady camera. Keep my face shape and features the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the soft everyday look",
+      "text": "Use this photo of me. Make a 10-second vertical close-up clip. My face is bare, my hair is clipped back, and the background is warm beige. My eyes are closed. Hands with brushes move in quickly, like a time-lapse: a light skin tint, a little concealer, soft peach blush, brown mascara and a tinted lip balm. The hands leave the frame, I open my eyes and smile softly. Natural daylight, calm and fresh. Keep my face shape and features the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the holiday sparkle look",
+      "text": "Use this photo of me. Make a 10-second vertical close-up clip. My face is bare, my hair is held back with a velvet headband, and the background is deep green with soft twinkle lights. My eyes are closed. Hands with brushes work fast, like a time-lapse: smooth base, rosy cheeks, shimmery gold eyeshadow, a fine liner wing, a touch of glitter on the lids and a classic red lip. The hands leave the frame, I open my eyes and wink at the camera. Warm, festive light. Keep my face shape and features the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the makeup artist or salon",
+      "text": "Use this photo of a client who agreed to be in our video. Make a 10-second vertical close-up clip. They sit in our salon chair with their hair clipped back and their eyes closed, face bare. Hands with brushes work in fast, like a time-lapse: base, cheeks, a soft smoky eye, lashes and a rosy lip, for a polished event look. The hands leave the frame, they open their eyes and smile at the mirror. Clean, bright salon light. Keep their face shape and features the same as the photo. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "List the steps in order in your prompt. The AI follows them like a recipe.",
+    "Use a photo where your face is straight on and evenly lit so your features stay the same.",
+    "Name colours, not products or brands.",
+    "Say it's made with AI in your caption, especially if you're a makeup artist."
+  ],
+  "tags": [
+    "video",
+    "image-to-video",
+    "makeup",
+    "glow-up",
+    "business"
+  ]
+}

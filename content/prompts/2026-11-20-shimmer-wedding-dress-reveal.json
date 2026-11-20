@@ -1,0 +1,51 @@
+{
+  "slug": "shimmer-wedding-dress-reveal",
+  "title": "Shimmer reveal: a sweep of light turns your everyday outfit into a wedding gown",
+  "published": "2026-11-20T00:37:00Z",
+  "kind": "video",
+  "tools": [
+    "Kling",
+    "Veo",
+    "Seedance",
+    "Higgsfield"
+  ],
+  "summary": "You stand in a bright room in your everyday clothes, a soft shimmer of light sweeps over you, and you're suddenly in a lace gown and veil.",
+  "why": "Remake the Trend's AI video list, updated November 19, 2026, added the \"Wedding Dress Transformation\" trend that day and counted 59 creators posting it in the week to November 19, with one post at about 390,000 plays on November 17. Our other wedding packs edit real wedding clips; this one is a one-photo try-on.",
+  "steps": [
+    "Pick a clear, well-lit photo of yourself from the chest up, looking at the camera.",
+    "Paste the main prompt into an image-to-video tool with your photo. Make a few versions and keep the one where your face stays the same.",
+    "Add soft music in your editing app and keep the clip short, around 8 to 10 seconds.",
+    "Post it with a caption like \"trying it on early\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the lace gown and veil",
+      "text": "Use this photo of me. Make a 10-second vertical close-up clip. I stand in a bright, airy room with soft daylight, wearing the everyday clothes from the photo, and I look into the camera. A gentle shimmer of light sweeps across me from top to bottom. As it passes, my outfit turns into a long-sleeved lace wedding gown with fine beading, and a sheer embroidered veil settles over my hair. Soft, natural bridal makeup appears. I tilt my head, lightly touch the edge of the veil and smile at the camera. Smooth, slow camera, warm light, elegant and calm. Keep my face and hair the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the winter wedding look",
+      "text": "Use this photo of me. Make a 10-second vertical close-up clip. I stand by a frosty window with snow falling outside, wearing the clothes from the photo. A soft sparkle of light sweeps over me, and my outfit becomes a simple satin wedding dress with a long, soft faux-fur wrap over my shoulders and a short veil. I pull the wrap closer, look down, then look up and laugh. Cosy winter light, gentle and romantic. Keep my face and hair the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the suit version",
+      "text": "Use this photo of me. Make a 10-second vertical close-up clip. I stand in a bright room in the clothes from the photo and look into the camera. A gentle shimmer of light sweeps across me, and my outfit becomes a sharp, tailored wedding suit in a soft ivory colour with a small flower pinned to the lapel. I straighten the jacket, adjust the flower and give the camera a proud smile. Warm light, smooth camera, elegant. Keep my face and hair the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the bridal shop try-on",
+      "text": "Use these two photos: one of a person who agreed to be in our video and one of a gown from our shop. Make a 10-second vertical clip. The person stands in our bright fitting room in casual clothes and smiles at the camera. A soft shimmer of light sweeps over them, and they are now wearing the gown from the photo, with the same fabric, colour and details. They turn slowly to show the back, then face the camera again. Calm, elegant, natural light. Keep their face the same as the photo. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "A close-up from the chest up keeps your face steady through the change.",
+    "Describe the dress in plain words: the fabric, the sleeves, the veil. Don't name a designer.",
+    "Ask before you use a friend's photo, and keep it fun, not a fake announcement.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": [
+    "video",
+    "image-to-video",
+    "wedding",
+    "transformation",
+    "business"
+  ]
+}
