@@ -1,0 +1,40 @@
+{
+  "slug": "cold-feet-in-bed-freeze",
+  "title": "Cold feet: your partner's icy toes freeze you solid in bed",
+  "published": "2026-11-20T06:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "Two photos become a short overhead bedtime clip: one person's cold feet turn the other to ice, the hair dryer barely helps, and the ice comes right back.",
+  "why": "SameButMe's AI video trend list, updated November 19, 2026, added \"Cold Feet Couple\" that day, based on a November 16 TikTok post it says drew 1.9 million plays: an overhead view of a couple in bed where one partner's icy toes freeze the other. Our other couple packs are dances and pranks; this one is a winter bedtime joke.",
+  "steps": [
+    "Get a clear photo of each person, face forward, with their okay to use it.",
+    "Paste the main prompt into an image-to-video tool that takes two photos. Make a few versions and keep the one where both faces stay most like you.",
+    "Add a funny sound or a chattering-teeth effect in your editing app.",
+    "Post it with a caption like \"every night from November to March\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the bedtime freeze",
+      "text": "Use these two photos: the first is Person A, the second is Person B. Make a 14-second vertical clip, filmed from straight above a bed at night with soft blue moonlight. Both lie under a thick white duvet. Person A's bare feet poke out the bottom and touch Person B's legs. Frost and blue ice spread fast over Person B until they are frozen stiff, eyes wide. Person B thaws, grabs a hair dryer and blows warm air on themselves, then aims it at Person A's toes. Next, Person B pulls on a wool hat, mittens and a scarf. Then Person B kindly holds Person A's feet in both hands to warm them, and the ice spreads over Person B all over again. Person A sleeps peacefully the whole time. Funny, cosy and gentle. Keep both faces the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation: the pet foot warmer",
+      "text": "Use these two photos: the first is me, the second is my dog or cat. Make a 12-second vertical clip, filmed from straight above a bed at night with soft blue moonlight. I lie under a thick duvet with my bare feet poking out. My pet curls up on my feet to keep them warm, then frost spreads over my pet until its fur is covered in sparkly ice and it looks at the camera, unimpressed. I wiggle my toes, the ice cracks off, and my pet tucks itself back under the duvet. Funny and gentle. Keep both faces and my pet's markings the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation: the frozen roommate on the couch",
+      "text": "Use these two photos: the first is Person A, the second is Person B. Make a 12-second vertical clip. Both sit at opposite ends of a couch under one big blanket, watching a movie in a dim room. Person A stretches out cold bare feet and rests them on Person B's lap. Frost spreads over Person B until they are frozen with a bowl of popcorn in their hands. Person A pulls a pair of thick wool socks out of a pocket, puts them on, and the ice melts away. They both laugh. Cosy, funny mood. Keep both faces the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the cosy-gear shop",
+      "text": "Use this photo of a person who agreed to be in our video. Make a 10-second vertical clip, filmed from straight above a bed at night with soft blue moonlight. The person lies under a duvet and their bare feet poke out. Frost creeps up their toes and they shiver. A pair of thick knit socks and a soft heated throw drop gently onto the bed from above. They pull on the socks, wrap up in the throw, and the frost melts away. They sigh and smile with their eyes closed. Warm, cosy feel. Keep their face the same as the photo. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Label your photos as Person A and Person B so the AI knows who has the cold feet.",
+    "An overhead view keeps both faces in the shot and makes the joke easy to read.",
+    "List each beat in order: feet, freeze, hair dryer, winter gear, freeze again.",
+    "Only use photos of people who said yes, and say it's made with AI."
+  ],
+  "tags": ["video", "couples", "winter", "funny", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "pet-santa-suit-cosy-living-room",
+  "title": "Santa suit pet: a hat drops on and your living room turns to Christmas",
+  "published": "2026-11-20T06:38:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Seedance", "Higgsfield"],
+  "summary": "One photo of your dog or cat on a rug becomes a short clip: a Santa hat lands, a red suit appears, the room fills with lights and snow, and your pet sits up proud.",
+  "why": "Remake the Trend's AI video list, updated November 19, 2026, added the \"Santa Hat Pet\" trend that day and counted 45 creators posting it in the week to November 19. Our other holiday pet packs are a profile picture, a snow dance and a carriage; this one dresses your pet up on the spot at home.",
+  "steps": [
+    "Pick a clear photo of your pet sitting or lying on a rug or floor, with the whole body in view.",
+    "Paste the main prompt into an image-to-video tool with your photo. Make a few versions and keep the one that looks most like your pet.",
+    "Add a cheerful holiday song in your editing app so the hat drop lands on a beat.",
+    "Post it with a caption like \"someone's ready for Christmas\" and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the Santa suit surprise",
+      "text": "Use this photo of my pet. Make a 10-second vertical clip. My pet sits on a plain rug at home. A red Santa hat with a white fluffy trim drops from above and lands on its head. My pet blinks. Then a soft sparkle sweeps over it and a little red Santa suit with white fur trim and a black belt appears on its body. At the same time the room changes into a cosy Christmas living room: a lit tree, a glowing fireplace and gentle snow falling past the window. My pet sits up tall and looks proudly at the camera. Warm, golden light. Steady camera at pet height. Keep my pet's face, fur colour and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: the elf helper",
+      "text": "Use this photo of my pet. Make a 10-second vertical clip. My pet lies on a rug at home. A green pointed hat with a small bell drops onto its head and jingles. A sparkle sweeps over it and a tiny green-and-red elf outfit with a striped collar appears. The room turns into a busy holiday workshop with wrapped gifts and twinkle lights. My pet stands up, wags or flicks its tail, and looks at the camera. Bright, warm light. Steady camera at pet height. Keep my pet's face, fur colour and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: two pets, matching suits",
+      "text": "Use this photo of my two pets. Make a 10-second vertical clip. They sit side by side on a rug. Two red Santa hats drop from above, one onto each head, a second apart. A sparkle sweeps over them and matching little red Santa suits with white trim appear. The room becomes a cosy living room with a lit tree and snow outside the window. They look at each other, then both turn to the camera. Warm, golden light. Steady camera at pet height. Keep both pets' faces, fur colours and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop pet or groomer",
+      "text": "Use this photo of our shop pet, or a client's pet with the owner's okay. Make a 10-second vertical clip. The pet sits on the floor of our shop next to the counter. A red Santa hat drops onto its head, a sparkle sweeps over it and a little red Santa suit appears. The shop fills with garland, twinkle lights and gentle falling snow by the front window. The pet sits up proudly and looks at the camera. Warm, welcoming light. Keep the pet's face, fur colour and markings the same as the photo. No text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "A photo taken at your pet's eye level gives the best result.",
+    "Describe the changes in order: hat, then suit, then room. The AI follows them like a recipe.",
+    "If the suit looks odd, ask for \"a simple red pet coat with white trim\" instead.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "pets", "christmas", "image-to-video", "business"]
+}
