@@ -1,0 +1,40 @@
+{
+  "slug": "night-road-lion-ride",
+  "title": "Night-road lion ride: a lion roars, you pat its mane and ride off",
+  "published": "2026-11-21T00:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "You walk down a dark, tree-lined road at night. A huge lion pads up and roars, you calmly pat its mane, climb on and ride it toward the camera. Made from one photo.",
+  "why": "Remake the Trend lists Riding Lion as the most-posted AI trend of the week, with 83 creators posting a version in the 7 days to November 20, 2026. It traces back to a TikTok post from November 13 that it says passed 730,000 plays in a day, and AI Trend Club lists 759K views on the original. Our lion selfie pack is a calm savanna photo; this one is a night-time video with a roar and a ride.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself standing, facing the camera.",
+    "Paste the main prompt into an image-to-video tool with your photo.",
+    "Check the lion stays calm and gentle. If it looks scary, add \"calm, friendly lion\" and try again.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the night-road ride",
+      "text": "Use this photo of me. Make a 10-second vertical clip. Night, on a quiet, dark road lined with tall trees, lit by soft streetlights. I walk slowly toward the camera, relaxed. A big, calm male lion with a thick golden mane pads out from the trees beside me and lets out one loud roar toward the sky. I don't flinch. I give its mane two gentle pats, swing one leg over its back and sit on it. The lion walks toward the camera with me riding it, and I grin. Phone camera held still at chest height, one continuous shot, no cuts. Realistic lighting. Keep my face and clothes the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: you and a friend",
+      "text": "Use these two photos of me and my friend. Make a 10-second vertical clip. Night, on a dark road lined with tall trees and soft streetlights. We walk side by side toward the camera. Two calm lions pad out from the trees, one on each side, and roar together. We look at each other, shrug, pat their manes and climb on. Both lions walk toward the camera with us riding them, and we give a small wave. Fixed camera at chest height, one continuous shot. Keep both our faces and clothes the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation: snowy winter road",
+      "text": "Use this photo of me in a winter coat. Make a 10-second vertical clip. Night, on a quiet snowy road through a pine forest, snowflakes falling under warm streetlights. I walk toward the camera. A calm lion with frost on its mane walks out of the trees and gives one big roar, its breath steaming in the cold. I brush the snow off its mane, climb on and ride it toward the camera, smiling. Fixed camera at chest height, one continuous shot. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the big arrival",
+      "text": "Use this photo of me holding my product. Make a 10-second vertical clip. Night, on a dark road lined with trees and soft streetlights. I walk toward the camera holding my product up. A calm lion pads up beside me and roars. I pat its mane, climb on, and ride toward the camera, still holding the product up proudly. Fixed camera at chest height, one continuous shot. Keep my face and the product the same as the photo. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Write \"calm\" and \"gentle\" for the lion so the clip feels fun, not scary.",
+    "A full-body photo gives the tool enough to show you climbing on.",
+    "Keep it to one shot. Asking for cuts often changes your face.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "lion", "animals", "night", "business"]
+}

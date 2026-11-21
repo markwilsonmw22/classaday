@@ -1,0 +1,40 @@
+{
+  "slug": "hanukkah-family-greeting-card",
+  "title": "Hanukkah greeting card: your family photo, glowing by the menorah",
+  "published": "2026-11-21T00:52:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Turn a family photo into a warm Hanukkah card: candlelight, a menorah in the window, blue and silver touches. Plus a pet version and a shop version.",
+  "why": "Hanukkah 2026 begins at sundown on Friday, December 4 and ends at nightfall on Saturday, December 12, according to Hebcal's holiday calendar. That gives you about two weeks to make and send a card. We didn't find view counts for a specific Hanukkah AI trend this year, so this is a seasonal pack, not a viral one.",
+  "steps": [
+    "Pick a clear photo of your family, or of you, where everyone's face is easy to see. Ask everyone in the photo if they're happy for you to use it.",
+    "Paste the main prompt into ChatGPT or Gemini with your photo.",
+    "If you want words on the card, add them yourself in a free design app so the spelling is right.",
+    "Send it to family and friends, or post it, and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: family by the window",
+      "text": "Use this photo of my family. Make a warm, square greeting card image. We sit close together on a sofa in a cosy living room in the evening. Behind us, a silver menorah with all its candles lit sits on a wide windowsill, and soft snow falls outside the window. The room glows with warm candlelight, with small touches of deep blue and silver: a blue knit blanket, a bowl of chocolate coins, a few spinning tops on the coffee table. Soft, natural photo style. Keep everyone's faces, hair and clothes the same as the photo. Leave a plain area at the top for a greeting. No text, no logos."
+    },
+    {
+      "label": "Variation: kitchen and latkes",
+      "text": "Use this photo of my family. Make a warm, square greeting card image. We stand together in a bright home kitchen, laughing, around a counter with a plate of golden potato pancakes, a bowl of applesauce and a tray of jam-filled doughnuts dusted with sugar. A lit menorah glows on the windowsill behind us. Warm, cosy evening light with blue and silver dish towels and napkins. Keep everyone's faces the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet",
+      "text": "Use this photo of my pet. Make a sweet, square greeting card image. My pet sits on a soft blue blanket on the floor of a cosy living room, wearing a small knitted blue and white scarf. Beside it is a spinning top and a few chocolate coins. A lit menorah glows on a shelf in the soft-focus background. Warm candlelight. Keep my pet's face, fur and markings the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: holiday window",
+      "text": "Use this photo of my shop front. Make a square holiday image for social media. Keep the shop exactly as it is, but it's evening and gently snowing. Add a lit silver menorah in the front window, soft strings of white lights, and a few blue and silver ribbons around the window frame. The shop glows warm and welcoming from inside. Realistic photo style. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "A menorah has eight candles in a row plus one helper candle, often set higher or apart. Check the picture, and ask for a fix if the count is off.",
+    "For a card that shows the right night, say how many candles are lit, for example \"three candles lit plus the helper candle\".",
+    "Add your greeting yourself after. AI tools often misspell words on images.",
+    "Only use photos of people who have said yes."
+  ],
+  "tags": ["hanukkah", "holiday", "family", "greeting-card", "business"]
+}
