@@ -1,0 +1,40 @@
+{
+  "slug": "your-song-cover-art-and-lyric-clip",
+  "title": "Your song, your cover: album art and a 15-second lyric clip from one photo",
+  "published": "2026-11-21T12:40:00Z",
+  "kind": "video",
+  "tools": ["Suno", "ChatGPT", "Gemini"],
+  "summary": "Turn a song you made into a matching album cover and a short lyric clip, using your own photo as the starting frame.",
+  "why": "Suno launched a feature called Visuals on November 19, 2026, as reported by Dataconomy. It makes album art, thumbnails and clips of up to 15 seconds for songs made on Suno, with optional lip-sync and lyric text, from a reference photo or a text prompt. It's brand new, so we didn't find view counts yet; this pack helps you try it first.",
+  "steps": [
+    "Pick 15 seconds of your song, ideally the chorus or the hook.",
+    "Use the cover prompt to make a square album cover from your own photo, in Suno's Visuals tab or in an image tool.",
+    "Use the cover as the first frame and paste the clip prompt. Turn lip-sync on only if your face is clear and facing the camera.",
+    "Check the lyric text for spelling, then post the clip with a link to the full song."
+  ],
+  "prompts": [
+    {
+      "label": "Cover prompt: album art from your photo",
+      "text": "Use my photo as the main subject. Make a square album cover. I'm standing alone in an empty street at blue hour, lit by one warm street lamp, light snow in the air. Soft film grain, slightly faded colours, deep blue shadows and amber highlights. Leave clear space at the top for the title \"[your song title]\" in simple, thin, white capital letters. Keep my face the same as the photo. No other text, no logos."
+    },
+    {
+      "label": "Clip prompt: 15-second lyric video",
+      "text": "Start from this album cover as the first frame. Slow push-in toward me over 15 seconds. Snow drifts down and the street lamp flickers softly in time with the beat. I look up and sing the lyrics to the camera on the chorus. Show each lyric line in thin white letters near the bottom, one line at a time, fading in and out with the vocals. Keep the colours and look of the cover. Vertical 9:16."
+    },
+    {
+      "label": "Variation: a pet as the singer",
+      "text": "Use my pet's photo as the main subject. Make a bright, playful square album cover: my pet sits on a tiny stage with a round mic in front of it, under one pink spotlight, confetti hanging in the air. Then animate it for 12 seconds: my pet tilts its head, then \"sings\" the chorus with small mouth movements, and the confetti falls on the last beat. Lyric text in bold rounded white letters at the bottom. No logos."
+    },
+    {
+      "label": "Variation for a small business: a jingle clip",
+      "text": "I run a small coffee shop in Canada and made a 15-second jingle about our winter drinks. Use this photo of our counter as the first frame. Make a cosy vertical clip: steam rises from two mugs, the camera slides slowly along the counter, and warm light spills from the window. Show the jingle lyrics one line at a time in clean white letters. End on our shop name, \"[your shop name]\", in simple letters for two seconds. No prices, no other text, no logos."
+    }
+  ],
+  "tips": [
+    "Only use songs and photos that are yours. Suno says it blocks artist likenesses and copyrighted work.",
+    "Suno says prompts from other video tools may not work the same way in Visuals, so keep prompts short and change one thing at a time.",
+    "Visuals uses its own credits, separate from song credits. Make the cover first, then spend credits on the clip.",
+    "AI lyric text can misspell words. Use the custom lyric text setting if the words come out wrong."
+  ],
+  "tags": ["music", "video", "album-art", "lyric-video", "business"]
+}

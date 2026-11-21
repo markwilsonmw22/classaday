@@ -1,0 +1,40 @@
+{
+  "slug": "givingtuesday-cause-post",
+  "title": "GivingTuesday post: share the cause you care about, in your own words",
+  "published": "2026-11-21T12:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Write a short, honest GivingTuesday post and a matching graphic for a cause you support, or for your shop's give-back day on December 1.",
+  "why": "GivingTuesday falls on Tuesday, December 1, 2026. CanadaHelps runs a GivingTuesday 2026 hub with resources for charities, and Canadian charities are already setting up GivingTuesday 2026 campaign pages. We didn't find view counts for a specific AI trend, so this is a seasonal pack, not a viral one.",
+  "steps": [
+    "Pick one cause or charity and find its real website or donation page.",
+    "Paste the post prompt and fill in why it matters to you. Use only facts from the charity itself.",
+    "Paste the graphic prompt into an image tool to make a simple square image to go with it.",
+    "Check every name, date and link, then post on December 1."
+  ],
+  "prompts": [
+    {
+      "label": "Post prompt: why I give",
+      "text": "Help me write a short GivingTuesday post for Instagram and Facebook, for Tuesday, December 1. The cause is [name of the charity or cause]. It matters to me because [one or two sentences in your own words]. Write it in a warm, plain voice, under 90 words. Start with a short personal line, then say what the charity does in one sentence, then ask friends to give, volunteer or share if they can. No guilt, no pressure, no made-up numbers or facts. End with a spot for the link: [link]."
+    },
+    {
+      "label": "Graphic prompt: a simple square image",
+      "text": "Make a square social media graphic for GivingTuesday on December 1. Soft, warm style: two hands holding a small glowing paper heart, on a cream background with a few hand-drawn snowflakes. Warm red and soft gold colours. Large, clean text at the top: \"GivingTuesday · December 1\". Small text at the bottom: \"[cause name]\". Spell every word correctly. No other text, no logos."
+    },
+    {
+      "label": "Variation: give without money",
+      "text": "I want to take part in GivingTuesday on December 1 but can't donate this year. Give me 10 ways to give back in my Canadian town that cost little or nothing, like volunteering, donating items or helping a neighbour. Keep each idea to one short sentence. Then write a 50-word post inviting friends to pick one and join me."
+    },
+    {
+      "label": "Variation for a small business: a give-back day",
+      "text": "I run a small bookshop in Canada. On GivingTuesday, December 1, we are [describe what you are really doing, for example: collecting new books for a local literacy group]. Write a short, honest post announcing it, under 80 words. Say clearly what we're doing, who it helps, and how people can join in. No fake urgency, no exaggerated claims, no made-up totals. Add a friendly line thanking customers."
+    }
+  ],
+  "tips": [
+    "Link straight to the charity's own page so people know the money goes to the right place.",
+    "Chatbots can get facts about charities wrong. Copy any facts from the charity's website, not from the AI.",
+    "If you run a business give-back, say exactly what you'll give and only promise what you'll really do.",
+    "Short and personal works better than a long list of facts."
+  ],
+  "tags": ["givingtuesday", "holiday", "charity", "social-post", "business"]
+}
