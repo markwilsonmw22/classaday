@@ -1,0 +1,40 @@
+{
+  "slug": "motorbike-to-mecha-armour",
+  "title": "Mecha ride: you on your motorbike, then suited up in matching robot armour",
+  "published": "2026-11-21T18:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "A quick before-and-after: you sit on a motorbike in the street, then you and the bike snap into shiny robot armour in the same colours. Made from one photo.",
+  "why": "AI Trend Club lists \"Mecha Ride\" as a new trend. It traces it to a TikTok clip posted November 20, 2026, which it counted at about 441K views on November 21, up from about 74K the night before. It's a 15-second street-to-armour reveal. Our other ride packs are animals (a lion, a pterodactyl); this one turns you and your bike into a robot suit.",
+  "steps": [
+    "Pick a clear photo of yourself sitting on a motorbike or scooter, outside, with your face visible.",
+    "Paste the main prompt into an image-to-video tool with your photo. Name the real colours of your bike.",
+    "Check that your face stays the same after the change. If it drifts, try again with \"keep my face uncovered and the same\".",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: street to armour",
+      "text": "Use this photo of me sitting on my motorbike. Make a 10-second vertical clip. Daytime, on a normal city street. For the first 3 seconds I sit on the bike, look at the camera and nod. Then, with a quick flash of light and a metal clanking sound, panels unfold from the bike and wrap around me. In under a second I'm wearing sleek, futuristic robot armour in the same colours as my bike, with glowing lines on the chest and arms. The bike also gains armour plates. My face stays visible and the same, with an open visor. I rev once and grin. Fixed phone camera at eye level, one continuous shot. Realistic lighting. No text, no logos."
+    },
+    {
+      "label": "Variation: two friends, two colours",
+      "text": "Use these two photos of me and my friend, each on our own motorbike, parked side by side on a street. Make a 10-second vertical clip. We look at each other and nod. Then, one after the other, panels unfold from each bike and lock around us. I end up in shiny robot armour matching my bike's colours, and my friend in armour matching theirs. Both our faces stay visible and the same, with open visors. We give a thumbs up together. Fixed camera, one continuous shot, realistic lighting. No text, no logos."
+    },
+    {
+      "label": "Variation: winter scooter",
+      "text": "Use this photo of me on a small scooter in a snowy parking lot, wearing a winter coat. Make a 10-second vertical clip. Light snow is falling. I give a small shrug at the camera. Then frosty blue panels slide out of the scooter and click around me, until I'm wearing chunky, rounded robot armour in icy blue and white, with a warm orange glow on the chest. Snow lands and melts on the armour. My face stays visible and the same. I give a slow wave. Fixed camera, one continuous shot. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: delivery mode on",
+      "text": "Use this photo of me on my delivery scooter, holding a plain paper bag. Make a 10-second vertical clip. On the street outside my shop, I hold up the bag and smile. Then panels unfold from the scooter and lock around me into sleek robot armour in my shop's colours: [your colours]. The bag stays in my hand. My face stays visible and the same. I give a quick salute and the clip ends. Fixed camera, one continuous shot. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Only film or use photos of a bike that is parked. Never shoot this while riding.",
+    "Say \"open visor\" or \"face visible\" so the armour doesn't hide who you are.",
+    "Describe the armour by colours and shapes. Don't name robots from shows, films or games.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "transformation", "motorbike", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "small-business-saturday-shout-out",
+  "title": "Small Business Saturday: shout out the local shops you love",
+  "published": "2026-11-21T18:50:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Write a short post and a simple graphic that thank the local shops you love, or invite your own customers in, for Small Business Saturday on November 28.",
+  "why": "Small Business Saturday falls on November 28, 2026, and the Canadian Federation of Independent Business (CFIB) has posted its 2026 Small Business Saturday kits for shops, including email templates, an event checklist and a social media guide. We didn't find view counts for a specific AI trend, so this is a seasonal pack, not a viral one. Our Black Friday pack is about honest deals; this one is about thanking local shops.",
+  "steps": [
+    "Write down 3 to 5 local shops you really like, and one true thing you love about each.",
+    "Paste the shout-out prompt into a chatbot and fill in your list.",
+    "Paste the graphic prompt into an image tool for a simple square image to go with it.",
+    "Check every shop name and tag the shops' real accounts before you post on November 28."
+  ],
+  "prompts": [
+    {
+      "label": "Shout-out prompt: my favourite local shops",
+      "text": "Help me write a short Instagram and Facebook post for Small Business Saturday, November 28. I want to thank some local shops in my Canadian town. Here they are, with one true thing I love about each: [shop 1: what I love], [shop 2: what I love], [shop 3: what I love]. Write it in a warm, plain voice, under 100 words. One short line per shop. Only use the details I gave you, and don't invent anything. End by asking friends to share their own favourite local spot in the comments."
+    },
+    {
+      "label": "Graphic prompt: a simple square image",
+      "text": "Make a square social media graphic for Small Business Saturday. Cosy, hand-drawn style: a short row of small, colourful shopfronts on a snowy main street, with warm light in the windows and a few string lights overhead. Soft red, cream and forest green colours. Large, clean text at the top: \"Shop local · Saturday, November 28\". Spell every word correctly. No other text, no logos, no real shop names."
+    },
+    {
+      "label": "Variation: a local shopping day plan",
+      "text": "I want to spend Small Business Saturday, November 28, shopping local in [your town or neighbourhood]. I have a budget of [amount] and need gifts for [who you're buying for]. Give me a simple plan for the day: what kinds of local shops to look for, in what order, and a gift idea for each person. Don't name specific shops, because I'll pick real ones myself."
+    },
+    {
+      "label": "Variation for a small business: come say hi",
+      "text": "I run [type of shop] in [town], Canada. On Small Business Saturday, November 28, we are [describe what you're really doing, for example: serving free hot cider and wrapping gifts for free]. Write a short, friendly post inviting customers in, under 80 words. Say clearly what's happening, the hours: [hours], and the address: [address]. No fake urgency, no exaggerated claims, no made-up numbers. End with a warm thank-you to our regulars."
+    }
+  ],
+  "tips": [
+    "Tag the real shops you mention. It helps them more than the post itself.",
+    "Keep each shout-out to one true detail. Specific beats long.",
+    "If you're a shop owner, only promise what you'll really do on the day.",
+    "Check that the image tool spelled the date right before you post."
+  ],
+  "tags": ["small-business-saturday", "shop-local", "holiday", "social-post", "business"]
+}
