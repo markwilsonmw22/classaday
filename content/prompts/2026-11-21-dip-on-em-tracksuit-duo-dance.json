@@ -1,0 +1,40 @@
+{
+  "slug": "dip-on-em-tracksuit-duo-dance",
+  "title": "The dip: two friends in matching tracksuits hop, clap and drop on the beat",
+  "published": "2026-11-21T06:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "You and a friend in matching animal-print tracksuits dance in a big, empty hall: hops, claps, a low dip on the beat, then a cool wave. Made from photos.",
+  "why": "Remake the Trend added the \"Dip On Em\" dance trend on November 20, 2026 and counted 18 creators posting it that week: hops, claps, a dip on the beat and a wave. Jump On The Trend's 2026 list dates it to November 19 at about 1.2M views, with two dancers in matching leopard tracksuits. Our parking-garage dance is a solo spin with a handbag; this one is a matching duo and the big dip.",
+  "steps": [
+    "Pick a clear, full-body photo of each of you, standing.",
+    "Paste the main prompt into an image-to-video tool with both photos.",
+    "Add a song you're allowed to use when you post. The dip should land on a strong beat, so line it up in your editor.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the airport hall duo",
+      "text": "Use these two photos of me and my friend. Make an 11-second vertical clip. We stand side by side in a wide, bright, empty airport hall with shiny floors and big windows. We both wear matching leopard-print tracksuits and white sneakers. We dance in sync to an upbeat hip-hop beat: two small hops forward, two claps above our heads, then we both dip low, knees bent, on the beat. We pop back up, look at the camera and give one slow, cool wave. Fixed camera at chest height, one continuous shot, full bodies in frame. Realistic. Keep both our faces the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation: night car park, solo",
+      "text": "Use this full-body photo of me. Make an 11-second vertical clip in a quiet underground car park at night, lit by cool overhead lights. I wear a matching animal-print tracksuit. I dance to an upbeat hip-hop beat: two hops, two sharp claps, a deep dip low on the beat, then I stand up and wave at the camera with a small smirk. Fixed camera, one continuous shot, my full body in frame. Realistic. Keep my face the same as the photo. No text, no logos."
+    },
+    {
+      "label": "Variation: winter tracksuits in the snow",
+      "text": "Use these two photos of me and my friend. Make an 11-second vertical clip on a snowy city sidewalk at dusk with warm shop lights behind us. We wear matching puffy, snow-white tracksuits and toques. We hop twice, clap twice, dip low on the beat so a little snow puffs up, then pop up and wave. Fixed camera, one continuous shot, full bodies in frame. Realistic. Keep both our faces the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the team dip",
+      "text": "Use these photos of me and my team. Make an 11-second vertical clip inside our shop, cleared out so there's room to dance. We all wear matching tracksuits in our shop colour. We stand in a line and dance in sync: two hops, two claps, a low dip on the beat, then we stand up and wave at the camera together. Fixed camera, one continuous shot, everyone's full body in frame. Realistic. Keep everyone's faces the same as the photos. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Full-body photos matter. The dip won't look right if feet are cut off.",
+    "Ask for \"in sync\" so you both move at the same time.",
+    "If the moves drift apart, shorten the clip to the hop, clap and dip only.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "dance", "friends", "business"]
+}

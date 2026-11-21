@@ -1,0 +1,40 @@
+{
+  "slug": "advent-calendar-24-little-doors",
+  "title": "Advent calendar: 24 little doors, one small idea behind each",
+  "published": "2026-11-21T06:42:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Plan 24 small, cosy things to do before Christmas, then turn them into a printable advent calendar with numbered doors. Works for families, friends and shops.",
+  "why": "Advent starts on Sunday, November 29, 2026 and runs to December 24, according to the Anglican Church of Canada's church-year calendar, and most advent calendars start on December 1. That gives you about a week to plan one. We didn't find view counts for a specific AI advent calendar trend this year, so this is a seasonal pack, not a viral one.",
+  "steps": [
+    "Paste the planning prompt into a chatbot and change the details to fit your family or shop.",
+    "Read the list and swap out anything that doesn't suit you.",
+    "Paste the calendar prompt into an image tool with your final list. Check every number from 1 to 24 is there once.",
+    "Print it, or post one door a day."
+  ],
+  "prompts": [
+    {
+      "label": "Planning prompt: 24 small ideas",
+      "text": "Help me plan an advent calendar for December 1 to 24. It's for my family: two adults and two kids, ages 6 and 9, in a small town in Canada. Give me 24 small things to do, one per day. Mix it up: cosy at-home ideas, little acts of kindness, winter outdoor ideas and simple crafts. Each one should take 30 minutes or less and cost little or nothing. Put the busier ideas on weekends. Write each one in 8 words or fewer, numbered 1 to 24."
+    },
+    {
+      "label": "Calendar prompt: the printable",
+      "text": "Make a printable advent calendar, portrait, letter size. Draw a cosy winter house front with 24 small doors and windows, each with a clear number from 1 to 24 in a random order. Soft hand-painted look, warm red, forest green and cream, a little snow on the roof and window sills, warm light glowing from inside. Under each number, in small, neat letters, write the matching idea from this list: [paste your 24 ideas]. Leave a white border for printing. Spell every word correctly. No logos."
+    },
+    {
+      "label": "Variation: a photo for each door",
+      "text": "Use this photo of my family. Make a square image of a wooden advent calendar box with 24 small drawers, each with a number from 1 to 24. Drawer 1 is open and has a tiny framed version of our family photo inside, with a sprig of pine and a ribbon. Warm, cosy light, a soft blurry living room with string lights behind. Keep our faces the same as the photo. No text other than the numbers, no logos."
+    },
+    {
+      "label": "Variation for a small business: 24 days of posts",
+      "text": "I run a small bakery in Canada. Plan a 24-day advent calendar of social posts for December 1 to 24. Each day, give me a door number, a short post idea, and one simple photo to take. Mix behind-the-scenes, tips, team shout-outs and a few small, honest in-store offers. No fake urgency, no made-up reviews or numbers. Keep each idea to two short sentences."
+    }
+  ],
+  "tips": [
+    "Image tools sometimes skip or repeat numbers. Count 1 to 24 before you print.",
+    "If the small text comes out messy, make the calendar with numbers only and write the ideas on sticky notes behind each door.",
+    "Keep a few easy, rainy-day ideas so a busy week doesn't break the chain.",
+    "For a shop, only promise offers you'll really run."
+  ],
+  "tags": ["holiday", "christmas", "advent", "printable", "business"]
+}

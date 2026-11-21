@@ -1,0 +1,40 @@
+{
+  "slug": "kiss-your-phone-splash-reveal",
+  "title": "Kiss your phone: a splash of water, then your own photo on the screen",
+  "published": "2026-11-21T06:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "One of you blows a kiss at a phone screen. The other throws a cup of water in protest, picks up the phone and finds their own photo on it. Made from two photos.",
+  "why": "Remake the Trend added the \"Kiss Your Phone\" trend on November 20, 2026 and counted 9 creators posting it that week. Jump On The Trend's 2026 list dates it to November 19 at about 991K views. Our kiss cam pack is on a stadium screen; this one is a small jealousy joke at home with a sweet twist.",
+  "steps": [
+    "Pick two clear photos: one of you and one of your partner or friend, both from the waist up.",
+    "Paste the main prompt into an image-to-video tool with both photos.",
+    "Check the last shot: the phone screen should show the second person's own photo. If it shows a stranger, add \"the screen shows the same person who threw the water\" and try again.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the splash and the reveal",
+      "text": "Use these two photos: the first person is me, the second is my partner. Make a 9-second vertical clip in a bright, cosy living room. I sit on the couch holding my phone, smiling at the screen, and give it a small, silly kiss. My partner walks in, sees this, gasps, and tosses a cup of water at me. It splashes, I freeze, dripping and shocked. My partner grabs the phone, looks at the screen and their face softens. Close-up of the phone: the screen shows a photo of my partner. They laugh and give me a hug. Fixed camera, natural light, realistic. Keep both our faces and clothes the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation: best friends",
+      "text": "Use these two photos of me and my best friend. Make a 9-second vertical clip in a café. I hold my phone and blow a kiss at the screen. My friend rolls their eyes and flicks water from a glass at me. I sputter and laugh. My friend picks up my phone and the close-up shows a photo of the two of us together. They put a hand on their heart and we high-five. Fixed camera, warm light, realistic. Keep both our faces the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet is jealous",
+      "text": "Use this photo of me and this photo of my dog. Make a 9-second vertical clip in a cosy kitchen. I hold my phone and give the screen a little kiss. My dog trots in, sees this, and knocks over its water bowl so a small splash hits my socks. I gasp. My dog noses the phone and the close-up shows a photo of the dog on the screen. The dog wags its tail and I scoop it up for a cuddle. Fixed camera, realistic. Keep my face and my dog the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the one you love",
+      "text": "Use these two photos: me, and my co-worker. Make a 9-second vertical clip in my shop. I stand at the counter holding my phone and give the screen a dreamy kiss. My co-worker splashes me with a spray bottle of water. I freeze, dripping. My co-worker grabs the phone and the close-up shows a photo of our best-selling product. They nod slowly, like they understand, and we both laugh. Fixed camera, bright light, realistic. Keep both faces and the product the same as the photos. No readable text, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Only use photos of people who have said yes to being in the video.",
+    "Ask for \"a small splash\" so it stays playful, not messy.",
+    "The close-up of the phone is the punchline. Hold it for a full second.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "couples", "funny", "business"]
+}
