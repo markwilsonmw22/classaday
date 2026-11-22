@@ -1,0 +1,39 @@
+{
+  "slug": "needs-more-salt-lid-trick",
+  "title": "\"Needs more salt\": the lid stays on, and the chef's kiss lands anyway",
+  "published": "2026-11-22T18:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Gemini", "ChatGPT"],
+  "summary": "One person tastes the soup and asks for salt. The cook hands back a closed jar, fakes the sprinkle, and the second taste gets a chef's kiss.",
+  "why": "Starrd's monthly AI video trend roundup, updated in November 2026, says the original TikTok of this kitchen joke was posted on November 18, 2026 and passed 1.3 million plays and 53,000 likes in its first day. The roundup lists an AI version made from two photos, with a pet able to play the picky taster.",
+  "steps": [
+    "Pick two clear photos: the taster and the cook, with faces easy to see. Get a yes from the other person first.",
+    "Paste the main prompt into an image-to-video tool with both photos. Or use the pet variation with one photo of you and one of your pet.",
+    "Add a light, upbeat sound in the app, keep the clip around 10 to 20 seconds, and post it saying it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the closed salt jar",
+      "text": "Use the two people in these photos. Keep their faces, hair and bodies exactly the same, in their own clothes. A warm, cosy home kitchen at dinner time, a pot of soup steaming on the stove. Make a 12-second vertical clip, filmed like a phone on the counter. Seconds 0 to 3: person one tastes the soup from a wooden spoon, pauses, and says \"needs more salt\". Seconds 3 to 6: they turn away to grab bowls. Person two quietly twists the lid of a small glass salt jar shut and looks at the camera with a tiny smirk. Seconds 6 to 9: person one turns back, and person two pinches the air above the pot and pretends to sprinkle, the jar still closed on the counter. Seconds 9 to 12: person one tastes again, smiles big, and gives a chef's kiss. Person two nods, straight-faced. Realistic, gentle comedy. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet is the picky taster",
+      "text": "Use the person and the pet in these photos. Keep them exactly as they look. A bright home kitchen. Make a 10-second vertical clip. The pet sits on a chair at the table in front of a small bowl and sniffs it, then looks up at the person with a slow, unimpressed stare. The person picks up a closed salt jar, turns their back to the pet, and pretends to sprinkle with empty fingers. They slide the same bowl back. The pet sniffs again, perks its ears up and gives a happy little head tilt. The person winks at the camera. Cute and funny. No text, no logos."
+    },
+    {
+      "label": "Text prompt: other swaps for the same joke",
+      "text": "Give me 8 ideas for a 10-second kitchen or home video with the same joke: someone asks for one small change, the other person secretly changes nothing, and the first person says it's perfect now. Examples: 'needs more salt', 'turn the music down a bit', 'move the picture a little to the left'. Keep every idea kind and family-friendly, with one line of dialogue each."
+    },
+    {
+      "label": "Variation for a small business: the 'secret ingredient'",
+      "text": "Use the two people in these photos of me and my coworker [upload]. Keep our faces and bodies the same. We stand behind the counter of my small cafe or restaurant, in our own aprons. Make a 12-second vertical clip. A customer-style taste test: my coworker tastes our [your real dish] and says \"needs more salt\". I hold up a closed salt shaker, pretend to sprinkle, and slide it back. My coworker tastes again and gives a chef's kiss. I look at the camera and say \"it was already perfect\". Warm lighting, light comedy. No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Keep the closed jar in shot when the fake sprinkle happens. That's the whole joke.",
+    "Short lines work best. 'Needs more salt' and a chef's kiss are enough.",
+    "For the business version, only show a dish you really sell.",
+    "Say it's made with AI, and only use photos of people who agreed."
+  ],
+  "tags": ["video", "image-to-video", "couples", "funny", "business"]
+}

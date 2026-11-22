@@ -1,0 +1,39 @@
+{
+  "slug": "break-a-leg-crab-coach",
+  "title": "\"Break a leg, crab!\": you coach two crabs like it's the big game",
+  "published": "2026-11-22T18:50:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Gemini"],
+  "summary": "In sunglasses and work gloves, you shout pep talk at two little crabs on the kitchen table like a sports coach, then cheer as they scuttle off.",
+  "why": "Starrd's monthly AI video trend roundup, updated in November 2026, says the original TikTok, a man shouting \"Go! Break your leg!\" at two crabs on a kitchen table like a coach, was posted on November 9, 2026 and reached 14.5 million plays and 2.8 million likes. The roundup lists an AI version made from one photo, with a pet version too.",
+  "steps": [
+    "Pick one clear photo of yourself, face easy to see. Sunglasses and gloves can be added by the prompt.",
+    "Paste the main prompt into an image-to-video tool with your photo. Keep it around 10 seconds.",
+    "Add loud, happy sports-crowd energy with your own voice or a sound from the app, then post it saying it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the kitchen-table pep talk",
+      "text": "Use the person in this photo. Keep their face, hair and body exactly the same, and add dark sunglasses and bright lime-green work gloves. Make a 10-second vertical clip, filmed from a phone lying flat on a kitchen table, looking up. Two small blue crabs sit on the table. Seconds 0 to 4: the person leans over the crabs and chops one gloved hand through the air like a coach, shouting \"Go! Break a leg! Go!\". Seconds 4 to 7: the crabs wave their claws and start scuttling sideways across the table. Seconds 7 to 10: the person jumps back, pumps both fists and cheers like their team just scored. Loud, cheerful, cartoon-like energy, and the crabs are fine and happy the whole time. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet gets the pep talk",
+      "text": "Use the person and the pet in these photos. Keep them exactly as they look. Add sunglasses and a whistle on a string to the person. A living room with a small finish line made of tape on the floor. Make a 10-second vertical clip. The person crouches next to the pet like a coach, points down the hallway and shouts \"Go! You've got this! Go!\". The pet looks at them, looks at the camera, then trots slowly past the tape line. The person throws their arms up and celebrates like it's a world record. Funny and warm. No text, no logos."
+    },
+    {
+      "label": "Text prompt: write your coach lines",
+      "text": "Write 6 short, shouty pep-talk lines a dramatic sports coach might yell at something tiny and silly, like two crabs, a slow robot vacuum, or a houseplant that needs to grow. Each line under 6 words. Keep it kind and family-friendly, and end with one big celebration line."
+    },
+    {
+      "label": "Variation for a small business: coach your launch",
+      "text": "Use the person in this photo of me [upload]. Keep my face and body the same, with sunglasses and work gloves. I stand behind the counter of my shop, leaning over a small box of our new [your real product]. Make a 10-second vertical clip. I chop the air like a sports coach and shout \"Go! Sell out! Go!\" at the box. Then I slide the box toward the camera and cheer with both fists up. Bright, fun lighting. No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Make it with AI only. Please don't handle real live animals to copy the clip.",
+    "The low camera on the table sells the joke. Keep that angle in the prompt.",
+    "Short shouted lines land better than a long speech.",
+    "Say it's made with AI, and only use photos of people who agreed."
+  ],
+  "tags": ["video", "image-to-video", "funny", "animals", "business"]
+}
