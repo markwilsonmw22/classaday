@@ -1,0 +1,40 @@
+{
+  "slug": "you-are-nice-pet-paws-together",
+  "title": "\"You are nice, you are pretty\": your pet, paws together, soaks up the compliments",
+  "published": "2026-11-22T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Your cat or dog sits up on the sofa with its front paws pressed together, stares at you with huge eyes, tilts its head and melts into a happy squint.",
+  "why": "Remake the Trend added this trend on November 21, 2026 and counted 53 creators posting an AI version in the 7 days to November 21. It traces it to a TikTok clip from November 14 that had about 1.8M views when it checked on November 21. The clips are set to a sweet, high voice telling the pet it's nice, pretty and a good friend. Our other pet packs are big dances and stunts; this one is a quiet, cute close-up.",
+  "steps": [
+    "Pick a clear photo of your pet, ideally sitting, with its face and eyes easy to see.",
+    "Paste the main prompt into an image-to-video tool with the photo.",
+    "Add a sweet sound in the app, or record your own voice telling your pet what you love about it.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: paws together on the sofa",
+      "text": "Use the pet in this photo. Keep its face, fur colour and markings exactly the same. Make a 10-second vertical clip in a quiet living room. The pet sits upright on a soft olive-green sofa cushion, with daylight from a window on one side and a softly blurred background. Fixed camera at the pet's eye level, close up. Seconds 0 to 3: the pet sits up with its front paws pressed together at its chest and looks straight into the camera with wide, shiny eyes, its mouth moving a tiny bit as if listening. Seconds 3 to 5: it blinks slowly and tilts its head. Seconds 5 to 7: its eyes go very wide and its ears perk forward. Seconds 7 to 10: its eyes half close into a happy, sleepy squint and it sways gently. Natural, realistic movement. No text, no logos."
+    },
+    {
+      "label": "Variation: two pets, side by side",
+      "text": "Use the two pets in this photo. Keep each face, fur colour and markings the same. Make a 10-second vertical clip. Both sit side by side on a cosy bed with a knitted blanket, paws pressed together at their chests, looking into the camera with big eyes. One tilts its head left, the other tilts right. Then both blink slowly and settle into the same happy squint at the same time. Soft morning light, fixed close-up camera, realistic. No text, no logos."
+    },
+    {
+      "label": "Variation: holiday sweater edition",
+      "text": "Use the pet in this photo. Keep its face, fur and markings the same, and dress it in a small red-and-white knitted holiday sweater. Make a 10-second vertical clip. It sits on a plaid blanket in front of a blurred Christmas tree with warm lights, front paws pressed together, gazing into the camera with wide eyes. It tilts its head, its ears perk up, then its eyes slowly close into a contented squint. Warm, soft light, fixed close-up camera. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop pet says thanks",
+      "text": "Use this photo of our shop cat or dog [upload]. Keep its face and markings exactly the same. Make a 10-second vertical clip. It sits on the shop counter next to a small plant, front paws pressed together, looking up at the camera with big eyes. It tilts its head, then slowly squints happily, as if hearing a compliment. Shelves softly blurred behind it, warm light, fixed close-up camera. No readable text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Close, eye-level photos work best. The whole joke is in the eyes.",
+    "Your own voice saying kind things to your pet makes it yours, and avoids sound rights issues.",
+    "If the paws look odd, try \"front paws gently touching at the chest\".",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "pets", "cute", "image-to-video", "business"]
+}

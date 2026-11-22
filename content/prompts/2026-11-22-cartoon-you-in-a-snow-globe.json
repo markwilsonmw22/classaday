@@ -1,0 +1,40 @@
+{
+  "slug": "cartoon-you-in-a-snow-globe",
+  "title": "Cartoon you in a snow globe: the camera pushes in and you wave",
+  "published": "2026-11-22T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Turn one photo into a cute 3D cartoon version of you inside a glass snow globe. Snow falls, the lights twinkle, the camera moves in and you wave.",
+  "why": "Remake the Trend added this one on November 21, 2026 and ranks it its top TikTok trend of the week, with 78 creators posting a version in the 7 days to November 21. It traces it to a TikTok clip posted November 15. Our nice-list pack puts a realistic photo of you in a still snow globe; this one is a moving clip of you as a soft 3D cartoon figure.",
+  "steps": [
+    "Pick a clear, well-lit photo of yourself (or you and someone who agreed, or your pet) with faces easy to see.",
+    "Paste the main prompt into an image-to-video tool with your photo. Name your real hair colour and outfit if the tool gets them wrong.",
+    "If the figure doesn't look like you, try again with \"keep my face shape, hair and glasses the same\".",
+    "Post it as a holiday greeting and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: you in the globe",
+      "text": "Use the person in this photo. Turn them into a cute, rounded 3D animated cartoon figure with big friendly eyes, keeping their face shape, hair, skin tone and outfit recognisable. Place the figure inside a glass Christmas snow globe on a silver snowflake-shaped base. Inside the globe: two small decorated pine trees with warm lights, a snowman in a knitted scarf and a few wrapped presents. The globe sits on a wooden table in front of a window showing a starry winter night. Make a 10-second vertical clip. Seconds 0 to 3: snow drifts down inside the globe, the lights twinkle and the figure looks around. Seconds 3 to 6: the camera slowly pushes in while the figure looks up at the snow and smiles. Seconds 6 to 10: the figure turns to the camera and waves, and the snowman tilts its head. Soft, warm light, smooth movement. No text, no logos."
+    },
+    {
+      "label": "Variation: the two of you",
+      "text": "Use these two people from my photo. Turn them into cute, rounded 3D cartoon figures with big eyes, keeping each face, hairstyle and outfit recognisable. Put them side by side inside a glass snow globe with a tiny snowy cabin, a pine tree with warm lights and falling snow. The globe sits on a windowsill with blurred fairy lights behind it. Make a 10-second vertical clip. They look up at the snow, then turn to each other and laugh, then both wave at the camera as it slowly moves in. Gentle, cosy light. No text, no logos."
+    },
+    {
+      "label": "Variation: your pet in the globe",
+      "text": "Use the pet in this photo. Turn it into a cute, fluffy 3D cartoon version with big shiny eyes, keeping its fur colours and markings the same. Put it inside a glass snow globe on a small mound of snow, next to a little pine tree and a red present. Make a 10-second vertical clip. Snow swirls around the pet. It tries to catch a snowflake with its nose, sneezes softly, then sits and looks at the camera as the camera slowly pushes in. Warm, soft light. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: your shop in the globe",
+      "text": "Use this photo of my shop front [upload]. Turn it into a tiny, cute 3D cartoon model of the building inside a glass snow globe, with snow on the roof, warm light in the windows and a little wreath on the door. Add a small cartoon figure of me waving from the doorway, based on this photo of me [upload]. Make a 10-second vertical clip: snow falls, the windows glow, the camera slowly pushes in and the figure waves. A small plaque on the base says \"[your real holiday hours or message]\". No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Describe the look as \"cute, rounded 3D cartoon\". Don't name film studios or their characters.",
+    "A front-facing photo works best. Side angles make the cartoon look less like you.",
+    "Keep the clip short. Ten seconds is enough for the push-in and the wave.",
+    "Only use photos of people who are happy to be in it, and say it's made with AI."
+  ],
+  "tags": ["video", "christmas", "holiday", "image-to-video", "business"]
+}
