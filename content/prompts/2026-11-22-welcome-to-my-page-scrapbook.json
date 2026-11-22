@@ -1,0 +1,40 @@
+{
+  "slug": "welcome-to-my-page-scrapbook",
+  "title": "\"Welcome to my page\": your photo as a digital scrapbook intro",
+  "published": "2026-11-22T12:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Turn one photo of you into a cut-and-paste scrapbook page that says hello to new followers, then bring it to life as a short intro clip.",
+  "why": "Virlo's trend page, updated November 22, 2026, lists this as a fresh TikTok format spotted about 12 days earlier, with 197 creators posting it in the last 7 days. Creators use AI or a video template to turn a photo into a scrapbook-style intro that opens with \"Welcome to my page\". We didn't have a scrapbook or page-intro pack yet.",
+  "steps": [
+    "Pick a clear, well-lit photo of yourself, and jot down 3 or 4 small things about you (a hobby, a favourite snack, your city, what you post).",
+    "Paste the main prompt into an image tool with your photo, adding your little facts.",
+    "If you want motion, put the finished page into an image-to-video tool with the video prompt.",
+    "Pin it as your first post and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the scrapbook page",
+      "text": "Use the person in this photo. Keep their face, hair and features exactly the same. Make a vertical 9:16 digital scrapbook page on cream paper with a soft grain. Cut the person out with a rough white paper edge and stick them in the middle with two strips of washi tape. Across the top, write \"welcome to my page\" in cut-out paper letters of different colours and sizes. Around the photo, add small hand-drawn doodles, little stars, a paper clip, a pressed flower and three tiny torn-paper labels that say: \"[fact 1]\", \"[fact 2]\", \"[fact 3]\". Warm, cosy colours. Looks hand-made, not glossy. No logos or brand names."
+    },
+    {
+      "label": "Video prompt: the page builds itself",
+      "text": "Use this scrapbook page as the final frame. Make an 8-second vertical clip. Start on blank cream paper. Seconds 0 to 3: the cut-out photo of the person slides in and lands with a little bounce, then two strips of tape press it down. Seconds 3 to 6: the paper letters of \"welcome to my page\" pop on one at a time, and the doodles draw themselves in. Seconds 6 to 8: the small labels flutter into place and the person in the photo gives a tiny wave. Gentle stop-motion feel, like real paper. Keep the face exactly the same."
+    },
+    {
+      "label": "Variation: winter edition",
+      "text": "Use the person in this photo and keep their face the same. Make a vertical scrapbook page on pale blue paper with paper snowflakes, a knitted mitten sticker, a cup of hot chocolate doodle and a strip of plaid tape. Put the cut-out photo in the centre and write \"welcome to my page\" in white and red paper letters across the top. Add two little labels: \"[what you post]\" and \"[your city]\". Soft, hand-made look. No logos."
+    },
+    {
+      "label": "Variation for a small business: meet the maker",
+      "text": "Use the person in this photo of me [upload] and keep my face the same. Make a vertical scrapbook page on kraft paper. Stick my cut-out photo in the middle with tape, and write \"welcome to my page\" in cut-out letters at the top. Around me, add small hand-drawn sketches of what I make or sell: [your products], a doodle of my shop or workspace, and three paper tags that say \"[what we do]\", \"[where we are]\" and \"[one fun fact]\". Warm, hand-made feel. No logos or brand names except my own shop name if I add it."
+    }
+  ],
+  "tips": [
+    "Keep the labels short. Two or three words each reads best on a phone.",
+    "Check the spelling of every word on the page. Image tools still slip on letters, so fix or reroll.",
+    "Only share facts you're happy for strangers to know. Skip your street, school or workplace.",
+    "Say it's made with AI, and only use photos of people who agreed."
+  ],
+  "tags": ["image", "scrapbook", "intro", "image-to-video", "business"]
+}

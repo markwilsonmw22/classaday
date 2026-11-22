@@ -1,0 +1,40 @@
+{
+  "slug": "how-ive-looked-this-year-montage",
+  "title": "\"How I've looked throughout the year\": a month-by-month you montage",
+  "published": "2026-11-22T12:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude", "Kling"],
+  "summary": "Pull one real photo of yourself from each month, and let AI help you pick, order and caption them into a quick year-end montage.",
+  "why": "Virlo's trend page, updated November 22, 2026, lists this as a fresh TikTok format spotted about 10 days earlier, with 203 creators posting it in the last 7 days. Creators post a montage of photos or clips of themselves from different months, opening with the text \"How ive looked throughout the year\". Our \"lately on my SD card\" pack is about recent moments; this one walks through a whole year of you.",
+  "steps": [
+    "Scroll your camera roll and save one photo or short clip of yourself for each month, January to now.",
+    "Paste the planning prompt into a chat tool with a list of what each photo shows. Use its order and captions.",
+    "Put the photos in your video editor, about one second each, with the opening text on the first frame.",
+    "If you like, use the motion prompt to add a gentle move to your favourite still, then post."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: plan and caption the montage",
+      "text": "I'm making a short vertical video called \"How I've looked throughout the year\". I have one photo of myself for each month. Here is what each one shows: [January: ..., February: ..., March: ..., and so on]. Suggest the best order if I want it to feel like a story, and tell me which photo to end on. For each month, write an on-screen caption of 2 to 5 words that's warm or a little funny, in lowercase. Give me one closing line for the last frame. Keep it kind about how I look in every photo."
+    },
+    {
+      "label": "Motion prompt: bring one photo to life",
+      "text": "Use this photo of me as the start. Keep my face, hair and clothes exactly the same, and keep the background as it is. Make a 2-second vertical clip with a slow, gentle push-in, a soft breeze in my hair, and a small natural smile at the end. No new objects, no text, no change to how I look."
+    },
+    {
+      "label": "Variation: the outfit-by-season cut",
+      "text": "I want to make a \"How I've looked throughout the year\" video grouped by season, not month. Here are my photos: [list each one with the month and what I'm wearing]. Sort them into winter, spring, summer and fall, pick the best two from each, and write a short on-screen title for each season. Suggest how long each photo should stay on screen if the whole video is 12 seconds."
+    },
+    {
+      "label": "Variation for a small business: how our shop looked this year",
+      "text": "I run [type of business] and want to post \"How our shop looked throughout the year\". Here are my photos, one per month: [list what each shows: displays, events, new products, the team]. Put them in an order that ends on our best moment, write a 2 to 5 word caption for each month, and give me a short thank-you line for the last frame that doesn't make any claims about sales or customer numbers."
+    }
+  ],
+  "tips": [
+    "Use real photos. The fun is seeing how you actually changed, so don't let AI redo your face.",
+    "One second per photo is plenty. Twelve months makes a 12 to 15 second video.",
+    "A missing month is fine. A caption like \"no photos, just vibes\" can be the joke.",
+    "Only include other people if they agreed, and say if you used AI for any motion."
+  ],
+  "tags": ["text", "montage", "year-in-review", "reels", "business"]
+}

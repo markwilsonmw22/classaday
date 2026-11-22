@@ -1,0 +1,40 @@
+{
+  "slug": "bright-colour-sweater-portrait",
+  "title": "Bright sweater portrait: you in bold colour with glowing eyes",
+  "published": "2026-11-22T12:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "A clean studio portrait of you in a chunky, brightly coloured sweater, on a matching backdrop, with a soft glow in your eyes.",
+  "why": "Virlo's trend page, updated November 22, 2026, lists the \"AI colored sweater photo\" as a fresh TikTok format with 47 creators posting it in the last 7 days, up from 1 the week before. Creators use AI to make a portrait in a colourful sweater with glowing eyes, often as a how-to. Our other sweater-weather packs are holiday scenes; this one is a bold, single-colour studio look.",
+  "steps": [
+    "Pick a clear photo of your face and shoulders, looking at the camera.",
+    "Choose one colour you love. The look works best when sweater and backdrop match.",
+    "Paste the main prompt into your image tool with your photo, adding your colour.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: one bold colour",
+      "text": "Use the person in this photo. Keep their face, skin, hair and features exactly the same. Dress them in a chunky, oversized cable-knit sweater in bright [colour]. Place them in front of a smooth studio backdrop in a slightly deeper shade of the same colour. Head-and-shoulders portrait, vertical 4:5, soft front light and a gentle rim light on the hair. Give their eyes a soft, even glow in a lighter tint of [colour], like light shining from inside, while keeping the eye shape and expression natural. Crisp knit texture, calm confident look. No text, no logos."
+    },
+    {
+      "label": "Variation: colour-block pair",
+      "text": "Use the two people in this photo, who both agreed to this. Keep both faces and features exactly the same. Put one in a bright [colour 1] chunky knit sweater and the other in bright [colour 2]. Stand them shoulder to shoulder in front of a backdrop split down the middle: [colour 1] behind the first person, [colour 2] behind the second. Soft studio light. Give each person's eyes a gentle glow that matches their sweater. Vertical 4:5. No text, no logos."
+    },
+    {
+      "label": "Variation: winter warm-up",
+      "text": "Use the person in this photo and keep their face the same. Dress them in a thick, cosy knit sweater in deep cranberry red with a high rolled neck. Backdrop in the same red, with a few soft white snowflakes drifting out of focus in front of the lens. Warm studio light. Their eyes glow softly in pale gold. Head-and-shoulders, vertical 4:5. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: product colour match",
+      "text": "Use the person in this photo of me [upload] and keep my face the same. Dress me in a chunky knit sweater that matches the main colour of [your product]. Use a backdrop in the same colour, and have me hold [your product] near my chest so it's easy to see. Soft studio light, eyes with a gentle glow in a lighter tint of that colour. Vertical 4:5. Keep the product's real shape and colours. No other logos or brand names."
+    }
+  ],
+  "tips": [
+    "Keep the glow soft. If the eyes look scary, add \"subtle\" and reroll.",
+    "One colour for sweater and backdrop gives the cleanest look. Try a few and post them as a carousel.",
+    "If your face changes, say \"keep the face exactly the same\" again in a follow-up message.",
+    "Say it's made with AI, and only use photos of people who agreed."
+  ],
+  "tags": ["image", "portrait", "sweater", "colour", "business"]
+}
