@@ -1,0 +1,36 @@
+{
+  "slug": "santa-hat-funk-trio-dance",
+  "title": "Santa hats, blue lights: the funk Christmas trio dance",
+  "published": "2026-11-22T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "You, or you and two friends in a row, wear Santa hats in a room lit blue and hit a sharp arm-cross, chest-tap routine to a fast funk Christmas beat.",
+  "why": "Remake the Trend added this trend on November 21, 2026 and counted 26 creators posting an AI version in the 7 days to November 21. It traces it to a TikTok clip from November 9 that had about 4.1M views when it checked on November 21, set to a Brazilian funk remix of a classic Christmas song. Our other holiday dances are bouncy duos by the tree; this one is a sharp, cool-faced routine in blue light.",
+  "steps": [
+    "Pick a clear, full-length or knee-up photo of yourself, or of you and up to two friends who agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool with the photo.",
+    "Add a fast funk Christmas sound from the app's library, and trim the clip to match the beat.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: you and two friends",
+      "text": "Use the people in this photo. Keep their faces, hair, skin tones and body shapes exactly the same, and dress each of them in a red Santa hat with their own casual clothes. They stand side by side in a row in a living room at night. Blue LED strip lights glow along the ceiling, a small Christmas tree with warm fairy lights sits behind them. Fixed camera at chest height, about three metres away, showing them from head to knees. One continuous 10-second vertical shot, no cuts, no zoom. Seconds 0 to 2: they stand still, then all snap their arms across their chests in an X with hands on their shoulders. Seconds 2 to 4: quick alternating flat-hand chest taps with bouncing knees. Seconds 4 to 6: one hand up to the mouth, then both arms swing wide and back across the chest. Seconds 6 to 8: they repeat the arm cross and chest taps a little bigger, nodding to the beat. Seconds 8 to 10: they finish with arms crossed and chins up, holding a cool pose at the camera. Moves in perfect sync. No text, no logos."
+    },
+    {
+      "label": "Variation: just you",
+      "text": "Use the person in this photo. Keep their face, hair and body exactly the same, and add a red Santa hat. They stand alone in the middle of a dark bedroom lit by blue LED lights and a string of warm fairy lights on the wall. Fixed camera at chest height, head to knees, one continuous 10-second vertical shot. They snap their arms into an X across the chest, do quick chest taps with bouncing knees, raise one hand to the mouth, swing both arms wide, repeat the cross a little bigger, then end with arms crossed and a confident smirk at the camera. Sharp, on-beat movement. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the team at the counter",
+      "text": "Use the people in this photo of my team [upload]. Keep every face and body the same and give each person a red Santa hat over their work clothes. They stand in a row behind our shop counter after closing, lit by blue strip lights and warm fairy lights along the shelves. Fixed camera at chest height, one continuous 10-second vertical shot. They do the same routine in sync: arms snap into an X across the chest, quick chest taps with bouncing knees, one hand to the mouth, arms swing wide, the cross again, then a final pose with arms crossed and chins up. No text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Three people in a row reads best. Leave space between them in your photo so the arms don't merge.",
+    "If the moves drift out of sync, shorten the prompt to the X cross, chest taps and final pose.",
+    "Blue light can wash out faces. Ask for \"warm light on the faces\" if they look grey.",
+    "Only use photos of people who are happy to be in it, and say it's made with AI."
+  ],
+  "tags": ["video", "dance", "christmas", "friends", "business"]
+}

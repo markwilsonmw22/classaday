@@ -1,0 +1,40 @@
+{
+  "slug": "villain-chair-mishap",
+  "title": "POV: you're the villain, but the swivel chair has other plans",
+  "published": "2026-11-22T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "ChatGPT", "Gemini"],
+  "summary": "You turn slowly in a big swivel chair like a movie villain, start your dramatic speech, and then a small, silly mishap ruins the moment.",
+  "why": "Virlo's trend page, updated November 21, 2026, shows 107 creators posting this TikTok format in the last 7 days, up from 1 the week before, with about 117.5M total views. Creators lip-sync a dark villain sound in a swivel chair until something relatable goes wrong, like the chair leaning too far back or the Wi-Fi dropping. Our office chair pack is a happy spin; this one is a villain speech with a punchline.",
+  "steps": [
+    "Use the text prompt to write a short villain speech about a tiny everyday problem, and pick the mishap that ends it.",
+    "Pick a clear photo of yourself sitting down, with your face easy to see.",
+    "Paste the video prompt into an image-to-video tool with your photo, adding your mishap. Add a dark, dramatic sound in the app.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the chair tips back",
+      "text": "Use the person in this photo. Keep their face, hair and body exactly the same, and dress them in a dark turtleneck. They sit in a tall black leather swivel chair in a dim room lit by one cold blue lamp, with rain on a big window behind. Make a 10-second vertical clip. Seconds 0 to 3: the chair slowly turns from facing the window to facing the camera, and the person strokes an orange cat on their lap. Seconds 3 to 6: they lean forward, narrow their eyes and talk to the camera with a slow, smug smile, steepling their fingers. Seconds 6 to 8: they lean back to look powerful, and the chair keeps tipping too far. Seconds 8 to 10: the chair tips all the way back, their legs fly up, and the cat jumps off and walks away. Realistic, comedic timing. No text, no logos."
+    },
+    {
+      "label": "Variation: the Wi-Fi drops",
+      "text": "Use the person in this photo. Keep their face and body the same. They sit in a big swivel chair in a dark home office lit by a glowing laptop and a red desk lamp. Make a 10-second vertical clip. The chair turns slowly toward the camera, and they press their fingertips together and give a slow, evil grin while talking to the laptop. Then the laptop screen freezes on a spinning loading circle. Their grin drops, they lean in, tap the laptop twice, and stare at the camera in flat disbelief. No text, no logos."
+    },
+    {
+      "label": "Text prompt: write your villain speech",
+      "text": "Write a 3-line villain speech I can lip-sync in a 10-second video. The 'evil plan' is about a tiny, harmless everyday thing: [for example, eating the last cookie, skipping the gym, leaving the dishes until tomorrow]. Make it sound dark and dramatic, with short sentences. Then give me 5 ideas for a silly, relatable mishap that could interrupt the speech at the end. Keep it kind and family-friendly."
+    },
+    {
+      "label": "Variation for a small business: the holiday sale plan",
+      "text": "Use the person in this photo of me [upload]. Keep my face and body the same. I sit in a tall swivel chair behind the counter of my shop after closing, lit by a single blue lamp, holding a handwritten sign that says \"[your real offer]\". Make a 10-second vertical clip. The chair slowly turns to face the camera and I give a slow, dramatic smile, as if revealing a master plan. Then I lean back too far, the chair tips, and the sign flutters onto the floor face up. No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Keep the evil plan tiny and harmless. The joke is how small the problem is.",
+    "Pick one mishap per clip. Two in ten seconds feels rushed.",
+    "Don't copy a real film villain's look or lines. A dark outfit and a blue lamp are enough.",
+    "Say it's made with AI, and only use photos of people who agreed."
+  ],
+  "tags": ["video", "comedy", "pov", "relatable", "business"]
+}
