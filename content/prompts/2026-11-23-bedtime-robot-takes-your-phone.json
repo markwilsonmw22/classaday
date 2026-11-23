@@ -1,0 +1,36 @@
+{
+  "slug": "bedtime-robot-takes-your-phone",
+  "title": "Lights out: the bedside robot arm takes your phone",
+  "published": "2026-11-23T12:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "You're scrolling in bed late at night when a robot arm on the nightstand reaches over, takes your phone and tucks it away.",
+  "why": "AI Trend Club lists a bedtime robot clip traced to a TikTok post from November 20, 2026, with about 17K views when it checked on November 22. It's a small, new trend and an easy, relatable joke about late-night scrolling. We haven't covered it before.",
+  "steps": [
+    "Pick a clear photo of your face and shoulders.",
+    "Paste the main prompt into an image-to-video tool with your photo.",
+    "Keep it to about 6 seconds and add a caption like \"me at 1 a.m.\".",
+    "Say it's made with AI in your caption."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the phone grab",
+      "text": "Use the person in this photo. Keep their face, hairstyle, hair colour and skin tone the same. Make a 6-second vertical clip in a dim bedroom at night. They lie in bed under a duvet, in pyjamas, face lit by the glow of the phone they're holding. A small white robot arm sits on the nightstand next to a warm lamp. Seconds 0 to 2: they keep scrolling, eyes heavy. Seconds 2 to 4: the robot arm turns, reaches over and gently takes the phone out of their hand. Seconds 4 to 6: the arm sets the phone face down in a drawer, closes it and switches off the lamp. They stare at the ceiling in shock. Steady camera from the foot of the bed. No text on screen, no logos."
+    },
+    {
+      "label": "Variation: the arm tucks you in",
+      "text": "Use the person in this photo. Keep their face and hairstyle the same. Make a 6-second vertical clip in a cosy bedroom at night. They're scrolling in bed. A small white robot arm on the nightstand takes the phone, drops it in a basket, then pulls the duvet up to their chin and pats their head twice. They give up and close their eyes. Warm lamp light, steady camera. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: closing time",
+      "text": "Use the person in this photo. Keep their face and hairstyle the same. Make a 6-second vertical clip in a small shop after closing, lights low. They sit behind the counter checking their phone. A small white robot arm on the counter reaches over, takes the phone, sets it down and flips a sign on the counter that reads \"Closed. See you at [opening time]!\". They laugh and put on their coat. Steady camera. No other text, no logos."
+    }
+  ],
+  "tips": [
+    "Ask for a \"small white robot arm\" so it looks friendly, not scary.",
+    "A dark room with one lamp and the phone glow sells the late-night mood.",
+    "Keep the clip short. The joke lands in the grab.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "funny", "relatable", "business"]
+}

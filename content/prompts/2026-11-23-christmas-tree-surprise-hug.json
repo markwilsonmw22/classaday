@@ -1,0 +1,36 @@
+{
+  "slug": "christmas-tree-surprise-hug",
+  "title": "Home for Christmas: the surprise hug by the tree",
+  "published": "2026-11-23T12:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "You sit by a lit Christmas tree, someone you miss walks in behind your chair, and they wrap you in a hug. Made from two photos.",
+  "why": "AI Trend Club lists a Christmas long-distance hug traced to a TikTok post from November 21, 2026, with about 26K views when it checked on November 22. It's small but brand new, and it fits the season for families and couples who live apart. It's different from our Santa dance and snow globe packs: this one is a quiet reunion.",
+  "steps": [
+    "Pick two clear photos: one of you, and one of a family member, partner or friend who has agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool that takes two reference photos.",
+    "Keep it to about 8 seconds and add soft music.",
+    "Send it to the person in it, or post it with a caption that says it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the walk-in hug",
+      "text": "Use the two people in these photos. Keep each person's face, hairstyle, hair colour and skin tone the same. Make an 8-second vertical clip in a cosy living room at night. A tall Christmas tree with warm white lights stands beside an armchair, with a few wrapped gifts underneath. Seconds 0 to 3: Person A sits in the armchair in a knit sweater, looking at the tree. Seconds 3 to 5: Person B walks in quietly from behind the chair in a winter coat with snow on the shoulders. Seconds 5 to 8: Person B leans down and hugs Person A from behind. Person A turns, sees who it is and smiles. The camera stays still. Keep the room, tree and lighting the same the whole time. No text, no logos."
+    },
+    {
+      "label": "Variation: grandparent and grandchild",
+      "text": "Use the two people in these photos. Keep their faces and hairstyles the same. Make an 8-second vertical clip in a warm kitchen decorated for Christmas, with a small lit tree on the counter and cookies cooling on a tray. The older person stands at the counter. The younger person runs in from the hallway with a suitcase and hugs them tight. They both laugh. Steady camera, soft warm light. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: \"Home for the holidays\" greeting",
+      "text": "Use the two people in these photos. Keep their faces and hairstyles the same. Make an 8-second vertical clip inside a small, cosy shop decorated for Christmas, with a lit tree by the counter and string lights on the shelves. Person A is wrapping a gift at the counter. Person B walks in the front door with snow on their coat and gives them a big hug. A small chalkboard by the tree reads \"Happy holidays from [Business name]\". Steady camera, warm light. No other text, no logos."
+    }
+  ],
+  "tips": [
+    "Use photos where both people face the camera in similar light.",
+    "Winter coats and sweaters help it feel like a real arrival.",
+    "Make it as a gift: send it privately to the person you miss.",
+    "Only use photos of people who agreed, and say it's made with AI."
+  ],
+  "tags": ["video", "christmas", "family", "couples", "business"]
+}

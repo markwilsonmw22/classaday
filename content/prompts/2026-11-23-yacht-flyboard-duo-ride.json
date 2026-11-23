@@ -1,0 +1,36 @@
+{
+  "slug": "yacht-flyboard-duo-ride",
+  "title": "Two on one flyboard: the yacht-side water-jet ride",
+  "published": "2026-11-23T12:43:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "You rise off the back of a yacht on a water-jet board, then your friend hops on and you hover together above the spray.",
+  "why": "AI Trend Club lists a water flyboard ride traced to a TikTok post from November 19, 2026, with about 369K views when it checked on November 22. It uses two photos, one per rider, in a short 6-second clip. We haven't covered it before.",
+  "steps": [
+    "Pick two clear, full-body photos: one of you and one of a friend or partner who has agreed to be in it.",
+    "Paste the main prompt into an image-to-video tool that takes two reference photos.",
+    "Keep it short, 6 to 8 seconds, so the faces stay steady.",
+    "Post it with a caption that says it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: two riders, one board",
+      "text": "Use the two people in these photos. Keep each person's face, hairstyle, hair colour and skin tone the same. Make a 6-second vertical clip on a sunny day at sea. Both wear simple swimwear and life vests. Seconds 0 to 2: Person A stands on a water-jet flyboard at the back edge of a white yacht. Two strong jets of water push down from the board and lift them a metre above the sea, with bright spray all around. Seconds 2 to 4: Person B steps from the yacht's swim deck onto the same board, holding Person A's shoulders. Seconds 4 to 6: the two of them steady themselves, laugh and hover together above the water. The camera stays still at deck height. Keep the yacht, board and spray in the same place. No text, no logos."
+    },
+    {
+      "label": "Variation: solo ride with a big lift",
+      "text": "Use the person in this photo. Keep their face, hairstyle and skin tone the same. Make a 6-second vertical clip. They stand on a water-jet flyboard beside a white yacht in turquoise water. The jets roar and lift them slowly up to three metres, spray glittering in the sun. At the top they spread their arms wide and grin at the camera. Steady camera from the yacht's deck. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: water-sports rental promo",
+      "text": "Use the person in this photo. Keep their face, hairstyle and skin tone the same. Make an 8-second vertical clip on a calm lake on a summer day. They wear a life vest and stand on a water-jet flyboard next to a small rental dock. The jets lift them above the water and they give a thumbs-up to the camera. A wooden sign on the dock reads \"[Your business name]\". Bright, clean colours, steady camera. No other text, no logos."
+    }
+  ],
+  "tips": [
+    "Full-body photos with both arms visible give the steadiest result.",
+    "If the board shape warps, ask for \"a flat board with two water jets underneath\".",
+    "Two people in one clip is harder. Try a few times and keep the best one.",
+    "Only use photos of people who said yes, and say it's made with AI."
+  ],
+  "tags": ["video", "image-to-video", "friends", "summer", "business"]
+}
