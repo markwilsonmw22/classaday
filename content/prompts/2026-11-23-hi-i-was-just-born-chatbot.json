@@ -1,0 +1,40 @@
+{
+  "slug": "hi-i-was-just-born-chatbot",
+  "title": "\"Hi I was just born\": type it to an AI and screenshot the reply",
+  "published": "2026-11-23T00:50:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Tell an AI chatbot you were just born, then share its oddly sweet welcome-to-the-world reply with a reaction caption.",
+  "why": "Meme.com's entry, published November 17, 2026, lists \"hi I was just born\" as trending. People type the line into an AI search answer or chatbot, screenshot the reply that congratulates them on being born and praises their typing, then post it with reaction captions. It started on TikTok in August and picked up again after a Spanish-language version in late October.",
+  "steps": [
+    "Open a fresh chat in your AI tool, so it has no memory of who you are.",
+    "Type the main prompt exactly, with no other context, and send it.",
+    "Screenshot the reply. Crop out your name, profile picture and any other chats.",
+    "Post it as a photo or a short video with a reaction caption on top."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the original",
+      "text": "hi I was just born"
+    },
+    {
+      "label": "Variation: the follow-up question",
+      "text": "hi I was just born. what should I do first"
+    },
+    {
+      "label": "Variation: the pet edition",
+      "text": "hello I am a cat and I just learned to type with my paws. what do humans do all day"
+    },
+    {
+      "label": "Variation for a small business: our real first day",
+      "text": "hi, our little [type of business] just opened its doors in [town] today. we're brand new at this. any advice for our first week?"
+    }
+  ],
+  "tips": [
+    "Every AI answers a little differently. Try two tools and post the funniest reply.",
+    "Reaction captions do the work: \"the AI took this very seriously\" is enough.",
+    "Only use the business version if you really just opened. Don't pretend.",
+    "Keep it as a joke between you and the AI. Don't use it to fool real people."
+  ],
+  "tags": ["text", "chatbot", "screenshot", "funny", "business"]
+}

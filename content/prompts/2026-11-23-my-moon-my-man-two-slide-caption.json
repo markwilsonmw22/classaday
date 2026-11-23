@@ -1,0 +1,40 @@
+{
+  "slug": "my-moon-my-man-two-slide-caption",
+  "title": "\"My Moon My Maaaa…\": the two-slide couple post, lined up right",
+  "published": "2026-11-23T00:50:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "Two photos, one stretched caption that runs from your slide into your partner's. Use AI to match the photos and plan the layout so the words line up.",
+  "why": "The Tab (November 17, 2026) and Know Your Meme (November 19, 2026) describe a TikTok slideshow where \"My Moon My Maaaa\" starts on your photo and the long \"a\" carries onto your partner's photo, set to a live cover of a 2007 Canadian song from the 2026 Canadian Songwriters Hall of Fame. Virlo's trend page, updated November 22, counts about 827 creators in the last 7 days. The Tab says many people's text slips out of line after posting, and suggests lining it up in an editor first.",
+  "steps": [
+    "Pick one photo of you and one of your partner (ask them first). Similar framing works best.",
+    "Paste the matching prompt into your image tool with both photos so they share the same light and colour.",
+    "Put the two pictures side by side in a photo editor, type the caption across both, then crop them into two slides.",
+    "Post as a photo slideshow with the trending sound, and say if you used AI on the photos."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: make the two photos match",
+      "text": "I'm attaching two photos: the first is me, the second is my partner. Make them look like they belong together as a pair. Keep both faces, bodies, hair and clothes exactly the same. Give both the same warm, soft evening light and the same gentle film-like colour, with a little grain. Crop each to vertical 9:16 with the person centred and plenty of plain space above their head for a caption. Don't add text, people or objects. Return two separate images."
+    },
+    {
+      "label": "Layout prompt: plan where the words go",
+      "text": "I'm making a two-slide post. Slide 1 is me, slide 2 is my partner. A caption reads \"My Moon My Maaaa\" across both slides, and the stretched letters should flow from slide 1 into slide 2 so it looks like one line. Tell me step by step how to do this in a free phone photo editor: how wide to make the blank canvas, where to place the two photos, what font size and colour to use so it reads on both, and how to crop it into two equal slides without the letters jumping. Keep it simple."
+    },
+    {
+      "label": "Variation: moon on one, man on the other",
+      "text": "Use these two photos: me first, then my partner. Keep both people exactly as they are. Turn both into a dreamy night scene: deep blue sky, a soft full moon low in the corner of my photo, and city lights blurred behind my partner, as if both were taken on the same night. Same colour and light in both. Vertical 9:16 each, with clear space at the top for a short word. No text, no extra people."
+    },
+    {
+      "label": "Variation for a small business: my shop, my maaaain helper",
+      "text": "I run [type of business]. I'm attaching two photos: one of me at work and one of [my shop pet / my business partner who agreed / our best-selling product]. Keep everything real and unchanged except the light: give both the same cosy, warm look so they work as a pair. Crop each to vertical 9:16 with space at the top. Then suggest five playful two-part captions where the first word sits on my photo and the stretched ending runs onto the second, like \"My shop, my maaaaain helper\"."
+    }
+  ],
+  "tips": [
+    "Type the caption yourself in an editor. AI image tools often misspell long stretched words.",
+    "Make one wide canvas first, then cut it in half. That's what keeps the letters lined up.",
+    "Your partner should be happy with their photo before you post it.",
+    "No partner? A best friend, a sibling or your dog works too."
+  ],
+  "tags": ["couples", "slideshow", "caption", "tiktok", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "happy-to-pay-full-price",
+  "title": "\"Pay full price\": the things you'd gladly never haggle on",
+  "published": "2026-11-23T00:50:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Lip-sync to the excited \"pay full price\" sound with on-screen text about the one thing you'd pay full price for, no deal needed. AI writes the lines.",
+  "why": "Virlo's trend page, updated November 22, 2026, lists \"He wanna pay full price\" as a fresh TikTok format first seen November 8, with about 513 creators in the last 7 days. People lip-sync to an excited audio line from a recent sketch-comedy clip and add on-screen text about a relatable situation. It lands in Black Friday week, so it's a fun flip on all the sale posts.",
+  "steps": [
+    "Find the trending \"pay full price\" sound in your app.",
+    "Paste the main prompt into a chat tool and pick the caption that feels most like you.",
+    "Film yourself lip-syncing the line with big, happy energy. Put the caption on screen before the line hits.",
+    "Post it. Keep the topic light and about you."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: your full-price moments",
+      "text": "There's a TikTok trend where people lip-sync an excited \"he wanna pay full price\" line, with on-screen text about something they happily pay full price for. Write 10 on-screen captions for me. Each should start with \"Me when\" or \"POV:\" and be under 12 words. Make them warm and a bit silly, about everyday things like good coffee, a friend's homemade baking, a kid's lemonade stand or warm winter boots. Things I'm into: [list a few]. Nothing about money problems, debt or other people's private lives."
+    },
+    {
+      "label": "Variation: the Canadian winter edition",
+      "text": "Write 8 short on-screen captions for the \"pay full price\" lip-sync trend, all about Canadian winter. Ideas like snow tires, a real winter coat, the good hot chocolate at the rink or a snow-clearing service on a bad morning. Under 12 words each, starting with \"Me when\" or \"POV:\". Make them funny and relatable, with Canadian spelling."
+    },
+    {
+      "label": "Variation: the gift-giver",
+      "text": "Write 8 captions for the \"pay full price\" lip-sync trend about buying gifts for people I love. The joke is that I'd skip the sale because the gift is perfect. Under 12 words each, kind and funny, no brand names. People I'm shopping for: [mom, best friend, my dog, etc.]."
+    },
+    {
+      "label": "Variation for a small business: why our regulars don't wait for sales",
+      "text": "I run [type of business] in [town]. Write 6 on-screen captions for the \"pay full price\" lip-sync trend from a happy customer's point of view, about what makes our work worth it: [list real things, like handmade, local, same-day repairs, friendly service]. Under 12 words each. Keep it honest: no fake urgency, no made-up reviews, no claims about prices or other shops."
+    }
+  ],
+  "tips": [
+    "Put the caption up a beat before the line so viewers read it first.",
+    "Big, happy energy is the whole joke. Overdo the grin.",
+    "Skip topics about debt, support payments or anyone's private money. Keep it about small joys.",
+    "Businesses: film a real regular only if they agree, or say the line yourself."
+  ],
+  "tags": ["text", "lip-sync", "tiktok", "funny", "business"]
+}
