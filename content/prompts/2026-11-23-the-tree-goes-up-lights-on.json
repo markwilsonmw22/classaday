@@ -1,0 +1,40 @@
+{
+  "slug": "the-tree-goes-up-lights-on",
+  "title": "The tree goes up: your bare corner to lights on in 8 seconds",
+  "published": "2026-11-23T18:40:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo", "Runway"],
+  "summary": "Snap the empty corner where your tree will go, let AI dress it, then turn the two photos into a quick clip where the tree goes up and the lights come on.",
+  "why": "Postdom's weekly TikTok scan for November 16 to 22, 2026 lists \"the tree goes up\": people post the moment their first tree and lights go up, set to a Christmas song. One example it spotted on November 16 had about 923K views. This pack is the AI version, for when your real tree isn't up yet or you want to preview a look before you buy anything.",
+  "steps": [
+    "Take a clear photo of the empty corner or window where your tree will go. Daylight or lamp light both work.",
+    "Paste the first prompt into ChatGPT or Gemini with your photo to make the decorated version of the same room.",
+    "Put both pictures into an image-to-video tool that takes a start frame and an end frame, then paste the clip prompt.",
+    "Add the trending Christmas sound in the app when you post, and say the decorated room is made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Step 1: dress your room",
+      "text": "Use this photo of my room. Keep the walls, floor, windows, furniture and camera angle exactly the same. Add a tall, full Christmas tree in the empty corner, with warm white string lights switched on, glass ornaments in deep red and soft gold, and a simple star on top. Put three or four wrapped gifts under it and a knit throw on the nearest chair. Make it evening, with the room lit mostly by the tree and one warm lamp. Photo-real, like a phone photo. No people, no text, no logos."
+    },
+    {
+      "label": "Step 2: the tree-goes-up clip",
+      "text": "Make an 8-second vertical clip. Start frame: the first photo, the empty corner. End frame: the second photo, the decorated tree. The camera stays still on a tripod. Seconds 0 to 2: the empty room, a box of decorations on the floor. Seconds 2 to 5: in a fast time-lapse, the tree stands up, branches fluff out, ornaments and gifts pop into place. Seconds 5 to 6: the room goes dim for a beat. Seconds 6 to 8: the string lights switch on all at once with a soft glow and the star lights last. Keep the room the same the whole time. No people, no text, no logos."
+    },
+    {
+      "label": "Variation: a small tree for a small space",
+      "text": "Use this photo of my apartment. Keep the room and camera angle the same. Add a small tabletop Christmas tree on the side table by the window, with tiny warm lights, wooden bead garland and a few paper star ornaments. Add a mug of hot chocolate and a candle beside it. Snow is falling outside the window. Cosy evening light. Photo-real. No people, no text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop window goes up",
+      "text": "Use this photo of my shop window and front counter. Keep the shopfront, shelves and products exactly as they are. Add a lit Christmas tree inside the window, warm string lights along the top edge of the glass, a garland over the counter and a few wrapped gift boxes beside our products. Light snow on the sidewalk outside. Evening, with the window glowing. A small chalkboard by the door reads \"Open late for the holidays\". Photo-real. No people, no other text, no logos."
+    }
+  ],
+  "tips": [
+    "Shoot the empty corner straight on and hold the phone level, so the start and end frames line up.",
+    "If the tool changes your furniture, say again which items must stay exactly the same.",
+    "Use the decorated picture as a plan: it shows you what to buy before you head to the store.",
+    "When your real tree is up, post the real clip next to the AI one."
+  ],
+  "tags": ["christmas", "holiday", "decor", "before-after", "business"]
+}
