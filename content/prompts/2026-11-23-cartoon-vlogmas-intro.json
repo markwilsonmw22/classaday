@@ -1,0 +1,40 @@
+{
+  "slug": "cartoon-vlogmas-intro",
+  "title": "Cartoon you opens your Vlogmas: a cosy intro clip",
+  "published": "2026-11-23T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "ChatGPT"],
+  "summary": "A hand-drawn cartoon version of you, in pyjamas, walks into a decorated room, passes a \"Welcome to Vlogmas\" sign and sits down by the tree.",
+  "why": "AI Trend Club, updated November 23, 2026, lists a cartoon Vlogmas intro traced to a TikTok post from November 19, 2026, with about 173K views and 45K likes on November 21. Creators turn one full-body photo into an illustrated character that opens their December daily-vlog series. Vlogmas starts on December 1, so now is the time to make one. It's different from our snow globe pack: this is a title card for a whole series.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself, standing, in good light.",
+    "Optional: make a cartoon still first with the image prompt, then animate that still.",
+    "Paste the main prompt into an image-to-video tool with your photo or still.",
+    "Use it as the first few seconds of each December vlog, and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the walk-in intro",
+      "text": "Use the person in this photo. Keep their face shape, hairstyle, hair colour and skin tone, and turn them into a soft, hand-drawn 2D cartoon character with clean outlines and gentle colours. They wear cosy pink pyjamas and fuzzy slippers. Make a 10-second vertical clip in a warm, illustrated bedroom decorated for the holidays: a small tree with fairy lights, a garland over the window and a white vanity with a round mirror. Seconds 0 to 3: the character walks in from the left with a mug of cocoa. Seconds 3 to 6: they pass a hand-lettered sign on the wall that reads \"Welcome to Vlogmas\" and give a little wave. Seconds 6 to 10: they sit at the vanity beside the tree and smile at the camera as it slowly pushes in toward the mirror and the sign. Keep the cartoon style steady the whole time. No other text, no logos."
+    },
+    {
+      "label": "Image prompt: the cartoon still first",
+      "text": "Turn the person in this photo into a soft, hand-drawn 2D cartoon character. Keep their face shape, hairstyle, hair colour and skin tone. Full body, standing, wearing cosy pink pyjamas and fuzzy slippers, holding a mug of cocoa. Clean outlines, gentle colours, plain cream background. Vertical 9:16. No text, no logos."
+    },
+    {
+      "label": "Variation: day-number title card",
+      "text": "Use the cartoon character in this image. Keep their look exactly the same. Make a 6-second vertical clip in the same cosy illustrated bedroom with a small lit tree. The character pulls a little paper tag off a string of numbered tags on the wall and holds it up to the camera. The tag reads \"Day [number]\". Snow falls softly outside the window. Gentle push-in camera, steady cartoon style. No other text, no logos."
+    },
+    {
+      "label": "Variation for a small business: \"Shopmas\" behind the scenes",
+      "text": "Use the person in this photo [upload]. Keep their face shape, hairstyle and skin tone, and turn them into a soft, hand-drawn 2D cartoon character wearing a cosy sweater and apron. Make a 10-second vertical clip inside an illustrated version of a small, festive shop with shelves, string lights and a little tree. They walk in, flip a hand-lettered sign on the counter that reads \"Welcome to [Shop name]mas\", then wave and start wrapping a gift. Slow push-in camera, steady cartoon style. No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Make the cartoon still once and reuse it, so you look the same every day.",
+    "Signs can come out misspelled. Try again, or keep the sign short.",
+    "Keep the intro under 10 seconds. People want to get to the vlog.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "christmas", "vlogmas", "cartoon", "business"]
+}

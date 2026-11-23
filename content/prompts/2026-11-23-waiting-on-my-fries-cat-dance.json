@@ -1,0 +1,40 @@
+{
+  "slug": "waiting-on-my-fries-cat-dance",
+  "title": "\"Waiting on my fries\": your cat dances at the takeout counter",
+  "published": "2026-11-23T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Your cat stands at a takeout counter next to a friend, turns to the camera, lifts a paw and sways while it waits for its order.",
+  "why": "AI Trend Club, updated November 23, 2026, traces this format to a TikTok post from November 19, 2026 that had about 4.5M views and 737K likes when it checked on November 21. People swap their own cat into the lead: two cats wait at a restaurant counter and one starts a slow, happy dance. Our other pet packs are stunts and big stages; this one is a small, everyday wait.",
+  "steps": [
+    "Pick a clear photo of your cat standing or sitting, with its face and markings easy to see.",
+    "Paste the main prompt into an image-to-video tool with the photo.",
+    "Add a light, bouncy sound from the app's library, or hum your own.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: two cats at the counter",
+      "text": "Use the cat in this photo. Keep its face, fur colour and markings exactly the same. Make a 12-second vertical clip in a casual takeout restaurant with a clean counter, a pickup tray and warm overhead lights. No signs, no logos, no readable menus. The cat stands on its back legs at the counter, front paws resting on the edge, next to a pale cream cat who is also waiting. Seconds 0 to 3: both look toward the kitchen. Seconds 3 to 6: the camera slowly moves closer as the main cat turns its head and looks straight into the lens. Seconds 6 to 10: it lifts one front paw and sways side to side to a slow beat, eyes half closed and very pleased. Seconds 10 to 12: the cream cat leans back into the frame and watches, unimpressed. Realistic fur and movement. No text."
+    },
+    {
+      "label": "Variation: dog at the drive-through window",
+      "text": "Use the dog in this photo. Keep its face, fur and markings the same. Make a 10-second vertical clip. The dog sits in the passenger seat of a car beside an open window at a takeout pickup window, at dusk with warm lights. It turns to the camera, wiggles its shoulders and bobs its head side to side to a slow beat while it waits. A small paper bag with no logo is handed toward the window at the end and the dog's ears perk up. Realistic, steady camera. No text, no logos."
+    },
+    {
+      "label": "Variation: your two pets together",
+      "text": "Use the two pets in this photo. Keep each face, fur colour and markings the same. Make a 10-second vertical clip at a small café counter. Both stand with front paws on the counter. One turns to the camera and starts a slow sway with one paw up. The other copies it a second later, a little out of time. They finish leaning on each other. Warm light, slow push-in camera, realistic. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: our pickup counter",
+      "text": "Use this photo of our shop cat or dog [upload] and this photo of our pickup counter [upload]. Keep the pet's face and markings exactly the same, and keep the counter looking like the photo. Make a 10-second vertical clip. The pet waits at the counter with its front paws up, turns to the camera and does a slow, happy sway while a paper bag is placed on the counter beside it. Warm light, steady camera. No readable text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Photos of your pet standing up give the dance a better start.",
+    "Ask for \"no signs and no logos\" so the restaurant stays generic.",
+    "Use a sound from the app's library, so you don't run into music rights issues.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["pets", "video", "image-to-video", "dance", "business"]
+}

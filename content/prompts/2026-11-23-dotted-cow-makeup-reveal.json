@@ -1,0 +1,40 @@
+{
+  "slug": "dotted-cow-makeup-reveal",
+  "title": "Dots to \"moo\": the cow makeup reveal",
+  "published": "2026-11-23T06:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Start with a few brown makeup dots on your face, then cut to a full cow look with ears, little horns and a bell, and finish on a \"moo\".",
+  "why": "AI Trend Club, updated November 23, 2026, lists a cow makeup transition traced to a TikTok post from November 20, 2026. It counted about 14.5M views and 1.9M likes on that post as of November 23. People turn one photo of their face into a quick before-and-after reveal with sound effects. Our other glow-up packs are glam; this one is pure silly.",
+  "steps": [
+    "Pick a clear, front-facing photo of your face in even light. Hair pulled back works best.",
+    "Paste the main prompt into an image-to-video tool with your photo.",
+    "Add a cow \"moo\" and a little bell sound in the app, or record your own.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: dots, cut, cow",
+      "text": "Use the person in this photo. Keep their face, skin tone, eyes and hair exactly the same. Make a 12-second vertical clip in a bright bathroom with a plain white wall. Fixed camera, face and shoulders centred, same framing the whole time. Seconds 0 to 4: the person looks into the camera with a few small brown dots of face paint on their cheeks and nose, and taps one more dot on with a small brush, very serious. Second 4: a quick snap cut. Seconds 4 to 9: the same person now has a full, neat cow face-paint look: soft white base with big brown patches, a pink painted muzzle around the nose, small fluffy cow ears on a headband and two short cream horns. A small brass bell hangs from a ribbon at their neck. They tilt their head and the bell swings. Seconds 9 to 12: they lean toward the camera and say \"moo\" with a straight face. Realistic skin and paint texture. No text, no logos."
+    },
+    {
+      "label": "Variation: black-and-white classic",
+      "text": "Use the person in this photo. Keep their face and features the same. Make a 10-second vertical clip with a fixed close-up camera. First they dab two black dots of face paint on one cheek and look unsure. Snap cut: their whole face now has a clean black-and-white cow pattern, a pink nose, fuzzy ears, tiny horns and a bell on a red ribbon. They blink slowly, chew like a cow and give one calm \"moo\". Soft daylight, white wall behind. No text, no logos."
+    },
+    {
+      "label": "Variation: friends' herd",
+      "text": "Use the two people in this photo. Keep each face exactly the same. Make a 10-second vertical clip. They sit side by side, each with one brown dot of face paint on the nose, staring at the camera. Snap cut: both now wear full cow face paint in different patterns, with fuzzy ears, little horns and bells. They turn to each other, then back to the camera, and both say \"moo\" at the same time. Fixed camera, bright indoor light. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: face painter's quick reveal",
+      "text": "Use this photo of our face painter or makeup artist [upload]. Keep their face exactly the same. Make a 10-second vertical clip in a tidy studio with brushes and paint pots softly blurred behind. They hold up a small brush and add one brown dot to their cheek. Snap cut: a full, clean cow face-paint design with ears and a little bell. They smile, point at the camera and wink. Fixed camera, warm light. No readable text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "The joke is the hard cut. Keep the camera and framing the same before and after.",
+    "A straight face sells the \"moo\". Ask for \"serious, deadpan expression\".",
+    "Only use photos of people who said yes.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "transformation", "funny", "business"]
+}
