@@ -1,0 +1,40 @@
+{
+  "slug": "gemini-holiday-reaction-gifs",
+  "title": "Gemini GIFs: holiday reaction loops for the group chat",
+  "published": "2026-11-24T06:40:00Z",
+  "kind": "image",
+  "tools": ["Gemini"],
+  "summary": "Gemini can now make short looping GIFs from a line of text or your photos. Make holiday reaction GIFs of your pet, your family or your shop.",
+  "why": "Google announced GIFs in the Gemini app on November 20, 2026, and roundups from November 23 report it is rolling out in Canada, the US, the UK and five other countries. It makes loops of about three seconds from text, up to five photos or one video. Write-ups disagree on whether free accounts get it; Google's help page is quoted as needing a Google AI plan. Our November 5 pack covered the same idea in ChatGPT.",
+  "steps": [
+    "Open Gemini on the web or in the app. In the menu, choose Videos, then pick GIF or a template if you see one.",
+    "Attach a clear photo (your pet, your family who agreed, or a product) before you send, or use text only.",
+    "Paste a prompt below and change the bracketed parts. Ask for one small movement so it loops cleanly.",
+    "Download the .gif or copy it into a chat. If you post it publicly, say it was made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: pet reaction GIF",
+      "text": "Make a short looping GIF from this photo of my [dog / cat]. Keep its face, fur colours and markings exactly as in the photo. Put a small red knit hat with a white pompom on its head. Animate one move: [a slow, unimpressed blink / a head tilt toward the camera / ears perking up]. Keep the camera still and the background the same. Make the end match the start so the loop is smooth."
+    },
+    {
+      "label": "Variation: text only, no photo",
+      "text": "A short looping GIF of a round, fluffy snowman with a carrot nose and a striped scarf, doing a tiny happy wiggle as snow falls behind it. Soft cartoon look, warm evening light, a cosy cabin window glowing in the background. Simple movement, seamless loop, no text."
+    },
+    {
+      "label": "Variation: family 'on my way' GIF",
+      "text": "Using these photos of my family (everyone has agreed), make a short looping GIF of us waving at the camera together in front of a snowy front porch with a wreath on the door. Keep every face and outfit the same as the photos. Gentle snow, warm porch light, one friendly wave that loops smoothly. No text."
+    },
+    {
+      "label": "Variation for a small business: holiday hours loop",
+      "text": "Make a short looping GIF from this photo of my [shop front / counter / product]. Keep it exactly as it looks, including any sign or label text. Add soft falling snow and a string of warm fairy lights that twinkle along the top. Keep the camera still. Smooth loop, no new text or logos."
+    }
+  ],
+  "tips": [
+    "One small move per GIF. A blink, a wave or a wiggle stays closest to your photo.",
+    "Uploading a photo sets the shape of the GIF. Text-only prompts come out wide.",
+    "Add your caption in your chat app or editor afterwards, so the words come out spelled right.",
+    "Only animate people who agreed. Never make a GIF that shows someone saying or doing something they didn't."
+  ],
+  "tags": ["gif", "gemini", "holiday", "pets", "business"]
+}

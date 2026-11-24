@@ -1,0 +1,40 @@
+{
+  "slug": "red-shopfront-deadpan-dance",
+  "title": "The red shopfront dance: a straight face, a stiff little groove, you and your dog",
+  "published": "2026-11-24T06:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Higgsfield", "Runway", "Gemini"],
+  "summary": "Turn a photo of you, or you and your dog, into a deadpan dance clip on the pavement outside a bright red shopfront. The straight face is the joke.",
+  "why": "A trend roundup from Getstarrd's November 2026 list says a deadpan lobby dance in front of a red shopfront passed 670,000 plays on TikTok in mid-November, and that AI versions with a dog followed. We found it on that one roundup, so treat it as a fresh, small trend.",
+  "steps": [
+    "Pick a clear, full-body photo of you standing up. For the dog version, use one photo with you and your dog together.",
+    "Upload it to an image-to-video tool and paste the main prompt. Change the bracketed parts.",
+    "Make two or three versions and keep the one where your face stays the same and the moves stay stiff and small.",
+    "Add a short, dry caption and a trending sound in your app. Say it was made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: solo deadpan dance",
+      "text": "Animate this photo of me. I stand on a city pavement in front of a glossy red shopfront with big glass windows and warm light inside. Keeping my face, hair and clothes exactly the same, I do a small, stiff dance with a totally straight face: a little side step, a shoulder pop, a slow arm wave, then I stop and stare at the camera. The camera stays still at chest height. Daylight, real-phone look, 8 seconds."
+    },
+    {
+      "label": "Variation: you and your dog",
+      "text": "Animate this photo of me and my dog on a city pavement in front of a bright red shopfront. Keep both of us looking exactly like the photo. I do a stiff, serious little dance: side step, side step, shoulder pop. My dog sits beside me, then stands up on its back legs for a moment and copies the shoulder pop before sitting back down. Neither of us smiles. Still camera, daylight, 8 seconds."
+    },
+    {
+      "label": "Variation: the office crew",
+      "text": "Animate this photo of three co-workers (all agreed) standing in a row in front of a red shopfront. Keep everyone's face and outfit the same. With straight faces, they do the same tiny dance in sync: side step, clap once, slow point at the camera. One person is half a beat late every time. Still camera, natural daylight, 8 seconds."
+    },
+    {
+      "label": "Variation for a small business: outside your own shop",
+      "text": "Animate this photo of me standing outside my own [café / boutique / salon] front door. Keep my face, outfit, the shop front and the sign exactly as they are. With a perfectly straight face, I do a stiff little dance: side step, shoulder pop, then point at the open door and walk inside. Still camera, daylight, 8 seconds."
+    }
+  ],
+  "tips": [
+    "Ask for small, stiff moves. Big moves make AI faces and hands wobble.",
+    "The straight face is the whole joke. Add 'no smiling' if your first try grins.",
+    "Use your own shop or a made-up one. Don't show another business's real sign or logo.",
+    "Dogs look most natural when they mostly sit and do just one quick move."
+  ],
+  "tags": ["video", "image-to-video", "dance", "pets", "business"]
+}
