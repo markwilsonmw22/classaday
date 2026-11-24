@@ -1,0 +1,40 @@
+{
+  "slug": "three-bullseyes-arena-roar",
+  "title": "Three bullseyes: you hit every dart and the arena goes wild",
+  "published": "2026-11-24T18:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "Turn one photo of you into a darts final: three throws, three bullseyes, then a big celebration as a packed arena roars.",
+  "why": "SameButMe added a \"Darts Filter\" AI video to its rising November 2026 trends list on November 16. In it, a darts player lands three bullseyes and celebrates in front of an arena crowd; the example clip it links has about 2.2 million TikTok plays.",
+  "steps": [
+    "Pick a clear, well-lit photo of you from the waist up, facing the camera or side-on.",
+    "Upload it to an image-to-video tool and paste the main prompt.",
+    "Generate a few versions. Keep the one where the darts land cleanly and your face stays like you.",
+    "Add a loud crowd sound or a trending audio, and caption it with your own small win."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the perfect three",
+      "text": "Use the person in this photo as the darts player. They stand at the oche in a big, dark arena, lit by a bright stage spotlight, with a glowing dartboard in front of them. They throw three darts, one after another, in a calm, smooth motion. Each dart lands dead centre in the bullseye with a small thud. After the third, they turn to the camera, throw both arms up and shout with joy. Behind them, a packed crowd jumps to its feet, cheering and waving. Keep their face, hair and clothes the same as the photo. Realistic sports-broadcast look, slight slow motion on the last dart, 8 seconds."
+    },
+    {
+      "label": "Variation: the pub-league legend",
+      "text": "Use the person in this photo as the darts player in a cosy neighbourhood pub on a winter night. Wood panels, string lights, a few friends at a table behind them. They throw three darts and every one hits the bullseye. Their friends leap up, spill a bit of their drinks and hug them. Warm, grainy phone-video look, natural light, 8 seconds. Keep their face and clothes the same."
+    },
+    {
+      "label": "Variation: your pet throws",
+      "text": "Use the pet in this photo as the darts player. It stands on its back legs on a little box at the oche in a bright arena, holding a dart in its paw. It throws three darts and each lands in the bullseye. Then it spins in a happy circle while the crowd cheers and confetti falls. Cute and funny, realistic fur and lighting, 8 seconds. Keep the pet's markings the same."
+    },
+    {
+      "label": "Variation for a small business: we nailed it",
+      "text": "Use the person in this photo, wearing a plain apron or work shirt, as the darts player in a big arena. On the dartboard, three simple text labels sit around the bullseye: [your three strengths, like \"On time\", \"Local\", \"Fair price\"]. They throw three darts and each one hits the bullseye as a label lights up. They celebrate and the crowd cheers. Clean, bright sports-broadcast look, 8 seconds. No logos or brand names on clothes or screens."
+    }
+  ],
+  "tips": [
+    "A side-on photo with your throwing arm visible gives the smoothest throw.",
+    "If the darts miss or bend, add \"darts fly straight and stick in the board\" and try again.",
+    "Keep crowd faces blurry and unrecognisable. Use only your own photo or a friend who agreed.",
+    "Businesses: only put real, true strengths on the board. No made-up awards or results."
+  ],
+  "tags": ["video", "image-to-video", "sports", "celebration", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "in-this-town-everybody-goes-out",
+  "title": "\"In this town everybody goes out… except me\": your cosy night in",
+  "published": "2026-11-24T18:46:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Lip-sync the \"in this town\" sound while you do something calm, niche or nerdy instead of going out. AI writes the captions and picks your scene.",
+  "why": "Virlo's trend page, updated November 24, 2026, lists \"In this town everybody goes out partying except me\" as a fresh TikTok format first seen November 11, with about 449 creators in the last 7 days. People lip-sync the line while doing a mundane or niche activity instead of partying. It's a new sound on the idea in our earlier \"While they're out partying…\" pack, with more focus on where you live.",
+  "steps": [
+    "Find the trending \"in this town\" sound in your app.",
+    "Paste the main prompt into a chat tool and pick a caption and activity that feel like you.",
+    "Film yourself mid-activity, then look up and lip-sync the line straight to the camera.",
+    "Add the caption on screen and post it. Deadpan is funnier than a big smile."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: your night-in scene",
+      "text": "There's a TikTok trend where people lip-sync \"in this town everybody goes out partying except me\" while doing something calm, niche or nerdy instead. Help me make mine. Things I like doing at home: [list a few, like puzzles, baking bread, organizing my spice drawer, painting miniatures]. Give me 8 ideas. For each one, write a short scene to film (one sentence) and an on-screen caption under 12 words. Make them warm and a bit self-aware, not sad. No drinking jokes."
+    },
+    {
+      "label": "Variation: the small-town Canadian winter",
+      "text": "Write 8 on-screen captions for the \"in this town everybody goes out except me\" lip-sync trend, set in a small Canadian town in winter. Ideas like shovelling the driveway at 9 p.m., watching the local hockey game on the community channel, waxing cross-country skis or making a huge pot of soup. Under 12 words each, funny and cosy, with Canadian spelling."
+    },
+    {
+      "label": "Variation: the student edition",
+      "text": "Write 8 on-screen captions for the \"in this town everybody goes out except me\" lip-sync trend, from a student who is studying, colour-coding notes or doing a late-night library session instead. Under 12 words each, light and relatable, with a small proud twist at the end of each. Nothing about stress or burnout."
+    },
+    {
+      "label": "Variation for a small business: still open, still working",
+      "text": "I run [type of business] in [town]. Write 6 on-screen captions for the \"in this town everybody goes out except me\" lip-sync trend, showing me doing real behind-the-scenes work after hours: [list real tasks, like kneading tomorrow's dough, restocking shelves, finishing a custom order]. Under 12 words each. Warm and funny, no fake urgency, no made-up sales or claims."
+    }
+  ],
+  "tips": [
+    "Start the clip mid-task, then look up right as the line starts.",
+    "The more oddly specific the activity, the better it lands.",
+    "Keep it upbeat. The joke is that you love your night in.",
+    "Only film people at home or at work if they've agreed to be in it."
+  ],
+  "tags": ["text", "lip-sync", "tiktok", "cosy", "business"]
+}
