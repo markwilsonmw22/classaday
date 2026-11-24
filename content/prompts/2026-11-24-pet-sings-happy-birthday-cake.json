@@ -1,0 +1,40 @@
+{
+  "slug": "pet-sings-happy-birthday-cake",
+  "title": "Birthday serenade: your pet holds the cake and sings to you",
+  "published": "2026-11-24T12:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "CapCut"],
+  "summary": "Your cat or dog stands up, holds a small cake with lit candles and sings Happy Birthday straight to the camera. Send it instead of a card.",
+  "why": "A write-up from Atlas Cloud, dated November 24, 2026, tracks this format on TikTok: one creator posted cats and a dog singing Happy Birthday while holding a candle cake on November 20, 22 and 23, a Santa-hat holiday version posted November 19 passed 700,000 plays, and a CapCut template made on November 21 had over 34,000 uses by November 24. Those figures are the blog's own count. Our November 12 birthday pack is you blowing candles out a car window; this one stars your pet.",
+  "steps": [
+    "Pick a clear, well-lit photo of your pet facing the camera, with its face and markings easy to see.",
+    "Paste the main prompt into an image-to-video tool with the photo, and change the bracketed parts.",
+    "Add the Happy Birthday song: sing it yourself, or use a version from the app's sound library.",
+    "Send it to the birthday person, or post it and say it was made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the birthday song",
+      "text": "Use the [cat / dog] in this photo. Keep its face, fur colours and markings exactly the same. Make a 15-second vertical clip in a cosy living room in the evening, with soft warm lamps and a few balloons in the background. The pet stands on its back legs and holds a small round cake with white icing and three lit candles in its front paws, close to its chest. It looks straight into the camera and sings, its mouth moving in time to a slow birthday song, eyes half closed on the long notes. The candle flames flicker gently and light its face. In the last two seconds it tips the cake a little toward the camera as if offering it. Steady camera at the pet's eye level, realistic fur and movement. No text, no logos."
+    },
+    {
+      "label": "Variation: holiday birthday",
+      "text": "Use the pet in this photo. Keep its face, fur and markings the same. Make a 12-second vertical clip by a lit Christmas tree with soft fairy lights. The pet wears a small red knit hat with a white pompom, stands on its back legs and holds a little cake with red berries on top and two lit candles. It sings to the camera with its mouth moving in time to a cheerful song, swaying a little side to side. Snow falls past the window behind it. Warm, cosy light, steady camera, realistic. No text, no logos."
+    },
+    {
+      "label": "Variation: two pets, one duet",
+      "text": "Use the two pets in this photo. Keep each face, fur colour and markings the same. Make a 12-second vertical clip at a kitchen table with a small cake and three lit candles between them. Both sit up and face the camera. The first one sings a line with its mouth moving in time, then the second one joins in a beat late and a little off-key, and the first one turns to look at it. They finish leaning in together over the cake. Warm light, steady camera, realistic. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: happy birthday, regulars",
+      "text": "Use this photo of our shop cat or dog [upload] and this photo of our counter [upload]. Keep the pet's face and markings exactly the same, and keep the counter looking like the photo. Make a 12-second vertical clip. The pet stands on the counter on its back legs, holding a small [cupcake / slice of cake / cookie] with one lit candle, and sings to the camera with its mouth moving in time to a birthday song. It ends by setting the treat down on the counter. Warm light, steady camera, realistic. No readable text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "A photo where your pet is looking right at you gives the best singing face.",
+    "Keep the cake small and the candles few. Big cakes tend to bend or melt into the paws.",
+    "Happy Birthday itself is free to use, but a pop remix may not be. Sing it yourself or use the app's library.",
+    "Say it was made with AI, especially if you post it where people don't know your pet."
+  ],
+  "tags": ["pets", "birthday", "video", "image-to-video", "business"]
+}
