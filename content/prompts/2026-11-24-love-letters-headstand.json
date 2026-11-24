@@ -1,0 +1,40 @@
+{
+  "slug": "love-letters-headstand",
+  "title": "The LOVE headstand: your legs make the V between big wall letters",
+  "published": "2026-11-24T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "You go upside down in front of the letters L, O and E, open your legs into a V, and the wall spells LOVE. No real headstand needed.",
+  "why": "AI Trend Club lists a LOVE handstand trend traced to a TikTok post from November 14, 2026. A November 21 check counted about 13.6M views and 1.6M likes on the original. A person holds a headstand in front of the letters L, O and E and opens their legs into the V. People now make it from one photo with AI, so anyone can do the pose. We haven't covered it before.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself in comfy clothes you can move in.",
+    "Paste the main prompt into an image-to-video tool with your photo.",
+    "Check the letters read L, O, then the V, then E from left to right. Regenerate if they shuffle.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: plain room, LOVE on the wall",
+      "text": "Use the adult in this photo. Keep their face, hair, body and clothes exactly the same. Make a 12-second vertical clip with a fixed camera in a plain, bright room with a soft carpet. On the wall behind them are three large red letters, left to right: L, O, a wide empty gap, then E. Seconds 0 to 3: the person stands in the gap, smiles and places their hands and head on the carpet. Seconds 3 to 7: they rise slowly into a steady headstand, legs together, pointing straight up. Seconds 7 to 10: they open their legs into a wide V, so the wall now reads LOVE with their legs as the V. They hold it still. Seconds 10 to 12: they bring their legs together and come down gently, then sit and grin at the camera. Smooth, realistic motion. No other text, no logos."
+    },
+    {
+      "label": "Variation: holiday living room",
+      "text": "Use the adult in this photo. Keep their face and features the same. Make a 12-second vertical clip with a fixed camera in a cosy living room with a decorated tree in the corner and warm string lights. Large gold letters on the wall read, left to right: L, O, a wide gap, then E. The person, in matching holiday pyjamas, goes into a calm headstand in the gap and opens their legs into a V so the wall spells LOVE. They hold it for two seconds, then roll down and laugh. Warm evening light. No other text, no logos."
+    },
+    {
+      "label": "Variation: the wobbly try",
+      "text": "Use the adult in this photo. Keep their face and features the same. Make a 10-second vertical clip with a fixed camera in a plain room with large red letters on the wall: L, O, a wide gap, then E. The person goes into a headstand in the gap and opens their legs into a V to spell LOVE. They hold it for one second, wobble, and tip slowly sideways onto a big soft cushion. They lie there giving a thumbs up to the camera. Gentle, funny, nobody gets hurt. No other text, no logos."
+    },
+    {
+      "label": "Variation for a small business: yoga or fitness studio",
+      "text": "Use this photo of our instructor [upload]. Keep their face exactly the same. Make a 12-second vertical clip with a fixed camera in a bright studio with wooden floors and mats. Large letters on the wall read, left to right: L, O, a wide gap, then E. The instructor rolls out a mat in the gap, goes into a steady headstand and opens their legs into a V so the wall spells LOVE. They hold it, come down smoothly and wave the camera in. Calm, clean light. No other text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "Spell out the letter order and the gap in your prompt. AI tools often mix up letters on walls.",
+    "A fixed camera keeps the word lined up. Ask for it every time.",
+    "Don't try a real headstand for the clip unless you've trained for it. That's what the AI is for.",
+    "Only use photos of adults who said yes, and say it's made with AI."
+  ],
+  "tags": ["video", "image-to-video", "funny", "love", "business"]
+}

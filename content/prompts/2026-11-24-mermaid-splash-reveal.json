@@ -1,0 +1,40 @@
+{
+  "slug": "mermaid-splash-reveal",
+  "title": "Mermaid splash: one big splash and you're underwater with a tail",
+  "published": "2026-11-24T00:45:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Pose in a leafy garden, a wall of water splashes over the lens, and you're suddenly underwater as a mermaid with a shimmering tail.",
+  "why": "AI Trend Club lists a mermaid splash transformation traced to a TikTok tutorial posted November 16, 2026. It counted about 297K views and 12K likes on that post as of November 23. It's a very short clip, about 3 seconds, made from one photo. Our other reveal packs use a hand swipe or a light sweep; this one uses a splash of water.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself outdoors, standing in good light.",
+    "Paste the main prompt into an image-to-video tool with your photo.",
+    "Add a splash sound right on the cut, then let a calm underwater sound take over.",
+    "Post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: garden pose, splash, mermaid",
+      "text": "Use the adult in this photo. Keep their face, skin tone, hair and body exactly the same. Make a 5-second vertical clip. Seconds 0 to 2: they stand in a leafy green garden in soft daylight, strike a confident pose and smile at the camera. Second 2: a bright, clear wall of water splashes across the whole frame toward the lens. Seconds 2 to 5: the splash clears and the same person is now underwater in a calm blue sea, floating among soft sun rays and tiny bubbles. Their legs are now a long mermaid tail with shimmering teal and gold scales and a wide sheer fin. They wear a simple matching scale top. Their hair drifts slowly in the water and they give a small wave. Realistic light and water, smooth motion. No text, no logos."
+    },
+    {
+      "label": "Variation: pool-side to coral reef",
+      "text": "Use the adult in this photo. Keep their face and features the same. Make a 6-second vertical clip. They sit on the edge of a backyard pool in a towel wrap, swinging their feet. They look at the camera and jump in. The splash fills the frame. When it clears, they swim slowly past a bright coral reef with small striped fish, now with a deep purple and silver mermaid tail and a matching scale top. Gentle bubbles rise from their hair. Clear tropical water, soft sun rays from above. No text, no logos."
+    },
+    {
+      "label": "Variation: winter twist",
+      "text": "Use the adult in this photo. Keep their face and features the same. Make a 6-second vertical clip. They stand on a snowy lakeshore in a warm winter coat and toque, waving at the camera. A big splash of icy blue water bursts across the frame. When it clears, they float under clear frozen ice with light glowing through it, now as a mermaid with a pale silver-blue tail, a matching scale top and tiny frost sparkles in their hair. They smile and twirl once. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: swim school or pool party venue",
+      "text": "Use this photo of our instructor or host [upload]. Keep their face exactly the same. Make a 6-second vertical clip. They stand on a bright indoor pool deck holding a clipboard and give a thumbs up. A big splash fills the frame. When it clears, they are underwater in the same clear blue pool, now as a friendly mermaid with a bright coral-pink tail and a matching scale top, waving the camera in. Clean, bright light. No readable text, no logos or brand names."
+    }
+  ],
+  "tips": [
+    "The splash is the cut. Ask for it to cover the whole frame so the change feels like magic.",
+    "Keep it short. Five or six seconds is plenty for this one.",
+    "Only use photos of adults who said yes.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "image-to-video", "transformation", "mermaid", "business"]
+}
