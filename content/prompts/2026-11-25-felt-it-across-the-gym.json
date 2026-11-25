@@ -1,0 +1,40 @@
+{
+  "slug": "felt-it-across-the-gym",
+  "title": "\"We felt it across the gym\": the moment someone's skill outshines yours",
+  "published": "2026-11-25T12:43:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Lip-sync the \"felt the mog across the gym\" sound about a time someone's skill left you speechless. AI writes the scene and caption.",
+  "why": "Virlo's trend page, updated November 24, 2026, lists \"We felt the mog across the gym\" as a fresh TikTok format first seen November 18, with about 186 creators and 57.7 million views in its first week. People lip-sync the line to show they felt outclassed by someone else, like a rival team or their own mom.",
+  "steps": [
+    "Find the trending \"felt the mog all the way across the gym\" sound in your app.",
+    "Paste the main prompt into a chat tool and pick the moment that's most you.",
+    "Film the skill or setup that impressed you (with that person's okay), then cut to you lip-syncing the line, stunned.",
+    "Add the caption on screen and post. A wide-eyed, frozen face sells it."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: your outclassed moment",
+      "text": "There's a TikTok trend where people lip-sync \"we just felt the mog all the way across the gym\" to show they felt totally outclassed by someone. I want to make one about skill, not looks. Some people in my life who are scary good at something: [list a few, like my dad's snow shovelling, my friend's gingerbread houses, my coworker's spreadsheets]. Give me 8 ideas. For each one, write a two-shot scene to film (one sentence) and an on-screen caption under 12 words. Keep it kind: the joke is how impressed I am, not putting anyone down."
+    },
+    {
+      "label": "Variation: the holiday season edition",
+      "text": "Write 8 on-screen captions for the \"we felt the mog across the gym\" lip-sync trend, set in a Canadian December. Moments like the neighbour whose Christmas lights go up in one afternoon, the aunt who wraps gifts like a store, the friend who skates backwards at the outdoor rink, or the kid who builds a perfect snow fort. Under 12 words each, funny and warm, Canadian spelling."
+    },
+    {
+      "label": "Variation: the team or rec league",
+      "text": "Write 8 on-screen captions for the \"we felt the mog across the gym\" lip-sync trend from a casual rec-league player watching the other team warm up. Sports like hockey, volleyball, curling, pickleball and basketball. Under 12 words each. Playful and good-sporting, no trash talk and no comments about anyone's body."
+    },
+    {
+      "label": "Variation for a small business: a customer or teammate who wowed you",
+      "text": "I run [type of business]. Write 6 on-screen captions for the \"we felt the mog across the gym\" lip-sync trend, about real moments when a teammate or regular customer showed a skill that floored us: [list real examples, like a new hire's latte art or a customer who knew every product]. Under 12 words each. Warm and funny. No made-up claims, prices or reviews."
+    }
+  ],
+  "tips": [
+    "Keep it about skill or effort. Comparing bodies or faces turns a fun trend mean fast.",
+    "Only film people who have agreed to be in it, and never strangers at the gym.",
+    "Show the impressive thing first, then your reaction, so viewers get the joke in two seconds.",
+    "Tag the person you're praising. It doubles as a shout-out."
+  ],
+  "tags": ["text", "lip-sync", "tiktok", "funny", "business"]
+}
