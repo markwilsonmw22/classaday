@@ -1,0 +1,40 @@
+{
+  "slug": "same-clip-new-place-relight",
+  "title": "Same clip, new place: relight and move your own video",
+  "published": "2026-11-25T00:41:00Z",
+  "kind": "video",
+  "tools": ["Higgsfield", "Runway", "Kling"],
+  "summary": "Film one plain clip at home, then use a video-to-video editor to move it to a snowy street, a sunset beach or a cosy cabin, with new light.",
+  "why": "Higgsfield released Editing Room on November 20, 2026. Its changelog says you can mark a moment in your own footage and change the location, the camera angle and the lighting, and stack the edits. We haven't found view counts for this yet; it's a new tool, so this is an early idea to try.",
+  "steps": [
+    "Film a short clip of yourself (5 to 10 seconds) in good, even light with a steady phone. Walking, waving or sipping a drink all work.",
+    "Upload it to a video-to-video editor and mark the moment you want to change.",
+    "Paste one prompt at a time: location first, then light. Check each result before stacking the next edit.",
+    "Post the plain clip first and the edited one second, so people see the before and after."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: snowy evening street",
+      "text": "Keep the person, their face, clothes and movement exactly the same. Change the location to a quiet small-town main street on a snowy December evening, with soft falling snow, warm shop windows and strings of white lights overhead. Relight the person with warm light from the left, as if from a shop window, and a cool blue glow from the sky. Keep the camera move the same. Realistic, natural colours."
+    },
+    {
+      "label": "Variation: from kitchen to cabin",
+      "text": "Keep the person and their movement exactly the same. Change the room to a cosy log cabin with a crackling fireplace, a big window showing snowy pine trees, and a knitted blanket on the couch. Relight them with flickering orange firelight from the right and soft daylight from the window. Keep it realistic, like it was filmed there on a phone."
+    },
+    {
+      "label": "Variation: one walk, three seasons",
+      "text": "Keep the person walking exactly as in the clip. Split it into three parts. First part: the path is in a sunny summer park with green trees. Second part: the same path in fall, with orange and red leaves falling. Third part: the same path in winter, covered in fresh snow. Match the light to each season and keep the cuts smooth. Same face and clothes all the way through."
+    },
+    {
+      "label": "Variation for a small business: the product goes travelling",
+      "text": "Keep the product in this clip, and the hands holding it, exactly the same. Change the background to [a snowy cabin porch, a sunny lakeside dock or a busy holiday market]. Relight the product to match, with soft highlights and a natural shadow. No other logos or brand names in the scene. Keep it realistic and close-up."
+    }
+  ],
+  "tips": [
+    "Change one thing at a time. Location first, then light, then camera. Big stacked edits are more likely to warp faces and hands.",
+    "Film against a plain wall with nothing moving behind you. The editor has less to guess.",
+    "Only edit your own clips. Don't swap in someone else's face or make it look like a real event that didn't happen.",
+    "Businesses: keep the product itself unchanged so the video stays honest about what people will get."
+  ],
+  "tags": ["video", "video-to-video", "relight", "winter", "business"]
+}

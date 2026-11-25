@@ -1,0 +1,40 @@
+{
+  "slug": "sunset-crime-game-poster",
+  "title": "Game cover you: neon sunset poster from your selfie",
+  "published": "2026-11-25T00:40:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling"],
+  "summary": "Turn a selfie into a bold video-game cover: palm trees, a sports car, neon signs and a pink-orange sunset, with your face kept the same.",
+  "why": "A big open-world game came out on November 19, 2026, and The Daily Jagran (November 19) and UkrMedia (November 22) both report people turning selfies into posters in its sunny, neon, 1980s-beach-city look with ChatGPT and Gemini. Neither gave view counts. Kling also released Kling Image 4.0 on November 17, which Higgsfield says is aimed at posters and portraits.",
+  "steps": [
+    "Pick a clear, well-lit selfie or a waist-up photo where your face is easy to see.",
+    "Upload it to ChatGPT or Gemini and paste the main prompt.",
+    "If the face drifts, reply \"keep my face exactly as in the photo\" and regenerate.",
+    "Add your own title with a simple text tool if you want one, then post it as a profile picture, wallpaper or cover."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the solo cover",
+      "text": "Turn the person in this photo into the star of a video-game cover poster. Style: bold painted illustration with clean dark outlines and rich, glossy colours. Setting: a sunny beach city at golden hour, tall palm trees, pastel buildings with pink and teal neon signs, and a shiny convertible sports car parked behind them. Sky: a big pink and orange sunset. Pose: confident, arms crossed, slight smile, looking at the camera. Keep their face, skin tone, hair and glasses (if any) exactly the same. Portrait layout, 2:3. No text, no logos, no real brand names on the car or signs."
+    },
+    {
+      "label": "Variation: the panel cover with friends",
+      "text": "Make a video-game cover poster split into four tilted panels with thin white borders, using the people in these photos (one person per panel). Each person has their own small scene: one leaning on a sports car, one on a beach boardwalk, one on a rooftop with neon signs, one on a scooter by palm trees. Painted illustration style with dark outlines, warm sunset light, pink, orange and teal colours. Keep every face the same as in the photos. No text, no logos, no brand names."
+    },
+    {
+      "label": "Variation: couple poster at night",
+      "text": "Turn the two people in this photo into a video-game cover. They stand back to back on a wet city street at night, lit by pink and blue neon signs, palm trees and a classic sports car behind them. Painted illustration, strong outlines, glossy reflections on the road, dramatic low camera angle. Keep both faces and outfits recognisable. No text, no logos, no brand names."
+    },
+    {
+      "label": "Variation for a small business: our shop is the main mission",
+      "text": "Turn the person in this photo into the hero of a video-game cover, standing proudly in front of their shop or food truck on a sunny palm-lined street at sunset. They hold a tool of their trade, like [a coffee cup, scissors, a wrench or a paintbrush]. Painted illustration with dark outlines, pink and orange sky, a little neon glow on the shop front. Leave clean empty space at the top for a title. Keep their face the same. No logos or brand names except a plain sign that says [your shop name]."
+    }
+  ],
+  "tips": [
+    "Describe the look, not the game. Asking for a named game or its logo is more likely to be refused or to break copyright.",
+    "Never pass these off as real screenshots or leaks. Lots of fake game clips have fooled people this month; keep yours clearly a fun poster.",
+    "Use only your own photo, or friends and family who agreed to be in it.",
+    "For a phone wallpaper, ask for a 9:16 layout and keep your face in the top half so the clock doesn't cover it."
+  ],
+  "tags": ["selfie", "poster", "retro", "gaming", "business"]
+}
