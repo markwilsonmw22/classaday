@@ -1,0 +1,40 @@
+{
+  "slug": "hooded-ninja-cat-night-road",
+  "title": "Hooded ninja cat: your cat on night watch by the road, then a hop toward you",
+  "published": "2026-11-25T18:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Your cat in a tiny dark hood waits by a guardrail at night as headlights pass, raises a paw, peeks out, then hops toward the camera. Made from one pet photo.",
+  "why": "AI Trend Club lists \"Night Road Ninja Cat\", traced to a TikTok post from November 24, 2026 that it says had 1.1 million views when checked the next day. It's a silent 13-second clip made from one pet photo: a hooded cat by a night road raises a paw, peeks out and hops toward the camera. Our other pet packs are dances and gags; this one is a quiet, sneaky little mission.",
+  "steps": [
+    "Pick a clear photo of your cat where its face and ears are easy to see.",
+    "Paste the main prompt into an image-to-video tool with the photo.",
+    "Check the cat's face and markings still look like your cat. If not, try again with a sharper, front-facing photo.",
+    "The clip is silent, so add your own sound, then post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: night watch by the road",
+      "text": "Use this photo of my cat. Make a 12-second vertical clip. Night, beside a quiet country road with a metal guardrail. My cat sits upright by the guardrail wearing a small dark cloth hood that frames its face, like a tiny ninja on watch. Car headlights sweep past in the background, lighting the cat for a moment. The cat slowly raises one front paw, peeks out from under the hood with wide eyes, then hops forward toward the camera and stops close up, looking straight at us. Low camera, held still near the ground, one continuous shot. Realistic fur and lighting. Keep my cat's face, colours and markings the same as the photo. The cat is calm and safe, well away from the cars. No text, no logos."
+    },
+    {
+      "label": "Variation: snowy winter patrol",
+      "text": "Use this photo of my cat. Make a 12-second vertical clip. Night, on a snowy roadside next to a snowbank and a guardrail, light snow falling through the glow of passing headlights. My cat wears a small dark knitted hood with snowflakes on it. It sits very still, lifts one paw like a signal, peeks out from the hood, then bounds through the snow toward the camera and shakes the snow off. Low camera held still, one continuous shot. Keep my cat's face and markings the same as the photo. The cat stays calm and away from the road. No text, no logos."
+    },
+    {
+      "label": "Variation: two cats, one mission",
+      "text": "Use these two photos of my cats. Make a 12-second vertical clip. Night, beside a quiet road with a guardrail, soft headlights passing in the distance. Both cats sit side by side in matching small dark hoods. The first cat raises a paw, the second one nods, they both peek out from their hoods, then hop toward the camera together and stop close up. Low, still camera, one continuous shot. Keep both cats' faces and markings the same as the photos. No text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the shop cat on duty",
+      "text": "Use this photo of our shop cat. Make a 12-second vertical clip. Night, on the sidewalk outside our shop, the window glowing warm behind. The cat sits by the door wearing a small dark hood, guarding the shop. Car lights pass on the street. It raises one paw, peeks out from the hood, then hops toward the camera as if to say the shop is safe till morning. Low, still camera, one continuous shot. Keep the cat's face and markings the same as the photo. No readable signs, no logos, no brand names."
+    }
+  ],
+  "tips": [
+    "Write that the cat is calm and away from the cars, so the clip feels fun, not worrying.",
+    "Use a photo with your cat's whole face in view. The hood covers the ears, so the eyes and markings do the work.",
+    "A short, sneaky sound or soft music fits best, since the clip comes out silent.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "pets", "cat", "night"]
+}

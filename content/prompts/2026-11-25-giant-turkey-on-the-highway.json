@@ -1,0 +1,40 @@
+{
+  "slug": "giant-turkey-on-the-highway",
+  "title": "Giant turkey on the highway: you pass a flatbed hauling a roast bigger than the truck",
+  "published": "2026-11-25T18:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield"],
+  "summary": "Seen from the passenger window, you pull up beside a flatbed carrying a giant roast turkey, then pass the cab. A silly clip for holiday dinner season.",
+  "why": "AI Trend Club lists \"Giant Thanksgiving Turkey Truck\", traced to a TikTok post from November 24, 2026 with 28,600 views when checked on November 25. It's small and brand new, but it lands right before US Thanksgiving on November 26 and works for any big holiday dinner. Our earlier turkey pack is a food board plan; this one is a road-trip video joke.",
+  "steps": [
+    "Pick a clear photo of your car or truck from the side or at an angle.",
+    "Paste the main prompt into an image-to-video tool with the photo.",
+    "Check that the vehicle in the clip looks like yours and the turkey is clearly strapped down.",
+    "Add a fun sound or music, post it and say it's made with AI."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: passing the giant turkey",
+      "text": "Use this photo of my vehicle as the truck in the clip. Make a 10-second vertical clip. Daytime on a wide, sunny highway. The camera looks out the passenger window of a car in the next lane. We slowly catch up to a flatbed trailer carrying a golden roast turkey bigger than the truck's cab, held down with bright yellow straps. The turkey fills the frame as we pass it, the trailer wheels roll by, and then the cab comes into view: it's my vehicle, pulling the giant turkey. Steady passenger-window view, one continuous shot. Realistic lighting and motion. No readable licence plates, no text, no logos."
+    },
+    {
+      "label": "Variation: snowy Canadian highway",
+      "text": "Use this photo of my vehicle as the truck in the clip. Make a 10-second vertical clip. A snowy two-lane highway through a pine forest, grey winter sky, snowbanks on both sides. The camera looks out the passenger window as we catch up to a flatbed trailer carrying a huge roast turkey dusted with snow, strapped down with yellow straps. We pass the giant turkey, the trailer wheels roll by, and my vehicle comes into view pulling it. Steady passenger-window view, one continuous shot. No readable plates, no text, no logos."
+    },
+    {
+      "label": "Variation: the whole holiday dinner",
+      "text": "Use this photo of my vehicle as the truck in the clip. Make a 10-second vertical clip. Daytime on a sunny highway, seen from the passenger window of a car in the next lane. We pass a long flatbed trailer loaded with a giant holiday dinner: a roast turkey bigger than the cab, a huge bowl of mashed potatoes, a mountain of stuffing and a giant pie, all strapped down. The camera passes each dish in turn, then my vehicle comes into view pulling it all. One continuous shot. No readable plates, no text, no logos."
+    },
+    {
+      "label": "Variation for a small business: the big order",
+      "text": "Use this photo of our delivery van as the truck in the clip. Make a 10-second vertical clip. Daytime on a sunny highway, seen from the passenger window of a car in the next lane. We pass a flatbed trailer carrying one of our products made giant: [DESCRIBE YOUR PRODUCT, for example: a huge loaf of bread, a giant pie, an enormous bouquet], strapped down with yellow straps. Then our van comes into view pulling it. One continuous shot. Keep the van the same as the photo. No readable plates, no text, no logos."
+    }
+  ],
+  "tips": [
+    "A side or three-quarter photo of the vehicle works best, since the clip ends on the cab from the side.",
+    "Ask for no readable licence plates, so you don't share your real one.",
+    "Keep the turkey strapped down in the prompt. It reads as a joke, not a crash.",
+    "Say it's made with AI in your caption."
+  ],
+  "tags": ["video", "holiday", "food", "car", "business"]
+}
