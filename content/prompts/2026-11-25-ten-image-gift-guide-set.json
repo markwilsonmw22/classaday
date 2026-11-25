@@ -1,0 +1,36 @@
+{
+  "slug": "ten-image-gift-guide-set",
+  "title": "One prompt, ten matching images: your holiday gift guide carousel",
+  "published": "2026-11-25T06:45:00Z",
+  "kind": "image",
+  "tools": ["Kling"],
+  "summary": "Ask for a whole set at once: a cover, eight gift slides and a closing slide, all in one look, with clear text you can still fix after.",
+  "why": "Kling released Image 4.0 on November 18, 2026. Its announcement says one prompt can make up to 10 images with a matching style, render long passages of text, and let you edit the text and fonts after the image is made. We haven't seen view counts for sets like this yet; it's a new feature, so this is an early idea for December gift posts.",
+  "steps": [
+    "Write your list first: 8 gift ideas, each with a name and one short line. Use your own products or real things you'd recommend.",
+    "Paste the main prompt into the image tool's set or multi-image option and fill in your list.",
+    "Check every slide for spelling and wrong details. Fix the text in the editor rather than regenerating the whole set.",
+    "Post the images as one carousel. Put the cover first and the closing slide last."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: 10-slide gift guide",
+      "text": "Make a set of 10 matching square images for a social media carousel called \"[GUIDE TITLE, for example: Gifts for the person who's always cold]\". Same style on every slide: cream background, soft warm daylight, a sprig of pine in one corner, deep green and cranberry accents, and a clean rounded sans-serif font. Slide 1 is the cover with the title in large letters. Slides 2 to 9 each show one gift on a wooden table, with its name in bold at the top and one short line under it: [LIST YOUR 8 GIFTS AND LINES]. Slide 10 says \"Save this for later\" with a small gift box drawing. Plain objects only, no logos or brand names on anything."
+    },
+    {
+      "label": "Variation: cosy winter kit, one item per slide",
+      "text": "Create 10 images in one consistent style for a carousel called \"My winter survival kit\". Overhead flat-lay photos on a chunky knit blanket, soft window light, muted blues and creams. Slide 1 is a title card. Slides 2 to 9 each show one item from this list, with a short handwritten-style label: [8 ITEMS, for example: wool socks, a flask of tea, a paperback, hand cream]. Slide 10 asks \"What's in yours?\". Keep every slide the same angle and light. No logos or packaging text."
+    },
+    {
+      "label": "Variation for a small business: shop gift guide",
+      "text": "I run [TYPE OF SHOP]. Make a set of 10 matching images for a holiday gift guide using my real products. Use the photos I've uploaded as reference and keep each product looking exactly as it does in real life: same colours, size and shape. Style: [YOUR BRAND COLOURS], simple backdrop, soft shadows, one font throughout. Slide 1: \"Gift guide: [SHOP NAME]\". Slides 2 to 9: one product each with its name and real price in CAD: [LIST]. Slide 10: \"Shop in store or online\" with [WEBSITE]. No made-up discounts, countdowns or customer quotes."
+    }
+  ],
+  "tips": [
+    "Describe the shared look once, clearly. Light, background, colours and font are what make ten slides feel like one set.",
+    "Keep each slide to a few words. Small text is hard to read on a phone even if the AI spells it right.",
+    "Businesses: use real product photos as references and real prices, so the guide shows what people will actually get.",
+    "If one slide comes out wrong, fix just that one. Regenerating the whole set can change the others too."
+  ],
+  "tags": ["image", "carousel", "gift-guide", "holiday", "business"]
+}

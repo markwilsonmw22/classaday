@@ -1,0 +1,36 @@
+{
+  "slug": "guess-my-exam-grade",
+  "title": "Guess my exam grade: yes-or-no age questions until the score lands",
+  "published": "2026-11-25T06:45:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Your friend sees your mark first. You guess it by asking yes-or-no questions as if the score were an age. AI writes a funny question ladder for any number.",
+  "why": "Virlo's TikTok tracker (updated November 24, 2026) lists \"Guessing my exam grade\" as peaking, with new creators posting it every day from November 18 to 24 and about 73 million total views across the videos it found. Know Your Meme wrote up the original on October 19: a student guessed her midterm mark by asking things like \"can I drive?\" while her friend answered yes or no.",
+  "steps": [
+    "Decide the real number first: a test mark, a quiz score, or a fun stand-in like your step count or a business milestone.",
+    "Paste a prompt below with your number. Ask for 6 to 8 yes-or-no questions that narrow in on it, treating the number like an age.",
+    "Film it with a friend: they look at the score and answer only \"yes\" or \"no\" while you work through the questions and your face falls (or lights up).",
+    "End by showing the number on the screen or paper. Add the score as on-screen text in the last second."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the question ladder",
+      "text": "I'm filming the \"guess my exam grade\" trend. My friend knows my score and can only answer yes or no. I guess the score by asking questions as if it were a person's age. My real score is [NUMBER] out of 100. Write 7 short yes-or-no questions in order that narrow down to that number. Start broad (\"Can I ride a bike?\"), then get closer (\"Can I drive?\", \"Can I rent a car?\", \"Do I get a senior discount?\"). Use everyday life milestones in Canada. Keep it light and clean: nothing about death, illness, drinking or dating. For each question, give the answer my friend should say. Finish with one funny last line I can say when the number is revealed."
+    },
+    {
+      "label": "Variation: the good-news version",
+      "text": "Write a \"guess my exam grade\" question ladder for a score I'm proud of: [NUMBER] out of 100. Use yes-or-no questions where the number is treated as an age, like \"Am I old enough to have grey hair?\" or \"Could I be a grandparent?\" Make each answer build the suspense so the last reveal feels like a win. Give 6 questions, the yes or no answers, and a short caption for the video under 12 words."
+    },
+    {
+      "label": "Variation for a small business: guess how long we've been open",
+      "text": "My business is [TYPE OF BUSINESS] and we've been open for [NUMBER] years. Write a \"guess the number\" video in the style of the guess-my-exam-grade trend: a staff member asks yes-or-no questions as if our years in business were a person's age (\"Could we go to kindergarten?\", \"Could we get a learner's permit?\"), and the owner answers. 6 questions, the answers, and a warm closing line that thanks our customers. No discounts, prices or claims about being the best."
+    }
+  ],
+  "tips": [
+    "Pick questions people get right away. Driving, first jobs and retirement work better than trivia.",
+    "Let the face do the work. Pause after each \"yes\" or \"no\" so viewers can guess along with you.",
+    "Use a real number. If it's not a real mark, say what it is (steps, years open, days to a holiday) so nobody feels tricked.",
+    "Don't show anyone else's mark or name, and blur anything personal on the screen at the reveal."
+  ],
+  "tags": ["text", "tiktok", "school", "funny", "business"]
+}
