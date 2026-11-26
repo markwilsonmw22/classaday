@@ -1,0 +1,40 @@
+{
+  "slug": "its-no-vember-list",
+  "title": "\"It's NO-vember\": the list of habits you're dropping this month",
+  "published": "2026-11-26T18:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Open on \"It's NO-vember\" and stack three or four short \"no\" lines about habits you're done with. AI writes them in your voice in seconds.",
+  "why": "NewEngen's Instagram trends page (updated November 20, 2026) lists \"It's NO-vember\": the post opens on that line and stacks short \"no\" lines naming habits to drop, and it's popular with studios, stylists and coaches. The pun only works until November 30, so this is a last-week-of-the-month post.",
+  "steps": [
+    "Use the main prompt to get a list of \"no\" lines that fit you.",
+    "Film 6 to 10 seconds of yourself going about your day, or at work.",
+    "Put \"It's NO-vember\" at the top, then add three or four \"no\" lines one by one.",
+    "Ask viewers to add their own \"no\" in the comments. Post before December 1."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "Write a short \"It's NO-vember\" list for an Instagram Reel. Start with the line \"It's NO-vember.\" then give me 10 options for short \"no\" lines about everyday habits I'm dropping, like \"no hitting snooze five times\" or \"no doom-scrolling in bed\". Here's a bit about me: [work, home, hobbies]. Keep each line under seven words, light and upbeat, never preachy."
+    },
+    {
+      "label": "Variation: one image or carousel",
+      "text": "Design a clean square graphic. At the top, in big bold letters: \"It's NO-vember.\" Below it, four lines, each starting with a small red cross: [LINE 1], [LINE 2], [LINE 3], [LINE 4]. Warm off-white background, cosy autumn colours, plenty of space around the text. Spell every word exactly as written. No logos and no other text."
+    },
+    {
+      "label": "Variation: the roommate or family edition",
+      "text": "Write an \"It's NO-vember\" list for our home, for a funny clip we'll film together. We are [who lives there, including pets]. Give me 8 \"no\" lines about shared habits, like \"no empty milk jug back in the fridge\". Keep it playful, with no line that singles out or embarrasses one person."
+    },
+    {
+      "label": "Variation for a small business: tie each no to what we do",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write an \"It's NO-vember\" list with 6 \"no\" lines my customers would nod along to, each linked to something we really offer, like a bike shop saying \"no riding on bald tires into winter\". Keep it friendly and honest: no health claims, no made-up deals and no fake urgency. Add a one-line caption asking people to share their own \"no\"."
+    }
+  ],
+  "tips": [
+    "Three or four lines is plenty. Each one should be readable in about two seconds.",
+    "Let the lines pop in one at a time so people watch to the end.",
+    "Keep it about habits, not people. Nobody likes a list that's a dig at someone.",
+    "The same list works as a single image or a carousel if you don't want to film."
+  ],
+  "tags": ["text", "reels", "november", "list", "business"]
+}

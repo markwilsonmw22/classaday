@@ -1,0 +1,40 @@
+{
+  "slug": "wrapping-paper-tear-reveal",
+  "title": "Wrapping paper tear reveal: rip through the screen to show your news",
+  "published": "2026-11-26T18:40:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "The whole frame is festive wrapping paper, then a hand or paw tears through it to reveal your photo, news or product. AI makes both frames and the tear.",
+  "why": "NewEngen's Instagram trends page (updated November 20, 2026) lists the Christmas wrapping paper reveal: the shot is covered in wrapping paper and a hand, paw or the camera tears through to show a product, menu, event date or short message, often as a holiday teaser.",
+  "steps": [
+    "Pick what's behind the paper: a family photo, a pet, a holiday plan, or something you made or sell.",
+    "Use the first prompt to make a full-frame wrapping paper image, then the second to make the reveal frame.",
+    "Give both images to a video tool as the first and last frames with the tear prompt.",
+    "Add a paper-ripping sound or calm holiday music, and a short line like \"something festive is coming…\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the wrapping paper frame",
+      "text": "Make a vertical 9:16 image that is completely filled edge to edge with shiny Christmas wrapping paper, as if it's taped right over the camera. Deep red paper with a small gold and white pattern of stars and holly, soft creases, a little sparkle where the light hits, and one strip of clear tape near the top corner. No text, logos or characters."
+    },
+    {
+      "label": "The tear (first and last frame)",
+      "text": "Use the first image as the start and the second image as the end. Keep the camera still. After a short pause, a hand pokes through the middle of the wrapping paper, makes a small tear, then rips it open quickly in two big pieces that fall away to the sides, showing the scene behind. Paper should crinkle and tear naturally with ragged edges. About 5 seconds. Keep everything in the final scene exactly as it is in the second image. No extra objects or text."
+    },
+    {
+      "label": "Variation: a pet does the tearing",
+      "text": "Use my photo of my [dog/cat] as the final scene. Start on a frame covered in festive wrapping paper. A paw swipes through the paper, then my pet pushes its head through the hole and the paper tears away, leaving it sitting in the scene from the photo looking pleased. Keep my pet's real markings, size and face exactly the same. About 5 seconds, gentle and cute."
+    },
+    {
+      "label": "Variation for a small business: holiday news reveal",
+      "text": "Use my real photo of [our shop window / our holiday menu board / our new product] as the final scene. Start fully covered in green and gold wrapping paper. A hand tears through the centre and the paper rips away to reveal the photo, with a small burst of confetti. Keep every word, price and product in the photo exactly as it is. Add no new text, logos, prices or people."
+    }
+  ],
+  "tips": [
+    "Pick a paper colour that clashes a little with the reveal, so the moment of the rip really pops.",
+    "If the tear looks rubbery, ask for \"stiff paper with sharp, ragged edges\" and try again.",
+    "You can also do it for real: tape paper over a doorway or box and rip it on camera. AI is handy when you can't.",
+    "Businesses: only reveal real news, real prices and real products. No made-up deals or countdowns."
+  ],
+  "tags": ["video", "christmas", "reveal", "image-to-video", "business"]
+}

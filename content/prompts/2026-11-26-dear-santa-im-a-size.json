@@ -1,0 +1,40 @@
+{
+  "slug": "dear-santa-im-a-size",
+  "title": "\"Dear Santa, I'm a size…\": the wish list that doesn't come in sizes",
+  "published": "2026-11-26T18:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Start with \"Dear Santa, I'm a size…\" and finish with the wish you really want, like a size quiet weekend. AI helps you find the funniest ending.",
+  "why": "Later's November 2026 Reels roundup (entry dated November 20) and NewEngen's Instagram trends page (updated November 20, 2026) both list \"Dear Santa, I'm a size…\": creators put the line on screen, then finish it with a wish that can't come in a size, set to a soft instrumental Christmas sound.",
+  "steps": [
+    "Use the main prompt to brainstorm endings that fit your life.",
+    "Film 5 to 10 seconds of yourself, your desk or your space looking hopeful.",
+    "Put \"Dear Santa, I'm a size…\" on screen first, then pop in your ending a beat later.",
+    "Add a calm holiday sound from the app's library and ask viewers for their own ending in the comments."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "I'm making a short holiday clip that starts with the on-screen line \"Dear Santa, I'm a size…\" and ends with a wish that can't come in a size, like \"a size whole weekend with no plans\". Here's a bit about me: [job, hobbies, home life, pets]. Give me 15 endings that sound like me. Keep each under eight words, warm and a little funny, and nothing about body size or weight."
+    },
+    {
+      "label": "Variation: a whole family or friend group",
+      "text": "Give me 8 \"Dear Santa, I'm a size…\" endings for a group clip where each person holds up their own card. We are [who is in it, e.g. two parents, a teenager and a dog]. Give each person one ending that fits them, short enough to read in two seconds. Keep it kind, with no inside jokes that could embarrass anyone."
+    },
+    {
+      "label": "Variation: holiday card text overlay",
+      "text": "Design a simple festive title card that says \"Dear Santa, I'm a size…\" in large, friendly hand-lettered type on a soft red and cream background with a few small snowflakes. Leave the bottom third empty so I can add my own ending later. No logos, no characters, no other text."
+    },
+    {
+      "label": "Variation for a small business: our service is the wish",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write 8 \"Dear Santa, I'm a size…\" endings where the wish is something we really offer, like \"a size fresh haircut before the party\". Keep it honest: no made-up prices, deals, countdowns or customer quotes. Add one short caption inviting people to share their own wish in the comments."
+    }
+  ],
+  "tips": [
+    "The pause before the ending is the joke. Give the first line a full second on screen.",
+    "Stay away from clothing or body sizes. The fun is that the wish has no size at all.",
+    "Business accounts: check the sound is cleared for business use, or use an original sound. The text carries the trend.",
+    "Pin your favourite comment ending to keep the thread going."
+  ],
+  "tags": ["text", "christmas", "wish-list", "reels", "business"]
+}
