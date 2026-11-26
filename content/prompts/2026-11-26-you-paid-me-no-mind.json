@@ -1,0 +1,40 @@
+{
+  "slug": "you-paid-me-no-mind",
+  "title": "\"You paid me no mind\": the moment you get walked right past",
+  "published": "2026-11-26T12:43:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Act out a tiny everyday snub, like someone strolling past you with a smoothie, and lip-sync the line. AI helps you find the funniest moment to film.",
+  "why": "SocialPilot's weekly TikTok trends list for November 17–25, 2026 includes \"You Paid Me No Mind\": creators lip-sync the line over a small moment of being ignored, such as someone walking right past them with a smoothie.",
+  "steps": [
+    "Use the main prompt to brainstorm small, harmless moments where you get ignored.",
+    "Pick one and ask a friend, partner or your pet to play the one walking past.",
+    "Film it in one take: they breeze by, you turn slowly to the camera and lip-sync the line.",
+    "Add the trending sound in the app and a short on-screen caption that sets up the scene."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "I'm filming a short, funny clip where I lip-sync the line \"you paid me no mind\" after being ignored. Give me 12 tiny everyday moments where someone walks right past me, like a friend carrying a smoothie they didn't get me, or my cat choosing someone else's lap. Here's a bit about my life: [home, work, friends, pets]. Keep each idea to one line, easy to film at home in under 10 seconds, and kind. No real names or real people's photos."
+    },
+    {
+      "label": "Variation: on-screen captions",
+      "text": "Write 10 short on-screen captions for a \"you paid me no mind\" clip. Each one sets up the snub in under eight words, like \"when the dog walker skips my house\" or \"the barista calling every name but mine\". Make them relatable and gentle, not mean."
+    },
+    {
+      "label": "Variation: my pet is the one ignoring me",
+      "text": "My pet is a [type of animal] called [name] who loves [two or three things]. Give me 8 ideas for a \"you paid me no mind\" clip where my pet walks right past me to get to something better, like the food bowl, a sunny spot or a guest. Each idea in one line, with where to put the camera."
+    },
+    {
+      "label": "Variation for a small business: ignored for the product",
+      "text": "I run [TYPE OF BUSINESS]. Give me 6 ideas for a light \"you paid me no mind\" clip where a staff member or friend walks right past me to grab one of our real products, like [an example product]. Keep it playful and honest: show the product as it really is, with no fake customers, made-up reviews or fake deals."
+    }
+  ],
+  "tips": [
+    "The slow head turn to the camera is the whole joke. Take your time with it.",
+    "Keep the person walking past in frame for only a second or two.",
+    "Only film people who agreed to be in it, and keep it playful, never aimed at a real person who isn't in on it.",
+    "Businesses: the product shot should be your real product, as it looks on the shelf."
+  ],
+  "tags": ["text", "lip-sync", "tiktok", "funny", "business"]
+}

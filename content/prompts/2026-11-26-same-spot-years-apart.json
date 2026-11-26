@@ -1,0 +1,40 @@
+{
+  "slug": "same-spot-years-apart",
+  "title": "Same spot, years apart: one place, then and now, in a single fade",
+  "published": "2026-11-26T12:43:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Go back to the exact spot of an old photo, take the same shot today, and let AI fade one year into the other in a smooth clip.",
+  "why": "SocialPilot's weekly TikTok trends list for November 17–25, 2026 includes \"Same Spot, Years Apart\": creators recreate an old photo or video in the same place, then cut between the two over a slow, nostalgic song about time. It's a place-first twist on our \"Then and now: growing up side by side\" pack.",
+  "steps": [
+    "Pick an old photo taken somewhere you can still visit: a porch, a park bench, a lakeside dock, a street corner.",
+    "Use the planning prompt to work out where to stand, then take the new photo from the same spot.",
+    "Restore the old photo if it needs it, then give both photos to a video tool as the first and last frames with the fade prompt.",
+    "Post the clip with the two years on screen and a calm sound from the app's library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: plan the reshoot",
+      "text": "Look at this old photo. I want to retake it from the exact same spot today. Tell me where the camera was: how high, how far back, which way it pointed, and what in the background I can line up with (a roofline, a tree, a railing). Then describe the pose of anyone in it and the time of day the light suggests. Keep it to a short checklist I can follow on my phone."
+    },
+    {
+      "label": "Fade between the two photos (first and last frame)",
+      "text": "Use the first image as the start and the second image as the end. Both show the same place, years apart. Keep the camera perfectly still. Slowly blend from the old scene to the new one over about 6 seconds: the colours and grain of the old photo melt into today's light, trees and buildings change gently in place, and any people turn into who they are now in the same spot. No zoom, no spin, no extra objects. Keep every face true to the photos."
+    },
+    {
+      "label": "Variation: restore the old photo first",
+      "text": "Restore this old photo. Remove dust, scratches and creases, and bring back natural colour. Keep the same place, people, clothes and light, and keep the film look of that era. Do not change anyone's face, age or expression, and do not add or remove anything in the scene."
+    },
+    {
+      "label": "Variation for a small business: our storefront, then and now",
+      "text": "Use the first image (our shop on the day we opened) as the start and the second image (our shop today) as the end. Keep the camera still and slowly blend from the old storefront to the new one over about 6 seconds. Keep the real signs, windows and street exactly as they are in each photo. No added people, logos or text."
+    }
+  ],
+  "tips": [
+    "Line up one strong straight line, like a doorframe or the horizon, and the fade will look far smoother.",
+    "Shoot at the same time of day as the old photo if you can. Matching light does half the work.",
+    "If other people are in the old photo, ask before you post them.",
+    "Put the two years on screen, like \"2009 → 2026\". Skip ages if anyone would rather not share theirs."
+  ],
+  "tags": ["video", "then-and-now", "nostalgia", "image-to-video", "business"]
+}
