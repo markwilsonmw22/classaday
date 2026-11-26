@@ -1,0 +1,40 @@
+{
+  "slug": "guys-im-looking-for-a-job",
+  "title": "\"Guys, I'm looking for a job\": the dream positions that involve zero work",
+  "published": "2026-11-26T06:42:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Say you're job hunting, then list the only \"positions\" you'd take, each one sillier and lazier than the last. AI helps you write the list.",
+  "why": "SocialBee's Instagram trends post dated November 19, 2026 lists \"Guys, I'm looking for a job\" as a new Reels format: the creator opens with that line on screen, then lists the joke \"jobs\" they'd accept, all of which involve doing nothing. SocialBee describes it as a joke about wanting to be paid just to exist.",
+  "steps": [
+    "Use the main prompt to brainstorm joke job titles, then pick your five favourites.",
+    "Film yourself standing still and looking serious, or use a short clip of you staring at a laptop.",
+    "Put \"guys i'm looking for a job\" on screen first, then show each \"position\" one at a time, about a second each.",
+    "Keep it under 10 seconds and add a sound from the app's library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt",
+      "text": "I'm making a funny Reel. It opens with the text \"guys i'm looking for a job\" and then lists the only positions I would accept. Each one should sound like a real job title but involve no real work. Here's a bit about me: [your hobbies, habits and what you love doing]. Give me 15 joke job titles, each under six words, like \"professional couch tester\" or \"full-time snack critic\". Keep them silly and kind. Don't mention real people, real companies or money amounts."
+    },
+    {
+      "label": "Variation: Canadian winter edition",
+      "text": "Write 10 joke job titles for a \"guys i'm looking for a job\" Reel, all about a Canadian winter. Each one should involve staying warm and doing nothing, like \"official snow day announcer\" or \"blanket temperature inspector\". Keep each under six words and make them easy to read in one second."
+    },
+    {
+      "label": "Variation: my pet is job hunting",
+      "text": "Write a \"guys i'm looking for a job\" list from my pet's point of view. My pet is a [type of animal] called [name] who loves [two or three things]. Give me 10 short joke job titles that are really just my pet's favourite lazy habits, like \"head of sunbeam research\". Keep each under six words."
+    },
+    {
+      "label": "Variation for a small business: we're hiring (for real)",
+      "text": "I run [TYPE OF BUSINESS] and I'm really hiring for [REAL ROLE]. Write a Reel script that starts with the joke \"guys i'm looking for a job\" and three silly fake job titles linked to our work, like [an example, such as \"chief cookie smeller\"], then turns it around: \"Okay, but we ARE hiring.\" End with the real role, the real hours and how to apply: [DETAILS]. Keep it honest: no fake perks, pay figures we don't offer, or made-up urgency."
+    }
+  ],
+  "tips": [
+    "Deadpan works best. Keep a straight face while the job titles get sillier.",
+    "Put the funniest title last so the Reel ends on a laugh.",
+    "Keep it light. Skip jokes about real people, real wealthy families or anyone's actual job.",
+    "Businesses: if you turn it into a hiring post, every detail after the joke must be true."
+  ],
+  "tags": ["text", "reels", "instagram", "funny", "business"]
+}

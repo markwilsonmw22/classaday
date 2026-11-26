@@ -1,0 +1,40 @@
+{
+  "slug": "born-to-forced-to-collage",
+  "title": "\"Born to… forced to…\": the life you want next to the life you've got",
+  "published": "2026-11-26T06:42:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini"],
+  "summary": "A two-part collage: \"born to\" shows what you'd love to be doing, \"forced to\" shows emails, laundry and errands. AI makes the matching images.",
+  "why": "SocialBee's Instagram trends post dated November 19, 2026 lists \"Born to… forced to…\" as a new format: a collage where the \"born to\" side shows dream activities like travel or reading, and the \"forced to\" side shows real work and chores. It also notes brands are using it to show what staff would rather be doing.",
+  "steps": [
+    "Write two short lists: three or four things you'd love to do all day, and three or four things you actually spend your day on.",
+    "Use the main prompt to make one collage image, or make each tile separately and put them together in your phone's collage tool.",
+    "Add the labels \"born to\" and \"forced to\" in big, plain text if the AI didn't spell them right.",
+    "Post it as a single image or a two-slide carousel, with \"born to\" first."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: one collage image",
+      "text": "Make a square collage split into two halves, top and bottom. The top half has the label \"born to\" in bold white lowercase letters and shows four small photo tiles of dreamy, relaxed moments: [YOUR 4 DREAM THINGS, for example: reading in a hammock, a beach at sunset, a long brunch, a road trip]. Warm, golden, sunny light. The bottom half has the label \"forced to\" and shows four tiles of ordinary chores: [YOUR 4 REAL THINGS, for example: an overflowing email inbox on a laptop, a laundry basket, a grocery line, a snow shovel]. Cooler, flatter indoor light. Realistic photo style, no people's faces, no logos or brand names."
+    },
+    {
+      "label": "Variation: Canadian winter edition",
+      "text": "Create a two-part collage. Top label: \"born to\". Show four cosy winter scenes: a mug of hot chocolate by a fireplace, skating on a frozen lake at dusk, a snowy cabin window, a stack of books under a blanket. Bottom label: \"forced to\". Show four winter chores: scraping ice off a car windshield, shovelling a driveway, wet boots by the door, a dark 5 p.m. commute. Keep the top warm and glowing and the bottom grey and cold. Photo style, no faces, no logos."
+    },
+    {
+      "label": "Variation: my pet",
+      "text": "Make a funny two-part collage about my [type of pet]. Top label \"born to\": four tiles of the pet napping in a sunbeam, chasing a toy, eating a treat, and stretched out on a big bed. Bottom label \"forced to\": four tiles of the pet at a bath, wearing a winter sweater, waiting at the vet's front desk, and watching me leave for work. Use my uploaded photo so the pet looks like mine. Soft, cute photo style, no logos."
+    },
+    {
+      "label": "Variation for a small business: our team",
+      "text": "I run [TYPE OF BUSINESS]. Make a light-hearted two-part collage for our page. Top label \"born to\": four tiles showing what our team would love to do, like [IDEAS, for example: taste-testing new recipes, a team picnic, sleeping in]. Bottom label \"forced to\": four tiles showing our real everyday work, like [REAL TASKS, for example: unpacking deliveries, cleaning the espresso machine, counting stock]. Show hands and workspaces, not faces. Keep it friendly and honest, no logos, prices or made-up claims."
+    }
+  ],
+  "tips": [
+    "The bigger the contrast, the funnier it is. Make the top half sunny and the bottom half dull.",
+    "Pick small, relatable chores. Laundry and emails land better than anything gloomy.",
+    "AI often misspells labels. Add \"born to\" and \"forced to\" yourself in your phone's text tool.",
+    "Businesses: keep it kind. Poke fun at the chores, never at your customers or your staff."
+  ],
+  "tags": ["image", "collage", "instagram", "relatable", "business"]
+}
