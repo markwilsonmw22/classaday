@@ -1,0 +1,40 @@
+{
+  "slug": "stir-the-coffee-holiday-song",
+  "title": "\"My coffee sounded weird this morning\": the mug that plays a holiday tune",
+  "published": "2026-11-27T00:45:00Z",
+  "kind": "video",
+  "tools": ["Veo", "Sora", "Kling", "ChatGPT"],
+  "summary": "Stir your coffee and a holiday tune starts playing. Lift the spoon and it stops. AI makes the cosy clip, or the music, for you.",
+  "why": "Later's Instagram Reels trends roundup, updated November 27, 2026, lists \"My coffee sounded weird this morning\": a person stirs a cup of coffee and a famous Christmas song plays, then the music stops the moment they lift the spoon.",
+  "steps": [
+    "Film a close-up of you stirring your morning drink, then lifting the spoon out and looking puzzled. Or make the whole clip with the main prompt.",
+    "Put \"My coffee sounded weird this morning\" on screen at the start.",
+    "Add a holiday tune that plays only while the spoon is moving: a trending sound from the app's library, or an original tune from the music variation.",
+    "Cut the music the exact moment the spoon leaves the cup. That stop is the joke."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (video with sound: Veo or Sora)",
+      "text": "Eight seconds, vertical 9:16, a cosy kitchen on a snowy winter morning. Close-up of a hand stirring a steaming mug of coffee with a metal spoon. As the spoon circles, a cheerful, jingly original holiday melody with sleigh bells starts playing, like a tiny music box. The hand lifts the spoon out and the music stops instantly, leaving only the quiet hum of the kitchen. The person leans in and stares at the mug, confused. Warm morning light, soft steam, snow falling outside the window. No text, no logos, no brand names on the mug, no famous songs."
+    },
+    {
+      "label": "Variation: your own photo (Kling)",
+      "text": "Use the attached photo of me at my kitchen table with a mug. Six seconds, vertical 9:16. I slowly stir the mug with a spoon and start to smile and sway a little, as if music is playing. Then I lift the spoon out, freeze, and look at the mug with a puzzled face. Keep my face, hair and clothes the same as the photo. Natural handheld feel, warm light, no text, no logos, no other people."
+    },
+    {
+      "label": "Caption and twist ideas (text)",
+      "text": "I'm making the \"My coffee sounded weird this morning\" clip, where stirring a drink makes a holiday song play and lifting the spoon stops it. Give me 10 twists on the idea with other everyday things, like a squeaky drawer, a kettle or my dog's water bowl, plus a short on-screen line for each. Keep them family-friendly and under eight words."
+    },
+    {
+      "label": "Variation for a small business: café or bakery",
+      "text": "I run [CAFÉ OR BAKERY] in [CITY, PROVINCE]. Write a short shot plan for a \"my latte sounded weird this morning\" Reel filmed at our counter: which drink to stir, where to put the camera, three on-screen line options and one caption that invites people in for a holiday drink. Keep it honest: no made-up prices, deals, countdowns or reviews."
+    }
+  ],
+  "tips": [
+    "Business accounts: well-known Christmas songs are usually not cleared for business use. Use an original tune or a sound marked for commercial use.",
+    "Film the stir close-up and steady. The spoon should be easy to see when it lifts out.",
+    "The silence after the music stops should last a full second. Let the confused look land.",
+    "AI video sound can drift. If the music doesn't stop on time, mute the AI audio and add the sound in the app instead."
+  ],
+  "tags": ["coffee", "christmas", "sound", "skit", "business"]
+}

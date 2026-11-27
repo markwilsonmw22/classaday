@@ -1,0 +1,40 @@
+{
+  "slug": "candle-blow-glam-reveal",
+  "title": "Candle blow glam reveal: one breath and your makeup is done",
+  "published": "2026-11-27T00:40:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Start bare-faced by a lit candle, blow it out, and cut straight to your full glam look. AI makes the after shot and the smooth candle clip.",
+  "why": "Later's Instagram Reels trends roundup, updated November 27, 2026, lists a \"candle makeup transformation\": creators start with a bare face, blow out a lit candle once, then cut to full makeup and hair in time with the audio. Our earlier glow-up packs used a hard cut, a beanie or a costume; here the candle is the switch.",
+  "steps": [
+    "Film or take a photo of yourself with no makeup, holding a lit candle near your face in a dim room.",
+    "Attach that photo to ChatGPT or Gemini and use the main prompt to make the glam after shot. Keep your face the same.",
+    "Optional: turn both photos into short clips in Kling or Veo with the video variation, so the flame and your breath move.",
+    "In TikTok or Reels, cut from the blow to the glam shot right on the beat, and add one short line of text."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (the after photo)",
+      "text": "Use the attached photo of me holding a lit candle. Keep my face, skin tone, eye colour and features exactly the same, so it still clearly looks like me. Make the \"after\" shot: the candle has just gone out and a thin curl of smoke drifts up. I now have a full, polished makeup look ([soft glam / bold red lip / sparkly holiday eyes]) and styled hair. Same room and angle, but warmer and a little brighter, with soft fairy lights blurred in the background. Vertical 9:16, looks like a phone photo with a touch of grain. Calm, confident expression. No text, no logos, no other people."
+    },
+    {
+      "label": "Variation: two short clips (Kling or Veo)",
+      "text": "Clip 1: use the attached bare-face photo. Four seconds, vertical 9:16, dim cosy room. The person holds a lit candle near their chin, looks at the camera, takes a small breath and blows the flame out. The flame flickers and goes dark. Clip 2: use the attached glam photo. Three seconds, same room and angle, a thin trail of smoke rises from the candle while the person slowly lifts their eyes to the camera and smiles. Keep the face the same in both. Natural movement, no text, no logos, no other people."
+    },
+    {
+      "label": "Caption ideas (text)",
+      "text": "Give me 10 short on-screen lines for a makeup reveal where I blow out a candle and cut to full glam. Keep each under seven words, playful and holiday-ready, like \"make a wish\" or \"party mode: on\". No claims about products, no brand names."
+    },
+    {
+      "label": "Variation for a small business: salon or makeup artist",
+      "text": "I run [TYPE OF BEAUTY BUSINESS] in [CITY, PROVINCE]. Write a short plan for a candle blow reveal Reel using a real client who has agreed to be filmed: the before shot, the after shot, three on-screen line options and one caption that invites people to book for holiday parties. Keep it honest: no made-up prices, deals, countdowns, reviews or results."
+    }
+  ],
+  "tips": [
+    "Safety first: use a battery candle for filming if you can, or keep real flames well away from hair and sprays.",
+    "Keep the camera in the same spot for both shots so the cut feels like magic.",
+    "Check the AI after shot still looks like you before you post. If it changed your face, ask it to try again with your features unchanged.",
+    "Only film clients who have agreed, and show their real result, not an AI one, if you post it as your work."
+  ],
+  "tags": ["makeup", "glow-up", "transition", "holiday", "business"]
+}

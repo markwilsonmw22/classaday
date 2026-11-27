@@ -1,0 +1,40 @@
+{
+  "slug": "nobody-cares-what-you-wear-to",
+  "title": "\"Nobody cares what you wear to…\": the outfit montage for your tiny niche",
+  "published": "2026-11-27T00:50:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Open mid-task with \"nobody cares what you wear to [your niche]\", then show every outfit you've worn to it. AI plans the looks and the grid.",
+  "why": "Later's Instagram Reels trends roundup, updated November 27, 2026, lists \"Nobody cares what you wear to…\": creators open in the middle of a task with that line and a niche activity on screen, then cut to a montage of their outfits for it and an \"I do\" moment.",
+  "steps": [
+    "Pick your niche: curling night, the dog park, choir practice, the farmers' market, your weekly shift.",
+    "Use the text prompt to sharpen your on-screen line and plan the order of your outfit clips.",
+    "Film yourself mid-task with \"nobody cares what you wear to…\" on screen, then cut to quick clips of your outfits, ending on a proud \"I do\" moment.",
+    "Want a cover image too? Use the grid prompt with photos of your own outfits."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (plan the montage)",
+      "text": "I'm making a short video for the \"Nobody cares what you wear to…\" trend. My niche activity is [ACTIVITY, e.g. Tuesday night curling]. Here are the outfits I've worn to it: [list 4 to 8 outfits]. Give me 5 versions of the opening line that sound like me, the best order for the outfit clips (build up to the best one last), and 3 ideas for the final \"I do\" moment. Keep it fun and kind, under eight words per line."
+    },
+    {
+      "label": "Variation: outfit grid cover image",
+      "text": "Use the attached photos of my real outfits. Lay them out as a clean 3 by 2 grid of flat-lay outfit cards on a soft off-white background, each outfit neatly folded or laid flat with its shoes, like a style diary page. Keep the clothes exactly as they look in my photos: same colours, patterns and shapes. Leave a blank strip across the top for my own title. Vertical 4:5. No logos, no brand names, no people, no other text."
+    },
+    {
+      "label": "Variation: outfit ideas for next time",
+      "text": "I go to [ACTIVITY] every [HOW OFTEN] in [CITY, PROVINCE], and it's [weather or setting, e.g. a cold rink in December]. Suggest 6 outfit ideas I could build from what I already own: [list your main pieces]. Make them practical for the activity and a little over the top, in a way that would be fun to film. No shopping list and no brand names."
+    },
+    {
+      "label": "Variation for a small business: our team's uniform",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write a plan for a \"Nobody cares what you wear to work at a [type of business]\" Reel where team members who agreed to be filmed show how they style our uniform or work clothes. Give me the opening line, 5 clip ideas and one caption. Keep it honest: no made-up claims, prices, deals or reviews."
+    }
+  ],
+  "tips": [
+    "The more specific the niche, the better. \"Nobody cares what you wear to the recycling depot\" beats \"to work\".",
+    "Keep each outfit clip short, about one second, and hit the beat with every cut.",
+    "Business accounts: the sound often used with this trend is a major-label song, so check it's cleared or use an original sound.",
+    "Only show teammates, friends or family who have agreed to be in it."
+  ],
+  "tags": ["outfits", "montage", "fashion", "reels", "business"]
+}
