@@ -1,0 +1,40 @@
+{
+  "slug": "i-wish-for-twist-ending",
+  "title": "\"I wish for…\": your wish comes true, just not the way you meant",
+  "published": "2026-11-27T06:45:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Make a wish with a wishbone, a candle or a coin, snap, and the wish comes true in the most literal, ironic way. AI makes the twist shot.",
+  "why": "Virlo's TikTok trend tracker, updated November 26, 2026, lists \"I wish for…\" as a fresh format: 188 creators in the last seven days, peaking on November 22. People lip-sync an \"I wish for…\" line while holding a small object, then snap or gesture and the wish comes true in an unexpected, ironic way.",
+  "steps": [
+    "Pick a wish with a funny literal twist, like \"I wish for snow\" or \"I wish for a bigger kitchen\". Keep it light and kind.",
+    "Film or photograph yourself holding the object (a wishbone, a birthday candle, a coin by a fountain) and saying your wish.",
+    "Attach that photo to ChatGPT or Gemini with the main prompt to make the twist shot, then animate it in Kling or Veo if you want movement.",
+    "In TikTok or Reels, cut from the snap to the twist right on the beat, with your wish written on screen."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (the twist photo)",
+      "text": "Use the attached photo of me holding [OBJECT, e.g. a wishbone]. Keep my face, hair, clothes and features exactly the same, so it clearly looks like me. My wish was: \"[YOUR WISH, e.g. I wish for snow]\". Show the wish coming true in the most literal, ironic way: [TWIST, e.g. a single snowflake lands on my nose while the rest of the street stays green / a tiny snow cloud hovers only over my head]. Same room or place and camera angle as the original. My expression is a slow, deadpan look at the camera. Vertical 9:16, looks like a real phone photo. No text, no logos, no other people."
+    },
+    {
+      "label": "Variation: the snap clip (Kling or Veo)",
+      "text": "Use the attached photo. Five seconds, vertical 9:16, same place and angle. The person holds [OBJECT] up near their face, closes their eyes for a second and snaps it (or blows it out). A small pop of sparkle, then [TWIST] appears around them. They open their eyes, look at the twist, then look straight at the camera with a flat, unimpressed face. Keep the face the same throughout. Natural movement, no text, no logos, no other people."
+    },
+    {
+      "label": "Wish ideas (text)",
+      "text": "Give me 12 short \"I wish for…\" ideas for a funny video where the wish comes true in a literal, ironic way. Write each as the wish, then the twist in one short line, for example \"I wish for a bigger kitchen\" then \"I shrink to the size of a teacup\". Keep them light and kind: nothing about bodies, looks, money, health or other people. Make a few fit a Canadian winter."
+    },
+    {
+      "label": "Variation for a small business",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write a plan for an \"I wish for…\" Reel where I make a wish about my work and it comes true in a silly, literal way (for example a baker wishes for \"more rolls\" and gets buried in rolling pins). Give me three wish-and-twist ideas, the shot list, one on-screen line and a caption. Keep it honest: no made-up deals, prices, countdowns, reviews or customer numbers."
+    }
+  ],
+  "tips": [
+    "The deadpan look at the end is the joke. Hold it for a full second before the clip ends.",
+    "Keep the camera in the same spot for the wish and the twist so the change feels instant.",
+    "Pick wishes about things, places or weather, not about anyone's looks or body.",
+    "Check the AI shot still looks like you. If your face changed, ask it to try again with your features unchanged."
+  ],
+  "tags": ["video", "funny", "transition", "holiday", "business"]
+}

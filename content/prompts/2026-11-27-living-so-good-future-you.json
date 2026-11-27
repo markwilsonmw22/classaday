@@ -1,0 +1,40 @@
+{
+  "slug": "living-so-good-future-you",
+  "title": "\"Living so good, I swear\": a montage of the life you're working toward",
+  "published": "2026-11-27T06:45:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Turn your goals into a short manifesting montage: AI shows future you reaching each one, and you cut it together with a single \"I swear\" line.",
+  "why": "Virlo's TikTok trend tracker, updated November 26, 2026, lists a fresh \"Living so good\" affirmation format: 101 creators in the last seven days, peaking on November 22. Creators lip-sync the line over a montage of personal growth or a future they're manifesting, such as goals, travel and milestones. Our earlier montage packs looked back at your year; this one looks ahead.",
+  "steps": [
+    "Write down four to six goals for next year that are about doing, not owning: a trip, a skill, a race, a cosy new routine.",
+    "Attach one clear selfie to ChatGPT or Gemini and use the main prompt once per goal, so each scene shows future you.",
+    "Optional: bring each still to life for two or three seconds in Kling or Veo with the video variation.",
+    "Cut the scenes together on TikTok or Reels with the trending sound, and add one short line like \"2027 me, I swear\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (one goal scene)",
+      "text": "Use the attached photo of me. Keep my face, skin tone, hair and features exactly the same, so it clearly looks like me. Show me a year from now, living one of my goals: [GOAL, e.g. hiking a mountain trail in the Rockies at sunrise / crossing the finish line of my first 10K / reading in my own sunny little apartment / plating a dinner I cooked for friends]. Relaxed, proud, happy expression. Warm natural light, soft film grain, looks like a candid phone photo someone else took. Vertical 9:16. No text, no logos, no brand names, no other recognizable people."
+    },
+    {
+      "label": "Variation: bring it to life (Kling or Veo)",
+      "text": "Use the attached image. Three seconds, vertical 9:16. Gentle, natural movement only: the person breathes, smiles slowly and glances toward the camera; hair and clothes move a little in the breeze; the camera drifts forward very slightly. Keep the face exactly the same. Calm, dreamy feel. No text, no logos, no other people."
+    },
+    {
+      "label": "Goal list and captions (text)",
+      "text": "Help me plan a 15-second \"future me\" montage. Ask me three quick questions about what I want next year, then give me six goal scenes I could picture (about experiences, skills and habits, not money or possessions), one short on-screen line for each, and three caption options that make clear these are goals, not things I've already done."
+    },
+    {
+      "label": "Variation for a small business",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write a plan for a \"living so good\" Reel about where I hope the business goes next year: four goal scenes (for example a new workshop space, a first market stall, a class I want to teach), one on-screen line each and a caption. Present them clearly as goals, not results. No made-up sales, customer numbers, reviews or deals."
+    }
+  ],
+  "tips": [
+    "Label it as goals or manifesting in your caption, so nobody thinks the AI scenes really happened.",
+    "Use the same selfie for every scene so future you looks consistent.",
+    "Experiences make a better montage than things: trips, skills and moments beat cars and shopping bags.",
+    "Save the montage and look back at it next November to see which goals you hit."
+  ],
+  "tags": ["manifesting", "selfie", "montage", "new-year", "business"]
+}
