@@ -1,0 +1,40 @@
+{
+  "slug": "havent-done-much-this-year-proof",
+  "title": "\"I feel like I haven't done much this year\": the month-by-month proof you did",
+  "published": "2026-11-27T12:40:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude", "Kling"],
+  "summary": "Open with \"I feel like I haven't done much this year\", then prove yourself wrong with one real clip per month. AI helps you find and caption the wins.",
+  "why": "Later's Instagram Reels trends list, updated November 27, 2026, added this format on November 20: the video opens with the line \"I feel like I haven't done much this year\", then shows clips labelled by month as proof. Our \"How I've looked throughout the year\" pack is about your look; this one is about what you actually got done.",
+  "steps": [
+    "Write a quick list of anything you did each month, big or small. Paste it into a chat tool with the main prompt.",
+    "Use the list it gives back to find one photo or short clip for each month in your camera roll.",
+    "In your video editor, start with the opening line on a plain shot of you, then show each clip for about one second with its month label.",
+    "If a month has only a still photo, use the motion prompt to give it a gentle move, then post."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: find the wins and write the labels",
+      "text": "I'm making a short vertical video. It opens with the text \"I feel like I haven't done much this year\", then shows one clip per month as proof that I did. Here are my rough notes for each month: [January: ..., February: ..., March: ..., and so on]. Some months feel empty to me. For every month, pick the one thing that makes the best proof, even if it's small, like learning a recipe or finally fixing the closet door. Write a label for each of 2 to 6 words, in lowercase, starting with the month name. Then write a short, kind closing line for the last frame. Keep it honest: don't make anything sound bigger than it was."
+    },
+    {
+      "label": "Motion prompt: bring one still photo to life",
+      "text": "Use this photo as the start. Keep the people, faces, clothes and background exactly the same. Make a 2-second vertical clip with a slow push-in and one small natural movement, like hands moving or a light breeze. No new objects, no text, no change to how anyone looks."
+    },
+    {
+      "label": "Variation: the tiny wins edition",
+      "text": "I want to make an \"I feel like I haven't done much this year\" video using only tiny, everyday wins. Here is what I remember from this year: [list anything: habits kept, days you showed up, things you tried for the first time]. Sort them into the months they happened, pick the funniest or most relatable one for each month, and write a 2 to 6 word label for each. Suggest one month where the label can be a joke, like \"march: survived.\""
+    },
+    {
+      "label": "Variation for a small business: what our shop did this year",
+      "text": "I run [type of business] and I want to post \"I feel like we haven't done much this year\", then show one clip per month as proof. Here is what happened each month: [list new products, events, repairs, team moments, things you learned]. Pick one item per month, write a 2 to 6 word label for each, and give me a short thank-you line for the last frame. Don't make any claims about sales, customer numbers or results."
+    }
+  ],
+  "tips": [
+    "Use real clips from your own year. The point is proof, so don't have AI invent moments that didn't happen.",
+    "Small wins count. A month labelled \"learned to make bread\" lands as well as a big trip.",
+    "Keep each clip to about one second so the whole video stays under 20 seconds.",
+    "Only show other people if they agreed, and say so if you used AI to add motion."
+  ],
+  "tags": ["text", "montage", "year-in-review", "reels", "business"]
+}
