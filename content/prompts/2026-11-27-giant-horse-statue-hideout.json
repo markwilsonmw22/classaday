@@ -1,0 +1,40 @@
+{
+  "slug": "giant-horse-statue-hideout",
+  "title": "Giant horse hideout: you climb inside a huge steel horse by the road",
+  "published": "2026-11-27T18:42:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "One photo of you becomes a clip where you walk up to a giant metal horse statue at the roadside and climb in through a hidden hatch.",
+  "why": "AI Trend Club's tracker lists \"Giant Horse Hideout\" from a TikTok post dated November 19, 2026, with 10.7 million views on the original. In the clip, a person in red walks up to a huge steel horse statue beside a road and climbs inside through an opening.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself in a bright outfit, standing outdoors. Red or yellow stands out best against grey steel.",
+    "Attach it to ChatGPT or Gemini with the main prompt to make the first frame: you beside the giant horse.",
+    "Take that frame into Kling or Veo with the clip prompt to animate the walk up and the climb inside.",
+    "Post it with a short on-screen line, like \"Where I go when someone says 'quick question'\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (first frame)",
+      "text": "Use the attached photo of me. Keep my face, hair, body and clothes exactly the same, so it clearly looks like me. Place me on the gravel shoulder of a quiet country road, a few steps away from a giant horse statue made of brushed steel plates, about four storeys tall, standing on a concrete base. There is a small square hatch in the horse's front leg, slightly open. Late afternoon light, long shadows, wide open fields behind. I am looking up at the horse. Vertical 9:16, looks like a real phone video still. No text, no logos, no signs, no other people."
+    },
+    {
+      "label": "Clip prompt (Kling or Veo)",
+      "text": "Use the attached image. Eight seconds, vertical 9:16, handheld phone feel from across the road. The person walks quickly toward the giant steel horse statue, glances left and right like they're making sure no one is watching, pulls the small hatch in the front leg open and climbs inside. The hatch swings shut behind them. Hold on the still horse for one second, then a tiny light turns on in the horse's eye. Keep the face the same throughout. Natural movement, no text, no logos, no other people."
+    },
+    {
+      "label": "Variation: Canadian winter",
+      "text": "Same idea as the main prompt, but the road runs through snowy prairie in January. The steel horse has frost on its back and a snowbank around its base. I am in a red parka and toque, breath showing in the cold air. Keep my face exactly the same. Vertical 9:16, real phone look, no text, no logos, no other people."
+    },
+    {
+      "label": "Variation for a small business",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write a short Reel plan using the \"giant horse hideout\" trend: I climb into a giant steel statue of [SOMETHING THAT FITS MY BUSINESS, e.g. a coffee cup, a hammer, a cupcake] and the next shot shows me inside, cosy and getting work done. Give me the two prompts (first frame and clip), one funny on-screen line and a caption. Keep it honest: no made-up deals, prices, countdowns, reviews or customer numbers."
+    }
+  ],
+  "tips": [
+    "The quick look left and right before climbing in is what sells the joke. Ask for it by name.",
+    "A bright outfit keeps you visible against the grey steel when the clip is small on a phone.",
+    "If the horse looks like a real landmark, ask the AI to make it plainer and more generic.",
+    "This is AI only. Don't climb real statues or public art."
+  ],
+  "tags": ["video", "image-to-video", "funny", "hide-and-seek", "business"]
+}

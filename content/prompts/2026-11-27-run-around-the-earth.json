@@ -1,0 +1,40 @@
+{
+  "slug": "run-around-the-earth",
+  "title": "Run around the Earth: one start line, a stopwatch, and the whole planet in seconds",
+  "published": "2026-11-27T18:42:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "You crouch at a desert start line, the stopwatch starts, and quick cuts send you racing through snow, forest and city before you're back at the timer.",
+  "why": "AI Trend Club's tracker lists \"Run Around the Earth\" from a TikTok post dated November 23, 2026, with 1.4 million views and 37,000 likes as of November 27. The clip shows a runner at a desert start line beside a stopwatch, fast cuts through different landscapes including snow, then a return to the timer.",
+  "steps": [
+    "Pick a clear, full-body photo of yourself in running or sporty clothes.",
+    "Use ChatGPT or Gemini with the main prompt to make three or four stills: the start line, two or three landscapes, and the finish at the timer.",
+    "Animate each still for one to two seconds in Kling or Veo, or use the one-clip prompt if your tool handles fast cuts.",
+    "Cut them together on the beat and add your time on screen, like \"Around the world: 7.4 seconds\"."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt (the start line)",
+      "text": "Use the attached photo of me. Keep my face, hair, body and clothes exactly the same, so it clearly looks like me. I am crouched in a sprinter's start position on a white chalk line drawn across orange desert sand. Next to me, a large plain digital stopwatch on a stand reads 00:00.0. Bright midday sun, heat haze in the distance. Low camera angle from the side. Vertical 9:16, looks like a real sports photo. No text besides the stopwatch numbers, no logos, no other people."
+    },
+    {
+      "label": "One-clip prompt (Kling or Veo)",
+      "text": "Use the attached image. Eight seconds, vertical 9:16. The stopwatch beeps and the runner bursts off the line. Fast cuts, about one second each, keep the runner in the same pose and outfit while the world changes around them: snowy tundra, a misty rainforest trail, a rocky ocean cliff, a busy city crosswalk at night. On the last cut the runner skids to a stop back at the desert start line, the stopwatch freezes, and they look at the camera, out of breath and grinning. Keep the face the same throughout. No logos, no other people's faces."
+    },
+    {
+      "label": "Variation: coast to coast in Canada",
+      "text": "Same idea as the one-clip prompt, but the runner crosses Canada instead of the planet. Start line on a rocky Atlantic shoreline with a lighthouse in the distance. Fast cuts through a snowy boreal forest, a flat golden prairie with a grain elevator, a mountain pass with turquoise lakes, and a misty Pacific beach. Finish back at the stopwatch, which reads a silly time like 00:06.2. Keep the face the same. Vertical 9:16, no text besides the stopwatch, no logos, no other people's faces."
+    },
+    {
+      "label": "Variation for a small business",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE]. Write a short Reel plan using the \"run around the Earth\" trend: I sprint off a start line and race through every step of [A JOB WE DO, e.g. a same-day delivery, a full house clean, a bakery's morning prep] in fast cuts, then stop at the stopwatch. Give me the shot list with one prompt per shot, one on-screen line and a caption. Keep it honest: don't claim real times, deals, reviews or customer numbers."
+    }
+  ],
+  "tips": [
+    "Keep the same outfit in every shot so it reads as one non-stop run.",
+    "Short cuts are the trick. One second per place feels fast; three seconds feels slow.",
+    "Put a snowy shot in the middle. The jump from desert heat to snow gets the biggest reaction.",
+    "Pick a silly, impossible time for the stopwatch so nobody mistakes it for a real record."
+  ],
+  "tags": ["video", "image-to-video", "travel", "sports", "business"]
+}
