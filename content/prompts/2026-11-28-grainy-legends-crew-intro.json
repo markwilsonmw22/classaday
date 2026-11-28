@@ -1,0 +1,40 @@
+{
+  "slug": "grainy-legends-crew-intro",
+  "title": "Grainy legends intro: your crew in black and white, one name at a time",
+  "published": "2026-11-28T00:45:00Z",
+  "kind": "video",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Turn photos of you and your friends into moody, grainy black-and-white portraits that turn to the camera while a deep voice calls out each name.",
+  "why": "MakeViral's trend page says the \"Eight Legends\" edits began on TikTok in October, and a November 18, 2026 edit had 1.7 million views by November 21. The #eightlegendstrend hashtag started the same day, with copies of the grainy black-and-white look spreading through templates.",
+  "steps": [
+    "Get a clear, shoulders-up photo of each person. Ask your friends or family first, and only use people who said yes.",
+    "Attach one photo at a time to ChatGPT or Gemini with the portrait prompt. Make three to eight portraits that match.",
+    "Take each portrait into Kling or Veo with the clip prompt to make a four-second turn to camera.",
+    "Join the clips in order and add the voice-over: one name or nickname per portrait. Record it yourself in a low, slow voice, or use the text prompt to write the lines."
+  ],
+  "prompts": [
+    {
+      "label": "Portrait prompt (one per person)",
+      "text": "Use the attached photo. Keep the face, hair and clothes exactly the same, so it clearly looks like this person. Make a close portrait from the shoulders up, shoulders filling the bottom of the frame. High-contrast black and white with heavy film grain, like an old movie still. Pure black background. One hard white light from the side that rims the face and hair. Calm, serious expression, no smile, eyes looking slightly off to the side. Wide 16:9 frame with the person centred. No text, no logos, no other people."
+    },
+    {
+      "label": "Clip prompt (Kling or Veo)",
+      "text": "Use the attached black-and-white portrait. Four seconds, 16:9, locked-off camera with no zoom, pan or shake. Fade in from black. The person is looking off to the side, takes a slow breath, then turns their head to stare straight into the camera and holds it, calm and serious. Fade to black at the end. Keep the face exactly the same and keep the heavy film grain. No text, no music, no other people."
+    },
+    {
+      "label": "Voice-over lines (text)",
+      "text": "I'm making a dramatic black-and-white intro video of my friends, one portrait each. Here are their names and one funny true thing about each: [NAME: THING], [NAME: THING], [NAME: THING]. Write one short title for each person in the style of an old action-movie announcer, like \"The Keeper of the Group Chat\". Keep each under eight words. Make it kind and funny, never mean. Then write a one-line opener, like \"Every crew has its legends.\""
+    },
+    {
+      "label": "Variation for a small business",
+      "text": "I run [TYPE OF BUSINESS] in [CITY, PROVINCE] and want to introduce my team with the grainy black-and-white \"legends\" trend. Each team member has agreed to be in it. Here are their names and roles: [NAME: ROLE]. Write a dramatic but friendly announcer title for each, an opener line and a short caption. Keep it honest: no made-up awards, reviews, customer numbers or deals."
+    }
+  ],
+  "tips": [
+    "Use the same prompt for every portrait so the grain and lighting match. Matching shots are what make it look like one film.",
+    "Plain dark tops work best. Busy prints and logos fight with the black background.",
+    "The joke is the big voice on everyday people. Use your crew's real names or nicknames, never celebrities or film characters.",
+    "Only include people who said yes, and let them see it before you post."
+  ],
+  "tags": ["video", "black-and-white", "friends", "intro", "business"]
+}
