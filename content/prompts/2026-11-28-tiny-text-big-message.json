@@ -1,0 +1,40 @@
+{
+  "slug": "tiny-text-big-message",
+  "title": "Tiny text, big message: one small line on screen that lands hard",
+  "published": "2026-11-28T06:37:00Z",
+  "kind": "text",
+  "tools": ["ChatGPT", "Gemini", "Claude"],
+  "summary": "Put one short, small line of text over a calm clip, so people lean in to read it. AI helps you cut your message down to a few words that hit.",
+  "why": "Later's TikTok trends roundup, updated November 27, 2026, lists \"Text zoom\": small on-screen text with a big emotional punch, used for an encouraging note, a hint at an announcement or something people relate to. Our \"Zoom in: the tiny hidden message\" pack is a still photo game; this one is a short video with one line of text.",
+  "steps": [
+    "Decide what you want to say: a kind note, a hint at news, or a relatable thought.",
+    "Paste it into a chat tool with the main prompt and pick your favourite short line.",
+    "Film a calm 5 to 8 second clip, like a window, a coffee cup or a walk outside.",
+    "In your video editor, add the line in small text in the middle of the frame, with lots of empty space around it. Use the app's original sound for this trend."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: shrink your message",
+      "text": "I'm making a short vertical video where one small line of text sits in the middle of a calm clip. The text needs to be short enough to read in two seconds but still make people feel something. Here is what I want to say: [your message]. Give me 10 options, each 3 to 9 words, in lowercase. Mix gentle, funny and honest versions. No hashtags, no emojis, nothing that sounds like an ad."
+    },
+    {
+      "label": "Variation: encouragement for the end of the year",
+      "text": "Write 10 short lines, 3 to 9 words each, for a small text overlay that someone reads at the end of a long year. They should feel like a friend talking, not a poster. Avoid words like journey, grind or hustle. Keep them in lowercase and plain English."
+    },
+    {
+      "label": "Variation: hint at news without saying it",
+      "text": "I have some news I'll share soon: [what it is, kept private]. Write 8 small text lines, 3 to 8 words each, that hint something is coming without giving it away. Keep them calm and curious, not hype. No countdowns or fake urgency."
+    },
+    {
+      "label": "Variation for a small business: a quiet thank-you",
+      "text": "I run [type of business]. Write 8 short lines, 3 to 9 words each, for a small text overlay that thanks the people who come in, in a warm, honest way. Don't mention sales, discounts, numbers or results. Keep them in lowercase."
+    }
+  ],
+  "tips": [
+    "Smaller text works because people pause to read it. Keep plenty of empty space around it.",
+    "Pick a clip with very little movement so nothing fights with the words.",
+    "Read your line out loud. If it takes more than one breath, cut it again.",
+    "Keep hints honest: only tease news you're really going to share."
+  ],
+  "tags": ["text", "tiktok", "encouragement", "announcement", "business"]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "half-face-then-and-now",
+  "title": "Half-face then and now: your childhood self and today's you in one black-and-white portrait",
+  "published": "2026-11-28T06:37:00Z",
+  "kind": "image",
+  "tools": ["ChatGPT", "Gemini", "Kling", "Veo"],
+  "summary": "Join half of a childhood photo with half of a photo of you today in one moody black-and-white portrait, then let it slowly come together in a short clip.",
+  "why": "Virlo's TikTok trends page, updated November 27, 2026, lists \"Half-face childhood vs now\" as new this week: creators use an AI template to make a black-and-white portrait split between their childhood face and their face today, often shown with the lyric \"There's such a difference between us.\" Our \"Same spot, years apart\" pack is about places; this one is about your own face.",
+  "steps": [
+    "Find a clear childhood photo where your face looks straight at the camera, and take a new selfie in the same pose and light.",
+    "Upload both photos to an image tool with the main prompt to make the split portrait.",
+    "If you want motion, give the portrait to a video tool with the reveal prompt for a slow 5-second clip.",
+    "Post it with your own caption and a quiet sound from the app's library."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the split portrait",
+      "text": "Use the two photos I uploaded. The first is me as a child, the second is me today. Make one square black-and-white portrait, face looking straight at the camera. The left half of the face comes from the childhood photo and the right half from today's photo, lined up so the eyes, nose and mouth meet in a clean vertical line down the middle. Scale the child's half so both halves are the same size. Plain dark grey background, soft side light, fine film grain, high contrast. Keep both faces true to the photos: do not change features, age or expression. No text."
+    },
+    {
+      "label": "Reveal prompt: bring the halves together (image to video)",
+      "text": "Use this portrait as the last frame. Start with only the childhood half visible on a dark background. Over about 5 seconds, today's half slowly fades in from the right until both halves meet in the middle. Keep the camera still, keep it black and white, and add a slight film flicker. Do not change either face. No text, no extra objects."
+    },
+    {
+      "label": "Variation: you and a parent at the same age",
+      "text": "Use the two photos I uploaded: the first is my parent at about my age, the second is me today. Make one black-and-white portrait split down the middle of the face, my parent on the left and me on the right, lined up at the eyes and mouth. Same soft side light and film grain on both halves, plain dark background. Keep both faces exactly as they are in the photos. No text."
+    },
+    {
+      "label": "Variation for a small business: our sign, opening day and today",
+      "text": "Use the two photos I uploaded: the first is our shop sign or front door on the day we opened, the second is the same view today. Make one black-and-white image split down the middle, opening day on the left and today on the right, lined up so the edges meet cleanly. Soft light, fine film grain, high contrast. Keep the real details of each photo. Don't add logos, text or people."
+    }
+  ],
+  "tips": [
+    "The split works best when both photos face the camera at the same angle. Retake your selfie until your head tilt matches the old photo.",
+    "Black and white hides the difference in colour between an old print and a phone photo, so the two halves blend better.",
+    "Use only your own photos, or photos of family who have said yes.",
+    "If the tool changes a face, say \"keep the faces exactly as in the photos\" again and try once more."
+  ],
+  "tags": ["then-and-now", "black-and-white", "portrait", "nostalgia", "business"]
+}
