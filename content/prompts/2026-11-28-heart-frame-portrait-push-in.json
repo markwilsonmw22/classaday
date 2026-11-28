@@ -1,0 +1,40 @@
+{
+  "slug": "heart-frame-portrait-push-in",
+  "title": "Heart frame portrait: hands make a heart over your face as the camera moves in",
+  "published": "2026-11-28T12:40:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Runway", "Higgsfield"],
+  "summary": "Turn one selfie into a slow black-and-white close-up: your hands form a heart around your face, the camera pushes in, you blink and hold the pose.",
+  "why": "Remake the Trend's AI video trends page, updated November 27, 2026, lists the \"Heart Frame Portrait\" as a new trend that day: a black-and-white close-up where the subject's hands form a heart over the face while the shot pushes in and they blink and hold the pose. Our \"Half-face then and now\" pack is a still split portrait; this one is a short moving close-up from a single photo.",
+  "steps": [
+    "Take a clear selfie, face to the camera, with soft light from a window. Plain background is best.",
+    "Upload it to an image-to-video tool and paste the main prompt. Pick a 5-second clip in portrait format.",
+    "If the hands look odd, try again with the tip below, or start from a photo where you already hold the heart shape.",
+    "Post it with a soft sound from the app's library and your own caption."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: the heart frame close-up",
+      "text": "Use my uploaded photo as the first frame. Make a 5-second black-and-white video, vertical format. I raise both hands and join my thumbs and fingers into a heart shape that frames one eye and my cheek. The camera slowly pushes in toward my face. I blink once, then hold still and look straight into the lens with a calm, gentle expression. Soft side light, fine film grain, shallow depth of field, plain dark background. Keep my face exactly as in the photo. Hands have five fingers each. No text."
+    },
+    {
+      "label": "Variation: two people, one heart",
+      "text": "Use the photo I uploaded of me and a friend, cheek to cheek, both of whom agreed to this. Make a 5-second black-and-white video. Each of us raises one hand and together our hands form one heart shape between our faces. The camera pushes in slowly. We both blink, then hold the pose and smile softly at the lens. Film grain, soft window light, plain background. Keep both faces true to the photo. No text."
+    },
+    {
+      "label": "Variation: slow pull-back ending",
+      "text": "Use my uploaded photo. Make a 6-second black-and-white video. Start very close on one eye seen through a heart shape made by my hands. The camera slowly pulls back to show my whole face and shoulders, then I lower my hands and smile. Soft light, light film grain, dark plain background. Keep my face exactly as in the photo. No text."
+    },
+    {
+      "label": "Variation for a small business: a thank-you to customers",
+      "text": "Use my uploaded photo of me standing in my shop or workspace. Make a 5-second black-and-white video. I make a heart shape with my hands in front of my face, the camera pushes in slowly, I blink and smile at the lens. The background is softly blurred but still looks like my real space. Film grain, warm soft light. Keep my face true to the photo. No text, no logos."
+    }
+  ],
+  "tips": [
+    "AI tools often struggle with hands. Saying \"five fingers each\" and keeping the heart small and simple helps.",
+    "Black and white with film grain is what gives this look its mood, so keep that line in the prompt.",
+    "Add a short thank-you or \"love you\" caption in the app afterward rather than asking the AI for text.",
+    "Use only your own photo, or a friend or family member who has said yes."
+  ],
+  "tags": ["video", "image-to-video", "black-and-white", "portrait", "business"]
+}

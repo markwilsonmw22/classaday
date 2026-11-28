@@ -1,0 +1,39 @@
+{
+  "slug": "cartoon-glove-cheek-bop",
+  "title": "Glove knock: cartoon boxing gloves bop your cheeks",
+  "published": "2026-11-28T12:42:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Higgsfield", "Runway"],
+  "summary": "Two puffy cartoon boxing gloves pop in from the sides and give your cheeks a soft, silly bop, left then right, while you react.",
+  "why": "Remake the Trend's AI video trends page, updated November 27, 2026, lists the \"Glove Knock\" trend, added November 26 with 60 creators posting it: cartoon boxing gloves bop the subject's cheeks.",
+  "steps": [
+    "Use a clear selfie from the shoulders up, face to the camera.",
+    "Upload it to an image-to-video tool and paste the main prompt. A 5-second clip is enough.",
+    "Add a funny boing or bell sound from the app's library so each bop lands.",
+    "Keep it soft and silly. The gloves should squish, not hit hard."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: left, right, wobble",
+      "text": "Use my uploaded photo as the first frame. Make a 5-second vertical video. Two big, puffy, bright red cartoon boxing gloves slide in from the left and right edges of the frame. The left glove gives my cheek a soft, squishy bop, then the right glove does the same. My face wobbles like jelly for a moment, my eyes go wide, and I burst out laughing. The gloves bounce back out of frame. Bright, playful light, slightly cartoon motion. Keep my face the same as in the photo. Gentle and funny, nobody gets hurt. No text, no logos on the gloves."
+    },
+    {
+      "label": "Variation: two friends",
+      "text": "Use the photo I uploaded of me and a friend side by side, both of whom agreed to this. Make a 6-second video. A pair of puffy cartoon boxing gloves pops in and gives each of us a soft bop on the cheek, one after the other, with a cartoon wobble. We look at each other in shock, then both laugh. Keep both faces true to the photo. Soft and silly, no harm. No text or logos."
+    },
+    {
+      "label": "Variation: pet version",
+      "text": "Use my uploaded photo of my cat. Make a 5-second video. Two tiny, fluffy cartoon boxing gloves float in and give my cat's cheeks the gentlest little boop, one side then the other. My cat's fur puffs out, it blinks slowly, then looks at the camera unimpressed. Keep my cat's markings the same as in the photo. Cute and gentle. No text."
+    },
+    {
+      "label": "Variation for a small business: knock out Monday",
+      "text": "Use my uploaded photo of me at my desk or counter. Make a 5-second video. Two puffy cartoon boxing gloves pop in and give my cheeks a soft bop, left then right. I shake it off, grin, roll up my sleeves and give the camera a thumbs up, ready for the week. Keep my face and my workspace as in the photo. Light and funny. No text, no logos."
+    }
+  ],
+  "tips": [
+    "Words like \"puffy\", \"squishy\" and \"cartoon\" keep the bop playful instead of looking like a real punch.",
+    "Ask for no logos on the gloves so they stay plain and generic.",
+    "Use only your own photo, or a friend or family member who has said yes and is in on the joke."
+  ],
+  "tags": ["video", "image-to-video", "funny", "cartoon", "business"]
+}

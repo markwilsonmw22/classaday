@@ -1,0 +1,39 @@
+{
+  "slug": "missed-train-platform-dance",
+  "title": "Missed the train? Dance on the empty platform",
+  "published": "2026-11-28T12:41:00Z",
+  "kind": "video",
+  "tools": ["Kling", "Veo", "Sora", "Higgsfield"],
+  "summary": "The doors close just as you arrive, the train pulls away, you look crushed for a second, then shrug and dance on the empty platform.",
+  "why": "Remake the Trend's AI video trends page, updated November 27, 2026, lists the \"Missed Train Dance\" as a new trend that day: the subject misses a train, despairs, then dances on the empty platform.",
+  "steps": [
+    "Pick a full-body photo of yourself standing, in clothes you'd wear for a commute.",
+    "Upload it to an image-to-video tool and paste the main prompt. Choose an 8 to 10-second clip if the tool allows.",
+    "Add an upbeat sound from the app's library on top. The fun is in the switch from sad to dancing.",
+    "If the dance is too stiff, try again and ask for \"loose, bouncy, happy\" moves."
+  ],
+  "prompts": [
+    {
+      "label": "Main prompt: missed it, dance anyway",
+      "text": "Use my uploaded photo for the person. Make a 10-second vertical video on a clean, modern subway platform in the evening, with bright lights and tiled walls. I run onto the platform just as the train doors slide shut. The train pulls away. I stop, drop my shoulders, put my hands on my head and look up in mock despair. After a beat I shrug, smile, and break into a loose, happy dance across the empty platform. Handheld camera, natural motion. Keep my face and clothes the same as in the photo. No real station names, no signs with words, no other people close to the camera."
+    },
+    {
+      "label": "Variation: winter commute",
+      "text": "Use my uploaded photo. Make a 10-second video on an outdoor commuter train platform on a snowy winter morning, breath visible in the cold air. I arrive with a coffee in hand as the train leaves without me. I freeze, stare after it, then set the coffee on a bench and do a cheerful dance in the falling snow. Keep my face and clothes as in the photo, add a warm toque and scarf. No readable signs or logos."
+    },
+    {
+      "label": "Variation: missed the bus, pet version",
+      "text": "Use my uploaded photo of my dog. Make an 8-second video at a city bus stop. My dog trots up just as the bus pulls away, sits down and droops its ears for a second, then hops up and does a happy little bouncing dance on the sidewalk, tail wagging. Keep my dog's markings and size the same as in the photo. No words on the bus or signs."
+    },
+    {
+      "label": "Variation for a small business: closing time",
+      "text": "Use my uploaded photo of me in my shop. Make a 10-second video. A customer-shaped silhouette waves goodbye through the glass door as I flip the sign to closed. I lean on the counter with a tired sigh, then turn up the music and dance between the shelves of my own shop. Keep my face and the shop looking like the photo. No logos, no readable text."
+    }
+  ],
+  "tips": [
+    "Leave out real station or transit names and logos. A generic platform reads just as well.",
+    "Tell the tool the order of events in short sentences: arrive, doors close, sad, then dance. It follows a clear sequence better.",
+    "Use only your own photo, or a friend or family member who has said yes."
+  ],
+  "tags": ["video", "image-to-video", "dance", "funny", "business"]
+}
